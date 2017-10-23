@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing to mjt&#39;s world
+title: Introducing to mjt&#39;s AI world
 ---
 
 Hello to the world, my name is Mjtsai, abbreviated from my Chinese name Meng-Jer Tsai.  Here is the dev-blog of my engineering knowledge gain.  When I am home after work, I kick-off another
