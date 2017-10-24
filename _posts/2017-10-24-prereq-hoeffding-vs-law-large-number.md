@@ -32,10 +32,10 @@ Hoeffding inequality claims &nu; &equals; &mu; is probably approximate correct.
 ## Hoeffding Inequality &asymp; Chebyshev&#39;s Inequality
 
 <p class="message">
-Chebyshev&#39;s inequality claims that P(|Y &minus; E(Y)| &gt; a) &le; (1 &#8725; a) &times; Var(Y); where Y is any arbitrary random variable Y and any a &gt; 0.  
+Chebyshev&#39;s inequality claims that P(|Y &minus; E(Y)| &gt; a) &le; (1 &#8725; a) &times; Var(Y);<br />
+where Y is any arbitrary random variable Y and any a &gt; 0.<br />
 
-Proof:  
-
+Proof:<br />
 Var(Y) &#61; &int;<sup>&infin;</sup><sub>&minus;&infin;</sub>(y &minus; &mu;)<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
        &ge; &int;<sup>&infin;</sup><sub>|y &minus; &mu;| &ge; a</sub>(y &minus; &mu;)<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
        &ge; &int;<sup>&infin;</sup><sub>|y &minus; &mu;| &ge; a</sub>a<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
