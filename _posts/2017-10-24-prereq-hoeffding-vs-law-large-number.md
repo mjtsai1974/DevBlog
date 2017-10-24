@@ -21,10 +21,14 @@ P[|&nu; &minus; &mu;| &gt; &epsilon;] &le; 2 &times; exp(-2 &times; &epsilon;&su
 Hoeffding inequality claims &nu; &equals; &mu; is probably approximate correct.
 </p>
 
-> [1]Valid for all N and &epsilon;.  
+[1]Valid for all N and &epsilon;.  
 
-> [2]Doesn&#39;t depend on &mu;, no need to know &mu;.  
+[2]Doesn&#39;t depend on &mu;, no need to know &mu;.  
 
-> [3]Large sample size N or looser gap &epsilon;, will we have higher probability for &nu; &equals; &mu;.
+[3]Large sample size N or looser gap &epsilon;, will we have higher probability for &nu; &equals; &mu;.
 
+> Above paragraph is my summary from [NTU H.T.Lin's Machine Learning Foundation](https://zh-tw.coursera.org/learn/ntumlone-mathematicalfoundations).
 
+## Hoeffding Inequality &asymp; Chebyshev&#39;s Inequality
+
+to be conti...
