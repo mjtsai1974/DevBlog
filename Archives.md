@@ -14,8 +14,7 @@ title: Archives
       <li>
         <a class="page-heading pink-highlight post-url" href="{{ post.url }}">{{ post.title }}</a>
         <div class="date"> Published on {{ post.date | date_to_string }}</div>
-        <div class="excerpt description"> {{ post.excerpt }} </div>
-        <a href="{{ post.url }}">Read more &raquo;</a>
+        <!-- <div class="excerpt description"> {{ post.excerpt }} </div> -->
       </li>
     {% endfor %}
   </ul>
