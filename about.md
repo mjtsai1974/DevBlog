@@ -10,7 +10,7 @@ title: About
 
 ## How this web site is setup
 
-This web site is build with the theme from [Lanyon](https://github.com/poole/lanyon) with reference to How to Install Jekyll Themes?(https://www.youtube.com/watch?v=bty7LHm14CA).
+This web site is build with the theme from [Lanyon](https://github.com/poole/lanyon) with reference to [How to Install Jekyll Themes?](https://www.youtube.com/watch?v=bty7LHm14CA).
 
 ## Contact the Author
 Have questions or suggestions? Feel free to contact mjtsai1974: <mjtsai1974@yahoo.ocm.tw>.
