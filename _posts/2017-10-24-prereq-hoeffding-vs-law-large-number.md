@@ -25,7 +25,7 @@ Hoeffding inequality claims &nu; &equals; &mu; is probably approximate correct.
 
 [2]Doesn&#39;t depend on &mu;, no need to know &mu;.  
 
-[3]Large sample size N or looser gap &epsilon;, will we have higher probability for &nu; &equals; &mu;.  
+[3]Large sample size N or looser gap &epsilon;, will we have higher probability for &nu; &#61; &mu;.  
 
 > Above paragraph is my summary from [NTU H.T.Lin's Machine Learning Foundation](https://zh-tw.coursera.org/learn/ntumlone-mathematicalfoundations).
 
