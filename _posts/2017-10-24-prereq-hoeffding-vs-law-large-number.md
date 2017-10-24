@@ -37,7 +37,7 @@ where Y is any arbitrary random variable Y and any a &gt; 0.<br />
 
 Proof:<br />
 Var(Y) &#61; &int;<sup>&infin;</sup><sub>&minus;&infin;</sub>(y &minus; &mu;)<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
->>>>>>>&ge; &int;<sup>&infin;</sup><sub>|y &minus; &mu;| &ge; a</sub>(y &minus; &mu;)<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
->>>>>>>&ge; &int;<sup>&infin;</sup><sub>|y &minus; &mu;| &ge; a</sub>a<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
->>>>>>>&#61; a<sup>2</sup>&times;P(|Y &minus; E(Y)| &gt; a), where &mu; &#61; E(Y).
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&ge; &int;<sup>&infin;</sup><sub>|y &minus; &mu;| &ge; a</sub>(y &minus; &mu;)<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&ge; &int;<sup>&infin;</sup><sub>|y &minus; &mu;| &ge; a</sub>a<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#61; a<sup>2</sup>&times;P(|Y &minus; E(Y)| &gt; a), where &mu; &#61; E(Y).
 </p>
