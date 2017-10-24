@@ -8,7 +8,8 @@ Hello to the world, my name is Mjtsai, abbreviated from my Chinese name Meng-Jer
 session for investigation in the fields of interests, mostly, targeting in artificial intelligence, machine learning where statistic mathematics is the prerequisite, I think really it is.
 I name this place mjt&#39;s AI world with a hope that one day I can become machine learning expert.
 
-After several years of review in below academic discipline(with period), I think they are just the prerequisite:
+After several years of review in below academic discipline(with period), I think they are just the prerequisite:  
+
 [1]Calculus(2010.01 ~ 2010.12)  
 
 [2]Linear Algebra(2008.12 ~ 2009.12)  
@@ -30,7 +31,8 @@ job and some burden from my family, actually, I am a father of two, I left %40 o
 adjust in my handwritings.  It is almost the time, I resume the same course and found it a different world nowadays.  CS221 is now on [Coursera](https://www.coursera.org/learn/machine-learning).  The 
 existing machine learning has become a rather evolutionary version, the deep learning.
 
-For the time being(2017.10.24), I have completed below on-line courses and would like to further advance to deep learning:
+For the time being(2017.10.24), I have completed below on-line courses and would like to further advance to deep learning:  
+
 [1][NTU H.T.Lin's Machine Learning Foundation](https://zh-tw.coursera.org/learn/ntumlone-mathematicalfoundations)  
 
 [2][Stanford Machine Learning](https://www.coursera.org/learn/machine-learning)  
