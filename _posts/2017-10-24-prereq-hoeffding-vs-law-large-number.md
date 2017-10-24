@@ -39,11 +39,11 @@ Proof:<br />
 Var(Y) &#61; &int;<sup>&infin;</sup><sub>&minus;&infin;</sub>(y &minus; &mu;)<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&ge; &int;<sup>&infin;</sup><sub>|y &minus; &mu;| &ge; a</sub>(y &minus; &mu;)<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&ge; &int;<sup>&infin;</sup><sub>|y &minus; &mu;| &ge; a</sub>a<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#61; a<sup>2</sup>&times;P(|Y &minus; E(Y)| &gt; a), where &mu; &#61; E(Y).  
-
-Suppose we have random variables X<sub>1</sub>, X<sub>2</sub>,,,,X<sub>n</sub> with expectation &mu; and variance &‌delta;<sup>2</sup>,<br />
-take <sub>avg</sub>X<sub>n</sub> &#61; &Sigma;<sup>n</sup><sub>i=1</sub>X<sub>i</sub>&#8725;n, Var(avg</sub>X<sub>avg</sub>) &#61; &‌delta;<sup>2</sup>&#8725;n,<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#61; a<sup>2</sup>&times;P(|Y &minus; E(Y)| &gt; a), where &mu; &#61; E(Y).<br />
+<br />
+Suppose we have random variables X<sub>1</sub>, X<sub>2</sub>,,,,X<sub>n</sub> with expectation &mu; and variance &#948;<sup>2</sup>,<br />
+take <sub>avg</sub>X<sub>n</sub> &#61; &Sigma;<sup>n</sup><sub>i=1</sub>X<sub>i</sub>&#8725;n, Var(<sub>avg</sub>X<sub>n</sub>) &#61; &#948;<sup>2</sup>&#8725;n,<br />
 then, for any &epsilon; &gt; 0, by using Chebyshev&#39;s inequality, we have<br />
 P(|<sub>avg</sub>X<sub>n</sub> &minus; &mu;| &gt; &epsilon;) &#61; P(|<sub>avg</sub>X<sub>n</sub> &minus; E(<sub>avg</sub>X<sub>n</sub>)| &gt; &epsilon;)<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &le; &#61; &‌delta;<sup>2</sup>&#8725;n, as n&rarr;&infin;, it&rarr;0.<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &le; &#61; &#948;<sup>2</sup>&#8725;n, as n&rarr;&infin;, it&rarr;0.<br />
 </p>
