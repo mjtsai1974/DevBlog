@@ -17,7 +17,7 @@ Hoeffding inequality guarantees that there exists such possibility that in-sampl
 size is large:
 
 <p class="message">
-P[|&nu; &minus; &mu;| &gt; &epsilon;] &le; 2 &times; exp(-2 &times; &epsilon;&sup2; &times; N); where N is the in|out-sample size.
+P(|&nu; &minus; &mu;| &gt; &epsilon;) &le; 2 &times; exp(-2 &times; &epsilon;&sup2; &times; N); where N is the in|out-sample size.
 Hoeffding inequality claims &nu; &equals; &mu; is probably approximate correct.
 </p>
 
@@ -37,7 +37,13 @@ where Y is any arbitrary random variable Y and any a &gt; 0.<br />
 
 Proof:<br />
 Var(Y) &#61; &int;<sup>&infin;</sup><sub>&minus;&infin;</sub>(y &minus; &mu;)<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&ge; &int;<sup>&infin;</sup><sub>|y &minus; &mu;| &ge; a</sub>(y &minus; &mu;)<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&ge; &int;<sup>&infin;</sup><sub>|y &minus; &mu;| &ge; a</sub>a<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#61; a<sup>2</sup>&times;P(|Y &minus; E(Y)| &gt; a), where &mu; &#61; E(Y).
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&ge; &int;<sup>&infin;</sup><sub>|y &minus; &mu;| &ge; a</sub>(y &minus; &mu;)<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&ge; &int;<sup>&infin;</sup><sub>|y &minus; &mu;| &ge; a</sub>a<sup>2</sup>&times;&fnof;<sub>Y</sub>dy<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#61; a<sup>2</sup>&times;P(|Y &minus; E(Y)| &gt; a), where &mu; &#61; E(Y).  
+
+Suppose we have random variables X<sub>1</sub>, X<sub>2</sub>,,,,X<sub>n</sub> with expectation &mu; and variance &‌delta;<sup>2</sup>,<br />
+take <sub>avg</sub>X<sub>n</sub> &#61; &Sigma;<sup>n</sup><sub>i=1</sub>X<sub>i</sub>&#8725;n, Var(avg</sub>X<sub>avg</sub>) &#61; &‌delta;<sup>2</sup>&#8725;n,<br />
+then, for any &epsilon; &gt; 0, by using Chebyshev&#39;s inequality, we have<br />
+P(|<sub>avg</sub>X<sub>n</sub> &minus; &mu;| &gt; &epsilon;) &#61; P(|<sub>avg</sub>X<sub>n</sub> &minus; E(<sub>avg</sub>X<sub>n</sub>)| &gt; &epsilon;)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &le; &#61; &‌delta;<sup>2</sup>&#8725;n, as n&rarr;&infin;, it&rarr;0.<br />
 </p>
