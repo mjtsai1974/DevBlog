@@ -1,6 +1,6 @@
 −−−
 layout: post
-title: Hoeffding Inequality v.s. Law of Large Number
+title: Hoeffding Inequality vs Law of Large Number
 −−−
 
 ## Hoeffding Inequality
@@ -52,10 +52,10 @@ P(|<sub>avg</sub>X<sub>n</sub> − &mu;| &gt; &epsilon;) = P(|<sub>avg</sub>X<su
 Now, we compare Hoeffding Inequality with Chebyshev&#39;s Inequality  
 
 [1]P(|&nu; − &mu;| &gt; &epsilon;) &le; 2 × exp(−2 × &epsilon;&sup2; × N)  
-<a>                      v.s.</a>  
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;v.s.  
 [2]P(|<sub>avg</sub>X<sub>n</sub> − &mu;| &gt; &epsilon;) &le; &#948;<sup>2</sup> ∕ (n × &epsilon;<sup>2</sup>)  
 
->This is equivalent to compare 2 × exp(−2 × &epsilon;&sup2; × N) v.s. &#948;<sup>2</sup>∕(n × &epsilon;<sup>2</sup>)
->>For [1], as N &rarr; &infin;, we will have 2 × exp(−2 × &epsilon;&sup2; × N) &rarr; 0
->>For [2], as n &rarr; &infin;, we will have &#948;<sup>2</sup>∕(n × &epsilon;<sup>2</sup>) &rarr; 0
->>>&#8756; we just have Hoeffding Inequality &asymp; Chebyshev&#39;s Inequality, where 2 in [1] and &#948;<sup>2</sup> in [2] would just lead to probability in the same sign.
+>This is equivalent to compare 2 × exp(−2 × &epsilon;&sup2; × N) v.s. &#948;<sup>2</sup>∕(n × &epsilon;<sup>2</sup>)  
+For [1], as N &rarr; &infin;, we will have 2 × exp(−2 × &epsilon;&sup2; × N) &rarr; 0  
+For [2], as n &rarr; &infin;, we will have &#948;<sup>2</sup>∕(n × &epsilon;<sup>2</sup>) &rarr; 0  
+&#8756; we just have Hoeffding Inequality &asymp; Chebyshev&#39;s Inequality, where 2 in [1] and &#948;<sup>2</sup> in [2] would just lead to probability in the same sign.
