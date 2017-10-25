@@ -10,7 +10,6 @@ Does in−sample &nu; say anything about out−sample &mu;??  Where the in−sam
 We treat the distribution of colour in balls as the property. 
 
 > No!!  Possibly not, in−sample might contains only red balls, while out−sample might contains only green balls.  
-
 > Yes!!  Probably yes, maybe in−sample and out−sample might contains similar high proportion of blue balls, thus, in−sample &nu; might be closed to out−sample &mu;.  
 
 Hoeffding inequality guarantees that there exists such possibility that in−sample &nu; might be closed to out−sample &mu;, their difference is within quiet small &epsilon;, on conditions that the sample 
@@ -53,7 +52,7 @@ P(|<sub>avg</sub>X<sub>n</sub> − &mu;| &gt; &epsilon;) = P(|<sub>avg</sub>X<su
 Now, we compare Hoeffding Inequality with Chebyshev&#39;s Inequality  
 
 [1]P(|&nu; − &mu;| &gt; &epsilon;) &le; 2 × exp(−2 × &epsilon;&sup2; × N)  
-                      v.s.
+<a>                      v.s.</a>  
 [2]P(|<sub>avg</sub>X<sub>n</sub> − &mu;| &gt; &epsilon;) &le; &#948;<sup>2</sup> ∕ (n × &epsilon;<sup>2</sup>)  
 
 >This is equivalent to compare 2 × exp(−2 × &epsilon;&sup2; × N) v.s. &#948;<sup>2</sup>∕(n × &epsilon;<sup>2</sup>)
