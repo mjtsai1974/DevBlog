@@ -31,8 +31,9 @@ Hoeffding inequality claims &nu; = &mu; is probably approximate correct.
 <p class="message">
 Chebyshev&#39;s inequality claims that P(|Y − E(Y)| &gt; a) &le; (1 ∕ a) × Var(Y);  
 where Y is any arbitrary random variable Y and any a &gt; 0.  
+</p>
 
-Proof:  
+>Proof:  
 Var(Y) = &int;<sup>&infin;</sup><sub>−&infin;</sub>(y − &mu;)<sup>2</sup>×&fnof;<sub>Y</sub>dy  
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&ge; &int;<sup>&infin;</sup><sub>|y − &mu;| &ge; a</sub>(y − &mu;)<sup>2</sup>×&fnof;<sub>Y</sub>dy  
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&ge; &int;<sup>&infin;</sup><sub>|y − &mu;| &ge; a</sub>a<sup>2</sup>×&fnof;<sub>Y</sub>dy  
@@ -40,12 +41,11 @@ Var(Y) = &int;<sup>&infin;</sup><sub>−&infin;</sub>(y − &mu;)<sup>2</sup>×&
 
 Suppose we have  
 (1)random variables X<sub>1</sub>, X<sub>2</sub>,,,,X<sub>n</sub> with expectation &mu; and variance &#948;<sup>2</sup>,  
-(2)<sub>avg</sub>X<sub>n</sub> = &Sigma;<sup>n</sup><sub>i=1</sub>X<sub>i</sub>∕n, Var(<sub>avg</sub>X<sub>n</sub>) = &#948;<sup>2</sup>∕n,  
+(2)<sub>avg</sub>X<sub>n</sub> = &Sigma;<sup>n</sup><sub>i=1</sub>X<sub>i</sub> ∕ n, Var(<sub>avg</sub>X<sub>n</sub>) = &#948;<sup>2</sup> ∕ n,  
 then, for any &epsilon; &gt; 0, by using Chebyshev&#39;s inequality, we have  
 P(|<sub>avg</sub>X<sub>n</sub> − &mu;| &gt; &epsilon;) = P(|<sub>avg</sub>X<sub>n</sub> − E(<sub>avg</sub>X<sub>n</sub>)| &gt; &epsilon;)  
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &le; &#948;<sup>2</sup> ∕ (n × &epsilon;<sup>2</sup>), as n&rarr;&infin;, it&rarr;0.  
 &#8756; lim<sub>n&rarr;&infin;</sub>P(|<sub>avg</sub>X<sub>n</sub> − &mu;| &gt; &epsilon;) = 0 ... law of large number.  
-</p>
 
 ## Hoeffding Inequality &asymp; Chebyshev&#39;s Inequality
 
