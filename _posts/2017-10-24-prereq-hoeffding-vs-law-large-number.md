@@ -16,7 +16,7 @@ Hoeffding inequality guarantees that there exists such possibility that in−sam
 size is large:
 
 <p class="message">
-P(|&nu; − &mu;| &gt; &epsilon;) &le; 2 × exp(−2 × &epsilon;&sup2; × N); where N is the in|out−sample size.
+P(|&nu; − &mu;| &gt; &epsilon;) &le; 2 × exp(−2 × &epsilon;&sup2; × N); where N is the in|out−sample size.  
 Hoeffding inequality claims &nu; &equals; &mu; is probably approximate correct.
 </p>
 
@@ -29,10 +29,10 @@ Hoeffding inequality claims &nu; &equals; &mu; is probably approximate correct.
 ## Chebyshev&#39;s Inequality(law of large number)
 
 <p class="message">
-Chebyshev&#39;s inequality claims that P(|Y − E(Y)| &gt; a) &le; (1 ∕ a) × Var(Y);<br />
-where Y is any arbitrary random variable Y and any a &gt; 0.<br />
+Chebyshev&#39;s inequality claims that P(|Y − E(Y)| &gt; a) &le; (1 ∕ a) × Var(Y);  
+where Y is any arbitrary random variable Y and any a &gt; 0.  
 
-Proof:<br />
+Proof:  
 Var(Y) = &int;<sup>&infin;</sup><sub>−&infin;</sub>(y − &mu;)<sup>2</sup>×&fnof;<sub>Y</sub>dy<br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&ge; &int;<sup>&infin;</sup><sub>|y − &mu;| &ge; a</sub>(y − &mu;)<sup>2</sup>×&fnof;<sub>Y</sub>dy<br />
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&ge; &int;<sup>&infin;</sup><sub>|y − &mu;| &ge; a</sub>a<sup>2</sup>×&fnof;<sub>Y</sub>dy<br />
