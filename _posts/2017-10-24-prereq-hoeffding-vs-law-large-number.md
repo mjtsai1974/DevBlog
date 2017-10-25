@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hoeffding Inequality v.s. Law of Large Number
+title: Hoeffding Inequality versus Law of Large Number
 ---
 
 ## Hoeffding Inequality
