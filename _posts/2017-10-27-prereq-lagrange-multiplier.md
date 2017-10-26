@@ -18,7 +18,7 @@ We thus step further into the lagrange multiplier, usually, we will see:
 
 <p class="message">
 &#8466;(x<sub>1</sub>, x<sub>2</sub>, &‌#955;) = f(x<sub>1</sub>, x<sub>2</sub>) + &‌#955; f(x<sub>1</sub>, x<sub>2</sub>) ... (1),  
-where &‌#955; is the lagrange multiplier, and &#8466;(x<sub>1</sub>, x<sub>2</sub>, &‌#955;) is the maximum likelihood function for us to come out with the &‌#955; that can optimize the extreme value of &‌#955;.
+where &‌#955; is the lagrange multiplier, and &#8466;(x<sub>1</sub>, x<sub>2</sub>, &‌#955;) is the maximum likelihood function for us to come out with the &‌#955; that can optimize the extreme value of &‌#955;
 </p>
 
 Suppose you are given an in−sample data set with certain property &nu; to train your learning algorithm with a hope to predict an out−sample data set with unknown and to be believed existed property &mu;.
