@@ -5,7 +5,7 @@ title: Lagrange Multiplier
 
 ## Why Lagrange Multiplier?
 Suppose you are given a function f(x<sub>1</sub>, x<sub>2</sub>), and would like to find out its extreme, subject to a constraint function g(x<sub>1</sub>, x<sub>2</sub>) = 0; 
-where g(x<sub>1</sub>, x<sub>2</sub>) = ax<sub>1</sub> + bx<sub>2</sub> + c = 0.
+where g(x<sub>1</sub>, x<sub>2</sub>) = ax<sub>1</sub> + bx<sub>2</sub> + c = 0, with a, b, c to be any scalar.
 
 >The possible solution:  
 [1]Figure out from the constraint function g(x<sub>1</sub>, x<sub>2</sub>) = 0 and express x<sub>2</sub> in terms of x<sub>1</sub>, like x<sub>2</sub> = h(x<sub>1</sub>).  
@@ -13,6 +13,13 @@ where g(x<sub>1</sub>, x<sub>2</sub>) = ax<sub>1</sub> + bx<sub>2</sub> + c = 0.
 [3]Take partial derivative on x<sub>1</sub> to zero, &part;f(x<sub>1</sub>, h(x<sub>1</sub>)) ∕ &part;x<sub>1</sub> = 0, the x<sub>1</sub> value thus obtained would then lead us to the extreme of f(x<sub>1</sub>, x<sub>2</sub>).  
 
 Here comes the problem that not all objective parameters could be expressed in terms of other objective parameters in the constraint function.  
+
+We thus step further into the lagrange multiplier, usually, we will see:
+
+<p class="message">
+&#8466;(x<sub>1</sub>, x<sub>2</sub>, &‌#955;) = f(x<sub>1</sub>, x<sub>2</sub>) + &‌#955; f(x<sub>1</sub>, x<sub>2</sub>) ... (1),  
+where &‌#955; is the lagrange multiplier, and &#8466;(x<sub>1</sub>, x<sub>2</sub>, &‌#955;) is the maximum likelihood function for us to come out with the &‌#955; that can optimize the extreme value of &‌#955;.
+</p>
 
 Suppose you are given an in−sample data set with certain property &nu; to train your learning algorithm with a hope to predict an out−sample data set with unknown and to be believed existed property &mu;.
 Does in−sample &nu; say anything about out−sample &mu;??  Where the in−sample and out−sample might consist of small balls in red, green, blue.  Both samples are coming from the same random generator.
