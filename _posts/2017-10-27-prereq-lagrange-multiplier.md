@@ -17,7 +17,7 @@ Here comes the problem that not all objective parameters could be expressed in t
 We thus step further into the lagrange multiplier, usually, we will see:
 
 <p class="message">
-&#8466;(x<sub>1</sub>, x<sub>2</sub>, &‌lambda;) = f(x<sub>1</sub>, x<sub>2</sub>) + &&‌lambda;f(x<sub>1</sub>, x<sub>2</sub>) ... (1),  
+&#8466;(x<sub>1</sub>, x<sub>2</sub>, &lambda;) = f(x<sub>1</sub>, x<sub>2</sub>) + &&‌lambda;f(x<sub>1</sub>, x<sub>2</sub>) ... (1),  
 where &‌lambda; is the lagrange multiplier, and &#8466;(x<sub>1</sub>, x<sub>2</sub>, &‌lambda;) is the maximum likelihood function for us to come out with the &‌#955; that can optimize the extreme value of &#8466;
 </p>
 
