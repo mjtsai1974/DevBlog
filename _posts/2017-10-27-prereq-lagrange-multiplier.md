@@ -23,6 +23,10 @@ where λ is the lagrange multiplier, and &#8466;(x<sub>1</sub>, x<sub>2</sub>, �
 
 To get the most optimal solution, &part;&#8466; ∕ &part;x<sub>1</sub> = 0, &part;&#8466; ∕ &part;x<sub>2</sub> = 0, &part;&#8466; ∕ &part;&lambda; = 0 must be mandatory!
 
+Before proceed any further, we'd like to realize why (1) is the regularized formula for Lagrange Multiplier.
+
+>To be conti...
+
 Suppose you are given an in−sample data set with certain property &nu; to train your learning algorithm with a hope to predict an out−sample data set with unknown and to be believed existed property &mu;.
 Does in−sample &nu; say anything about out−sample &mu;??  Where the in−sample and out−sample might consist of small balls in red, green, blue.  Both samples are coming from the same random generator.
 We treat the distribution of colour in balls as the property. 
