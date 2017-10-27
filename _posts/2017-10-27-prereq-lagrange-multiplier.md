@@ -33,6 +33,7 @@ f(a) = f(x) + f&‌#x2032;(x)(x − a) + (1 ∕ (2!))f&‌#x2033;(x)(x − a)<su
 f(a) &asymp; f(x) + f&‌#x2032;(x)(x − a); ignore the second derivative term,  
 then, f&‌#x2032;(x) = &part;f(x) ∕ &part;x = [&part;f(x) ∕ &part;x<sub>1</sub> &part;f(x) ∕ &part;x<sub>2</sub> ... &part;f(x) ∕ &part;x<sub>n</sub>]<sup>t</sup> = &nabla;f,  
 f(a) &asymp; f(x) + (&nabla;f)<sup>t</sup>(x − a)<sub>n×1</sub>  
+
 >to be conti...  
 
 Suppose you are given an in−sample data set with certain property &nu; to train your learning algorithm with a hope to predict an out−sample data set with unknown and to be believed existed property &mu;.
