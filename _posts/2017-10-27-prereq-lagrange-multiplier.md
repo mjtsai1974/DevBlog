@@ -29,7 +29,7 @@ Before proceed any further, we'd like to realize why (1) is the regularized form
 take x = [x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>]<sup>t</sup> &isin; R<sup>n</sup>,  
 then, begin from lim<sub>x&rarr;a</sub>f(x) = f(a), where x, a &isin; R<sup>n</sup>,  
 express lim<sub>x&rarr;a</sub>f(x) in terms of Taylor Series:  
-  f(a) = f(x) + f<sup>&prime;</sup>(x)(x − a) + (1 ∕ (2!))f<sup>&Prime;</sup>(x)(x − a)<sup>2</sup> + (1 ∕ (6!))f<sup>&‌#8244;</sup>(x)(x − a)<sup>3</sup> + ...  
+  f(a) = f(x) + f′(x)(x − a) + (1 ∕ (2!))f″(x)(x − a)<sup>2</sup> + (1 ∕ (6!))f‴(x)(x − a)<sup>3</sup> + ...  
   f(a) &asymp; f(x) + f<sup>&prime;</sup>(x)(x − a); ignore the second derivative term,  
 then, f<sup>&prime;</sup>(x) = &part;f(x) ∕ &part;x = [&part;f(x) ∕ &part;x<sub>1</sub> &part;f(x) ∕ &part;x<sub>2</sub> ... &part;f(x) ∕ &part;x<sub>n</sub>]<sup>t</sup> = &nabla;f,
 
