@@ -29,9 +29,11 @@ Before proceed any further, we'd like to realize why (1) is the regularized form
 take x = [x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>]<sup>t</sup> &isin; R<sup>n</sup>,  
 then, begin from lim<sub>x&rarr;a</sub>f(x) = f(a), where x, a &isin; R<sup>n</sup>,  
 express lim<sub>x&rarr;a</sub>f(x) in terms of Taylor Series:  
-  f(a) = f(x) + f&‌#x2032;(x)(x − a) + (1 ∕ (2!))f&‌#x2033;(x)(x − a)<sup>2</sup> + (1 ∕ (6!))f&‌#x2034;(x)(x − a)<sup>3</sup> + ...  
-  f(a) &asymp; f(x) + f&‌#x2032;(x)(x − a); ignore the second derivative term,  
-then, f&‌#x2032;(x) = &part;f(x) ∕ &part;x = [&part;f(x) ∕ &part;x<sub>1</sub> &part;f(x) ∕ &part;x<sub>2</sub> ... &part;f(x) ∕ &part;x<sub>n</sub>]<sup>t</sup> = &nabla;f,
+f(a) = f(x) + f&‌#x2032;(x)(x − a) + (1 ∕ (2!))f&‌#x2033;(x)(x − a)<sup>2</sup> + (1 ∕ (6!))f&‌#x2034;(x)(x − a)<sup>3</sup> + ...  
+f(a) &asymp; f(x) + f&‌#x2032;(x)(x − a); ignore the second derivative term,  
+then, f&‌#x2032;(x) = &part;f(x) ∕ &part;x = [&part;f(x) ∕ &part;x<sub>1</sub> &part;f(x) ∕ &part;x<sub>2</sub> ... &part;f(x) ∕ &part;x<sub>n</sub>]<sup>t</sup> = &nabla;f,  
+f(a) &asymp; f(x) + (&nabla;f)<sup>t</sup>(x − a)<sub>n×1</sub>  
+>to be conti...  
 
 Suppose you are given an in−sample data set with certain property &nu; to train your learning algorithm with a hope to predict an out−sample data set with unknown and to be believed existed property &mu;.
 Does in−sample &nu; say anything about out−sample &mu;??  Where the in−sample and out−sample might consist of small balls in red, green, blue.  Both samples are coming from the same random generator.
