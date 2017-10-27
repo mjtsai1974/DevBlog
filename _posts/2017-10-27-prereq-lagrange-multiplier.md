@@ -25,7 +25,7 @@ To get the most optimal solution, &part;&#8466; ∕ &part;x<sub>1</sub> = 0, &pa
 
 Before proceed any further, we'd like to realize why (1) is the regularized formula for Lagrange Multiplier.
 
-take f(x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>) to be a continuous and differentiable function in R<sup>n</sup>,  
+>take f(x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>) to be a continuous and differentiable function in R<sup>n</sup>,  
 take x = [x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>]<sup>t</sup> &isin; R<sup>n</sup>,  
 then, begin from lim<sub>x&rarr;a</sub>f(x) = f(a), where x, a &isin; R<sup>n</sup>,  
 express lim<sub>x&rarr;a</sub>f(x) in terms of Taylor Series:  
