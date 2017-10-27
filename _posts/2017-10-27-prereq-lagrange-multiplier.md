@@ -31,7 +31,7 @@ then, begin from lim<sub>x&rarr;a</sub>f(x) = f(a), where x, a &isin; R<sup>n</s
 express lim<sub>x&rarr;a</sub>f(x) in terms of Taylor Series:  
 f(a) = f(x) + f&‌#x2032;(x)(x − a) + (1 ∕ (2!))f&‌#x2033;(x)(x − a)<sup>2</sup> + (1 ∕ (6!))f&‌#x2034;(x)(x − a)<sup>3</sup> + ...  
 f(a) &asymp; f(x) + f&‌#x2032;(x)(x − a); ignore the second derivative term,  
-then, f&‌#x2032;(x) = &part;f(x) ∕ &part;x = [&part;f(x) ∕ &part;x<sub>1</sub> &part;f(x) ∕ &part;x<sub>2</sub> ... &part;f(x) ∕ &part;x<sub>n</sub>]<sup>t</sup> = &nabla;f,  
+then, f&prime;(x) = &part;f(x) ∕ &part;x = [&part;f(x) ∕ &part;x<sub>1</sub> &part;f(x) ∕ &part;x<sub>2</sub> ... &part;f(x) ∕ &part;x<sub>n</sub>]<sup>t</sup> = &nabla;f,  
 f(a) &asymp; f(x) + (&nabla;f)<sup>t</sup>(x − a)<sub>n×1</sub>  
 
 >to be conti...  
