@@ -25,7 +25,13 @@ To get the most optimal solution, &part;&#8466; ∕ &part;x<sub>1</sub> = 0, &pa
 
 Before proceed any further, we'd like to realize why (1) is the regularized formula for Lagrange Multiplier.
 
->To be conti...
+>take f(x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>) to be a continuous and differentiable function in R<sup>n</sup>,  
+take x = [x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>]<sup>t</sup> &isin; R<sup>n</sup>,  
+then, begin from lim<sub>x&rarr;a</sub>f(x) = f(a), where x, a &isin; R<sup>n</sup>,  
+express lim<sub>x&rarr;a</sub>f(x) in terms of Taylor Series:  
+  f(a) = f(x) + f'(x)(x − a) + (1 ∕ (2!))f''(x)(x − a)<sup>2</sup> + (1 ∕ (6!))f'''(x)(x − a)<sup>3</sup> + ...  
+  f(a) &asymp; f(x) + f'(x)(x − a); ignore the second derivative term,  
+then, f'(x) = &part;f(x) ∕ &part;x = [&part;f(x) ∕ &part;x<sub>1</sub> &part;f(x) ∕ &part;x<sub>2</sub> ... &part;f(x) ∕ &part;x<sub>n</sub>]<sup>t</sup> = &nabla;f,
 
 Suppose you are given an in−sample data set with certain property &nu; to train your learning algorithm with a hope to predict an out−sample data set with unknown and to be believed existed property &mu;.
 Does in−sample &nu; say anything about out−sample &mu;??  Where the in−sample and out−sample might consist of small balls in red, green, blue.  Both samples are coming from the same random generator.
