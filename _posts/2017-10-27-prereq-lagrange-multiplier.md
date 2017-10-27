@@ -14,6 +14,7 @@ where g(x<sub>1</sub>, x<sub>2</sub>) = ax<sub>1</sub> + bx<sub>2</sub> + c = 0,
 
 Here comes the problem that not all objective parameters could be expressed in terms of other objective parameters in the constraint function.  
 
+### The Regularized Formula for Lagrange Multiplier
 We thus step further into the lagrange multiplier, usually, we will see:
 
 <p class="message">
@@ -23,7 +24,7 @@ where λ is the lagrange multiplier, and &#8466;(x<sub>1</sub>, x<sub>2</sub>, �
 
 To get the most optimal solution, &part;&#8466; ∕ &part;x<sub>1</sub> = 0, &part;&#8466; ∕ &part;x<sub>2</sub> = 0, &part;&#8466; ∕ &part;&lambda; = 0 must be mandatory!
 
-Before proceed any further, we'd like to realize why (1) is the regularized formula for Lagrange Multiplier.
+[1]Before proceed any further, we'd like to realize why (1) is the regularized formula for Lagrange Multiplier.
 
 >take f(x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>) to be a continuous and differentiable function in R<sup>n</sup>,  
 take x = [x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>]<sup>t</sup> &isin; R<sup>n</sup>,  
@@ -33,6 +34,8 @@ f(a) = f(x) + f&prime;(x)(x − a) + (1 ∕ (2!))f&Prime;(x)(x − a)<sup>2</sup
 f(a) &asymp; f(x) + f&prime;(x)(x − a); ignore the second derivative term,  
 then, f&prime;(x) = &part;f(x) ∕ &part;x = [&part;f(x) ∕ &part;x<sub>1</sub> &part;f(x) ∕ &part;x<sub>2</sub> ... &part;f(x) ∕ &part;x<sub>n</sub>]<sup>t</sup> = &nabla;f,  
 f(a) &asymp; f(x) + (&nabla;f)<sup>t</sup>(x − a)<sub>n×1</sub>  
+
+[2]Next, we discuss single constraint condition:
 
 >to be conti...  
 
