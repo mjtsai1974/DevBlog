@@ -24,8 +24,9 @@ where λ is the lagrange multiplier, and &#8466;(x<sub>1</sub>, x<sub>2</sub>, �
 
 To get the most optimal solution, &part;&#8466; ∕ &part;x<sub>1</sub> = 0, &part;&#8466; ∕ &part;x<sub>2</sub> = 0, &part;&#8466; ∕ &part;&lambda; = 0 must be mandatory!
 
-[1]Before proceed any further, we'd like to realize why (1) is the regularized formula for Lagrange Multiplier.
+Before proceed any further, we'd like to realize why (1) is the regularized formula for Lagrange Multiplier.  
 
+[1]Expand f by means of Taylor Series:
 >take f(x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>) to be a continuous and differentiable function in R<sup>n</sup>,  
 take x = [x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>]<sup>t</sup> &isin; R<sup>n</sup>,  
 then, begin from lim<sub>x&rarr;a</sub>f(x) = f(a), where x, a &isin; R<sup>n</sup>,  
@@ -36,7 +37,6 @@ then, f&prime;(x) = &part;f(x) ∕ &part;x = [&part;f(x) ∕ &part;x<sub>1</sub>
 f(a) &asymp; f(x) + (&nabla;f)<sup>t</sup>(x − a)<sub>n×1</sub>  
 
 [2]Next, we discuss single constraint condition:
-
 >to be conti...  
 
 Suppose you are given an in−sample data set with certain property &nu; to train your learning algorithm with a hope to predict an out−sample data set with unknown and to be believed existed property &mu;.
