@@ -73,4 +73,4 @@ where &nabla;f = -&sum;<sub>k=1</sub><sup>m</sup>λ<sub>k</sub>&nabla;g<sub>k</s
 &#8466;(x, {λ<sub>k</sub>}) = f(x) + &sum;<sub>k</sub>λ<sub>k</sub>g<sub>k</sub>(x), for k = 1 to m  
 &#10114;to find the extreme value(min/max), we need:  
 &nabla;<sub>x</sub>&#8466; = &nabla;f + &sum;<sub>k=1</sub><sup>m</sup>λ<sub>k</sub>&nabla;g<sub>k</sub> = 0 ... (c)  
-&nabla;<sub>λ<sub>k</sub></sub>&#8466; = g<sub>k</sub>(x) = 0 for k = 1, 2,..., m ... (d)  
+&nabla;<sub>λ<sub>k</sub></sub>&#8466; = g<sub>k</sub>(x) = 0 for k = 1 to m ... (d)  
