@@ -66,10 +66,11 @@ g(x) = a<sub>1</sub>x<sub>1</sub><sup>d1</sup> + a<sub>2</sub>x<sub>2</sub><sup>
 >∵the regularization by using the lagrange multiplier would further reduce the magnitude of &nabla;f, the final &nabla;f would be normal vector with small magnitude(length), thus the small error when we project &nabla;f onto &nabla;g.
 
 ### The Lagrange Multiplier and Multiple Constraints
->succeeding to conclusion in above paragraph, suppose we are asking for min/max f(x), subject to g<sub>k</sub>(x) = 0, x &isin; R<sup>n</sup>,  k = 1 to m, and g<sub>k</sub>(x) is continuous and differentiable,  
+>&#10112;succeeding to conclusion in above paragraph, suppose we are asking for min/max f(x), subject to g<sub>k</sub>(x) = 0, x &isin; R<sup>n</sup>,  k = 1 to m, and g<sub>k</sub>(x) is continuous and differentiable,  
 where &nabla;f = -&sum;<sub>k=1</sub><sup>m</sup>λ<sub>k</sub>&nabla;g<sub>k</sub>  
 &hArr; &nabla;f &isin; span{&nabla;g<sub>1</sub>, &nabla;g<sub>2</sub>,..., &nabla;g<sub>m</sub>}  
-=>refine Lagrange Multiplier likelihood function, we have &#8466;(x, {λ<sub>k</sub>}) = f(x) + &sum;<sub>k=1</sub><sup>m</sup>λ<sub>k</sub>g<sub>k</sub>(x)  
-to find the extreme value(min/max), we need:  
-&nabla;<sub>x</sub>&#8466; = &nabla;f + &sum;<sub>k=1</sub><sup>m</sup>λ<sub>k</sub>&nabla;g<sub>k</sub> = 0  
-&nabla;<sub>λ<sub>k</sub></sub>&#8466; = g<sub>k</sub>(x) = 0 for k = 1, 2,..., m
+&#10113;refine Lagrange Multiplier likelihood function, we have:  
+&#8466;(x, {λ<sub>k</sub>}) = f(x) + &sum;<sub>k</sub>λ<sub>k</sub>g<sub>k</sub>(x), for k = 1 to m  
+&#10114;to find the extreme value(min/max), we need:  
+&nabla;<sub>x</sub>&#8466; = &nabla;f + &sum;<sub>k=1</sub><sup>m</sup>λ<sub>k</sub>&nabla;g<sub>k</sub> = 0 ... (c) 
+&nabla;<sub>λ<sub>k</sub></sub>&#8466; = g<sub>k</sub>(x) = 0 for k = 1, 2,..., m ... (d)
