@@ -42,8 +42,16 @@ f(a) &asymp; f(x) + (&nabla;f)<sup>t</sup>(x − a)<sub>n×1</sub>
 g(a) &asymp; g(x) + g&prime;(x)(x − a)  
 &#160;&#160;&#160;&#160;&#160;= g(x) + (&nabla;g)<sup>t</sup>(x − a)<sub>n×1</sub>  
 =>if a is also the point on the hypersurface, then, g(x) = g(a) = 0, we can treat (x − a) &rarr; 0, since x is very closed to a and conclude that (&nabla;g)<sup>t</sup>(x − a)<sub>n×1</sub> = 0  
-=>that is to say (&nabla;g)<sup>t</sup> is the normal vector orthogonal to the hypersurface at the point a, where we can have (&nabla;g)<sup>t</sup> &asymp; lim<sub>x&rarr;a</sub>[(g(x) − g(a)) ∕ (x − a)]  
-=>cautions must be made that level curve of f(x) might hit onto the hypersurface of g(x) at the point x, with an infinitesimal distance to the point a, say it &‌epsilon;, where x + &‌epsilon; = a  
+=>that is to say (&nabla;g)<sup>t</sup> is the normal vector orthogonal to the hypersurface at the point a, where we can have:  
+(&nabla;g)<sup>t</sup> &asymp; lim<sub>x&rarr;a</sub>[(g(x) − g(a)) ∕ (x − a)]  
+=>cautions must be made that level curve of function f might hit onto the hypersurface of function g at the point x, with an infinitesimal distance to the point a, say it &‌epsilon;, where x + &‌epsilon; = a  
 =>then, &nabla;f might not be full parallel to &nabla;g, we should have:  
 &Delta; = &nabla;f − Proj<sub>&nabla;g</sub>(&nabla;f) ... &ne; 0  
-&#160;&#160;&#160;&#160; = &nabla;f − (((&nabla;f)<sup>t</sup> &sdot; &nabla;g) ∕ ||&nabla;g||<sup>2</sup>) &sdot; &nabla;g
+&#160;&#160;&#160;&#160; = &nabla;f − (((&nabla;f)<sup>t</sup> &sdot; &nabla;g) ∕ ||&nabla;g||<sup>2</sup>) &sdot; &nabla;g  
+&because;&‌epsilon;&rarr;0, x&rarr;a, we thus have &Delta; &asymp; 0  
+&there4;&Delta; = &nabla;f − &‌lambda;&nabla;g &asymp; 0, where &‌lambda; = (((&nabla;f)<sup>t</sup> &sdot; &nabla;g) ∕ ||&nabla;g||<sup>2</sup>)  
+or, we can directly say that &nabla;f &isin; span{&nabla;g}  
+=>if your AI algorithm works well, then &‌epsilon;&rarr;0, such that &nabla;f = &‌lambda;&nabla;g could hold  
+
+
+
