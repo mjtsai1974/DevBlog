@@ -55,8 +55,8 @@ or, we can directly say that &nabla;f &isin; span{&nabla;g}
 [3]Lagrangian representation in most application design
 >In most application design, Lagrange Multiplier likelihood function is expressed as:  
 &#8466;(x, λ) = f(x) + λg(x), x &isin; R<sup>n</sup>,  
-&part;&#8466; ∕ &part;x = &nabla;f + λ&nabla;g ... (a)
-&part;&#8466; ∕ &part;λ = 0 ... (b)
+&part;&#8466; ∕ &part;x = &nabla;f + λ&nabla;g ... (a)  
+&part;&#8466; ∕ &part;λ = 0 ... (b)  
 =>Resolve above two equations (a), (b) to get λ:  
 &#10112;if λ = 0, then, &nabla;f = 0 means that &nabla;f(x<sup>*</sup>) = 0 and g(x<sup>*</sup>) = 0 just satisfy the constraint function, where  
 g(x) = a<sub>1</sub>x<sub>1</sub><sup>d1</sup> + a<sub>2</sub>x<sub>2</sub><sup>d2</sup> + ... + a<sub>n</sub>x<sub>n</sub><sup>dn</sup> + C = 0, x &isin; R<sup>n</sup>  
