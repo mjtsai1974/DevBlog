@@ -4,7 +4,7 @@ title: Lagrange Multiplier
 ---
 
 ## Why Lagrange Multiplier?
-Suppose you are given a function f(x<sub>1</sub>, x<sub>2</sub>), and would like to find out its extreme, subject to a constraint function g(x<sub>1</sub>, x<sub>2</sub>) = 0; 
+Suppose you are given a function f(x<sub>1</sub>, x<sub>2</sub>), and would like to find out its extreme, subject to a constraint function g(x<sub>1</sub>, x<sub>2</sub>) = 0;  
 where g(x<sub>1</sub>, x<sub>2</sub>) = ax<sub>1</sub> + bx<sub>2</sub> + c = 0, with a, b, c to be any scalar.
 
 >The possible solution:  
@@ -22,7 +22,7 @@ We thus step further into the lagrange multiplier, usually, we will see:
 where λ is the lagrange multiplier, and &#8466;(x<sub>1</sub>, x<sub>2</sub>, λ) is the maximum likelihood function for us to come out with the λ that can optimize the extreme value of &#8466;
 </p>
 
-To get the most optimal solution, &part;&#8466; ∕ &part;x<sub>1</sub> = 0, &part;&#8466; ∕ &part;x<sub>2</sub> = 0, &part;&#8466; ∕ &part;&lambda; = 0 must be mandatory!
+To get the most optimal solution, &part;&#8466; ∕ &part;x<sub>1</sub> = 0, &part;&#8466; ∕ &part;x<sub>2</sub> = 0, &part;&#8466; ∕ &part;λ = 0 must be mandatory!
 
 Before proceed any further, we'd like to realize why (1) is the regularized formula for Lagrange Multiplier.  
 
@@ -49,9 +49,9 @@ g(a) &asymp; g(x) + g&prime;(x)(x − a)
 &Delta; = &nabla;f − Proj<sub>&nabla;g</sub>(&nabla;f) ... &ne; 0  
 &#160;&#160;&#160;&#160; = &nabla;f − (((&nabla;f)<sup>t</sup> &sdot; &nabla;g) ∕ ||&nabla;g||<sup>2</sup>) &sdot; &nabla;g  
 &‌#8757;&epsilon;&rarr;0, x&rarr;a, we thus have &Delta; &asymp; 0  
-&there4;&Delta; = &nabla;f − &‌lambda;&nabla;g &asymp; 0, where &‌lambda; = (((&nabla;f)<sup>t</sup> &sdot; &nabla;g) ∕ ||&nabla;g||<sup>2</sup>)  
+&there4;&Delta; = &nabla;f − λ&nabla;g &asymp; 0, where λ = (((&nabla;f)<sup>t</sup> &sdot; &nabla;g) ∕ ||&nabla;g||<sup>2</sup>)  
 or, we can directly say that &nabla;f &isin; span{&nabla;g}  
-=>if your AI algorithm works well, then &epsilon;&rarr;0, such that &nabla;f = &‌lambda;&nabla;g could hold  
+=>if your AI algorithm works well, then &epsilon;&rarr;0, such that &nabla;f = λ&nabla;g could hold  
 
 
 
