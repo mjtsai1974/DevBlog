@@ -48,7 +48,7 @@ g(a) &asymp; g(x) + g&prime;(x)(x − a)
 =>then, &nabla;f might not be full parallel to &nabla;g, we should have:  
 &Delta; = &nabla;f − Proj<sub>&nabla;g</sub>(&nabla;f) ... &ne; 0  
 &#160;&#160;&#160;&#160; = &nabla;f − (((&nabla;f)<sup>t</sup> &sdot; &nabla;g) ∕ ||&nabla;g||<sup>2</sup>) &sdot; &nabla;g  
- &‌#8757;&epsilon;&rarr;0, x&rarr;a, we thus have &Delta; &asymp; 0  
+<a>&‌#8757;</a>&epsilon;&rarr;0, x&rarr;a, we thus have &Delta; &asymp; 0  
 &there4;&Delta; = &nabla;f − λ&nabla;g &asymp; 0, where λ = (((&nabla;f)<sup>t</sup> &sdot; &nabla;g) ∕ ||&nabla;g||<sup>2</sup>)  
 or, we can directly say that &nabla;f &isin; span{&nabla;g}  
 =>if your AI algorithm works well, then &epsilon;&rarr;0, such that &nabla;f = λ&nabla;g could hold  
