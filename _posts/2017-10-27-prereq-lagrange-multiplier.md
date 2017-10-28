@@ -59,6 +59,6 @@ or, we can directly say that &nabla;f &isin; span{&nabla;g}
 &part;&#8466; ∕ &part;λ = 0 ... (b)
 =>Resolve above two equations (a), (b) to get λ:  
 &#10112;if λ = 0, then, &nabla;f = 0 means that &nabla;f(x<sup>*</sup>) = 0 and g(x<sup>*</sup>) = 0 just satisfy the constraint function, where  
-g(x) = a<sub>1</sub>x<sub>1</sub><sup>d1</sup> + a<sub>2</sub>x<sub>2</sub><sup>d2</sup> + ... + a<sub>n</sub>x<sub>n</sub><sup>dn</sup> + C = 0, x &isin; R<sup>n</sup>
+g(x) = a<sub>1</sub>x<sub>1</sub><sup>d1</sup> + a<sub>2</sub>x<sub>2</sub><sup>d2</sup> + ... + a<sub>n</sub>x<sub>n</sub><sup>dn</sup> + C = 0, x &isin; R<sup>n</sup>  
 &#10113;if λ &ne; 0, then, &nabla;f = -λ&nabla;g, it implies that &nabla;f and &nabla;g are inverse parallel, where f(x) has a extreme(min/max) at this point x<sup>*</sup>(so does g(x))  
 
