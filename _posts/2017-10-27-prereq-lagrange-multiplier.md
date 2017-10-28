@@ -56,5 +56,5 @@ or, we can directly say that &nabla;f &isin; span{&nabla;g}
 >In most application design, Lagrange Multiplier likelihood function is expressed as:  
 &#8466;(x, λ) = f(x) + λg(x), x &isin; R<sup>n</sup>,  
 &part;&#8466; ∕ &part;x = &nabla;f + λ&nabla;g  
-&#8466; ∕ &part;λ = 0
+&#8466; ∕ &part;λ = 0  
 =>Resolve above two equations to get λ:  
