@@ -44,7 +44,7 @@ g(a) &asymp; g(x) + g&prime;(x)(x − a)
 =>if a is also the point on the hypersurface, then, g(x) = g(a) = 0, we can treat (x − a) &rarr; 0, since x is very closed to a and conclude that (&nabla;g)<sup>t</sup>(x − a)<sub>n×1</sub> = 0  
 =>that is to say (&nabla;g)<sup>t</sup> is the normal vector orthogonal to the hypersurface at the point a, where we can have:  
 (&nabla;g)<sup>t</sup> &asymp; lim<sub>x&rarr;a</sub>[(g(x) − g(a)) ∕ (x − a)]  
-=>cautions must be made that level curve of function f might hit onto the hypersurface of function g at the point x, with an infinitesimal distance to the point a, say it &‌epsilon;, where x + &‌epsilon; = a  
+=>cautions must be made that level curve of function f might hit onto the hypersurface of function g at the point x, with an infinitesimal distance to the point a, say it &epsilon;, where x + &epsilon; = a  
 =>then, &nabla;f might not be full parallel to &nabla;g, we should have:  
 &Delta; = &nabla;f − Proj<sub>&nabla;g</sub>(&nabla;f) ... &ne; 0  
 &#160;&#160;&#160;&#160; = &nabla;f − (((&nabla;f)<sup>t</sup> &sdot; &nabla;g) ∕ ||&nabla;g||<sup>2</sup>) &sdot; &nabla;g  
