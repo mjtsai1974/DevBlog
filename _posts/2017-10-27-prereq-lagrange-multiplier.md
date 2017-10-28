@@ -46,4 +46,4 @@ g(a) &asymp; g(x) + g&prime;(x)(x − a)
 =>cautions must be made that level curve of f(x) might hit onto the hypersurface of g(x) at the point x, with an infinitesimal distance to the point a, say it &‌epsilon;, where x + &‌epsilon; = a  
 =>then, &nabla;f might not be full parallel to &nabla;g, we should have:  
 &Delta; = &nabla;f − Proj<sub>&nabla;g</sub>(&nabla;f) ... &ne; 0  
-&#160;&#160;&#160;&#160; = &nabla;f − (((&nabla;f)<sup>t</sup>&nabla;g) ∕ ||&nabla;g||<sup>2</sup>)&nabla;g
+&#160;&#160;&#160;&#160; = &nabla;f − (((&nabla;f)<sup>t</sup> &sdot; &nabla;g) ∕ ||&nabla;g||<sup>2</sup>) &sdot; &nabla;g
