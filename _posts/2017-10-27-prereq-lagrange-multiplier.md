@@ -37,7 +37,13 @@ then, f&prime;(x) = &part;f(x) ∕ &part;x = [&part;f(x) ∕ &part;x<sub>1</sub>
 f(a) &asymp; f(x) + (&nabla;f)<sup>t</sup>(x − a)<sub>n×1</sub>  
 
 [2]Next, we discuss single constraint condition:
->to be conti...  
+>suppose we are asking for min/max f(x), subject to g(x) = 0, x &isin; R<sup>n</sup>,  where g(x) = 0 is a hypersurface on R<sup>n</sup> and g(x) is continuous, differentiable,  
+express lim<sub>x&rarr;a</sub>g(x) = g(a) in terms of Taylor Series:  
+then, g(a) &asymp; g(x) + g&prime;(x)(x − a)  
+&#160;&#160;&#160;&#160;&#160;= g(x) + (&nabla;g)<sup>t</sup>(x − a)<sub>n×1</sub>  
+=>if a is also on the hypersurface, then, g(x) = g(a) = 0, we can treat (x − a) &rarr; 0, since x is very closed to a and conclude that (&nabla;g)<sup>t</sup>(x − a)<sub>n×1</sub> = 0.  
+=>that is to say (&nabla;g)<sup>t</sup> is the normal vector orthogonal to the hypersurface at the point a, where we can have (&nabla;g)<sup>t</sup> &asymp; lim<sub>x&rarr;a</sub>[(g(x) − g(a)) ∕ (x − a)]
+=>
 
 Suppose you are given an in−sample data set with certain property &nu; to train your learning algorithm with a hope to predict an out−sample data set with unknown and to be believed existed property &mu;.
 Does in−sample &nu; say anything about out−sample &mu;??  Where the in−sample and out−sample might consist of small balls in red, green, blue.  Both samples are coming from the same random generator.
