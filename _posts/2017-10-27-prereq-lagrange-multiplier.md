@@ -62,3 +62,9 @@ or, we can directly say that &nabla;f &isin; span{&nabla;g}
 g(x) = a<sub>1</sub>x<sub>1</sub><sup>d1</sup> + a<sub>2</sub>x<sub>2</sub><sup>d2</sup> + ... + a<sub>n</sub>x<sub>n</sub><sup>dn</sup> + C = 0, x &isin; R<sup>n</sup>  
 &#10113;if λ &ne; 0, then, &nabla;f = -λ&nabla;g, it implies that &nabla;f and &nabla;g are inverse parallel, where f(x) has a extreme(min/max) at this point x<sup>*</sup>(so does g(x))  
 
+[4]Why &nabla;f and &nabla;g are inverse parallel?
+>∵the regularization by using the lagrange multiplier would further reduce the magnitude of &nabla;f, the final &nabla;f would be normal vector with small magnitude(length), thus the small error when we project &nabla;f onto &nabla;g.
+
+### The Lagrange Multiplier and Multiple Constraints
+
+
