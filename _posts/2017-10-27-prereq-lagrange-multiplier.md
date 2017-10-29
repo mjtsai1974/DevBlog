@@ -71,7 +71,7 @@ This design expects a minimum magnitude of the gradient after regularization at 
 ![Inverse Parallel]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-10-27-prereq-lagrange-multiplier-inverse-parallel.png "to have a minimum magnitude of the regularization")
 
 ### What to choose in between &#8466;(x, λ) = f(x) + λg(x) v.s. &#8466;(x, λ) = f(x) − λg(x)
->It depends on exactly your design of regularization algorithm and how good you believe your regularization can work.  If you aims at reducing the prediction error(&Delta;),  
+>It depends on exactly your design of regularization algorithm and how good you believe your regularization can work.  If you aims at reducing the prediction error(&Delta;),
 then, &#8466;(x, λ) = f(x) − λg(x) might be the most appropriate, whereas, inverse parallel version of &#8466;(x, λ) = f(x) + λg(x) would make the point on minimizing the magnitude of &nabla;f which is orthogonal to the hyperplane.  Both guarantee the projecting
 sample data onto &nabla;f would we have the minimal error(see below pic for intuition).  
 One thing interest is that by choosing &#8466;(x, λ) = f(x) + λg(x), the λ is negative; nevertheless, &#8466;(x, λ) = f(x) − λg(x) would come out with positive λ, concluded from the 2 combination, we should have the lagrgarian in a more regularized expression:  
