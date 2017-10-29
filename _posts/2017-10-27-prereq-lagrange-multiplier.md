@@ -50,8 +50,7 @@ g(a) &asymp; g(x) + g&prime;(x)(x − a) = g(x) + (&nabla;g)<sup>t</sup> &sdot;(
 ∵&epsilon;&rarr;0, x&rarr;a, we thus have &Delta; &asymp; 0  
 &there4;&Delta; = &nabla;f − λ&nabla;g &asymp; 0, where λ = (((&nabla;f)<sup>t</sup> &sdot; &nabla;g) ∕ ||&nabla;g||<sup>2</sup>)  
 or, we can directly say that &nabla;f &isin; span{&nabla;g}  
-&#10118;if your AI algorithm works well, then &epsilon;&rarr;0, such that &nabla;f = λ&nabla;g could hold  
-We illustrate this concept of projecting &nabla;f onto &nabla;g, see below pic.
+&#10118;if your AI algorithm works well, then &epsilon;&rarr;0, such that &nabla;f = λ&nabla;g could hold, we illustrate this concept of projecting &nabla;f onto &nabla;g, see below pic(the picture is just by intuition).  
 
 ![Project &nabla;f onto &nabla;g]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-10-27-prereq-lagrange-multiplier-projection.png "if &epsilon;&rarr;0, then &nabla;f = λ&nabla;g")
 
@@ -70,6 +69,15 @@ g(x) = a<sub>1</sub>x<sub>1</sub><sup>d1</sup> + a<sub>2</sub>x<sub>2</sub><sup>
 This design expects a minimum magnitude of the gradient after regularization at the tangent point where the level curve and the hypersurface of the constraint function.
 
 ![Inverse Parallel]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-10-27-prereq-lagrange-multiplier-inverse-parallel.png "to have a minimum magnitude of the regularization")
+
+### What to choose in between &#8466;(x, λ) = f(x) + λg(x) v.s. &#8466;(x, λ) = f(x) − λg(x)
+>It depends on exactly your design of regularization algorithm and how good you believe your regularization can work.  If you aims at reducing the prediction error(&Delta;),  
+then, &#8466;(x, λ) = f(x) − λg(x) might be the most appropriate, whereas, inverse parallel version of &#8466;(x, λ) = f(x) + λg(x) would make the point on minimizing the magnitude of &nabla;f which is orthogonal to the hyperplane, thus guarantee the projecting  
+sample data onto &nabla;f would we have the minimal error(see below pic for intuition).  
+One thing interest is that by choosing &#8466;(x, λ) = f(x) + λg(x), the λ is negative; nevertheless, &#8466;(x, λ) = f(x) − λg(x) would come out with positive λ, concluded from the 2 combination, we should have the lagrgarian in a more regularized expression:  
+&#8466;(x, λ) = f(x) + sign(λ)λg(x), where sign(λ) is negative.
+
+
 
 ### The Lagrange Multiplier and Multiple Constraints
 >&#10112;succeeding to conclusion in above paragraph, suppose we are asking for min/max f(x), subject to g<sub>k</sub>(x) = 0, x &isin; R<sup>n</sup>,  k = 1 to m, and g<sub>k</sub>(x) is continuous and differentiable,  
