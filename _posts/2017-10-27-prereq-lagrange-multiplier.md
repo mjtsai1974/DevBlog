@@ -51,8 +51,9 @@ g(a) &asymp; g(x) + g&prime;(x)(x − a) = g(x) + (&nabla;g)<sup>t</sup> &sdot;(
 &there4;&Delta; = &nabla;f − λ&nabla;g &asymp; 0, where λ = (((&nabla;f)<sup>t</sup> &sdot; &nabla;g) ∕ ||&nabla;g||<sup>2</sup>)  
 or, we can directly say that &nabla;f &isin; span{&nabla;g}  
 &#10118;if your AI algorithm works well, then &epsilon;&rarr;0, such that &nabla;f = λ&nabla;g could hold  
+We illustrate this concept of projecting &nabla;f onto &nabla;g, see below pic.
 
-![Alt text]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-10-27-prereq-lagrange-multiplier-projection.png "Optional title")
+![Project &nabla;f onto &nabla;g]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-10-27-prereq-lagrange-multiplier-projection.png "if &epsilon;&rarr;0, then &nabla;f = λ&nabla;g")
 
 [3]Lagrangian representation in most application design
 >In most application design, Lagrange Multiplier likelihood function is expressed as:  
