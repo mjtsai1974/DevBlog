@@ -66,7 +66,7 @@ g(x) = a<sub>1</sub>x<sub>1</sub><sup>d1</sup> + a<sub>2</sub>x<sub>2</sub><sup>
 &#10113;if λ &ne; 0, then, &nabla;f = -λ&nabla;g, it implies that &nabla;f and &nabla;g are inverse parallel, where f(x) has a extreme(min/max) at this point x<sup>*</sup>(so does g(x))  
 
 [4]Why &nabla;f and &nabla;g are inverse parallel?
->∵the regularization by using the lagrange multiplier would further reduce the magnitude of &nabla;f, the final &nabla;f would be normal vector with small magnitude(length), thus the small error when we project &nabla;f onto &nabla;g.  
+>∵the regularization by using the lagrange multiplier would further reduce the magnitude of &nabla;f, the final &nabla;f would be normal vector with small magnitude(length), thus the small error when we project sample data onto &nabla;f.  
 This design expects a minimum magnitude of the gradient after regularization at the tangent point where the level curve and the hypersurface of the constraint function.
 
 ![Inverse Parallel]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-10-27-prereq-lagrange-multiplier-inverse-parallel.png "to have a minimum magnitude of the regularization")
