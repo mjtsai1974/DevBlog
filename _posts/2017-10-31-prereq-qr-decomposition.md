@@ -13,7 +13,7 @@ A = B&sdot;X</br>
 This article will show you the way to prove it, we will begin from Gram-Schmit Procedure, then, briefly introduce to the projection matrix, then, migrate to triangular matrix, finally to prove the QR decomposition.    
 </p>
 
-###Gram-Schmit procedure
+### Gram-Schmit procedure
 >Given a set of linear independent vectors, say S = {v<sub>1</sub>, v<sub>2</sub>,..., v<sub>p</sub>} &isin; R<sup>n</sup>,  
 >define vectors u<sub>i</sub>, 1 &le; i &le; p by   
 >u<sub>i</sub> = v<sub>i</sub> − [((v<sub>i</sub>)<sup>t</sup> &sdot; u<sub>1</sub>) ∕ ((u<sub>1</sub>)<sup>t</sup> &sdot; u<sub>1</sub>)] &sdot; u<sub>1</sub> − [((v<sub>i</sub>)<sup>t</sup> &sdot; u<sub>2</sub>) ∕ ((u<sub>2</sub>)<sup>t</sup> &sdot; u<sub>2</sub>)] &sdot; u<sub>2</sub> − [((v<sub>i</sub>)<sup>t</sup> &sdot; u<sub>3</sub>) ∕ ((u<sub>3</sub>)<sup>t</sup> &sdot; u<sub>3</sub>)] &sdot; u<sub>3</sub> − ... − [((v<sub>i</sub>)<sup>t</sup> &sdot; u<sub>i−1</sub>) ∕ ((u<sub>i−1</sub>)<sup>t</sup> &sdot; u<sub>i−1</sub>)] &sdot; u<sub>i−1</sub>  
