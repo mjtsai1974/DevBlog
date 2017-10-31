@@ -5,28 +5,45 @@ title: QR Decomposition
 
 ## QR Decomposition
 <p class="message">
-QR decomposition claims that:</br>
-A = B&sdot;X</br>
-&#160;&#160;&#160;= B&sdot;D&sdot;E&sdot;X</br> 
-&#160;&#160;&#160;= Q&sdot;R</br>
-</br>
+QR decomposition claims that A = B&sdot;X = B&sdot;D&sdot;E&sdot; = Q&sdot;R.
 This article will show you the way to prove it, we will begin from Gram-Schmit Procedure, then, briefly introduce to the projection matrix, then, migrate to triangular matrix, finally to prove the QR decomposition.    
 </p>
 
-### Gram-Schmit procedure
->Given a set of linear independent vectors, say S = {v<sub>1</sub>, v<sub>2</sub>,..., v<sub>p</sub>} &isin; R<sup>n</sup>,  
+### Gram-Schmit Procedure
+>Given a set of linear independent vectors set S = {v<sub>1</sub>, v<sub>2</sub>,..., v<sub>p</sub>} &isin; R<sup>n</sup>,  
 >define vectors u<sub>i</sub>, 1 &le; i &le; p by   
 >u<sub>i</sub> = v<sub>i</sub> − [((v<sub>i</sub>)<sup>t</sup> &sdot; u<sub>1</sub>) ∕ ((u<sub>1</sub>)<sup>t</sup> &sdot; u<sub>1</sub>)] &sdot; u<sub>1</sub> − [((v<sub>i</sub>)<sup>t</sup> &sdot; u<sub>2</sub>) ∕ ((u<sub>2</sub>)<sup>t</sup> &sdot; u<sub>2</sub>)] &sdot; u<sub>2</sub> − [((v<sub>i</sub>)<sup>t</sup> &sdot; u<sub>3</sub>) ∕ ((u<sub>3</sub>)<sup>t</sup> &sdot; u<sub>3</sub>)] &sdot; u<sub>3</sub> − ... − [((v<sub>i</sub>)<sup>t</sup> &sdot; u<sub>i−1</sub>) ∕ ((u<sub>i−1</sub>)<sup>t</sup> &sdot; u<sub>i−1</sub>)] &sdot; u<sub>i−1</sub>  
->      
-Here comes the problem that not all objective parameters could be expressed in terms of other objective parameters in the constraint function.  
+>the set T = {u<sub>1</sub>, u<sub>2</sub>,..., u<sub>p</sub>} is a linear independent orthonormal set and aoan(S) = span(T)  
+>we just have below holds:  
+>u<sub>1</sub> = v<sub>1</sub>  
+>u<sub>2</sub> = v<sub>2</sub> − [((v<sub>2</sub>)<sup>t</sup> &sdot; u<sub>1</sub>) ∕ ((u<sub>1</sub>)<sup>t</sup> &sdot; u<sub>1</sub>)] &sdot; u<sub>1</sub>  
+>u<sub>3</sub> = v<sub>3</sub> − [((v<sub>3</sub>)<sup>t</sup> &sdot; u<sub>1</sub>) ∕ ((u<sub>1</sub>)<sup>t</sup> &sdot; u<sub>1</sub>)] &sdot; u<sub>1</sub> − [((v<sub>3</sub>)<sup>t</sup> &sdot; u<sub>2</sub>) ∕ ((u<sub>2</sub>)<sup>t</sup> &sdot; u<sub>2</sub>)] &sdot; u<sub>2</sub>  
+>u<sub>4</sub> = v<sub>4</sub> − [((v<sub>4</sub>)<sup>t</sup> &sdot; u<sub>1</sub>) ∕ ((u<sub>1</sub>)<sup>t</sup> &sdot; u<sub>1</sub>)] &sdot; u<sub>1</sub> − [((v<sub>4</sub>)<sup>t</sup> &sdot; u<sub>2</sub>) ∕ ((u<sub>2</sub>)<sup>t</sup> &sdot; u<sub>2</sub>)] &sdot; u<sub>2</sub> − [((v<sub>4</sub>)<sup>t</sup> &sdot; u<sub>3</sub>) ∕ ((u<sub>3</sub>)<sup>t</sup> &sdot; u<sub>3</sub>)] &sdot; u<sub>3</sub>  
+>...  
+>u<sub>p</sub> = v<sub>p</sub> − [((v<sub>p</sub>)<sup>t</sup> &sdot; u<sub>1</sub>) ∕ ((u<sub>1</sub>)<sup>t</sup> &sdot; u<sub>1</sub>)] &sdot; u<sub>1</sub> − [((v<sub>p</sub>)<sup>t</sup> &sdot; u<sub>2</sub>) ∕ ((u<sub>2</sub>)<sup>t</sup> &sdot; u<sub>2</sub>)] &sdot; u<sub>2</sub> − ... − [((v<sub>p</sub>)<sup>t</sup> &sdot; u<sub>p−1</sub>) ∕ ((u<sub>p−1</sub>)<sup>t</sup> &sdot; u<sub>p−1</sub>)] &sdot; u<sub>p−1</sub>
 
-### The Regularized Formula for Lagrange Multiplier
-We thus step further into the lagrange multiplier, usually, we will see:
+### Prove Gram-Schmit Procedure by means of Projection Matrix
+Begin by projection matrix to prove Gram-Schmit Procedure illustrated in below pic:   
+![Project y onto column space of x]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-10-31-prereq-qr-decomposition-projection-matrix.png "Project y onto column space of x")
 
-<p class="message">
-&#8466;(x<sub>1</sub>, x<sub>2</sub>, λ) = f(x<sub>1</sub>, x<sub>2</sub>) + λ(x<sub>1</sub>, x<sub>2</sub>) ... (1),  
-where λ is the lagrange multiplier, and &#8466;(x<sub>1</sub>, x<sub>2</sub>, λ) is the maximum likelihood function for us to come out with the λ that can optimize the extreme value of &#8466;
-</p>
+>take x &sdot; b = y<sub>proj</sub>, the projection of y onto C(x), where C(x) is the column space spanned by vector x  
+>C(x) &perp; (y − x &sdot; b), then    
+>=>C(x) &sdot; (y − x &sdot; b) = 0,  
+>=>x<sup>t</sup> &sdot; (y − x &sdot; b) = 0,  
+>=>x<sup>t</sup> &sdot; x &sdot; b =  x<sup>t</sup> &sdot; y,  
+>=>b = (x<sup>t</sup> &sdot; x)<sup>−</sup> &sdot; x<sup>t</sup> &sdot; y; where (x<sup>t</sup> &sdot; x)<sup>−</sup> is the generalized inverse form,       
+>=>y<sub>proj</sub> = x &sdot; (x<sup>t</sup> &sdot; x)<sup>−</sup> &sdot; x<sup>t</sup> &sdot; y       
+>∵x is itself a column vector, then (x<sup>t</sup> &sdot; x)<sup>−</sup> = (x<sup>t</sup> &sdot; x)<sup>−1</sup> just holds, for the vector x is in the spanning set/basis    
+>&there4;y<sub>proj</sub> = [(x<sup>t</sup> &sdot; y) ∕ (x<sup>t</sup> &sdot; x)] &sdot; x = [(y<sup>t</sup> &sdot; x) ∕ (x<sup>t</sup> &sdot; x)] &sdot; x 
+
+To further explain Gram-Schmit Procedure in terms of Projection Matrix:
+>take y as v<sub>2</sub>, x as u<sub>1</sub>, where u<sub>1</sub> = v<sub>1</sub>, then      
+>u<sub>2</sub> = v<sub>2</sub> − [((u<sub>1</sub>)<sup>t</sup> &sdot; v<sub>2</sub>) ∕ ((u<sub>1</sub>)<sup>t</sup> &sdot; u<sub>1</sub>)] &sdot; u<sub>1</sub>, where the second term is just the projection of v<sub>2</sub> onto u<sub>1</sub>  
+>u<sub>3</sub> = v<sub>3</sub> − Proj<sub>w<sub>2</sub></sub>(v<sub>3</sub>), where w<sub>2</sub> = Span(u<sub>1</sub>, u<sub>2</sub>)   
+>&#160;&#160;&#160;&#160;&#160;= v<sub>3</sub> − Proj<sub>u<sub>1</sub></sub>(v<sub>3</sub>) − Proj<sub>u<sub>2</sub></sub>(v<sub>3</sub>)      
+>&#160;&#160;&#160;&#160;&#160;= v<sub>3</sub> − [((u<sub>1</sub>)<sup>t</sup> &sdot; v<sub>3</sub>) ∕ ((u<sub>1</sub>)<sup>t</sup> &sdot; u<sub>1</sub>)] &sdot; u<sub>1</sub> − [((u<sub>2</sub>)<sup>t</sup> &sdot; v<sub>3</sub>) ∕ ((u<sub>2</sub>)<sup>t</sup> &sdot; u<sub>2</sub>)] &sdot; u<sub>2</sub> 
+>the flow is exhibited by below pic:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-10-31-prereq-qr-decomposition-multiple-projection.png "")
 
 To get the most optimal solution, &part;&#8466; ∕ &part;x<sub>1</sub> = 0, &part;&#8466; ∕ &part;x<sub>2</sub> = 0, &part;&#8466; ∕ &part;λ = 0 must be mandatory!
 
