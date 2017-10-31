@@ -42,8 +42,8 @@ To further explain Gram-Schmit Procedure in terms of Projection Matrix:
 >u<sub>3</sub> = v<sub>3</sub> − Proj<sub>w<sub>2</sub></sub>(v<sub>3</sub>), where w<sub>2</sub> = Span(u<sub>1</sub>, u<sub>2</sub>)   
 >&#160;&#160;&#160;&#160;&#160;= v<sub>3</sub> − Proj<sub>u<sub>1</sub></sub>(v<sub>3</sub>) − Proj<sub>u<sub>2</sub></sub>(v<sub>3</sub>)      
 >&#160;&#160;&#160;&#160;&#160;= v<sub>3</sub> − [((u<sub>1</sub>)<sup>t</sup> &sdot; v<sub>3</sub>) ∕ ((u<sub>1</sub>)<sup>t</sup> &sdot; u<sub>1</sub>)] &sdot; u<sub>1</sub> − [((u<sub>2</sub>)<sup>t</sup> &sdot; v<sub>3</sub>) ∕ ((u<sub>2</sub>)<sup>t</sup> &sdot; u<sub>2</sub>)] &sdot; u<sub>2</sub> 
->the flow is exhibited by below pic:  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-10-31-prereq-qr-decomposition-multiple-projection.png "")
+>the flow is exhibited by below pic:    
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-10-31-prereq-qr-decomposition-multiple-projection.png "Gram-Schmit from multi-projection")
 
 To get the most optimal solution, &part;&#8466; ∕ &part;x<sub>1</sub> = 0, &part;&#8466; ∕ &part;x<sub>2</sub> = 0, &part;&#8466; ∕ &part;λ = 0 must be mandatory!
 
