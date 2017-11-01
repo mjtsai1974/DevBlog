@@ -62,7 +62,7 @@ the following:
 * [Hoeffding Inequality v.s. Law of Large Number]({{ site.github.repo }}{{ site.baseurl }}/2017/10/24/prereq-hoeffding-vs-law-large-number/)
 <!-- * <a href="{{ site.github.repo }}{{ site.baseurl }}/2017/10/24/prereq-hoeffding-vs-law-large-number/">Hoeffding Inequality v.s. Law of Large Number</a> --> <!-- this also works -->
 * [Lagrange Multiplier]({{ site.github.repo }}{{ site.baseurl }}/2017/10/27/prereq-lagrange-multiplier/)
-* QR Decomposition
+* [QR Decomposition]({{ site.github.repo }}{{ site.baseurl }}/2017/10/31/prereq-qr-decomposition/)
 * Cholesky Decomposition
 * Spatial Value Decomposition(SVD)
 * Introduction to Alpha Distribution
