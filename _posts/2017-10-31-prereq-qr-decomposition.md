@@ -98,8 +98,7 @@ X<sub>1,1</sub> X<sub>1,2</sub> X<sub>1,3</sub> X<sub>1,4</sub> .... X<sub>1,p</
  0     0   X<sub>3,3</sub> X<sub>3,4</sub> .... X<sub>3,p</sub>
  0     0    0   X<sub>4,4</sub> .... X<sub>4,p</sub>
    ..................
- 0     0    0   0  ....   X<sub>p,p</sub>
-</pre></div>
+ 0     0    0   0  ....   X<sub>p,p</sub></pre></div>
 >then,  
 >A<sub>m×p</sub> = [a<sub>1</sub>|a<sub>2</sub>|...|a<sub>p</sub>],    
 >B<sub>m×p</sub> = [b<sub>1</sub>|b<sub>2</sub>|...|b<sub>p</sub>],  
