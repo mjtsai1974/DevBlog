@@ -10,7 +10,7 @@ This article will show you the way to prove it, we will begin from Gram-Schmit P
 </p>
 
 ### Gram-Schmit Procedure
->Given a set of linear independent vectors set S = {v<sub>1</sub>, v<sub>2</sub>,..., v<sub>p</sub>} &isin; R<sup>n</sup>,  
+>Given a set of linear independent vectors set S = {v<sub>1</sub>, v<sub>2</sub>,..., v<sub>p</sub>} &isin; R<sup>m</sup>,  
 >define vectors u<sub>i</sub>, 1 &le; i &le; p by   
 >u<sub>i</sub> = v<sub>i</sub> − [((v<sub>i</sub>)<sup>t</sup> &sdot; u<sub>1</sub>) ∕ ((u<sub>1</sub>)<sup>t</sup> &sdot; u<sub>1</sub>)] &sdot; u<sub>1</sub> − [((v<sub>i</sub>)<sup>t</sup> &sdot; u<sub>2</sub>) ∕ ((u<sub>2</sub>)<sup>t</sup> &sdot; u<sub>2</sub>)] &sdot; u<sub>2</sub> − [((v<sub>i</sub>)<sup>t</sup> &sdot; u<sub>3</sub>) ∕ ((u<sub>3</sub>)<sup>t</sup> &sdot; u<sub>3</sub>)] &sdot; u<sub>3</sub> − ... − [((v<sub>i</sub>)<sup>t</sup> &sdot; u<sub>i−1</sub>) ∕ ((u<sub>i−1</sub>)<sup>t</sup> &sdot; u<sub>i−1</sub>)] &sdot; u<sub>i−1</sub>  
 >the set T = {u<sub>1</sub>, u<sub>2</sub>,..., u<sub>p</sub>} is a linear independent orthonormal set and aoan(S) = span(T)  
@@ -100,8 +100,8 @@ X<sub>1,1</sub> X<sub>1,2</sub> X<sub>1,3</sub> X<sub>1,4</sub> .... X<sub>1,p</
    ..................
  0     0    0   0  ....   X<sub>p,p</sub></pre></div>
 >then,  
->A<sub>m×p</sub> = [a<sub>1</sub>|a<sub>2</sub>|...|a<sub>p</sub>],    
->B<sub>m×p</sub> = [b<sub>1</sub>|b<sub>2</sub>|...|b<sub>p</sub>],  
+>A<sub>m×p</sub> = [a<sub>1</sub>|a<sub>2</sub>|...|a<sub>p</sub>], where a<sub>i</sub> &isin; R<sup>m</sup>,  
+>B<sub>m×p</sub> = [b<sub>1</sub>|b<sub>2</sub>|...|b<sub>p</sub>], where b<sub>i</sub> &isin; R<sup>m</sup>,    
 >
 >take D = diag(||b<sub>1</sub>||<sup>−1</sup>, ||b<sub>2</sub>||<sup>−1</sup>, ||b<sub>3</sub>||<sup>−1</sup>,...,||b<sub>p</sub>||<sup>−1</sup>)  
 >take Q = B &sdot; D = diag(b<sub>1</sub> ∕ ||b<sub>1</sub>||, b<sub>2</sub> ∕ ||b<sub>2</sub>||, b<sub>3</sub> ∕  ||b<sub>3</sub>||,..., b<sub>p</sub> ∕ ||b<sub>p</sub>||)  
