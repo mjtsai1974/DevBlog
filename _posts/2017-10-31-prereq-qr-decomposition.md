@@ -64,9 +64,31 @@ Further refine the notation in Gram-Schmit and Formula Representation:
 >At this moment, the proof has validated Gram-Schmit by the projection matrix
 
 ### Express Gram-Schmit Procedure in Matrix Product
+Advance one step to represent Gram-Schmit Procedure by matrix product:
+>if we take X<sub>i,j</sub> = ((b<sub>i</sub>)<sup>t</sup> &sdot; a<sub>j</sub>) ∕ ((b<sub>i</sub>)<sup>t</sup> &sdot; b<sub>i</sub>), then, we could have:  
+>b<sub>1</sub> = a<sub>1</sub>  
+>b<sub>2</sub> = a<sub>2</sub> − X<sub>1,2</sub> &sdot; b<sub>1</sub>  
+>b<sub>3</sub> = a<sub>3</sub> − X<sub>1,3</sub> &sdot; b<sub>1</sub> − X<sub>2,3</sub> &sdot; b<sub>2</sub>  
+>b<sub>4</sub> = a<sub>4</sub> − X<sub>1,4</sub> &sdot; b<sub>1</sub> − X<sub>2,4</sub> &sdot; b<sub>2</sub> − X<sub>3,4</sub> &sdot; b<sub>3</sub>  
+>...  
+>b<sub>p</sub> = a<sub>p</sub> − X<sub>1,p</sub> &sdot; b<sub>1</sub> − X<sub>2,p</sub> &sdot; b<sub>2</sub> − X<sub>3,p</sub> &sdot; b<sub>3</sub> − ... − X<sub>p−2,p</sub> &sdot; b<sub>p−2</sub> − X<sub>p−1,p</sub> &sdot; b<sub>p−1</sub>  
 
+Then, express a<sub>i</sub> in terms of b<sub>i</sub>&prime;s:
+>a<sub>1</sub> = b<sub>1</sub>  
+>a<sub>2</sub> = b<sub>2</sub> + X<sub>1,2</sub> &sdot; b<sub>1</sub>  
+>a<sub>3</sub> = b<sub>3</sub> + X<sub>1,3</sub> &sdot; b<sub>1</sub> + X<sub>2,3</sub> &sdot; b<sub>2</sub>  
+>a<sub>4</sub> = b<sub>4</sub> + X<sub>1,4</sub> &sdot; b<sub>1</sub> + X<sub>2,4</sub> &sdot; b<sub>2</sub> + X<sub>3,4</sub> &sdot; b<sub>3</sub>  
+>...  
+>a<sub>p</sub> = b<sub>p</sub> + X<sub>1,p</sub> &sdot; b<sub>1</sub> + X<sub>2,p</sub> &sdot; b<sub>2</sub> + X<sub>3,p</sub> &sdot; b<sub>3</sub> + ... + X<sub>p−2,p</sub> &sdot; b<sub>p−2</sub> + X<sub>p−1,p</sub> &sdot; b<sub>p−1</sub>  
 
-Before proceed any further, we'd like to realize why (1) is the regularized formula for Lagrange Multiplier.  
+Further refine:
+>take X<sub>i,i</sub> = 1, that is  
+>a<sub>1</sub> = X<sub>1,1</sub> &sdot; b<sub>1</sub>  
+>a<sub>2</sub> = X<sub>1,2</sub> &sdot; b<sub>1</sub> + X<sub>2,2</sub> &sdot; b<sub>2</sub>  
+>a<sub>3</sub> = X<sub>1,3</sub> &sdot; b<sub>1</sub> + X<sub>2,3</sub> &sdot; b<sub>2</sub> + X<sub>3,3</sub> &sdot; b<sub>3</sub>  
+>a<sub>4</sub> = X<sub>1,4</sub> &sdot; b<sub>1</sub> + X<sub>2,4</sub> &sdot; b<sub>2</sub> + X<sub>3,4</sub> &sdot; b<sub>3</sub> + X<sub>4,4</sub> &sdot; b<sub>4</sub>  
+>...  
+>a<sub>p</sub> = X<sub>1,p</sub> &sdot; b<sub>1</sub> + X<sub>2,p</sub> &sdot; b<sub>2</sub> + X<sub>3,p</sub> &sdot; b<sub>3</sub> + ... + X<sub>p−2,p</sub> &sdot; b<sub>p−2</sub> + X<sub>p−1,p</sub> &sdot; b<sub>p−1</sub> + X<sub>p,p</sub> &sdot; b<sub>p</sub>  
 
 [1]Expand f by means of Taylor Series
 >&#10112;take f(x<sub>1</sub>, x<sub>2</sub>,..., x<sub>n</sub>) to be a continuous and differentiable function in R<sup>n</sup>,  
