@@ -52,8 +52,19 @@ To further explain Gram-Schmit Procedure in terms of Projection Matrix:
 >finally, we can reach      
 >u<sub>p</sub> = v<sub>p</sub> − [((u<sub>1</sub>)<sup>t</sup> &sdot; v<sub>p</sub>) ∕ ((u<sub>1</sub>)<sup>t</sup> &sdot; u<sub>1</sub>)] &sdot; u<sub>1</sub> − [((u<sub>2</sub>)<sup>t</sup> &sdot; v<sub>p</sub>) ∕ ((u<sub>2</sub>)<sup>t</sup> &sdot; u<sub>2</sub>)] &sdot; u<sub>2</sub>  − ... −  [((u<sub>p−1</sub>)<sup>t</sup> &sdot; v<sub>p</sub>) ∕ ((u<sub>p−1</sub>)<sup>t</sup> &sdot; u<sub>p−1</sub>)] &sdot; u<sub>p−1</sub>
 
-Further refine the notation in Gram-Schmit:
->to be conti...  
+Further refine the notation in Gram-Schmit and Formula Representation:
+>take S = {v<sub>1</sub>, v<sub>2</sub>,..., v<sub>p</sub>} to be S = {a<sub>1</sub>, a<sub>2</sub>,..., a<sub>p</sub>}  
+>take T = {u<sub>1</sub>, u<sub>2</sub>,..., u<sub>p</sub>} to be T = {b<sub>1</sub>, b<sub>2</sub>,..., b<sub>p</sub>}  
+>b<sub>1</sub> = a<sub>1</sub>  
+>b<sub>2</sub> = a<sub>2</sub> − [((b<sub>1</sub>)<sup>t</sup> &sdot; a<sub>2</sub>) ∕ ((b<sub>1</sub>)<sup>t</sup> &sdot; b<sub>1</sub>)] &sdot; b<sub>1</sub>  
+>b<sub>3</sub> = a<sub>3</sub> − [((b<sub>1</sub>)<sup>t</sup> &sdot; a<sub>3</sub>) ∕ ((b<sub>1</sub>)<sup>t</sup> &sdot; b<sub>1</sub>)] &sdot; b<sub>1</sub> − [((b<sub>2</sub>)<sup>t</sup> &sdot; a<sub>3</sub>) ∕ ((b<sub>2</sub>)<sup>t</sup> &sdot; b<sub>2</sub>)] &sdot; b<sub>2</sub>  
+>b<sub>4</sub> = a<sub>4</sub> − [((b<sub>1</sub>)<sup>t</sup> &sdot; a<sub>4</sub>) ∕ ((b<sub>1</sub>)<sup>t</sup> &sdot; b<sub>1</sub>)] &sdot; b<sub>1</sub> − [((b<sub>2</sub>)<sup>t</sup> &sdot; a<sub>4</sub>) ∕ ((b<sub>2</sub>)<sup>t</sup> &sdot; b<sub>2</sub>)] &sdot; b<sub>2</sub> − [((b<sub>3</sub>)<sup>t</sup> &sdot; a<sub>4</sub>) ∕ ((b<sub>3</sub>)<sup>t</sup> &sdot; b<sub>3</sub>)] &sdot; b<sub>3</sub>  
+>...  
+>b<sub>p</sub> = a<sub>p</sub> − [((b<sub>1</sub>)<sup>t</sup> &sdot; a<sub>p</sub>) ∕ ((b<sub>1</sub>)<sup>t</sup> &sdot; b<sub>1</sub>)] &sdot; b<sub>1</sub> − [((b<sub>2</sub>)<sup>t</sup> &sdot; a<sub>p</sub>) ∕ ((b<sub>2</sub>)<sup>t</sup> &sdot; b<sub>2</sub>)] &sdot; b<sub>2</sub> − [((b<sub>3</sub>)<sup>t</sup> &sdot; a<sub>p</sub>) ∕ ((b<sub>3</sub>)<sup>t</sup> &sdot; b<sub>3</sub>)] &sdot; b<sub>3</sub> − ... − [((b<sub>p−1</sub>)<sup>t</sup> &sdot; a<sub>p</sub>) ∕ ((b<sub>p−1</sub>)<sup>t</sup> &sdot; b<sub>p−1</sub>)] &sdot; b<sub>p−1</sub>  
+>At this moment, the proof has validated Gram-Schmit by the projection matrix
+
+### Express Gram-Schmit Procedure in Matrix Product
+
 
 Before proceed any further, we'd like to realize why (1) is the regularized formula for Lagrange Multiplier.  
 
