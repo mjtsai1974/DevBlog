@@ -5,7 +5,7 @@ title: QR Decomposition
 
 ## QR Decomposition
 <p class="message">
-QR decomposition claims that A = B&sdot;X = B&sdot;D&sdot;E&sdot; = Q&sdot;R.
+QR decomposition claims that A = B&sdot;X = B&sdot;D&sdot;E&sdot; X = Q&sdot;R.
 This article will show you the way to prove it, we will begin from Gram-Schmit Procedure, then, briefly introduce to the projection matrix, then, migrate to triangular matrix, finally to prove the QR decomposition.    
 </p>
 
