@@ -18,12 +18,12 @@ Most widely used in machine learning with respect to linear regression, logistic
 ### Step into Gradient &nabla; of J(&Theta;)
 >take derivation of J(&Theta;) on &Theta;<sub>j</sub>, then we obtain:  
 
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-07-ml-found-gradient-descendent-size-m.png "")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-07-ml-found-gradient-descendent-size-m.png "m records of input data")
 
 >in gradient descendent, 1 ∕ m is required to average it.
 >if m = 1, then, we just have the j-th term as:  
 
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-07-ml-found-gradient-descendent-size-1.png "")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-07-ml-found-gradient-descendent-size-1.png "single input data")
 
 >since we are running batch gradient descendent
 
