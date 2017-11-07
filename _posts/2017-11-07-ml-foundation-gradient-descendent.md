@@ -26,3 +26,4 @@ Most widely used in machine learning with respect to linear regression, logistic
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-07-ml-found-gradient-descendent-size-1.png "single input data")
 
 ### Learning Rate &alpha;
+<!-- http://www.wiris.com/editor/demo/en/ -->
