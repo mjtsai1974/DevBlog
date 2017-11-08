@@ -30,7 +30,12 @@
   <!-- MathJax Configuration -->
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
-    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,  <!-- this means that you can use \$ to represent a dollar sign -->
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
   });
   </script>
   <script type="text/javascript" async

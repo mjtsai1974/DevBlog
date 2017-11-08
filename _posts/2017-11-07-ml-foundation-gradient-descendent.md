@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Gradient Descendent
-tag: mathjax
 ---
 
 ## Gradient Descendent
