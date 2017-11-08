@@ -26,4 +26,13 @@ Most widely used in machine learning with respect to linear regression, logistic
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-07-ml-found-gradient-descendent-size-1.png "single input data")
 
 ### Learning Rate &alpha;
-<!-- http://www.wiris.com/editor/demo/en/ -->
+
+>it is used to converge the result of gradient descendent.  The smaller value would believed to have a less fluctuation.
+
+### Put It Together
+
+>put everything together, we will have the j-the term of &Theta;, it is inclusive of the bias term &Theta;<sub>1</sub>:  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-07-ml-found-gradient-descendent-size-1.png "j-th term of &Theta;")
+
+>given X &isin; M<sub>m×n</sub>, &Theta; &isin; M<sub>n×1</sub>, Y &isin; M<sub>m×1</sub>, x<sup>i</sup> &isin; M<sub>n×1</sub>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><msub><mfenced open="[" close="]"><mtable><mtr><mtd><mo>-</mo><mo>(</mo><msup><mi>x</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></msup><msup><mo>)</mo><mi>t</mi></msup><mo>-</mo></mtd></mtr><mtr><mtd><mo>-</mo><mo>(</mo><msup><mi>x</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></msup><msup><mo>)</mo><mi>t</mi></msup><mo>-</mo></mtd></mtr><mtr><mtd><mo>.</mo><mo>.</mo><mo>.</mo></mtd></mtr><mtr><mtd><mo>-</mo><mo>(</mo><msup><mi>x</mi><mrow><mo>(</mo><mi>m</mi><mo>)</mo></mrow></msup><msup><mo>)</mo><mi>t</mi></msup><mo>-</mo></mtd></mtr></mtable></mfenced><mrow><mi>m</mi><mi>x</mi><mi>n</mi></mrow></msub></math>
