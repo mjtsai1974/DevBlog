@@ -8,6 +8,9 @@ title: Gradient Descendent
 Most widely used in machine learning with respect to linear regression, logistic regression for supervised learning.  But, the gradient descendent itself actually knows nothing when to stop!!    
 </p>
 
+<!-- After use MathJax from a CDN suggested from http://docs.mathjax.org/en/latest/start.html, I found MathML could be well expressed in Chrome browser -->
+<!-- Should we use LaTex or continue to follow MathML?  I think, for the simplicity, the LaTex would be future choice -->
+
 ### Begin from Cost Function in Simple Linear Regressoin(S.L.R)
 >take the cost function $J(\theta)=\frac1{2m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})^2$, where the purpose of S.L.R is to minimize $J(\theta)$.  
 <!-- >take the cost function <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>J</mi><mo>(</mo><mi>&#x3B8;</mi><mo>)</mo><mo>=</mo><mfrac><mstyle displaystyle="true"><mn>1</mn></mstyle><mstyle displaystyle="true"><mi>2m</mi></mstyle></mfrac><munderover><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>m</mi></munderover><mo>(</mo><msub><mi>h</mi><mi>&#x3B8;</mi></msub><mo>(</mo><msup><mi>x</mi><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></msup><mo>)</mo><mo>-</mo><msup><mi>y</mi><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></msup><msup><mo>)</mo><mn>2</mn></msup></math>, where the purpose of S.L.R is to minimize <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>J</mi><mo>(</mo><mi>&#x3B8;</mi><mo>)</mo></math>.   -->
@@ -20,11 +23,11 @@ Most widely used in machine learning with respect to linear regression, logistic
 <!-- >and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></math>, it is the intercept, or the bias term.   -->
 >as to the divide by 2m is an artificial design:  
 >&#10112;$\frac12$ is to eliminate the power of 2 in the square, after differentiation is taken.  
->&#10112;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> is to eliminate the power of 2 in the square, after differentiation is taken.  
+<!-- >&#10112;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> is to eliminate the power of 2 in the square, after differentiation is taken.   -->
 >&#10113;$\frac1m$ is to average all squared errors of m input rows of data.  
->&#10113;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mi>m</mi></mfrac></math> is to average all squared errors of m input rows of data.  
+<!-- >&#10113;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mi>m</mi></mfrac></math> is to average all squared errors of m input rows of data.  -->
 >&#10114;the superscribe(i) of $X$, $Y$ are the index of the input data record, means it is the i-th input data $X$, $Y$  
->&#10114;the superscribe(i) of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Y</mi></math> are the index of the input data record, means it is the i-th input data <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Y</mi></math>  
+<!-- >&#10114;the superscribe(i) of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Y</mi></math> are the index of the input data record, means it is the i-th input data <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Y</mi></math>   -->
 
 ### Step into Gradient &nabla; of J(&Theta;)
 >&#10112;take derivation of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>J</mi><mo>(</mo><mi>&#x3B8;</mi><mo>)</mo></math> on <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#x3B8;</mi><mi>j</mi></msub></math>, then we obtain:  
