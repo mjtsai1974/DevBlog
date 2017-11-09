@@ -98,7 +98,7 @@ After exploring in the prerequisites, you are supposed to come out with sufficie
 ### Neural Networks
 
 Neural network is the software or hardware emulation in the topology resembling to the organization of human brain.  H/W usually aims at speeding up.  S/W implementation wouldn't 
-be jargon-free.  It's quite difficult to realize the backward propagation, no even think to prove it in short.  Errors in N.N lectures could be found on the[Coursera](https://www.coursera.org/learn/machine-learning).
+be jargon-free.  It's quite difficult to realize the backward propagation, no even think to prove it in short.  Errors in N.N lectures could be found on the [Coursera](https://www.coursera.org/learn/machine-learning).
 Even the professor ANG said to us that he couldn't figure it out the proof in the on-line video.  Thanks for god, the mathematicians since the old times has left one stupid and 
 efficient method, guess what?  The mathematics induction, via which, we can easily show you the way backward propagation really means and the validity of its formula.
 
