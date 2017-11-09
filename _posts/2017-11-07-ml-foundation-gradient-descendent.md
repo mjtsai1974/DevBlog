@@ -17,10 +17,13 @@ Most widely used in machine learning with respect to linear regression, logistic
 >take $$X=\begin{bmatrix}x_1\\x_2\end{bmatrix}$$ as the input data  
 <!-- >take <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi><mo>=</mo><mfenced open="[" close="]"><mtable><mtr><mtd><msub><mi>x</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd><mi>x</mi><mn>2</mn></mtd></mtr></mtable></mfenced></math> as the input data   -->
 >and $x_1=1$, it is the intercept, or the bias term.  
->and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></math>, it is the intercept, or the bias term.  
+<!-- >and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></math>, it is the intercept, or the bias term.   -->
 >as to the divide by 2m is an artificial design:  
+>&#10112;$\frac12$ is to eliminate the power of 2 in the square, after differentiation is taken.  
 >&#10112;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> is to eliminate the power of 2 in the square, after differentiation is taken.  
+>&#10113;$\frac1m$ is to average all squared errors of m input rows of data.  
 >&#10113;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mi>m</mi></mfrac></math> is to average all squared errors of m input rows of data.  
+>&#10114;the superscribe(i) of $X$, $Y$ are the index of the input data record, means it is the i-th input data $X$, $Y$  
 >&#10114;the superscribe(i) of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Y</mi></math> are the index of the input data record, means it is the i-th input data <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Y</mi></math>  
 
 ### Step into Gradient &nabla; of J(&Theta;)
