@@ -76,6 +76,7 @@ We will illustrate with cost function of multiple parameters:
 
 >&#10113;for −&nabla;, the equation minus the negative gradient at learning rate &alpha; > 0, then, <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><msub><mi>x</mi><mn>1</mn></msub><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></msup><mo>=</mo><msup><msub><mi>x</mi><mn>1</mn></msub><mrow><mo>(</mo><mi>i</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow></msup><mo>+</mo><mi>&#x3B1;</mi><mo>&#xB7;</mo><mo>&#x2207;</mo><msub><mi>f</mi><msub><mi>x</mi><mn>1</mn></msub></msub><mo>(</mo><msup><msub><mi>x</mi><mn>1</mn></msub><mrow><mo>(</mo><mi>i</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow></msup><mo>,</mo><msup><msub><mi>x</mi><mn>2</mn></msub><mrow><mo>(</mo><mi>i</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow></msup><mo>)</mo></math>  
 >the <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><msub><mi>x</mi><mn>1</mn></msub><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></msup></math> would step forward to the optimal minimum.  
->both &#10112;, &#10113; work for <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>2</mn></msub></math> in this example, we thus prove it!!  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-07-ml-found-gradient-descendent-minus-neg-gradient.png "minus negative gradient")
+
+>both &#10112;, &#10113; work for <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>2</mn></msub></math> in this example, we thus prove it!!  
