@@ -15,7 +15,8 @@ Most widely used in machine learning with respect to linear regression, logistic
 >given $h_\theta(x)=\theta^t\cdot x$, where $$\theta=\begin{bmatrix}\theta_1\\\theta_2\end{bmatrix}$$ is the coefficients  
 <!-- >given <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>h</mi><mi>&#x3B8;</mi></msub><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>&#x3B8;</mi><mi>t</mi></msup><mo>&#xB7;</mo><mi>x</mi></math>, where <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x3B8;</mi><mo>=</mo><mfenced open="[" close="]"><mtable><mtr><mtd><msub><mi>&#x3B8;</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd><mi>&#x3B8;</mi><mn>2</mn></mtd></mtr></mtable></mfenced></math> is the coefficients,   -->
 >take $$X=\begin{bmatrix}x_1\\x_2\end{bmatrix}$$ as the input data  
->take <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi><mo>=</mo><mfenced open="[" close="]"><mtable><mtr><mtd><msub><mi>x</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd><mi>x</mi><mn>2</mn></mtd></mtr></mtable></mfenced></math> as the input data  
+<!-- >take <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi><mo>=</mo><mfenced open="[" close="]"><mtable><mtr><mtd><msub><mi>x</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd><mi>x</mi><mn>2</mn></mtd></mtr></mtable></mfenced></math> as the input data   -->
+>and $x_1=1$, it is the intercept, or the bias term.  
 >and <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></math>, it is the intercept, or the bias term.  
 >as to the divide by 2m is an artificial design:  
 >&#10112;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> is to eliminate the power of 2 in the square, after differentiation is taken.  
