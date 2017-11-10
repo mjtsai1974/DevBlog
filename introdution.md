@@ -52,6 +52,7 @@ The context of this bog just like current artificial intelligence, comes without
 * Neural Network
 * Support Vector Machine(SVM)
 * Deep Learning
+* Reinforcement Learning
 * Computer Graphics, 3D Rotation, Transformation and Quaternion
 
 ### Prerequisites
@@ -65,8 +66,8 @@ the following:
 * [QR Decomposition]({{ site.github.repo }}{{ site.baseurl }}/2017/10/31/prereq-qr-decomposition/)
 * Cholesky Decomposition
 * Spatial Value Decomposition(SVD)
-* Introduction to Alpha Distribution
 * Introduction to Gamma Distribution
+* Introduction to Beta Distribution
 * Introduction to F Distribution
 * Introduction to Chi-Square Distribution
 * Introduction to t Distribution
@@ -121,6 +122,16 @@ theorem to the formula deduction, finally algorithm of the real thing.
 ### Deep Learning
 
 Under construction...
+
+### Reinforcement Learning
+
+* Markov Chain
+* Markov Decision Process
+* Partial Observable Markov Decision Process
+* Q Learning Algorithm
+* Policy Iteration v.s. Value Iteration
+
+> The related posts would be new added in the future, and supposed you are comfortable with posts in prerequisite section. 
 
 ### Computer Graphics, 3D Rotation, Transformation and Quaternion
 
