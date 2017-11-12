@@ -115,7 +115,7 @@ Support vector machine targets in binary classification with a specific safe gua
 in my growth in machine learning foundation after CS221 on [Coursera](https://www.coursera.org/learn/machine-learning).  It took me almost 2 weeks to summary all the details from its 
 theorem to the formula deduction, finally algorithm of the real thing.
 
-* Support Vector machine Theorem
+* Support Vector Machine Theorem
 * What is KKT condition?
 * Operation flow in SVM algorithm
 
