@@ -25,7 +25,7 @@ Regularization aims at overfitting elimination; whereas underfitting should be i
 
 >Suppose you all realize and have the basic intuition about lagrange multiplier.  In this section, we will take the squared error part as the level curve, and is it subject to the constraint function of circle.  
 >Suppose again, the level curve hits the circle on the point $x$, very very close to the local extreme point of the circle, say it $a$.  We'd like to bring down the delta($\delta$) as much as closed to zero, that is $\nabla f\approx\nabla g$.  
->Since the $\nabla g$ if the normal vector and is perpendicular to the local extreme point $a$, then, we can then believe that we have reduced the projection error of delta($\delta$), $\nabla f$ would be as plausible solution as $$\nabla g$.
+>Since the $\nabla g$ if the normal vector and is perpendicular to the local extreme point $a$, then, we can then believe that we have reduced the projection error of delta($\delta$), $\nabla f$ would be as plausible solution as $\nabla g$.
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-11-ml-foundation-overfitting-vs-regularization-lagrangian.png "lagrangian achieves regularization of cost function")
 
