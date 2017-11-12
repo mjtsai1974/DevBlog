@@ -88,7 +88,7 @@ After exploring in the prerequisites, you are supposed to come out with sufficie
 
 * Hoeffding Inequality v.s Law of Large Number
 * [Gradient Descendent]({{ site.github.repo }}{{ site.baseurl }}/2017/11/07/ml-foundation-gradient-descendent/)
-* Overfitting v.s. Regularization by means of Lagrangian 
+* [Overfitting v.s. Regularization by means of Lagrangian]({{ site.github.repo }}{{ site.baseurl }}/2017/11/11/ml-foundation-overfitting-vs-regularization/)
 * Binary Classification
 * Principal Component Analysis(PCA by means of SVD)
 * K-means Algorithm
