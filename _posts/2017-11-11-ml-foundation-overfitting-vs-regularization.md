@@ -19,7 +19,6 @@ Regularization aims at overfitting elimination; whereas underfitting should be i
 >Given $h_\theta(x)=\theta^t\cdot x$, where $$\theta=\begin{bmatrix}\theta_1\\\theta_2\end{bmatrix}$$ is the coefficients.  
 >Take $$X=\begin{bmatrix}x_1\\x_2\end{bmatrix}$$ as the input data, and $x_1=1$, it is the intercept, or the bias term.  The superscribe(i) of $X$, $Y$ are the index of the input data record, means it is the i-th input data $X$, $Y$.  
 >Now, put an extra item after the cost function could we regularize our existsing cost function:  
->$\underset\theta{min}J(\theta)=\frac1{2m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})^2+\frac\lambda{2m}\sum_{j=1}^n\theta_j^2$  
 >$$
 \begin{array}{l}\underset\theta{min}J(\theta)=\frac1{2m}(\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})^2+\lambda\sum_{j=1}^n\theta_j^2);\;where\;h_\theta(x)=\theta^t\cdot x\\\theta_j=\theta_j-\;\frac\alpha m\frac{\partial J(\theta)}{\partial\theta_j}\\\;\;\;\;=\theta_j-\frac\alpha m\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})\cdot x_j^{(i)}-\frac\lambda m\theta_j;\;for\;j=1\;to\;n\end{array}
 $$
