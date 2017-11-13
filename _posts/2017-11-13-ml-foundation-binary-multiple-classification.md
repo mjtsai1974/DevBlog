@@ -37,6 +37,12 @@ $$h_\theta(x)=\frac1{1+e^{-\theta^t\cdot x}},\;where\;\left\{\begin{array}{l}\th
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-logistic-regression-function.png "the logistic regression function")
 
->We can have $h_\theta(x)=P(Y=1\vert x;\theta),\;the\;probablity\;of\;Y=1\;given\;x\;and\;\theta$  
+>We can then have $h_\theta(x)=P(Y=1\vert x;\theta),\;the\;probablity\;of\;Y=1\;given\;x\;and\;\theta$  
 >&#10112;$P(Y=1\vert x;\theta)+P(Y=0\vert x;\theta)=1$  
 >&#10113;$P(Y=1\vert x;\theta)=1-P(Y=0\vert x;\theta)$  
+
+### The Logistic Regression Cost Function
+>Can we re-using the cost function in linear regression model, $J(\theta)=\frac1{2m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})^2$ to be the logistic version of cost function?  The answer is <font color="red">no!!!</font>  Because the gradient descendent wouldn't be a smooth convex curve.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-LRM-CF-not-fit.png "the sigmoid gradient descendent curve not a convext curve")
+
