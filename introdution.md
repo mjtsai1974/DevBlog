@@ -76,6 +76,7 @@ the following:
 * Introduction to Poisson Distribution
 * Univariate Regression Model
 * Multivariate Regression Model
+* Degree of Freedom(dof)
 * F-test, Chi-square test, t-test and still other power test evaluation
 * (Log)Likelihood Ratio Test
 * Still others...
@@ -89,7 +90,7 @@ After exploring in the prerequisites, you are supposed to come out with sufficie
 * Hoeffding Inequality v.s Law of Large Number
 * [Gradient Descendent]({{ site.github.repo }}{{ site.baseurl }}/2017/11/07/ml-foundation-gradient-descendent/)
 * [Overfitting v.s. Regularization by means of Lagrangian]({{ site.github.repo }}{{ site.baseurl }}/2017/11/11/ml-foundation-overfitting-vs-regularization/)
-* Binary Classification
+* Binary and Multiple Classification
 * Principal Component Analysis(PCA by means of SVD)
 * K-means Algorithm
 * Collaborating Filtering Algorithm
