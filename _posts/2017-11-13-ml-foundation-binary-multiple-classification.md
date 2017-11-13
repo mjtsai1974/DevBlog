@@ -23,11 +23,11 @@ which is the same algorithm of binary classification.
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-tumor-non-maligant.png "m-1 record is non-maligant")
 
->After record m+1, m+2 have been added to the given sample, we get the new fitted regression line in graph labeled &#10113;, where m-1 th record is identified as maligant($Y=1$).
+>After record m+1, m+2 have been added to the given sample, we get the new fitted regression line in graph labeled &#10113;, watch out that <font color="red">m-1 th record is now identified as maligant($Y=1$)!!!</font>
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-tumor-maligant.png "m-1 record is now maligant after new records added in the same")
 
-><font color="blue">Caution must be made that by tradition, the fitted linear regression line could be biased with the input sample and $h_\theta(x)>1\;or\;<\;0$ could happen.</font>  What we want for binary classification  
->in this example is to classify $$\left\{\begin{array}{l}Y=1,\;h_\theta(x)\geq0.5\\Y=0,\;h_\theta(x)<0.5\end{array}\right.$$
+><font color="blue">Caution must be made that by tradition, the fitted linear regression line could be biased with the input sample and $h_\theta(x)>1\;or\;<\;0$ could happen.</font>  What we want for binary classification in this example is to classify  
+$$\left\{\begin{array}{l}Y=1,\;h_\theta(x)\geq0.5\\Y=0,\;h_\theta(x)<0.5\end{array}\right.$$
 >The linear regression model is likely to have $h_\theta(x)>1\;or\;<\;0$; while <font color="green">the logistic regression model has $0\leq h_\theta(x)\leq1$!!!</font>
 
