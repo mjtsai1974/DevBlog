@@ -31,3 +31,9 @@ which is the same algorithm of binary classification.
 $$\left\{\begin{array}{l}Y=1,\;h_\theta(x)\geq0.5\\Y=0,\;h_\theta(x)<0.5\end{array}\right.$$
 >The linear regression model is likely to have $h_\theta(x)>1\;or\;<\;0$; while <font color="green">the logistic regression model has $0\leq h_\theta(x)\leq1$!!!</font>
 
+### The Logistic Regression Function
+>It is also named as the sigmoid function, and defined as:
+$$h_\theta(x)=\frac1{1+e^{-\theta^t\cdot x}},\;where\;\left\{\begin{array}{l}\theta\in R^n,\;M_{n\times1}\\x\in R^n,\;M_{n\times1}\end{array}\right.$$
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-logistic-regression-function.png "the logistic regression function")
+
