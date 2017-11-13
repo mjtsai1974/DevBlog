@@ -46,3 +46,9 @@ $$h_\theta(x)=\frac1{1+e^{-\theta^t\cdot x}},\;where\;\left\{\begin{array}{l}\th
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-LRM-CF-not-fit.png "the sigmoid gradient descendent curve not a convext curve")
 
+>The major purpose of the cost function is to reduce the error of the model and gradient descendent could then be applied on to get the $\theta$ that can really have <font color="red">the smallest error.</font>  
+>Two key points must be clarified:  
+>&#10112;when $P(Y=1)\approx1$, the error from 1 for $P(Y=1)\approx0$
+>&#10113;when $P(Y=0)\approx1$, the error from 0 for $P(Y=0)\approx0$
+
+to be conti...
