@@ -37,3 +37,6 @@ $$h_\theta(x)=\frac1{1+e^{-\theta^t\cdot x}},\;where\;\left\{\begin{array}{l}\th
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-logistic-regression-function.png "the logistic regression function")
 
+>&#10112;$h_\theta(x)=P(Y=1\vert x;\theta),\;the\;probablity\;of\;Y=1\;given\;x\;and\;\theta$  
+>&#10113;$\P(Y=1\vert x;\theta)+P(Y=0\vert x;\theta)=1$  
+>&#10114;$\P(Y=1\vert x;\theta)=1-P(Y=0\vert x;\theta)$  
