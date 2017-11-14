@@ -88,3 +88,5 @@ $$\begin{array}{l}\frac{\partial(h_\theta(x^{(i)}))}{\partial\theta_j}\\=\frac{\
 >
 >&#10113;extend $1-h_\theta(x^{(i)})$ as:  
 $$1-h_\theta(x^{(i)})=1-\frac1{1+e^{-\theta^t\cdot x^{(i)}}}=\frac{e^{-\theta^t\cdot x^{(i)}}}{1+e^{-\theta^t\cdot x^{(i)}}}$$
+>
+>Take above &#10112; and &#10113; into the first order partial differential of $J(\theta)$:  
