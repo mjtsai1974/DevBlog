@@ -77,4 +77,8 @@ $$\begin{array}{l}\underset{REG}{J(\theta)}=-\frac1m\sum_{i=1}^m\lbrack y^{(i)}\
 >&#10112;$\frac{\partial J(\theta)}{\partial\theta_j}=\frac1m\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})\cdot x_j^{(i)},for\;j=1,$ <font color="red">the bias term, no need for regularization!!!</font>  
 >&#10113;$\frac{\partial J(\theta)}{\partial\theta_j}=\frac1m\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})\cdot x_j^{(i)}+\frac\lambda m\theta_j,\;for\;j>1$  
 >;where the term $h_\theta(x^{(i)})-y^{(i)}$ is just the intuitive concept, the proof should make the derivation on the regularized version of cost function, next, we take the action.  
->
+>Derivate the first part of cost function, we have below deduction:  
+$$\begin{array}{l}J(\theta)=-\frac1m\sum_{i=1}^m\lbrack y^{(i)}\cdot\log(h_\theta(x^{(i)}))+(1-y^{(i)})\cdot\log(1-h_\theta(x^{(i)}))\rbrack;\\where\;\;h_\theta(x)=\frac1{1+e^{-\theta^t\cdot x}},\;\theta\in R^n,\;x\in R^n,\\\frac{\partial J(\theta)}{\partial\theta_j}=\frac1m\sum_{i=1}^m\lbrack-y^{(i)}\cdot(h_\theta(x^{(i)}))^{-1}-(1-y^{(i)})\cdot(1-h_\theta(x^{(i)}))^{-1}\cdot\frac{\partial{(1-h_\theta(x^{(i)}))}}{\partial\theta_j}\rbrack\end{array}$$
+>;where we further express the partial derivative as:  
+>&#10112;  
+>&#10113;  
