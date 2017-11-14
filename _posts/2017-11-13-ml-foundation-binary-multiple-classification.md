@@ -50,5 +50,9 @@ $$h_\theta(x)=\frac1{1+e^{-\theta^t\cdot x}},\;where\;\left\{\begin{array}{l}\th
 >Two key points must be clarified:  
 >&#10112;when $P(Y=1)\approx1$, the error from 1 for $P(Y=1)\approx0$
 >&#10113;when $P(Y=0)\approx0$, the error from 0 for $P(Y=0)\approx0$
+>We thus define the cost function as:  
+$$\left\{\begin{array}{l}-\log(h_\theta(x)),\;for\;Y=1\\-\log(1-h_\theta(x)),\;for\;Y=0\end{array}\right.$$
+><font color="red">Why do we use log?</font>  Please recall $\log1=0$, whenever $h_\theta(x)\approx1$ or $h_\theta(x)\approx0$.  
+><font color="red">Why to have a minus sign?</font>  
 
-to be conti...
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-logistic-regression-cost-function.png "logistic regression cost function")
