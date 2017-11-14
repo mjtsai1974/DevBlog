@@ -82,8 +82,9 @@ $$\begin{array}{l}\underset{REG}{J(\theta)}=-\frac1m\sum_{i=1}^m\lbrack y^{(i)}\
 >Derivate the first part of cost function, we have below deduction:  
 $$\begin{array}{l}J(\theta)=-\frac1m\sum_{i=1}^m\lbrack y^{(i)}\cdot\log(h_\theta(x^{(i)}))+(1-y^{(i)})\cdot\log(1-h_\theta(x^{(i)}))\rbrack;\\where\;\;h_\theta(x)=\frac1{1+e^{-\theta^t\cdot x}},\;\theta\in R^n,\;x\in R^n,\\\frac{\partial J(\theta)}{\partial\theta_j}=\frac1m\sum_{i=1}^m\lbrack-y^{(i)}\cdot(h_\theta(x^{(i)}))^{-1}-(1-y^{(i)})\cdot(1-h_\theta(x^{(i)}))^{-1}\cdot\frac{\partial{(1-h_\theta(x^{(i)}))}}{\partial\theta_j}\rbrack\end{array}$$
 >
->We further express the partial derivative as:  
+>We make further expression:  
 >&#10112;the first order partial differential of $h_\theta(x^{(i)})$:  
 $$\begin{array}{l}\frac{\partial(h_\theta(x^{(i)}))}{\partial\theta_j}\\=\frac{\partial({\displaystyle\frac1{1+e^{-\theta^t\cdot x^{(i)}}}})}{\partial\theta_j}\\=\frac{\partial(1+e^{-\theta^t\cdot x^{(i)}})^{-1}}{\partial\theta_j}\\=(-1)\cdot\lbrack1+e^{-\theta^t\cdot x^{(i)}}\rbrack^{-2}\cdot(-x_j^{(i)}\cdot e^{-\theta^t\cdot x^{(i)}})\\=\lbrack1+e^{-\theta^t\cdot x^{(i)}}\rbrack^{-2}\cdot(x_j^{(i)}\cdot e^{-\theta^t\cdot x^{(i)}})\end{array}$$
+>
 >&#10113;extend $1-h_\theta(x^{(i)})$ as:  
 $$1-h_\theta(x^{(i)})=1-\frac1{1+e^{-\theta^t\cdot x^{(i)}}}=\frac{e^{-\theta^t\cdot x^{(i)}}}{1+e^{-\theta^t\cdot x^{(i)}}}$$
