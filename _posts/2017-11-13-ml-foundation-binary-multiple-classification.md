@@ -63,4 +63,6 @@ $$\begin{array}{l}J(\theta)=\frac1m\sum_{i=1}^m\cos t(h_\theta(x^{(i)}),y^{(i)})
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-logistic-regression-cost-function-wrt-Y.png "logistic regression cost function wrt Y")
 
-to be conti...
+>The graph exhibits some findings:   
+$$\left\{\begin{array}{l}\cos t(h_\theta(x^{(i)}),y^{(i)})=0,\;if\;h_\theta(x^{(i)})=y^{(i)}\\\cos t(h_\theta(x^{(i)}),y^{(i)})\approx\infty,\;if\;h_\theta(x^{(i)})\approx0,\;y^{(i)}=1\\\cos t(h_\theta(x^{(i)}),y^{(i)})\approx\infty,\;if\;h_\theta(x^{(i)})\approx1,\;y^{(i)}=0\end{array}\right.$$
+
