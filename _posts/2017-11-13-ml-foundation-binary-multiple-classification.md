@@ -73,5 +73,8 @@ $$\begin{array}{l}J(\theta)=-\frac1m\sum_{i=1}^m\lbrack y^{(i)}\cdot\log(h_\thet
 ### Regularization of The Logistic Regression Cost Function
 >Please remind the need of regularization of cost function, or you might struggle in the overfitting embarrassed situation.  We put an extra term at the end of existing cost function:  
 $$\begin{array}{l}\underset{REG}{J(\theta)}=-\frac1m\sum_{i=1}^m\lbrack y^{(i)}\cdot\log(h_\theta(x^{(i)}))+(1-y^{(i)})\cdot\log(1-h_\theta(x^{(i)}))\rbrack+\frac\lambda{2m}\sum_{j=1}^n\theta_j^2;\\where\;\theta\in R^n,\;M_{n\times1}\end{array}$$
->Then, we illustrate by intuition:  
-
+>For the ease of understand, we illustrate by intuition:  
+>&#10112;$\frac{\partial J(\theta)}{\partial\theta_j}=\frac1m\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})\cdot x_j^{(i)},for\;j=1,$ <font color="red">the bias term, no need for regularization!!!</font>  
+>&#10113;$\frac{\partial J(\theta)}{\partial\theta_j}=\frac1m\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})\cdot x_j^{(i)}+\frac\lambda m\theta_j,\;for\;j>1$  
+>;where the term $h_\theta(x^{(i)})-y^{(i)}$ is just the intuitive concept, the proof should make the derivation on the regularized version of cost function, next, we take the action.  
+>
