@@ -66,3 +66,12 @@ $$\begin{array}{l}J(\theta)=\frac1m\sum_{i=1}^m\cos t(h_\theta(x^{(i)}),y^{(i)})
 >The graph exhibits some findings:   
 $$\left\{\begin{array}{l}\cos t(h_\theta(x^{(i)}),y^{(i)})=0,\;if\;h_\theta(x^{(i)})=y^{(i)}\\\cos t(h_\theta(x^{(i)}),y^{(i)})\approx\infty,\;if\;h_\theta(x^{(i)})\approx0,\;y^{(i)}=1\\\cos t(h_\theta(x^{(i)}),y^{(i)})\approx\infty,\;if\;h_\theta(x^{(i)})\approx1,\;y^{(i)}=0\end{array}\right.$$
 
+>Now, we combine the two cases into one formula:  
+$$\begin{array}{l}J(\theta)=-\frac1m\sum_{i=1}^m\lbrack y^{(i)}\cdot\log(h_\theta(x^{(i)}))+(1-y^{(i)})\cdot\log(1-h_\theta(x^{(i)}))\rbrack,\\where\;\left\{\begin{array}{l}y^{(i)}=1,\;we\;have\;1-y^{(i)}=0\\y^{(i)}=0,\;we\;have\;1-y^{(i)}=1\end{array}\right.\end{array}$$
+>Thus, we chould have the 2 cases being operated in mutual exclusive flow.  
+
+### Regularization of The Logistic Regression Cost Function
+>Please remind the need of regularization of cost function, or you might struggle in the overfitting embarrassed situation.  We put an extra term at the end of existing cost function:  
+$$\begin{array}{l}\underset{REG}{J(\theta)}=-\frac1m\sum_{i=1}^m\lbrack y^{(i)}\cdot\log(h_\theta(x^{(i)}))+(1-y^{(i)})\cdot\log(1-h_\theta(x^{(i)}))\rbrack+\frac\lambda{2m}\sum_{j=1}^n\theta_j^2;\\where\;\theta\in R^n,\;M_{n\times1}\end{array}$$
+>Then, we illustrate by intuition:  
+
