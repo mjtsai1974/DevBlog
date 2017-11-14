@@ -52,7 +52,15 @@ $$h_\theta(x)=\frac1{1+e^{-\theta^t\cdot x}},\;where\;\left\{\begin{array}{l}\th
 >&#10113;when $P(Y=0)\approx0$, the error from 0 for $P(Y=0)\approx0$
 >We thus define the cost function as:  
 $$\left\{\begin{array}{l}-\log(h_\theta(x)),\;for\;Y=1\\-\log(1-h_\theta(x)),\;for\;Y=0\end{array}\right.$$
-><font color="red">Why do we use log?</font>  Please recall $\log1=0$, whenever $h_\theta(x)\approx1$ or $h_\theta(x)\approx0$.  
+><font color="red">Why do we use log?</font>     
 ><font color="red">Why to have a minus sign?</font>  
+>Please recall $\log1=0$, whenever $h_\theta(x)\approx1$ or $h_\theta(x)\approx0$.
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-logistic-regression-cost-function.png "logistic regression cost function")
+
+>Next to formulize it,  
+$$\begin{array}{l}J(\theta)=\frac1m\sum_{i=1}^m\cos t(h_\theta(x^{(i)}),y^{(i)}),\\where\;\cos t(h_\theta(x^{(i)}),y^{(i)})=\left\{\begin{array}{l}-\log(h_\theta(x^{(i)})),\;for\;y^{(i)}=1\\-\log(1-h_\theta(x^{(i)})),\;for\;y^{(i)}=0\end{array}\right.\end{array}$$
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-logistic-regression-cost-function-wrt-Y.png "logistic regression cost function wrt Y")
+
+to be conti...
