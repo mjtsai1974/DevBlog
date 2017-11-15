@@ -94,3 +94,24 @@ $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_j}\\=\frac1m\sum_{i=1
 >
 >Finally, take the second part together in the derivative, we get the total solution:  
 $$\frac{\partial J(\theta)_{REG}}{\partial\theta}=\frac{\displaystyle1}{\displaystyle m}\sum_{i=1}^m\lbrack-x^{(i)}\cdot y^{(i)}\cdot e^{-\theta^t\cdot x^{(i)}}+x^{(i)}\cdot(1-y^{(i)})\rbrack\cdot h_\theta(x^{(i)})+\frac\lambda m\theta$$
+
+### Multiple Classification
+>We now migrate to multiple classification.  There might exist more than one pattern in the given sampling, how do you plan to classify the object to the correct identity?  We introduce the most often used method, one-versus-all.  
+>Take $h_\theta^{(k)}(x^{(i)})=P(y^{(i)}=k\vert\theta^{(k)},x^{(i)});\;k=1,2,3,\;i=1\;to\;m,\;the\;count\;of\;data\;set$.  Next to illustrate one-versus-all method:  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-MC.png "multiple classification")
+
+>&#10112;train with $h_\theta^{(1)}(x^{(i)})$ to get the desired $\theta^{(1)}$ vector for class 1.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-MC-ova-1.png "one-versus-all step 1")
+
+>&#10113;train with $h_\theta^{(2)}(x^{(i)})$ to get the desired $\theta^{(2)}$ vector for class 2.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-MC-ova-2.png "one-versus-all step 2")
+
+>&#10114;train with $h_\theta^{(3)}(x^{(i)})$ to get the desired $\theta^{(3)}$ vector for class 3.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-13-ml-found-binary-multiple-classification-MC-ova-3.png "one-versus-all step 3")
+
+>After $\theta^{(k)}$ has been figured out, for any new input of $x^{(i)}$, where $i\geq m$, use $h_\theta^{(k)}(x^{(i)})$ to predict the output, and choose the maximum one as the object identity.  
+><font color="red">That is to say $\underset k{max}\;h_\theta^{(k)}(x^{(i)})$ as the identity of class k.</font>
