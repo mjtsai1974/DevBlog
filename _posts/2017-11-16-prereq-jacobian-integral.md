@@ -24,7 +24,7 @@ $$\begin{array}{l}\int_a^bf(x)\operatorname dx=\int_c^df(h(y))\cdot Dh(y)\operat
 >&#10114;we can say that the $Dh(y)$ is the ratio from $\operatorname dx$ to $\operatorname dy$, it is the <font color="red">jacobian</font>.
 
 ### Normalize The Jacobian
->Next, this article would enter into the field a little bit deeper by double integral to prove the formula and $\left|J\right|$:  
+>Next, this article would enter into the field a little bit deeper by double integral to prove the formula and what $\left|J\right|$ it is:  
 
 $$\iint\limits_Rf(x,y)\operatorname dx\operatorname dy=\iint\limits_Sf(h(u,v),k(u,v))\cdot\left|J\right|\operatorname du\operatorname dv$$
 
