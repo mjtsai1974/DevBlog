@@ -24,10 +24,8 @@ $$\begin{array}{l}\int_a^bf(x)\operatorname dx=\int_c^df(h(y))\cdot Dh(y)\operat
 >&#10114;we can say that the $Dh(y)$ is the ratio from $\operatorname dx$ to $\operatorname dy$, it is the <font color="red">jacobian</font>.
 
 ### Normalize The Jacobian
->Next, this article would enter into the field a little bit deeper by double integral to prove the formula and what $\left|J\right|$ it is:  
-
+>Next, this article would enter into the field a little bit deeper by double integral to prove the formula:  
 $$\iint\limits_Rf(x,y)\operatorname dx\operatorname dy=\iint\limits_Sf(h(u,v),k(u,v))\cdot\left|J\right|\operatorname du\operatorname dv$$
-
 >Let me give you a hint this proof is just to relate two sides of above equation with $\left|J\right|$, which is just a ratio due to system of coordinate of reference transformation from $x$, $y$ to $u$, $v$.  
 >proof:  
 >Take $x=h(u,v)$ and $y=k(u,v)$, we will prove by illustration:  
@@ -54,5 +52,5 @@ $$\begin{array}{l}\begin{bmatrix}\frac{\partial{h(u,v)}}{\partial u}\cdot\frac{\
 >Finally, we have conclusion below:  
 $$\begin{array}{l}area(R)\\=\triangle x\cdot\triangle y\\\cong\operatorname dx\cdot\operatorname dy\\\cong\left|J\right|\cdot\triangle u\cdot\triangle v\\\cong\left|J\right|\cdot\operatorname du\cdot\operatorname dv\\=area(S)\end{array}$$
 
->At this ending of proof, we can also treat $\left|J\right|$ to be the ratio from $area(R)$ to $area(S)$,  
->where $$area(R)=\left|J\right|\cdot area(S)$$.
+>At this ending of proof, we can also formulate below equation:  
+$$area(R)=\left|J\right|\cdot area(S)$$
