@@ -26,7 +26,6 @@ $$\begin{array}{l}\int_a^bf(x)\operatorname dx=\int_c^df(h(y))\cdot Dh(y)\operat
 ### Normalize The Jacobian
 >Next, this article would enter into the field a little bit deeper.  At this moment, we'd like to illustrate by using double integral.  We'd like to prove the formula and $\left|J\right|$:  
 $$\iint\limits_Rf(x,y)\operatorname dx\operatorname dy=\iint\limits_Sf(h(u,v),k(u,v))\cdot\left|J\right|\operatorname du\operatorname dv$$
->
 >Let me give you a hint this proof is just to relate two sides of above equation with $\left|J\right|$, which is just a ratio due to system of coordinate of reference transformation from $x$, $y$ to $u$, $v$.  
 >proof:  
 >Take $x=h(u,v)$ and $y=k(u,v)$, we will prove by illustration:  
