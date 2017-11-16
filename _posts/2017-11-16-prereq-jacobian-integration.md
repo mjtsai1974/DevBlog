@@ -10,8 +10,8 @@ Before proceeding any further, take a good look in this article would be quiet h
 </p>
 
 ### What Is Jacobian?
->Begin by a simple example, given $\int_a^bf(x)\operatorname dx$:  
+>Begin by a simple example, given $\int_a^bf(x)dx$:  
 >If we let $x=h(y)$, take derivation on $y$:  
-$$\frac{dx}{dy}=h^'(y)$$
+$$\frac{\partial x}{\partial y}=h^'(y)$$
 
 
