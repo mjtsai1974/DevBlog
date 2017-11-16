@@ -44,14 +44,15 @@ $$\overset\rightharpoonup{MN}=\left\langle\frac{\partial{h(u,v)}}{\partial u}\cd
 $$\overset\rightharpoonup{MQ}=\left\langle\frac{\partial{h(u,v)}}{\partial v}\cdot\triangle v,\frac{\partial{k(u,v)}}{\partial v}\cdot\triangle v\right\rangle$$
 
 >&#10115;thus, take the absolute value of $area(R)=area(S)=\overset\rightharpoonup{MN}\otimes\overset\rightharpoonup{MQ}$.  
->Continue to illustrate by geometric cross product:  
+
+>&#10116;continue to illustrate by geometric cross product:  
 $$\begin{array}{l}\begin{vmatrix}i&j&k\\\frac{\partial{h(u,v)}}{\partial u}\cdot\triangle u&\frac{\partial{k(u,v)}}{\partial u}\cdot\triangle u&0\\\frac{\partial{h(u,v)}}{\partial v}\cdot\triangle v&\frac{\partial{k(u,v)}}{\partial v}\cdot\triangle v&0\end{vmatrix}\\=\frac{\partial{h(u,v)}}{\partial u}\cdot\triangle u\cdot\frac{\partial{k(u,v)}}{\partial v}\cdot\triangle v-\frac{\partial{h(u,v)}}{\partial v}\cdot\triangle v\cdot\frac{\partial{k(u,v)}}{\partial u}\cdot\triangle u\\=\begin{bmatrix}\frac{\partial{h(u,v)}}{\partial u}\cdot\frac{\partial{k(u,v)}}{\partial v}-\frac{\partial{h(u,v)}}{\partial v}\cdot\frac{\partial{k(u,v)}}{\partial u}\end{bmatrix}\cdot\triangle u\cdot\triangle v\end{array}$$
 
->&#10116;make one more step, we can take the first part to be $\left|J\right|$ expressed in terms of $2\times2$ determinant:  
+>&#10117;make one more step, we can take the first part to be $\left|J\right|$ expressed in terms of $2\times2$ determinant:  
 $$\begin{array}{l}\begin{bmatrix}\frac{\partial{h(u,v)}}{\partial u}\cdot\frac{\partial{k(u,v)}}{\partial v}-\frac{\partial{h(u,v)}}{\partial v}\cdot\frac{\partial{k(u,v)}}{\partial u}\end{bmatrix}\\={\begin{vmatrix}\frac{\partial{h(u,v)}}{\partial u}&\frac{\partial{k(u,v)}}{\partial u}\\\frac{\partial{h(u,v)}}{\partial v}&\frac{\partial{k(u,v)}}{\partial v}\end{vmatrix}}_{2\times2\;detmiant}\\=\begin{vmatrix}J\end{vmatrix}\end{array}$$
 
->&#10117;finally, we have conclusion below:  
+>&#10118;finally, we have conclusion below:  
 $$\begin{array}{l}area(R)\\=\triangle x\cdot\triangle y\\\cong\operatorname dx\cdot\operatorname dy\\\cong\left|J\right|\cdot\triangle u\cdot\triangle v\\\cong\left|J\right|\cdot\operatorname du\cdot\operatorname dv\\=area(S)\end{array}$$
 
->At this ending stage, we can also formulate below equation, where jacobian is just the ratio from $area(R)$ to $area(S)$:  
+>&#10119;at this ending stage, we can also formulate below equation, where jacobian is just the ratio from $area(R)$ to $area(S)$:  
 $$area(R)=\left|J\right|\cdot area(S)$$
