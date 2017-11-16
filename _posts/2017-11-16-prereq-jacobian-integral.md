@@ -40,11 +40,11 @@ $$\begin{array}{l}\overset\rightharpoonup{MN}=\left\langle h(u+\triangle u,v)-h(
 >&#10113;to get back to $\overset\rightharpoonup{MN}$, we need to multiply by $\triangle u$ for both $h$ and $k$ terms.  Then, we have:  
 $$\overset\rightharpoonup{MN}=\left\langle\frac{\partial{h(u,v)}}{\partial u}\cdot\triangle u,\frac{\partial{k(u,v)}}{\partial u}\cdot\triangle u\right\rangle$$
 
->Above deduction holds for $\overset\rightharpoonup{MQ}$, apply it would we get similar result:  
+>&#10114;above deduction holds for $\overset\rightharpoonup{MQ}$, apply it would we get similar result:  
 $$\overset\rightharpoonup{MQ}=\left\langle\frac{\partial{h(u,v)}}{\partial v}\cdot\triangle v,\frac{\partial{k(u,v)}}{\partial v}\cdot\triangle v\right\rangle$$
 
->&#10114;thus, take the absolute value of $area(R)=area(S)=\overset\rightharpoonup{MN}\otimes\overset\rightharpoonup{MQ}$.  
->&#10115;continue to illustrate by geometric cross product:  
+>&#10115;thus, take the absolute value of $area(R)=area(S)=\overset\rightharpoonup{MN}\otimes\overset\rightharpoonup{MQ}$.  
+>Continue to illustrate by geometric cross product:  
 $$\begin{array}{l}\begin{vmatrix}i&j&k\\\frac{\partial{h(u,v)}}{\partial u}\cdot\triangle u&\frac{\partial{k(u,v)}}{\partial u}\cdot\triangle u&0\\\frac{\partial{h(u,v)}}{\partial v}\cdot\triangle v&\frac{\partial{k(u,v)}}{\partial v}\cdot\triangle v&0\end{vmatrix}\\=\frac{\partial{h(u,v)}}{\partial u}\cdot\triangle u\cdot\frac{\partial{k(u,v)}}{\partial v}\cdot\triangle v-\frac{\partial{h(u,v)}}{\partial v}\cdot\triangle v\cdot\frac{\partial{k(u,v)}}{\partial u}\cdot\triangle u\\=\begin{bmatrix}\frac{\partial{h(u,v)}}{\partial u}\cdot\frac{\partial{k(u,v)}}{\partial v}-\frac{\partial{h(u,v)}}{\partial v}\cdot\frac{\partial{k(u,v)}}{\partial u}\end{bmatrix}\cdot\triangle u\cdot\triangle v\end{array}$$
 
 >&#10116;make one more step, we can take the first part to be $\left|J\right|$ expressed in terms of $2\times2$ determinant:  
