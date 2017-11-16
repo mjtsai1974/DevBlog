@@ -11,4 +11,4 @@ Before proceeding any further, take a good look in this article would be quiet h
 
 ### What Is Jacobian?
 >Begin by a simple example, given $\int_a^bf(x)\operatorname dx$:  
->
+$$\begin{array}{l}take\;x=h(y),\;differntiate\;on\;y,\\we\;have\frac{\operatorname dx}{\operatorname dy}=h^'(y),\\then,\;x=h(y)=h^'(y)\cdot\operatorname dy\end{array}$$
