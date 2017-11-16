@@ -14,4 +14,4 @@ Before proceeding any further, take a good look in this article would be quiet h
 >If we let $x=h(y)$, take derivation on $y$:  
 $$\frac{\partial x}{\partial y}=h^'(y)$$
 
-
+>
