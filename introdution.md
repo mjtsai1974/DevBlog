@@ -66,7 +66,7 @@ the following:
 * [QR Decomposition]({{ site.github.repo }}{{ site.baseurl }}/2017/10/31/prereq-qr-decomposition/)
 * Cholesky Decomposition
 * Spatial Value Decomposition(SVD)
-* Jacobian and Integration
+* [Jacobian and Integral]({{ site.github.repo }}{{ site.baseurl }}/2017/11/16/prereq-jacobian-integral/)
 * Introduction to Gamma Distribution
 * Introduction to Beta Distribution
 * Introduction to F Distribution
