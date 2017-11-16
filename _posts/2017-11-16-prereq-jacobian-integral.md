@@ -53,4 +53,5 @@ $$\begin{array}{l}\begin{bmatrix}\frac{\partial{h(u,v)}}{\partial u}\cdot\frac{\
 >Finally, we have conclusion below:  
 $$\begin{array}{l}area(R)\\=\triangle x\cdot\triangle y\\\cong\operatorname dx\cdot\operatorname dy\\\cong\left|J\right|\cdot\triangle u\cdot\triangle v\\\cong\left|J\right|\cdot\operatorname du\cdot\operatorname dv\\=area(S)\end{array}$$
 
->At this ending of proof, we can also treat $\left|J\right|$ to be the ratio from $area(R)$ to $area(S)$, where $area(R)=\left|J\right|\cdot area(S)$.
+>At this ending of proof, we can also treat $\left|J\right|$ to be the ratio from $area(R)$ to $area(S)$,  
+>where $$area(R)=\left|J\right|\cdot area(S)$$.
