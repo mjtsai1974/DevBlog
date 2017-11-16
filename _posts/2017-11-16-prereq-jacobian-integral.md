@@ -26,31 +26,32 @@ $$\begin{array}{l}\int_a^bf(x)\operatorname dx=\int_c^df(h(y))\cdot Dh(y)\operat
 ### Normalize The Jacobian
 >Next, this article would enter into the field a little bit deeper by double integral to prove the formula:  
 $$\iint\limits_Rf(x,y)\operatorname dx\operatorname dy=\iint\limits_Sf(h(u,v),k(u,v))\cdot\left|J\right|\operatorname du\operatorname dv$$
+
 >Let me give you a hint this proof is just to relate two sides of above equation with $\left|J\right|$, which is just a ratio due to system of coordinate of reference transformation from $x$, $y$ to $u$, $v$.  
 >proof:  
 >Take $x=h(u,v)$ and $y=k(u,v)$, we will prove by illustration:  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-16-prereq-jacobian-integral-coordinate-transform.png "system of coordinate of reference transform")
 
->Suppose we are transforming from coordinate system <$x$, $y$> to <$u$, $v$>, and the surface area $R$ should be equal to the surface area $S$.
+>&#10112;suppose we are transforming from coordinate system <$x$, $y$> to <$u$, $v$>, and the surface area $R$ should be equal to the surface area $S$.
 >We just have $area(R)=area(S)=\overset\rightharpoonup{MN}\otimes\overset\rightharpoonup{MQ}$, where $\otimes$ means the cross product.  
 $$\begin{array}{l}\overset\rightharpoonup{MN}=\left\langle h(u+\triangle u,v)-h(u,v),k(u+\triangle u,v)-k(u,v)\right\rangle;\\where\;\triangle u\approx0,then\;we\;have\\\lim_{\triangle u\rightarrow0}\frac{h(u+\triangle u,v)-h(u,v)}{\triangle u}=\frac{\partial{h(u,v)}}{\partial u}\\\lim_{\triangle u\rightarrow0}\frac{k(u+\triangle u,v)-k(u,v)}{\triangle u}=\frac{\partial{k(u,v)}}{\partial u}\end{array}$$
 
->To get back to $\overset\rightharpoonup{MN}$, we need to multiply by $\triangle u$ for both $h$ and $k$ terms.  Then, we have:  
+>&#10113;to get back to $\overset\rightharpoonup{MN}$, we need to multiply by $\triangle u$ for both $h$ and $k$ terms.  Then, we have:  
 $$\overset\rightharpoonup{MN}=\left\langle\frac{\partial{h(u,v)}}{\partial u}\cdot\triangle u,\frac{\partial{k(u,v)}}{\partial u}\cdot\triangle u\right\rangle$$
 
 >Above deduction holds for $\overset\rightharpoonup{MQ}$, apply it would we get similar result:  
 $$\overset\rightharpoonup{MQ}=\left\langle\frac{\partial{h(u,v)}}{\partial v}\cdot\triangle v,\frac{\partial{k(u,v)}}{\partial v}\cdot\triangle v\right\rangle$$
 
->Thus, take the absolute value of $area(R)=area(S)=\overset\rightharpoonup{MN}\otimes\overset\rightharpoonup{MQ}$.  
->Continue to illustrate by geometric cross product:  
+>&#10114;thus, take the absolute value of $area(R)=area(S)=\overset\rightharpoonup{MN}\otimes\overset\rightharpoonup{MQ}$.  
+>&#10115;continue to illustrate by geometric cross product:  
 $$\begin{array}{l}\begin{vmatrix}i&j&k\\\frac{\partial{h(u,v)}}{\partial u}\cdot\triangle u&\frac{\partial{k(u,v)}}{\partial u}\cdot\triangle u&0\\\frac{\partial{h(u,v)}}{\partial v}\cdot\triangle v&\frac{\partial{k(u,v)}}{\partial v}\cdot\triangle v&0\end{vmatrix}\\=\frac{\partial{h(u,v)}}{\partial u}\cdot\triangle u\cdot\frac{\partial{k(u,v)}}{\partial v}\cdot\triangle v-\frac{\partial{h(u,v)}}{\partial v}\cdot\triangle v\cdot\frac{\partial{k(u,v)}}{\partial u}\cdot\triangle u\\=\begin{bmatrix}\frac{\partial{h(u,v)}}{\partial u}\cdot\frac{\partial{k(u,v)}}{\partial v}-\frac{\partial{h(u,v)}}{\partial v}\cdot\frac{\partial{k(u,v)}}{\partial u}\end{bmatrix}\cdot\triangle u\cdot\triangle v\end{array}$$
 
->Make one more step, we can take the first part to be $\left|J\right|$ expressed in terms of $2\times2$ determinant:  
+>&#10116;make one more step, we can take the first part to be $\left|J\right|$ expressed in terms of $2\times2$ determinant:  
 $$\begin{array}{l}\begin{bmatrix}\frac{\partial{h(u,v)}}{\partial u}\cdot\frac{\partial{k(u,v)}}{\partial v}-\frac{\partial{h(u,v)}}{\partial v}\cdot\frac{\partial{k(u,v)}}{\partial u}\end{bmatrix}\\={\begin{vmatrix}\frac{\partial{h(u,v)}}{\partial u}&\frac{\partial{k(u,v)}}{\partial u}\\\frac{\partial{h(u,v)}}{\partial v}&\frac{\partial{k(u,v)}}{\partial v}\end{vmatrix}}_{2\times2\;detmiant}\\=\begin{vmatrix}J\end{vmatrix}\end{array}$$
 
->Finally, we have conclusion below:  
+>&#10117;finally, we have conclusion below:  
 $$\begin{array}{l}area(R)\\=\triangle x\cdot\triangle y\\\cong\operatorname dx\cdot\operatorname dy\\\cong\left|J\right|\cdot\triangle u\cdot\triangle v\\\cong\left|J\right|\cdot\operatorname du\cdot\operatorname dv\\=area(S)\end{array}$$
 
->At this ending of proof, we can also formulate below equation:  
+>At this ending stage, we can also formulate below equation, where jacobian is just the ratio from $area(R)$ to $area(S)$:  
 $$area(R)=\left|J\right|\cdot area(S)$$
