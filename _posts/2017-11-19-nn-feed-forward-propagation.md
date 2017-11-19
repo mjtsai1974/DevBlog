@@ -29,6 +29,3 @@ $$\begin{array}{l}a^{(4)}=g(z^{(4)})=h_{\mathrm\theta^{(3)}}(a^{(3)}),where\;z^{
 
 >&#10115;at the last layer, in this example the layer 4 output, <font color="red">the final identity from logistic regression model would be determined at final layer</font>:  
 $$\begin{array}{l}a^{(j+1)}=g(z^{(j+1)})=h_{\mathrm\theta^{(j)}}(a^{(j)})=\left\{\begin{array}{l}\geq0.5,clssify\;as\;1\\<0.5,classiy\;as\;0\end{array}\right.\\\end{array}$$
-
-### Cost Function Of Neural Network Model
->
