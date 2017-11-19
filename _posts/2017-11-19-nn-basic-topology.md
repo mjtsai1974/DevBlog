@@ -17,14 +17,14 @@ the case that jet engines could make human fly but human couldn't fly like a bir
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-19-nn-basic-topology-model.png "model representation")
  
->The model representation graph exhibits that there exists an input layer to receive the external data, an output layer to generate the outcome value, some hidden layes(in this example, layer 2, 3) in between the input and the output layer.  One step further, the model design transfer the output layer outcome to the final preocessing function, usually, by means of the logistic regression to generalize the real identification result.  
+>The model representation graph exhibits that there exists an input layer to receive the external data, an output layer to generate the outcome value, some hidden layes(in this example, layer 2, 3) in between the input and the output layer.  
 >We can have the model more generalized in another graph.  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-19-nn-basic-topology-model-generalized.png "model representation with bias term")
 
->&#10112;you can think of each distinct layer(<font color="blue">except for the input layer</font>) in the neural network the individual linear regression model, which (<font color="red">takes an intercept expressed by the bias term by statistics nature design</font>.  Specific cares for gradient descendent during backward propagation is mandatory, and the bias term is of no need for regularization!!   
+>&#10112;you can think of each distinct layer(<font color="blue">except for the input layer</font>) in the neural network the individual linear regression model, which (<font color="red">takes an intercept expressed by the bias term by statistics nature design</font>).  Specific cares for gradient descendent during backward propagation is mandatory, and the bias term is of no need for regularization!!   
 >&#10113;the <font color="green">$\theta^{(j)}$</font> is <font color="green">the weighting matrix</font>, controlling the function mapping from layer $j$ to layer $j+1$.  
->&#10114;the <font color="red">$a_i^{(j)}$</font> is to denote the $i$-th (<font color="red">activation function</font> at layer $j$, wherein, it takes input from layer $j-1$ and make advanced processing at its layer, output it, in turns becoming the input data to next layer $j+1$.  
+>&#10114;the <font color="red">$a_i^{(j)}$</font> is used to denote the $i$-th <font color="red">activation function</font> at layer $j$, wherein, it takes output from layer $j-1$ as its input and make advanced processing at its layer, output it, in turns becoming the input data to next layer $j+1$.  
 >&#10115;suppose we have the $a_1^{(1)}$, $a_2^{(1)}$,..., $a_n^{(1)}$ as the input data $x\in R^n$.  
 >&#10116;the output from layer $j$(the activation output at layer j) would be mapped to layer $j+1$ by <font color="green">$\theta^{(j)}$</font> as its input.  
 
