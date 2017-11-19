@@ -28,7 +28,7 @@ existing machine learning has become a rather evolutionary version, the deep lea
 For the time being(2017.10.24), I have completed below on-line courses and would like to further advance to deep learning:  
 
 [1][NTU H.T.Lin's Machine Learning Foundation](https://zh-tw.coursera.org/learn/ntumlone-mathematicalfoundations)  
-[2][Stanford Machine Learning](https://www.coursera.org/learn/machine-learning)  
+[2][Stanford CS221 Machine Learning of Coursera](https://www.coursera.org/learn/machine-learning)  
 
 Review of the major topics would be quiet complicated, you might ponder to classify it as statistics or computer science NP-hard algorithm.  Statisticians tend more to regress on already known sampling 
 data, by means of mean squared error with F-test, t-test, Chi-square test to evaluate the fitness of the regression model in their hypothesis, even more, they are using likelihood ratio test to judge the 
@@ -54,6 +54,7 @@ The context of this bog just like current artificial intelligence, comes without
 * Deep Learning
 * Reinforcement Learning
 * Computer Graphics, 3D Rotation, Transformation and Quaternion
+* Programming Language
 
 ### Prerequisites
 
@@ -105,9 +106,12 @@ be jargon-free.  It's quite difficult to realize the backward propagation, no ev
 Even the professor ANG said to us that he couldn't figure it out the proof in the on-line video.  Thanks for god, the mathematicians since the old times has left one stupid and 
 efficient method, guess what?  The mathematics induction, via which, we can easily show you the way backward propagation really means and the validity of its formula.
 
-Hard to believe, it took me over 2 days to prove backward propagation.  Below is the major items:
+Hard to believe, it took me over 2 days to prove backward propagation.  I will begin by model represent, then show you the way how neural network could learn and under trained by forward propagation,  followed by backward 
+propagation to reduce the error cost during each distinct training in a gradient descendent alike fashion and end up with my complete proof in it.  
 
-* Basic topology
+Below is the major items:
+
+* Basic Topology
 * Feed Forward Propagation
 * Backward Propagation 
 
