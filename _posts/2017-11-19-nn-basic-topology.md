@@ -27,4 +27,4 @@ the case that jet engines could make human fly but human couldn't fly like a bir
 >&#10114;the <font color="red">$a_i^{(j)}$</font> is used to denote the $i$-th <font color="red">activation function</font> at layer $j$, wherein, it takes output from layer $j-1$ as its input and make advanced processing at its layer, output it, in turns becoming the input data to next layer $j+1$.  
 >&#10115;suppose we have the $a_1^{(1)}$, $a_2^{(1)}$,..., $a_n^{(1)}$ as the input data $x\in R^n$.  
 >&#10116;the output from layer $j$(the activation output at layer j) would be mapped to layer $j+1$ by <font color="green">$\theta^{(j)}$</font> as its input.  
-
+>&#10117;$h_{\theta^{(j)}}(a^{(j)})$ transforms $a^{(j)}$ with $\theta^{(j)}$ from layer $j$ to layer $j+1$ by means of logistic regression model.  
