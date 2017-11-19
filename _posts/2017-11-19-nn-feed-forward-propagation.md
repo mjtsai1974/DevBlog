@@ -9,4 +9,4 @@ Neural network works as a whole to behave like a perceptron, the output from lay
 the logistic regression model to signal the identity of the target object. 
 </p>
 
-### 
+### Neural Network Works by Feedforward Propagation
