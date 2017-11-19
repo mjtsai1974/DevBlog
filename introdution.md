@@ -112,7 +112,7 @@ propagation to reduce the error cost during each distinct training in a gradient
 Below is the major items:
 
 * [Basic Topology]({{ site.github.repo }}{{ site.baseurl }}/2017/11/19/nn-basic-topology/)
-* Feedforward Propagation
+* [Feedforward Propagation]({{ site.github.repo }}{{ site.baseurl }}2017/11/19/nn-feed-forward-propagation/)
 * Backward Propagation 
 
 ### Support Vector Machine(SVM)
