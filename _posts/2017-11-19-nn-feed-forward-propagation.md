@@ -10,6 +10,7 @@ the logistic regression model to signal the identity of the target object.
 </p>
 
 ### Neural Network Works by Feedforward Propagation
->Recap the neural network model, note that the final identity from logistic regression model would be $\left\{\begin{array}{l}\geq0.5,\;classify\;as1\\<0.5,\;classify\;as\;0\end{array}\right.$:
+>Recap the neural network model, note that the final identity from logistic regression model would be:
+$$h_\theta(z)=\left\{\begin{array}{l}\geq0.5,\;classify\;as1\\<0.5,\;classify\;as\;0\end{array}\right.$$
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-19-nn-forward-propagation.png "forward propagation")
