@@ -10,9 +10,8 @@ the identity of the target object.
 </p>
 
 ### Neural Network Works by Feedforward Propagation
->Recap the neural network model, note that the final identity from logistic regression model would be:
-$$\begin{array}{l}a^{(j+1)}=g(z^{(j+1)})=h_{\mathrm\theta^{(\mathrm j)}}(a^{(\mathrm j)})=\left\{\begin{array}{l}\geq0.5,\;\mathrm{classify}\;\mathrm{as}1\\<0.5,\;\mathrm{classify}\;\mathrm{as}\;0\end{array}\right.\\,where\;z=(\theta^{(j)})^t\cdot a^{(j)},\;g(z)=\frac1{1+e^{-z}}\\,j+1\;is\;the\;final\;layer\;index\end{array}$$
-<!-- $$h_\theta(z)=\left\{\begin{array}{l}\geq0.5,\;classify\;as1\\<0.5,\;classify\;as\;0\end{array}\right.$$ -->
+>Recap the neural network model, note that <font color="green">the final identity from logistic regression model would be determined at final layer</font>:  
+$$\begin{array}{l}a^{(j+1)}=g(z^{(j+1)})=h_{\mathrm\theta^{(\mathrm j)}}(a^{(\mathrm j)})\\,where\;z=(\theta^{(j)})^t\cdot a^{(j)},\;g(z)=\frac1{1+e^{-z}}\\,j+1\;is\;the\;index\;of\;last\;layer\end{array}$$
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-19-nn-forward-propagation.png "forward propagation")
 
