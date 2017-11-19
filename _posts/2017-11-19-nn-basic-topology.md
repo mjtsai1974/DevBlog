@@ -26,5 +26,5 @@ the case that jet engines could make human fly but human couldn't fly like a bir
 >&#10113;the <font color="green">$\theta^{(j)}$</font> is <font color="green">the weighting matrix</font>, controlling the function mapping from layer $j$ to layer $j+1$.  
 >&#10114;the <font color="red">$a_i^{(j)}$</font> is to denote the $i$-th (<font color="red">activation function</font> at layer $j$, wherein, it takes input from layer $j-1$ and make advanced processing at its layer, output it, in turns becoming the input data to next layer $j+1$.  
 >&#10115;suppose we have the $a_1^{(1)}$, $a_2^{(1)}$,..., $a_n^{(1)}$ as the input data $x\in R^n$.  
->&#10116;the output from layer $j$(the activation output at layer j) would be mapped to layer $j+1$ by <font color="green">$\theta^{(j)}$</font>.  
+>&#10116;the output from layer $j$(the activation output at layer j) would be mapped to layer $j+1$ by <font color="green">$\theta^{(j)}$</font> as its input.  
 
