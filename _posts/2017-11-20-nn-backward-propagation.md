@@ -56,10 +56,10 @@ $$\delta^{(2)}={\begin{bmatrix}\delta_1^{(2)}\end{bmatrix}}_{1\times1}=a_1^{(2)}
 
 ### Formularize The Gradient Computation - Mathematics Induction
 >From now on, we are going to do the real proof to formularize the gradient in neural network model:  
-><font color="red">&#10112;</font>suppose you can recognize above proof given in $3\times1$ neural network model, and we have finding:  
+>&#10112;suppose you can recognize above proof given in $3\times1$ neural network model, and we have finding:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
 
-><font color="red">&#10113;</font>next, we step further into 2 output nodes in final layer, $3\times2$ neural network model:  
+>&#10113;next, we step further into 2 output nodes in final layer, $3\times2$ neural network model:  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-proof-by-3-2.png "backward propagation by 3x2")
 
@@ -82,9 +82,11 @@ $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal
 
 >I have just proved for the simple model of only 2 layers, but, will the current finding hold for models of more than 3 layers?  
 
-><font color="red">&#10114;</font>further step into $3\times2\times1$ neural network model:  
+>&#10114;further step into $3\times2\times1$ neural network model:  
 
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-proof-by-3-2-1.png "backward propagation by 3x2x1")
 
+>
 
 ### The Backward Propagation Algorithm
 >
