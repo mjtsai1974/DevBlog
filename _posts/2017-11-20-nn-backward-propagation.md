@@ -35,12 +35,12 @@ $$J(\theta)=-y^{(i\_data)}\cdot\log(h_\theta(x^{(i\_data)}))-(1-y^{(i\_data)})\c
 >&#10112;$z_1^{(2)}=\theta_{1,1}^{(1)}\cdot a_1^{(1)}+\theta_{1,2}^{(1)}\cdot a_2^{(1)}+\theta_{1,3}^{(1)}\cdot a_3^{(1)}$  
 >&#10113;$a_1^{(2)}=g(z_1^{(2)})=\frac1{1+e^{-z_1^{(2)}}}$  
 >&#10114;take partial derivative of $J(\theta)$ on $\theta_{1,1}^{(1)}$, we would obtain:  
-$$\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(2)}}\cdot\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}\cdot\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}$$
+$$\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\partial J(\theta)}{\partial a_1^{(2)}}\cdot\frac{\partial a_1^{(2)}}{\partial z_1^{(2)}}\cdot\frac{\partial z_1^{(2)}}{\partial\theta_{1,1}^{(1)}}$$
 
 >This is <font color="green">the chain rule in calculus</font>, which would mostly be applied in our later paragraph of proof.  
->But, why we have the term $\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}$?  
+>But, why we have the term $\frac{\partial a_1^{(2)}}{\partial z_1^{(2)}}$?  
 ><font color="red">Please be recalled that $a_1^{(2)}=g(z_1^{(2)})$</font>, where we have below deduction:  
-$$\begin{array}{l}\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(2)}}=\frac{\partial(-y\cdot\log(a_1^{(2)})-(1-y)\cdot\log(1-a_1^{(2)}))}{\partial a_1^{(2)}}\\\;\;\;\;\;\;\;\;\;\;\;\;\;=\frac{-y}{a_1^{(2)}}+\frac{1-y}{1-a_1^{(2)}}\cdots(a)\\\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}=\frac{\partial g(z_1^{(2)})}{\partial z_1^{(2)}}=g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdots(b)\\\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}=a_1^{(1)}\cdots(c)\end{array}$$
+$$\begin{array}{l}\frac{\partial J(\theta)}{\partial a_1^{(2)}}=\frac{\partial(-y\cdot\log(a_1^{(2)})-(1-y)\cdot\log(1-a_1^{(2)}))}{\partial a_1^{(2)}}\\\;\;\;\;\;\;\;\;\;\;\;\;\;=\frac{-y}{a_1^{(2)}}+\frac{1-y}{1-a_1^{(2)}}\cdots(a)\\\frac{\partial a_1^{(2)}}{\partial z_1^{(2)}}=\frac{\partial g(z_1^{(2)})}{\partial z_1^{(2)}}=g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdots(b)\\\frac{\partial z_1^{(2)}}{\partial\theta_{1,1}^{(1)}}=a_1^{(1)}\cdots(c)\end{array}$$
 
 >Then, combine above (a), (b), (c) terms, we can have:  
 $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}\\=(a)\cdot(b)\cdot(c)\\=\frac{-y\cdot(1-a_1^{(2)})+(1-y)\cdot a_1^{(2)}}{a_1^{(2)}\cdot(1-a_1^{(2)})}\cdot a_1^{(2)}\cdot(1-a_1^{(2)})\cdot a_1^{(1)}\\=(a_1^{(2)}-y)\cdot a_1^{(1)}\end{array}$$
@@ -71,7 +71,7 @@ $$a_i^{(2)}=g(z_i^{(2)})=g(\theta_{i,1}^{(1)}\cdot a_1^{(1)}+\theta_{i,2}^{(1)}\
 $$\delta_{2\times1}^{(2)}={\begin{bmatrix}\delta_1^{(2)}\\\delta_2^{(2)}\end{bmatrix}}_{2\times1}={\begin{bmatrix}a_1^{(2)}-y^{(i\_data)}\\a_2^{(2)}-y^{(i\_data)}\end{bmatrix}}_{2\times1}$$
 
 >We can deduce out:  
-$$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(2)}}\cdot\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}\cdot\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\=(a_1^{(2)}-y^{(i\_data)})\cdot a_1^{(1)}\end{array}$$
+$$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\partial J(\theta)}{\partial a_1^{(2)}}\cdot\frac{\partial a_1^{(2)}}{\partial z_1^{(2)}}\cdot\frac{\partial z_1^{(2)}}{\partial\theta_{1,1}^{(1)}}\\=(a_1^{(2)}-y^{(i\_data)})\cdot a_1^{(1)}\end{array}$$
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(1)}}=(a_1^{(2)}-y^{(i\_data)})\cdot a_2^{(1)}$$
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{1,3}^{(1)}}=(a_1^{(2)}-y^{(i\_data)})\cdot a_3^{(1)}$$
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(1)}}=(a_2^{(2)}-y^{(i\_data)})\cdot a_1^{(1)}$$
@@ -93,11 +93,11 @@ $$\delta^{(3)}={\begin{bmatrix}\delta_1^{(3)}\end{bmatrix}}_{1\times1}={\begin{b
 
 >Then, we have a problem here, <font color="red">what is $\delta^{(2)}$?</font> How to evaluate it?  Since it is not at the final layer.  What is <font color="red">the gradient descendent evaluation in $\theta^{(1)}$?</font>  
 >The same by taking partial derivative of $J(\theta)$:  
-$$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
-$$\begin{array}{l}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot(\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial a_1^{(2)}}\cdot\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}\cdot\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
-$$\begin{array}{l}+\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial a_2^{(2)}}\cdot\frac{\displaystyle\partial a_2^{(2)}}{\displaystyle\partial z_2^{(2)}}\cdot\frac{\displaystyle\partial z_2^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}})\;\cdots\;\frac{\displaystyle\partial z_2^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}=0\\\end{array}$$  
-$$\begin{array}{l}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial g(z_1^{(3)})}{\displaystyle\partial z_1^{(3)}}\cdot\frac{\displaystyle\partial z_1^{(3)}}{\displaystyle\partial a_1^{(2)}}\cdot\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}\cdot\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
-$$\begin{array}{l}\cdots\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial a_1^{(2)}}=\frac{\displaystyle\partial g(z_1^{(3)})}{\displaystyle\partial z_1^{(3)}}\cdot\frac{\displaystyle\partial z_1^{(3)}}{\displaystyle\partial a_1^{(2)}}\\\end{array}$$  
+$$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial a_1^{(3)}}{\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
+$$\begin{array}{l}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot(\frac{\partial a_1^{(3)}}{\partial a_1^{(2)}}\cdot\frac{\partial a_1^{(2)}}{\partial z_1^{(2)}}\cdot\frac{\partial z_1^{(2)}}{\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
+$$\begin{array}{l}+\frac{\partial a_1^{(3)}}{\partial a_2^{(2)}}\cdot\frac{\partial a_2^{(2)}}{\partial z_2^{(2)}}\cdot\frac{\partial z_2^{(2)}}{\partial\theta_{1,1}^{(1)}})\;\cdots\;\frac{\partial z_2^{(2)}}{\partial\theta_{1,1}^{(1)}}=0\\\end{array}$$  
+$$\begin{array}{l}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\frac{\partial z_1^{(3)}}{\partial a_1^{(2)}}\cdot\frac{\partial a_1^{(2)}}{\partial z_1^{(2)}}\cdot\frac{\partial z_1^{(2)}}{\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
+$$\begin{array}{l}\cdots\frac{\partial a_1^{(3)}}{\partial a_1^{(2)}}=\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\frac{\partial z_1^{(3)}}{\partial a_1^{(2)}}\\\end{array}$$  
 $$\begin{array}{l}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}\\\end{array}$$  
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(1)}}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_2^{(1)}$$  
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{1,3}^{(1)}}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_3^{(1)}$$  
@@ -132,14 +132,14 @@ $$\delta_{2\times1}^{(2)}=\begin{bmatrix}\theta^{(2)}\end{bmatrix}_{2\times2}^t\
 $$\cdots\;.\times\;element-wised\;operator$$  
 
 >First, evaluate $J(\theta)$ at layer 2, that is take derivation of $J(\theta)$ on $\theta_{i,j}^{(2)}$:  
-$$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(2)}}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial a_1^{(3)}}{\partial\theta_{1,1}^{(2)}}\\=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial g(z_1^{(3)})}{\displaystyle\partial z_1^{(3)}}\cdot\frac{\displaystyle\partial z_1^{(3)}}{\displaystyle\partial\theta_{1,1}^{(2)}}\\=(a_1^{(3)}-y^{(i\_data)})\cdot a_1^{(2)}\\=\delta_1^{(3)}\cdot a_1^{(2)}\end{array}$$  
+$$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(2)}}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial a_1^{(3)}}{\partial\theta_{1,1}^{(2)}}\\=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\frac{\partial z_1^{(3)}}{\partial\theta_{1,1}^{(2)}}\\=(a_1^{(3)}-y^{(i\_data)})\cdot a_1^{(2)}\\=\delta_1^{(3)}\cdot a_1^{(2)}\end{array}$$  
 $$\begin{array}{l}\therefore\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(2)}}=\delta_1^{(3)}\cdot a_2^{(2)}\\\therefore\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(2)}}=\delta_2^{(3)}\cdot a_1^{(2)}\\\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(2)}}=\delta_2^{(3)}\cdot a_2^{(2)}\end{array}$$  
 
 >We can by mathematics induction to have error costs at layer two:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^2}=\delta_i^{(3)}\cdot a_j^{(2)}$$  
 
 >Next, evaluate $J(\theta)$ at layer 1, that is take derivation of $J(\theta)$ on $\theta_{i,j}^{(1)}$:  
-$$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}+\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_2^{(3)}}\cdot\frac{\displaystyle\partial a_2^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\frac{\partial z_1^{(3)}}{\partial\theta_{1,1}^{(1)}}\\+\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_2^{(3)}}\cdot\frac{\displaystyle\partial g(z_2^{(3)})}{\displaystyle\partial z_2^{(3)}}\cdot\frac{\displaystyle\partial z_2^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\end{array}$$  
+$$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial a_1^{(3)}}{\partial\theta_{1,1}^{(1)}}+\frac{\partial J(\theta)}{\partial a_2^{(3)}}\cdot\frac{\partial a_2^{(3)}}{\partial\theta_{1,1}^{(1)}}\\=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\frac{\partial z_1^{(3)}}{\partial\theta_{1,1}^{(1)}}\\+\frac{\partial J(\theta)}{\partial a_2^{(3)}}\cdot\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot\frac{\partial z_2^{(3)}}{\partial\theta_{1,1}^{(1)}}\end{array}$$  
 $$take\;part\;1=\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\frac{\partial z_1^{(3)}}{\partial\theta_{1,1}^{(1)}}$$  
 $$take\;part\;2=\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot\frac{\partial z_2^{(3)}}{\partial\theta_{1,1}^{(1)}}$$  
 
