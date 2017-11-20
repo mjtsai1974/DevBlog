@@ -68,7 +68,11 @@ $$a_i^{(2)}=g(z_i^{(2)})=g(\theta_{i,1}^{(1)}\cdot a_1^{(1)}+\theta_{i,2}^{(1)}\
 
 >Succeeding to the result in &#10112;, take error costs at layer 2(in this example) as:  
 $$\delta_{2\times1}^{(2)}={\begin{bmatrix}\delta_1^{(2)}\\\delta_2^{(2)}\end{bmatrix}}_{2\times1}={\begin{bmatrix}a_1^{(2)}-y^{(i\_data)}\\a_2^{(2)}-y^{(i\_data)}\end{bmatrix}}_{2\times1}$$
+
+>We can deduce out:  
 $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(2)}}\cdot\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}\cdot\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\=(a_1^{(2)}-y^{(i\_data)})\cdot a_1^{(1)}\end{array}$$
+
+>Similarly result could be obtained by the same method:  
 $$\begin{array}{l}\therefore\frac{\partial J(\theta)}{\partial\theta_{{\color[rgb]{0.0, 0.0, 1.0}1},{\color[rgb]{1.0, 0.0, 0.0}2}}^{({\color[rgb]{0.5, 0.0, 0.0}1})}}=(a_{\color[rgb]{0.0, 0.0, 1.0}1}^{(2)}-y^{(i\_data)})\cdot a_{\color[rgb]{1.0, 0.0, 0.0}2}^{({\color[rgb]{0.5, 0.0, 0.0}1})},\\\therefore\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial\theta_{{\color[rgb]{0.0, 0.0, 1.0}1},{\color[rgb]{1.0, 0.0, 0.0}3}}^{({\color[rgb]{0.5, 0.0, 0.0}1})}}=(a_{\color[rgb]{0.0, 0.0, 1.0}1}^{(2)}-y^{(i\_data)})\cdot a_{\color[rgb]{1.0, 0.0, 0.0}3}^{({\color[rgb]{0.5, 0.0, 0.0}1})},\\\therefore\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial\theta_{{\color[rgb]{0.0, 0.0, 1.0}2},{\color[rgb]{1.0, 0.0, 0.0}1}}^{({\color[rgb]{0.5, 0.0, 0.0}1})}}=(a_{\color[rgb]{0.0, 0.0, 1.0}2}^{(2)}-y^{(i\_data)})\cdot a_{\color[rgb]{1.0, 0.0, 0.0}1}^{({\color[rgb]{0.5, 0.0, 0.0}1})},\\\therefore\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial\theta_{{\color[rgb]{0.0, 0.0, 1.0}2},{\color[rgb]{1.0, 0.0, 0.0}2}}^{({\color[rgb]{0.5, 0.0, 0.0}1})}}=(a_{\color[rgb]{0.0, 0.0, 1.0}2}^{(2)}-y^{(i\_data)})\cdot a_{\color[rgb]{1.0, 0.0, 0.0}2}^{({\color[rgb]{0.5, 0.0, 0.0}1})},\\\therefore\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial\theta_{{\color[rgb]{0.0, 0.0, 1.0}2},{\color[rgb]{1.0, 0.0, 0.0}3}}^{({\color[rgb]{0.5, 0.0, 0.0}1})}}=(a_{\color[rgb]{0.0, 0.0, 1.0}2}^{(2)}-y^{(i\_data)})\cdot a_{\color[rgb]{1.0, 0.0, 0.0}3}^{({\color[rgb]{0.5, 0.0, 0.0}1})},\end{array}$$
 
 ### The Backward Propagation Algorithm
