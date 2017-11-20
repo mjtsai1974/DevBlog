@@ -27,7 +27,7 @@ $$\begin{array}{l}\underset{REG}{J(\theta)}=\frac1m\sum_{i=1}^m\sum_{k=1}^K\left
 ### The Gradient Computation By Intuition
 >Take the cost function by intuition:  
 $$J(\theta)=-y^{(i\_data)}\cdot\log(h_\theta(x^{(i\_data)}))-(1-y^{(i\_data)})\cdot\log(1-h_\theta(x^{(i\_data)}))$$
->, where the $i\_data$ is the index of the input data record.
+>, where the $i$$_data$ is the index of the input data record.
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-proof-by-3-1.png "backward propagation by 3x1")
 
@@ -48,8 +48,8 @@ $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}\\=(a)\cd
 >Continue to apply, we can have results:  
 $$\left\{\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(1)}}=(a_1^{(2)}-y)\cdot a_2^{(1)}\\\frac{\partial J(\theta)}{\partial\theta_{1,3}^{(1)}}=(a_1^{(2)}-y)\cdot a_3^{(1)}\end{array}\right.$$
 
->Next, we introduce $\delta_j^{(\mathcal l)}$, it is the error cost in $j$-th activation function of layer ${(\mathcal l)}$.  
->With above deduction result, for each distinct input data at index $i\_data$, we can take error at output layer $2$(in this example):  
+>Next, we introduce $\delta_j^{(\mathcal l)}$, it is the error cost in $j$-th activation function of layer $\mathcal l$.  
+>With above deduction result, for each distinct input data at index $i$$_data$, we can take error at output layer $2$(in this example):  
 $$\delta^{(2)}={\begin{bmatrix}\delta_1^{(2)}\end{bmatrix}}_{1\times1}=a_1^{(2)}-y^{(i\_data)}$$
 
 >Things would be a little complicated, before this article formularize the gradient computation for each $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}$, just compute the errors from the final output layer, in the reversed order, back to the beginning second layer, and the output error from each layer $\mathcal l$ would then be propagated back into the gradient $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l-1)}}$.  
