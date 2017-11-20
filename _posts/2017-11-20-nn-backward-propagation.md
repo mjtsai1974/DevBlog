@@ -71,13 +71,20 @@ $$\delta_{2\times1}^{(2)}={\begin{bmatrix}\delta_1^{(2)}\\\delta_2^{(2)}\end{bma
 
 >We can deduce out:  
 $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(2)}}\cdot\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}\cdot\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\=(a_1^{(2)}-y^{(i\_data)})\cdot a_1^{(1)}\end{array}$$
-
->Apply the same method, could we obtain the similar results:  
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(1)}}=(a_1^{(2)}-y^{(i\_data)})\cdot a_2^{(1)}$$
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{1,3}^{(1)}}=(a_1^{(2)}-y^{(i\_data)})\cdot a_3^{(1)}$$
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(1)}}=(a_2^{(2)}-y^{(i\_data)})\cdot a_1^{(1)}$$
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(1)}}=(a_2^{(2)}-y^{(i\_data)})\cdot a_2^{(1)}$$
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=(a_2^{(2)}-y^{(i\_data)})\cdot a_3^{(1)}$$
+
+>By mathematics induction, we have a finding:  
+$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
+
+>I have just proved for the simple model of only 2 layers, but, will the current finding hold for models of more than 3 layers?  
+
+>&#10114;further step into $3\times2\times1$ neural network model:  
+
+
 
 ### The Backward Propagation Algorithm
 >
