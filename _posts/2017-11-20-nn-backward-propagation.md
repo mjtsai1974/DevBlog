@@ -104,7 +104,10 @@ $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(1)}}=(a_1^{(3)}-y^{
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,2}^{(2)}\cdot g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\cdot a_3^{(1)}$$  
 
 >We can normalize above result in this given example:  
+$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_1^{((\mathcal l+1)+1)}-y^{(i\_data)})\cdot\theta_{1,i}^{(\mathcal l+1)}\cdot g(z_i^{(\mathcal l+1)})\cdot(1-g(z_i^{(\mathcal l+1)}))\cdot a_j^{(\mathcal l)}$$  
 
+>For $\mathcal l=1$, then:  
+>
 
 ### The Backward Propagation Algorithm
 >
