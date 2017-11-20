@@ -77,7 +77,7 @@ $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(1)}}=(a_2^{(2)}-y^{
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(1)}}=(a_2^{(2)}-y^{(i\_data)})\cdot a_2^{(1)}$$
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=(a_2^{(2)}-y^{(i\_data)})\cdot a_3^{(1)}$$
 
->By mathematics induction, we have a finding the same in &#10112;:  
+>By mathematics induction, we have a finding the same as the one in &#10112;:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
 
 >I have just proved for the simple model of only 2 layers, but, <font color="red">will the current finding hold for models of more than 3 layers?</font>  
@@ -105,8 +105,24 @@ $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=(a_1^{(3)}-y^{
 
 >We can normalize above result in this given example:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_1^{((\mathcal l+1)+1)}-y^{(i\_data)})\cdot\theta_{1,i}^{(\mathcal l+1)}\cdot g(z_i^{(\mathcal l+1)})\cdot(1-g(z_i^{(\mathcal l+1)}))\cdot a_j^{(\mathcal l)}$$  
+$$\therefore\delta_i^{(\mathcal l+1)}=(a_1^{((\mathcal l+1)+1)}-y^{(i\_data)})\cdot\theta_{1,i}^{(\mathcal l+1)}\cdot g(z_i^{(\mathcal l+1)})\cdot(1-g(z_i^{(\mathcal l+1)}))$$  
 
->For $\mathcal l=1$, then:  
+>For $\mathcal l=1$, we have error costs at layer two:  
+$$\delta_i^{(2)}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,i}^{(2)}\cdot g(z_i^{(2)})\cdot(1-g(z_i^{(2)}))$$  
+>where $i=1,2$, then:  
+$$\delta_{2\times1}^{(2)}={\begin{bmatrix}\delta_1^{(2)}\\\delta_2^{(2)}\end{bmatrix}}_{2\times1}$$  
+$$=(a_1^{(3)}-y^{(i\_data)})\cdot{\begin{bmatrix}\theta_{1,1}^{(2)}\\\theta_{1,2}^{(2)}\end{bmatrix}}_{2\times1}.\times$$  
+$${\begin{bmatrix}g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}}_{2\times1}$$  
+$$\cdots\;.\times\;element-wised\;operator$$  
+$$=(a_1^{(3)}-y^{(i\_data)})\cdot{\begin{bmatrix}\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\\theta_{1,2}^{(2)}\cdot g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}}_{2\times1}$$  
+
+>By mathematics induction, we have a finding the same as the one in &#10112;:  
+$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
+
+>&#10115;further step into $3\times2\times1$ neural network model:  
+
+
+
 >
 
 ### The Backward Propagation Algorithm
