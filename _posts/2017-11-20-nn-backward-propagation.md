@@ -139,8 +139,9 @@ $$\begin{array}{l}\therefore\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(2)}
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^2}=\delta_i^{(3)}\cdot a_j^{(2)}$$  
 
 >Next, evaluate $J(\theta)$ at layer 1, that is take derivation of $J(\theta)$ on $\theta_{i,j}^{(1)}$:  
-$$\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}+\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_2^{(3)}}\cdot\frac{\displaystyle\partial a_2^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}$$  
 $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}+\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_2^{(3)}}\cdot\frac{\displaystyle\partial a_2^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\frac{\partial z_1^{(3)}}{\partial\theta_{1,1}^{(1)}}\\+\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_2^{(3)}}\cdot\frac{\displaystyle\partial g(z_2^{(3)})}{\displaystyle\partial z_2^{(3)}}\cdot\frac{\displaystyle\partial z_2^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\end{array}$$  
+$$take\;part\;1=\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\frac{\partial z_1^{(3)}}{\partial\theta_{1,1}^{(1)}}$$  
+$$take\;part\;2=\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot\frac{\partial z_2^{(3)}}{\partial\theta_{1,1}^{(1)}}$$  
 
 ### The Backward Propagation Algorithm
 >
