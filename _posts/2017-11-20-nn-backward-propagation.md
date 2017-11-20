@@ -55,9 +55,8 @@ $$\delta^{(2)}={\begin{bmatrix}\delta_1^{(2)}\end{bmatrix}}_{1\times1}=a_1^{(2)}
 >Things would be a little complicated, before this article formularize the gradient computation for each $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}$, just think that you can compute the errors from the final output layer, in the reversed order, back to the beginning second layer, and the output error from each layer $\mathcal l$ would then be propagated back into the gradient $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l-1)}}$.  
 
 ### Formularize The Gradient Computation - Mathematics Induction
->From now on, we are going to do the real proof to formularize the gradient in neural network model:
-><font color="green">  
-&#10112;suppose you can recognize above proof given in $3\times1$ neural network model, and we have the finding:  
+>From now on, we are going to do the real proof to formularize the gradient in neural network model:  
+&#10112;suppose you can recognize above proof given in $3\times1$ neural network model, and we have the finding:<font color="green">  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
 ></font>
 
@@ -140,6 +139,8 @@ $$\begin{array}{l}\therefore\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(2)}
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^2}=\delta_i^{(3)}\cdot a_j^{(2)}$$  
 
 >Next, evaluate $J(\theta)$ at layer 1, that is take derivation of $J(\theta)$ on $\theta_{i,j}^{(1)}$:  
+$$\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}+\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_2^{(3)}}\cdot\frac{\displaystyle\partial a_2^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}$$  
+$$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}+\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_2^{(3)}}\cdot\frac{\displaystyle\partial a_2^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\frac{\partial z_1^{(3)}}{\partial\theta_{1,1}^{(1)}}\\+\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_2^{(3)}}\cdot\frac{\displaystyle\partial g(z_2^{(3)})}{\displaystyle\partial z_2^{(3)}}\cdot\frac{\displaystyle\partial z_2^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\end{array}$$  
 
 ### The Backward Propagation Algorithm
 >
