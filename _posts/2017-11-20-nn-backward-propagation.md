@@ -57,7 +57,7 @@ $$\delta^{(2)}={\begin{bmatrix}\delta_1^{(2)}\end{bmatrix}}_{1\times1}=a_1^{(2)}
 ### Formularize The Gradient Computation - Mathematics Induction
 >From now on, we are going to do the real proof to formularize the gradient in neural network model:  
 >&#10112;suppose you can recognize above proof given in $3\times1$ neural network model, and we have finding:  
-$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
+<font color="deeppink">$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$</font>  
 
 >&#10113;next, we step further into 2 output nodes in final layer, $3\times2$ neural network model:  
 
@@ -78,7 +78,7 @@ $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(1)}}=(a_2^{(2)}-y^{
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=(a_2^{(2)}-y^{(i\_data)})\cdot a_3^{(1)}$$
 
 >By mathematics induction, we have a finding the same as the one in &#10112;:  
-$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
+<font color="deeppink">$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$</font>  
 
 >I have just proved for the simple model of only 2 layers, but, <font color="red">will the current finding hold for models of more than 3 layers?</font>  
 
@@ -89,7 +89,7 @@ $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal
 >Trivially, we can deduce out that:  
 $$\delta^{(3)}={\begin{bmatrix}\delta_1^{(3)}\end{bmatrix}}_{1\times1}={\begin{bmatrix}a_1^{(3)}-y^{(i\_data)}\end{bmatrix}}_{1\times1}$$
 
->Then, we have a problem here, what is $\delta^{(2)}$? How to evaluate it?  Since it is not at the final layer.  What is the gradient descendent evaluation in $\theta^{(1)}$?  
+>Then, we have a problem here, <font color="red">what is $\delta^{(2)}$?</font> How to evaluate it?  Since it is not at the final layer.  What is <font color="red">the gradient descendent evaluation in $\theta^{(1)}$?</font>  
 >The same by taking partial derivative of $J(\theta)$:  
 $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
 $$\begin{array}{l}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot(\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial a_1^{(2)}}\cdot\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}\cdot\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
@@ -117,11 +117,16 @@ $$\cdots\;.\times\;element-wised\;operator$$
 $$=(a_1^{(3)}-y^{(i\_data)})\cdot{\begin{bmatrix}\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\\theta_{1,2}^{(2)}\cdot g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}}_{2\times1}$$  
 
 >By mathematics induction, we have a finding the same as the one in &#10112;:  
-$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
+<font color="deeppink">$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$</font>  
 
 >&#10115;further step into $3\times2\times2$ neural network model:  
 
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-proof-by-3-2-2.png "backward propagation by 3x2x2")
 
+>It would be easy to show error costs at layer three and two:  
+$$\delta_{2\times1}^{(3)}={\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}}_{2\times1}={\begin{bmatrix}a_1^{(3)}-y^{(i\_data)}\\a_2^{(3)}-y^{(i\_data)}\end{bmatrix}}_{2\times1}$$  
+$$\delta_{2\times1}^{(2)}=\begin{bmatrix}\theta^{(2)}\end{bmatrix}_{2\times2}^t\cdot{\begin{bmatrix}\delta^{(3)}\end{bmatrix}}_{2\times1}.\times{\begin{bmatrix}g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}}_{2\times1}$$
+$$\cdots\;.\times\;element-wised\;operator$$  
 
 >
 
