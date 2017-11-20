@@ -59,7 +59,7 @@ $$\delta^{(2)}={\begin{bmatrix}\delta_1^{(2)}\end{bmatrix}}_{1\times1}=a_1^{(2)}
 ><font color="green">  
 &#10112;suppose you can recognize above proof given in $3\times1$ neural network model, and we have the finding:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
-</font>
+></font>
 
 >&#10113;next, we step further into 2 output nodes in final layer, $3\times2$ neural network model:  
 
@@ -81,7 +81,7 @@ $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=(a_2^{(2)}-y^{
 ><font color="green">
 By mathematics induction, we have a finding the same as the one in &#10112;:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
-</font>
+></font>
 
 >I have just proved for the simple model of only 2 layers, but, <font color="red">will the current finding hold for models of more than 3 layers?</font>  
 
@@ -121,7 +121,7 @@ $$=(a_1^{(3)}-y^{(i\_data)})\cdot{\begin{bmatrix}\theta_{1,1}^{(2)}\cdot g(z_1^{
 ><font color="green">
 By mathematics induction, we have a finding the same as the one in &#10112;:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
-</font>
+></font>
 
 >&#10115;further step into $3\times2\times2$ neural network model:  
 
@@ -132,12 +132,14 @@ $$\delta_{2\times1}^{(3)}={\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bma
 $$\delta_{2\times1}^{(2)}=\begin{bmatrix}\theta^{(2)}\end{bmatrix}_{2\times2}^t\cdot{\begin{bmatrix}\delta^{(3)}\end{bmatrix}}_{2\times1}.\times{\begin{bmatrix}g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}}_{2\times1}$$
 $$\cdots\;.\times\;element-wised\;operator$$  
 
->First, we evaluate $J(\theta)$ at layer 2, that is take derivation of $J(\theta)$ on $\theta_{i,j}^{(2)}$:  
+>First, evaluate $J(\theta)$ at layer 2, that is take derivation of $J(\theta)$ on $\theta_{i,j}^{(2)}$:  
 $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(2)}}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial a_1^{(3)}}{\partial\theta_{1,1}^{(2)}}\\=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial g(z_1^{(3)})}{\displaystyle\partial z_1^{(3)}}\cdot\frac{\displaystyle\partial z_1^{(3)}}{\displaystyle\partial\theta_{1,1}^{(2)}}\\=(a_1^{(3)}-y^{(i\_data)})\cdot a_1^{(2)}\\=\delta_1^{(3)}\cdot a_1^{(2)}\end{array}$$  
 $$\begin{array}{l}\therefore\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(2)}}=\delta_1^{(3)}\cdot a_2^{(2)}\\\therefore\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(2)}}=\delta_2^{(3)}\cdot a_1^{(2)}\\\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(2)}}=\delta_2^{(3)}\cdot a_2^{(2)}\end{array}$$  
 
 >We can by mathematics induction to have error costs at layer two:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^2}=\delta_i^{(3)}\cdot a_j^{(2)}$$  
+
+>Next, evaluate $J(\theta)$ at layer 1, that is take derivation of $J(\theta)$ on $\theta_{i,j}^{(1)}$:  
 
 ### The Backward Propagation Algorithm
 >
