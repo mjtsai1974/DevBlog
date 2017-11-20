@@ -37,12 +37,17 @@ $$J(\theta)=-y^{(i\_data)}\cdot\log(h_\theta(x^{(i\_data)}))-(1-y^{(i\_data)})\c
 >&#10114;take partial derivative of $J(\theta)$ on $\theta_{1,1}^{(1)}$, we would obtain:  
 $$\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(2)}}\cdot\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}\cdot\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}$$
 
->This is the chain rule in calculus, which would mostly then be applied in our proof,  
->but, why we have the term $\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}$?  
+>This is the chain rule in calculus, which would mostly then be applied in our proof.  
+>But, why we have the term $\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}$?  
 ><font color="red">Please be recalled that $a_1^{(2)}=g(z_1^{(2)})$</font>, where we have below deduction:  
-$$\begin{array}{l}\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(2)}}=\frac{\partial(-y\cdot\log(a_1^{(2)})-(1-y)\cdot\log(1-a_1^{(2)}))}{\partial a_1^{(2)}}\\\;\;\;\;\;\;\;\;\;\;\;\;\;=\frac{-y}{a_1^{(2)}}+\frac{1-y}{1-a_1^{(2)}}\cdots?\\\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}=\frac{\partial g(z_1^{(2)})}{\partial z_1^{(2)}}=g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdots?\\\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}=a_1^{(1)}\cdots?\end{array}$$
+$$\begin{array}{l}\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(2)}}=\frac{\partial(-y\cdot\log(a_1^{(2)})-(1-y)\cdot\log(1-a_1^{(2)}))}{\partial a_1^{(2)}}\\\;\;\;\;\;\;\;\;\;\;\;\;\;=\frac{-y}{a_1^{(2)}}+\frac{1-y}{1-a_1^{(2)}}\cdots(a)\\\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}=\frac{\partial g(z_1^{(2)})}{\partial z_1^{(2)}}=g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdots(b)\\\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}=a_1^{(1)}\cdots(c)\end{array}$$
 
->Then, combine  
+>Then, combine above (a), (b), (c) terms, we can have:  
+$$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}\\=(a)\cdot(b)\cdot(c)\\=\frac{-y\cdot(1-a_1^{(2)})+(1-y)\cdot a_1^{(2)}}{a_1^{(2)}\cdot(1-a_1^{(2)})}\cdot a_1^{(2)}\cdot(1-a_1^{(2)})\cdot a_1^{(1)}\\=(a_1^{(2)}-y)\cdot a_1^{(1)}\end{array}$$
+
+>Continue to apply, we can have:  
+
+
 >Things would be a little complicated, before this article formularize the gradient computation for each $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}$, just compute the errors from the final output layer, in the reversed order, back to the beginning second layer, and the output error from each layer $\mathcal l$ would then be propagated back into the gradient $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l-1)}}$.  
 
 ### The Backward Propagation Algorithm
