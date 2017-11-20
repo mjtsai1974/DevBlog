@@ -97,6 +97,14 @@ $$\begin{array}{l}+\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial 
 $$\begin{array}{l}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial g(z_1^{(3)})}{\displaystyle\partial z_1^{(3)}}\cdot\frac{\displaystyle\partial z_1^{(3)}}{\displaystyle\partial a_1^{(2)}}\cdot\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}\cdot\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
 $$\begin{array}{l}\cdots\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial a_1^{(2)}}=\frac{\displaystyle\partial g(z_1^{(3)})}{\displaystyle\partial z_1^{(3)}}\cdot\frac{\displaystyle\partial z_1^{(3)}}{\displaystyle\partial a_1^{(2)}}\\\end{array}$$  
 $$\begin{array}{l}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}\\\end{array}$$  
+$$\therefore\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(1)}}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_2^{(1)}$$  
+$$\therefore\frac{\partial J(\theta)}{\partial\theta_{1,3}^{(1)}}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_3^{(1)}$$  
+$$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(1)}}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,2}^{(2)}\cdot g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\cdot a_1^{(1)}$$  
+$$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(1)}}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,2}^{(2)}\cdot g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\cdot a_2^{(1)}$$  
+$$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,2}^{(2)}\cdot g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\cdot a_3^{(1)}$$  
+
+>We can normalize above result in this given example:  
+
 
 ### The Backward Propagation Algorithm
 >
