@@ -25,8 +25,25 @@ $$\begin{array}{l}\underset{REG}{J(\theta)}=\frac1m\sum_{i=1}^m\sum_{k=1}^K\left
 >All we need to compute are $J(\theta)$ and $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}$ in a gradient descendent manner, the point is how to achieve the goal and why!  
 
 ### The Gradient Computation By Intuition
->Things would be a little complicated, before this article formularize the gradient computation for each $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}$, just treat the errors from the final output layer, in the reversed order, back to the beginning second layer, and the output error from each layer $\mathcal l$ would then be propagated back into the gradient $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l-1)}}$.  
->
+>Take the cost function by intuition:  
+$$J(\theta)=-y^{(i\_data)}\cdot\log(h_\theta(x^{(i\_data)}))-(1-y^{(i\_data)})\cdot\log(1-h_\theta(x^{(i\_data)}))$$
+>, where the $i_data$ is the index of the input data record.
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-proof-by-3-1.png "backward propagation by 3x1")
+
+>Suppose we are given $3\times1$ neural network model, we know:  
+>&#10112;$z_1^{(2)}=\theta_{1,1}^{(1)}\cdot a_1^{(1)}+\theta_{1,2}^{(1)}\cdot a_2^{(1)}+\theta_{1,3}^{(1)}\cdot a_3^{(1)}$  
+>&#10113;$a_1^{(2)}=g(z_1^{(2)})=\frac1{1+e^{-z_1^{(2)}}}$  
+>&#10114;take partial derivative of $J(\theta)$ on $\theta_{1,1}^{(1)}$, we would obtain:  
+$$\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(2)}}\cdot\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}\cdot\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}$$
+
+>This is the chain rule in calculus, which would mostly then be applied in our proof,  
+>but, why we have the term $\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}$?  
+><font color="red">Please be recalled that $a_1^{(2)}=g(z_1^{(2)})$</font>, where we have below deduction:  
+$$\begin{array}{l}\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(2)}}=\frac{\partial(-y\cdot\log(a_1^{(2)})-(1-y)\cdot\log(1-a_1^{(2)}))}{\partial a_1^{(2)}}\\\;\;\;\;\;\;\;\;\;\;\;\;\;=\frac{-y}{a_1^{(2)}}+\frac{1-y}{1-a_1^{(2)}}\cdots?\\\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}=\frac{\partial g(z_1^{(2)})}{\partial z_1^{(2)}}=g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdots?\\\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}=a_1^{(1)}\cdots?\end{array}$$
+
+>Then, combine  
+>Things would be a little complicated, before this article formularize the gradient computation for each $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}$, just compute the errors from the final output layer, in the reversed order, back to the beginning second layer, and the output error from each layer $\mathcal l$ would then be propagated back into the gradient $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l-1)}}$.  
 
 ### The Backward Propagation Algorithm
 >
