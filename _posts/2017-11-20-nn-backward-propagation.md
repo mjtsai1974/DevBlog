@@ -57,7 +57,7 @@ $$\delta^{(2)}={\begin{bmatrix}\delta_1^{(2)}\end{bmatrix}}_{1\times1}=a_1^{(2)}
 ### Formularize The Gradient Computation - Mathematics Induction
 >From now on, we are going to do the real proof to formularize the gradient in neural network model:  
 >&#10112;suppose you can recognize above proof given in $3\times1$ neural network model, and we have finding:  
-<font color="deeppink">$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$</font>  
+<font color="green">$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$</font>
 
 >&#10113;next, we step further into 2 output nodes in final layer, $3\times2$ neural network model:  
 
@@ -78,7 +78,7 @@ $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(1)}}=(a_2^{(2)}-y^{
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=(a_2^{(2)}-y^{(i\_data)})\cdot a_3^{(1)}$$
 
 >By mathematics induction, we have a finding the same as the one in &#10112;:  
-<font color="deeppink">$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$</font>  
+<font color="green">$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$</font>
 
 >I have just proved for the simple model of only 2 layers, but, <font color="red">will the current finding hold for models of more than 3 layers?</font>  
 
@@ -117,7 +117,7 @@ $$\cdots\;.\times\;element-wised\;operator$$
 $$=(a_1^{(3)}-y^{(i\_data)})\cdot{\begin{bmatrix}\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\\theta_{1,2}^{(2)}\cdot g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}}_{2\times1}$$  
 
 >By mathematics induction, we have a finding the same as the one in &#10112;:  
-<font color="deeppink">$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$</font>  
+<font color="green">$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$</font>
 
 >&#10115;further step into $3\times2\times2$ neural network model:  
 
@@ -128,7 +128,8 @@ $$\delta_{2\times1}^{(3)}={\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bma
 $$\delta_{2\times1}^{(2)}=\begin{bmatrix}\theta^{(2)}\end{bmatrix}_{2\times2}^t\cdot{\begin{bmatrix}\delta^{(3)}\end{bmatrix}}_{2\times1}.\times{\begin{bmatrix}g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}}_{2\times1}$$
 $$\cdots\;.\times\;element-wised\;operator$$  
 
->
+>First, we evaluate $J(\theta)$ at layer 2, that is take derivation of $J(\theta)$ on $\theta_{i,j}^{(2)}$:  
+
 
 ### The Backward Propagation Algorithm
 >
