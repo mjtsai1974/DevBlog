@@ -52,7 +52,16 @@ $$\left\{\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(1)}}=(
 >With above deduction result, for each distinct input data at index $i$_$data$, we can take error at output layer $2$(in this example):  
 $$\delta^{(2)}={\begin{bmatrix}\delta_1^{(2)}\end{bmatrix}}_{1\times1}=a_1^{(2)}-y^{(i\_data)}$$
 
->Things would be a little complicated, before this article formularize the gradient computation for each $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}$, just compute the errors from the final output layer, in the reversed order, back to the beginning second layer, and the output error from each layer $\mathcal l$ would then be propagated back into the gradient $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l-1)}}$.  
+>Things would be a little complicated, before this article formularize the gradient computation for each $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}$, just think that you can compute the errors from the final output layer, in the reversed order, back to the beginning second layer, and the output error from each layer $\mathcal l$ would then be propagated back into the gradient $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l-1)}}$.  
+
+### Formularize The Gradient Computation - Mathematics Induction
+>From now on, we are going to do the real proof to formularize the gradient in neural network model:  
+>&#10112;suppose you can recognize above proof given in $3\times1$ neural network model, and we conclude:  
+$$\delta^{(2)}={\begin{bmatrix}\delta_1^{(2)}\end{bmatrix}}_{1\times1}=a_1^{(2)}-y^{(i\_data)}$$
+
+>&#10113;next, we step further into 2 output nodes in final layer, $3\times2$ neural network model:
+
+>
 
 ### The Backward Propagation Algorithm
 >
