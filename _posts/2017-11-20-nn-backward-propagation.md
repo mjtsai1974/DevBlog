@@ -80,13 +80,23 @@ $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=(a_2^{(2)}-y^{
 >By mathematics induction, we have a finding the same in &#10112;:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
 
->I have just proved for the simple model of only 2 layers, but, will the current finding hold for models of more than 3 layers?  
+>I have just proved for the simple model of only 2 layers, but, <font color="red">will the current finding hold for models of more than 3 layers?</font>  
 
 >&#10114;further step into $3\times2\times1$ neural network model:  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-proof-by-3-2-1.png "backward propagation by 3x2x1")
 
->
+>Trivially, we can deduce out that:  
+$$\delta^{(3)}={\begin{bmatrix}\delta_1^{(3)}\end{bmatrix}}_{1\times1}={\begin{bmatrix}a_1^{(3)}-y^{(i\_data)}\end{bmatrix}}_{1\times1}$$
+
+>Then, we have a problem here, what is $\delta^{(2)}$? How to evaluate it?  Since it is not at the final layer.  What is the gradient descendent evaluation in $\theta^{(1)}$?  
+>The same by taking partial derivative of $J(\theta)$:  
+$$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\\end{array}$$
+$$\begin{array}{l}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot(\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial a_1^{(2)}}\cdot\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}\cdot\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\\end{array}$$
+$$\begin{array}{l}+\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial a_2^{(2)}}\cdot\frac{\displaystyle\partial a_2^{(2)}}{\displaystyle\partial z_2^{(2)}}\cdot\frac{\displaystyle\partial z_2^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}})\;\cdots\;\frac{\displaystyle\partial z_2^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}=0\\\end{array}$$
+$$\begin{array}{l}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial g(z_1^{(3)})}{\displaystyle\partial z_1^{(3)}}\cdot\frac{\displaystyle\partial z_1^{(3)}}{\displaystyle\partial a_1^{(2)}}\cdot\frac{\displaystyle\partial a_1^{(2)}}{\displaystyle\partial z_1^{(2)}}\cdot\frac{\displaystyle\partial z_1^{(2)}}{\displaystyle\partial\theta_{1,1}^{(1)}}\\\end{array}$$
+$$\begin{array}{l}\cdots\frac{\displaystyle\partial a_1^{(3)}}{\displaystyle\partial a_1^{(2)}}=\frac{\displaystyle\partial g(z_1^{(3)})}{\displaystyle\partial z_1^{(3)}}\cdot\frac{\displaystyle\partial z_1^{(3)}}{\displaystyle\partial a_1^{(2)}}\\\end{array}$$
+$$\begin{array}{l}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}\\\end{array}$$
 
 ### The Backward Propagation Algorithm
 >
