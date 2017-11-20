@@ -14,5 +14,5 @@ and propagate the error from the <font color="green">final last one</font> layer
 >The complete regularized cost function consists of two parts, part one is the cost function itself, part two is the regularized term:  
 $$\begin{array}{l}\underset{REG}{J(\theta)}=\frac1m\sum_{i=1}^m\sum_{k=1}^K\left[-y_k^{(i)}\cdot\log(h_\theta^{(k)}(x^{(i)}))-(1-y_k^{(i)})\cdot\log(1-h_\theta^{(k)}(x^{(i)}))\right]\\+\frac\lambda{2m}\sum_{\mathcal l=1}^{L-1}\sum_{j=1}^{j_\mathcal l}\sum_{k=1}^{k_\mathcal l}(\theta_{j,k}^{(\mathcal l)})^2\\,where\;h_\theta(x)\in R^K\\\end{array}$$
 
->Suppose we are given totally m input data, the model where the cost function belongs to comes out with K outputs, and you all know that gradient descendent would be proceeded with derivation of $\theta_{j,k}^{(\mathcal l)}$ taken on the (j, k)th term in the weighting matrix $\theta^{(\mathcal l)}$.
+>Suppose we are given totally m input data, the model where the cost function belongs to comes out with K outputs, and you all know that gradient descendent would be proceeded with derivation of $\theta_{i,j}^{(\mathcal l)}$ taken on the (i, j)th term in the weighting matrix $\theta^{(\mathcal l)}$ in between layer $\mathcal l$ and $\mathcal l+1$.  
 >
