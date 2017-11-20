@@ -119,7 +119,7 @@ $$=(a_1^{(3)}-y^{(i\_data)})\cdot{\begin{bmatrix}\theta_{1,1}^{(2)}\cdot g(z_1^{
 >By mathematics induction, we have a finding the same as the one in &#10112;:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
 
->&#10115;further step into $3\times2\times1$ neural network model:  
+>&#10115;further step into $3\times2\times2$ neural network model:  
 
 
 
