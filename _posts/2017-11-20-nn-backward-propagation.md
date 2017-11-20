@@ -15,11 +15,11 @@ and propagate the error from the <font color="green">final last one</font> layer
 $$\begin{array}{l}\underset{REG}{J(\theta)}=\frac1m\sum_{i=1}^m\sum_{k=1}^K\left[-y_k^{(i)}\cdot\log(h_\theta^{(k)}(x^{(i)}))-(1-y_k^{(i)})\cdot\log(1-h_\theta^{(k)}(x^{(i)}))\right]\\+\frac\lambda{2m}\sum_{\mathcal l=1}^{L-1}\sum_{j=1}^{j_\mathcal l}\sum_{k=1}^{k_\mathcal l}(\theta_{j,k}^{(\mathcal l)})^2\\,where\;h_\theta(x)\in R^K\\\end{array}$$
 
 >Suppose we are given totally m input data, the model where the cost function belongs to comes out with K outputs, and you all know that gradient descendent would be proceeded with derivation of $J(\theta)$ taken on the ($i,j$)th term in the weighting matrix $\theta^{(\mathcal l)}$ in between layer $\mathcal l$ and $\mathcal l+1$.  
->To make it more clear for the proof in next section, whenever you read <font color="green">$\theta_{i,j}^{(\mathcal l)}$</font>, in this article, they are:
->&#10112;the weighting matrix $\theta^{(\mathcal l)}$ in between layer $\mathcal l$ and $\mathcal l+1$.
->&#10113;$i$ is the $i$-th row of the weighting matrix $\theta^{(\mathcal l)}$, it is also the $i$-th activation function in next layer $\mathcal l+1$.
->&#10114;{j} is the $j$-th output from the activation function at layer $\mathcal l$.
->&#10115;<font color="green">$\theta_{i,j}^{(\mathcal l)}$</font> translates the <font color="green">$j$</font>-th output from the activation function at layer <font color="green">$\mathcal l$</font> into <font color="red">one of the input</font> of the <font color="green">$i$</font>-th activation function in next layer <font color="green">$\mathcal l+1$</font>!!!!
+>To make it more clear for the proof in next section, whenever you read <font color="green">$\theta_{i,j}^{(\mathcal l)}$</font>, in this article, they are:  
+>&#10112;the weighting matrix $\theta^{(\mathcal l)}$ in between layer $\mathcal l$ and $\mathcal l+1$.  
+>&#10113;$i$ is the $i$-th row of the weighting matrix $\theta^{(\mathcal l)}$, it is also the $i$-th activation function in next layer $\mathcal l+1$.  
+>&#10114;{j} is the $j$-th output from the activation function at layer $\mathcal l$.  
+>&#10115;<font color="green">$\theta_{i,j}^{(\mathcal l)}$</font> translates the <font color="green">$j$</font>-th output from the activation function at layer <font color="green">$\mathcal l$</font> into <font color="red">one of the input</font> of the <font color="green">$i$</font>-th activation function in next layer <font color="green">$\mathcal l+1$</font>!!!!  
 >All we need to compute are $J(\theta)$ and $\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}$ in a gradient descendent manner, the point is how to achieve the goal and why!  
 
 ### The Backward Propagation Algorithm
