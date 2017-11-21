@@ -185,6 +185,9 @@ $$=\begin{bmatrix}\theta^{(2)}\end{bmatrix}^t\cdot\delta^{(3)}.\times\begin{bmat
 <font color="green">$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$</font>  
 <font color="green">$$\delta^{(\mathcal l)}=\begin{bmatrix}\theta^{(\mathcal l)}\end{bmatrix}^t\cdot\delta^{(\mathcal l+1)}.\times\left[\begin{array}{c}g(z^{(\mathcal l)})\end{array}\cdot(1-g(z^{(\mathcal l)}))\right]$$</font>  
 
+>Cautions must be made that for <font color="red">bias term</font>, $a_j^{(\mathcal l)}=1$, for $j=1$:  
+$$\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\delta_1^{(2)}\cdot1$$; $$\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(1)}}=\delta_2^{(2)}\cdot1$$,...  
+
 ### The Backward Propagation Algorithm
 >
 >
