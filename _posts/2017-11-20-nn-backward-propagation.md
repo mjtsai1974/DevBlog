@@ -64,13 +64,13 @@ $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-proof-by-3-2.png "backward propagation by 3x2")
 
->In this case, for $i=1,2$, we can have:  
+>&#10112;in this case, for $i=1,2$, we can have:  
 $$a_i^{(2)}=g(z_i^{(2)})=g(\theta_{i,1}^{(1)}\cdot a_1^{(1)}+\theta_{i,2}^{(1)}\cdot a_2^{(1)}+\theta_{i,3}^{(1)}\cdot a_3^{(1)})$$
 
->Succeeding to the result in &#10112;, take error costs at layer 2(in this example) as:  
+>&#10113;succeeding to the result in [1];, take error costs at layer 2(in this example) as:  
 $$\delta_{2\times1}^{(2)}={\begin{bmatrix}\delta_1^{(2)}\\\delta_2^{(2)}\end{bmatrix}}_{2\times1}={\begin{bmatrix}a_1^{(2)}-y^{(i\_data)}\\a_2^{(2)}-y^{(i\_data)}\end{bmatrix}}_{2\times1}$$
 
->We can deduce out:  
+>&#10114;we can deduce out:  
 $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\partial J(\theta)}{\partial a_1^{(2)}}\cdot\frac{\partial a_1^{(2)}}{\partial z_1^{(2)}}\cdot\frac{\partial z_1^{(2)}}{\partial\theta_{1,1}^{(1)}}\\=(a_1^{(2)}-y^{(i\_data)})\cdot a_1^{(1)}\end{array}$$
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(1)}}=(a_1^{(2)}-y^{(i\_data)})\cdot a_2^{(1)}$$
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{1,3}^{(1)}}=(a_1^{(2)}-y^{(i\_data)})\cdot a_3^{(1)}$$
@@ -88,11 +88,11 @@ $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-proof-by-3-2-1.png "backward propagation by 3x2x1")
 
->Trivially, we can deduce out that:  
+>&#10112;trivially, we can deduce out that:  
 $$\delta^{(3)}={\begin{bmatrix}\delta_1^{(3)}\end{bmatrix}}_{1\times1}={\begin{bmatrix}a_1^{(3)}-y^{(i\_data)}\end{bmatrix}}_{1\times1}$$
 
 >Then, we have a problem here, <font color="red">what is $\delta^{(2)}$?</font> How to evaluate it?  Since it is not at the final layer.  What is <font color="red">the gradient descendent evaluation in $\theta^{(1)}$?</font>  
->The same by taking partial derivative of $J(\theta)$:  
+>&#10113;The same by taking partial derivative of $J(\theta)$:  
 $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial a_1^{(3)}}{\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
 $$\begin{array}{l}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot(\frac{\partial a_1^{(3)}}{\partial a_1^{(2)}}\cdot\frac{\partial a_1^{(2)}}{\partial z_1^{(2)}}\cdot\frac{\partial z_1^{(2)}}{\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
 $$\begin{array}{l}+\frac{\partial a_1^{(3)}}{\partial a_2^{(2)}}\cdot\frac{\partial a_2^{(2)}}{\partial z_2^{(2)}}\cdot\frac{\partial z_2^{(2)}}{\partial\theta_{1,1}^{(1)}})\;\cdots\;\frac{\partial z_2^{(2)}}{\partial\theta_{1,1}^{(1)}}=0\\\end{array}$$  
@@ -105,11 +105,11 @@ $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(1)}}=(a_1^{(3)}-y^{
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(1)}}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,2}^{(2)}\cdot g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\cdot a_2^{(1)}$$  
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,2}^{(2)}\cdot g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\cdot a_3^{(1)}$$  
 
->We can normalize above result in this given example:  
+>&#10114;we can normalize above result in this given example:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_1^{((\mathcal l+1)+1)}-y^{(i\_data)})\cdot\theta_{1,i}^{(\mathcal l+1)}\cdot g(z_i^{(\mathcal l+1)})\cdot(1-g(z_i^{(\mathcal l+1)}))\cdot a_j^{(\mathcal l)}$$  
 $$\therefore\delta_i^{(\mathcal l+1)}=(a_1^{((\mathcal l+1)+1)}-y^{(i\_data)})\cdot\theta_{1,i}^{(\mathcal l+1)}\cdot g(z_i^{(\mathcal l+1)})\cdot(1-g(z_i^{(\mathcal l+1)}))$$  
 
->For $\mathcal l=1$, we have error costs at layer two:  
+>&#10115;For $\mathcal l=1$, we have error costs at layer two:  
 $$\delta_i^{(2)}=(a_1^{(3)}-y^{(i\_data)})\cdot\theta_{1,i}^{(2)}\cdot g(z_i^{(2)})\cdot(1-g(z_i^{(2)}))$$  
 >where $i=1,2$, then:  
 $$\delta_{2\times1}^{(2)}={\begin{bmatrix}\delta_1^{(2)}\\\delta_2^{(2)}\end{bmatrix}}_{2\times1}$$  
@@ -127,36 +127,36 @@ $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-proof-by-3-2-2.png "backward propagation by 3x2x2")
 
->It would be easy to show error costs at layer three and two:  
+>&#10112;it would be easy to show error costs at layer three and two:  
 $$\delta_{2\times1}^{(3)}={\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}}_{2\times1}={\begin{bmatrix}a_1^{(3)}-y^{(i\_data)}\\a_2^{(3)}-y^{(i\_data)}\end{bmatrix}}_{2\times1}$$  
 $$\delta_{2\times1}^{(2)}=\begin{bmatrix}\theta^{(2)}\end{bmatrix}_{2\times2}^t\cdot{\begin{bmatrix}\delta^{(3)}\end{bmatrix}}_{2\times1}.\times{\begin{bmatrix}g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}}_{2\times1}$$
 $$\cdots\;.\times\;element-wised\;operator$$  
 
->First, evaluate $J(\theta)$ at layer 2, that is take derivation of $J(\theta)$ on $\theta_{i,j}^{(2)}$:  
+>&#10113;first, evaluate $J(\theta)$ at layer 2, that is take derivation of $J(\theta)$ on $\theta_{i,j}^{(2)}$:  
 $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(2)}}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial a_1^{(3)}}{\partial\theta_{1,1}^{(2)}}\\=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\frac{\partial z_1^{(3)}}{\partial\theta_{1,1}^{(2)}}\\=(a_1^{(3)}-y^{(i\_data)})\cdot a_1^{(2)}\\=\delta_1^{(3)}\cdot a_1^{(2)}\end{array}$$  
 $$\begin{array}{l}\therefore\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(2)}}=\delta_1^{(3)}\cdot a_2^{(2)}\\\therefore\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(2)}}=\delta_2^{(3)}\cdot a_1^{(2)}\\\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(2)}}=\delta_2^{(3)}\cdot a_2^{(2)}\end{array}$$  
 
->We can by mathematics induction to have error costs at layer two:  
+>&#10114;we can by mathematics induction to have error costs at layer two:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^2}=\delta_i^{(3)}\cdot a_j^{(2)}$$  
 
->Next, evaluate $J(\theta)$ at layer 1, that is take derivation of $J(\theta)$ on $\theta_{i,j}^{(1)}$:  
+>&#10115;next, evaluate $J(\theta)$ at layer 1, that is take derivation of $J(\theta)$ on $\theta_{i,j}^{(1)}$:  
 $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial a_1^{(3)}}{\partial\theta_{1,1}^{(1)}}+\frac{\partial J(\theta)}{\partial a_2^{(3)}}\cdot\frac{\partial a_2^{(3)}}{\partial\theta_{1,1}^{(1)}}\\=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\frac{\partial z_1^{(3)}}{\partial\theta_{1,1}^{(1)}}\\+\frac{\partial J(\theta)}{\partial a_2^{(3)}}\cdot\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot\frac{\partial z_2^{(3)}}{\partial\theta_{1,1}^{(1)}}\end{array}$$  
 $$take\;part\;1=\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\frac{\partial z_1^{(3)}}{\partial\theta_{1,1}^{(1)}}$$  
 $$take\;part\;2=\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot\frac{\partial z_2^{(3)}}{\partial\theta_{1,1}^{(1)}}$$  
 
->Evaluate on $part\;1$:  
+>&#10116;evaluate on $part\;1$:  
 $$part\;1=\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot(\frac{\partial z_1^{(3)}}{\partial a_1^{(2)}}\cdot\frac{\partial a_1^{(2)}}{\partial\theta_{1,1}^{(1)}}+\frac{\partial z_1^{(3)}}{\partial a_2^{(2)}}\cdot\frac{\partial a_2^{(2)}}{\partial\theta_{1,1}^{(1)}})$$
 $$=\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot(\theta_{1,1}^{(2)}\cdot\frac{\partial g(z_1^{(2)})}{\partial z_1^{(2)}}\cdot\frac{\partial z_1^{(2)}}{\partial\theta_{1,1}^{(1)}}+$$  
 $$\theta_{1,2}^{(2)}\cdot\frac{\partial g(z_2^{(2)})}{\partial z_2^{(2)}}\cdot\frac{\partial z_2^{(2)}}{\partial\theta_{1,1}^{(1)}})\cdots\frac{\partial z_2^{(2)}}{\partial\theta_{1,1}^{(1)}}=0$$  
 $$=\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
 
->Evaluate on $part\;2$:  
+>Then, evaluate on $part\;2$:  
 $$part\;2=\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot(\frac{\partial z_2^{(3)}}{\partial a_1^{(2)}}\cdot\frac{\partial a_1^{(2)}}{\partial\theta_{1,1}^{(1)}}+\frac{\partial z_2^{(3)}}{\partial a_2^{(2)}}\cdot\frac{\partial a_2^{(2)}}{\partial\theta_{1,1}^{(1)}})$$  
 $$\cdots\frac{\partial a_2^{(2)}}{\partial\theta_{1,1}^{(1)}}=0$$  
 $$=\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot\theta_{2,1}^{(2)}\cdot\frac{\partial{g(z_1^{(2)})}}{\partial z_1^{(2)}}\cdot\frac{\partial z_1^{(2)}}{\partial\theta_{1,1}^{(1)}}$$  
 $$=\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot\theta_{2,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
 
->Back to the derivation of $J(\theta)$ on $\theta_{i,j}^{(1)}$, at this moment, take $part\;1$, $part\;2$ thus obtained in it:  
+>&#10117;back to the derivation of $J(\theta)$ on $\theta_{i,j}^{(1)}$, at this moment, take $part\;1$, $part\;2$ thus obtained in it:  
 $$\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot part\;1+\frac{\partial J(\theta)}{\partial a_2^{(3)}}\cdot part\;2$$  
 $$=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot$$  
 $$\;\;\;\;\;\;\;\;(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
@@ -166,9 +166,11 @@ $$=\delta_1^{(3)}\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\
 $$+\delta_2^{(3)}\cdot\theta_{2,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
 $$=\begin{bmatrix}\theta_{1,1}^{(2)}&\theta_{2,1}^{(2)}\end{bmatrix}\cdot\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
 $$=\delta_1^{(2)}\cdot a_1^{(1)}$$  
->Next, we take $\delta_1^{(2)}$ to be $\begin{bmatrix}\theta_{1,1}^{(2)}&\theta_{2,1}^{(2)}\end{bmatrix}\cdot\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))$.  
+
+>&#10118;next, we take $\delta_1^{(2)}$ to be $\begin{bmatrix}\theta_{1,1}^{(2)}&\theta_{2,1}^{(2)}\end{bmatrix}\cdot\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))$.  
 >Therefore, we have $\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(1)}}=\delta_1^{(2)}\cdot a_2^{(1)}$ and $\frac{\partial J(\theta)}{\partial\theta_{1,3}^{(1)}}=\delta_1^{(2)}\cdot a_3^{(1)}$  
->Then, further deduce to have below:  
+
+>&#10119;then, further deduce to have below:  
 $$\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(1)}}=\begin{bmatrix}\theta_{1,2}^{(2)}&\theta_{2,2}^{(2)}\end{bmatrix}\cdot\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}\cdot$$  
 $$g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\cdot a_1^{(1)}$$  
 $$=\delta_2^{(2)}\cdot a_1^{(1)}$$  
@@ -178,6 +180,7 @@ $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=\delta_2^{(2)}
 $$\delta_{2\times1}^{(2)}=\begin{bmatrix}\delta_1^{(2)}\\\delta_2^{(2)}\end{bmatrix}$$  
 $$=\begin{bmatrix}\theta^{(2)}\end{bmatrix}^t\cdot\delta^{(3)}.\times\begin{bmatrix}g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}$$
 ><font color="green">
+
 By mathematics induction, we can claim for both the gradient and the error costs by below formula:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$  
 $$\delta^{(\mathcal l)}=\begin{bmatrix}\theta^{(\mathcal l)}\end{bmatrix}^t\cdot\delta^{(\mathcal l+1)}.\times\left[\begin{array}{c}g(z^{(\mathcal l)})\end{array}\cdot(1-g(z^{(\mathcal l)}))\right]$$  
