@@ -181,11 +181,9 @@ $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=\delta_2^{(2)}
 $$\delta_{2\times1}^{(2)}=\begin{bmatrix}\delta_1^{(2)}\\\delta_2^{(2)}\end{bmatrix}$$  
 $$=\begin{bmatrix}\theta^{(2)}\end{bmatrix}^t\cdot\delta^{(3)}.\times\begin{bmatrix}g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}$$
 
-><font color="green">
-[5]By mathematics induction, we can claim for both the gradient and the error costs by below formula:  
-$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$  
-$$\delta^{(\mathcal l)}=\begin{bmatrix}\theta^{(\mathcal l)}\end{bmatrix}^t\cdot\delta^{(\mathcal l+1)}.\times\left[\begin{array}{c}g(z^{(\mathcal l)})\end{array}\cdot(1-g(z^{(\mathcal l)}))\right]$$  
-></font>
+>[5]By mathematics induction, we can claim for both the gradient and the error costs by below formula:  
+<font color="green">$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$</font>  
+<font color="green">$$\delta^{(\mathcal l)}=\begin{bmatrix}\theta^{(\mathcal l)}\end{bmatrix}^t\cdot\delta^{(\mathcal l+1)}.\times\left[\begin{array}{c}g(z^{(\mathcal l)})\end{array}\cdot(1-g(z^{(\mathcal l)}))\right]$$</font>  
 
 ### The Backward Propagation Algorithm
 >
