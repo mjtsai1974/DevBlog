@@ -158,13 +158,13 @@ $$=\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot\theta_{2,1}^{(2)}\cdot 
 >Back to the derivation of $J(\theta)$ on $\theta_{i,j}^{(1)}$, at this moment, take $part\;1$, $part\;2$ thus obtained in it:  
 $$\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot part\;1+\frac{\partial J(\theta)}{\partial a_2^{(3)}}\cdot part\;2$$  
 $$=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot$$  
-$$(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
+$$\;\;\;\;\;\;\;\;(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
 $$+\frac{\partial J(\theta)}{\partial a_2^{(3)}}\cdot\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot\theta_{2,1}^{(2)}\cdot g(z_1^{(2)})\cdot$$  
-$$(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
-$$=\delta_1^{(3)}\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot$$  
-$$(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
-$$+\delta_2^{(3)}\cdot\theta_{2,1}^{(2)}\cdot g(z_1^{(2)})\cdot$$  
-$$(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
+$$\;\;\;\;\;\;\;\;(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
+$$=\delta_1^{(3)}\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
+$$+\delta_2^{(3)}\cdot\theta_{2,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
+$$=\begin{bmatrix}\theta_{1,1}^{(2)}&\theta_{2,1}^{(2)}\end{bmatrix}\cdot\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
+
 ### The Backward Propagation Algorithm
 >
 >
