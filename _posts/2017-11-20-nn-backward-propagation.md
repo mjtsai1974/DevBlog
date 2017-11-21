@@ -167,7 +167,12 @@ $$=\begin{bmatrix}\theta_{1,1}^{(2)}&\theta_{2,1}^{(2)}\end{bmatrix}\cdot\begin{
 $$=\delta_1^{(2)}\cdot a_1^{(1)}$$  
 >Next, we take $\delta_1^{(2)}$ to be $\begin{bmatrix}\theta_{1,1}^{(2)}&\theta_{2,1}^{(2)}\end{bmatrix}\cdot\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))$.  
 >Therefore, we have $\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(1)}}=\delta_1^{(2)}\cdot a_2^{(1)}$ and $\frac{\partial J(\theta)}{\partial\theta_{1,3}^{(1)}}=\delta_1^{(2)}\cdot a_3^{(1)}$  
->Then,  
+>Then, further deduce to have below:  
+$$\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(1)}}=\begin{bmatrix}\theta_{1,2}^{(2)}&\theta_{2,2}^{(2)}\end{bmatrix}\cdot\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}\cdot$$  
+$$g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\cdot a_1^{(1)}$$  
+$$=\delta_2^{(2)}\cdot a_1^{(1)}$$  
+$$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(1)}}=\delta_2^{(2)}\cdot a_2^{(1)}$$  
+$$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=\delta_2^{(2)}\cdot a_3^{(1)}$$  
 
 ### The Backward Propagation Algorithm
 >
