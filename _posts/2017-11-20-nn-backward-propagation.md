@@ -165,7 +165,9 @@ $$=\delta_1^{(3)}\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\
 $$+\delta_2^{(3)}\cdot\theta_{2,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
 $$=\begin{bmatrix}\theta_{1,1}^{(2)}&\theta_{2,1}^{(2)}\end{bmatrix}\cdot\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
 $$=\delta_1^{(2)}\cdot a_1^{(1)}$$  
->where we take $\cdots\delta_1^{(2)}=\begin{bmatrix}\theta_{1,1}^{(2)}&\theta_{2,1}^{(2)}\end{bmatrix}\cdot\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))$  
+>Next, we take $\delta_1^{(2)}$ to be $\begin{bmatrix}\theta_{1,1}^{(2)}&\theta_{2,1}^{(2)}\end{bmatrix}\cdot\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))$.  
+>Therefore, we have $\frac{\partial J(\theta)}{\partial\theta_{1,2}^{(1)}}=\delta_1^{(2)}\cdot a_2^{(1)}$ and $\frac{\partial J(\theta)}{\partial\theta_{1,3}^{(1)}}=\delta_1^{(2)}\cdot a_3^{(1)}$  
+>Then,  
 
 ### The Backward Propagation Algorithm
 >
