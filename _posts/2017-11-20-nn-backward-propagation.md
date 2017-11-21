@@ -155,10 +155,12 @@ $$\cdots\frac{\partial a_2^{(2)}}{\partial\theta_{1,1}^{(1)}}=0$$
 $$=\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot\theta_{2,1}^{(2)}\cdot\frac{\partial{g(z_1^{(2)})}}{\partial z_1^{(2)}}\cdot\frac{\partial z_1^{(2)}}{\partial\theta_{1,1}^{(1)}}$$  
 $$=\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot\theta_{2,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
 
->Back to the derivation of $J(\theta)$ on $\theta_{i,j}^{(1)}$, at this moment, take $part\;1$, $part\21$ thus obtained in it:  
-$$\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot part\;1+\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_2^{(3)}}\cdot part\;2$$  
-$$=\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_1^{(3)}}\cdot\frac{\displaystyle\partial g(z_1^{(3)})}{\displaystyle\partial z_1^{(3)}}\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
-$$+\frac{\displaystyle\partial J(\theta)}{\displaystyle\partial a_2^{(3)}}\cdot\frac{\displaystyle\partial g(z_2^{(3)})}{\displaystyle\partial z_2^{(3)}}\cdot\theta_{2,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
+>Back to the derivation of $J(\theta)$ on $\theta_{i,j}^{(1)}$, at this moment, take $part\;1$, $part\;2$ thus obtained in it:  
+$$\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot part\;1+\frac{\partial J(\theta)}{\partial a_2^{(3)}}\cdot part\;2$$  
+$$=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial g(z_1^{(3)})}{\partial z_1^{(3)}}\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot$$  
+$$(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
+$$+\frac{\partial J(\theta)}{\partial a_2^{(3)}}\cdot\frac{\partial g(z_2^{(3)})}{\partial z_2^{(3)}}\cdot\theta_{2,1}^{(2)}\cdot g(z_1^{(2)})\cdot$$  
+$$(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
 
 ### The Backward Propagation Algorithm
 >
