@@ -116,6 +116,7 @@ $$\delta_{2\times1}^{(2)}={\begin{bmatrix}\delta_1^{(2)}\\\delta_2^{(2)}\end{bma
 $$=(a_1^{(3)}-y^{(i\_data)})\cdot{\begin{bmatrix}\theta_{1,1}^{(2)}\\\theta_{1,2}^{(2)}\end{bmatrix}}_{2\times1}.\times$$  
 $${\begin{bmatrix}g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}}_{2\times1}$$  
 $$\cdots\;.\times\;element-wised\;operator$$  
+$$\cdots\begin{bmatrix}\theta^{(2)}\end{bmatrix}^t=\begin{bmatrix}\theta_1^{(2)}\\\theta_2^{(2)}\end{bmatrix}$$  
 $$=(a_1^{(3)}-y^{(i\_data)})\cdot{\begin{bmatrix}\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\\theta_{1,2}^{(2)}\cdot g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}}_{2\times1}$$  
 ><font color="green">
 By mathematics induction, we have a finding the same as the one in &#10112;:  
@@ -173,6 +174,13 @@ $$g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\cdot a_1^{(1)}$$
 $$=\delta_2^{(2)}\cdot a_1^{(1)}$$  
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(1)}}=\delta_2^{(2)}\cdot a_2^{(1)}$$  
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=\delta_2^{(2)}\cdot a_3^{(1)}$$  
+>We found one thing that error costs also has similar scenario:  
+$$\delta_{2\times1}^{(2)}=\begin{bmatrix}\delta_1^{(2)}\\\delta_2^{(2)}\end{bmatrix}$$  
+$$=\begin{bmatrix}\theta^{(2)}\end{bmatrix}^t\cdot\delta^{(3)}.\times\begin{bmatrix}g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}$$
+><font color="green">
+By mathematics induction, we can claim that:  
+$$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
+></font>
 
 ### The Backward Propagation Algorithm
 >
