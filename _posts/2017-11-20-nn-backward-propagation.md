@@ -56,11 +56,11 @@ $$\delta^{(2)}={\begin{bmatrix}\delta_1^{(2)}\end{bmatrix}}_{1\times1}=a_1^{(2)}
 
 ### Formularize The Gradient Computation - Mathematics Induction
 >From now on, we are going to do the real proof to formularize the gradient in neural network model:  
-&#10112;suppose you can recognize above proof given in $3\times1$ neural network model, and we have the finding:<font color="green">  
+[1]suppose you can recognize above proof given in $3\times1$ neural network model, and we have the finding:<font color="green">  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
 ></font>
 
->&#10113;next, we step further into 2 output nodes in final layer, $3\times2$ neural network model:  
+>[2]next, we step further into 2 output nodes in final layer, $3\times2$ neural network model:  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-proof-by-3-2.png "backward propagation by 3x2")
 
@@ -78,13 +78,13 @@ $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(1)}}=(a_2^{(2)}-y^{
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,2}^{(1)}}=(a_2^{(2)}-y^{(i\_data)})\cdot a_2^{(1)}$$
 $$\therefore\frac{\partial J(\theta)}{\partial\theta_{2,3}^{(1)}}=(a_2^{(2)}-y^{(i\_data)})\cdot a_3^{(1)}$$
 ><font color="green">
-By mathematics induction, we have a finding the same as the one in &#10112;:  
+By mathematics induction, we have a finding the same as the one in [1]:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
 ></font>
 
 >I have just proved for the simple model of only 2 layers, but, <font color="red">will the current finding hold for models of more than 3 layers?</font>  
 
->&#10114;further step into $3\times2\times1$ neural network model:  
+>[3]further step into $3\times2\times1$ neural network model:  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-proof-by-3-2-1.png "backward propagation by 3x2x1")
 
@@ -119,11 +119,11 @@ $$\cdots\;.\times\;element-wised\;operator$$
 $$\cdots\begin{bmatrix}\theta^{(2)}\end{bmatrix}^t=\begin{bmatrix}\theta_1^{(2)}\\\theta_2^{(2)}\end{bmatrix}$$  
 $$=(a_1^{(3)}-y^{(i\_data)})\cdot{\begin{bmatrix}\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\\\theta_{1,2}^{(2)}\cdot g(z_2^{(2)})\cdot(1-g(z_2^{(2)}))\end{bmatrix}}_{2\times1}$$  
 ><font color="green">
-By mathematics induction, we have a finding the same as the one in &#10112;:  
+By mathematics induction, we have a finding the same as the one in [1]:  
 $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal l+1)}-y^{(i\_data)})\cdot a_j^{(\mathcal l)}=\delta_i^{(\mathcal l+1)}\cdot a_j^{(\mathcal l)}$$
 ></font>
 
->&#10115;further step into $3\times2\times2$ neural network model:  
+>[4]further step into $3\times2\times2$ neural network model:  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-proof-by-3-2-2.png "backward propagation by 3x2x2")
 
