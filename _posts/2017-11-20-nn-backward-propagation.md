@@ -92,6 +92,7 @@ $$\frac{\partial J(\theta)}{\partial\theta_{i,j}^{(\mathcal l)}}=(a_i^{(\mathcal
 $$\delta^{(3)}={\begin{bmatrix}\delta_1^{(3)}\end{bmatrix}}_{1\times1}={\begin{bmatrix}a_1^{(3)}-y^{(i\_data)}\end{bmatrix}}_{1\times1}$$
 
 >Then, we have a problem here, <font color="red">what is $\delta^{(2)}$?</font> How to evaluate it?  Since it is not at the final layer.  What is <font color="red">the gradient descendent evaluation in $\theta^{(1)}$?</font>  
+
 >&#10113;The same by taking partial derivative of $J(\theta)$:  
 $$\begin{array}{l}\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot\frac{\partial a_1^{(3)}}{\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
 $$\begin{array}{l}=\frac{\partial J(\theta)}{\partial a_1^{(3)}}\cdot(\frac{\partial a_1^{(3)}}{\partial a_1^{(2)}}\cdot\frac{\partial a_1^{(2)}}{\partial z_1^{(2)}}\cdot\frac{\partial z_1^{(2)}}{\partial\theta_{1,1}^{(1)}}\\\end{array}$$  
