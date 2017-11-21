@@ -189,5 +189,8 @@ $$=\begin{bmatrix}\theta^{(2)}\end{bmatrix}^t\cdot\delta^{(3)}.\times\begin{bmat
 $$\frac{\partial J(\theta)}{\partial\theta_{1,1}^{(1)}}=\delta_1^{(2)}\cdot1$$; $$\frac{\partial J(\theta)}{\partial\theta_{2,1}^{(1)}}=\delta_2^{(2)}\cdot1$$,...  
 
 ### The Backward Propagation Algorithm
->
->
+>Supopose you are comfortable with erro cost in neural network model after deduction by mathemtics induction, this article would guide you through the backward propagation algorithm:  
+>Given the training data set $\{(x^{(1)},y^{(1)})\dots(x^{(m)},y^{(m)})\}$  
+>Initialize $\triangle_{i,j}^{(\mathcal l)}=0$ for all $i,j,\mathcal l$, below flow is in rather intuition.  As to the coding detail, it would be in the impolementation section.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-22-nn-backward-propagation-algorithm.png "backward propagation algorithm")
