@@ -113,7 +113,7 @@ Below is the major items:
 
 * [Basic Topology]({{ site.github.repo }}{{ site.baseurl }}/2017/11/19/nn-basic-topology/)
 * [Feedforward Propagation]({{ site.github.repo }}{{ site.baseurl }}/2017/11/19/nn-feed-forward-propagation/)
-* Backward Propagation 
+* [Backward Propagation]({{ site.github.repo }}{{ site.baseurl }}/2017/11/20/nn-backward-propagation/)
 
 ### Support Vector Machine(SVM)
 
