@@ -164,6 +164,8 @@ $$\;\;\;\;\;\;\;\;(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$
 $$=\delta_1^{(3)}\cdot\theta_{1,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
 $$+\delta_2^{(3)}\cdot\theta_{2,1}^{(2)}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
 $$=\begin{bmatrix}\theta_{1,1}^{(2)}&\theta_{2,1}^{(2)}\end{bmatrix}\cdot\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))\cdot a_1^{(1)}$$  
+$$=\delta_1^{(2)}\cdot a_1^{(1)}$$  
+$$\cdots\delta_1^{(2)}=\begin{bmatrix}\theta_{1,1}^{(2)}&\theta_{2,1}^{(2)}\end{bmatrix}\cdot\begin{bmatrix}\delta_1^{(3)}\\\delta_2^{(3)}\end{bmatrix}\cdot g(z_1^{(2)})\cdot(1-g(z_1^{(2)}))$$  
 
 ### The Backward Propagation Algorithm
 >
