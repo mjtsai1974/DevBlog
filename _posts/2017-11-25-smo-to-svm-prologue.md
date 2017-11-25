@@ -42,3 +42,6 @@ $$\begin{bmatrix}x\\-\frac ab\cdot x-\frac cb\end{bmatrix}=\begin{bmatrix}0\\-\f
 >&#10114;take $r=(x-x_0,y-y_0)$, <font color="deeppink">by projecting $r$ onto $v$</font>, then, we can deduce out $\left|Proj_v\cdot r\right|=\frac{\left\|v^t\cdot r\right\|}{\left\|v\right\|}$ to be the distance.  
 >Since $v^t\cdot(r-v\cdot k)=0$, therefore, $k=\frac{v^t\cdot r}{v^t\cdot v}$,  
 $$\begin{array}{l}d=\left\|v\cdot\frac{v^t\cdot r}{v^t\cdot v}\right\|\\=\left\|\frac v{v^t\cdot v}\cdot v^t\cdot r\right\|\\=\left\|v\cdot(v^t\cdot v)^{-1}\cdot v^t\cdot r\right\|\\=\left\|(v^t)^{-1}\cdot v^t\cdot r\right\|\\=\frac{\left\|v^t\cdot r\right\|}{\left\|v^t\right\|}=\frac{\left\|v^t\cdot r\right\|}{\left\|v\right\|}\end{array}$$  
+>&#10115;suppose ($x$,$y$) is on $H$, by taking <font color="deeppink">the absolute value</font> of projecting $r$ onto $v$, we can get the distance from $H$ to $H_1$:  
+$$\begin{array}{l}\left|Proj_v\cdot r\right|\\=\frac{\left\|v^t\cdot r\right\|}{\left\|v\right\|},v=\left\langle a,b\right\rangle\\=\frac{\left|a\cdot(x-x_0)+b\cdot(y-y_0)\right|}{\sqrt{a^2+b^2}}\\=\frac{\left|a\cdot x+b\cdot y-(a\cdot x_0+b\cdot y_0)\right|}{\sqrt{a^2+b^2}}\\=\frac{\left|0-(-c)\right|}{\sqrt{a^2+b^2}}=\frac c{\sqrt{a^2+b^2}}\end{array}$$
+
