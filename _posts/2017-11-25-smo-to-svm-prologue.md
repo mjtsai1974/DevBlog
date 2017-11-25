@@ -29,3 +29,14 @@ $$\begin{array}{l}H_1:\frac{a^t}\delta\cdot x-\frac{\overline b}\delta=1\\H_2:\f
 
 >Next would be to maximize the distance between $H_1$ and $H_2$, therefore, there will be some <font color="red">positive</font> examples on $H_1$, some <font color="green">negative</font> examples on $H_2$.  
 >These examples are called <font color="deeppink">support vectors</font>, only they participate in the separating hyperplane $H_1$ and $H_2$, <font color="#0000FA">other examples could be removed or moved around</font>, since they didn't cross $H_1$, $H_2$.  
+
+### Distance Measurement Of Point To Line
+>Before step into support vector machine, have a galance at the measurement of distance from point to line.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-25-svm-prologue-point-to-line-distance.png "point to line distance")
+
+>By given $a\cdot x+b\cdot y+c=0$ is a line parametric equation, then, $\frac ab\cdot x+y+\frac cb=0$; therefore, $y=-\frac ab\cdot x-\frac cb$ has slope $-\frac ab$.  
+>Pointers on this line could be expressed as below:  
+$$\begin{bmatrix}x\\-\frac ab\cdot x-\frac cb\end{bmatrix}=\begin{bmatrix}0\\-\frac cb\end{bmatrix}+(-\frac1b)\cdot\begin{bmatrix}-b\\a\end{bmatrix}\cdot x$$  
+>Therefore, $\begin{bmatrix}-b\\a\end{bmatrix}$ is the vector parallel to this line, and $\begin{bmatrix}a\\b\end{bmatrix}$ is the vector perpendicular to the line.  
+>
