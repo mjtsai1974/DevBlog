@@ -36,7 +36,8 @@ $$\begin{array}{l}H_1:\frac{a^t}\delta\cdot x-\frac{\overline b}\delta=1\\H_2:\f
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-11-25-svm-prologue-point-to-line-distance.png "point to line distance")
 
 >By given $a\cdot x+b\cdot y+c=0$ is a line parametric equation, then, $\frac ab\cdot x+y+\frac cb=0$; therefore, $y=-\frac ab\cdot x-\frac cb$ has slope $-\frac ab$.  
->Pointers on this line could be expressed as below:  
+>&#10112;pointers on this line could be expressed as below:  
 $$\begin{bmatrix}x\\-\frac ab\cdot x-\frac cb\end{bmatrix}=\begin{bmatrix}0\\-\frac cb\end{bmatrix}+(-\frac1b)\cdot\begin{bmatrix}-b\\a\end{bmatrix}\cdot x$$  
->Therefore, $$\begin{bmatrix}-b\\a\end{bmatrix}$$ is the vector parallel to this line, and $$\begin{bmatrix}a\\b\end{bmatrix}$$ is the vector perpendicular to the line.  
+>&#10113;therefore, $$\begin{bmatrix}-b\\a\end{bmatrix}$$ is the vector parallel to this line, and $$\begin{bmatrix}a\\b\end{bmatrix}$$ is the vector perpendicular to the line.  
+>&#10114;take $r=(x-x_0,y-y_0)$, project $r$ onto $v$, then, we can deduce out $\left|Proj_v\cdot r\right|=\frac{\left\|v^t\cdot r\right\|}{\left\|v\right\|}$.  
 >
