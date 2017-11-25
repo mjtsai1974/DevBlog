@@ -115,16 +115,17 @@ Below is the major items:
 * [Feedforward Propagation]({{ site.github.repo }}{{ site.baseurl }}/2017/11/19/nn-feed-forward-propagation/)
 * [Backward Propagation]({{ site.github.repo }}{{ site.baseurl }}/2017/11/20/nn-backward-propagation/)
 
-### Sequential Minimum Optimization(SMO) to Support Vector Machine(SVM)
+### Sequential Minimum Optimization(SMO) To Support Vector Machine(SVM)
 
 Support vector machine targets in binary classification with a specific safe guard distance in between the two kinds.  Both neural network and support vector machine take major weights 
 in my growth in machine learning foundation after CS221 on [Coursera](https://www.coursera.org/learn/machine-learning).  It took me almost 2 weeks to summary all the details from its 
 theorem to the formula deduction, finally algorithm of the real thing.
 
-* Prologue
-* Support Vector Machine Theorem
-* What is KKT condition?
-* Operation flow in SVM algorithm
+* [Prologue To Support Vector Machine]({{ site.github.repo }}{{ site.baseurl }}/2017/11/25/smo-to-svm-prologue/)
+* Initial Idea In Support Vector Machine
+* Imperfect Separation and The KKT condition
+* Sequential Minimum Optimization
+* Operation Flow In SVM Algorithm
 
 ### Bayesian Statistics And Machine Learning 
 
