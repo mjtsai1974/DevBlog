@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From Sequential Minimum Optimization To Support Vector Machine
+title: Prologue To Support Vector Machine
 ---
 
 ## Prologue To Support Vector Machine
