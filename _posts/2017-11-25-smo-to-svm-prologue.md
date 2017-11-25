@@ -27,4 +27,5 @@ $$\begin{array}{l}\therefore H_1:a^t\cdot x-(\delta+\overline b)=0\\\;\;\;\;H_2:
 $$\begin{array}{l}H_1:\frac{a^t}\delta\cdot x-\frac{\overline b}\delta=1\\H_2:\frac{a^t}\delta\cdot x-\frac{\overline b}\delta=-1\\\\\end{array}$$  
 >&#10115;take $w=\frac{a^t}\delta$ and $b=\frac{\overline b}\delta$, could we get our expected $H_1$ and $H_2$.
 
->Next would be to 
+>Next would be to maximize the distance between $H_1$ and $H_2$, therefore, there will be some <font color="red">positive</font> examples on $H_1$, some <font color="green">negative</font> examples on $H_2$.  
+>These examples are called <font color="deeppink">support vectors</font>, only they participate in the separating hyperplane $H_1$ and $H_2$, <font color="#0000FA">other examples could be removed or moved around</font>, since they didn't cross $H_1$, $H_2$.  
