@@ -39,5 +39,6 @@ $$\begin{array}{l}H_1:\frac{a^t}\delta\cdot x-\frac{\overline b}\delta=1\\H_2:\f
 >&#10112;pointers on this line could be expressed as below:  
 $$\begin{bmatrix}x\\-\frac ab\cdot x-\frac cb\end{bmatrix}=\begin{bmatrix}0\\-\frac cb\end{bmatrix}+(-\frac1b)\cdot\begin{bmatrix}-b\\a\end{bmatrix}\cdot x$$  
 >&#10113;therefore, $$\begin{bmatrix}-b\\a\end{bmatrix}$$ is the vector parallel to this line, and $$\begin{bmatrix}a\\b\end{bmatrix}$$ is the vector perpendicular to the line.  
->&#10114;take $r=(x-x_0,y-y_0)$, project $r$ onto $v$, then, we can deduce out $\left|Proj_v\cdot r\right|=\frac{\left\|v^t\cdot r\right\|}{\left\|v\right\|}$.  
->
+>&#10114;take $r=(x-x_0,y-y_0)$, <font color="deeppink">by projecting $r$ onto $v$</font>, then, we can deduce out $\left|Proj_v\cdot r\right|=\frac{\left\|v^t\cdot r\right\|}{\left\|v\right\|}$ to be the distance.  
+>Since $v^t\cdot(r-v\cdot k)=0$, therefore, $k=\frac{v^t\cdot r}{v^t\cdot v}$,  
+$$\begin{array}{l}d=\left\|v\cdot\frac{v^t\cdot r}{v^t\cdot v}\right\|\\=\left\|\frac v{v^t\cdot v}\cdot v^t\cdot r\right\|\\=\left\|v\cdot(v^t\cdot v)^{-1}\cdot v^t\cdot r\right\|\\=\left\|(v^t)^{-1}\cdot v^t\cdot r\right\|\\=\frac{\left\|v^t\cdot r\right\|}{\left\|v^t\right\|}=\frac{\left\|v^t\cdot r\right\|}{\left\|v\right\|}\end{array}$$  
