@@ -16,7 +16,7 @@ we must minimize the term $\left\|w\right\|=(w^t\cdot w)^{\textstyle\frac12}$ to
 >Then, combine &#10112; and &#10113; we can have:  
 $$y_i\cdot(w^t\cdot x_i-b)\geq1$$, $$\forall i\in\{1,2,...,n\}$$  
 >We can formulate our problem as:  
-$\underset w{min}\frac12w^t\cdot w$, subject to $y_i\cdot(w^t\cdot x_i-b)\geq1,\forall i$  
+><font color="green">$\underset w{min}\frac12w^t\cdot w$</font>, subject to <font color="red">$y_i\cdot(w^t\cdot x_i-b)\geq1,\forall i$</font>.  
 >The first part is the <font color="green">target</font>, the second part is the <font color="red">constraint</font>.  
 
 >We introduce $\alpha_1,\alpha_2,\dots\alpha_n$ to be the lagrange multiplier and express in below lagrangian to be our <font color="deepink">objective function</font>:  
@@ -41,4 +41,4 @@ $$\begin{array}{l}L(w,b,\alpha)\\=-\frac12(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_
 >If we choose $L(x,\lambda)=f(x)-\lambda\cdot g(x)$, then $\lambda>0$.  This is by artificial design.  Whether plus or minus sign is used in the expression, could we have the similar achievement.  
 >Now, back to the formulate of our problem:  
 $\underset{w,b}{min}\frac12w^t\cdot w$, subject to $y_i\cdot(w^t\cdot x_i-b)\geq1$  
->Suppose we take the constraint function function to be $g(x)=y_i\cdot(w^t\cdot x_i-b)\geq1$, if $\lambda$ would be negative by above lagrangian proof, to get positive $\lambda$, we should use the minus sign in $L(x,\lambda)$.  
+>Suppose we take the constraint function function to be $g(x)=y_i\cdot(w^t\cdot x_i-b)\geq1$, if $\lambda$ would be negative by above lagrangian proof, to get <font color="green">positive</font> $\lambda$, we should use the <font color="green">minus</font> operator in $L(x,\lambda)$.  
