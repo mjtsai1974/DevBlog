@@ -29,7 +29,6 @@ $$\begin{array}{l}L(w,b,\alpha)\\=\frac12w^t\cdot w-\sum_{i=1}^n\alpha_i\cdot(y_
 >To get the optimal $\alpha$, we should take partial derivatives of $L$ on $w$, $b$ respectively and equate them to zero:  
 >&#10112;$\frac{\partial L}{\partial w}=w-\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i=0$, then, we have $w=\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i$  
 >&#10113;$\frac{\partial L}{\partial b}=\sum_{i=1}^n\alpha_i\cdot y_i$  
-
 >&#10114;use the deduction result of &#10112; and &#10113; in $L(w,b,\alpha)$, we obtain:  
 $$\begin{array}{l}L(w,b,\alpha)\\=\frac12(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)\\-\sum_{i=1}^n\alpha_i\cdot y_i\cdot((\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot x_i-b)\\+\sum_{i=1}^n\alpha_i\end{array}$$  
 >&#10115;reduce from the second term, we have below deduction:  
@@ -37,19 +36,16 @@ $$\begin{array}{l}\sum_{i=1}^n\alpha_i\cdot y_i\cdot((\sum_{i=1}^n\alpha_i\cdot 
 >&#10116;take it back to $L(w,b,\alpha)$, we get:  
 $$\begin{array}{l}L(w,b,\alpha)\\=-\frac12(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)\\+\sum_{i=1}^n\alpha_i\\=-\frac12\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot(x_i^t\cdot x_j)\\+\sum_{i=1}^n\alpha_i\end{array}$$  
 
+### Why $L(w,b,\alpha)$ = the target <font color="red">plus</font> the constraint?
 >But, why do we design $L(w,b,\alpha)$ in the expression of the target <font color="red">plus</font> the constraint?  Recall that in the [lagrange multiplier article]({{ site.github.repo }}{{ site.baseurl }}/2017/10/27/prereq-lagrange-multiplier/), I have shown you by taking $L(x,\lambda)=f(x)+\lambda\cdot g(x)$, finally leads to <font color="red">$\lambda<0$</font>.  
 
->If we choose $L(x,\lambda)=f(x)-\lambda\cdot g(x)$, then $\lambda>0$.  This is by artificial design.  Whether plus or minus sign is used in the expression, could we have the similar achievement.  
-
->Now, back to the formulate of our problem:  
+>&#10112;if we choose $L(x,\lambda)=f(x)-\lambda\cdot g(x)$, then $\lambda>0$.  This is by artificial design.  Whether plus or minus sign is used in the expression, could we have the similar achievement.  
+>&#10113;now, back to the formulate of our problem:  
 >$\underset{w,b}{min}\frac12w^t\cdot w$, subject to $y_i\cdot(w^t\cdot x_i-b)\geq1$  
-
->Suppose we take the constraint function function to be $g(x)=y_i\cdot(w^t\cdot x_i-b)\geq1$, if $\lambda$ would be negative by [prior lagrangian proof]({{ site.github.repo }}{{ site.baseurl }}/2017/10/27/prereq-lagrange-multiplier/), to get <font color="green">positive</font> $\lambda$, we should use the <font color="green">minus</font> operator in $L(x,\lambda)$.  
-
->Therefore, almost all SVM articles design $L(w,b,\alpha)$; where $\alpha$ is the lagrange multiplier given in the expression by using the <font color="green">minus</font> operator:  
+>&#10114;suppose we take the constraint function function to be $g(x)=y_i\cdot(w^t\cdot x_i-b)\geq1$, if $\lambda$ would be negative by [prior lagrangian proof]({{ site.github.repo }}{{ site.baseurl }}/2017/10/27/prereq-lagrange-multiplier/), to get <font color="green">positive</font> $\lambda$, we should use the <font color="green">minus</font> operator in $L(x,\lambda)$.  
+>&#10115;Therefore, almost all SVM articles design $L(w,b,\alpha)$; where $\alpha$ is the lagrange multiplier given in the expression by using the <font color="green">minus</font> operator:  
 $$L(w,b,\alpha)=\frac12w^t\cdot w-\sum_{i=1}^n\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)-1)$$  
-
->Such design guarantees that we could have <font color="green">$\forall\alpha_i>0$</font>, which would be one major condition that must be satisfied in the following SVM article.
+>&#10116;such design guarantees that we could have <font color="green">$\forall\alpha_i>0$</font>, which would be one major condition that must be satisfied in the following SVM article.
 
 >After solving the $\alpha_i$, we can get $w=\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i$, then, we can classify a new object x by:  
 $$\begin{array}{l}f(x)\\=sign(w^t\cdot x-b)\\=sign((\sum_{i=1}^n\alpha_i\cdot y_i\cdot xi)^t\cdot x-b)\\=sign(\sum_{i=1}^n\alpha_i\cdot y_i\cdot(xi)^t\cdot x-b)\end{array}$$  
