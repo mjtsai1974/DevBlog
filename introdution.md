@@ -122,7 +122,7 @@ in my growth in machine learning foundation after CS221 on [Coursera](https://ww
 theorem to the formula deduction, finally algorithm of the real thing.
 
 * [Prologue To Support Vector Machine]({{ site.github.repo }}{{ site.baseurl }}/2017/11/25/smo-to-svm-prologue/)
-* Initial Idea In Support Vector Machine
+* [Initial Idea In Support Vector Machine]({{ site.github.repo }}{{ site.baseurl }}/2017/11/27/smo-to-svm-initial-idea/)
 * Imperfect Separation and The KKT condition
 * Sequential Minimum Optimization
 * Operation Flow In SVM Algorithm
