@@ -56,6 +56,6 @@ $$\begin{array}{l}f(x)\\=sign(w^t\cdot x-b)\\=sign((\sum_{i=1}^n\alpha_i\cdot y_
 >&#10112;let $\Phi(\cdot)$ to be the transformation function to some high-dimensional space, then:  
 $$\begin{array}{l}L(\alpha)\\=-\frac12\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot(\Phi(x_i).\times\Phi(x_j))\\+\sum_{i=1}^n\alpha_i\end{array}$$  
 >, where $k(x_i,x_j)=\Phi(x_i).\times\Phi(x_j)$, $k(x_i,x_j)$ is the kernel function, the element-wise dot product $\Phi^t(x_i).\times\Phi(x_j)$ in the high-dimensional space is equivalent to the kernel function of the space of the output(or maybe input) parameters.  
->&#10112;we can take $k(x_i,x_j)=e^{-(\frac{\left\|x_i-x_j\right\|^2}{2\cdot\delta^2})}$,  
+>&#10113;we can take $k(x_i,x_j)=e^{-(\frac{\left\|x_i-x_j\right\|^2}{2\cdot\delta^2})}$,  
 >where, $k(x_i,x_j)\in R^{n2},\Phi(x_i).\times\Phi(x_j)\in R^{n2}$  
 >$x_i,x_j\in R^{n1}$ and $n1\geq n2$.  
