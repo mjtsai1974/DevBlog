@@ -37,5 +37,4 @@ $$\begin{array}{l}\sum_{i=1}^n\alpha_i\cdot y_i\cdot((\sum_{i=1}^n\alpha_i\cdot 
 >&#10116;take it back to $L(w,b,\alpha)$, we get:  
 $$\begin{array}{l}L(w,b,\alpha)\\=-\frac12(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)\\+\sum_{i=1}^n\alpha_i\\=-\frac12\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot(x_i^t\cdot x_j)\\+\sum_{i=1}^n\alpha_i\end{array}$$  
 
->But, why do we design $L(w,b,\alpha)$ in the <font color="green">target</font> <font color="red">plus</font> the <font color="red">constraint</font>?  
->Recall that in the lagrange multiplier article, I have shown you by taking 
+>But, why do we design $L(w,b,\alpha)$ in the expression of the target <font color="red">plus</font> the constraint?  Recall that in the lagrange multiplier article, I have shown you by taking $L(x,\lambda)=f(x)+\lambda\cdot g(x)$, finally leads to <font color="red">$\lambda<0$</font>.  
