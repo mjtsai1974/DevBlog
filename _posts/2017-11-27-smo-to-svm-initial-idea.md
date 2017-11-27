@@ -42,6 +42,6 @@ $$\begin{array}{l}L(w,b,\alpha)\\=-\frac12(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_
 >Now, back to the formulate of our problem:  
 >$\underset{w,b}{min}\frac12w^t\cdot w$, subject to $y_i\cdot(w^t\cdot x_i-b)\geq1$  
 >Suppose we take the constraint function function to be $g(x)=y_i\cdot(w^t\cdot x_i-b)\geq1$, if $\lambda$ would be negative by [prior lagrangian proof]({{ site.github.repo }}{{ site.baseurl }}/2017/10/27/prereq-lagrange-multiplier/), to get <font color="green">positive</font> $\lambda$, we should use the <font color="green">minus</font> operator in $L(x,\lambda)$.  
->Therefore, almost all SVM articles design $L(w,b,\alpha)$ where $\alpha$ is the lagrange multiplier given in the expression by using the <font color="green">minus</font> operator:  
+>Therefore, almost all SVM articles design $L(w,b,\alpha)$; where $\alpha$ is the lagrange multiplier given in the expression by using the <font color="green">minus</font> operator:  
 $$L(w,b,\alpha)=\frac12w^t\cdot w-\sum_{i=1}^n\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)-1)$$  
->Such design could guarantee that we could have <font color="green">$\forall\alpha_i>0$</font>, which would be one major condition that must be satisfied in the following SVM article.
+>Such design guarantees that we could have <font color="green">$\forall\alpha_i>0$</font>, which would be one major condition that must be satisfied in the following SVM article.
