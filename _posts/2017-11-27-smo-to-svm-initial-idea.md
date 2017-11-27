@@ -16,7 +16,7 @@ we must minimize the term $\left\|w\right\|=(w^t\cdot w)^{\textstyle\frac12}$ to
 >Then, combine &#10112; and &#10113; we can have:  
 $$y_i\cdot(w^t\cdot x_i-b)\geq1$$, $$\forall i\in\{1,2,...,n\}$$  
 >We can formulate our problem as:  
-><font color="green">$\underset w{min}\frac12w^t\cdot w$</font>, subject to <font color="red">$y_i\cdot(w^t\cdot x_i-b)\geq1,\forall i$</font>.  
+>$\underset w{min}\frac12w^t\cdot w$, subject to $y_i\cdot(w^t\cdot x_i-b)\geq1,\forall i$.  
 >The first part is the <font color="green">target</font>, the second part is the <font color="red">constraint</font>.  
 
 >We introduce $\alpha_1,\alpha_2,\dots\alpha_n$ to be the lagrange multiplier and express in below lagrangian to be our <font color="deepink">objective function</font>:  
@@ -37,8 +37,11 @@ $$\begin{array}{l}\sum_{i=1}^n\alpha_i\cdot y_i\cdot((\sum_{i=1}^n\alpha_i\cdot 
 >&#10116;take it back to $L(w,b,\alpha)$, we get:  
 $$\begin{array}{l}L(w,b,\alpha)\\=-\frac12(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)\\+\sum_{i=1}^n\alpha_i\\=-\frac12\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot(x_i^t\cdot x_j)\\+\sum_{i=1}^n\alpha_i\end{array}$$  
 
->But, why do we design $L(w,b,\alpha)$ in the expression of the target <font color="red">plus</font> the constraint?  Recall that in the lagrange multiplier article, I have shown you by taking $L(x,\lambda)=f(x)+\lambda\cdot g(x)$, finally leads to <font color="red">$\lambda<0$</font>.  
+>But, why do we design $L(w,b,\alpha)$ in the expression of the target <font color="red">plus</font> the constraint?  Recall that in the [lagrange multiplier article]({{ site.github.repo }}{{ site.baseurl }}/2017/10/27/prereq-lagrange-multiplier/), I have shown you by taking $L(x,\lambda)=f(x)+\lambda\cdot g(x)$, finally leads to <font color="red">$\lambda<0$</font>.  
 >If we choose $L(x,\lambda)=f(x)-\lambda\cdot g(x)$, then $\lambda>0$.  This is by artificial design.  Whether plus or minus sign is used in the expression, could we have the similar achievement.  
 >Now, back to the formulate of our problem:  
-$\underset{w,b}{min}\frac12w^t\cdot w$, subject to $y_i\cdot(w^t\cdot x_i-b)\geq1$  
->Suppose we take the constraint function function to be $g(x)=y_i\cdot(w^t\cdot x_i-b)\geq1$, if $\lambda$ would be negative by above lagrangian proof, to get <font color="green">positive</font> $\lambda$, we should use the <font color="green">minus</font> operator in $L(x,\lambda)$.  
+>$\underset{w,b}{min}\frac12w^t\cdot w$, subject to $y_i\cdot(w^t\cdot x_i-b)\geq1$  
+>Suppose we take the constraint function function to be $g(x)=y_i\cdot(w^t\cdot x_i-b)\geq1$, if $\lambda$ would be negative by [prior lagrangian proof]({{ site.github.repo }}{{ site.baseurl }}/2017/10/27/prereq-lagrange-multiplier/), to get <font color="green">positive</font> $\lambda$, we should use the <font color="green">minus</font> operator in $L(x,\lambda)$.  
+>Therefore, almost all SVM articles design $L(w,b,\alpha)$ where $\alpha$ is the lagrange multiplier given in the expression by using the <font color="green">minus</font> operator:  
+$$L(w,b,\alpha)=\frac12w^t\cdot w-\sum_{i=1}^n\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)-1)$$  
+>Such design could guarantee that we could have <font color="green">$\forall\alpha_i>0$</font>, which would be one major condition that must be satisfied in the following SVM article.
