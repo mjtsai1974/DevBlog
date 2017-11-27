@@ -16,7 +16,7 @@ we must minimize the term $\left\|w\right\|=(w^t\cdot w)^{\textstyle\frac12}$ to
 >Then, combine &#10112; and &#10113; we can have:  
 $$y_i\cdot(w^t\cdot x_i-b)\geq-1$$, $$\forall i\in\{1,2,...,n\}$$  
 >We can formulate our problem as:  
-<font color="green">$$\underset w{min}\frac12w^t\cdot w$$</font>, subject to <font color="red">$$y_i\cdot(w^t\cdot x_i-b)\geq-1,\forall i$$</font>  
+$$\underset w{min}\frac12w^t\cdot w$$, subject to $$y_i\cdot(w^t\cdot x_i-b)\geq-1,\forall i$$  
 >The first part is the <font color="green">target</font>, the second part is the <font color="red">constraint</font>.  
 
 >We introduce $\alpha_1,\alpha_2,\dots\alpha_n$ to be the lagrange multiplier and express in below lagrangian to be our <font color="deepink">objective function</font>:  
@@ -30,8 +30,12 @@ $$\begin{array}{l}L(w,b,\alpha)\\=\frac12w^t\cdot w-\sum_{i=1}^n\alpha_i\cdot(y_
 >&#10112;$\frac{\partial L}{\partial w}=w-\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i=0$, then, we have $w=\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i$  
 >&#10113;$\frac{\partial L}{\partial b}=\sum_{i=1}^n\alpha_i\cdot y_i$  
 
->Use the deduction result of &#10112; and &#10113; in $L(w,b,\alpha)$, we obtain:  
+>&#10114;use the deduction result of &#10112; and &#10113; in $L(w,b,\alpha)$, we obtain:  
 $$\begin{array}{l}L(w,b,\alpha)\\=\frac12(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)\\-\sum_{i=1}^n\alpha_i\cdot y_i\cdot((\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot x_i-b)\\+\sum_{i=1}^n\alpha_i\end{array}$$  
->Reduce from the second term, we have below deduction:  
-$$\begin{array}{l}\sum_{i=1}^n\alpha_i\cdot y_i\cdot((\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot x_i-b)\\=(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot\\-\sum_{i=1}^n\alpha_i\cdot y_i\cdot b\\=(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)\\\dots\sum_{i=1}^n\alpha_i\cdot y_i\cdot b=0\end{array}$$  
->Take it back to $L(w,b,\alpha)$, we get:  
+>&#10115;reduce from the second term, we have below deduction:  
+$$\begin{array}{l}\sum_{i=1}^n\alpha_i\cdot y_i\cdot((\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot x_i-b)\\=\sum_{i=1}^n\alpha_i\cdot y_i\cdot(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot x_i\\-\sum_{i=1}^n\alpha_i\cdot y_i\cdot b\\=(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)\\\dots\sum_{i=1}^n\alpha_i\cdot y_i\cdot b=0\end{array}$$  
+>&#10116;take it back to $L(w,b,\alpha)$, we get:  
+$$\begin{array}{l}L(w,b,\alpha)\\=-\frac12(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)^t\cdot(\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i)\\+\sum_{i=1}^n\alpha_i\\=-\frac12\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot(x_i^t\cdot x_j)\\+\sum_{i=1}^n\alpha_i\end{array}$$  
+
+>But, why do we design $L(w,b,\alpha)$ in the <font color="green">target</font> <font color="red">plus</font> the <font color="red">constraint</font>?  
+>Recall that in the lagrange multiplier article, I have shown you by taking 
