@@ -58,4 +58,4 @@ $$\begin{array}{l}L(\alpha)\\=-\frac12\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cdot y
 >, where $k(x_i,x_j)=\Phi(x_i).\times\Phi(x_j)$, $k(x_i,x_j)$ is the kernel function, the element-wise dot product $\Phi^t(x_i).\times\Phi(x_j)$ in the high-dimensional space is equivalent to the kernel function of the space of the output(or maybe input) parameters.  
 >&#10113;we can take $k(x_i,x_j)=e^{-(\frac{\left\|x_i-x_j\right\|^2}{2\cdot\delta^2})}$,  
 >where, $k(x_i,x_j)\in R^{n2},\Phi(x_i).\times\Phi(x_j)\in R^{n2}$  
->$x_i,x_j\in R^{n1}$ and $n1\geq n2$.  
+>$x_i,x_j\in R^{n1}$ and $n1\leq n2$.  
