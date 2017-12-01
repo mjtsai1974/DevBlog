@@ -36,4 +36,12 @@ It is the approximation or expression of stochastic environment.  Markov Chain a
 ### The Markov Property
 >In Markov Process, <font color="#00ADAD">next state is determined only by the current state</font>, which is <font color="#00ADAD">the Markov property</font>.  
 
-### 
+### Value Of A State
+>In this article, we express the value of a state over an infinite <font color="red">expected</font> discounted horizon, and denote as V(S).  That is to say we define the inifnite <font color="red">expected</font> discounted reward as a function of the starting state.  We'll abbreviate V(S) as the <font color="red">value of a state</font>.
+>Here comes the question, how much total reward do we expect to get if we start in state S?  
+>&#10112;we will get an <font color="#9300FF">immediate reward R(S)</font>, just right in state S.
+>&#10113;we will then get some reward in the <font color="#D600D6">future</font>. The reward we get in the future is <font color="#D600D6">not worth</font> as much to us as reward in the present, so we multiply by a <font color="#D600D6">discount factor gamma $\gamma$</font>.  
+$$V(S)=R(S)+\gamma\cdot(?)$$
+
+### What The Future Might Be Like?
+>Given a intuition of value state, and a possible roadmap, what is the future value in the long run?   
