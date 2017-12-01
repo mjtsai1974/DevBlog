@@ -52,6 +52,8 @@ The context of this bog just like current artificial intelligence, comes without
 * Neural Network
 * Support Vector Machine(SVM)
 * Deep Learning
+* Markov Decision Process(MDP)
+* Partial Observable Markov Decision Process(POMDP)
 * Reinforcement Learning
 * Computer Graphics, 3D Rotation, Transformation and Quaternion
 * Programming Language
@@ -78,7 +80,7 @@ the following:
 * Introduction to Poisson Distribution
 * Univariate Regression Model
 * Multivariate Regression Model
-* Degree of Freedom(dof)
+* Degree Of Freedom(dof)
 * F-test, Chi-square test, t-test and still other power test evaluation
 * (Log)Likelihood Ratio Test
 * Still others...
@@ -134,6 +136,26 @@ Under construction...
 ### Deep Learning
 
 Under construction...
+
+### Markov Decision Process(MDP)
+
+What's the average count of decisions you have make within every single day?  When you eat three meals a day, do you always take breakfast first, and then lunch, finally the dinner?  Do you behave in such a regular manner?  
+How, if you sit up without last dinner, oversleep until noon, and you have 3 dishes on the table, what would you take?  Let me guess still the breakfast, it should be the first meal in daily life.  But, it is now almost noon,
+the lunch is much newer and fresher, it should be the most optimal choice.  Then, you just wonder the less fresh breakfast might be wasted if you take lunch first, if so, you might further think last night dinner should be taken.
+But, cautions must be made that it might just have deteriorated!  This information space of 3 meals a day is a little random and something exception is out of your imagination, like the food quality deterioration.
+
+Or, when you drive to the office, does it guarantee that the shortest path get you the most efficient approach?  If you just obey the shortest path rule, and it really shorten your cost to the office, it really works, then, thank god.
+Usually, you will encounter a traffic jam due to most drivers follow mobile guiding by GPS.  Even more, the car accident occurs every day.  It is stochastic in the living environment of world, you are safe to across the road upon
+the green light is on, exception might not be the car breaking the red line, but the stony meteorite from the outer space strike you on your head!
+
+That's why we need the Markov Decision process, it provides an algorithm approximating to some proportion of the stochasticity of the world.
+
+* Markov Chain(Markov Process)
+* Markov Decision Process
+
+### Partial Observable Markov Decision Process(POMDP)
+
+It is an extension of MDP.  Under construction...
 
 ### Reinforcement Learning
 
