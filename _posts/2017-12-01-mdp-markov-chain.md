@@ -64,4 +64,4 @@ $$V(S)=R(S)+\gamma\cdot\sum_{S'}P(S'\left|S\right.)\cdot V(S')$$
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-01-mdp-markov-chain-states-with-rewards-stablized.png "future state value stableized")
 
 ### What's The Optimal Choice?
->Here we are against a problem, if you are in one of the three states, what would be the optimal choice to get you the best next state?  If such answer exists, it involves deterministics from within stochastic environment due to probabilistic state transition as a result of random action result.  We'd like to further migrate into the field of Markov Decision Process, the computation requires extra deterministics.  
+>Here we are against a problem, if you are in one of the three states, what would be the optimal choice to get you the best next state?  If such answer exists, it involves deterministics from within stochastic environment due to probabilistic state transition as a result of random action result.  We'd like to further migrate into the field of [Markov Decision Process]({{ site.github.repo }}{{ site.baseurl }}/2017/12/01/mdp-markov-decision-process/), the computation requires extra deterministics.  
