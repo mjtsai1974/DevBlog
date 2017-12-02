@@ -52,8 +52,13 @@ $$V(S)=R(S)+\gamma\cdot(?)$$
 $$V(S)=R(S)+\gamma\cdot\sum_{S'}P(S'\left|S\right.)\cdot V(S')$$
 >
 >Suppose we know $R$ and $P$, next to compute $V$, if $n$ is the number of states in the domain, then, we have a set of $n$ equations in $n$ unknowns(<font color="#D600D6">the value of each state</font>).  
+>
 >Continue with the 3 states example, given $\gamma=0.9$, by using above equation of intuition could we have future value illustration in below, whereas, in this example the initial value of each state is unknown:  
  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-01-mdp-markov-chain-states-with-rewards-iteration.png "future state value iteration")
 
->
+>If <font color="deeppink">$\gamma=0$</font>, then, the $V(S)$ of each state would just be <font color="deeppink">the same</font> as their <font color="deeppink">immediate reward</font>.  
+>If $\gamma$ is <font color="deeppink">small</font>, but non-zero, then the value would be <font color="deeppink">smaller</font>.  
+>Suppose after summing the next states $S'$ over a long horizon, we finally get it to the stable state with each state has its stable value.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-01-mdp-markov-chain-states-with-rewards-stablized.png "future state value stableized")
