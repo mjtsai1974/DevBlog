@@ -21,7 +21,7 @@ $$P(S_{t+1}\left|S_t\right.,a_t)=P(S_{t+1}\left|S_t\right.,S_{t-1},\dots,S_0,a_t
 >
 >The above four items are the major components in MDP.  And from now on, we would use MDP in this article, even more, the whole dev blog, to stand for the Markov Decision Process.  
 >
->MDP takes action in decision making process with a hope that it can regularize a <font color="#00ADAD">policy</font> for each state to have an optimal choice of action to maximize its expected state value estimated over herizon of magnitude of a long term, even infinity.    
+>MDP takes action in decision making process with a hope that it can regularize a <font color="#00ADAD">policy</font> for each state to have an optimal choice of action to <font color="red">maximize</font> its expected state value estimated over herizon of magnitude of a long term, even infinity.    
 >
 >In advance to involve the <font color="#00ADAD">policy</font>, it would be better for us to distinguish in between conventional planning and MDP <font color="#00ADAD">policy</font>.  
 
