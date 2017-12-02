@@ -23,9 +23,9 @@ $$P(S_{t+1}\left|S_t\right.,a_t)=P(S_{t+1}\left|S_t\right.,S_{t-1},\dots,S_0,a_t
 >
 >MDP takes action in decision making process with a hope that it can regularize a <font color="#00ADAD">policy</font> for each state to have an optimal choice of action to maximize its expected state value estimated over herizon of magnitude of a long term, even infinity.    
 >
->In advance to involve the policy, it would be better for us to distinguish in between conventional planning and MDP policy.  
+>In advance to involve the <font color="#00ADAD">policy</font>, it would be better for us to distinguish in between conventional planning and MDP <font color="#00ADAD">policy</font>.  
 
-### Conventional Plan v.s. MDP Policy
+### Conventional Plan v.s. MDP <font color="#00ADAD">Policy</font>
 >&#10112;a plan is either an ordered list of actions or a partially ordered set of actions, executed <font color="red">without</font> reference to the state of the environment.  
 >&#10113;for conditional planing, we treat it to act differently depending on the observation about the state of the world.  
 >&#10114;in MDP, it is typically to compute a whole <font color="#00ADAD">policy</font> rather than a simple plan.  
