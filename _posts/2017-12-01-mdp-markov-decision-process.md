@@ -39,6 +39,10 @@ $$P(S_{t+1}\left|S_t\right.,a_t)=P(S_{t+1}\left|S_t\right.,S_{t-1},\dots,S_0,a_t
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-01-mdp-markov-decision-process-plan-under-uncertainty.png "planning under uncertainty")
 
 >Next to make a unique identity of stochastic and determninistic.  
+>&#10112;stochastic is an environment where the outcome of an action is somewhat random, that means, the execution result <font color=red>might not</font> go as well as you have expected.  
+>&#10113;determninistic is an environment where the outcome of an action is predictable and always the same, that means the execution result would go as well as you have expected.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-01-mdp-markov-decision-process-stochastic-deterministic.png "stochastic v.s. deterministic")
 
 <!-- Notes -->
 <!-- <font color="#00ADAD">policy</font> -->
