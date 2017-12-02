@@ -12,14 +12,17 @@ It is the approximation or expression of optimal choice in stochastic environmen
 >Back to have a glance at the Markov Chain, the future state value might be stablized.  We wonder about the next state from current state, and would like to estimate it out.  The estimation involves one extra consideration of <font color="red">action choice</font>.  The regularized solution would be a <font color="green">policy for each state to take its optimal action to maximize its value over horizon of some magnitude</font>.  
 
 ### The Markov Decision Process Components And Features
->&#10112;a set of states, denote it as $S$.
->&#10113;a set of actions associated with states, denoted as $A$.
+>&#10112;a set of states, denote it as $S$.  
+>&#10113;a set of actions associated with states, denoted as $A$.  
 >&#10114;state transition probability, denote as $P(S_{t+1}\left|S_t\right.,a_t)$; where the Markov property claims:  
-$$P(S_{t+1}\left|S_t\right.,a_t)=P(S_{t+1}\left|S_t\right.,S_{t-1},\dots,S_0,a_t,a_{t-1},\dots,a_0)$$ 
+$$P(S_{t+1}\left|S_t\right.,a_t)=P(S_{t+1}\left|S_t\right.,S_{t-1},\dots,S_0,a_t,a_{t-1},\dots,a_0)$$  
 >That is to say given the current state and action, the next state is <font color="red">independent</font> of the previous states and actions.  The current state estimates all that is relevant about the world to predict what the next state will be.  
 >&#10115;<font color="deeppink">immediate reward</font> of each state, denoted as $R(S)$.  Some article pertaining to MDP would treat it as the <font color="deeppink">cost</font>, which would also be used in our future illustration.  
+>
 >The above four items are the major components in MDP.  And from now on, we would use MDP in this article, even more, the whole dev blog, to stand for the Markov Decision Process.  
+>
 >MDP takes action in decision making process with a hope that it can regularize a <font color="#00ADAD">policy</font> for each state to have an optimal choice of action to maximize its expected state value estimated over herizon of magnitude of a long term, even infinity.    
+>
 >In advance to involve the policy, it would be better for us to distinguish in between conventional planning and MDP policy.  
 
 ### Conventional Plan v.s. MDP Policy
@@ -30,8 +33,12 @@ $$P(S_{t+1}\left|S_t\right.,a_t)=P(S_{t+1}\left|S_t\right.,S_{t-1},\dots,S_0,a_t
 >A <font color="#00ADAD">policy</font> is a mapping from states to actions, whatever state you happen to start from, a policy is the best to apply now.
 
 ### Stochastic v.s. Deterministic
->
+>You still ponder why to replace conventional planning with MDP <font color="#00ADAD">policy</font>, in this paragraph, we will further investigate in the differences in between stochastic and deterministic.  
+>Below shows you an image of the appropriate discipline with respect to the desired behavior under the environment condition.  For planning under uncertainty, we intend to refer to MDP or POMDP(PO means partial observable, would be discussed in another article), for learning, planning under under uncertainty, we will step into the reinforcement learning, still in another article.   
 
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-01-mdp-markov-decision-process-plan-under-uncertainty.png "planning under uncertainty")
+
+>Next to make a unique identity of stochastic and determninistic.  
 
 <!-- Notes -->
 <!-- <font color="#00ADAD">policy</font> -->
