@@ -43,7 +43,7 @@ It is the approximation or expression of stochastic environment.  Markov Chain a
 >&#10113;we will then get some reward in the <font color="#D600D6">future</font>. The reward we get in the future is <font color="#D600D6">not worth</font> as much to us as reward in the present, so we multiply by a <font color="#D600D6">discount factor gamma $\gamma$</font>.  
 $$V(S)=R(S)+\gamma\cdot(?)$$
 
-### What The Future Might Be Like?
+### What The Future Might Be?
 >Given a intuition of value state, and a possible roadmap, what is the future value in the long run?   The expected long term value of the next state is by summing over all possible next states, $S'$;where $S'$ is the <font color="deeppink">product</font> of:  
 >&#10112;the probability of making transition from $S$ to $S'$, <font color="#00ADAD">$P(S'\left|S\right.)$</font>.  
 >&#10113;the infinite hgorizon expected discounted reward(or the value of S'), <font color="#D600D6">$V(S')$</font>.  
@@ -53,7 +53,7 @@ $$V(S)=R(S)+\gamma\cdot\sum_{S'}P(S'\left|S\right.)\cdot V(S')$$
 >
 >Suppose we know $R$ and $P$, next to compute $V$, if $n$ is the number of states in the domain, then, we have a set of $n$ equations in $n$ unknowns(<font color="#D600D6">the value of each state</font>).  
 >
->Continue with the 3 states example, given $\gamma=0.9$, by using above equation of intuition could we have future value illustration in below, whereas, in this example the initial value of each state is unknown:  
+>Continue with the three states example, given $\gamma=0.9$, by using above equation of intuition could we have future value illustration in below, whereas, in this example the initial value of each state is unknown:  
  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-01-mdp-markov-chain-states-with-rewards-iteration.png "future state value iteration")
 
@@ -62,3 +62,6 @@ $$V(S)=R(S)+\gamma\cdot\sum_{S'}P(S'\left|S\right.)\cdot V(S')$$
 >Suppose after summing the next states $S'$ over a long horizon, we finally get it to the stable state with each state has its stable value.  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-01-mdp-markov-chain-states-with-rewards-stablized.png "future state value stableized")
+
+### What's The Optimal Choice?
+>Here we are against a problem, if you are in one of the three states, what would be the optimal choice to get you the best next state?  If such answer exists, it involves deterministics from within stochastic environment due to probabilistic state transition as a result of random action result.  We'd like to further migrate into the field of Markov Decision Process, the computation requires extra deterministics.  
