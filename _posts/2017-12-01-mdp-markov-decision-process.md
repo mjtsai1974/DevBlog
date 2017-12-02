@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Markov Decision Process
+title: Markov Decision Process By Intuition
 ---
 
-## Markov Decision Process
+## Markov Decision Process By Intuition
 <p class="message">
 It is the approximation or expression of optimal choice in stochastic environment.  Markov Decision Process is an extension of Markov Chain.  It <font color="green">takes action</font> control between state transition.
 </p>
