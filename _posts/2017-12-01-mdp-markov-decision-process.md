@@ -32,17 +32,27 @@ $$P(S_{t+1}\left|S_t\right.,a_t)=P(S_{t+1}\left|S_t\right.,S_{t-1},\dots,S_0,a_t
 >
 >A <font color="#00ADAD">policy</font> is a mapping from states to actions, whatever state you happen to start from, a policy is the best to apply now.
 
-### Stochastic v.s. Deterministic
->You still ponder why to replace conventional planning with MDP <font color="#00ADAD">policy</font>, in this paragraph, we will further investigate in the differences in between stochastic and deterministic.  
+### <font color="#EB00EB">Stochastic</font> v.s. Deterministic
+>You still ponder why to replace conventional planning with MDP <font color="#00ADAD">policy</font>, in this paragraph, we will further investigate in the differences in between <font color="#EB00EB">stochastic</font> and deterministic.  
 >Below shows you an image of the appropriate discipline with respect to the desired behavior under the environment condition.  For planning under uncertainty, we intend to refer to MDP or POMDP(PO means partial observable, would be discussed in another article), for learning, planning under under uncertainty, we will step into the reinforcement learning, still in another article.   
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-01-mdp-markov-decision-process-plan-under-uncertainty.png "planning under uncertainty")
 
->Next to make a unique identity of stochastic and determninistic.  
->&#10112;stochastic is an environment where the outcome of an action is somewhat random, that means, the execution result <font color=red>might not</font> go as well as you have expected.  
+>Next to make a unique identity of <font color="#EB00EB">stochastic</font> and determninistic.  
+>&#10112;<font color="#EB00EB">stochastic</font> is an environment where the outcome of an action is somewhat random, that means, the execution result <font color="red">might not</font> go as well as you have expected.  
 >&#10113;determninistic is an environment where the outcome of an action is predictable and always the same, that means the execution result would go as well as you have expected.  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-01-mdp-markov-decision-process-stochastic-deterministic.png "stochastic v.s. deterministic")
 
+>For the discipline of MDP, we are <font color="#6100A8">full observable</font> under <font color="#EB00EB">stochastic</font> environment.  Actually, full observable is impossible, we just believe that the design or hypothesis on the experimental environment is under the full control, but, anything out of the imagination would just errupt.  More precisely, we should treat almost every issue under <font color="#FFAC12">partial observable</font>, and it would be the domain of POMDP(Partial Observable Markov Decision Process), discussed in another article in my dev blog.  At this moment, focus on MDP only and hypnotize ourself that we have control everything.  
+>
+>At the end of this section, I would like to get you a clear expression of <font color="#EB00EB">stochastic</font> versus deterministic.  Given below diagram, the left side reveals the deterministic environment, each action is taken from each state, and the execution result is the same as expected; whereas the right side exhibits the <font color="#EB00EB">stochastic</font> environment, the execution of action $A_1$ from state $S_1$ has been branched into two results by random with each has $0.5$ chance to reach next state $S_2$ and $S_3$ respectively.  This illustrates <font color="#C20000">the result of action execution in stochastic environment is random</font>:  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-01-mdp-markov-decision-process-stochastic-deterministic-action-diff.png "stochastic v.s. deterministic")
+
 <!-- Notes -->
 <!-- <font color="#00ADAD">policy</font> -->
+<!-- <font color="#6100A8">full observable</font> -->
+<!-- <font color="#FFAC12">partial observable</font> -->
+<!-- <font color="#EB00EB">stochastic</font> -->
+<!-- <font color="#C20000">conclusion, finding</font> -->
