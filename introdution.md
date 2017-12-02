@@ -151,7 +151,9 @@ the green light is on, exception might not be the car breaking the red line, but
 That's why we need the Markov Decision process, it provides an algorithm approximating to some proportion of the stochasticity of the world.
 
 * [Markov Chain(Markov Process)]({{ site.github.repo }}{{ site.baseurl }}/2017/12/01/mdp-markov-chain/)
-* Markov Decision Process
+* [Markov Decision Process By Intuition]({{ site.github.repo }}{{ site.baseurl }}/2017/12/01/mdp-markov-decision-process/)
+* MDP In Stochastic Environment
+* MDP To Seek The Optimal Policy
 
 ### Partial Observable Markov Decision Process(POMDP)
 
