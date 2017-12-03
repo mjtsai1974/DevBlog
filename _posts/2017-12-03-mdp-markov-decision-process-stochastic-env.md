@@ -15,17 +15,20 @@ MDP is a prefered framework in <font color="#EB00EB">stochastic</font> environme
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-grid.png "grid world example")
 
 >To make it into MDP, we <font color="#EB00EB">assume actions are somewhar stochastic</font>.  Suppose we start from a grid cell and would like to head for the direction we intends to, the deterministic agent will always succeed to move in the direction it plans, on conditions that the target cell on that direction must be available.  
+>
 >But, <font color="#C20000">the action execution result might not go as well as you have expected in the stochastic environment</font>.  By our design of <font color="#EB00EB">stochastic</font> environment, we assume that:  
 >&#10112;only $80\%$ chance for the <font color="#EB00EB">stochastic</font> agent to move in the direction it expects to.  
 >&#10113;if there is a wall blocking, then, it would bouncce back to the prior starting point, the same cell,  with $80\%$ chance.  
 >&#10114;there is a $10\%$ chance to the direction left or right perpendicular to the expected direction, that's say left or righ of $10\%$ chance respectively.  
+>
 >Above design is just to make the outcome random, that is <font color="#EB00EB">stochastic</font>.  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-agent.png "stochastic agent")
 
 >If the agent at $M_{3,3}$ would like to move to $M_{2,3}$, then, only $80\%$ chance to $M_{2,3}$, $10\%$ chance to $M_{3,2}$, $10\%$ chance to $M_{3,4}$.  
->If the agent at $M_{3,2}$ would like to move to $M_{2,2}$, then, $80\%$ chance to bounce back to $M_{3,2}$(since $M_{2,2} is a blocking wall), $10\%$ chance to $M_{3,1}$, $10\%$ chance to $M_{3,3}$.  
+>If the agent at $M_{3,2}$ would like to move to $M_{2,2}$, then, $80\%$ chance to bounce back to $M_{3,2}$(since $M_{2,2}$ is a blocking wall), $10\%$ chance to $M_{3,1}$, $10\%$ chance to $M_{3,3}$.  
 >Continue fo rthe illustration, if the agent at $M_{1,1}$ would like to move to north(its above), then, it will have totally $90\%$ chance to bounce back to $M_{1,1}$, wherein, $80\%$ chance bounce back from the north(above), $10\%$ chance bounce back from the left, and $10\%$ chance to $M_{1,2}$.  
+>
 >This is a <font color="#8400E6">stochastic state transition</font>,  so, if you planning a sequence of actions starting from $M_{3,1}$, to reach over the $+100$ at $M_{1,4}$, the final state, you might go N, N, E, E, E.  But, with our design, the stochastic agent might move east with $10%$ chance to $M_{3,2}$.  
 
 <!-- Notes -->
