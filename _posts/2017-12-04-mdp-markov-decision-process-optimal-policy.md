@@ -45,8 +45,11 @@ $$V(S)\leftarrow R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\ri
 $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')\right]$$  
 >
 >You can see that it is now the equal operator in the expression.  Just at this moment, we can know the optimal action from the optimal policy of each state with regards to its optimal value function.  The equation contains 2 parts:  
->&#10112;$R(S)$, the reward(cost) in the state $S$.
+>&#10112;$R(S)$, the reward(cost) in the state $S$.  
 >&#10113;$\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')\right]$, the maximum over all actions we could take in the state $S$, of the discounted expected optimal value of next state $S'$.  
+
+### Value Iteration
+>The idea behind is that in every state, we want to choose the action that maximize the value of the future.  This paragraph would lead you through the whole process still in example of the grid world.  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
