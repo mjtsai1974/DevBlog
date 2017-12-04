@@ -37,11 +37,21 @@ MDP is a prefered framework in <font color="#EB00EB">stochastic</font> environme
 >$Poicy\;\pi(S)\rightarrow A$, for each state, we have to regularize a <font color="#00ADAD">policy</font>, the planning problem now becomes finding the <font color="#00ADAD">optimal policy</font>.  
 
 ### Conventional Planning In Stochastic Environment Is Insufficient
->Suppose you are given the information space of the grid world, and would like to start from $M_{3,1}$ to reach the goal state at $M_{1,4}$.  By the conventional planning, we might create a tree diagram to construct to possible state transition, since we are now in the stochastic environment, the outcome of action execution to four directions, north, south, west, east is <font color="red">not deterministic</font>.  
+>Suppose you are given the information space of the grid world, and would like to start from $M_{3,1}$ to reach the goal state at $M_{1,4}$.  By the conventional planning, we might create a tree diagram to construct to possible state transition, since we are now in the stochastic environment, the outcome of action execution to 4 directions, north, south, west, east is <font color="red">not deterministic</font>.  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-plan-branching-factor.png "large branching factor")
 
+>Departuring from $M_{3,1}$, you will have 4 possible action choices, they are N, S, W and E, by our design:  
+>&#10112;if you choose to go north, then, $80\%$ chance to $M_{2,1}$, $10\%$ chance to $M_{3,2}$, $10\%$ chance bounce back to $M_{3,1}$ due to the wall blocking.  
+>&#10113;if you choose to go south, then, $90\%$ chance bounce back to $M_{3,1}$ due to the wall blocking from south of $80\%$ chance and the west of $10\%$ chance, finally, $10\%$ chance to $M_{3,2}$.
+>&#10114;if you choose to go west, then, $90\%$ chance bounce back to $M_{3,1}$ due to the wall blocking from south of $10\%$ chance and the west of $80\%$ chance, finally, $10\%$ chance to $M_{2,1}$.
+>&#10115;if you choose to go east, then, $80\%$ chance to $M_{3,2}$, $10\%$ chance to $M_{2,1}$, $10\%$ chance bounce back to $M_{3,1}$.  
 >
+>Take a good look at the tree diagram, the level 1 branching factor is 4,  the second level is 3 by grouping the same arriving cell as one variety, then, total branching factor from $M_{3,1}$ would be less than and equal to 12.  It would be a large value.  <font color="#C20000">If each movement is taken with the cost of 12 branching factors, and many of the next arriving cells has already been visited, conventional planning wouldn't be a good approach</font>, and the whole tree would be too deep.  
+>
+><font color="green">That's why we need to estimate out a policy to map each state to an optimal action to maximize the value of the state</font>.  
+
+### 
 
 <!-- Notes -->
 <!-- <font color="#00ADAD">policy</font> -->
@@ -49,5 +59,5 @@ MDP is a prefered framework in <font color="#EB00EB">stochastic</font> environme
 <!-- <font color="#FFAC12">partial observable</font> -->
 <!-- <font color="#EB00EB">stochastic</font> -->
 <!-- <font color="#8400E6">state transition</font> -->
-<!-- <font color="#C20000">conclusion, finding</font> -->
-<!-- <font color="green">conclusion, finding</font> -->
+<!-- <font color="#C20000">positive conclusion, finding</font> -->
+<!-- <font color="green">negative conclusion, finding</font> -->
