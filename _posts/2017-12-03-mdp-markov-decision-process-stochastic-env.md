@@ -49,7 +49,7 @@ MDP is a prefered framework in <font color="#EB00EB">stochastic</font> environme
 >
 >Take a good look at the tree diagram, the level 1 branching factor is 4,  the second level is 3 by grouping the same arriving cell as one variety, then, total branching factor from $M_{3,1}$ would be less than and equal to 12.  It would be a large value.  <font color="#C20000">If each movement is taken with the cost of 12 branching factors, and many of the next arriving cells has already been visited, conventional planning wouldn't be a good approach</font>, and the whole tree would be too deep.  
 >
-><font color="green">That's why we need to estimate out a policy to map each state to an optimal action to maximize the value of the state</font>.  
+><font color="green">That's why we need to estimate out a policy to map each state to an optimal action to maximize the value of the state.</font>  
 
 ### Stochastic Environment With Policy By Intuition
 >We are still using the same information space of the grid world, and the optimal action is the one that provides that you can run around as long as you want.  So far, in this example, we are making the test under the assumption that each movement is taken at no cost, which is not the real thing in the real world!!  
