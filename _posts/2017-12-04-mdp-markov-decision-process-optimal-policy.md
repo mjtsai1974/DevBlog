@@ -30,8 +30,10 @@ $$E\left[\sum_{t=0}^\infty\gamma^t\cdot R_t\left|S_0\right.\right]$$
 >So, we are ready to state <font color="Red">the actual objective of an MDP is to minimize not just the momentary cost(or maximize the momentary reward, in other words), but the sum of future rewards would be the optimized target</font>!!
 
 ### The Optimal Value Function
->Succeeding to the expression of the expected sum of future possible discounted rewards, to get the optimal policy, we need to further refine the state value function so that it would be optimal for computation:  
+>Succeeding to the expression of the expected sum of future possible discounted rewards, to get the <font color="#00ADAD">optimal policy</font>, we need to further refine the <font color="red">state value function</font> so that it would be optimal for computation of <font color="#00ADAD">policy</font>:  
+$$V^\pi(S)=\underset\pi E\left[\sum_{t=0}^\infty\gamma\cdot R^t\left|S_0\right.=S\right]$$  
 
+>For each state $S$, the value function of the state is the expected sum of future discounted reward, provided that you execute the <font color="#00ADAD">policy $\pi$</font>.  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
