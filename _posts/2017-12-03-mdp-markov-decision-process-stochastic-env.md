@@ -37,6 +37,10 @@ MDP is a prefered framework in <font color="#EB00EB">stochastic</font> environme
 >$Poicy\;\pi(S)\rightarrow A$, for each state, we have to regularize a <font color="#00ADAD">policy</font>, the planning problem now becomes finding the <font color="#00ADAD">optimal policy</font>.  
 
 ### Conventional Planning In Stochastic Environment Is Insufficient
+>Suppose you are given the information space of the grid world, and would like to start from $M_{3,1}$ to reach the goal state at $M_{1,4}$.  By the conventional planning, we might create a tree diagram to construct to possible state transition, since we are now in the stochastic environment, the outcome of action execution to four directions, north, south, west, east is <font color="red">not deterministic</font>.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-plan-branching-factor.png "large branching factor")
+
 >
 
 <!-- Notes -->
