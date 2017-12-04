@@ -62,7 +62,7 @@ MDP is a prefered framework in <font color="#EB00EB">stochastic</font> environme
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-grid-optimal-action.png "optimal action")
 
->Above graph reveals the possible optimal action for all the states, quiet confusing about hitting wall(this would not be the general case in the real world), and it indeed bring you to the optimal next state.  Take $M_{3,4}$ for example, maybe it would contiguous hitting the south wall in the beginning, then turns west sometime later, and behave like W, W, W, N, N, E, E, E to end up.  
+>Above graph reveals the possible <font color="DeepSkyBlue">optimal action</font> for all the states, quiet confusing about hitting wall(this would not be the general case in the real world), and it indeed bring you to the optimal next state.  Take $M_{3,4}$ for example, maybe it would contiguous hitting the south wall in the beginning, then turns west sometime later, and behave like W, W, W, N, N, E, E, E to end up.  
 
 <!-- Notes -->
 <!-- <font color="#00ADAD">policy</font> -->
