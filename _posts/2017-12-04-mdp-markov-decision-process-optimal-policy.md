@@ -22,6 +22,7 @@ Nevertheless, <font color="#C20000">a policy aims at mapping each distinct state
 >
 >In many cases, it is not very clear <font color="OrangeRed">how long</font> the process is going to run, it is often popular to move toward optimality with a <font color="#D600D6">discount factor gamma $\gamma$</font>.  The objective is to find a policy $\pi:S\rightarrow A$ that can <font color="OrangeRed">maximize</font> the given expression:  
 $$E\left[\sum_{t=0}^\infty\gamma^t\cdot R_t\left|S_0\right.\right]$$  
+>
 >It is just <font color="red">the expression of the expected sum of future possible discounted rewards</font>, where $0\leq\gamma\leq1$.  And why <font color="#D600D6">$\gamma$</font> is introduced(we already touch gamma in the article of [Markov Chain]({{ site.github.repo }}{{ site.baseurl }}/2017/12/01/mdp-markov-chain/))?  
 >&#10112;if we add up all rewards out into infinity, then, sums might be infinite, but, this is not the ordinary case.  
 >&#10113;by such design, a <font color="#D600D6">discount factor $\gamma$</font> could speed up the agent to get rewards sooner rather than later.  
@@ -32,8 +33,18 @@ $$E\left[\sum_{t=0}^\infty\gamma^t\cdot R_t\left|S_0\right.\right]$$
 ### The Optimal Value Function
 >Succeeding to the expression of the expected sum of future possible discounted rewards, to get the <font color="#00ADAD">optimal policy</font>, we need to further refine the <font color="red">state value function</font> so that it would be optimal for computation of <font color="#00ADAD">policy</font>:  
 $$V^\pi(S)=\underset\pi E\left[\sum_{t=0}^\infty\gamma\cdot R^t\left|S_0\right.=S\right]$$  
-
->For each state $S$, the value function of the state is the expected sum of future discounted reward, provided that you execute the <font color="#00ADAD">policy $\pi$</font>.  
+>
+>For each state $S$, <font color="red">the value function of the state is the expected sum of future discounted reward</font>, provided that <font color="#00ADAD">you execute the policy $\pi$</font>.  
+>
+>The way we are going to plan is that we are going to iterate and compute value function of each state, then, it will turn out for us to have a better <font color="#00ADAD">policy</font>.  This process is usually <font color="#D600D6">discounted by $\gamma$</font>, and we also add the <font color="#9300FF">reward</font> or the <font color="#9300FF">cost</font> of the starting state.  
+>
+>Because there are multiple actions associated with each distinct state, it's your choice to select the right action that will maximize over all possible actions:  
+$$V(S)\leftarrow R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')\right]$$
+>
+>The reason you see this left arrow in above expression is due to we are using a recursive algorithm to calculate the value function of each state.  By the introduction of <font color="#D600D6">discount factor gamma $\gamma$</font>, after iteration over some horizon, the Calculus just guarantees the convergence of the value function.  At that moment, we can just have below optimal value function:  
+$$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')\right]$$  
+>
+>You can see that it is now the equal operator in the expression.  Just at this moment, we can know the optimal action from the optimal policy of each state with regards to its optimal value function.  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
