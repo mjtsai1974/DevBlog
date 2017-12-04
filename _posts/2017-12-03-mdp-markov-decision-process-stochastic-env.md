@@ -60,6 +60,10 @@ MDP is a prefered framework in <font color="#EB00EB">stochastic</font> environme
 >&#10114;kick off at $M_{3,4}$, it has $90\%$ chance to stay in the same place by moving south, since $80\%$ of bouncing back from the south wall, $10\%$ of bouncing back from the east wall.  If you choose direct movement to west, then it would come out with $10\%$ danger of falling into the state of $-100$ at $M_{2,4}$.  The same $90\%$ chance would get you in $M_{3,4}$, if you choose east movement, cautions must be made that moving to east would get you $10\%$ danger into the state of $-100$ at $M_{2,4}$.  Hence, the optimal action is by moving south.  
 >&#10115;take a look at the case when you are beginning from $M_{2,3}$, moving south might not be optimal, you are running the danger of $10\%$ falling into the state of $-100$ at $M_{2,4}$, although, $80\%$ chance to the $M_{1,3}$.  If you choose to move south, you still put yourself $10\%$ of the danger to the state of $-100$ at $M_{2,4}$.  Why not just hitting the wall by moving west?  Choose west movement would get you no any danger of falling to the state of $-100$ at $M_{2,4}$, although $80\%$ bounce back to $M_{2,3}$, you will have $10\%$ chance to the north at $M_{1,3}$ and $10\%$ chance to the south at $M_{3,3}$.  
 
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-grid-optimal-action.png "optimal action")
+
+>Above graph reveals the possible optimal action for all the states, quiet confusing about hitting wall(this would not be the general case in the real world), and it indeed bring you to the optimal next state.  Take $M_{3,4}$ for example, maybe it would contiguous hitting the south wall in the beginning, then turns west sometime later, and behave like W, W, W, N, N, E, E, E to end up.  
+
 <!-- Notes -->
 <!-- <font color="#00ADAD">policy</font> -->
 <!-- <font color="#6100A8">full observable</font> -->
