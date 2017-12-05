@@ -10,7 +10,17 @@ The MDP is quiet beautiful a framework, rather than using a single sequence of s
 </p>
 
 ### Conclusion
->
+>&#10112;MDP is <font color="#6100A8">full observable</font>, for each distinct state $S$, there exists actions $A$ associated with it.  
+>&#10113;the execution of action in the <font color="#EB00EB">stochastic</font> environment might not go as well as you had expected, the outcome is random.  The state transition probability from state $S$ to $S'$ by action $A$ is $P(S'\left|S,A\right.)$.  
+>&#10114;there exists immediate reward, $R(S)$ or cost for each state $S$.  
+>&#10115;the objective is to find a policy $\pi:S\rightarrow A$ that can <font color="OrangeRed">maximize</font> the given expression:  
+$$E\left[\sum_{t=0}^\infty\gamma^t\cdot R_t\left|S_0\right.\right]$$  
+>&#10116;by <font color="Green">value iteration</font>, from Bellman inequality to the Bellman equality when the value function <font color="OrangeRed">converges</font>:  
+$$V(S)\leftarrow R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')\right]$$  
+$$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')\right]$$  
+>&#10117;after the <font color="Green">value iteration</font> has been <font color="OrangeRed">converged</font>, we're able to define a <font color="#00ADAD">policy</font> by using the <font color="OrangeRed">argmax</font> to constraint the expected discounted future reward term in the value iteration expression:  
+$$\pi(S)=\underset A{armax}\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')$$
+>The $A$ thus obtained is the <font color="DeepSkyBlue">optimal action</font> that maximizes the expected accumulated and discounted futured rewards of the state $S$.   
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
