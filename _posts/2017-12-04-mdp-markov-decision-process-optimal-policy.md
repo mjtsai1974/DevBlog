@@ -84,7 +84,7 @@ $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-04-mdp-markov-decision-process-optimal-policy-value-iterate-converge.png "convergence")
 
->Below is the corresponding mapping of optimal policy containing an optimal action to each distinct state that can maximize its value function in the future:  
+>Below is the corresponding mapping of <font color="#00ADAD">optimal policy</font> containing an <font color="DeepSkyBlue">optimal action</font> to each distinct <font color="Red">state</font> that can <font color="OrangeRed">maximize</font> its <font color="Red">future value function</font>:  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-04-mdp-markov-decision-process-optimal-policy-value-iterate-optimal-policy.png "optimal policy")
 
