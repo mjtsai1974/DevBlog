@@ -71,7 +71,7 @@ $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-04-mdp-markov-decision-process-optimal-policy-value-iterate-backup-1.png "1 backup")
 
->[2]Suppose we are inheriting from above state, where $V(M_{1,3})=77}, what is the value of $M_{2,3}$ after still another <font color="OrangeRed">single backup</font>?  
+>[2]Suppose we are inheriting from above state, where $V(M_{1,3})=77$, what is the value of $M_{2,3}$ after still another <font color="OrangeRed">single backup</font>?  
 >&#10112;$V(M_{2,3},E)=-3+0.8\cdot-100+0.1\cdot77+0.1\cdot0=-75.3$, for we choose east, the immediate reward of leaving $M_{2,3}$ is $-3$, and $80\%$ chance to arrive $M_{2,4}$ of reward $-100$, $10\%$ chance to $M_{1,3}$ of reward $77$, $10\%$ chance to down to $M_{3,3}$ of reward $0$.  
 >&#10113;$V(M_{2,3},W)=-3+0.8\cdot0+0.1\cdot77+0.1\cdot0=4.7$, for we choose west, the immediate reward of leaving $M_{2,3}$ is $-3$, and $80\%$ chance to bounce back to $M_{2,3}$ of reward $0$, $10\%$ chance to $M_{1,3}$ of reward $77$, $10\%$ chance to down to $M_{3,3}$ of reward $0$.  
 >&#10114;$V(M_{2,3},N)=-3+0.8\cdot77+0.1\cdot0+0.1\cdot-100=48.6$, for we choose north, the immediate reward of leaving $M_{2,3}$ is $-3$, and $80\%$ chance to arrive $M_{1,3}$ of reward $77$, $10\%$ chance to bounce back to $M_{2,3}$ of reward $0$, $10\%$ chance to down to $M_{2,4}$ of reward $-100$.  
