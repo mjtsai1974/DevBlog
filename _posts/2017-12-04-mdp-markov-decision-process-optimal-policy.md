@@ -58,7 +58,7 @@ $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot
 >At this time, we are not forgetting the issue of <font color="#9300FF">costs</font>, we denote <font color="#9300FF">costs</font> as the award function over all possible states, below design might be an incentive to shorten the action sequence, the agent should complete as soon as possible, or the value function of each iterated state might be decreased:  
 >$$R(S)=\left\{\begin{array}{c}+100,for\;M_{1,4}\\-100,for\;M_{2,4}\\-3,othewise\end{array}\right.$$
 >
->Assume that the initial values are all $0$, except for $M_{1,4}=+100$, $M_{2,4}=-100$.  
+>Assume that the initial values are all $0$, except for $M_{1,4}=+100$, $M_{2,4}=-100$ and $\gamma=1$ for simplicity.  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-04-mdp-markov-decision-process-optimal-policy-value-iterate-init.png "grid world init")
 
@@ -88,7 +88,31 @@ $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-04-mdp-markov-decision-process-optimal-policy-value-iterate-optimal-policy.png "optimal policy")
 
-<!-- ### <font color="Green">Value Iteration</font> Under <font color="#EB00EB">Stochastic</font> Environment Of Two States World -->
+>After following up above iteration, you might be impressed with such backup process by propagating <font color="red">value function</font> in reverse order sequence of action executing from the goal state back to its previous state.  
+
+### <font color="Green">Value Iteration</font> Under <font color="#EB00EB">Stochastic</font> Environment Of Two States World
+>Next, I am going to illustrate in a more general case of <font color="#EB00EB">stochastic</font> environment containing only 2 states.  That's for the better understanding and ease of computation.  In this example, the goal state would be the estimated out target.  
+>
+>Suppose you are given below 2 states environment with each initialized with value function $0$, the red curve is the action you try to stay in the same state, that says you try to stop, while the blue curve is the action to move to another state:   
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-2-states.png "2 states")
+
+>&#10112;the $S_1$ has both stop and move actions, the stop execution will have $50\%$ chance to stay, $50\%$ chance to move to $S_2$, the move action will have $100\%$ chance to reach $S_2$.  
+>&#10113;the $S_2$ has both stop and move actions, the stop execution will have $100\%$ chance to stay, the move action will have $100\%$ chance to reach $S_1$.  
+>&#10114;the immediate rewards are $R(S_1)=3$ and $R(S_2)=-1$.  
+>Where the move action always succeeding in switching in between the 2 states, the stop action fully works only when it reaches the bad state, $R(S)=-1$.  Given $\gamma=0.5$ for a little tricky.  
+>
+>[1]Let's calculate the value function of $S_1$, beginning over here:  
+>&#10112;$V(S_1,stop)=3+0.5\cdo(0.5\cdot0+0.5\cdot0)=3$, the stop action would come out with $50\%$ chance staying in the same place of reward $0$, $50\%$ chance to the $S_2$ of reward $0$.  
+>&#10113;$V(S_1,move)=3+0.5\cdo(1.0\cdot0)=3$, the move action would come out with $100\%$ chance to the $S_2$ of reward $0$.  
+>Trivially, $V(S_1)=3$, the optimal action of $S_1$ could not be tell at this moment,  then, figure out the value function of $S_2$:  
+>&#10114;$V(S_2,stop)=-1+0.5\cdo(1.0\cdot0)=-1$, the stop action would come out with $100\%$ chance to stay in $S_2$ of reward $0$.  
+>&#10115;$V(S_2,move)=-1+0.5\cdo(1.0\cdot0)=-1$, the move action would come out with $100\%$ chance to the $S_1$ of reward $0$.  
+>Trivially, $V(S_2)=-1$, the optimal action of $S_2$ could not be tell at this moment, either.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-2-states-value-iteration-1.png "2 states")
+
+>[2]
 
 <!-- ### <font color="Green">Value Iteration</font> Algorithm/Flow -->
 
