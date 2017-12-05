@@ -102,17 +102,26 @@ $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot
 >&#10114;the immediate rewards are $R(S_1)=3$ and $R(S_2)=-1$.  
 >Where the move action always succeeding in switching in between the 2 states, the stop action fully works only when it reaches the bad state, $R(S)=-1$.  Given $\gamma=0.5$ for a little tricky.  
 >
->[1]Let's calculate the value function of $S_1$, beginning over here:  
+>[1]Let's calculate the <font color="Red">value function</font> of $S_1$, beginning over here:  
 >&#10112;$V(S_1,stop)=3+0.5\cdo(0.5\cdot0+0.5\cdot0)=3$, the stop action would come out with $50\%$ chance staying in the same place of reward $0$, $50\%$ chance to the $S_2$ of reward $0$.  
 >&#10113;$V(S_1,move)=3+0.5\cdo(1.0\cdot0)=3$, the move action would come out with $100\%$ chance to the $S_2$ of reward $0$.  
->Trivially, $V(S_1)=3$, the optimal action of $S_1$ could not be tell at this moment,  then, figure out the value function of $S_2$:  
+>Trivially, $V(S_1)=3$, the optimal action of $S_1$ could not be tell at this moment, then, figure out the value function of $S_2$:  
 >&#10114;$V(S_2,stop)=-1+0.5\cdo(1.0\cdot0)=-1$, the stop action would come out with $100\%$ chance to stay in $S_2$ of reward $0$.  
 >&#10115;$V(S_2,move)=-1+0.5\cdo(1.0\cdot0)=-1$, the move action would come out with $100\%$ chance to the $S_1$ of reward $0$.  
 >Trivially, $V(S_2)=-1$, the optimal action of $S_2$ could not be tell at this moment, either.  
 
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-2-states-value-iteration-1.png "2 states")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-2-states-value-iteration-1.png "2 states,1 backup")
 
->[2]
+>[2]The current optimal <font color="Red">value functions</font> are $V(S_1)=3$ and $V(S_2)=-1$, continue to do the <font color="Green">value iteration</font> again:  
+>&#10112;$V(S_1,stop)=3+0.5\cdo(0.5\cdot3+0.5\cdot-1)=3.5$, the stop action would come out with $50\%$ chance staying in the same place of reward $3$, $50\%$ chance to the $S_2$ of reward $-1$.  
+>&#10113;$V(S_1,move)=3+0.5\cdo(1.0\cdot-1)=2.5$, the move action would come out with $100\%$ chance to the $S_2$ of reward $-1$.  
+>Trivially, $V(S_1)=3.5$, the optimal action of $S_1$ could be stop at this moment, then, figure out the value function of $S_2$:  
+>&#10114;$V(S_2,stop)=-1+0.5\cdo(1.0\cdot-1)=-1.5$, the stop action would come out with $100\%$ chance to stay in $S_2$ of reward $-1$.  
+>&#10115;$V(S_2,move)=-1+0.5\cdo(1.0\cdot3)=0.5$, the move action would come out with $100\%$ chance to the $S_1$ of reward $3$.  
+>Trivially, $V(S_2)=0.5$, the optimal action of $S_2$ could be regarded as move at this moment.
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-2-states-value-iteration-2.png "2 states,2 backups")
+
 
 <!-- ### <font color="Green">Value Iteration</font> Algorithm/Flow -->
 
