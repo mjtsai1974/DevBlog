@@ -176,7 +176,7 @@ Hard to believe, during my prerequisites study period, I involve myself in compu
 world.  Quaternion supports the rotation in accordance to any vector, not just be limited in system of fixed coordinate of reference.  If you can overcome quaternion, then, nothing could 
 frustrate you in developing 3D related application. 
 
-In this section, I am not show you only the prove of all the major topics, also illustrate by example to dump the Blender developed 3D obhject or animation to Android phone and show it
+In this section, I am not show you only the prove of all the major topics, also illustrate by example to dump the Blender developed 3D object or animation to Android phone and show it
 on phone just like what you see on PC screen.
 
 under construction... 
