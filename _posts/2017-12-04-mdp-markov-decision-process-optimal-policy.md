@@ -44,9 +44,9 @@ $$V(S)\leftarrow R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\ri
 >The reason you see this left arrow in above expression is due to we are using a recursive algorithm to calculate the value function of each state.  By the introduction of <font color="#D600D6">discount factor gamma $\gamma$</font>, after iteration over some horizon, the Calculus just guarantees the convergence of the value function.  At that moment, we can just have below optimal value function:  
 $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')\right]$$  
 >
->You can see that it is now the equal operator in the expression.  Just at this moment, we can know the optimal action from the optimal policy of each state with regards to its optimal value function.  When the equation holds true, we have what is called a Bellman equality or Bellman equation.  
+>You can see that it is now the equal operator in the expression.  Just at this moment, we can know the optimal action from the optimal policy of each state with regards to its optimal value function.  When the equation holds true, we have what is called a <font color="Green">Bellman equality</font> or <font color="Green">Bellman equation</font>.  
 >
->The equation contains 2 parts:  
+>The <font color="Green">Bellman equation</font> contains 2 parts:  
 >&#10112;$R(S)$, the reward(cost) in the state $S$.  
 >&#10113;$\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')\right]$, the maximum over all actions we could take in the state $S$, of the discounted expected optimal value of next state $S'$.  
 
