@@ -140,7 +140,7 @@ $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot
 ### The Optimal Policy Given The Optimal Value Function
 >At the end of this article, I'd like to generalize the optimal <font color="#00ADAD">policy</font>.  Suppose you have a full understanding of above <font color="Green">value iteration</font> process, then, we generalize the optimal policy below:  
 $$\pi(S)=\underset A{armax}\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')$$  
->where $\pi(S)$ is the <font color="#00ADAD">policy</font $\pi$ for the state $S$, it would yield out the action $A$ that maximizes the value function of a state $S$.  The <font color="#D600D6">$\gamma$</font> and the <font color="#9300FF">immediate reward</font> has been tossed out, with or without them, th eresult wouldn't change.  
+>where $\pi(S)$ is the <font color="#00ADAD">policy</font> $\pi$ for the state $S$, it would yield out the action $A$ that maximizes the value function of a state $S$.  The <font color="#D600D6">$\gamma$</font> and the <font color="#9300FF">immediate reward</font> has been tossed out, with or without them, th eresult wouldn't change.  
 
 <!-- ### <font color="Green">Value Iteration</font> Algorithm/Flow -->
 
