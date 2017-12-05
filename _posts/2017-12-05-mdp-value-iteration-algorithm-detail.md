@@ -21,7 +21,7 @@ title: Value Iteration Algorithm Detail
 >&#10112;$V_{t}$ converges to some optimized value, say $V^{*}$.  
 >&#10113;no need to keep $V_{t+1}$ v.s. $V_{t}$, since it just converges.  
 >&#10114;<font color="OrangeRed">asynchronous</font>(can do <font color="OrangeRed">random</font> state updates).  
->&#10115;we want \left\|V_t-V^\ast\right\|=\underset{S'}{max}\left\|V_t-V^\ast\right\|<\varepsilon,  
+>&#10115;we want $\left\|V_t-V^\ast\right\|=\underset{S'}{max}\left\|V_t-V^\ast\right\|<\varepsilon$,  
 >then, the whole case is below $\varepsilon\cdot\frac{1-\gamma}\gamma$, I'd like to show you &#10115;  
 >proof:  
 >begin from $\left\|V_t-V_{t+1}\right\|=\gamma\cdot\left\|V_{t-1}-V_t\right\|$  
