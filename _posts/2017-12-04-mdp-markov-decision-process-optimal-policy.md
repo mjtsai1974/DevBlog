@@ -137,6 +137,11 @@ $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot
 >
 >If you treat $S_1$ as sprinting, $S_2$ as jogging, then you will found the most optimal policy for you is to keep on sprinting!!  Could we regard it as sprinting costs much fat than jogging, so, everyone should sprint, not jog?  
 
+### The Optimal Policy Given The Optimal Value Function
+>At the end of this article, I'd like to generalize the optimal <font color="#00ADAD">policy</font>.  Suppose you have a full understanding of above <font color="Green">value iteration</font> process, then, we generalize the optimal policy below:  
+$$\pi(S)=\underset A{armax}\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')$$  
+>where $\pi(S)$ is the <font color="#00ADAD">policy</font $\pi$ for the state $S$, it would yield out the action $A$ that maximizes the value function of a state $S$.  The <font color="#D600D6">$\gamma$</font> and the <font color="#9300FF">immediate reward</font> has been tossed out, with or without them, th eresult wouldn't change.  
+
 <!-- ### <font color="Green">Value Iteration</font> Algorithm/Flow -->
 
 <!-- Notes -->
