@@ -102,26 +102,40 @@ $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot
 >&#10114;the immediate rewards are $R(S_1)=3$ and $R(S_2)=-1$.  
 >Where the move action always succeeding in switching in between the 2 states, the stop action fully works only when it reaches the bad state, $R(S)=-1$.  Given $\gamma=0.5$ for a little tricky.  
 >
+>Here is an extra rule, when you apply <font color="Green">value iteration</font>, it is in the unit of the whole <font color="#EB00EB">stochastic</font> environment, not only in some fixed order of state.  That is to say the whole system of 2 states would be updated with new value function simultaneously, and then you can start again with the new value functions in the 2 states.  
+>
 >[1]Let's calculate the <font color="Red">value function</font> of $S_1$, beginning over here:  
 >&#10112;$V(S_1,stop)=3+0.5\cdot(0.5\cdot0+0.5\cdot0)=3$, the stop action would come out with $50\%$ chance staying in the same place of reward $0$, $50\%$ chance to the $S_2$ of reward $0$.  
 >&#10113;$V(S_1,move)=3+0.5\cdot(1.0\cdot0)=3$, the move action would come out with $100\%$ chance to the $S_2$ of reward $0$.  
->Trivially, $V(S_1)=3$, the optimal action of $S_1$ could not be tell at this moment, then, figure out the value function of $S_2$:  
+>Trivially, $V(S_1)=3$, the <font color="DeepSkyBlue">optimal action</font> of $S_1$ could not be tell at this moment, then, figure out the value function of $S_2$:  
 >&#10114;$V(S_2,stop)=-1+0.5\cdot(1.0\cdot0)=-1$, the stop action would come out with $100\%$ chance to stay in $S_2$ of reward $0$.  
 >&#10115;$V(S_2,move)=-1+0.5\cdot(1.0\cdot0)=-1$, the move action would come out with $100\%$ chance to the $S_1$ of reward $0$.  
->Trivially, $V(S_2)=-1$, the optimal action of $S_2$ could not be tell at this moment, either.  
+>Trivially, $V(S_2)=-1$, the <font color="DeepSkyBlue">optimal action</font> of $S_2$ could not be tell at this moment, either.  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-2-states-value-iteration-1.png "2 states,1 backup")
 
 >[2]The current optimal <font color="Red">value functions</font> are $V(S_1)=3$ and $V(S_2)=-1$, continue to do the <font color="Green">value iteration</font> again:  
 >&#10112;$V(S_1,stop)=3+0.5\cdot(0.5\cdot3+0.5\cdot-1)=3.5$, the stop action would come out with $50\%$ chance staying in the same place of reward $3$, $50\%$ chance to the $S_2$ of reward $-1$.  
 >&#10113;$V(S_1,move)=3+0.5\cdot(1.0\cdot-1)=2.5$, the move action would come out with $100\%$ chance to the $S_2$ of reward $-1$.  
->Trivially, $V(S_1)=3.5$, the optimal action of $S_1$ could be stop at this moment, then, figure out the value function of $S_2$:  
+>Trivially, $V(S_1)=3.5$, the <font color="DeepSkyBlue">optimal action</font> of $S_1$ could be stop at this moment, then, figure out the value function of $S_2$:  
 >&#10114;$V(S_2,stop)=-1+0.5\cdot(1.0\cdot-1)=-1.5$, the stop action would come out with $100\%$ chance to stay in $S_2$ of reward $-1$.  
 >&#10115;$V(S_2,move)=-1+0.5\cdot(1.0\cdot3)=0.5$, the move action would come out with $100\%$ chance to the $S_1$ of reward $3$.  
->Trivially, $V(S_2)=0.5$, the optimal action of $S_2$ could be regarded as move at this moment.
+>Trivially, $V(S_2)=0.5$, the <font color="DeepSkyBlue">optimal action</font> of $S_2$ could be regarded as move at this moment.
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-2-states-value-iteration-2.png "2 states,2 backups")
 
+>Keep on applying <font color="Green">value iteration</font> onto the whole system, we will finally bring the value function of the 2 states to the convergence.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-2-states-convergence.png "convergence")
+
+>&#10112;$V(S_1,stop)=3+0.5\cdot(0.5\cdot4.4+0.5\cdot1.2)=4.4$, the stop action would come out with $50\%$ chance staying in the same place of reward $4.4$, $50\%$ chance to the $S_2$ of reward $1.2$.  
+>&#10113;$V(S_1,move)=3+0.5\cdot(1.0\cdot1.2)=3.6$, the move action would come out with $100\%$ chance to the $S_2$ of reward $1.2$.  
+>Trivially, $V(S_1)=4.4$, the <font color="DeepSkyBlue">optimal action</font> of $S_1$ could be stop at this moment, then, figure out the value function of $S_2$:  
+>&#10114;$V(S_2,stop)=-1+0.5\cdot(1.0\cdot1.2)=-0.4$, the stop action would come out with $100\%$ chance to stay in $S_2$ of reward $1.2$.  
+>&#10115;$V(S_2,move)=-1+0.5\cdot(1.0\cdot4.4)=1.2$, the move action would come out with $100\%$ chance to the $S_1$ of reward $4.4$.  
+>Trivially, $V(S_2)=1.2$, the <font color="DeepSkyBlue">optimal action</font> of $S_2$ could be regarded as move at this moment.
+>
+>If you treat $S_1$ as sprinting, $S_2$ as jogging, then you will found the most optimal policy for you is to keep on sprinting!!  Could we regard it as sprinting costs much fat than jogging, so, everyone should sprint, not jog?  
 
 <!-- ### <font color="Green">Value Iteration</font> Algorithm/Flow -->
 
