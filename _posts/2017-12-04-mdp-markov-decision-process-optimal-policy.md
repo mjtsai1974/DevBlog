@@ -69,6 +69,17 @@ $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot
 >&#10114;$V(M_{1,3},S)=-3+0.8\cdot0+0.1\cdot0+0.1\cdot100=7$, for we choose north, the immediate reward of leaving $M_{1,3}$ is $-3$, and $80\%$ go to $M_{2,3}$ of reward $0$, $10\%$ chance to $M_{1,2}$ of reward $0$, $10\%$ chance to $M_{1,4}$ of reward $100$.  
 >Trivially, we have $V(M_{1,3},E)=77$ the maximized value, and the east is the <font color="DeepSkyBlue">optimal action</font>.  
 
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-04-mdp-markov-decision-process-optimal-policy-value-iterate-backup-1.png "1 backup")
+
+>[2]Suppose we are inheriting from above state, where $V(M_{1,3})=77}, what is the value of $M_{2,3}$ after still another <font color="OrangeRed">single backup</font>?  
+>&#10112;$V(M_{2,3},E)=-3+0.8\cdot-100+0.1\cdot77+0.1\cdot0=-75.3$, for we choose east, the immediate reward of leaving $M_{2,3}$ is $-3$, and $80\%$ chance to arrive $M_{2,4}$ of reward $-100$, $10\%$ chance to $M_{1,3}$ of reward $77$, $10\%$ chance to down to $M_{3,3}$ of reward $0$.  
+>&#10113;$V(M_{2,3},W)=-3+0.8\cdot0+0.1\cdot77+0.1\cdot0=4.7$, for we choose west, the immediate reward of leaving $M_{2,3}$ is $-3$, and $80\%$ chance to bounce back to $M_{2,3}$ of reward $0$, $10\%$ chance to $M_{1,3}$ of reward $77$, $10\%$ chance to down to $M_{3,3}$ of reward $0$.  
+>&#10114;$V(M_{2,3},N)=-3+0.8\cdot77+0.1\cdot0+0.1\cdot-100=48.6$, for we choose north, the immediate reward of leaving $M_{2,3}$ is $-3$, and $80\%$ chance to arrive $M_{1,3}$ of reward $77$, $10\%$ chance to bounce back to $M_{2,3}$ of reward $0$, $10\%$ chance to down to $M_{2,4}$ of reward $-100$.  
+>&#10115;$V(M_{2,3},S)=-3+0.8\cdot0+0.1\cdot0+0.1\cdot-100=-13$, for we choose south, the immediate reward of leaving $M_{2,3}$ is $-3$, and $80\%$ chance to arrive $M_{3,3}$ of reward $0$, $10\%$ chance to bounce back to $M_{2,3}$ of reward $0$, $10\%$ chance to down to $M_{2,4}$ of reward $-100$.  
+>Trivially, we have $V(M_{2,3},N)=48.6$ the maximized value, and the north is the <font color="DeepSkyBlue">optimal action</font>.  Please be recalled that <font color="#C20000">hitting the wall is not the most optimal action any more, it is a major different from prior illustration!  That's because we have successfully backup a optimal value of $M_{1,3}=77$</font>.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-04-mdp-markov-decision-process-optimal-policy-value-iterate-backup-2.png "2 backups")
+
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
 <!-- <font color="#00ADAD">policy</font> -->
