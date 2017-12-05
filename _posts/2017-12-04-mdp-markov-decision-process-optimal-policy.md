@@ -38,13 +38,15 @@ $$V^\pi(S)=\underset\pi E\left[\sum_{t=0}^\infty\gamma\cdot R^t\left|S_0\right.=
 >
 >The way we are going to plan is that we are going to iterate and compute value function of each state, then, it will turn out for us to have a better <font color="#00ADAD">policy</font>.  This process is usually <font color="#D600D6">discounted by $\gamma$</font>, and we also add the <font color="#9300FF">reward</font> or the <font color="#9300FF">cost</font> of the starting state.  
 >
->Because there are multiple actions associated with each distinct state, it's your choice to select the right action that will maximize over all possible actions:  
+>Because there are multiple actions associated with each distinct state, it's your choice to select the right action that will maximize over all possible actions, this is an equation called <font color="OrangeRed">backup</font>:  
 $$V(S)\leftarrow R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')\right]$$
 >
 >The reason you see this left arrow in above expression is due to we are using a recursive algorithm to calculate the value function of each state.  By the introduction of <font color="#D600D6">discount factor gamma $\gamma$</font>, after iteration over some horizon, the Calculus just guarantees the convergence of the value function.  At that moment, we can just have below optimal value function:  
 $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')\right]$$  
 >
->You can see that it is now the equal operator in the expression.  Just at this moment, we can know the optimal action from the optimal policy of each state with regards to its optimal value function.  The equation contains 2 parts:  
+>You can see that it is now the equal operator in the expression.  Just at this moment, we can know the optimal action from the optimal policy of each state with regards to its optimal value function.  When the equation holds true, we have what is called a Bellman equality or Bellman equation.  
+>
+>The equation contains 2 parts:  
 >&#10112;$R(S)$, the reward(cost) in the state $S$.  
 >&#10113;$\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')\right]$, the maximum over all actions we could take in the state $S$, of the discounted expected optimal value of next state $S'$.  
 
