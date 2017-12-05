@@ -50,8 +50,17 @@ $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot
 >&#10112;$R(S)$, the reward(cost) in the state $S$.  
 >&#10113;$\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot V(S')\right]$, the maximum over all actions we could take in the state $S$, of the discounted expected optimal value of next state $S'$.  
 
-### Value Iteration
+### Value Iteration Under Stochastic Environment
 >The idea behind is that in every state, we want to choose the action that maximize the value of the future.  This paragraph would lead you through the whole process still in example of the grid world.  
+>
+>The <font color="#EB00EB">stochastic environment</font> of grid world with the same setting and the action has the <font color="#EB00EB">stochastic outcomes</font>, where $80\%$ is the probability we can get our action of our command done, otherwise, we get left or right.  
+>
+>At this time, we are not forgetting the issue of <font color="#9300FF">costs</font>, we denote <font color="#9300FF">costs</font> as the award function over all possible states, below design might be an incentive to shorten the action sequence, the agent should complete as soon as possible, or the value function of each iterated state might be decreased:  
+>$$R(S)=\left\{\begin{array}{c}+100,for\;M_{1,4}\\-100,for\;M_{2,4}\\-3,othewise\end{array}\right.$$
+>
+>Assume that the initial values are all $0$, except for $M_{1,4}=+100$, $M_{2,4}=-100$, let's try to calculate the value of $M_{3,3}$ after a <font color="OrangeRed">single backup</font>.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-04-mdp-markov-decision-process-optimal-policy-value-iterate-init.png "grid world init")
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
