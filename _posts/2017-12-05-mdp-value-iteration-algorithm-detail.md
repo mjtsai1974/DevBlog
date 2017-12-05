@@ -36,7 +36,7 @@ $$\begin{array}{l}\therefore\left\|V_t-V_{t+1}\right\|\\=\gamma\cdot\left\|V_{t-
 >
 >next, express $unknown$ in terms of $\varepsilon$ and $1-\gamma$, this should hold, where $\varepsilon$ is a small and unknown coefficient by design.  
 >
->next take $unknown=\varepsilon\cdot(1-\gamma)$, because $V_{t-1}-V_t$could be expressed with $(1-\gamma)$ term in it.  Then, the whole inequality becomes:  
+>next, take $unknown=\varepsilon\cdot(1-\gamma)$, because $V_{t-1}-V_t$could be expressed with $(1-\gamma)$ term in it.  Then, the whole inequality becomes:  
 $$\begin{array}{l}\gamma\cdot V_{t-1}\cdot(1-\gamma)<unknown\\\Rightarrow\gamma\cdot V_{t-1}\cdot(1-\gamma)<\varepsilon\cdot(1-\gamma)\\\Rightarrow\gamma\cdot\left\|V_{t-1}-V_t\right\|<\varepsilon\cdot(1-\gamma)\\\Rightarrow\left\|V_{t-1}-V_t\right\|<\varepsilon\cdot\frac{1-\gamma}\gamma\\\Rightarrow\left\|V_{t+1}-V_t\right\|<\varepsilon\cdot\frac{1-\gamma}\gamma\end{array}$$  
 >as $t$ increases, we will have $V_{t-1}\approx V_t\approx V_{t+1}$.  
 
