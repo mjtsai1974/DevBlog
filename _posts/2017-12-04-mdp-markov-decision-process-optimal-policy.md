@@ -58,9 +58,16 @@ $$V(S)=R(S)+\underset A{max}\left[\gamma\cdot\sum_{S'}P(S'\left|S,A\right.)\cdot
 >At this time, we are not forgetting the issue of <font color="#9300FF">costs</font>, we denote <font color="#9300FF">costs</font> as the award function over all possible states, below design might be an incentive to shorten the action sequence, the agent should complete as soon as possible, or the value function of each iterated state might be decreased:  
 >$$R(S)=\left\{\begin{array}{c}+100,for\;M_{1,4}\\-100,for\;M_{2,4}\\-3,othewise\end{array}\right.$$
 >
->Assume that the initial values are all $0$, except for $M_{1,4}=+100$, $M_{2,4}=-100$, let's try to calculate the value of $M_{3,3}$ after a <font color="OrangeRed">single backup</font>.  
+>Assume that the initial values are all $0$, except for $M_{1,4}=+100$, $M_{2,4}=-100$.  
 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-04-mdp-markov-decision-process-optimal-policy-value-iterate-init.png "grid world init")
+
+>[1]Let's try to calculate the value of $M_{1,3}$ after a <font color="OrangeRed">single backup</font>.  
+>&#10112;$V(M_{1,3},E)=-3+0.8\cdot100+0.1\cdot0+0.1\cdot0=77$, for we choose east, the immediate reward of leaving $M_{1,3}$ is $-3$, and $80\%$ chance to arrive $M_{1,4}$ of reward $+100$, $10\%$ chance to bounce back to $M_{1,3}$ of reward $0$, $10\%$ chance to down to $M_{2,3}$ of reward $0$.  
+>&#10113;$V(M_{1,3},W)=-3+0.8\cdot0+0.1\cdot0+0.1\cdot0=-3$, for we choose west, the immediate reward of leaving $M_{1,3}$ is $-3$, and $80\%$ chance to arrive $M_{1,2}$ of reward $0$, $10\%$ chance to bounce back to $M_{1,3}$ of reward $0$, $10\%$ chance to down to $M_{2,3}$ of reward $0$.  
+>&#10114;$V(M_{1,3},N)=-3+0.8\cdot0+0.1\cdot0+0.1\cdot100=7$, for we choose north, the immediate reward of leaving $M_{1,3}$ is $-3$, and $80\%$ chance to bounce back to $M_{1,3}$ of reward $0$, $10\%$ chance to $M_{1,2}$ of reward $0$, $10\%$ chance to $M_{1,4}$ of reward $100$.  
+>&#10114;$V(M_{1,3},S)=-3+0.8\cdot0+0.1\cdot0+0.1\cdot100=7$, for we choose north, the immediate reward of leaving $M_{1,3}$ is $-3$, and $80\%$ go to $M_{2,3}$ of reward $0$, $10\%$ chance to $M_{1,2}$ of reward $0$, $10\%$ chance to $M_{1,4}$ of reward $100$.  
+>Trivially, we have $V(M_{1,3},E)=77$ the maximized value, and the east is the <font color="DeepSkyBlue">optimal action</font>.  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
