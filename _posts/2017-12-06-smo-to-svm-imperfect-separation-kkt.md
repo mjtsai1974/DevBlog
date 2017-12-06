@@ -22,15 +22,15 @@ How, if there exists some data points in the safeguard zone?  When we are studyi
 ><font color="OrangeRed">subject to</font> $y_i\cdot(w^t\cdot x_i-b)+\xi_i-1\geq0$, $\forall\xi_i\geq0$  
 >
 >Next to build the lagrangian by introducing $\alpha_1$, $\alpha_2$,..., $\alpha_n$ and $\mu_1$, $\mu_2$,..., $\mu_n$, then:  
-$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=w^t\cdot w+C\cdot\sum_{i=1}^n\xi_i\\\;\;\;\;-\sum_{i=1}^n\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)+\xi_i-1)\\\;\;\;\;-\sum_{i=1}^n\mu_i\cdot\xi_i\end{array}$$  
+$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\frac12\cdot w^t\cdot w+C\cdot\sum_{i=1}^n\xi_i\\\;\;\;\;-\sum_{i=1}^n\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)+\xi_i-1)\\\;\;\;\;-\sum_{i=1}^n\mu_i\cdot\xi_i\end{array}$$  
 >; where $\alpha_i$ is for the regularization of the term $y_i\cdot(w^t\cdot x_i-b)+\xi_i-1$, $\mu_i$ is for the regularization of the term $\xi_i$.  
 >
->$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=w^t\cdot w+\sum_{i=1}^n(C-\alpha_i-\mu_i)\xi_i\\\;\;\;\;-\sum_{i=1}^n(\alpha_i\cdot y_i\cdot x_i^t)\cdot w\\\;\;\;\;+\sum_{i=1}^n\alpha_i\cdot y_i\cdot b\\\;\;\;\;-\sum_{i=1}^n\alpha_i\end{array}$$  
+$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\frac12\cdot w^t\cdot w+\sum_{i=1}^n(C-\alpha_i-\mu_i)\xi_i\\\;\;\;\;-\sum_{i=1}^n(\alpha_i\cdot y_i\cdot x_i^t)\cdot w\\\;\;\;\;+\sum_{i=1}^n\alpha_i\cdot y_i\cdot b\\\;\;\;\;-\sum_{i=1}^n\alpha_i\end{array}$$  
 >
 >To get the maximum of $L$ at $\alpha$ and $\xi$, below constraints must be satisfied for all $i$:  
 >&#10112;$\frac{\partial L}{\partial w}=0$, &#10113;$\frac{\partial L}{\partial b}=0$, &#10114;$\frac{\partial L}{\partial \xi}=0$, for all $i$:  
 >&#10112;we have $w$ in below expression:  
-$$\begin{array}{l}w^t-\sum_{i=1}^n(\alpha_i\cdot y_i\cdot x_i^t)=0\\\Leftrightarrow w^t=\sum_{i=1}^n(\alpha_i\cdot y_i\cdot x_i^t)\end{array}$$  
+$$\begin{array}{l}w^t-\sum_{i=1}^n(\alpha_i\cdot y_i\cdot x_i^t)=0\\\Leftrightarrow w=\sum_{i=1}^n(\alpha_i\cdot y_i\cdot x_i)\end{array}$$  
 >&#10113;implies $\sum_{i=1}^n\alpha_i\cdot y_i=0$  
 >&#10114;we have $\sum_{i=1}^nC-\alpha_i-\mu_i=0$, then for all $i$, $C-\alpha_i-\mu_i=0$ just holds.  
 >
