@@ -22,9 +22,13 @@ How, if there exists some data points in the safeguard zone?  When we are studyi
 ><font color="OrangeRed">subject to</font> $y_i\cdot(w^t\cdot x_i-b)+\xi_i-1\geq0$, $\forall\xi_i\geq0$  
 >
 >Next to build the lagrangian by introducing $\alpha_1$, $\alpha_2$,..., $\alpha_n$ and $\mu_1$, $\mu_2$,..., $\mu_n$, then:  
-$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=w^t\cdot w+C\cdot\sum_{i=1}^n\xi_i\\\;\;\;\;-\sum_{i=1}^n\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)+\xi_i-1)\\\;\;\;\;-\sum_{i=1}^n\mu_i\cdot\xi_i\end{array}$$ 
+$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=w^t\cdot w+C\cdot\sum_{i=1}^n\xi_i\\\;\;\;\;-\sum_{i=1}^n\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)+\xi_i-1)\\\;\;\;\;-\sum_{i=1}^n\mu_i\cdot\xi_i\end{array}$$  
+>; where $\alpha_i$ is for the regularization of the term $y_i\cdot(w^t\cdot x_i-b)+\xi_i-1$, $\mu_i$ is for the regularization of the term $\xi_i$.  
 >
-
+>$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=w^t\cdot w+\sum_{i=1}^n(C-\alpha_i-\mu_i)\xi_i\\\;\;\;\;-\sum_{i=1}^n(\alpha_i\cdot y_i\cdot x_i^t)\cdot w\\\;\;\;\;+\sum_{i=1}^n\alpha_i\cdot y_i\cdot b\\\;\;\;\;-\sum_{i=1}^n\alpha_i\end{array}$$  
+>
+>To get the maximum of $L$ at $\alpha$ and $\xi$, below constraints must be satisfied for all $i$:  
+>
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
