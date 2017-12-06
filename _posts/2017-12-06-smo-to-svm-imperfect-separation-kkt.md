@@ -14,8 +14,15 @@ How, if there exists some data points in the safeguard zone?  When we are studyi
 >In this way, by introducting $\xi\geq0$, non-negative, such that:  
 >&#10112;$w^t\cdot x_i-b\geq1-\xi_i$, for $y_i=1$  
 >&#10113;$w^t\cdot x_i-b\leq-1+\xi_i$, for $y_i=-1$  
->This is to <font color="OrangeRed">shrink down</font> the distance between $H_1$ and $H_2$, thus to allow some noise within original margin!!!  
-
+>This is to <font color="OrangeRed">shrink down</font> the distance between $H_1$ and $H_2$, thus <font color="DeepSkyBlue">to allow some noise within original margin</font>.  
+>
+>In addition to $\xi$, we also introduce the <font color="OrangeRed">penalty</font> $C$, where $C$ is <font color="DeepSkyBlue">finite</font> in the objective function:    
+>$\underset{w,\xi_i}{min}\left[w^t\cdot w+C\cdot(\sum_{i=1}^n\xi_i)^m\right]$, by usual $m=1$, which then leads to formulate our problem as:  
+>$\underset{w,\xi_i}{min}\left[w^t\cdot w+C\cdot\sum_{i=1}^n\xi_i\right]$, subject to  
+>>$y_i\cdot(w^t\cdot x_i-b)+\xi_i-1\geq0$, $\forall\xi_i\geq0$  
+>
+>Next to build the lagrangian by introducing $\alpha_1$, $\alpha_2$,..., $\alpha_n$ and $\mu_1$, $\mu_2$,..., $\mu_n$, then:  
+> 
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
