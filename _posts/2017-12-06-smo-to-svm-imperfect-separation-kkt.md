@@ -10,8 +10,12 @@ How, if there exists some data points in the safeguard zone?  When we are studyi
 </p>
 
 ### Imperfect Separation With <font color="OrangeRed">Noise</font>
->There exists some condition that we don't strictly enfore that <font color="OrangeRed">no</font> data points in between $H_1$ and $H_2$.  We can extend SVM to allow some <font color="OrangeRed">noise</font>(data points) in between the safeguard zone.  Thus, we want to <font color="OrangeRed">penalize</font> the data points that cross the boundaries($H_1$,$H_2$).  
+>There exists some condition that we don't strictly enforce that <font color="OrangeRed">no</font> data points in between $H_1$ and $H_2$.  We can extend SVM to allow some <font color="OrangeRed">noise</font>(data points) in between the safeguard zone.  Thus, we want to <font color="OrangeRed">penalize</font> the data points that cross the boundaries($H_1$,$H_2$).  
 >In this way, by introducting $\xi\geq0$, non-negative, such that:  
+>&#10112;$w^t\cdot x_i-b\geq1-\xi_i$, for $y_i=1$  
+>&#10113;$w^t\cdot x_i-b\leq-1+\xi_i$, for $y_i=-1$  
+>This is to <font color="OrangeRed">shrink down</font> the distance between $H_1$ and $H_2$, thus to allow some noise within original margin!!!  
+
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
