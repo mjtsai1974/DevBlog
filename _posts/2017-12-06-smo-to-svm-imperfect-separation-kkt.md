@@ -28,7 +28,13 @@ $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=w^t\cdot w+C\cdot\sum_{i=1}^n\xi_i\\\;
 >$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=w^t\cdot w+\sum_{i=1}^n(C-\alpha_i-\mu_i)\xi_i\\\;\;\;\;-\sum_{i=1}^n(\alpha_i\cdot y_i\cdot x_i^t)\cdot w\\\;\;\;\;+\sum_{i=1}^n\alpha_i\cdot y_i\cdot b\\\;\;\;\;-\sum_{i=1}^n\alpha_i\end{array}$$  
 >
 >To get the maximum of $L$ at $\alpha$ and $\xi$, below constraints must be satisfied for all $i$:  
+>&#10112;$\frac{\partial L}{\partial w}=0$, &#10113;$\frac{\partial L}{\partial b}=0$, &#10114;$\frac{\partial L}{\partial \xi}=0$, for all $i$:  
+>&#10112;implies $\begin{array}{l}w^t-\sum_{i=1}^n(\alpha_i\cdot y_i\cdot x_i^t)=0\\\Leftrightarrow w^t=\sum_{i=1}^n(\alpha_i\cdot y_i\cdot x_i^t)\end{array}$  
+>&#10113;implies $\sum_{i=1}^n\alpha_i\cdot y_i=0$  
+>&#10114;we have $\sum_{i=1}^nC-\alpha_i-\mu_i=0$, then for all $i$, $C-\alpha_i-\mu_i=0$ just holds.  
 >
+>Notes that $\alpha_i\geq0$, $\mu_i\geq0$, therefore, we have <font color="OrangeRed">$0\leq\alpha_i\leq C$</font>,  
+>$\alpha_i$ is now <font color="OrangeRed">upper bounded</font> by <font color="OrangeRed">$C$</font>.  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
