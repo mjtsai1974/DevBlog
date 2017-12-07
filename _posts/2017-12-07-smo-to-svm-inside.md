@@ -18,8 +18,23 @@ $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha_i-\frac12\cdot\sum_
 >
 >Begin by given $\alpha_i=0$ for $i=1$ to $n$.  Suppose we randomly choose $\alpha_1$, $\alpha_2$ and denote it as <font color="RoyalBlue">$\alpha_1^{old}$</font>, <font color="RoyalBlue">$\alpha_2^{old}$</font>.  
 >Due to $\sum_{i=1}^n\alpha_i\cdot y_i=0$, therefore we have:  
->$y_1\cdot \alpha_1+y_2\cdot \alpha_2=y_1\cdot \alpha_1^old+y_2\cdot \alpha_2^old$  
+>$y_1\cdot \alpha_1+y_2\cdot \alpha_2=y_1\cdot \alpha_1^{old}+y_2\cdot \alpha_2^{old}$  
 >This confines the optimization of $\alpha_1$, $\alpha_2$ is on a line.  
+>
+>Next to examine the relation in between of these 2 <font color="RoyalBlue">old</font> $\alpha_1$, $\alpha_2$.  
+>&#10112;for $y_1\neq y_2$, then, $\alpha_1-\alpha_2=r$, where $r$ is a constant.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-07-smo-to-svm-inside-alphas-on-line-1.png "2 alphas on a line")
+
+>&#10113;for $y_1=y_2$, then, $\alpha_1+\alpha_2=r$.  
+
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-07-smo-to-svm-inside-alphas-on-line-2.png "2 alphas on a line")
+
+>Take $S=y_1\cdot y_2$, multiply $y_1\cdot \alpha_1+y_2\cdot \alpha_2=const$ by $y_1$, then,  
+>$\alpha_1+S\cdot \alpha_2=const$, we have:  
+>$\alpha_1=const-S\cdot \alpha_2$,  
+>where $\alpha_1+S\cdot \alpha_2=\alpha_1^{old}+S\cdot \alpha_2^{old}$.  
+>
 
 ### Express $\alpha_1$ In Terms Of $\alpha_2$
 >
