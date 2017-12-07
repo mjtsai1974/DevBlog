@@ -16,9 +16,9 @@ $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha_i-\frac12\cdot\sum_
 ### Works On 2 $\alpha$'s At A Time
 >The algorithm of SMO works by <font color="OrangeRed">manipulating 2 $\alpha$'s at a time(with others fixed)</font>, a little <font color="OrangeRed">hill climbing</font> alike approach.  By <font color="OrangeRed">heuristics</font> to choose 2 $\alpha$'s at a time.  
 >
->Begin by given $\alpha_i=0$ for $i=1$ to $n$.  Suppose we randomly choose $\alpha_1$, $\alpha_2$ and denote it as <font color="RoyalBlue">$\alpha_1^old$</font>, <font color="RoyalBlue">$\alpha_2^old$</font>.  
+>Begin by given $\alpha_i=0$ for $i=1$ to $n$.  Suppose we randomly choose $\alpha_1$, $\alpha_2$ and denote it as <font color="RoyalBlue">$\alpha_1^{old}$</font>, <font color="RoyalBlue">$\alpha_2^{old}$</font>.  
 >Due to $\sum_{i=1}^n\alpha_i\cdot y_i=0$, therefore we have:  
->$y_1\cdot \alpha_1+$y_2\cdot \alpha_2=y_1\cdot \alpha_1^old+$y_2\cdot \alpha_2^old$  
+>$y_1\cdot \alpha_1+y_2\cdot \alpha_2=y_1\cdot \alpha_1^old+y_2\cdot \alpha_2^old$  
 >This confines the optimization of $\alpha_1$, $\alpha_2$ is on a line.  
 
 ### Express $\alpha_1$ In Terms Of $\alpha_2$
