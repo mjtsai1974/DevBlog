@@ -45,9 +45,10 @@ $$\begin{array}{l}part\;1\\=\sum_{i,j=1,2}\alpha_i\cdot\alpha_j\cdot y_i\cdot y_
 $$\begin{array}{l}part\;2\\=\sum_{i=3;j=1,2}^{j=n}\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot x_i^t\cdot x_j\\\;\;+\sum_{i=1,2;j=3}^{j=n}\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot x_i^t\cdot x_j\\=2\cdot(\sum_{i=3}^n\alpha_i\cdot y_i\cdot x_i^t)\cdot(\alpha_1\cdot y_1\cdot x_1+\alpha_2\cdot y_2\cdot x_2)\end{array}$$  
 
 ### Express $\alpha_1$ In Terms Of $\alpha_2$
+>Next to express $\alpha_1$ in terms of $\alpha_2$, this is a quiet painful and confused process, it took me some while, now I'd like to share you with my viewpoint in each step in the deduction.  
 >
 
-### Introduce $\eta$
+### Introduction Of $\eta$
 >
 
 ### Feasible Rangle Of New $\alpha$ Value
