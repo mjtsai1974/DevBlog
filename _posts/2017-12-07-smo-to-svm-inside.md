@@ -1,0 +1,56 @@
+---
+layout: post
+title: Inside Support Minimal Optimization
+---
+
+## Inside Sequential Minimal Optimization
+<p class="message">
+SMO(Sequential Minimal Optimization) is the regularization process by optimization in accordance to the rule that can minimize the cost error of the objective function sequentially. 
+</p>
+
+### Departure With Noise
+>We'd like to begin from the imperfect separation, since no sampling is fully qualified and could be well separated.  Given the support vector formulated problem expressed in terms of $\alpha_i$, $y_i$, $x_i$; then the objective function:  
+$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha_i-\frac12\cdot\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot x_i^t\cdot x_j\end{array}$$  
+>for all i, $0<\alpha_i<C$  
+
+### Works On 2 $\alpha$'s At A Time
+>The algorithm of SMO works by <font color="OrangeRed">manipulating 2 $\alpha$'s at a time(with others fixed)</font>, a little <font color="OrangeRed">hill climbing</font> alike approach.  By <font color="OrangeRed">heuristics</font> to choose 2 $\alpha$'s at a time.  
+>
+>Begin by given $\alpha_i=0$ for $i=1$ to $n$.  Suppose we randomly choose $\alpha_1$, $\alpha_2$ and denote it as <font color="RoyalBlue">$\alpha_1^old$</font>, <font color="RoyalBlue">$\alpha_2^old$</font>.  
+>Due to $\sum_{i=1}^n\alpha_i\cdot y_i=0$, therefore we have:  
+>$y_1\cdot \alpha_1+$y_2\cdot \alpha_2=y_1\cdot \alpha_1^old+$y_2\cdot \alpha_2^old$  
+>This confines the optimization of $\alpha_1$, $\alpha_2$ is on a line.  
+
+### Express $\alpha_1$ In Terms Of $\alpha_2$
+>
+
+### Introduce $\eta$
+>
+
+### Feasible Rangle Of New $\alpha$ Value
+>
+
+### Clip New $\alpha$
+>
+
+### SMO Updating
+>
+
+<!-- Notes -->
+<!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
+<!-- <font color="Red">KKT</font> -->
+<!-- <font color="DeepSkyBlue">suggested item, soft item</font> -->
+<!-- <font color="RoyalBlue">old alpha</font> -->
+<!-- <font color="Green">new alpha</font> -->
+
+<!-- <font color="DeepPink">positive conclusion, finding</font> -->
+<!-- <font color="DimGray">negative conclusion, finding</font> -->
+
+<!-- <font color="#00ADAD">policy</font> -->
+<!-- <font color="#6100A8">full observable</font> -->
+<!-- <font color="#FFAC12">partial observable</font> -->
+<!-- <font color="#EB00EB">stochastic</font> -->
+<!-- <font color="#8400E6">state transition</font> -->
+<!-- <font color="#D600D6">discount factor gamma $\gamma$</font> -->
+<!-- <font color="#D600D6">$V(S)$</font> -->
+<!-- <font color="#9300FF">immediate reward R(S)</font> -->
