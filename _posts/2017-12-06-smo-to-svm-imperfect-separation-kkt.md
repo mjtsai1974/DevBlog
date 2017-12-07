@@ -76,8 +76,8 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >[case 3]$\alpha_i=C$, also, the boundary case.
 >then, $\mu_i=C-\alpha_i=0$, by $\mu_i\cdot\xi_i=0$, we have $\xi_i\geq0$, then,  
 >$y_i\cdot(w^t\cdot x_i-b)+\xi_i-1=0$,  
->$y_i\cdot(w^t\cdot x_i-b)-1\leq0$ just holds, more precisely, it should be:  
-><font color="DeepPink">$y_i\cdot(w^t\cdot x_i-b)-1\leq-\xi_i$</font>...by mjtsai  
+>$y_i\cdot(w^t\cdot x_i-b)-1\leq0$ just holds, more precisely, mjtsai think it should be:  
+><font color="DeepPink">$y_i\cdot(w^t\cdot x_i-b)-1\leq-\xi_i$</font>  
 >
 >[4]Continue the deduction on the condition term to be regularized by $\alpha_i$ in the most original objective function.  
 >$y_i\cdot(w^t\cdot x_i-b)-1$  
