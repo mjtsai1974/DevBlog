@@ -41,6 +41,12 @@ $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\frac12\cdot w^t\cdot w+\sum_{i=1}^n0\
 <!-- $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\frac12\cdot w^t\cdot w+\sum_{i=1}^n0\cdot\xi_i\\\;\;\;\;-w^t\cdot w+0\cdot b\\\;\;\;\;+\sum_{i=1}^n\alpha_i\end{array}$$ -->
 <!-- $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha_i-\frac12\cdot w^t\cdot w\\=\sum_{i=1}^n\alpha_i-\frac12\cdot\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot x_i^t\cdot x_j\end{array}$$ -->
 >
+>To maximize $L(w,b,\xi,\alpha,\mu)$ for the <font color="DeepSkyBlue">optimal $\alpha_i$ value</font>, then, we formulate the lagrangian as:  
+$$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha_i-\frac12\cdot\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot x_i^t\cdot x_j\end{array}$$  
+>, subject to:  
+>&#10112;$\sum_{i=1}^n\alpha_i\cdot y_i=0$  
+>&#10113;<font color="OrangeRed">$0\leq\alpha_i\leq C$</font> for all $i$  
+
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
