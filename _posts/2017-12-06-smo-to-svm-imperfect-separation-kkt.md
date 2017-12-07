@@ -77,7 +77,7 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >then, $\mu_i=C-\alpha_i=0$, by $\mu_i\cdot\xi_i=0$, we have $\xi_i\geq0$, then,  
 >$y_i\cdot(w^t\cdot x_i-b)+\xi_i-1=0$,  
 >$y_i\cdot(w^t\cdot x_i-b)-1\leq0$ just holds, more precisely, it should be:  
-><font color="#DeepPink">$y_i\cdot(w^t\cdot x_i-b)-1\leq\-xi_i$</font>...by mjtsai  
+><font color="#DeepPink">$y_i\cdot(w^t\cdot x_i-b)-1\leq-\xi_i$</font>...by mjtsai  
 >
 >[4]Continue the deduction on the condition term to be regularized by $\alpha_i$ in the most original objective function.  
 >$y_i\cdot(w^t\cdot x_i-b)-1$  
@@ -96,6 +96,16 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >&#10113;$\alpha_i>0$ and $R_i>0$
 >&#10114;$\alpha_i=0$ and $R_i>0$...by mjtsai
 
+### Checking The <font color="Red">KKT</font> Without Using Threshold $b$
+>Due to the fact that $L(w,b,\xi,\alpha,\mu)$ doesn't solve for $b$ directly, as a result, it would be beneficial to check <font color="Red">KKT</font> without using threshold $b$.  
+>$R_i$...begin from here  
+>$=y_i\cdot E_i$  
+>$=y_i\cdot(w^t\cdot x_i-b-y_i)$  
+>$=y_i\cdot(u_i-y_i)$  
+>$=y_i\cdot(w^t\cdot x_i-y_i-b)$  
+>$=y_i\cdot(F_i-b)$...$F_i=w^t\cdot x_i-y_i$  
+>therefore, we have $E_i=F_i-b$, then to evaluated by  
+>$E_i-E_j=F_i-b-(F_j-b)=F_i-F_j$  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
