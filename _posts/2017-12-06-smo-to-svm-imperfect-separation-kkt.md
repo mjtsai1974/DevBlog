@@ -51,6 +51,33 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >&#10112;$\sum_{i=1}^n\alpha_i\cdot y_i=0$  
 >&#10113;<font color="OrangeRed">$0\leq\alpha_i\leq C$</font> for all $i$  
 
+### Introduction To The <font color="Red">KKT</font> Condition
+>[1]The <font color="Red">KKT</font> optimality conditions of the formula in our problem are:  
+>&#10112;the gradient of $L(w,b,\xi,\alpha,\mu)$ with respect to $w$, $b$, $\xi$ vanish, $\frac{\partial L}{\partial w}=0$, &#10113;$\frac{\partial L}{\partial b}=0$, &#10114;$\frac{\partial L}{\partial \xi}=0$  
+>&#10113;$\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)+\xi_i-1)=0$  
+>&#10114;$\mu_i\cdot\xi_i$  
+>where <font color="#C20000">&#10113;+&#10114; guarantees that $\xi$ will have the smallest impact on $(w^t\cdot x_i-b)-1$</font>.  
+>
+>[2]By <font color="Red">KKT</font> conditions, there exists 3 cases to be evaluated by below constraints:  
+>&#10112;$\frac{\partial L}{\partial \xi}=C-\alpha_i-\mu_i=0$  
+>&#10113;$\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)+\xi_i-1)=0$  
+>from which, this paragraph would guide you through the deduction process.    
+>
+>[3]Remember that we have <font color="OrangeRed">$0\leq\alpha_i\leq C$</font> for all $i$.  
+>[case 1]$\alpha_i=0$, then, we are at the boundary:  
+>$\mu_i=C-\alpha_i=C>0$, by $\mu_i\cdot\xi_i=0$, we have $\xi_i=0$, thus,  
+>$y_i\cdot(w^t\cdot x_i-b)-1\geq0$ just holds.  
+>
+>[case 2]$0<\alpha_i<C$, the case of non-boundary.  
+>then, $\mu_i=C-\alpha_i>0$, by $\mu_i\cdot\xi_i=0$, again, we have $\xi_i=0$, then,  
+>$y_i\cdot(w^t\cdot x_i-b)+\xi_i-1=0$,  
+>therefore, $y_i\cdot(w^t\cdot x_i-b)-1=0$
+>
+>[case 3]$\alpha_i=C$, also, the boundary case.
+>then, $\mu_i=C-\alpha_i=0$, by $\mu_i\cdot\xi_i=0$, we have $\xi_i\geq0$, then,  
+>$y_i\cdot(w^t\cdot x_i-b)+\xi_i-1=0$,  
+>$y_i\cdot(w^t\cdot x_i-b)-1\leq0$ just holds,  more precisely, it should be:  
+>$y_i\cdot(w^t\cdot x_i-b)-1\leq\xi_i$  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
