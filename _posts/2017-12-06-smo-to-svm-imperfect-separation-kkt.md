@@ -56,7 +56,7 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >&#10112;the gradient of $L(w,b,\xi,\alpha,\mu)$ with respect to $w$, $b$, $\xi$ vanish, $\frac{\partial L}{\partial w}=0$, &#10113;$\frac{\partial L}{\partial b}=0$, &#10114;$\frac{\partial L}{\partial \xi}=0$  
 >&#10113;$\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)+\xi_i-1)=0$  
 >&#10114;$\mu_i\cdot\xi_i$  
->where <font color="#DeepPink">&#10113;+&#10114; guarantees that $\xi$ will have the smallest impact on $(w^t\cdot x_i-b)-1$</font>.  
+>where <font color="DeepPink">&#10113;+&#10114; guarantees that $\xi$ will have the smallest impact on $(w^t\cdot x_i-b)-1$</font>.  
 >
 >[2]By <font color="Red">KKT</font> conditions, there exists 3 cases to be evaluated by below constraints:  
 >&#10112;$\frac{\partial L}{\partial \xi}=C-\alpha_i-\mu_i=0$  
@@ -66,18 +66,18 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >[3]Remember that we have <font color="OrangeRed">$0\leq\alpha_i\leq C$</font> for all $i$.  
 >[case 1]$\alpha_i=0$, then, we are at the boundary:  
 >$\mu_i=C-\alpha_i=C>0$, by $\mu_i\cdot\xi_i=0$, we have $\xi_i=0$, thus,  
-><font color="#DeepPink">$y_i\cdot(w^t\cdot x_i-b)-1\geq0$</font> just holds.  
+><font color="DeepPink">$y_i\cdot(w^t\cdot x_i-b)-1\geq0$</font> just holds.  
 >
 >[case 2]$0<\alpha_i<C$, the case of non-boundary.  
 >then, $\mu_i=C-\alpha_i>0$, by $\mu_i\cdot\xi_i=0$, again, we have $\xi_i=0$, then,  
 >$y_i\cdot(w^t\cdot x_i-b)+\xi_i-1=0$,  
->therefore, <font color="#DeepPink">$y_i\cdot(w^t\cdot x_i-b)-1=0$</font>.  
+>therefore, <font color="DeepPink">$y_i\cdot(w^t\cdot x_i-b)-1=0$</font>.  
 >
 >[case 3]$\alpha_i=C$, also, the boundary case.
 >then, $\mu_i=C-\alpha_i=0$, by $\mu_i\cdot\xi_i=0$, we have $\xi_i\geq0$, then,  
 >$y_i\cdot(w^t\cdot x_i-b)+\xi_i-1=0$,  
 >$y_i\cdot(w^t\cdot x_i-b)-1\leq0$ just holds, more precisely, it should be:  
-><font color="#DeepPink">$y_i\cdot(w^t\cdot x_i-b)-1\leq-\xi_i$</font>...by mjtsai  
+><font color="DeepPink">$y_i\cdot(w^t\cdot x_i-b)-1\leq-\xi_i$</font>...by mjtsai  
 >
 >[4]Continue the deduction on the condition term to be regularized by $\alpha_i$ in the most original objective function.  
 >$y_i\cdot(w^t\cdot x_i-b)-1$  
@@ -86,7 +86,7 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >$=y_i\cdot E_i$...$E_i=u_i-y_i$  
 >$=R_i$...$u_i=w^t\cdot x_i-b$  
 >
->Let's summarize the <font color="#DeepPink">KKT conditions</font>:
+>Let's summarize the <font color="DeepPink">KKT conditions</font>:
 >&#10112;$\alpha_i=0$, $R_i\geq0$  
 >&#10113;$0<\alpha_i<C$, $R_i\approx0$  
 >&#10114;$\alpha_i=C$, $R_i\leq0$  
@@ -112,7 +112,7 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 <!-- <font color="Red">KKT</font> -->
 <!-- <font color="DeepSkyBlue">suggested item, soft item</font> -->
 
-<!-- <font color="#DeepPink">positive conclusion, finding</font> -->
+<!-- <font color="DeepPink">positive conclusion, finding</font> -->
 <!-- <font color="DimGray">negative conclusion, finding</font> -->
 
 <!-- <font color="Green">value iteration</font> -->
