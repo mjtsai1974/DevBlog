@@ -82,6 +82,7 @@ $$\begin{array}{l}=\frac12\cdot(2K_{12}-K_{11}-K_{22})\cdot(\alpha_2^{new})^2\\\
 >&#10113;$\alpha_1-\alpha_2=r$  
 >above equality holds for both the <font color="RoyalBlue">old</font> $\alpha$'s to the <font color="Green">new</font> $\alpha$'s, we can get the $\alpha_1^{new}$ after we get $\alpha_2^{new}$.  
 >
+>To link <font color="Green">$\alpha_2^{new}$</font> back to <font color="RoyalBlue">$\alpha_2^{old}$</font> ,we start below procedure.  
 >&#10112;now, we focus on the <font color="OrangeRed">coefficient</font> of <font color="Green">$\alpha_2^{new}$</font>, expand from $r$ and $V_1$ and $V_2$:  
 $$\begin{array}{l}1-S+S\cdot K_{11}\cdot r-S\cdot K_{12}\cdot r+y_2\cdot V_1-y_2\cdot V_2\\=1-S+S\cdot K_{11}\cdot(\alpha_1^{old}+S\cdot\alpha_2^{old})\\\;\;\;\;-S\cdot K_{12}\cdot(\alpha_1^{old}+S\cdot\alpha_2^{old})\\\;\;\;\;+y_2\cdot(U_1^{old}+b^{old}-\alpha_1^{old}\cdot y_1\cdot K_{11}-\alpha_2^{old}\cdot y_2\cdot K_{12})\\\;\;\;\;-y_2\cdot(U_2^{old}+b^{old}-\alpha_1^{old}\cdot y_1\cdot K_{12}-\alpha_2^{old}\cdot y_2\cdot K_{22})\end{array}$$  
 >&#10113;further expand:  
@@ -91,7 +92,9 @@ $$\begin{array}{l}=1-S+S\cdot K_{11}\cdot\alpha_1^{old}+S\cdot K_{11}\cdot S\cdo
 >&#10115;we obtain below equality:  
 $$\begin{array}{l}=1-S+(K_{11}-2\cdot K_{12}+K_{22})\cdot\alpha_2^{old}\\\;\;\;\;+y_2\cdot(U_1^{old}-U_2^{old})\end{array}$$  
 >, where $U_j^{old}=(w^{old})^t\cdot x_j-b^{old}$.  
->&#10116;
+>&#10116;enrich the equation with terms that is related to $\alpha_2$ might be helpful:  
+$$\begin{array}{l}=(y_2)^2-y_1\cdot y_2+(K_{11}-2\cdot K_{12}+K_{22})\cdot\alpha_2^{old}\\\;\;\;\;+y_2\cdot(U_1^{old}-U_2^{old})\end{array}$$  
+>, where $(y_2)^2=1$ and $y_1\cdot y_2=S$.  
 
 ### Introduction Of $\eta$
 >
