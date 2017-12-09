@@ -69,6 +69,10 @@ $$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;-\frac12\cdot(K_{11}\cdot(r
 $$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;-\frac12\cdot K_{11}\cdot r^2+K_{11}\cdot r\cdot S\cdot\alpha_2-\frac12\cdot K_{11}\cdot S^2\cdot\alpha_2^2\\\;\;\;\;-\frac12\cdot K_{22}\cdot\alpha_2^2\\\;\;\;\;-S\cdot K_{12}\cdot r\cdot\alpha_2+S^2\cdot K_{12}\cdot\alpha_2^2\\\;\;\;\;-y_1\cdot V_1\cdot r+y_1\cdot V_1\cdot S\cdot\alpha_2-y_2\cdot V_2\cdot\alpha_2\end{array}$$  
 >Since we'd like to express $\alpha_1$ in terms of $\alpha_2$ in the new evolved objective function, it might be a good idea to put the $r$ non-associated with $\alpha_2$ into the $const$ term, where $S^2=1$ and the $-\frac12\cdot K_{11}\cdot r^2$, $-y_1\cdot V_1\cdot r$ should be tossed out:  
 $$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;+K_{11}\cdot r\cdot S\cdot\alpha_2-\frac12\cdot K_{11}\cdot S^2\cdot\alpha_2^2\\\;\;\;\;-\frac12\cdot K_{22}\cdot\alpha_2^2\\\;\;\;\;-S\cdot K_{12}\cdot r\cdot\alpha_2+S^2\cdot K_{12}\cdot\alpha_2^2\\\;\;\;\;+y_1\cdot V_1\cdot S\cdot\alpha_2-y_2\cdot V_2\cdot\alpha_2\end{array}$$  
+>It seems that the objective function hase been well refined with only $\alpha_2$ in it, but, take a look at the term $y_1\cdot V_1\cdot S\cdot\alpha_2$, it consists of $y_1$ and $\alpha_2$, whereas, $y_1$ is the signal of $\alpha_1$, $\alpha_2$ should be associated with $y_2$, here comes the tricky factor $S=y_1\cdot y_2$:  
+$$\begin{array}{l}y_1\cdot V_1\cdot S\cdot\alpha_2\\=y_1\cdot V_1\cdot y_1\cdot y_2\cdot\alpha_2\\=V_1\cdot y_2\cdot\alpha_2\end{array}$$  
+>where $y_1^2=1$, thus, the regularized objective function in this paragraph would be:  
+$$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;+K_{11}\cdot r\cdot S\cdot\alpha_2-\frac12\cdot K_{11}\cdot S^2\cdot\alpha_2^2\\\;\;\;\;-\frac12\cdot K_{22}\cdot\alpha_2^2\\\;\;\;\;-S\cdot K_{12}\cdot r\cdot\alpha_2+S^2\cdot K_{12}\cdot\alpha_2^2\\\;\;\;\;+y_2\cdot V_1\cdot\alpha_2-y_2\cdot V_2\cdot\alpha_2\end{array}$$
 
 ### Introduction Of $\eta$
 >
