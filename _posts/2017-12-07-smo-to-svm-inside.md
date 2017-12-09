@@ -46,6 +46,12 @@ $$\begin{array}{l}part\;2\\=\sum_{i=3;j=1,2}^{j=n}\alpha_i\cdot\alpha_j\cdot y_i
 
 ### Express $\alpha_1$ In Terms Of $\alpha_2$
 >Next to express $\alpha_1$ in terms of $\alpha_2$, this is a quiet painful and confused process, it took me some while, now I'd like to share you with my viewpoint in each step in the deduction.  
+>From current objective function, some symptoms could be found that $x_i$ is associasted with $x_j$.  
+>Thus, we take $K_{11}=x_1^t\cdot x_1$, $K_{22}=x_2^t\cdot x_2$, $K_{12}=x_1^t\cdot x_2$.  
+>Recall that it is deduced out by removing the <font color="RoyalBlue">old</font> $\alpha_1$, $\alpha_2$ associated terms from the term $w$, here comes the question, can we relate the <font color="RoyalBlue">old</font> $w$ to the <font color="Green">new evolved</font> $\alpha_1$, $\alpha_2$?  
+$$\begin{array}{l}V_j=\sum_{i=3}^n\alpha_i\cdot y_i\cdot x_i^t\cdot x_j\\=(w^{old})^t\cdot x_j-\alpha_1^{old}\cdot y_1\cdot x_1^t\cdot x_j\\\;\;\;\;-\alpha_2^{old}\cdot y_2\cdot x_2^t\cdot x_j\\=(w^{old})^t\cdot x_j-b^{old}+b^{old}\\\;\;\;\;-\alpha_1^{old}\cdot y_1\cdot x_1^t\cdot x_j\\\;\;\;\;-\alpha_2^{old}\cdot y_2\cdot x_2^t\cdot x_j\\=U_j+b^{old}\\\;\;\;\;-\alpha_1^{old}\cdot y_1\cdot x_1^t\cdot x_j\\\;\;\;\;-\alpha_2^{old}\cdot y_2\cdot x_2^t\cdot x_j\end{array}$$  
+>
+>where $U_j=(w^{old})^t\cdot x_j-b^old$ is the output of $x_j$ under the old parameters, $w^{old}$, $b^{old}$.  Expression in this way with a hope to refine original objective function.  
 >
 
 ### Introduction Of $\eta$
