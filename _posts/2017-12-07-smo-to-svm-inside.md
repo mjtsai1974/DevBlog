@@ -140,11 +140,11 @@ $$\alpha_2^{new}=\alpha_2^{old}+\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$$
 >
 >[Case 1]$S=1$, $\alpha_1+\alpha_2=r$, $r>C$, then, max($\alpha_2$)=$C$, min($\alpha_2$)=$r-C$  
 >[Case 2]$S=1$, $\alpha_1+\alpha_2=r$, $r<C$, then, max($\alpha_2$)=$r$, min($\alpha_2$)=$0$  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-07-smo-to-svm-inside-feasible-alpha-case-1-2.png "feasible range")  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-07-smo-to-svm-inside-feasible-alpha-case-1-2.png "feasible range")
 >Where the case 1 and case 2 are found to have $y_1=y_2$, we'd like to get the low threshold by max($0$, $r-c$), denote it as L; the hight threshold by min($r$, $C$), denote it as H.  
 >[Case 3]$S=-1$, $\alpha_1-\alpha_2=r$, $r>0$, then, max($\alpha_2$)=$C-r$, min($\alpha_2$)=$0$  
 >[Case 4]$S=-1$, $\alpha_1-\alpha_2=r$, $r<0$, then, max($\alpha_2$)=$C$, min($\alpha_2$)=$-r$  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-07-smo-to-svm-inside-feasible-alpha-case-3-4.png "feasible range")  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-07-smo-to-svm-inside-feasible-alpha-case-3-4.png "feasible range")
 >Where the case 3 and case 4 are found to have $y_1\neq y_2$, we'd like to get the low threshold by max($0$, $-r$), denote it as L; the hight threshold by min($C$, $C+r$), denote it as H.  
 
 ### Clip New $\alpha$
