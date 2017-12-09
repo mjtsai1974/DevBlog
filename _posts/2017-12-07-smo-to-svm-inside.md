@@ -107,6 +107,9 @@ $$y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old}$$
 >where $E_1^{old}=Err_{(x_1,y_1)}^{old}=(w^{old})^t\cdot x_1-b^{old}-y_1$,  
 >and $E_2^{old}=Err_{(x_2,y_2)}^{old}=(w^{old})^t\cdot x_2-b^{old}-y_2$.  
 >They are just the error caused by the $w^{old}$, when <font color="RoyalBlue">$\alpha_1^{old}$</font> and <font color="RoyalBlue">$\alpha_2^{old}$</font> in it.  
+>
+>Now, we formularize our problem in objective function of $\eta$, <font color="Green">$\alpha_2^{new}$</font>, <font color="RoyalBlue">$\alpha_2^{old}$</font>, $E_1^{old}$, $E_2^{old}$:  
+$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=L(\alpha_2^{new})\\=\frac12\cdot\eta\\\;\;\;\;+(y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old})\cdot\alpha_2^{new}\\\;\;\;\;+const\end{array}$$  
 
 ### Feasible Rangle Of New $\alpha$ Value
 >
