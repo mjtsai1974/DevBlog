@@ -146,7 +146,6 @@ $$\alpha_2^{new}=\alpha_2^{old}+\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$$
 >[Case 4]$S=-1$, $\alpha_1-\alpha_2=r$, $r<0$, then, max($\alpha_2$)=$C$, min($\alpha_2$)=$-r$  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-07-smo-to-svm-inside-feasible-alpha-case-3-4.png "feasible range")  
 >Where the case 3 and case 4 are found to have $y_1\neqy_2$, we'd like to get the low threshold by max($0$, $-r$), denote it as L; the hight threshold by min($C$, $C+r$), denote it as H.  
->
 
 ### Clip New $\alpha$
 >
