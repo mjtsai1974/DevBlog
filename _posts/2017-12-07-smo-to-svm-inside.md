@@ -126,6 +126,7 @@ $$\alpha_2^{new}=\alpha_2^{old}+\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$$
 >
 ><font color="DeepPink">$\eta\leq0$ is the validity of $\eta$</font> and must hold:  
 $$\begin{array}{l}\eta=2\cdot K_{12}-K_{11}-K_{22}\\\;\;\;=-\left\|x_1-x_2\right\|^2\leq0\end{array}$$  
+><font color="OrangeRed">For computation, $\eta$ should be less than $0$</font>, although it might be approaching to $0$.
 
 ### Feasible Rangle Of New $\alpha$ Value
 >
