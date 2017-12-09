@@ -76,12 +76,14 @@ $$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;+K_{11}\cdot r\cdot S\cdot\
 >&#10118;now, we save with only the <font color="Green">$\alpha_2^{new}$</font> and <font color="Green">$(\alpha_2^{new})^2$</font> are left:  
 $$\begin{array}{l}=\frac12\cdot(2K_{12}-K_{11}-K_{22})\cdot(\alpha_2^{new})^2\\\;\;\;\;+(1-S+S\cdot K_{11}\cdot r-S\cdot K_{12}\cdot r\\\;\;\;\;+y_2\cdot V_1-y_2\cdot V_2)\cdot\alpha_2^{new}\end{array}$$  
 
-### Relate $\alpha_2^{new}$ to $\alpha_2^{old}$
+### Relate <font color="Green">$\alpha_2^{new}$</font> back to <font color="RoyalBlue">$\alpha_2^{old}$</font>
 >The major spirit of SMO is to optimize 2 $\alpha$'s at a time, by transiting from the <font color="RoyalBlue">old</font> $\alpha$'s to the <font color="Green">new</font> $\alpha$'s, more precisely, from $\alpha_1^{old}$ to $\alpha_1^{new}$, and from $\alpha_2^{old}$ to $\alpha_2^{new}$.  Now, we focus on $\alpha_2^{new}$, and laterly, by the relationship in between these 2 $\alpha$'s:  
 >&#10112;$\alpha_1+\alpha_2=r$  
->&#10113;$\alpha_1-\alpha_2=r$
->above equality holds for both the <font color="RoyalBlue">old</font> $\alpha$'s to the <font color="Green">new</font> $\alpha$'s, we can get the $\alpha_1^{new}$ after we get $\alpha_1^{new}$.  
+>&#10113;$\alpha_1-\alpha_2=r$  
+>above equality holds for both the <font color="RoyalBlue">old</font> $\alpha$'s to the <font color="Green">new</font> $\alpha$'s, we can get the $\alpha_1^{new}$ after we get $\alpha_2^{new}$.  
 >
+>Now, we focus on the <font color="OrangeRed">coefficient</font> of <font color="Green">$\alpha_2^{new}$</font>, expand from it:  
+$$\begin{array}{l}1-S+S\cdot K_{11}\cdot r-S\cdot K_{12}\cdot r+y_2\cdot V_1-y_2\cdot V_2\\=1-S+S\cdot K_{11}\cdot(\alpha_1^{old}+S\cdot\alpha_2^{old})\\\;\;\;\;-S\cdot K_{12}\cdot(\alpha_1^{old}+S\cdot\alpha_2^{old})\\\;\;\;\;+y_2\cdot(U_1^{old}+b^{old}-\alpha_1^{old}\cdot y_1\cdot K_{11}-\alpha_2^{old}\cdot y_2\cdot K_{12})\\\;\;\;\;-y_2\cdot(U_2^{old}+b^{old}-\alpha_1^{old}\cdot y_1\cdot K_{12}-\alpha_2^{old}\cdot y_2\cdot K_{22})\end{array}$$  
 
 ### Introduction Of $\eta$
 >
