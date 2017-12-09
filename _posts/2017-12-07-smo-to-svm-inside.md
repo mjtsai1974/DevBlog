@@ -56,13 +56,18 @@ $$\begin{array}{l}V_j=\sum_{i=3}^n\alpha_i\cdot y_i\cdot x_i^t\cdot x_j\\=(w^{ol
 >where $U_j=(w^{old})^t\cdot x_j-b^old$ is the output of $x_j$ under the old parameters, $w^{old}$, $b^{old}$.  Expression in this way with a hope to refine original objective function.  
 >
 >In order to make it the point, the subscript os the term indicates the index, usually in this proof, they are $i$,$j$ or $1$,$2$..., the superscript is ued for the identity of <font color="RoyalBlue">old</font> or <font color="Green">new clipped</font> term.  
+>
 >For the simplicity of the deduction and understanding, if no any word like <font color="RoyalBlue">old</font>, <font color="Green">new</font> in the superscript, then, the term is treated as <font color="Green">new</font> term.  Why by default is the term of new version?  Because the nature design in SMO algorithm works by clipping 2 <font color="Green">new</font> terms of $\alpha$'s at a time, the objective function owuld then be refined as the expression of 2 <font color="Green">new</font> terms of $\alpha$'s.  
 >
 >Deduce by replacing above terms in the objective function:  
 $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)=\alpha_1+\alpha_2+const-\frac12\cdot(\\\;\;\;\;K_{11}\cdot\alpha_1^2+K_{22}\cdot\alpha_2^2+2\cdot S\cdot K_{12}\cdot\alpha_1\cdot\alpha_2+\\\;\;\;\;2\cdot\alpha_1\cdot y_1\cdot V_1+2\cdot\alpha_2\cdot y_2\cdot V_2)\end{array}$$  
 >Next to replace $\alpha_1$ with $\alpha_2$, more precisely, replace the <font color="Green">new</font> $\alpha_1$ with the <font color="Green">new</font> $\alpha_2$:  
 $$\begin{array}{l}=(r-S\cdot\alpha_2)+\alpha_2+const\\\;\;\;\;-\frac12\cdot(K_{11}\cdot(r-S\cdot\alpha_2)^2+K_{22}\cdot\alpha_2^2+\\\;\;\;\;2\cdot S\cdot K_{12}\cdot(r-S\cdot\alpha_2)\cdot\alpha_2+\\\;\;\;\;2\cdot y_1\cdot V_1\cdot(r-S\cdot\alpha_2)+2\cdot\alpha_2\cdot y_2\cdot V_2)\end{array}$$  
-
+>Toss out the $r$ in the term (r-S\cdot\alpha_2)(or we just put it in the term $const$), since it is just a constant and no association with it, as to the $r$ associated in the remaining terms, it should be retained.  
+$$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;-\frac12\cdot(K_{11}\cdot(r-S\cdot\alpha_2)^2+K_{22}\cdot\alpha_2^2+\\\;\;\;\;2\cdot S\cdot K_{12}\cdot(r-S\cdot\alpha_2)\cdot\alpha_2+\\\;\;\;\;2\cdot y_1\cdot V_1\cdot(r-S\cdot\alpha_2)+2\cdot\alpha_2\cdot y_2\cdot V_2)\end{array}$$  
+>Expand in terms of $\alpha_2$:  
+$$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;-\frac12\cdot K_{11}\cdot r^2+K_{11}\cdot r\cdot S\cdot\alpha_2-\frac12\cdot K_{11}\cdot S^2\cdot\alpha_2^2\\\;\;\;\;-\frac12\cdot K_{22}\cdot\alpha_2^2\\\;\;\;\;-S\cdot K_{12}\cdot r\cdot\alpha_2+S^2\cdot K_{12}\cdot\alpha_2^2\\\;\;\;\;-y_1\cdot V_1\cdot r+y_1\cdot V_1\cdot S\cdot\alpha_2-y_2\cdot V_2\cdot\alpha_2\end{array}$$  
+>Since we'd like to express $\alpha_1$ in terms of $\alpha_2$, where $S^2=1$:  
 
 ### Introduction Of $\eta$
 >
