@@ -76,7 +76,7 @@ $$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;+K_{11}\cdot r\cdot S\cdot\
 >&#10118;now, we save with only the <font color="Green">$\alpha_2^{new}$</font> and <font color="Green">$(\alpha_2^{new})^2$</font> are left:  
 $$\begin{array}{l}=\frac12\cdot(2K_{12}-K_{11}-K_{22})\cdot(\alpha_2^{new})^2\\\;\;\;\;+(1-S+S\cdot K_{11}\cdot r-S\cdot K_{12}\cdot r\\\;\;\;\;+y_2\cdot V_1-y_2\cdot V_2)\cdot\alpha_2^{new}\end{array}$$  
 
-### Relate <font color="Green">$\alpha_2^{new}$</font> back to <font color="RoyalBlue">$\alpha_2^{old}$</font>
+### Relate <font color="Green">$\alpha_2^{new}$</font> Back To <font color="RoyalBlue">$\alpha_2^{old}$</font>
 >The major spirit of SMO is to optimize 2 $\alpha$'s at a time, by transiting from the <font color="RoyalBlue">old</font> $\alpha$'s to the <font color="Green">new</font> $\alpha$'s, more precisely, from $\alpha_1^{old}$ to $\alpha_1^{new}$, and from $\alpha_2^{old}$ to $\alpha_2^{new}$.  Now, we focus on $\alpha_2^{new}$, and laterly, by the relationship in between these 2 $\alpha$'s:  
 >&#10112;$\alpha_1+\alpha_2=r$  
 >&#10113;$\alpha_1-\alpha_2=r$  
@@ -111,9 +111,21 @@ $$=y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old}$$
 >They are just the error caused by the $w^{old}$, when <font color="RoyalBlue">$\alpha_1^{old}$</font> and <font color="RoyalBlue">$\alpha_2^{old}$</font> in it.  
 >
 >Now, we formularize our problem in objective function of $\eta$, <font color="Green">$\alpha_2^{new}$</font>, <font color="RoyalBlue">$\alpha_2^{old}$</font>, $E_1^{old}$, $E_2^{old}$:  
-$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=L(\alpha_2^{new})\\=\frac12\cdot\eta\\\;\;\;\;+(y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old})\cdot\alpha_2^{new}\\\;\;\;\;+const\end{array}$$  
+$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=L(\alpha_2^{new})\\=\frac12\cdot\eta\cdot(\alpha_2^{new})^2\\\;\;\;\;+(y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old})\cdot\alpha_2^{new}\\\;\;\;\;+const\end{array}$$  
 >
 ><font color="DeepPink">Transform from $L(w,b,\xi,\alpha,\mu)$ to $L(\alpha_2^{new})$ is much simpler in its optimization</font>, since, <font color="DeepPink">only $\alpha_2^{new}$ is left to be optimized</font>, the regularization cost of computation is greatly reduced!!!
+>
+>Now we come to the <font color="OrangeRed">validity of $\eta$</font>, to get the most optimal vale of <font color="Green">$\alpha_2^{new}$</font>:  
+>&#10112;$\frac{\partial L}{\partial\alpha_2^{new}}=\eta\cdot\alpha_2^{new}+y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old}=0$  
+>&#10113;$\frac{\partial L}{\partial{(\alpha_2^{new})^2}}=\frac12\cdot\eta$, where we have $\eta=2K_{12}-K_{11}-K_{22}$.  
+>
+>By &#10112;, this coincides with our departure point in the section relate <font color="Green">$\alpha_2^{new}$</font> back to <font color="RoyalBlue">$\alpha_2^{old}$</font>, we just make the point.  We have:  
+$$\alpha_2^{new}=\alpha_2^{old}-\frac{y_2\cdot(E_1^{old}-E_2^{old})}\eta$$  
+>Further refine, we can have:  
+$$\alpha_2^{new}=\alpha_2^{old}+\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$$  
+>
+><font color="DeepPink">$\eta\leq0$ is the validity of $\eta$</font> and must hold:  
+$$\begin{array}{l}\eta=2\cdot K_{12}-K_{11}-K_{22}\\\;\;\;=-\left\|x_1-x_2\right\|^2\leq0\end{array}$$  
 
 ### Feasible Rangle Of New $\alpha$ Value
 >
