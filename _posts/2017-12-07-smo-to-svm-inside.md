@@ -112,6 +112,8 @@ $$=y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old}$$
 >
 >Now, we formularize our problem in objective function of $\eta$, <font color="Green">$\alpha_2^{new}$</font>, <font color="RoyalBlue">$\alpha_2^{old}$</font>, $E_1^{old}$, $E_2^{old}$:  
 $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=L(\alpha_2^{new})\\=\frac12\cdot\eta\\\;\;\;\;+(y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old})\cdot\alpha_2^{new}\\\;\;\;\;+const\end{array}$$  
+>
+><font color="DeepPink">Transform from $L(w,b,\xi,\alpha,\mu)$ to $L(\alpha_2^{new})$ is much simpler in its optimization</font>, since, <font color="DeepPink">only $\alpha_2^{new}$ is left to be optimized</font>, the regularization cost of computation is greatly reduced!!!
 
 ### Feasible Rangle Of New $\alpha$ Value
 >
