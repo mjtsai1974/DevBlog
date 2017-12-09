@@ -97,7 +97,7 @@ $$\begin{array}{l}=(y_2)^2-y_1\cdot y_2+(K_{11}-2\cdot K_{12}+K_{22})\cdot\alpha
 >, where $(y_2)^2=1$ and $y_1\cdot y_2=S$.  
 
 ### Introduction Of $\eta$
->Take a look at above &#10116;, there exists a term $(K_{11}-2\cdot K_{12}+K_{22})$ quiet familiar in the term $(2K_{12}-K_{11}-K_{22})$, which is the coefficient of the term <font color="Green">$(\alpha_2^{new})^2$</font>.  
+>Take a look at above &#10116;, there exists a term $(K_{11}-2\cdot K_{12}+K_{22})$ quiet similar with the term $(2K_{12}-K_{11}-K_{22})$, which is the coefficient of the term <font color="Green">$(\alpha_2^{new})^2$</font>.  
 >Next is to further refine the objective funection by introducing $\eta$.  
 >Take $\eta=2K_{12}-K_{11}-K_{22}$, then, the above &#10116; becomes:  
 $$\begin{array}{l}=(y_2)^2-y_1\cdot y_2-\eta\cdot\alpha_2^{old}\\\;\;\;\;+y_2\cdot(U_1^{old}-U_2^{old})\end{array}$$
