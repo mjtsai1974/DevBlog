@@ -59,21 +59,21 @@ $$\begin{array}{l}V_j=\sum_{i=3}^n\alpha_i\cdot y_i\cdot x_i^t\cdot x_j\\=(w^{ol
 >
 >For the simplicity of the deduction and understanding, if no any word like <font color="RoyalBlue">old</font>, <font color="Green">new</font> in the superscript, then, the term is treated as <font color="Green">new</font> term.  Why by default is the term of new version?  Because the nature design in SMO algorithm works by clipping 2 <font color="Green">new</font> terms of $\alpha$'s at a time, the objective function owuld then be refined as the expression of 2 <font color="Green">new</font> terms of $\alpha$'s.  
 >
->Deduce by replacing above terms in the objective function:  
+>&#10112;deduce by replacing above terms in the objective function:  
 $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)=\alpha_1+\alpha_2+const-\frac12\cdot(\\\;\;\;\;K_{11}\cdot\alpha_1^2+K_{22}\cdot\alpha_2^2+2\cdot S\cdot K_{12}\cdot\alpha_1\cdot\alpha_2+\\\;\;\;\;2\cdot\alpha_1\cdot y_1\cdot V_1+2\cdot\alpha_2\cdot y_2\cdot V_2)\end{array}$$  
->Next to replace $\alpha_1$ with $\alpha_2$, more precisely, replace the <font color="Green">new</font> $\alpha_1$ with the <font color="Green">new</font> $\alpha_2$:  
+>&#10113;next to replace $\alpha_1$ with $\alpha_2$, more precisely, replace the <font color="Green">new</font> $\alpha_1$ with the <font color="Green">new</font> $\alpha_2$:  
 $$\begin{array}{l}=(r-S\cdot\alpha_2)+\alpha_2+const\\\;\;\;\;-\frac12\cdot(K_{11}\cdot(r-S\cdot\alpha_2)^2+K_{22}\cdot\alpha_2^2+\\\;\;\;\;2\cdot S\cdot K_{12}\cdot(r-S\cdot\alpha_2)\cdot\alpha_2+\\\;\;\;\;2\cdot y_1\cdot V_1\cdot(r-S\cdot\alpha_2)+2\cdot\alpha_2\cdot y_2\cdot V_2)\end{array}$$  
->Toss out the $r$ in the term $(r-S\cdot\alpha_2)$(or we just put it in the term $const$), since it is just a constant and no association with it, as to the $r$ associated in the remaining terms, it should be retained.  
+>&#10114;toss out the $r$ in the term $(r-S\cdot\alpha_2)$(or we just put it in the term $const$), since it is just a constant and no association with it, as to the $r$ associated in the remaining terms, it should be retained.  
 $$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;-\frac12\cdot(K_{11}\cdot(r-S\cdot\alpha_2)^2+K_{22}\cdot\alpha_2^2+\\\;\;\;\;2\cdot S\cdot K_{12}\cdot(r-S\cdot\alpha_2)\cdot\alpha_2+\\\;\;\;\;2\cdot y_1\cdot V_1\cdot(r-S\cdot\alpha_2)+2\cdot\alpha_2\cdot y_2\cdot V_2)\end{array}$$  
->Expand in terms of $\alpha_2$:  
+>&#10115;expand in terms of $\alpha_2$:  
 $$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;-\frac12\cdot K_{11}\cdot r^2+K_{11}\cdot r\cdot S\cdot\alpha_2-\frac12\cdot K_{11}\cdot S^2\cdot\alpha_2^2\\\;\;\;\;-\frac12\cdot K_{22}\cdot\alpha_2^2\\\;\;\;\;-S\cdot K_{12}\cdot r\cdot\alpha_2+S^2\cdot K_{12}\cdot\alpha_2^2\\\;\;\;\;-y_1\cdot V_1\cdot r+y_1\cdot V_1\cdot S\cdot\alpha_2-y_2\cdot V_2\cdot\alpha_2\end{array}$$  
->Since we'd like to express $\alpha_1$ in terms of $\alpha_2$ in the new evolved objective function, it might be a good idea to put the $r$ non-associated with $\alpha_2$ into the $const$ term, where $S^2=1$ and the $-\frac12\cdot K_{11}\cdot r^2$, $-y_1\cdot V_1\cdot r$ should be tossed out:  
+>&#10116;since we'd like to express $\alpha_1$ in terms of $\alpha_2$ in the new evolved objective function, it might be a good idea to put the $r$ non-associated with $\alpha_2$ into the $const$ term, where $S^2=1$ and the $-\frac12\cdot K_{11}\cdot r^2$, $-y_1\cdot V_1\cdot r$ should be tossed out:  
 $$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;+K_{11}\cdot r\cdot S\cdot\alpha_2-\frac12\cdot K_{11}\cdot S^2\cdot\alpha_2^2\\\;\;\;\;-\frac12\cdot K_{22}\cdot\alpha_2^2\\\;\;\;\;-S\cdot K_{12}\cdot r\cdot\alpha_2+S^2\cdot K_{12}\cdot\alpha_2^2\\\;\;\;\;+y_1\cdot V_1\cdot S\cdot\alpha_2-y_2\cdot V_2\cdot\alpha_2\end{array}$$  
->It seems that the objective function hase been well refined with only $\alpha_2$ in it, but, take a look at the term $y_1\cdot V_1\cdot S\cdot\alpha_2$, it consists of $y_1$ and $\alpha_2$, whereas, $y_1$ is the signal of $\alpha_1$, and $\alpha_2$ should be associated with $y_2$, here comes the tricky factor $S=y_1\cdot y_2$:  
+>&#10117;it seems that the objective function hase been well refined with only $\alpha_2$ in it, but, take a look at the term $y_1\cdot V_1\cdot S\cdot\alpha_2$, it consists of $y_1$ and $\alpha_2$, whereas, $y_1$ is the signal of $\alpha_1$, and $\alpha_2$ should be associated with $y_2$, here comes the tricky factor $S=y_1\cdot y_2$:  
 $$\begin{array}{l}y_1\cdot V_1\cdot S\cdot\alpha_2\\=y_1\cdot V_1\cdot y_1\cdot y_2\cdot\alpha_2\\=V_1\cdot y_2\cdot\alpha_2\end{array}$$  
 >where $y_1^2=1$, thus, the regularized objective function in this paragraph would be:  
-$$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;+K_{11}\cdot r\cdot S\cdot\alpha_2-\frac12\cdot K_{11}\cdot S^2\cdot\alpha_2^2\\\;\;\;\;-\frac12\cdot K_{22}\cdot\alpha_2^2\\\;\;\;\;-S\cdot K_{12}\cdot r\cdot\alpha_2+S^2\cdot K_{12}\cdot\alpha_2^2\\\;\;\;\;+y_2\cdot V_1\cdot\alpha_2-y_2\cdot V_2\cdot\alpha_2\end{array}$$
->Now, we save with only the <font color="Green">$\alpha_2^{new}$</font> and <font color="Green">$(\alpha_2^{new})^2$</font> are left:  
+$$\begin{array}{l}=(1-S)\cdot\alpha_2+const\\\;\;\;\;+K_{11}\cdot r\cdot S\cdot\alpha_2-\frac12\cdot K_{11}\cdot S^2\cdot\alpha_2^2\\\;\;\;\;-\frac12\cdot K_{22}\cdot\alpha_2^2\\\;\;\;\;-S\cdot K_{12}\cdot r\cdot\alpha_2+S^2\cdot K_{12}\cdot\alpha_2^2\\\;\;\;\;+y_2\cdot V_1\cdot\alpha_2-y_2\cdot V_2\cdot\alpha_2\end{array}$$  
+>&#10118;now, we save with only the <font color="Green">$\alpha_2^{new}$</font> and <font color="Green">$(\alpha_2^{new})^2$</font> are left:  
 $$\begin{array}{l}=\frac12\cdot(2K_{12}-K_{11}-K_{22})\cdot(\alpha_2^{new})^2\\\;\;\;\;+(1-S+S\cdot K_{11}\cdot r-S\cdot K_{12}\cdot r\\\;\;\;\;+y_2\cdot V_1-y_2\cdot V_2)\cdot\alpha_2^{new}\end{array}$$  
 
 ### Introduction Of $\eta$
