@@ -97,7 +97,16 @@ $$\begin{array}{l}=(y_2)^2-y_1\cdot y_2+(K_{11}-2\cdot K_{12}+K_{22})\cdot\alpha
 >, where $(y_2)^2=1$ and $y_1\cdot y_2=S$.  
 
 ### Introduction Of $\eta$
->
+>Take a look at above &#10116;, there exists a term $(K_{11}-2\cdot K_{12}+K_{22})$ quiet familiar in the term $(2K_{12}-K_{11}-K_{22})$, which is the coefficient of the term <font color="Green">$(\alpha_2^{new})^2$</font>.  
+>Next is to further refine the objective funection by introducing $\eta$.  
+>Take $\eta=2K_{12}-K_{11}-K_{22}$, then, the above &#10116; becomes:  
+$$\begin{array}{l}=(y_2)^2-y_1\cdot y_2-\eta\cdot\alpha_2^{old}\\\;\;\;\;+y_2\cdot(U_1^{old}-U_2^{old})\end{array}$$
+$$=y_2\cdot(y_2-y_1+U_1^{old}-U_2^{old})-\eta\cdot\alpha_2^{old}$$  
+$$y_2\cdot(U_1^{old}-y_1-(U_2^{old}-y_2))-\eta\cdot\alpha_2^{old}$$  
+$$y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old}$$  
+>where $E_1^{old}=Err_{(x_1,y_1)}^{old}=(w^old)^t\cdot x_1-b^{old}-y_1$,  
+>and $E_2^{old}=Err_{(x_2,y_2)}^{old}=(w^old)^t\cdot x_2-b^{old}-y_2$.  
+>They are just the error caused by the $w^{old}$, when <font color="RoyalBlue">$\alpha_1^{old}$</font> and <font color="RoyalBlue">$\alpha_2^{old}$</font> in it.  
 
 ### Feasible Rangle Of New $\alpha$ Value
 >
