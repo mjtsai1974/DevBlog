@@ -58,9 +58,11 @@ $$\begin{array}{l}V_j=\sum_{i=3}^n\alpha_i\cdot y_i\cdot x_i^t\cdot x_j\\=(w^{ol
 >In order to make it the point, the subscript os the term indicates the index, usually in this proof, they are $i$,$j$ or $1$,$2$..., the superscript is ued for the identity of <font color="RoyalBlue">old</font> or <font color="Green">new clipped</font> term.  
 >For the simplicity of the deduction and understanding, if no any word like <font color="RoyalBlue">old</font>, <font color="Green">new</font> in the superscript, then, the term is treated as <font color="Green">new</font> term.  Why by default is the term of new version?  Because the nature design in SMO algorithm works by clipping 2 <font color="Green">new</font> terms of $\alpha$'s at a time, the objective function owuld then be refined as the expression of 2 <font color="Green">new</font> terms of $\alpha$'s.  
 >
->Deduce by replacing above terms in the objective function, and we toss out the original $const$ term:  
-$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)=\alpha_1+\alpha_2-\frac12\cdot(\\\;\;\;\;K_{11}\cdot\alpha_1^2+K_{22}\cdot\alpha_2^2+2\cdot S\cdot K_{12}\cdot\alpha_1\cdot\alpha_2+\\\;\;\;\;2\cdot\alpha_1\cdot y_1\cdot V_1+2\cdot\alpha_2\cdot y_2\cdot V_2)\end{array}$$  
->
+>Deduce by replacing above terms in the objective function:  
+$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)=\alpha_1+\alpha_2+const-\frac12\cdot(\\\;\;\;\;K_{11}\cdot\alpha_1^2+K_{22}\cdot\alpha_2^2+2\cdot S\cdot K_{12}\cdot\alpha_1\cdot\alpha_2+\\\;\;\;\;2\cdot\alpha_1\cdot y_1\cdot V_1+2\cdot\alpha_2\cdot y_2\cdot V_2)\end{array}$$  
+>Next to replace $\alpha_1$ with $\alpha_2$, more precisely, replace the <font color="Green">new</font> $\alpha_1$ with the <font color="Green">new</font> $\alpha_2$:  
+$$\begin{array}{l}=(r-S\cdot\alpha_2)+\alpha_2+const\\\;\;\;\;-\frac12\cdot(K_{11}\cdot(r-S\cdot\alpha_2)^2+K_{22}\cdot\alpha_2^2+\\\;\;\;\;2\cdot S\cdot K_{12}\cdot(r-S\cdot\alpha_2)\cdot\alpha_2+\\\;\;\;\;2\cdot y_1\cdot V_1\cdot(r-S\cdot\alpha_2)+2\cdot\alpha_2\cdot y_2\cdot V_2)\end{array}$$  
+
 
 ### Introduction Of $\eta$
 >
