@@ -136,7 +136,7 @@ $$\alpha_2^{new}=\alpha_2^{old}+\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$$
 >We'd like to examine 4 cases, begin from below 3 equality:  
 >&#10112;$S=y_1\cdot y_2$.  
 >&#10113;$\alpha_1^{old}+S\cdot \alpha_2^{old}=r=\alpha_1^{new}+S\cdot \alpha_2^{new}$.  
->&#10113;$0\leq\alpha_i\leqC$, thi should be inequality.  
+>&#10114;$0\leq\alpha_i\leq C$, this should be inequality.  
 >
 >[Case 1]$S=1$, $\alpha_1+\alpha_2=r$, $r>C$, then, max($\alpha_2$)=$C$, min($\alpha_2$)=$r-C$  
 >[Case 2]$S=1$, $\alpha_1+\alpha_2=r$, $r<C$, then, max($\alpha_2$)=$r$, min($\alpha_2$)=$0$  
