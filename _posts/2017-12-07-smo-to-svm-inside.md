@@ -88,8 +88,10 @@ $$\begin{array}{l}1-S+S\cdot K_{11}\cdot r-S\cdot K_{12}\cdot r+y_2\cdot V_1-y_2
 $$\begin{array}{l}=1-S+S\cdot K_{11}\cdot\alpha_1^{old}+S\cdot K_{11}\cdot S\cdot\alpha_2^{old}\\\;\;\;\;-S\cdot K_{12}\cdot\alpha_1^{old}-S\cdot K_{12}\cdot S\cdot\alpha_2^{old}\\\;\;\;\;+y_2\cdot U_1^{old}+y_2\cdot b^{old}-y_2\cdot\alpha_1^{old}\cdot y_1\cdot K_{11}-y_2\cdot\alpha_2^{old}\cdot y_2\cdot K_{12}\\\;\;\;\;-y_2\cdot U_2^{old}-y_2\cdot b^{old}+y_2\cdot\alpha_1^{old}\cdot y_1\cdot K_{12}+y_2\cdot\alpha_2^{old}\cdot y_2\cdot K_{22}\end{array}$$  
 >&#10114;eliminate these terms $S\cdot K_{11}\cdot \alpha_1^{old}$, $S\cdot K_{12}\cdot \alpha_1^{old}$ and $y_2\cdot b^{old}$:
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-07-smo-to-svm-inside-eliminate-1.png "eliminate")
->&#1011;  
-
+>&#10115;we obtain below equality:  
+$$\begin{array}{l}=1-S+(K_{11}-2\cdot K_{12}+K_{22})\cdot\alpha_2^{old}\\\;\;\;\;+y_2\cdot(U_1^{old}-U_2^{old})\end{array}$$  
+>, where $U_j^{old}=(w^{old})^t\cdot x_j-b^{old}$.  
+>&#10116;
 
 ### Introduction Of $\eta$
 >
