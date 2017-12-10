@@ -155,6 +155,7 @@ $$\alpha_2^{new,clipped}=\left\{\begin{array}{l}L,if\;\alpha_2^{new}<L\\\alpha_2
 >
 >Begin by given $y_1$, $y_2$, $K_{11}$, $K_{22}$, $K_{12}$, $E_1^{old}$, $E_2^{old}$, where $E_i^{old}=w^{old}\cdot x_i-b^{old}-y_i$.  
 >&#10112;take $\eta=2\cdot K_{12}-K_{11}-K_{22}$, then $\eta\leq 0$ <font color="OrangeRed">must hold</font>.  
+>
 >&#10113;if $\eta<0$, by prior induction, we have:  
 $$\alpha_2^{new}=\alpha_2^{old}+\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$$  
 >Take $\triangle\alpha_2=\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$  
@@ -163,6 +164,13 @@ $$\lim_{\triangle\rightarrow0}\frac{(\alpha_1+\triangle)-\triangle}\triangle=\li
 $$\Rightarrow\triangle\alpha_1=-S\cdot\lim_{\triangle\rightarrow0}\frac{(\alpha_2+\triangle)-\alpha_2}\triangle$$  
 $$\Rightarrow\triangle\alpha_1=-S\cdot\triangle\alpha_2$$  
 >, where $\triangle\alpha_1$, $\triangle\alpha_2$ are the differentials or derivatives of $\alpha_1$, $\alpha_2$.  
+>
+>&#10114;if $\eta=0$, most SMO dosument, just commends to evaluate the objective function at the 2 end points and set $\alpha_2^{new}$ to the one that can make the <font color="OrangeRed">larger</font> objective function, thus, <font color="DeepPink">$\alpha_2^{new}$ would be more closed to boundary</font>!!!  
+>
+>Recap the objective function is now:  
+$$\begin{array}{l}L(\alpha_2^{new})\\=\frac12\cdot\eta\cdot(\alpha_2^{new})^2\\\;\;\;\;+(y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old})\cdot\alpha_2^{new}\\\;\;\;\;+const\end{array}$$  
+>Where mjtsai think, <font color="DeepSkyBlue">for $\eta=0$, alternative would be to abandom and switch to next set of 2 points</font>, since the current evaluated 2 points might just be the <font color="OrangeRed">duplicated</font> or the <font color="OrangeRed">overlapped</font> cases.  
+>As to the <font color="OrangeRed">mirrored</font> case, should <font color="DeepSkyBlue">keep them in the mutual exclusive list for later manipulation, once new iteration would like to choose the new 2 candidates, already paired 2 points should not be paired again</font>, also by mjtsai.  
 
 ### SMO Updating
 >
