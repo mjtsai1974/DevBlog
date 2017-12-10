@@ -151,7 +151,18 @@ $$\alpha_2^{new}=\alpha_2^{old}+\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$$
 $$\alpha_2^{new,clipped}=\left\{\begin{array}{l}L,if\;\alpha_2^{new}<L\\\alpha_2^{new},if\;L<\alpha_2^{new}<H\\H,if\;\alpha_2^{new}>H\end{array}\right.$$  
 
 ### Clip New $\alpha$
->Succeeding to above section, in this paragraph, I'd like to summarize the process to clip $\alpha_2^{new}$, 
+>Succeeding to above section, in this paragraph, I'd like to summarize the process to clip <font color="Green">$\alpha_2^{new}$</font>, then, <font color="Green">$\alpha_1^{new}$</font>.  
+>
+>Begin by given $y_1$, $y_2$, $K_{11}$, $K_{22}$, $K_{12}$, $E_1^{old}$, $E_2^{old}$, where $E_i^{old}=w^{old}\cdot x_i-b^{old}-y_i$.  
+>&#10112;take $\eta=2\cdot K_{12}-K_{11}-K_{22}$, then $\eta\leq 0$ <font color="OrangeRed">must hold</font>.  
+>&#10113;if $\eta<0$, by prior induction, we have:  
+$$\alpha_2^{new}=\alpha_2^{old}+\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$$  
+>Take $\triangle\alpha_2=\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$  
+>Please recall that <font color="DeepPink">$\alpha_1=r-S\cdot \alpha_2$, it holds for both new and old</font>.  Therefore,  
+$$\lim_{\triangle\rightarrow0}\frac{(\alpha_1+\triangle)-\triangle}\triangle=\lim_{\triangle\rightarrow0}\frac{r-S\cdot(\alpha_2+\triangle)-(r-S\cdot\alpha_2)}\triangle$$  
+$$\Rightarrow\triangle\alpha_1=-S\cdot\lim_{\triangle\rightarrow0}\frac{(\alpha_2+\triangle)-\alpha_2}\triangle$$  
+$$\Rightarrow\triangle\alpha_1=-S\cdot\triangle\alpha_2$$  
+>, where $\triangle\alpha_1$, $\triangle\alpha_2$ are the differentials or derivatives of $\alpha_1$, $\alpha_2$.  
 
 ### SMO Updating
 >
