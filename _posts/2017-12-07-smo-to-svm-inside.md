@@ -165,11 +165,11 @@ $$\Rightarrow\triangle\alpha_1=-S\cdot\lim_{\triangle\rightarrow0}\frac{(\alpha_
 $$\Rightarrow\triangle\alpha_1=-S\cdot\triangle\alpha_2$$  
 >, where $\triangle\alpha_1$, $\triangle\alpha_2$ are the differentials or derivatives of $\alpha_1$, $\alpha_2$.  
 >
->&#10114;if $\eta=0$, most SMO dosument, just commends to evaluate the objective function at the 2 end points and set $\alpha_2^{new}$ to the one that can make the <font color="OrangeRed">larger</font> objective function, thus, <font color="DeepPink">$\alpha_2^{new}$ would be more closed to boundary</font>!!!  
+>&#10114;if <font color="OrangeRed">$\eta=0$</font>, most SMO dosument, just commends to evaluate the objective function at the 2 end points and set $\alpha_2^{new}$ to the one that can make the <font color="OrangeRed">larger</font> objective function, thus, <font color="DeepPink">$\alpha_2^{new}$ would be more closed to boundary</font>!!!  
 >
 >Recap the objective function is now:  
 $$\begin{array}{l}L(\alpha_2^{new})\\=\frac12\cdot\eta\cdot(\alpha_2^{new})^2\\\;\;\;\;+(y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old})\cdot\alpha_2^{new}\\\;\;\;\;+const\end{array}$$  
->Where mjtsai think, <font color="DeepSkyBlue">for $\eta=0$, alternative would be to abandom and switch to next set of 2 points</font>, since the current evaluated 2 points might just be the <font color="OrangeRed">duplicated</font> or the <font color="OrangeRed">overlapped</font> cases.  
+>Where mjtsai think, <font color="DeepSkyBlue">for $\eta=0$, alternative would be to abandom and switch to next set of 2 points</font>, since the current evaluated 2 points might just be the <font color="OrangeRed">duplicated</font> or the <font color="OrangeRed">overlapped</font> cases(Coursera, M.L professor ANG's SMO sample code does this).  
 >As to the <font color="OrangeRed">mirrored</font> case, should <font color="DeepSkyBlue">keep them in the mutual exclusive list for later manipulation, once new iteration would like to choose the new 2 candidates, already paired 2 points should not be paired again</font>, also by mjtsai.  
 
 ### SMO Updating
