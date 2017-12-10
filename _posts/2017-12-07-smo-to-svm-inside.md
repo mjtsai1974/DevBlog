@@ -170,6 +170,7 @@ $$\Rightarrow\triangle\alpha_1=-S\cdot\triangle\alpha_2$$
 >Recap the objective function is now:  
 $$\begin{array}{l}L(\alpha_2^{new})\\=\frac12\cdot\eta\cdot(\alpha_2^{new})^2\\\;\;\;\;+(y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old})\cdot\alpha_2^{new}\\\;\;\;\;+const\end{array}$$  
 >Where mjtsai think, <font color="DeepSkyBlue">for $\eta=0$, alternative would be to abandom and switch to next set of 2 points</font>, since the current evaluated 2 points might just be the <font color="OrangeRed">duplicated</font> or the <font color="OrangeRed">overlapped</font> cases(Coursera, M.L professor ANG's SMO sample code does this).  
+>
 >As to the <font color="OrangeRed">mirrored</font> case, should <font color="DeepSkyBlue">keep them in the mutual exclusive list for later manipulation, once new iteration would like to choose the new 2 candidates, already paired 2 points should not be paired again</font>, also by mjtsai.  
 
 ### SMO Updating
