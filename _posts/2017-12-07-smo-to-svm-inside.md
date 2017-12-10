@@ -23,13 +23,9 @@ $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha_i-\frac12\cdot\sum_
 >
 >Next to examine the relation in between of these 2 $\alpha_1$, $\alpha_2$ of <font color="RoyalBlue">old</font> or <font color="Green">new</font>.  
 >&#10112;for $y_1\neq y_2$, then, $\alpha_1-\alpha_2=r$, where $r$ is a constant.  
-
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-07-smo-to-svm-inside-alphas-on-line-1.png "2 alphas on a line")
-
 >&#10113;for $y_1=y_2$, then, $\alpha_1+\alpha_2=r$.  
-
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-07-smo-to-svm-inside-alphas-on-line-2.png "2 alphas on a line")
-
 >Take $S=y_1\cdot y_2$, multiply $y_1\cdot \alpha_1+y_2\cdot \alpha_2=const$ by $y_1$, then,  
 >$\alpha_1+S\cdot \alpha_2=const$, we have:  
 >$\alpha_1=const-S\cdot \alpha_2$,  
