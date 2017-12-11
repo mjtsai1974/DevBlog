@@ -172,6 +172,8 @@ $$\begin{array}{l}L(\alpha_2^{new})\\=\frac12\cdot\eta\cdot(\alpha_2^{new})^2\\\
 
 ### SMO Updating
 >We now have the concept that $\alpha_1^{new}$, $\alpha_2^{new}$ are updated by $\triangle\alpha_1$, $\triangle\alpha_2$, this section would like to guide you to update $E_i$, $F_i$, $w$ and $b$.  
+>
+>[Update $b$]  
 >Take $E(x,y)=\sum_{i=1}^n\alpha_i\cdot y_i\cdot\ x_i^t\cdot x-y-b$ to be the predict error:  
 >$\triangle E(x,y)=\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x+\triangle\alpha_2\cdot y_2\cdot x_2^t\cdot x-\triangle b$ just holds to be the change in $E$.  
 >
@@ -188,6 +190,15 @@ $$\triangle b=E(x,y)^{old}+\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x+\triangl
 >Take $\triangle b=b^{new}-b^{old}$, then:  
 $$b^{new}=E(x,y)^{old}+\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x+\triangle\alpha_2\cdot y_2\cdot x_2^t\cdot x+b^{old}$$  
 >
+>We can further deduce out that:  
+$$b_1^{new}=E(x_1,y_1)^{old}+\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x_1+\triangle\alpha_2\cdot y_2\cdot x_2^t\cdot x_1+b^{old}$$  
+$$b_2^{new}=E(x_2,y_2)^{old}+\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x_2+\triangle\alpha_2\cdot y_2\cdot x_2^t\cdot x_2+b^{old}$$  
+>
+>where  
+$$\triangle b_1=b_1^{new}-b^{old}$$  
+$$\triangle b_2=b_2^{new}-b^{old}$$  
+>&#10112;  
+>&#10113;  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
