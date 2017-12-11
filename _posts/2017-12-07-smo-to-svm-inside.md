@@ -171,16 +171,22 @@ $$\begin{array}{l}L(\alpha_2^{new})\\=\frac12\cdot\eta\cdot(\alpha_2^{new})^2\\\
 >As to the <font color="OrangeRed">mirrored</font> case, should <font color="DeepSkyBlue">keep them in the mutual exclusive list for later manipulation, once new iteration would like to choose the new 2 candidates, already paired 2 points should not be paired again</font>, also by mjtsai.  
 
 ### SMO Updating
->We now have the concept that $\alpha_1^{new}$, $\alpha_2^{new}$ are updated by $\triangle\alpha_1$, $\triangle\alpgha_2$, this section would like to guide you to update $E_i$, $F_i$, $w$ and $b$.  
+>We now have the concept that $\alpha_1^{new}$, $\alpha_2^{new}$ are updated by $\triangle\alpha_1$, $\triangle\alpha_2$, this section would like to guide you to update $E_i$, $F_i$, $w$ and $b$.  
 >Take $E(x,y)=\sum_{i=1}^n\alpha_i\cdot y_i\cdot\ x_i^t\cdot x-y-b$ to be the predict error:  
 >$\triangle E(x,y)=\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x+\triangle\alpha_2\cdot y_2\cdot x_2^t\cdot x-\triangle b$ just holds to be the change in $E$.  
 >
 >If <font color="DeepPink">$0<\alpha_1^{new}<C$, then, we can treat the new value of $E_1$ be zero, that is $E_1^{new}=0$</font>, since it is <font color="OrangeRed">not the boundary case</font>.  Recall in the <font color="Red">KKT case 2</font>, it is not at boundary, we have $R_i=y_i\cdot E_i=0$.  Thus, we can reinforce the new value of $E$ to be $0$.  
 >
->$0$  
->$=E(x,y)$  
+>$E(x,y)$  
 >$=E(x,y)^{old}+\triangle E(x,y)$  
 >$=E(x,y)^{old}+\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x+\triangle\alpha_2\cdot y_2\cdot x_2^t\cdot x-\triangle b$    
+>$=0$  
+>
+>Then, we have $\triangle b$ in below expression:  
+$$\triangle b=E(x,y)^{old}+\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x+\triangle\alpha_2\cdot y_2\cdot x_2^t\cdot x$$    
+>
+>Take $\triangle b=b^{new}-b^{old}$, then:  
+$$b^{new}=E(x,y)^{old}+\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x+\triangle\alpha_2\cdot y_2\cdot x_2^t\cdot x+b^{old}$$  
 >
 
 <!-- Notes -->
