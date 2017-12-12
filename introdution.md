@@ -51,6 +51,7 @@ The context of this bog just like current artificial intelligence, comes without
 * Machine Learning Foundation
 * Neural Network
 * Support Vector Machine(SVM)
+* Bayesian Statistics And Machine Learning 
 * Deep Learning
 * Markov Decision Process(MDP)
 * Partial Observable Markov Decision Process(POMDP)
