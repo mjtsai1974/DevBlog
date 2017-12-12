@@ -177,7 +177,7 @@ $$\begin{array}{l}L(\alpha_2^{new})\\=\frac12\cdot\eta\cdot(\alpha_2^{new})^2\\\
 >Take $E(x,y)=\sum_{i=1}^n\alpha_i\cdot y_i\cdot\ x_i^t\cdot x-y-b$ to be the predict error:  
 >$\triangle E(x,y)=\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x+\triangle\alpha_2\cdot y_2\cdot x_2^t\cdot x-\triangle b$ just holds to be the change in $E$.  
 >
->If <font color="DeepPink">$0<\alpha_1^{new}<C$, then, we can treat the new value of $E_1$ be zero, that is $E_1^{new}=0$</font>, since it is <font color="OrangeRed">not the boundary case</font>.  Recall in the <font color="Red">KKT case 2</font>, it is not at boundary, we have $R_i=y_i\cdot E_i=0$.  Thus, we can reinforce the new value of $E$ to be $0$.  
+>If <font color="DeepPink">$0<\alpha_1^{new}<C$, then, we can treat the new value of $E_1$ be zero, that is $E_1^{new}=0$</font>, since it is <font color="OrangeRed">not the boundary case</font>.  Recall in the <font color="Red">KKT case 2</font>, it is <font color="OrangeRed">not at boundary</font>, we have $R_i=y_i\cdot E_i=0$.  Thus, we can reinforce the new value of $E$ to be $0$.  
 >
 >$E(x,y)$  
 >$=E(x,y)^{old}+\triangle E(x,y)$  
@@ -209,7 +209,8 @@ $$R_i=y_i\cdot E_i^{new}=y_i\cdot ((w^{new})^t\cdot x_i-b-y_i)\approx0$$
 ><font color="DeepPink">$\left|(w^{new})^t\cdot x_i-y_i\right|\leq\varepsilon$</font>, for $i=1,2$, and $\varepsilon$ is a rather tiny quantity.  
 >therefore, $\varepsilon-b_1^{new}\approx\varepsilon-b_2^{new}$  
 >hence, we have <font color="DeepPink">$b_1^{new}\approx b_2^{new}$</font> as the result.  
->&#10113;  
+>&#10113;when $\alpha_1^{new}$, $\alpha_2^{new}$ are all at different boundary, one at $0$, one at $C$, where $L\neq H$, then, the interval in between $b_1^{new}$ and $b_2^{new}$ are all constrainted by the KKT case 1 and 3, respectively.  
+>Be recalled that KKT case 1 has it that $\alpha_i=0$, $R_i\geq0$; and KKT case 2 has it that $\alpha_i=C$, $R_i\leq0$, the intersection with KKT case 2 is the equality of $0$, $R_i\approx0$, to reinforce these 2 points entering into the support vector, we can just come out with $E(x,y)^{new}=0$.  Therefore, we take $b^{new}=\frac(b_1^{new}+b_2^{new})2$, such that the next $b^{new}$ would be stable in this way.  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
