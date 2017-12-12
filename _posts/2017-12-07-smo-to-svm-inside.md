@@ -221,7 +221,7 @@ $$R_i=y_i\cdot E_i^{new}=y_i\cdot ((w^{new})^t\cdot x_i-b-y_i)\approx0$$
 >$=\sum_{i=1}^{n}\alpha_i\cdot y_i\cdot x_i^t\cdot x-y$  
 >
 >Trivially, we also have it that:  
->$\triangleF(x,y)$  
+>$\triangle F(x,y)$  
 >$\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x+\triangle\alpha_2\cdot y_2\cdot x_2^t\cdot x$    
 >
 >[Updating $w$]  
