@@ -197,7 +197,7 @@ $$b_2^{new}=E(x_2,y_2)^{old}+\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x_2+\tri
 >where  
 $$\triangle b_1=b_1^{new}-b^{old}$$  
 $$\triangle b_2=b_2^{new}-b^{old}$$  
->&#10112;when $\alpha_1^{new}$ (and, or, $\alpha_2^{new}$) is <font color="OrangeRed">not</font> at <font color="OrangeRed">boundary</font>, $0<\alpha_1^{new},\alpha_2^{new}<C$, by above deduction, we have $E(x_i,y_i)^{new}=0$, for $i=1,2$, that is to say:  
+>&#10112;when <font color="Green">$\alpha_1^{new}$</font> (and, or, <font color="Green">$\alpha_2^{new}$</font>) is <font color="OrangeRed">not</font> at <font color="OrangeRed">boundary</font>, $0<\alpha_1^{new},\alpha_2^{new}<C$, by above deduction, we have $E(x_i,y_i)^{new}=0$, for $i=1,2$, that is to say:  
 $$R_i=y_i\cdot E_i^{new}=y_i\cdot ((w^{new})^t\cdot x_i-b-y_i)\approx0$$  
 >it holds for $y_i=\pm$, therefore, there should be no change in $b$, we can treat $\triangle b=0$.  
 >$\triangle b=0$  
@@ -209,8 +209,9 @@ $$R_i=y_i\cdot E_i^{new}=y_i\cdot ((w^{new})^t\cdot x_i-b-y_i)\approx0$$
 ><font color="DeepPink">$\left|(w^{new})^t\cdot x_i-y_i\right|\leq\varepsilon$</font>, for $i=1,2$, and $\varepsilon$ is a rather tiny quantity.  
 >therefore, $\varepsilon-b_1^{new}\approx\varepsilon-b_2^{new}$  
 >hence, we have <font color="DeepPink">$b_1^{new}\approx b_2^{new}$</font> as the result.  
->&#10113;when $\alpha_1^{new}$, $\alpha_2^{new}$ are all at different boundary, one at $0$, one at $C$, where $L\neq H$, then, the interval in between $b_1^{new}$ and $b_2^{new}$ are all constrainted by the KKT case 1 and 3, respectively.  
->Be recalled that KKT case 1 has it that $\alpha_i=0$, $R_i\geq0$; and KKT case 2 has it that $\alpha_i=C$, $R_i\leq0$, the intersection with KKT case 2 is the equality of $0$, $R_i\approx0$, to reinforce these 2 points entering into the support vector, we can just come out with $E(x,y)^{new}=0$.  Therefore, we take $b^{new}=\frac(b_1^{new}+b_2^{new})2$, such that the next $b^{new}$ would be stable in this way.  
+>
+>&#10113;when <font color="Green">$\alpha_1^{new}$</font>, <font color="Green">$\alpha_2^{new}$</font> are all at different boundary, one at $0$, one at $C$, where $L\neq H$, then, the interval in between $b_1^{new}$ and $b_2^{new}$ are all constrainted by the KKT case 1 and 3, respectively.  
+>Be recalled that <font color="Red">KKT case 1</font> has it that <font color="Red">$\alpha_i=0$, $R_i\geq0$</font>; and <font color="Red">KKT case 3</font> has it that <font color="Red">$\alpha_i=C$, $R_i\leq0$</font>, the <font color="Red">intersection with KKT case 2</font> is the equality of $0$, <font color="Red">$R_i\approx0$</font>, to reinforce these 2 points entering into the support vector, we can just come out with $E(x,y)^{new}=0$.  Therefore, we take $b^{new}=\frac(b_1^{new}+b_2^{new})2$, such that the next $b^{new}$ would be stable in this way.  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
