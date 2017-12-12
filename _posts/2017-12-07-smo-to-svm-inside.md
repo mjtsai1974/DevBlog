@@ -16,7 +16,7 @@ $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha_i-\frac12\cdot\sum_
 ### Works On 2 $\alpha$'s At A Time
 >The algorithm of SMO works by <font color="OrangeRed">manipulating 2 $\alpha$'s at a time(with others fixed)</font>, a little <font color="OrangeRed">hill climbing</font> alike approach.  By <font color="OrangeRed">heuristics</font> to choose 2 $\alpha$'s at a time.  
 >
->Begin by given $\alpha_i=0$ for $i=1$ to $n$.  Suppose we randomly choose $\alpha_1$, $\alpha_2$ and denote it as <font color="RoyalBlue">$\alpha_1^{old}$</font>, <font color="RoyalBlue">$\alpha_2^{old}$</font>.  
+>In the <font color="OrangeRed">begin</font> of the whole flow, <font color="DeepSkyBlue">initialize $\alpha_i=0$ for $i=1$ to $n$</font>.  Suppose we randomly choose $\alpha_1$, $\alpha_2$ and denote it as <font color="RoyalBlue">$\alpha_1^{old}$</font>, <font color="RoyalBlue">$\alpha_2^{old}$</font>.  
 >Due to $\sum_{i=1}^n\alpha_i\cdot y_i=0$, therefore we have:  
 >$y_1\cdot \alpha_1+y_2\cdot \alpha_2=y_1\cdot \alpha_1^{old}+y_2\cdot \alpha_2^{old}$  
 >This confines the optimization of $\alpha_1$, $\alpha_2$ is on a line.  
@@ -51,9 +51,9 @@ $$\begin{array}{l}V_j=\sum_{i=3}^n\alpha_i\cdot y_i\cdot x_i^t\cdot x_j\\=(w^{ol
 >
 >where $U_j=(w^{old})^t\cdot x_j-b^{old}$ is the output of $x_j$ under the old parameters, $w^{old}$, $b^{old}$.  Expression in this way with a hope to refine original objective function.  
 >
->In order to make it the point, the subscript os the term indicates the index, usually in this proof, they are $i$,$j$ or $1$,$2$..., the superscript is ued for the identity of <font color="RoyalBlue">old</font> or <font color="Green">new clipped</font> term.  
+>In order to make it the point, the subscript of the term indicates the index, usually in this proof, they are $i$,$j$ or $1$,$2$..., the superscript is ued for the identity of <font color="RoyalBlue">old</font> or <font color="Green">new clipped</font> term.  
 >
->For the simplicity of the deduction and understanding, if no any word like <font color="RoyalBlue">old</font>, <font color="Green">new</font> in the superscript, then, the term is treated as <font color="Green">new</font> term.  Why by default is the term of new version?  Because the nature design in SMO algorithm works by clipping 2 <font color="Green">new</font> terms of $\alpha$'s at a time, the objective function owuld then be refined as the expression of 2 <font color="Green">new</font> terms of $\alpha$'s.  
+>For the simplicity of the deduction and understanding, if no any word like <font color="RoyalBlue">old</font>, <font color="Green">new</font> in the superscript, then, the term is treated as <font color="Green">new</font> term.  Why by default is the term of new version?  Because the nature design in SMO algorithm works by clipping 2 <font color="Green">new</font> terms of $\alpha$'s at a time, the objective function would then be refined as the expression of 2 <font color="Green">new</font> terms of $\alpha$'s.  
 >
 >&#10112;deduce by replacing above terms in the objective function:  
 $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)=\alpha_1+\alpha_2+const-\frac12\cdot(\\\;\;\;\;K_{11}\cdot\alpha_1^2+K_{22}\cdot\alpha_2^2+2\cdot S\cdot K_{12}\cdot\alpha_1\cdot\alpha_2+\\\;\;\;\;2\cdot\alpha_1\cdot y_1\cdot V_1+2\cdot\alpha_2\cdot y_2\cdot V_2)\end{array}$$  
