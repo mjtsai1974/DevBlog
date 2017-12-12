@@ -197,7 +197,18 @@ $$b_2^{new}=E(x_2,y_2)^{old}+\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x_2+\tri
 >where  
 $$\triangle b_1=b_1^{new}-b^{old}$$  
 $$\triangle b_2=b_2^{new}-b^{old}$$  
->&#10112;  
+>&#10112;when $\alpha_1^{new}$ (and, or, $\alpha_2^{new}$) is <font color="OrangeRed">not</font> at <font color="OrangeRed">boundary</font>, $0<\alpha_1^{new},\alpha_2^{new}<C$, by above deduction, we have $E(x_i,y_i)^{new}=0$, for $i=1,2$, that is to say:  
+$$R_i=y_i\cdot E_i^{new}=y_i\cdot ((w^{new})^t\cdot x_i-b-y_i)\approx0$$  
+>it holds for $y_i=\pm$, therefore, there should be no change in $b$, we can treat $\triangle b=0$.  
+>$\triangle b=0$  
+>$\;\;\;\;=b_1^{new}-b_1^{old}$  
+>$\;\;\;\;=b_2^{new}-b_2^{old}$, further proof of this:  
+>let $b_1^{new}$, $b_2^{new}$ the bias term after iteration  
+>$(w^{new})^t\cdot x_1-b_1^{new}\approx0$  
+>$(w^{new})^t\cdot x_2-b_2^{new}\approx0$, where <font color="DeepPink">non-boundary case guarantees</font>:  
+><font color="DeepPink">$\left|(w^{new})^t\cdot x_i-y_i\right|\leq\varepsilon$</font>, for $i=1,2$, and $\varepsilon$ is a rather tiny quantity.  
+>therefore, $\varepsilon-b_1^{new}\approx\varepsilon-b_2^{new}$  
+>hence, we have <font color="DeepPink">$b_1^{new}\approx b_2^{new}$</font> as the result.  
 >&#10113;  
 
 <!-- Notes -->
