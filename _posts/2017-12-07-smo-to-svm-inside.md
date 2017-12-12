@@ -173,7 +173,7 @@ $$\begin{array}{l}L(\alpha_2^{new})\\=\frac12\cdot\eta\cdot(\alpha_2^{new})^2\\\
 ### SMO Updating
 >We now have the concept that $\alpha_1^{new}$, $\alpha_2^{new}$ are updated by $\triangle\alpha_1$, $\triangle\alpha_2$, this section would like to guide you to update $E_i$, $F_i$, $w$ and $b$.  
 >
->[Update $b$]  
+>[Updating $b$]  
 >Take $E(x,y)=\sum_{i=1}^n\alpha_i\cdot y_i\cdot\ x_i^t\cdot x-y-b$ to be the predict error:  
 >$\triangle E(x,y)=\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x+\triangle\alpha_2\cdot y_2\cdot x_2^t\cdot x-\triangle b$ just holds to be the change in $E$.  
 >
@@ -211,7 +211,24 @@ $$R_i=y_i\cdot E_i^{new}=y_i\cdot ((w^{new})^t\cdot x_i-b-y_i)\approx0$$
 >hence, we have <font color="DeepPink">$b_1^{new}\approx b_2^{new}$</font> as the result.  
 >
 >&#10113;when <font color="Green">$\alpha_1^{new}$</font>, <font color="Green">$\alpha_2^{new}$</font> are all at different boundary, one at $0$, one at $C$, where $L\neq H$, then, the interval in between $b_1^{new}$ and $b_2^{new}$ are all constrainted by the KKT case 1 and 3, respectively.  
->Be recalled that <font color="Red">KKT case 1</font> has it that <font color="Red">$\alpha_i=0$, $R_i\geq0$</font>; and <font color="Red">KKT case 3</font> has it that <font color="Red">$\alpha_i=C$, $R_i\leq0$</font>, the <font color="Red">intersection with KKT case 2</font> is the equality of $0$, <font color="Red">$R_i\approx0$</font>, to reinforce these 2 points entering into the support vector, we can just come out with $E(x,y)^{new}=0$.  Therefore, we take $b^{new}=\frac{b_1^{new}+b_2^{new}}{2}$, such that the next $b^{new}$ would be stable in this way.  
+>Be recalled that <font color="Red">KKT case 1</font> has it that <font color="Red">$\alpha_i=0$, $R_i\geq0$</font>; and <font color="Red">KKT case 3</font> has it that <font color="Red">$\alpha_i=C$, $R_i\leq0$</font>, the <font color="Red">intersection with KKT case 2</font> is the equality of $0$, <font color="Red">$R_i\approx0$</font>, to reinforce these 2 points entering into the support vector, we can just come out with $E(x,y)^{new}=0$.  Therefore, we take $b^{new}=\frac{b_1^{new}+b_2^{new}}{2}$, such that the next $b^{new}$ would be stable in this way, the very next time, if current evaluated point is iterated over, it would be much easier to move toward the boundary than current.  
+>On our way to update $b$, in the meanwhile, we update $E_i$.  
+>
+>[Updating $F_i$]  
+>We have it that:  
+>$F(x,y)$  
+>$=w^t\cdot x-y$  
+>$=\sum_{i=1}^{n}\alpha_i\cdot y_i\cdot x_i^t\cdot x-y$  
+>
+>Trivially, we also have it that:  
+>$\triangleF(x,y)$  
+>$\triangle\alpha_1\cdot y_1\cdot x_1^t\cdot x+\triangle\alpha_2\cdot y_2\cdot x_2^t\cdot x$    
+>
+>[Updating $w$]  
+>Under the assumption that we are using linear kernel,  
+>begin from $w=\sum_{i=1}^{n}\alpha_i\cdot y_i\cdot x_i$,  
+>we can have it that:  
+$\triangle w=\triangle\alpha_1\cdot y_1\cdot x_1+\triangle\alpha_2\cdot y_2\cdot x_2$  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
