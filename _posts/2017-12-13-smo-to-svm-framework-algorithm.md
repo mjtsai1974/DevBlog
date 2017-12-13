@@ -47,6 +47,17 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >&#10112;$\alpha_i=0$, $R_i\geq0$  
 >&#10113;$0<\alpha_i<C$, $R_i\approx0$  
 >&#10114;$\alpha_i=C$, $R_i\leq0$  
+>Above <font color="Red">KKT</font> cases are evaluated by below constraints under <font color="OrangeRed">$0\leq\alpha_i\leq C$</font>:  
+>&#10112;$\frac{\partial L}{\partial \xi}=C-\alpha_i-\mu_i=0$  
+>&#10113;$\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)+\xi_i-1)=0$  
+>
+>Also, we give the <font color="OrangeRed">KKT violating cases</font>:  
+>&#10112;$\alpha_i<C$ and $R_i<0$  
+>&#10113;$\alpha_i>0$ and $R_i>0$  
+>&#10114;$\alpha_i=0$ and $R_i>0$...by mjtsai  
+>
+
+
 
 ### SMO Algorithm
 >
