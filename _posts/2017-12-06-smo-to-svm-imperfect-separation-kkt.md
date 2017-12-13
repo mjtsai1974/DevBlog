@@ -55,7 +55,7 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >[1]The <font color="Red">KKT</font> optimality conditions of the formula in our problem are:  
 >&#10112;the gradient of $L(w,b,\xi,\alpha,\mu)$ with respect to $w$, $b$, $\xi$ vanish, $\frac{\partial L}{\partial w}=0$, &#10113;$\frac{\partial L}{\partial b}=0$, &#10114;$\frac{\partial L}{\partial \xi}=0$  
 >&#10113;$\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)+\xi_i-1)=0$  
->&#10114;$\mu_i\cdot\xi_i$  
+>&#10114;$\mu_i\cdot\xi_i=0$  
 >where <font color="DeepPink">&#10113;+&#10114; guarantees that $\xi$ will have the smallest impact on $(w^t\cdot x_i-b)-1$</font>.  
 >
 >[2]By <font color="Red">KKT</font> conditions, there exists 3 cases to be evaluated by below constraints:  
