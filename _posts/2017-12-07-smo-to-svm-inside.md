@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inside Support Minimal Optimization
+title: Inside Sequential Minimal Optimization
 ---
 
 ## Inside Sequential Minimal Optimization
