@@ -42,6 +42,11 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >, subject to $\sum_{i=1}^n\alpha_i\cdot y_i=0$ and <font color="OrangeRed">$0\leq\alpha_i\leq C$</font> for all $i$  
 >&#10116;Notes that $\alpha_i\geq0$, $\mu_i\geq0$, therefore, we have <font color="OrangeRed">$0\leq\alpha_i\leq C$</font>,  
 >$\alpha_i$ is now <font color="OrangeRed">upper bounded</font> by <font color="OrangeRed">$C$</font>.  
+>
+>[3]Then, we make introduction to the <font color="Red">KKT</font> conditions:  
+>&#10112;$\alpha_i=0$, $R_i\geq0$  
+>&#10113;$0<\alpha_i<C$, $R_i\approx0$  
+>&#10114;$\alpha_i=C$, $R_i\leq0$  
 
 ### SMO Algorithm
 >
