@@ -58,6 +58,7 @@ The context of this bog just like current artificial intelligence, comes without
 * Reinforcement Learning
 * Computer Graphics, 3D Rotation, Transformation and Quaternion
 * Programming Language
+* Implementation
 
 ### Prerequisites
 
@@ -128,7 +129,8 @@ theorem to the formula deduction, finally algorithm of the real thing.
 * [Initial Idea In Support Vector Machine]({{ site.github.repo }}{{ site.baseurl }}/2017/11/27/smo-to-svm-initial-idea/)
 * [Imperfect Separation and The KKT condition]({{ site.github.repo }}{{ site.baseurl }}/2017/12/06/smo-to-svm-imperfect-separation-kkt/)
 * [Sequential Minimum Optimization]({{ site.github.repo }}{{ site.baseurl }}/2017/12/07/smo-to-svm-inside/)
-* Operation Flow In SVM Algorithm
+* SVM Framework And Algorithm
+* Addendum
 
 ### Bayesian Statistics And Machine Learning 
 
@@ -189,5 +191,9 @@ under construction...
 * Python
 * R
 * Octave(optional)
+
+### Implementation
+
+under construction... 
 
 Thanks!
