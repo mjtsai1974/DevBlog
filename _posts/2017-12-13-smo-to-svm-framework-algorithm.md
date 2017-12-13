@@ -19,9 +19,11 @@ by optimization in accordance to the KKT rules that can sequentially costruct th
 $$L(w,b,\alpha)=\frac12w^t\cdot w-\sum_{i=1}^n\alpha_i\cdot(y_i\cdot(w^t\cdot x_i-b)-1)$$  
 >&#10114;next to regularize the objective function, to get the optimal $\alpha$, we should take partial derivatives of $L$ on $w$, $b$ respectively and equate them to zero.  Finally, we get:  
 $$\begin{array}{l}L(w,b,\alpha)\\=-\frac12\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot(x_i^t\cdot x_j)\\+\sum_{i=1}^n\alpha_i\end{array}$$  
->such design guarantees that we could have <font color="green">$\forall\alpha_i>0$</font>, one basic condition must be satisfied in SMO.  
+>where $w=\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i$.  
+>By such design guarantees that we could have <font color="green">$\forall\alpha_i>0$</font>, one basic condition must be satisfied in SMO.  
 >
-
+>[2]
+>
 
 ### SMO Algorithm
 >
