@@ -210,8 +210,10 @@ $$R_i=y_i\cdot E_i^{new}=y_i\cdot ((w^{new})^t\cdot x_i-b-y_i)\approx0$$
 >therefore, $\varepsilon-b_1^{new}\approx\varepsilon-b_2^{new}$  
 >hence, we have <font color="DeepPink">$b_1^{new}\approx b_2^{new}$</font> as the result.  
 >
->&#10113;when <font color="Green">$\alpha_1^{new}$</font>, <font color="Green">$\alpha_2^{new}$</font> are all at different boundary, one at $0$, one at $C$, where $L\neq H$, then, the interval in between $b_1^{new}$ and $b_2^{new}$ are all constrainted by the KKT case 1 and 3, respectively.  
->Be recalled that <font color="Red">KKT case 1</font> has it that <font color="Red">$\alpha_i=0$, $R_i\geq0$</font>; and <font color="Red">KKT case 3</font> has it that <font color="Red">$\alpha_i=C$, $R_i\leq0$</font>, the <font color="Red">intersection with KKT case 2</font> is the equality of $0$, <font color="Red">$R_i\approx0$</font>, to reinforce these 2 points entering into the support vector, we can just come out with $E(x,y)^{new}=0$.  Therefore, we take $b^{new}=\frac{b_1^{new}+b_2^{new}}{2}$, such that the next $b^{new}$ would be stable in this way, the very next time, if current evaluated point is iterated over, it would be much easier to move toward the boundary than current.  
+>&#10113;when <font color="Green">$\alpha_1^{new}$</font>, <font color="Green">$\alpha_2^{new}$</font> are all at different boundary, one at $0$, one at $C$, where $L\neq H$, then, the interval in between $b_1^{new}$ and $b_2^{new}$ are all constrained by the KKT case 1 and 3, respectively.  
+>
+>Be recalled that <font color="Red">KKT case 1</font> has it that <font color="Red">$\alpha_i=0$, $R_i\geq0$</font>; and <font color="Red">KKT case 3</font> has it that <font color="Red">$\alpha_i=C$, $R_i\leq0$</font>, the <font color="Red">intersection with KKT case 2</font> is the equality of $0$, <font color="Red">$R_i\approx0$</font>, to reinforce these 2 points entering into the support vector, we can just come out with $E(x,y)^{new}=0$.  Therefore, we take $b^{new}=\frac{b_1^{new}+b_2^{new}}{2}$, such that the next $b^{new}$ would be stable in this way, the very next time, for current evaluated or other points to be iterated over, it would be much easier to move toward the boundary than current.  
+>
 >On our way to update $b$, in the meanwhile, we update $E_i$.  
 >
 >[Updating $F_i$]  
@@ -248,3 +250,10 @@ $\triangle w=\triangle\alpha_1\cdot y_1\cdot x_1+\triangle\alpha_2\cdot y_2\cdot
 <!-- <font color="#D600D6">discount factor gamma $\gamma$</font> -->
 <!-- <font color="#D600D6">$V(S)$</font> -->
 <!-- <font color="#9300FF">immediate reward R(S)</font> -->
+
+<!-- http://web.cs.iastate.edu/~honavar/smo-svm.pdf -->
+<!-- http://cs229.stanford.edu/notes/cs229-notes3.pdf -->
+<!-- https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-98-14.pdf -->
+
+<!-- https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/ -->
+<!-- https://machinelearningmastery.com/support-vector-machines-for-machine-learning/ -->
