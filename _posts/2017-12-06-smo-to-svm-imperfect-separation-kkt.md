@@ -93,7 +93,7 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >
 >[5]Below lists the <font color="OrangeRed">KKT violating cases</font>:  
 >&#10112;$\alpha_i<C$ and $R_i<0$  
->&#10113;$\alpha_i>0$ and $R_i>0$
+>&#10113;$\alpha_i>0$ and $R_i>0$  
 >&#10114;$\alpha_i=0$ and $R_i>0$...by mjtsai
 
 ### Checking The <font color="Red">KKT</font> Without Using Threshold $b$
