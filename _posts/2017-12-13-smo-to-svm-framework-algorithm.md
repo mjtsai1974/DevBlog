@@ -90,6 +90,13 @@ $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=L(\alpha_2^{new})\\=\frac12\cdot\eta\c
 >Take the <font color="OrangeRed">minimum</font> feasible of <font color="Green">$\alpha_2^{new}$</font> be <font color="OrangeRed">L</font>, the <font color="OrangeRed">maximum</font> feasible of <font color="Green">$\alpha_2^{new}$</font> be <font color="OrangeRed">H</font>, then:  
 $$\alpha_2^{new,clipped}=\left\{\begin{array}{l}L,if\;\alpha_2^{new}<L\\\alpha_2^{new},if\;L<\alpha_2^{new}<H\\H,if\;\alpha_2^{new}>H\end{array}\right.$$  
 >We can finally go to clip the new $\alpha_1$, $\alpha_2$ value with sequantial updating in $b$ and $w$.  
+>
+>Take $\triangle\alpha_2=\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$  
+>Recall that <font color="DeepPink">$\alpha_1=r-S\cdot \alpha_2$, it holds for both new and old</font>.  Therefore,  
+$$\lim_{\triangle\rightarrow0}\frac{(\alpha_1+\triangle)-\triangle}\triangle=\lim_{\triangle\rightarrow0}\frac{r-S\cdot(\alpha_2+\triangle)-(r-S\cdot\alpha_2)}\triangle$$  
+$$\Rightarrow\triangle\alpha_1=-S\cdot\lim_{\triangle\rightarrow0}\frac{(\alpha_2+\triangle)-\alpha_2}\triangle$$  
+$$\Rightarrow\triangle\alpha_1=-S\cdot\triangle\alpha_2$$  
+>, where $\triangle\alpha_1$, $\triangle\alpha_2$ are the differentials or derivatives of $\alpha_1$, $\alpha_2$.  
 
 >This is a quiet tedious, complicated process, but a beautiful framework!!    
 
