@@ -56,9 +56,42 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >&#10113;$\alpha_i>0$ and $R_i>0$  
 >&#10114;$\alpha_i=0$ and $R_i>0$...by mjtsai  
 
->[4]
+>[4]Departure from noise  
+>So far, we have our objective function as:  
+$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha_i-\frac12\cdot\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot x_i^t\cdot x_j\end{array}$$  
+>for all i, <font color="OrangeRed">$0<\alpha_i<C$</font>, the <font color="OrangeRed">non-boundary</font> case.    
 
+>[5]Works on 2 $\alpha$'s at a time  
+>The algorithm of SMO works by <font color="OrangeRed">manipulating 2 $\alpha$'s at a time(with others fixed)</font>, a little <font color="OrangeRed">hill climbing</font> alike approach.  By <font color="OrangeRed">heuristics</font> to choose 2 $\alpha$'s at a time.  
+>To optimize $\alpha_1$, $\alpha_2$ with <font color="OrangeRed">other $\alpha$'s fixed</font>, the objective function could be rewritten as:  
+$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\alpha_1+\alpha_2+const\\-\frac12\cdot(part\;1+par\;2)\end{array}$$  
+>All deduction is based on below equality:  
+>$\alpha_1+S\cdot \alpha_2=const$, 
+>$\alpha_1=const-S\cdot \alpha_2$,  
+>where $\alpha_1+S\cdot \alpha_2=\alpha_1^{old}+S\cdot \alpha_2^{old}$.  
 
+>[6]Express $\alpha_1$ in terms Of $\alpha_2$  
+>The major purpose is to express the objective function in terms of single $\alpha_2^{new}$, this is quiet a paintful process.  
+>We'd like to toss out almost everything non-related with $\alpha_2^{new}$ and put it it the $const$ term.  The objective function becomes:  
+$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\frac12\cdot(2K_{12}-K_{11}-K_{22})\cdot(\alpha_2^{new})^2\\\;\;\;\;+(1-S+S\cdot K_{11}\cdot r-S\cdot K_{12}\cdot r\\\;\;\;\;+y_2\cdot V_1-y_2\cdot V_2)\cdot\alpha_2^{new}\end{array}$$  
+
+>[7]<font color="DeepPink">Transform from $L(w,b,\xi,\alpha,\mu)$ to $L(\alpha_2^{new})$  
+>The major spirit of SMO is to optimize 2 $\alpha$'s at a time, by transiting from the <font color="RoyalBlue">old</font> $\alpha$'s to the <font color="Green">new</font> $\alpha$'s, more precisely, from $\alpha_1^{old}$ to $\alpha_1^{new}$, and from $\alpha_2^{old}$ to $\alpha_2^{new}$.  First, we focus on $\alpha_2^{new}$, and laterly, get the $\alpha_1^{new}$ after we get $\alpha_2^{new}$.  
+>&#10112;relate <font color="Green">$\alpha_2^{new}$</font> Back To <font color="RoyalBlue">$\alpha_2^{old}$</font>  
+>&#10113;introduction Of $\eta$ by taking $\eta=2K_{12}-K_{11}-K_{22}$, <font color="DeepPink">$\eta\leq0$ is the validity of $\eta$.</font>    
+>Now, we formularize our problem in objective function of $\eta$, <font color="Green">$\alpha_2^{new}$</font>, <font color="RoyalBlue">$\alpha_2^{old}$</font>, $E_1^{old}$, $E_2^{old}$:  
+$$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=L(\alpha_2^{new})\\=\frac12\cdot\eta\cdot(\alpha_2^{new})^2\\\;\;\;\;+(y_2\cdot(E_1^{old}-E_2^{old})-\eta\cdot\alpha_2^{old})\cdot\alpha_2^{new}\\\;\;\;\;+const\end{array}$$  
+><font color="DeepPink">It is much simpler in its optimization, <font color="DeepPink">only $\alpha_2^{new}$ is left to be optimized.</font>  
+
+>[8]Examine the feasible rangle of new $\alpha$ value  
+><font color="OrangeRed">For computation, $\eta$ should be less than $0$</font>, although it might be approaching to $0$.  We have the new $\alpha_2$ expressed in below:  
+>$$\alpha_2^{new}=\alpha_2^{old}+\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$$  
+>Then, the <font color="Green">$\alpha_2^{new}$</font> thus obtained might be <font color="OrangeRed">unconstrainted</font> maximum value.  <font color="OrangeRed">The feasible range of $\alpha_2^{new}$ must be checked</font>.  
+>Take the <font color="OrangeRed">minimum</font> feasible of <font color="Green">$\alpha_2^{new}$</font> be <font color="OrangeRed">L</font>, the <font color="OrangeRed">maximum</font> feasible of <font color="Green">$\alpha_2^{new}$</font> be <font color="OrangeRed">H</font>, then:  
+$$\alpha_2^{new,clipped}=\left\{\begin{array}{l}L,if\;\alpha_2^{new}<L\\\alpha_2^{new},if\;L<\alpha_2^{new}<H\\H,if\;\alpha_2^{new}>H\end{array}\right.$$  
+>We can finally go to clip the new $\alpha_1$, $\alpha_2$ value with sequantial updating in $b$ and $w$.  
+
+>This is a quiet tedious, complicated process, but a beautiful framework!!    
 
 ### SMO Algorithm
 >
