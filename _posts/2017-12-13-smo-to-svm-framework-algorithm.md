@@ -75,7 +75,7 @@ $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\alpha_1+\alpha_2+const\\-\frac12\cdot
 >We'd like to toss out almost everything non-related with $\alpha_2^{new}$ and put it it the $const$ term.  The objective function becomes:  
 $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\frac12\cdot(2K_{12}-K_{11}-K_{22})\cdot(\alpha_2^{new})^2\\\;\;\;\;+(1-S+S\cdot K_{11}\cdot r-S\cdot K_{12}\cdot r\\\;\;\;\;+y_2\cdot V_1-y_2\cdot V_2)\cdot\alpha_2^{new}\end{array}$$  
 
->[7]<font color="DeepPink">Transform from $L(w,b,\xi,\alpha,\mu)$ to $L(\alpha_2^{new})$  
+>[7]<font color="DeepPink">Transform from $L(w,b,\xi,\alpha,\mu)$ to $L(\alpha_2^{new})$</font>  
 >The major spirit of SMO is to optimize 2 $\alpha$'s at a time, by transiting from the <font color="RoyalBlue">old</font> $\alpha$'s to the <font color="Green">new</font> $\alpha$'s, more precisely, from $\alpha_1^{old}$ to $\alpha_1^{new}$, and from $\alpha_2^{old}$ to $\alpha_2^{new}$.  First, we focus on $\alpha_2^{new}$, and laterly, get the $\alpha_1^{new}$ after we get $\alpha_2^{new}$.  
 >&#10112;relate <font color="Green">$\alpha_2^{new}$</font> Back To <font color="RoyalBlue">$\alpha_2^{old}$</font>  
 >&#10113;introduction Of $\eta$ by taking $\eta=2K_{12}-K_{11}-K_{22}$, <font color="DeepPink">$\eta\leq0$ is the validity of $\eta$.</font>    
