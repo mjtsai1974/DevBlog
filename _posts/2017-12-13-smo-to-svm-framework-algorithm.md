@@ -97,7 +97,7 @@ $$\lim_{\triangle\rightarrow0}\frac{(\alpha_1+\triangle)-\triangle}\triangle=\li
 $$\Rightarrow\triangle\alpha_1=-S\cdot\lim_{\triangle\rightarrow0}\frac{(\alpha_2+\triangle)-\alpha_2}\triangle$$  
 $$\Rightarrow\triangle\alpha_1=-S\cdot\triangle\alpha_2$$  
 >, where $\triangle\alpha_1$, $\triangle\alpha_2$ are the differentials or derivatives of $\alpha_1$, $\alpha_2$.  
-
+>
 >This is a quiet tedious, complicated process, but a beautiful framework!!    
 
 ### SMO Algorithm
