@@ -11,7 +11,7 @@ SMO(Sequential Minimal Optimization) is the regularization process by optimizati
 ### Departure With Noise
 >We'd like to begin from the imperfect separation, since no sampling is fully qualified and could be well separated.  Given the support vector formulated problem expressed in terms of $\alpha_i$, $y_i$, $x_i$; then the objective function:  
 $$\begin{array}{l}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha_i-\frac12\cdot\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cdot y_i\cdot y_j\cdot x_i^t\cdot x_j\end{array}$$  
->for all i, $0<\alpha_i<C$  
+>for all i, <font color="OrangeRed">$0<\alpha_i<C$</font>, the <font color="OrangeRed">non-boundary</font> case.    
 
 ### Works On 2 $\alpha$'s At A Time
 >The algorithm of SMO works by <font color="OrangeRed">manipulating 2 $\alpha$'s at a time(with others fixed)</font>, a little <font color="OrangeRed">hill climbing</font> alike approach.  By <font color="OrangeRed">heuristics</font> to choose 2 $\alpha$'s at a time.  

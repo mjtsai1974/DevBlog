@@ -23,7 +23,7 @@ $$\begin{array}{l}L(w,b,\alpha)\\=-\frac12\sum_{i,j=1}^n\alpha_i\cdot\alpha_j\cd
 >where $w=\sum_{i=1}^n\alpha_i\cdot y_i\cdot x_i$.  
 >
 >By such design guarantees that we could have <font color="green">$\forall\alpha_i>0$</font>, one basic condition must be satisfied in SMO.  
->
+
 >[2]Next to the imperfect separation with <font color="OrangeRed">noise</font>.  There exists some condition that we don't strictly enforce that <font color="OrangeRed">no</font> data points in between $H_1$ and $H_2$.  We can extend SVM to allow some <font color="OrangeRed">noise</font>(data points) in between the safeguard zone.  Thus, we want to <font color="OrangeRed">penalize</font> the data points that cross the boundaries($H_1$,$H_2$).  
 >&#10112;we formulate our problem as:  
 >$\underset{w,\xi_i}{min}\left[w^t\cdot w+C\cdot\sum_{i=1}^n\xi_i\right]$,  
@@ -42,7 +42,7 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >, subject to $\sum_{i=1}^n\alpha_i\cdot y_i=0$ and <font color="OrangeRed">$0\leq\alpha_i\leq C$</font> for all $i$  
 >&#10116;Notes that $\alpha_i\geq0$, $\mu_i\geq0$, therefore, we have <font color="OrangeRed">$0\leq\alpha_i\leq C$</font>,  
 >$\alpha_i$ is now <font color="OrangeRed">upper bounded</font> by <font color="OrangeRed">$C$</font>.  
->
+
 >[3]Then, we make introduction to the <font color="Red">KKT</font> conditions:  
 >&#10112;$\alpha_i=0$, $R_i\geq0$  
 >&#10113;$0<\alpha_i<C$, $R_i\approx0$  
@@ -55,7 +55,8 @@ $$\begin{array}{l}\underset\alpha{min}L(w,b,\xi,\alpha,\mu)\\=\sum_{i=1}^n\alpha
 >&#10112;$\alpha_i<C$ and $R_i<0$  
 >&#10113;$\alpha_i>0$ and $R_i>0$  
 >&#10114;$\alpha_i=0$ and $R_i>0$...by mjtsai  
->
+
+>[4]
 
 
 
