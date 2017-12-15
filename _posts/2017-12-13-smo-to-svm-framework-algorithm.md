@@ -101,11 +101,29 @@ $$\Rightarrow\triangle\alpha_1=-S\cdot\triangle\alpha_2$$
 >This is a quiet tedious, complicated process, but a beautiful framework!!    
 
 ### SMO Algorithm
+>We all have been given the concept that SMO is the process by <font color="OrangeRed">randomly</font> picking 2 $\alpha$'s at a time, such behavior is called <font color="Red">SMO heuristics</font>.  The implementation or even algorithm flow could be found the existence of a lot variety.  In this section, I'd like to review the algorithm in SMO original design.  By usual, you can find one outer loop and one inner loop in the whole flow.  
 >
+>[First <font color="Red">heuristic</font>]  
+>It is the outer loop for $\alpha_1$.  
+>&#10112;iterates all training set, if an example is examined as <font color="Red">KKT violated</font>; it is eligible for optimization.  
+>&#10113;search the entire training set for <font color="OrangeRed">non-boundary</font> examples, whose $\alpha\neq0$, $\alpha\neqC$, and $0<\alpha<C$; if such example was found, it is treated as <font color="Red">KKT violated</font>, it is eligible for optimization.  
+>&#10114;keep seraching <font color="OrangeRed">non-boundary</font> examples, until all <font color="OrangeRed">non-boundary</font> examples obey KKT conditions <font color="DeepSkyBlue">within $\varepsilon=0.001$</font>.  
+>
+>Where <font color="DeepPink">non-boundary case guarantees</font>:  
+><font color="DeepPink">$\left|(w^{new})^t\cdot x_i-y_i\right|\leq\varepsilon$</font>, for $i=1,2$, and $\varepsilon$ is a rather tiny quantity.  
+>
+><font color="DeepPink">By above &#10112;, &#10113;, &#10114;, examples at boundary are likely to stay at boundary; examples at non-boundary are likely to move toward boundary as they have been optimized.</font>  Why?  
+>Because iteration focus on <font color="OrangeRed">non-boundary</font> cases and <font color="DeepPink">$\alpha_1^{new}=\alpha_1-S\cdot \triangle\alpha_2$</font> will move this example(<font color="Green">$\alpha_1^{new}$</font>) toward boundary.  
+>
+>&#10115;after &#10112;, &#10113;, &#10114; completed, SMO algorithm will start to search boundary case and optimize it if the case has been KKT violated due to non-boundary subset optimization.  
+
+>[Second <font color="Red">heuristic</font>]  
+>It is the inner loop for $\alpha_2$.  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
 <!-- <font color="Red">KKT</font> -->
+<!-- <font color="Red">SMO heuristics</font> -->
 <!-- <font color="DeepSkyBlue">suggested item, soft item</font> -->
 <!-- <font color="RoyalBlue">old alpha</font> -->
 <!-- <font color="Green">new alpha</font> -->
