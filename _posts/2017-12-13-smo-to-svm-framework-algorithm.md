@@ -106,7 +106,7 @@ $$\Rightarrow\triangle\alpha_1=-S\cdot\triangle\alpha_2$$
 >[First <font color="Red">heuristic</font>]  
 >It is the outer loop for $\alpha_1$.  
 >&#10112;iterates all training set, if an example is examined as <font color="Red">KKT violated</font>; it is eligible for optimization.  
->&#10113;search the entire training set for <font color="OrangeRed">non-boundary</font> examples, whose $\alpha\neq0$, $\alpha\neqC$, and $0<\alpha<C$; if such example was found, it is treated as <font color="Red">KKT violated</font>, it is eligible for optimization.  
+>&#10113;search the entire training set for <font color="OrangeRed">non-boundary</font> examples, whose $\alpha\neq0$, $\alpha\neq C$, and $0<\alpha<C$; if such example was found, it is treated as <font color="Red">KKT violated</font>, it is eligible for optimization.  
 >&#10114;keep seraching <font color="OrangeRed">non-boundary</font> examples, until all <font color="OrangeRed">non-boundary</font> examples obey KKT conditions <font color="DeepSkyBlue">within $\varepsilon=0.001$</font>.  
 >
 >Where <font color="DeepPink">non-boundary case guarantees</font>:  
@@ -115,10 +115,19 @@ $$\Rightarrow\triangle\alpha_1=-S\cdot\triangle\alpha_2$$
 ><font color="DeepPink">By above &#10112;, &#10113;, &#10114;, examples at boundary are likely to stay at boundary; examples at non-boundary are likely to move toward boundary as they have been optimized.</font>  Why?  
 >Because iteration focus on <font color="OrangeRed">non-boundary</font> cases and <font color="DeepPink">$\alpha_1^{new}=\alpha_1-S\cdot \triangle\alpha_2$</font> will move this example(<font color="Green">$\alpha_1^{new}$</font>) toward boundary.  
 >
->&#10115;after &#10112;, &#10113;, &#10114; completed, SMO algorithm will start to search boundary case and optimize it if the case has been KKT violated due to non-boundary subset optimization.  
+>&#10115;after &#10112;, &#10113;, &#10114; completed, SMO algorithm will start to search boundary case and optimize it <font color="OrangeRed">if the case has been KKT violated due to non-boundary subset optimization</font>.  
 
 >[Second <font color="Red">heuristic</font>]  
 >It is the inner loop for $\alpha_2$.  
+>Once $\alpha_1$ has been chosen, $\alpha_2$ would be chosen based on the criteria to maximize the step size in each iteration:  
+>$\underset{i,j}{max}\left|E_i-E_j\right|$, where $i$, $j$ would be $1$, $2$.  why?  
+>Because <font color="DeepPink">it could speed up the converge from non-boundary location to the boundary side</font>, where:
+>$\alpha_2^{new}=\alpha_2^{old}+\frac{y_2\cdot(E_2^{old}-E_1^{old})}\eta$;  
+>$\alpha_1^{new}=\alpha_1-S\cdot \triangle\alpha_2$  
+>
+
+>Before the ending of SVM algorithm, <font color="DeepPink">positive progress</font> means <font color="DeepPink">from $0<\alpha_i<C$ to $\alpha_i\rightarrow0$ or $\alpha_i\rightarrow C$</font>.  From the non-boundary case, then, back to whole training set for optimization by random pick.  
+>At the end, this article would like to remind that <font color="OrangeRed">not all iteration makes positive progress</font>, if $x_i=x_j$, then $\eta=0$!!!  Skip to other case is the recommendation from some code snippet.  
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
