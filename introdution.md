@@ -129,7 +129,7 @@ theorem to the formula deduction, finally algorithm of the real thing.
 * [Initial Idea In Support Vector Machine]({{ site.github.repo }}{{ site.baseurl }}/2017/11/27/smo-to-svm-initial-idea/)
 * [Imperfect Separation and The KKT condition]({{ site.github.repo }}{{ site.baseurl }}/2017/12/06/smo-to-svm-imperfect-separation-kkt/)
 * [Inside Sequential Minimum Optimization]({{ site.github.repo }}{{ site.baseurl }}/2017/12/07/smo-to-svm-inside/)
-* SMO Framework And Algorithm
+* [SMO Framework And Algorithm]({{ site.github.repo }}{{ site.baseurl }}/2017/12/13/smo-to-svm-framework-algorithm/)
 * Addendum
 
 ### Bayesian Statistics And Machine Learning 
