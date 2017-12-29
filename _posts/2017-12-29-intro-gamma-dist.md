@@ -18,13 +18,13 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$\operatorname du$=$(\alpha-1)\cdot x^{\alpha-2}$, $v$=$-e^{-x}$.  
 >
 >$\Gamma(\alpha)$=$x^{\alpha-1}\cdot(-e^{-x})\vert_0^\infty$-$\int_0^\infty -e^{-x}\cdot (\alpha-1)\cdot x^{\alpha-2}\operatorname dx$  
->$\;\;\;\;\;\;\;\;$=$0$+$\int_0^\infty e^{-x}\cdot (\alpha-1)\cdot x^{\alpha-2}\operatorname dx$  
->$\;\;\;\;\;\;\;\;$=$(\alpha-1)\cdot\int_0^\infty e^{-x}\cdot x^{\alpha-2}\operatorname dx$  
->$\;\;\;\;\;\;\;\;$=$(\alpha-1)\cdot\Gamma(\alpha-1)$  
+>$\;\;\;\;\;\;\;$=$0$+$\int_0^\infty e^{-x}\cdot (\alpha-1)\cdot x^{\alpha-2}\operatorname dx$  
+>$\;\;\;\;\;\;\;$=$(\alpha-1)\cdot\int_0^\infty e^{-x}\cdot x^{\alpha-2}\operatorname dx$  
+>$\;\;\;\;\;\;\;$=$(\alpha-1)\cdot\Gamma(\alpha-1)$  
 >
 >$\Gamma(5)=4\cdot\Gamma(4)$, therefore, we can deduce it out that: 
 >$\Gamma(\alpha)$=$(\alpha-1)\cdot\Gamma(\alpha-1)$  
->$\;\;\;\;\;\;\;\;$=$(\alpha-1)\cdot(\alpha-2)\Gamma(\alpha-2)$=$\cdots$  
+>$\;\;\;\;\;\;\;$=$(\alpha-1)\cdot(\alpha-2)\Gamma(\alpha-2)$=$\cdots$  
 >
 >The corollary has it that:  
 >$\Gamma(n)$=$(n-1)\cdot(n-2)\cdot(n-3)\cdots\Gamma(1)$  
