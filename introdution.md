@@ -72,14 +72,15 @@ the following:
 * Cholesky Decomposition
 * Spatial Value Decomposition(SVD)
 * [Jacobian and Integral]({{ site.github.repo }}{{ site.baseurl }}/2017/11/16/prereq-jacobian-integral/)
-* Introduction to Gamma Distribution
-* Introduction to Beta Distribution
-* Introduction to F Distribution
-* Introduction to Chi-Square Distribution
-* Introduction to t Distribution
-* The relation in between Normal, F, Chi-Square, t Distribution 
-* Introduction to Exponential Distribution
-* Introduction to Poisson Distribution
+* [Introduction To The Moment Generating Function]({{ site.github.repo }}{{ site.baseurl }}/2017/12/28/intro-mgf/)
+* Introduction To The Gamma Distribution
+* Introduction To The Beta Distribution
+* Introduction To The F Distribution
+* Introduction To The Chi-Square Distribution
+* Introduction To The t Distribution
+* The relation in between The Normal, F, Chi-Square, t Distribution 
+* Introduction To The Exponential Distribution
+* Introduction To The Poisson Distribution
 * Univariate Regression Model
 * Multivariate Regression Model
 * Degree Of Freedom(dof)
