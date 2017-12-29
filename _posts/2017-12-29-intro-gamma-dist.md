@@ -17,11 +17,12 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >Let $u=x^{\alpha-1}$, $\operatorname dv$=$e^{-x}\operatorname dx$, then,  
 >$\operatorname du$=$(\alpha-1)\cdot x^{\alpha-2}$, $v$=$-e^{-x}$.  
 >
->$\Gamma(\alpha)$=$x^{\alpha-1}\cdot (-e^{-x})\left|{}_0^\infty\right.$-$\int_0^\infty -e^{-x}\cdot (\alpha-1)\cdot x^{\alpha-2}\operatorname dx$  
+>$\Gamma(\alpha)$=$x^{\alpha-1}\cdot(-e^{-x})\left|{}_0^\infty\right.$-$\int_0^\infty -e^{-x}\cdot (\alpha-1)\cdot x^{\alpha-2}\operatorname dx$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
+<!-- x^{\alpha-1}\cdot(-e^{-x})\left|{}_0^\infty\right. -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
