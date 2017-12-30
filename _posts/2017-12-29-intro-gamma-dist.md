@@ -116,6 +116,8 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$E\lbrack X^k\rbrack$=$\frac{1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\int_0^{\infty}x^{k+\alpha-1}\cdot e^{-\frac{x}{\beta}}\operatorname dx$  
 >$\;\;\;\;\;\;\;\;=\frac{1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\int_0^{\infty}(\beta\cdot y)^{k+\alpha-1}\cdot e^{-y}\cdot\beta\operatorname dy$  
 >$\;\;\;\;\;\;\;\;=\frac{\beta^{k+\alpha-1}\cdot\beta}{\beta^{\alpha}\cdot\Gamma(\alpha)}\int_0^{\infty}(y)^{k+\alpha-1}\cdot e^{-y}\operatorname dy$  
+>$\;\;\;\;\;\;\;\;=\frac{\beta^{k}}{\Gamma(\alpha)}\int_0^{\infty}(y)^{k+\alpha-1}\cdot e^{-y}\operatorname dy$  
+>$\;\;\;\;\;\;\;\;=\frac{\beta^{k}}{\Gamma(\alpha)}\cdot\Gamma(k+\alpha)$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
