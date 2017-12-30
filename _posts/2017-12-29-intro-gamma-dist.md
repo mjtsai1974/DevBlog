@@ -93,6 +93,7 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$f(x)=\frac {1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\cdot x^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$  
 >$\;\;\;\;\;\;=\frac {1}{\beta\cdot\Gamma(\alpha)}\cdot (\frac{x}{\beta})^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$  
 >$\;\;\;\;\;\;=\frac {\frac {1}{\beta}\cdot(\frac{x}{\beta})^{\alpha-1}\cdot e^{-\frac{x}{\beta}}}{\Gamma(\alpha)}$  
+>, where $\alpha>0$, $\beta>0$  
 >
 >By taking $\lambda=\frac{1}{\beta}$, then, we just have it that:  
 >$f(x)=\frac {\lambda\cdot(\lambda\cdot x)^{\alpha-1}\cdot e^{-\lambda\cdot x}}{\Gamma(\alpha)}$ 
@@ -105,6 +106,9 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >&#10114;$\lambda$ is for the <font color="DeepSkyBlue">intensity</font>, that is, the <font color="DeepSkyBlue">rate</font>, <font color="DeepSkyBlue">frequency</font>, in the form of $\frac {count}{time unit}$.  
 
 ### Expext Value And Variance Of Gamma Distribution
+>As we know that it is the PDF of the gamma distribution:  
+>$f(x)=\frac {\frac {1}{\beta}\cdot(\frac{x}{\beta})^{\alpha-1}\cdot e^{-\frac{x}{\beta}}}{\Gamma(\alpha)}$  
+>Next to figure out the expect value and variance of the gamma distribution.  The suggestion would be made that we should take advantage of the <font color="Red">moment</font> in [Introduction To The Moment Generating Function]({{ site.github.repo }}{{ site.baseurl }}/2017/12/28/intro-mgf/).  
 >
 
 <!-- Γ -->
