@@ -11,7 +11,7 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 
 ### The Gamma Function <font color="Red">$\Gamma$</font>
 >It is very important in the gamma distribution, first of all, we take not only a glance over it, but go through some of the major properties of it.  The gamma function comes in definition:  
->$\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}\cdot e^{-x}\operatorname dx$, where $\alpha>0$.  
+>$\Gamma(\alpha)$=$\int_0^\infty x^{\alpha-1}\cdot e^{-x}\operatorname dx$, where $\alpha>0$.  
 >
 >Taking advantage of <font color="DeepSkyBlue">integration by part</font>:  
 >Let $u=x^{\alpha-1}$, $\operatorname dv$=$e^{-x}\operatorname dx$, then,  
@@ -26,10 +26,20 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$\Gamma(\alpha)$=$(\alpha-1)\cdot\Gamma(\alpha-1)$  
 >$\;\;\;\;\;\;\;$=$(\alpha-1)\cdot(\alpha-2)\cdot\Gamma(\alpha-2)$=$\cdots$  
 >
->&#10112;the corollary has it that:  
+>[1]the corollary has it that:  
 >$\Gamma(n)$=$(n-1)\cdot(n-2)\cdot(n-3)\cdots\Gamma(1)$  
 >,where $\Gamma(1)$=$\int_0^\infty x^0\cdot e^{-x}\operatorname dx$=$-e^{-x}\vert_0^\infty$=$1$  
 >, thus, <font color="DeepPink">$\Gamma(n)=(n-1)!$</font> is obtained. 
+>
+>[2]$\Gamma(\frac{1}{2})$=$\sqrt{\mathrm\pi}$  
+>There exists some alternatives, either way could be:  
+>proof::&#10112;  
+>As we don't like $-\frac{1}{2}$, by means of <font color="DeepSkyBlue">change unit</font>, let $x$=$u^2$, then, $\operatorname dx$=$2\cdot u\operatorname du$  
+>$\Gamma(\frac{1}{2})$=$\int_0^\infty x^{-\frac{1}{2}}\cdot e^{-x}\operatorname dx$  
+>$\;\;\;\;\;\;\;$=$\int_0^\infty u^{-1}\cdot e^{-u^{2}}\cdot 2\cdot u\operatorname du$  
+>$\;\;\;\;\;\;\;$=$2\cdot\int_0^\infty e^{-u^{2}}\operatorname du$  
+>
+>proof::&#10113;  
 >
 
 <!-- Γ -->
