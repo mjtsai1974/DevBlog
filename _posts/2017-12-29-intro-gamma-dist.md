@@ -84,6 +84,8 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$=2\cdot\sqrt\pi\int_0^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz$  
 >$=2\cdot\sqrt\pi\cdot\frac {1}{2}$  
 >$=\sqrt\pi$  
+>
+>where <font color="DeepSkyBlue">$\int_{-\infty}^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz=1$</font> is the accumulative probability of <font color="DeepSkyBlue">normal distribution</font>, therefore, <font color="DeepSkyBlue">$\int_0^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz=\frac {1}{2}$</font>.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
