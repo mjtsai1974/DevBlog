@@ -34,11 +34,29 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >[2]$\Gamma(\frac{1}{2})$=$\sqrt{\mathrm\pi}$  
 >There exists some alternatives, either way could be:  
 >proof::&#10112;  
->As we don't like $-\frac{1}{2}$, by means of <font color="DeepSkyBlue">change unit</font>, let $x$=$u^2$, then, $\operatorname dx$=$2\cdot u\operatorname du$  
+>As we don't like $-\frac{1}{2}$, by means of <font color="DeepSkyBlue">change unit</font>,  
+>let $x$=$u^2$, then, $\operatorname dx$=$2\cdot u\operatorname du$:  
 >$\Gamma(\frac{1}{2})$=$\int_0^\infty x^{-\frac{1}{2}}\cdot e^{-x}\operatorname dx$  
 >$\;\;\;\;\;\;\;$=$\int_0^\infty u^{-1}\cdot e^{-u^{2}}\cdot 2\cdot u\operatorname du$  
 >$\;\;\;\;\;\;\;$=$2\cdot\int_0^\infty e^{-u^{2}}\operatorname du$  
 >
+>Take $I$=$\int_0^\infty e^{-u^{2}}\operatorname du$, then,  
+>$I^2$=$\int_0^\infty e^{-x^{2}}\operatorname dx$&nbsp;$\int_0^\infty e^{-y^{2}}\operatorname dy$  
+>$\;\;\;\;$=$\int_0^\infty\int_0^\infty e^{-(x^{2}+y^{2})}\operatorname dx\operatorname dy$  
+>
+>Guess what?  We just transform our integral to the <font color="OrangeRed">quadrant one</font>.  
+>Take $r^2$=$x_2$+$y_2$, we can have below two sets of deduction:  
+>&#10112;$\frac{\operatorname dr^2}{\operatorname dx}$=$\frac{\operatorname d(x^2+y^2)}{\operatorname dx}$=$2\cdot x$  
+>$\Rightarrow\operatorname dr^2$=$2\cdot x\operatorname dx$  
+>
+>&#10113;$\frac{\operatorname dr^2}{\operatorname dr}$=$\frac{\operatorname d(x^2+y^2)}{\operatorname dr}$  
+>$\Rightarrow 2\cdor r$=$\frac{\operatorname d(x^2+y^2)}{\operatorname dr}$  
+>$\Rightarrow 2\cdor r\operatorname dr$=$\operatorname d(x^2+y^2)$  
+>$\Rightarrow 2\cdor r\frac{\operatorname dr}{\operatorname dx}$=$2\cdot x$  
+>$\Rightarrow r\operatorname dr$=$x\operatorname dx$  
+>
+>Stems from 
+
 >proof::&#10113;  
 >
 
