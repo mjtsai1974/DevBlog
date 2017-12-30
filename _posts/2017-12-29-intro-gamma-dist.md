@@ -55,9 +55,25 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$\Rightarrow 2\cdot r\frac{\operatorname dr}{\operatorname dx}$=$2\cdot x$  
 >$\Rightarrow r\operatorname dr$=$x\operatorname dx$  
 >
+>Replace &#10112; and &#10113; in below integral:  
 >$\int_0^\infty e^{-r^{2}}\operatorname dr^2$  
 >$=\int_0^\infty e^{-r^{2}}\frac{\operatorname dr^2}{\operatorname dx}\cdot\operatorname dx$  
-
+>$=\int_0^\infty e^{-r^{2}}\cdot 2\cdot x\operatorname dx$  
+>$=\int_0^\infty \cdot 2\cdot r\cdot e^{-r^{2}}\operatorname dr$  
+>$=-e^{r^{2}}\vert_0^\infty$  
+>$=1$    
+>
+>Please recall that we have our integration area in <font color="OrangeRed">quadrant one</font>, at this moment, back to $I$, let $\theta=y$ to integrate from $0$ to $\frac{\pi}{2}$:  
+>$I^2$=$\int_0^{\frac{\pi}{2}}\int_0^\infty e^{-r^{2}}\operatorname dr^2\operatorname d\theta$  
+>$\;\;\;\;$=$\int_0^{\frac{\pi}{2}}\operatorname d\theta$&nbsp;$\int_0^\infty e^{-r^{2}}\cdot x\operatorname dx$  
+>$\;\;\;\;$=$\frac{\pi}{2}$&nbsp;$\int_0^\infty e^{-r^{2}}\cdot r\operatorname dr$  
+>$\;\;\;\;$=$\frac{\pi}{2}\cdot(-\frac{1}{2}\cdot e^{-r^{2}})\vert_0^\infty$  
+>$\;\;\;\;$=$\frac{\pi}{2}\cdot(-\frac{1}{2})$  
+>$\;\;\;\;$=$\frac{\pi}{4}$
+>
+>$\Gamma(\frac{1}{2})$=$2\cdot\int_0^\infty e^{-u^{2}}\operatorname du$=$2\cdot I$, where $I$=$\int_0^\infty e^{-u^{2}}\operatorname du$ is something we have already known.  
+>Therefore, $I^2$=$\frac{\pi}{4}$, and $I$=$\frac{\sqrt\pi}{2}$, finally, we have $\Gamma(\frac{1}{2})$=$\frac{\sqrt\pi}{2}$ thus proved.  
+>
 >proof::&#10113;  
 >
 
