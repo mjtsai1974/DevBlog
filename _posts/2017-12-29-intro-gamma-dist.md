@@ -80,6 +80,10 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$\int_0^\infty x^{-\frac{1}{2}}\cdot e^{-x}\operatorname dx$  
 >$=\int_0^\infty (\frac {z^2}{2})^{-\frac{1}{2}}\cdot e^{-\frac {z^2}{2}}z\operatorname dz$  
 >$=\int_0^\infty \sqrt2\cdot z^{-1}\cdot e^{-\frac {z^2}{2}}z\operatorname dz$  
+>$=\sqrt2\int_0^\infty e^{-\frac {z^2}{2}}z\operatorname dz$  
+>$=2\cdot\sqrt\pi\int_0^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz$  
+>$=2\cdot\sqrt\pi\cdot$\frac {1}{2}$  
+>$=\sqrt\pi$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
