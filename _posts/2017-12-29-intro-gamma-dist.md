@@ -89,8 +89,9 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 
 ### The <font color="Red">PDF</font> of Gamma Distribution
 >Next we inspect the PDF(probability density function) of the gamma distribution.  The $f(x)$ of PDF is expressed as:  
->$f(x)=\frac {1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\cdot\x^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$  
->
+>$f(x)=\frac {1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\cdot x^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$  
+>$\;\;\;\;\;\;=\frac {1}{\beta\cdot\Gamma(\alpha)}\cdot (\frac{x}{\beta})^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$  
+>$\;\;\;\;\;\;=\frac {\frac {1}{\beta}\cdot(\frac{x}{\beta})^{\alpha-1}\cdot e^{-\frac{x}{\beta}}{\Gamma(\alpha)}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
