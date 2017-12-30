@@ -119,9 +119,9 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$\;\;\;\;\;\;\;\;=\frac{\beta^{k}}{\Gamma(\alpha)}\int_0^{\infty}(y)^{k+\alpha-1}\cdot e^{-y}\operatorname dy$  
 >$\;\;\;\;\;\;\;\;=\frac{\beta^{k}}{\Gamma(\alpha)}\cdot\Gamma(k+\alpha)$  
 >
->&#10112;$E\lbrack X^k\rbrack$=$\mu_1$, the first ordinary moment, by taking $k=1$, we can have the expected value expressed as:  
+>&#10112;$E\lbrack X\rbrack$=$\mu_1$, the first ordinary moment, by taking $k=1$, we can have the expected value expressed as:  
 >$E\lbrack X\rbrack$=$\frac{\beta}{\Gamma(\alpha)}\cdot\Gamma(1+\alpha)$=$\beta\cdot\alpha$  
->&#10113;$Var\lbrack X\rbrack=E\lbrack X^2\rbrack-E^2\lbrack X\rbrack$, by taking $k=2$, we can have the expression of the variance:  
+>&#10113;$Var\lbrack X\rbrack=E\lbrack X^2\rbrack-E^2\lbrack X\rbrack$, by taking $k=2$, we can obtain $E\lbrack X^2\rbrack$=$\mu_2$, the second ordinary moment, and have the expression of the variance:  
 >$Var\lbrack X\rbrack$=$\frac{\beta^{2}}{\Gamma(\alpha)}\cdot\Gamma(2+\alpha)$-$(\beta\cdot\alpha)^2$  
 >$\;\;\;\;\;\;=\beta^{2}\cdot(\alpha+1)\cdot(\alpha)$-$(\beta\cdot\alpha)^2$  
 >$\;\;\;\;\;\;=\beta^2\cdot\alpha\cdot(\alpha-1-\alpha)$  
