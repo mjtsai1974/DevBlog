@@ -73,7 +73,7 @@ the following:
 * Spatial Value Decomposition(SVD)
 * [Jacobian and Integral]({{ site.github.repo }}{{ site.baseurl }}/2017/11/16/prereq-jacobian-integral/)
 * [Introduction To The Moment Generating Function]({{ site.github.repo }}{{ site.baseurl }}/2017/12/28/intro-mgf/)
-* Introduction To The Gamma Distribution
+* [Introduction To The Gamma Distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/)
 * Introduction To The Beta Distribution
 * Introduction To The F Distribution
 * Introduction To The Chi-Square Distribution
