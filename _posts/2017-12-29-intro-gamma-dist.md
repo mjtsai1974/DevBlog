@@ -111,7 +111,10 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >
 >Next to figure out the expect value and variance of the gamma distribution.  The suggestion would be made that we should take advantage of the <font color="Red">moment</font> in [Introduction To The Moment Generating Function]({{ site.github.repo }}{{ site.baseurl }}/2017/12/28/intro-mgf/).  
 >
->$E\lbrack X^k\rbrack$=$\frac{1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\int_0^{\infty}x^{k}\cdot x^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$  
+>$E\lbrack X^k\rbrack$=$\frac{1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\int_0^{\infty}x^{k}\cdot x^{\alpha-1}\cdot e^{-\frac{x}{\beta}}\operatorname dx$  
+>Let $y=\frac{x}{\beta}$, and we can have, $\operatorname dy=\frac{1}{\beta}\operatorname dx$, then:  
+>$E\lbrack X^k\rbrack$=$\frac{1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\int_0^{\infty}x^{k+\alpha-1}\cdot e^{-\frac{x}{\beta}}\operatorname dx$  
+>$\;\;\;\;\;\;\;\;=\frac{1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\int_0^{\infty}(\beta\cdot y)^{k+\alpha-1}\cdot e^{-y}\cdot\beta\operatorname dy$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
