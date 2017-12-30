@@ -31,7 +31,7 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >,where $\Gamma(1)$=$\int_0^\infty x^0\cdot e^{-x}\operatorname dx$=$-e^{-x}\vert_0^\infty$=$1$  
 >, thus, <font color="DeepPink">$\Gamma(n)=(n-1)!$</font> is obtained. 
 >
->[2]$\Gamma(\frac{1}{2})$=$\sqrt{\mathrm\pi}$  
+>[2]<font color="DeepPink">$\Gamma(\frac{1}{2})$=$\sqrt{\mathrm\pi}$</font>  
 >There exists some alternatives, either way could be:  
 >proof::&#10112;  
 >As we don't like $-\frac{1}{2}$, by means of <font color="DeepSkyBlue">change unit</font>,  
@@ -85,7 +85,7 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$=2\cdot\sqrt\pi\cdot\frac {1}{2}$  
 >$=\sqrt\pi$  
 >
->where <font color="DeepSkyBlue">$\int_{-\infty}^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz=1$</font> is the accumulative probability of <font color="DeepSkyBlue">normal distribution</font>, therefore, <font color="DeepSkyBlue">$\int_0^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz=\frac {1}{2}$</font>.  
+>where <font color="DeepPink">$\int_{-\infty}^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz=1$</font> is the accumulative probability of <font color="DeepSkyBlue">normal distribution</font>, therefore, <font color="DeepPink">$\int_0^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz=\frac {1}{2}$</font>.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
