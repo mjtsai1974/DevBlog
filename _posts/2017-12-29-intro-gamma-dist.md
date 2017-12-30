@@ -98,11 +98,14 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$f(x)=\frac {\lambda\cdot(\lambda\cdot x)^{\alpha-1}\cdot e^{-\lambda\cdot x}}{\Gamma(\alpha)}$ 
 >
 >What do we mean by the parameters $\alpha$, $\beta$, $\lambda$?  
->&#10112;$\alpha$ is for the sharpness of the distribution.  
+>&#10112;$\alpha$ is for the <font color="DeepSkyBlue">sharpness</font> of the distribution.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-29-intro-gamma-dist-pdf-alpha.png "alpha for sharpness")
->&#10113;the spread or dissemination of the distribution could be resort to $\beta$.  
+>&#10113;the <font color="DeepSkyBlue">spread</font> or <font color="DeepSkyBlue">dissemination</font> of the distribution could be resort to $\beta$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-29-intro-gamma-dist-pdf-beta.png "alpha for spread")
->&#10114;$\lambda$ is for the intensity, that is, the rate, frequency, in the form of $\frac {count}{time unit}$  
+>&#10114;$\lambda$ is for the <font color="DeepSkyBlue">intensity</font>, that is, the <font color="DeepSkyBlue">rate</font>, <font color="DeepSkyBlue">frequency</font>, in the form of $\frac {count}{time unit}$.  
+
+### Expext Value And Variance Of Gamma Distribution
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
