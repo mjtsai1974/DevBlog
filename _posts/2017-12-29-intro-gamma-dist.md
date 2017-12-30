@@ -10,7 +10,7 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 </p>
 
 ### The Gamma Function <font color="Red">$\Gamma$</font>
->It is very important in the gamma distribution, first of all, we take not only a glance over it, but go through some of the major properties of it.  The gamma function comes in definition:  
+>It is very important in the gamma distribution, first of all, we take not only a glance over it, but go through some of the major properties of it.  The gamma function comes in the definition:  
 >$\Gamma(\alpha)$=$\int_0^\infty x^{\alpha-1}\cdot e^{-x}\operatorname dx$, where $\alpha>0$.  
 >
 >Taking advantage of <font color="DeepSkyBlue">integration by part</font>:  
@@ -86,6 +86,11 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$=\sqrt\pi$  
 >
 >where <font color="DeepPink">$\int_{-\infty}^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz=1$</font> is the accumulative probability of <font color="DeepSkyBlue">normal distribution</font>, therefore, <font color="DeepPink">$\int_0^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz=\frac {1}{2}$</font>.  
+
+### The <font color="Red">PDF</font> of Gamma Distribution
+>Next we inspect the PDF(probability density function) of the gamma distribution.  The $f(x)$ of PDF is expressed as:  
+>$f(x)=\frac {1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\cdot\x^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
