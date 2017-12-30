@@ -50,12 +50,13 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$\Rightarrow\operatorname dr^2$=$2\cdot x\operatorname dx$  
 >
 >&#10113;$\frac{\operatorname dr^2}{\operatorname dr}$=$\frac{\operatorname d(x^2+y^2)}{\operatorname dr}$  
->$\Rightarrow 2\cdor r$=$\frac{\operatorname d(x^2+y^2)}{\operatorname dr}$  
->$\Rightarrow 2\cdor r\operatorname dr$=$\operatorname d(x^2+y^2)$  
->$\Rightarrow 2\cdor r\frac{\operatorname dr}{\operatorname dx}$=$2\cdot x$  
+>$\Rightarrow 2\cdot r$=$\frac{\operatorname d(x^2+y^2)}{\operatorname dr}$  
+>$\Rightarrow 2\cdot r\operatorname dr$=$\operatorname d(x^2+y^2)$  
+>$\Rightarrow 2\cdot r\frac{\operatorname dr}{\operatorname dx}$=$2\cdot x$  
 >$\Rightarrow r\operatorname dr$=$x\operatorname dx$  
 >
->Stems from 
+>$\int_0^\infty e^{-r^{2}}\operatorname dr^2$  
+>$=\int_0^\infty e^{-r^{2}}\frac{\operatorname dr^2}{\operatorname dx}\cdot\operatorname dx$  
 
 >proof::&#10113;  
 >
