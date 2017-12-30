@@ -45,7 +45,7 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$\;\;\;\;$=$\int_0^\infty\int_0^\infty e^{-(x^{2}+y^{2})}\operatorname dx\operatorname dy$  
 >
 >Guess what?  We just transform our integral to the <font color="OrangeRed">quadrant one</font>.  
->Take $r^2$=$x_2$+$y_2$, we can have below two sets of deduction:  
+>Take $r^2$=$x^2$+$y^2$, we can have below two sets of deduction:  
 >&#10112;$\frac{\operatorname dr^2}{\operatorname dx}$=$\frac{\operatorname d(x^2+y^2)}{\operatorname dx}$=$2\cdot x$  
 >$\Rightarrow\operatorname dr^2$=$2\cdot x\operatorname dx$  
 >
@@ -64,6 +64,7 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$=1$    
 >
 >Please recall that we have our integration area in <font color="OrangeRed">quadrant one</font>, at this moment, back to $I$, let $\theta=y$ to integrate from $0$ to $\frac{\pi}{2}$:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-29-intro-gamma-dist-int-quadrant-1.png "integral in quadrant 1")
 >$I^2$=$\int_0^{\frac{\pi}{2}}\int_0^\infty e^{-r^{2}}\operatorname dr^2\operatorname d\theta$  
 >$\;\;\;\;$=$\int_0^{\frac{\pi}{2}}\operatorname d\theta$&nbsp;$\int_0^\infty e^{-r^{2}}\cdot x\operatorname dx$  
 >$\;\;\;\;$=$\frac{\pi}{2}$&nbsp;$\int_0^\infty e^{-r^{2}}\cdot r\operatorname dr$  
@@ -92,6 +93,12 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$f(x)=\frac {1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\cdot x^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$  
 >$\;\;\;\;\;\;=\frac {1}{\beta\cdot\Gamma(\alpha)}\cdot (\frac{x}{\beta})^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$  
 >$\;\;\;\;\;\;=\frac {\frac {1}{\beta}\cdot(\frac{x}{\beta})^{\alpha-1}\cdot e^{-\frac{x}{\beta}}}{\Gamma(\alpha)}$  
+>
+>By taking $\lambda=\frac{1}{\beta}$, then, we just have it that:  
+>$f(x)=\frac {\lambda\cdot(\lambda\cdot x)^{\alpha-1}\cdot e^{-\lambda\cdot x}}{\Gamma(\alpha)}$ 
+>
+>What do we mean by the parameters $\alpha$, $\beta$, $\lambda$?  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
