@@ -75,7 +75,11 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >Therefore, $I^2$=$\frac{\pi}{4}$, and $I$=$\frac{\sqrt\pi}{2}$, finally, we have $\Gamma(\frac{1}{2})$=$\frac{\sqrt\pi}{2}$ thus proved.  
 >
 >proof::&#10113;  
->
+>$\Gamma(\frac{1}{2})$=$\int_0^\infty x^{-\frac{1}{2}}\cdot e^{-x}\operatorname dx$, here we are again.  
+>Take $x$=$\frac {z^2}{2}$, then, $\frac {\operatorname dx}{\operatorname dz}$=$z$, thus, we have $\operatorname dx$=$z\operatorname dz$  
+>$\int_0^\infty x^{-\frac{1}{2}}\cdot e^{-x}\operatorname dx$  
+>$=\int_0^\infty (\frac {z^2}{2})^{-\frac{1}{2}}\cdot e^{-\frac {z^2}{2}}z\operatorname dz$  
+>$=\int_0^\infty \sqrt2\cdot z^{-1}\cdot e^{-\frac {z^2}{2}}z\operatorname dz$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
