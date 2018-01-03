@@ -23,16 +23,27 @@ It would be greatly helpful in the evaluation of the regression model build on y
 
 ### The <font color="Red">Chi-Square</font> Distribution Is <font color="Red">Right-Skew</font>
 ><font color="DeepPink">As degree of freedom increases, chi-square distribution would approximate the normal distribution</font>.  
->You can easily see that <font color="DeepPink">as $\nu$ increases, the distribution of chi-square changes</font>.  
+>You can easily see that <font color="DeepPink">as $\nu$ increases, the distribution of chi-square changes.</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-03-intro-chi-square-dist-nu-increase.png "nu changes the distribution")
->Gradually, it will <font color="DeepPink">approximate the normal distribution</font>.  
+>Gradually, it will <font color="DeepPink">approximate the normal distribution.</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-03-intro-chi-square-dist-approx-normal-dist.png "approximate normal distribution")
 
 ### The <font color="Red">Chi-Square</font> And The <font color="Red">MGF</font>, Why?
 >Because by means of the moment, we can easily figure out the $E\lbrack X\rbrack$, $E\lbrack X^2\rbrack$, $E\lbrack X^3\rbrack$ with 1st, 2nd, 3rd order of differentiation.  
->We can formulate the MGF of chi-square in below expression:  
+>&#10112;we can formulate the MGF of chi-square in below expression:  
 >$M_x(t)=\int_0^\infty e^{t\cdot x}\cdot \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {x}{2}}\operatorname dx$  
->$\;\;\;\;\;\;=\int_0^\infty \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {1}{2}\cdot (1-2\cdot t)\cdot x}\operatorname dx$  
+>$\;\;\;\;\;\;\;\;=\int_0^\infty \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {1}{2}\cdot (1-2\cdot t)\cdot x}\operatorname dx$  
+>
+>&#10113;let $y=\frac {1}{2}\cdot (1-2\cdot t)\cdot x$  
+>$\Rightarrow x=\frac {2\cdot y}{1-2\cdot t}$  
+>$\Rightarrow \frac {\operatorname dx}{\operatorname dx}=\frac {2}{1-2\cdot t}\cdot\frac {\operatorname dy}{\operatorname dx}$  
+>$\Rightarrow 1\cdot \operatorname dx=\frac {2}{1-2\cdot t}\cdot \operatorname dy$  
+>$\Rightarrow \operatorname dx=\frac {2}{1-2\cdot t}\cdot \operatorname dy$  
+>
+>&#10114;replace $\operatorname dx$ with $\frac {2}{1-2\cdot t}\cdot \operatorname dy$  
+>$M_x(t)=\int_0^\infty \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot (\frac {2\cdot y}{1-2\cdot t})^{\frac \nu2 -1}\cdot e^{-y}\cdot\frac {2}{1-2\cdot t}\cdot \operatorname dy$  
+>$\;\;\;\;\;\;\;\;=\frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot (\frac {2}{1-2\cdot t})^{\frac \nu2}\int_0^\infty y^{\frac \nu2 -1}\cdot e^{-y} \operatorname dy$  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
