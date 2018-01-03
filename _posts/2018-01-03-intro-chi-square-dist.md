@@ -17,9 +17,9 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >
 >Next, we take $\alpha=\frac\nu2$, $\beta=2$, we turn the PDF function into below expression:  
 >$f(x)=\frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {x}{2}}$, for $x>0$  
->, where $\nu$ is a positive integer, and this is the <font color="DeepSkyBlue">chi-square PDF</font>.  
+>, where $\nu$ is a positive integer, and this is the <font color="DeepSkyBlue">chi-square PDF.</font>  
 >
->It is just a special case of the gamma distribution with $\alpha=\frac\nu2$, $\beta=2$, and <font color="DeepSkyBlue">$\nu$ is the degree of freedom</font>.  
+>It is just a special case of the gamma distribution with $\alpha=\frac\nu2$, $\beta=2$, and <font color="DeepSkyBlue">$\nu$ is the degree of freedom.</font>  
 
 ### The <font color="Red">Chi-Square</font> Distribution Is <font color="Red">Right-Skew</font>
 ><font color="DeepPink">As degree of freedom increases, chi-square distribution would approximate the normal distribution</font>.  
@@ -29,7 +29,10 @@ It would be greatly helpful in the evaluation of the regression model build on y
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-03-intro-chi-square-dist-approx-normal-dist.png "approximate normal distribution")
 
 ### The <font color="Red">Chi-Square</font> And The <font color="Red">MGF</font>, Why?
->
+>Because by means of the moment, we can easily figure out the $E\lbrackX\rbrack$, $E\lbrackX^2\rbrack$, $E\lbrackX^3\rbrack$ with 1st, 2nd, 3rd order of differentiation.  
+>We can formulate the MGF of chi-square in below expression:  
+>$M_x(t)=\int_0^\infty e^{t\cdot x}\cdot \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {x}{2}}\operatorname dx$  
+>$\;\;\;\;\;\;=\int_0^\infty \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {1}{2}\cdot (1-2\cdot t)\cdot x}\operatorname dx$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
