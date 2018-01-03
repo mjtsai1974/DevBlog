@@ -31,7 +31,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 ### The <font color="Red">Chi-Square</font> And The <font color="Red">MGF</font>, Why?
 >Because by means of the <font color="OrangeRed">moment</font>, we can easily figure out the $E\lbrack X\rbrack$, $E\lbrack X^2\rbrack$, $E\lbrack X^3\rbrack$ with 1st, 2nd, 3rd order of differentiation.  
 >&#10112;we can formulate the <font color="OrangeRed">MGF of chi-square</font> in below expression:  
->$M_x(t)=\int_0^\infty e^{t\cdot x}\cdot \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {x}{2}}\operatorname dx$  
+>$M_X(t)=\int_0^\infty e^{t\cdot x}\cdot \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {x}{2}}\operatorname dx$  
 >$\;\;\;\;\;\;=\int_0^\infty \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {1}{2}\cdot (1-2\cdot t)\cdot x}\operatorname dx$  
 >
 >&#10113;let $y=\frac {1}{2}\cdot (1-2\cdot t)\cdot x$  
@@ -41,7 +41,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\Rightarrow \operatorname dx=\frac {2}{1-2\cdot t}\cdot \operatorname dy$  
 >
 >&#10114;replace $\operatorname dx$ with $\frac {2}{1-2\cdot t}\cdot \operatorname dy$  
->$M_x(t)=\int_0^\infty \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot (\frac {2\cdot y}{1-2\cdot t})^{\frac \nu2 -1}\cdot e^{-y}\cdot\frac {2}{1-2\cdot t}\cdot \operatorname dy$  
+>$M_X(t)=\int_0^\infty \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot (\frac {2\cdot y}{1-2\cdot t})^{\frac \nu2 -1}\cdot e^{-y}\cdot\frac {2}{1-2\cdot t}\cdot \operatorname dy$  
 >$\;\;\;\;\;\;=\frac {1}{2^{\frac \nu2}\cdot\Gamma(\frac \nu2)}\cdot (\frac {2}{1-2\cdot t})^{\frac \nu2}\cdot\int_0^\infty y^{\frac \nu2 -1}\cdot e^{-y} \operatorname dy$  
 >$\;\;\;\;\;\;=\frac {1}{2^{\frac \nu2}\cdot\Gamma(\frac \nu2)}\cdot (\frac {2}{1-2\cdot t})^{\frac \nu2}\cdot\Gamma(\frac \nu2)$  
 >$\;\;\;\;\;\;=(\frac {1}{1-2\cdot t})^{\frac \nu2}$  
@@ -50,13 +50,13 @@ It would be greatly helpful in the evaluation of the regression model build on y
 
 ### Expect Value And Variance Of <font color="Red">Chi-Square</font> Distribution
 >Succeeding to above, we have deduce out the <font color="OrangeRed">MGF of chi-square</font>, we could just easily figure out the $\mu_1$, $\mu_2$:  
->$\mu_1$=$M_x^{′}(t)\vert_{t=0}$  
+>$\mu_1$=$M_X^{′}(t)\vert_{t=0}$  
 >$\;\;\;\;$=$\frac{\operatorname dM_X(t)}{\operatorname dt}\vert_{t=0}$  
 >$\;\;\;\;$=$-\frac {\nu}{2}\cdot (1-2\cdot t)^{-\frac \nu2 -1}\cdot (-2)\vert_{t=0}$  
 >$\;\;\;\;$=$\nu\cdot (1-2\cdot t)^{-\frac \nu2 -1}\vert_{t=0}$  
 >$\;\;\;\;$=$\nu$=$E\lbrack X\rbrack$  
 >
->$\mu_2$=$M_x^{″}(t)\vert_{t=0}$  
+>$\mu_2$=$M_X^{″}(t)\vert_{t=0}$  
 >$\;\;\;\;$=$\frac{\operatorname d^{2}M_X(t)}{\operatorname dt^{2}}\vert_{t=0}$  
 >$\;\;\;\;$=$\nu\cdot (-\frac {\nu}{2}-1)\cdot (1-2\cdot t)^{-\frac \nu2 -2}\cdot (-2)\vert_{t=0}$  
 >$\;\;\;\;$=$2\cdot\nu\cdot (\frac {\nu}{2}+1)\cdot (1-2\cdot t)^{-\frac \nu2 -2}\vert_{t=0}$  
@@ -66,8 +66,33 @@ It would be greatly helpful in the evaluation of the regression model build on y
 
 ### <font color="DeepPink">$Z^2\sim\chi_1^2$</font>
 >In this section, I'd like to prove that <font color="DeepPink">$Z^2\sim\chi_1^2$</font>, it says that <font color="DeepPink">the squared standard normal distribution is similar or even approximate to the chi-square distribution.</font>  
->Well, we denote $Z$ to be the standard normal distribution, and $\chi_i^2$ to stand for the chi-square distribution, with degree of freedom equal to $i$.  If you see $\chi_1^2$, it means ch-square with degree of freedom $1$.  
 >
+>Well, we denote $ɸ(0,1)$ to be the standard normal distribution with mean $0$ and variance $1$, and $\chi_i^2$ to stand for the chi-square distribution, with degree of freedom equal to $i$.  If you see $\chi_1^2$, it means ch-square with degree of freedom $1$.  
+>
+>proof:  
+>&#10112;we'll <font color="DeepSkyBlue">use Jacobian for the change of variable</font> in this proof.  
+>Given $x\in X$, $y\in Y$, $X$ and $Y$ are two random variables.  
+>Suppose $f_X(x)$ is the PDF of $X$, and $f_Y(y)$ is the PDF of $Y$, then, below equality just holds.  
+>$\int_0^\infty f_Y(y) \operatorname dy$=$1$=$\int_0^\infty f_X(x) \operatorname dx$  
+>$\Rightarrow\frac {\operatorname d\int_0^\infty f_Y(y) \operatorname dy}{\operatorname dy}$=$\frac {\operatorname d\int_0^\infty f_X(x) \operatorname dx}{\operatorname dy}$  
+>$\Rightarrow f_Y(y)$=$\frac {f_X(x)\operatorname dx}{\operatorname dy}$  
+>$\Rightarrow f_Y(y)$=$f_X(x)\cdot\frac {\operatorname dx}{\operatorname dy}$  
+>where we denote $J=\frac {\operatorname dx}{\operatorname dy}$  
+>
+>&#10113;suppose the random variable $X$ is normal distributed with $\mu$ as its mean, and $\sigma^2$ as its variance, where we denote it $X\sim N(\mu,\sigma^2)$.  
+>
+>Suppose $Z$ is another random variable.  If for all $z\in Z$, we take $z$=$\frac {x-\mu}{\sigma}$, then, $Z\sim ɸ(0,1)$ and below PDF of $Z$ just holds.  
+>$f_Z(z)$=$\frac {1}{\sqrt{2\cdot\pi}}\cdot e^{-\frac{z^2}{2}}$  
+>
+>&#10114;for all $y\in Y$, $\z\in Z$, let $Y=Z^2$, then, $Z=\pm\sqrt Y$,  
+>Further take $Z_1=-\sqrt Y$, $Z_2=\sqrt Y$, therefore, we have:  
+>$\frac {\operatorname dz_1}{\operatorname dy}$=$-\frac {1}{2\cdot\sqrt y}$=$J_1$  
+>$\frac {\operatorname dz_2}{\operatorname dy}$=$\frac {1}{2\cdot\sqrt y}$=$J_2$  
+>
+>&#10115;we have $f_Y(y)$=$f_X(x)\cdot\frac {\operatorname dx}{\operatorname dy}$ in &#10112; that we can now do the funny transform in between $Y$ and $Z$, to express $Y$ in terms of $Z_1$, $Z_2$.  
+>$f_Y(y)$=$\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac{y}{2}}\cdot\left|J_1\right|$+$\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac{y}{2}}\cdot\left|J_2\right|$  
+>$\;\;\;\;\;\;$=$\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac{y}{2}}\cdot\left|-\frac {1}{2\cdot\sqrt y}\right|$+$\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac{y}{2}}\cdot\left|\frac {1}{2\cdot\sqrt y}\right|$  
+>$\;\;\;\;\;\;$=$\frac {1}{\sqrt {2\cdot\pi}}\cdot\frac {1}{\sqrt y}\cdot e^{-\frac{y}{2}}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
