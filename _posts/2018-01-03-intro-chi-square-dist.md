@@ -61,11 +61,17 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\;\;\;\;$=$\nu\cdot (-\frac {\nu}{2}-1)\cdot (1-2\cdot t)^{-\frac \nu2 -2}\cdot (-2)\vert_{t=0}$  
 >$\;\;\;\;$=$2\cdot\nu\cdot (\frac {\nu}{2}+1)\cdot (1-2\cdot t)^{-\frac \nu2 -2}\vert_{t=0}$  
 >$\;\;\;\;$=$\nu^2+2\cdot\nu$=$E\lbrack X^2\rbrack$  
+>
+>Therefore, $Var\lbrack X\rbrack$=$E\lbrack X^2\rbrack-E^2\lbrack X\rbrack$=$2\cdot\nu$  
+
+### 
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
 <!-- \vert_0^\infty -->
+<!-- &prime; ′ -->
+<!-- &Prime; ″ -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
