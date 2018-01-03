@@ -84,7 +84,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >Suppose $Z$ is another random variable.  If for all $z\in Z$, we take $z$=$\frac {x-\mu}{\sigma}$, then, $Z\sim ɸ(0,1)$ and below PDF of $Z$ just holds.  
 >$f_Z(z)$=$\frac {1}{\sqrt{2\cdot\pi}}\cdot e^{-\frac{z^2}{2}}$  
 >
->&#10114;for all $y\in Y$, $\z\in Z$, let $Y=Z^2$, then, $Z=\pm\sqrt Y$,  
+>&#10114;for all $y\in Y$, $z\in Z$, let $Y=Z^2$, then, $Z=\pm\sqrt Y$,  
 >Further take $Z_1=-\sqrt Y$, $Z_2=\sqrt Y$, therefore, we have:  
 >$\frac {\operatorname dz_1}{\operatorname dy}$=$-\frac {1}{2\cdot\sqrt y}$=$J_1$  
 >$\frac {\operatorname dz_2}{\operatorname dy}$=$\frac {1}{2\cdot\sqrt y}$=$J_2$  
@@ -93,6 +93,15 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$f_Y(y)$=$\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac{y}{2}}\cdot\left|J_1\right|$+$\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac{y}{2}}\cdot\left|J_2\right|$  
 >$\;\;\;\;\;\;$=$\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac{y}{2}}\cdot\left|-\frac {1}{2\cdot\sqrt y}\right|$+$\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac{y}{2}}\cdot\left|\frac {1}{2\cdot\sqrt y}\right|$  
 >$\;\;\;\;\;\;$=$\frac {1}{\sqrt {2\cdot\pi}}\cdot\frac {1}{\sqrt y}\cdot e^{-\frac{y}{2}}$  
+>$\;\;\;\;\;\;$=$\frac {1}{\sqrt2\cdot\sqrt {\pi}}\cdot\frac {1}{\sqrt y}\cdot e^{-\frac{y}{2}}$  
+>$\;\;\;\;\;\;$=$\frac {1}{2^{\frac {1}{2}}\cdot\sqrt {\pi}}\cdot\frac {1}{\sqrt y}\cdot e^{-\frac{y}{2}}$  
+>$\;\;\;\;\;\;$=$\frac {1}{2^{\frac {1}{2}}\cdot\Gamma(\frac {1}{2})}\cdot\frac {1}{\sqrt y}\cdot e^{-\frac{y}{2}}$  
+>
+>&#10116;we already know $\Gamma(\frac {1}{2})$=$\sqrt\pi$, this is quiet a beautiful deduction that it is just the PDF of gamma distribution with $\alpha=\frac {1}{2}$, $\beta=2$.
+>Guess what, $\frac {1}{2^{\frac {1}{2}}\cdot\Gamma(\frac {1}{2})}\cdot\frac {1}{\sqrt y}\cdot e^{-\frac{y}{2}}$ is just the chi-square PDF,  
+>$f(x)=\frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {x}{2}}$ with $\alpha=\frac {\nu}{2}$, $\nu=1$, $\beta=2$ for $x>0$.  
+>
+>Therefore, we just get <font color="DeepPink">$Z^2\sim\chi_1^2$</font> proved.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
