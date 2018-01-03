@@ -48,9 +48,18 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\;\;\;\;\;\;=(1-2\cdot t)^{-\frac \nu2}$  
 >, where we have $\Gamma(\frac \nu2)$=$\int_0^\infty y^{\frac \nu2 -1}\cdot e^{-y} \operatorname dy$  
 
+### Expect Value And Variance Of <font color="Red">Chi-Square</font> Distribution
+>Succeeding to above, we have deduce out the MGF of chi-square, we could just easily figure out the $\mu_1$, $\mu_2$:  
+>$\mu_1$=$M_x^{'}(t)\vert_{t=0}$
+>$\;\;\;\;$=$\frac{\operatorname dM_X(t)}{\operatorname dt}$, at $t=0$
+
+
+>&#10112;
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
+<!-- \vert_0^\infty -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
