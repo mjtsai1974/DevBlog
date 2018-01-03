@@ -22,15 +22,15 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >It is just a special case of the gamma distribution with $\alpha=\frac\nu2$, $\beta=2$, and <font color="DeepSkyBlue">$\nu$ is the degree of freedom.</font>  
 
 ### The <font color="Red">Chi-Square</font> Distribution Is <font color="Red">Right-Skew</font>
-><font color="DeepPink">As degree of freedom increases, chi-square distribution would approximate the normal distribution</font>.  
+><font color="DeepPink">As degree of freedom increases, chi-square distribution would approximate the normal distribution.</font>  
 >You can easily see that <font color="DeepPink">as $\nu$ increases, the distribution of chi-square changes.</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-03-intro-chi-square-dist-nu-increase.png "nu changes the distribution")
 >Gradually, it will <font color="DeepPink">approximate the normal distribution.</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-03-intro-chi-square-dist-approx-normal-dist.png "approximate normal distribution")
 
 ### The <font color="Red">Chi-Square</font> And The <font color="Red">MGF</font>, Why?
->Because by means of the moment, we can easily figure out the $E\lbrack X\rbrack$, $E\lbrack X^2\rbrack$, $E\lbrack X^3\rbrack$ with 1st, 2nd, 3rd order of differentiation.  
->&#10112;we can formulate the MGF of chi-square in below expression:  
+>Because by means of the <font color="OrangeRed">moment</font>, we can easily figure out the $E\lbrack X\rbrack$, $E\lbrack X^2\rbrack$, $E\lbrack X^3\rbrack$ with 1st, 2nd, 3rd order of differentiation.  
+>&#10112;we can formulate the <font color="OrangeRed">MGF of chi-square</font> in below expression:  
 >$M_x(t)=\int_0^\infty e^{t\cdot x}\cdot \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {x}{2}}\operatorname dx$  
 >$\;\;\;\;\;\;=\int_0^\infty \frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {1}{2}\cdot (1-2\cdot t)\cdot x}\operatorname dx$  
 >
@@ -49,7 +49,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >, where we have $\Gamma(\frac \nu2)$=$\int_0^\infty y^{\frac \nu2 -1}\cdot e^{-y} \operatorname dy$  
 
 ### Expect Value And Variance Of <font color="Red">Chi-Square</font> Distribution
->Succeeding to above, we have deduce out the MGF of chi-square, we could just easily figure out the $\mu_1$, $\mu_2$:  
+>Succeeding to above, we have deduce out the <font color="OrangeRed">MGF of chi-square</font>, we could just easily figure out the $\mu_1$, $\mu_2$:  
 >$\mu_1$=$M_x^{′}(t)\vert_{t=0}$  
 >$\;\;\;\;$=$\frac{\operatorname dM_X(t)}{\operatorname dt}\vert_{t=0}$  
 >$\;\;\;\;$=$-\frac {\nu}{2}\cdot (1-2\cdot t)^{-\frac \nu2 -1}\cdot (-2)\vert_{t=0}$  
@@ -64,7 +64,10 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >
 >Therefore, $Var\lbrack X\rbrack$=$E\lbrack X^2\rbrack-E^2\lbrack X\rbrack$=$2\cdot\nu$  
 
-### 
+### <font color="DeepPink">$Z^2\sim\chi_1^2$</font>
+>In this section, I'd like to prove that <font color="DeepPink">$Z^2\sim\chi_1^2$</font>, it says that <font color="DeepPink">the squared standard normal distribution is similar or even approximate to the chi-square distribution.</font>  
+>Well, we denote $Z$ to be the standard normal distribution, and $\chi_i^2$ to stand for the chi-square distribution, with degree of freedom equal to $i$.  If you see $\chi_1^2$, it means ch-square with degree of freedom $1$.  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
