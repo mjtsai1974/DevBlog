@@ -5,7 +5,7 @@ title: Introduction To The Gamma Distribution
 
 ## Prologue To The Gamma Distribution
 <p class="message">
-In probability theory and statistics, the gamma distribution is the most foundamental, which is based on for further development of many distributions, they are beta, exponential, F, chi-square, t distributions and still others.
+In probability theory and statistics, the gamma distribution is the most fundamental, which is based on for further development of many distributions, they are beta, exponential, F, chi-square, t distributions and still others.
 With the basic intuition of gamma distribution would it be greatly helpful in the evaluation of the regression model build on your hypothesis, even more, the power of test for the precision in the machine learning results.   
 </p>
 
