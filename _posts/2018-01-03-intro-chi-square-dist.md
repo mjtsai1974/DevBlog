@@ -135,7 +135,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >&#10115;in statistics, we denote sample variance as $S^2$ and have it that:  
 >$S^2$=$\sum \frac {(X_i-\overline{X_n})^2}{n-1}$  
 >$\Rightarrow (n-1)\cdot S^2=\sum (X_i-\overline{X_n})^2$  
->Therefore, <font color="DeepPink">$\frac {(n-1)\cdot S^2}{\sigma^2}\sim\chi_{n-1}^2$</font> is the final conclusion.  
+>Therefore, <font color="DeepPink">$\frac {(n-1)\cdot S^2}{\sigma^2}\sim\chi_{n-1}^2$</font> is the final deduction result.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
