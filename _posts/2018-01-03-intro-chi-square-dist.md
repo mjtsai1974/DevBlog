@@ -10,15 +10,26 @@ With the basic realization of gamma distribution, we can treat the chi-square di
 It would be greatly helpful in the evaluation of the regression model build on your hypothesis, the power of test for the precision in the machine learning results.   
 </p>
 
-### From The Gamma Distribution To The Chi-Square Distribution
+### From The Gamma Distribution To The <font color="Red">Chi-Square</font> Distribution
 >Be recalled that we have gamma function and the PDF of the gamma distribution:  
 >&#10112;$\Gamma(\alpha)$=$\int_0^\infty x^{\alpha-1}\cdot e^{-x}\operatorname dx$, where $\alpha>0$.  
 >&#10113;$f(x)=\frac {1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\cdot x^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$, where $\alpha>0$, $\beta>0$  
 >
 >Next, we take $\alpha=\frac\nu2$, $\beta=2$, we turn the PDF function into below expression:  
 >$f(x)=\frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {x}{2}}$, for $x>0$  
->, where $\nu$ is a positive integer, and this is the chi-square PDF.  
->It is just a special case of the gamma distribution with $\alpha=\frac\nu2$, $\beta=2$, and $\nu$ is the degree of freedom.  
+>, where $\nu$ is a positive integer, and this is the <font color="DeepSkyBlue">chi-square PDF</font>.  
+>
+>It is just a special case of the gamma distribution with $\alpha=\frac\nu2$, $\beta=2$, and <font color="DeepSkyBlue">$\nu$ is the degree of freedom</font>.  
+
+### The <font color="Red">Chi-Square</font> Distribution Is <font color="Red">Right-Skew</font>
+><font color="DeepPink">As degree of freedom increases, chi-square distribution would approximate the normal distribution</font>.  
+>You can easily see that <font color="DeepPink">as $\nu$ increases, the distribution of chi-square changes</font>.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-03-intro-chi-square-dist-nu-increase.png "nu changes the distribution")
+>Gradually, it will <font color="DeepPink">approximate the normal distribution</font>.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-03-intro-chi-square-dist-approx-normal-dist.png "approximate normal distribution")
+
+### The <font color="Red">Chi-Square</font> And The <font color="Red">MGF</font>, Why?
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
@@ -43,3 +54,5 @@ It would be greatly helpful in the evaluation of the regression model build on y
 <!-- <font color="#D600D6">discount factor gamma $\gamma$</font> -->
 <!-- <font color="#D600D6">$V(S)$</font> -->
 <!-- <font color="#9300FF">immediate reward R(S)</font> -->
+
+<!-- https://www.medcalc.org/manual/gamma_distribution_functions.php -->
