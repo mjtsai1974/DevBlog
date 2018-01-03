@@ -46,7 +46,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\;\;\;\;\;\;=\frac {1}{2^{\frac \nu2}\cdot\Gamma(\frac \nu2)}\cdot (\frac {2}{1-2\cdot t})^{\frac \nu2}\cdot\Gamma(\frac \nu2)$  
 >$\;\;\;\;\;\;=(\frac {1}{1-2\cdot t})^{\frac \nu2}$  
 >$\;\;\;\;\;\;=(1-2\cdot t)^{-\frac \nu2}$  
->where we have $\Gamma(\frac \nu2)$=$\int_0^\infty y^{\frac \nu2 -1}\cdot e^{-y} \operatorname dy$  
+>, where we have $\Gamma(\frac \nu2)$=$\int_0^\infty y^{\frac \nu2 -1}\cdot e^{-y} \operatorname dy$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
