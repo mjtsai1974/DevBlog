@@ -103,6 +103,13 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >
 >Therefore, we just get <font color="DeepPink">$Z^2\sim\chi_1^2$</font> proved.  
 
+### Sample Variance Evaluation Against Distribution Variance
+>Given $X_1$,$X_2$,$X_3$,...,$X_n\in N(\mu,\sigma)$, where each $X_i$ is an independent random variable, then:  
+>$Z_i$=$\frac {X_i-\mu}{\sigma}$ is a standard normal distributed, $ɸ(0,1)$, for $i=1 to n$.  
+>We have already proved $<font color="DeepPink">$Z^2\sim\chi_1^2$</font>$, then, $<font color="DeepPink">$\sum_{i=0}^{n}Z_i^{2}\sim\chi_n^{2}$</font> could be obtained by mathematics induction.  Suppose it is true and this proof would guide you through the relation in between sample variance and distribution variance.  
+>proof:  
+>
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
