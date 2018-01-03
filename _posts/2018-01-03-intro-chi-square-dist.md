@@ -50,9 +50,10 @@ It would be greatly helpful in the evaluation of the regression model build on y
 
 ### Expect Value And Variance Of <font color="Red">Chi-Square</font> Distribution
 >Succeeding to above, we have deduce out the MGF of chi-square, we could just easily figure out the $\mu_1$, $\mu_2$:  
->$\mu_1$=$M_x^{'}(t)\vert_{t=0}$
->$\;\;\;\;$=$\frac{\operatorname dM_X(t)}{\operatorname dt}$, at $t=0$
-
+>$\mu_1$=$M_x^{`}(t)\vert_{t=0}$  
+>$\;\;\;\;$=$\frac{\operatorname dM_X(t)}{\operatorname dt}\vert_{t=0}$  
+>$\;\;\;\;$=$-\frac {\nu}{2}\cdot (1-2\cdot t)^{-\frac \nu2}\cdot (-2)\vert_{t=0}$  
+>$\;\;\;\;$=$\nu$  
 
 >&#10112;
 
