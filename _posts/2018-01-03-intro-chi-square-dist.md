@@ -94,11 +94,11 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\;\;\;\;\;\;$=$\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac{y}{2}}\cdot\left|-\frac {1}{2\cdot\sqrt y}\right|$+$\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac{y}{2}}\cdot\left|\frac {1}{2\cdot\sqrt y}\right|$  
 >$\;\;\;\;\;\;$=$\frac {1}{\sqrt {2\cdot\pi}}\cdot\frac {1}{\sqrt y}\cdot e^{-\frac{y}{2}}$  
 >$\;\;\;\;\;\;$=$\frac {1}{\sqrt2\cdot\sqrt {\pi}}\cdot\frac {1}{\sqrt y}\cdot e^{-\frac{y}{2}}$  
->$\;\;\;\;\;\;$=$\frac {1}{2^{\frac {1}{2}}\cdot\sqrt {\pi}}\cdoty^{-\frac {1}{2}}\cdot e^{-\frac{y}{2}}$  
->$\;\;\;\;\;\;$=$\frac {1}{2^{\frac {1}{2}}\cdot\Gamma(\frac {1}{2})}\cdoty^{-\frac {1}{2}}\cdot e^{-\frac{y}{2}}$  
+>$\;\;\;\;\;\;$=$\frac {1}{2^{\frac {1}{2}}\cdot\sqrt {\pi}}\cdot y^{-\frac {1}{2}}\cdot e^{-\frac{y}{2}}$  
+>$\;\;\;\;\;\;$=$\frac {1}{2^{\frac {1}{2}}\cdot\Gamma(\frac {1}{2})}\cdot y^{-\frac {1}{2}}\cdot e^{-\frac{y}{2}}$  
 >
 >&#10116;we already know $\Gamma(\frac {1}{2})$=$\sqrt\pi$, this is quiet a beautiful deduction that it is just the PDF of gamma distribution with $\alpha=\frac {1}{2}$, $\beta=2$.
->$\frac {1}{2^{\frac {1}{2}}\cdot\Gamma(\frac {1}{2})}\cdoty^{-\frac {1}{2}}\cdot e^{-\frac{y}{2}}$ is just the chi-square PDF, Guess what?  
+>$\frac {1}{2^{\frac {1}{2}}\cdot\Gamma(\frac {1}{2})}\cdot y^{-\frac {1}{2}}\cdot e^{-\frac{y}{2}}$ is just the chi-square PDF, Guess what?  
 >$f(x)=\frac {1}{2^{\frac \nu2}\cdot \Gamma(\frac \nu2)}\cdot x^{\frac \nu2 -1}\cdot e^{-\frac {x}{2}}$ with $\alpha=\frac {\nu}{2}$, $\nu=1$, $\beta=2$, for $x>0$.  
 >
 >Therefore, we just get <font color="DeepPink">$Z^2\sim\chi_1^2$</font> proved.  
