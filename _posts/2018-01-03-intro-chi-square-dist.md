@@ -50,14 +50,17 @@ It would be greatly helpful in the evaluation of the regression model build on y
 
 ### Expect Value And Variance Of <font color="Red">Chi-Square</font> Distribution
 >Succeeding to above, we have deduce out the MGF of chi-square, we could just easily figure out the $\mu_1$, $\mu_2$:  
->$\mu_1$=$M_x^{`}(t)\vert_{t=0}$  
+>$\mu_1$=$M_x^{′}(t)\vert_{t=0}$  
 >$\;\;\;\;$=$\frac{\operatorname dM_X(t)}{\operatorname dt}\vert_{t=0}$  
->$\;\;\;\;$=$-\frac {\nu}{2}\cdot (1-2\cdot t)^{-\frac \nu2}\cdot (-2)\vert_{t=0}$  
+>$\;\;\;\;$=$-\frac {\nu}{2}\cdot (1-2\cdot t)^{-\frac \nu2 -1}\cdot (-2)\vert_{t=0}$  
+>$\;\;\;\;$=$\nu\cdot (1-2\cdot t)^{-\frac \nu2 -1}\vert_{t=0}$  
 >$\;\;\;\;$=$\nu$=$E\lbrack X\rbrack$  
 >
->$\mu_2$=$M_x^{``}(t)\vert_{t=0}$  
-
->&#10112;
+>$\mu_2$=$M_x^{″}(t)\vert_{t=0}$  
+>$\;\;\;\;$=$\frac{\operatorname d^{2}M_X(t)}{\operatorname dt^{2}}\vert_{t=0}$  
+>$\;\;\;\;$=$\nu\cdot (-\frac {\nu}{2}-1)\cdot (1-2\cdot t)^{-\frac \nu2 -2}\cdot (-2)\vert_{t=0}$  
+>$\;\;\;\;$=$2\cdot\nu\cdot (\frac {\nu}{2}+1)\cdot (1-2\cdot t)^{-\frac \nu2 -2}\vert_{t=0}$  
+>$\;\;\;\;$=$\nu^2+2\cdot\nu$=$E\lbrack X^2\rbrack$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
