@@ -105,7 +105,7 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-29-intro-gamma-dist-pdf-beta.png "alpha for spread")
 >&#10114;$\lambda$ is for the <font color="DeepSkyBlue">intensity</font>, that is, the <font color="DeepSkyBlue">rate</font>, <font color="DeepSkyBlue">frequency</font>, in the form of $\frac {count}{time unit}$.  
 
-### Expext Value And Variance Of Gamma Distribution
+### Expect Value And Variance Of Gamma Distribution
 >As we know that it is the PDF of the gamma distribution:  
 >$f(x)=\frac {1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\cdot x^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$  
 >
