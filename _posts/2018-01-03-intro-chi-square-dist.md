@@ -110,7 +110,9 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >We have already proved $<font color="DeepPink">$Z^2\sim\chi_1^2$</font>$, then, $<font color="DeepPink">$\sum_{i=0}^{n}Z_i^{2}\sim\chi_n^{2}$</font> could be obtained by mathematics induction.  Suppose it is true and this proof would guide you through the relation in between sample variance and distribution variance.  
 >
 >proof:  
->$\sum_{i=0}^{n}Z_i^2$=$\sum_{i}(\frac {X_i-\mu}{\sigma})^2$  
+>$\sum_{i=0}^{n}Z_i^2$=$\sum_{i=0}^{n}(\frac {X_i-\mu}{\sigma})^2$  
+>$\;\;\;\;\;\;\;\;$=$\sum_{i=0}^{n}(\frac {X_i-\overline{X_n}+\overline{X_n}-\mu}{\sigma})^2$  
+>$\;\;\;\;\;\;\;\;$=$\sum_{i=0}^{n}(\frac {(X_i-\overline{X_n})+(\overline{X_n}-\mu)}{\sigma})^2$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
@@ -118,6 +120,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 <!-- \vert_0^\infty -->
 <!-- &prime; ′ -->
 <!-- &Prime; ″ -->
+<!-- \overline{X_n} -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
