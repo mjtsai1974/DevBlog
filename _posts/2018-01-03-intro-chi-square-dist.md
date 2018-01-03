@@ -107,28 +107,35 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >Given $X_1$,$X_2$,$X_3$,...,$X_n\in N(\mu,\sigma)$, where each $X_i$ is an independent random variable, then:  
 >$Z_i$=$\frac {X_i-\mu}{\sigma}$ is a standard normal distribution, $ɸ(0,1)$, for $i=1$ to $n$.  
 >
->We have already proved $<font color="DeepPink">$Z^2\sim\chi_1^2$</font>$, then, $<font color="DeepPink">$\sum_{i=0}^{n}Z_i^{2}\sim\chi_n^{2}$</font> could be obtained by mathematics induction.  Suppose it is true and this proof would guide you through the relation in between sample variance and distribution variance.  
+>We have already proved $<font color="DeepPink">$Z^2\sim\chi_1^2$</font>$, then, $<font color="DeepPink">$\sum_{i=1}^{n}Z_i^{2}\sim\chi_n^{2}$</font> could be obtained by mathematics induction.  Suppose it is true and this proof would guide you through the relation in between sample variance and distribution variance.  
 >
 >proof:  
 >&#10112;expand from $Z_i^2$  
->$\sum_{i=0}^{n}Z_i^2$=$\sum_{i=0}^{n}(\frac {X_i-\mu}{\sigma})^2$  
->$\;\;\;\;\;\;\;\;$=$\sum_{i=0}^{n}(\frac {X_i-\overline{X_n}+\overline{X_n}-\mu}{\sigma})^2$  
->$\;\;\;\;\;\;\;\;$=$\sum_{i=0}^{n}(\frac {(X_i-\overline{X_n})+(\overline{X_n}-\mu)}{\sigma})^2$  
->$\;\;\;\;\;\;\;\;$=$\sum_{i=0}^{n}(\frac {X_i-\overline{X_n}}{\sigma})^2$+$\sum_{i=0}^{n}(\frac {\overline{X_n}-\mu}{\sigma})^2$+$2\cdot\sum_{i=0}^{n}\frac {(X_i-\overline{X_n})\cdot (\overline{X_n}-\mu)}{\sigma^2}$  
+>$\sum_{i=1}^{n}Z_i^2$=$\sum_{i=1}^{n}(\frac {X_i-\mu}{\sigma})^2$  
+>$\;\;\;\;\;\;\;\;$=$\sum_{i=1}^{n}(\frac {X_i-\overline{X_n}+\overline{X_n}-\mu}{\sigma})^2$  
+>$\;\;\;\;\;\;\;\;$=$\sum_{i=1}^{n}(\frac {(X_i-\overline{X_n})+(\overline{X_n}-\mu)}{\sigma})^2$  
+>$\;\;\;\;\;\;\;\;$=$\sum_{i=1}^{n}(\frac {X_i-\overline{X_n}}{\sigma})^2$+$\sum_{i=1}^{n}(\frac {\overline{X_n}-\mu}{\sigma})^2$+$2\cdot\sum_{i=1}^{n}\frac {(X_i-\overline{X_n})\cdot (\overline{X_n}-\mu)}{\sigma^2}$  
 >, where $\overline{X_n}$ is the average for the whole $X_i's$, for $i=1$ to $n$.  
 >
 >&#10113;the final term is 0.  
->$\sum_{i=0}^{n}\frac {(X_i-\overline{X_n})\cdot (\overline{X_n}-\mu)}{\sigma^2}$  
->$=\frac {(\overline{X_n}-\mu)}{\sigma^2}\cdot\sum_{i=0}^{n}(X_i-\overline{X_n})=0$  
+>$\sum_{i=1}^{n}\frac {(X_i-\overline{X_n})\cdot (\overline{X_n}-\mu)}{\sigma^2}$  
+>$=\frac {(\overline{X_n}-\mu)}{\sigma^2}\cdot\sum_{i=1}^{n}(X_i-\overline{X_n})=0$  
 >
 >Thus, we have it that:  
->$\sum_{i=0}^{n}Z_i^2$=$\sum_{i=0}^{n}(\frac {X_i-\overline{X_n}}{\sigma})^2$+$\sum_{i=0}^{n}(\frac {\overline{X_n}-\mu}{\sigma})^2$  
+>$\sum_{i=1}^{n}Z_i^2$=$\sum_{i=1}^{n}(\frac {X_i-\overline{X_n}}{\sigma})^2$+$\sum_{i=1}^{n}(\frac {\overline{X_n}-\mu}{\sigma})^2$  
 >
->&#10114;  
->$\sum_{i=0}^{n}(\frac {\overline{X_n}-\mu}{\sigma})^2$=$n\cdot (\frac {\overline{X_n}-\mu}{\sigma})^2$=$(\frac {\overline{X_n}-\mu}{\frac {\sigma}{\sqrt n}})^2$
->Therefore, $\sum_{i=0}^{n}(\frac {\overline{X_n}-\mu}{\sigma})^2\approx Z_1^2\sim\chi_1^2$  
+>&#10114;still focus on the final term.  
+>$\sum_{i=1}^{n}(\frac {\overline{X_n}-\mu}{\sigma})^2$=$n\cdot (\frac {\overline{X_n}-\mu}{\sigma})^2$=$(\frac {\overline{X_n}-\mu}{\frac {\sigma}{\sqrt n}})^2$  
+>Therefore, $\sum_{i=1}^{n}(\frac {\overline{X_n}-\mu}{\sigma})^2\approx Z_1^2\sim\chi_1^2$  
 >
-
+>Remember that we are under the assumption that $<font color="DeepPink">$\sum_{i=1}^{n}Z_i^{2}\sim\chi_n^{2}$</font> is <font color="DeepSkyBlue">true</font>, then:  
+>$\sum_{i=1}^{n}(\frac {X_i-\overline{X_n}}{\sigma})^2+\chi_1^2\sim\chi_n^2$ must hold.  
+>$\Rightarrow\sum_{i=1}^{n}(\frac {X_i-\overline{X_n}}{\sigma})^2\sim\chi_{n-1}^2$ must hold.  
+>
+>&#10115;in statistics, we denote sample variance as $S^2$ and have it that:  
+>$S^2$=$\sum \frac {(X_i-\overline{X_n})^2}{n-1}$  
+>$\Rightarrow (n-1)\cdot S^2=\sum (X_i-\overline{X_n})^2$  
+>Therefore, <font color="DeepPink">$\frac {(n-1)\cdot S^2}{\sigma^2}\sim\chi_{n-1}^2$</font> is the final conclusion.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
