@@ -113,6 +113,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\sum_{i=0}^{n}Z_i^2$=$\sum_{i=0}^{n}(\frac {X_i-\mu}{\sigma})^2$  
 >$\;\;\;\;\;\;\;\;$=$\sum_{i=0}^{n}(\frac {X_i-\overline{X_n}+\overline{X_n}-\mu}{\sigma})^2$  
 >$\;\;\;\;\;\;\;\;$=$\sum_{i=0}^{n}(\frac {(X_i-\overline{X_n})+(\overline{X_n}-\mu)}{\sigma})^2$  
+>$\;\;\;\;\;\;\;\;$=$\sum_{i=0}^{n}(\frac {X_i-\overline{X_n}}{\sigma})^2$+$\sum_{i=0}^{n}(\frac {\overline{X_n}-\mu}{\sigma})^2$+$2\cdot\sum_{i=0}^{n}\frac {(X_i-\overline{X_n})\cdot (\overline{X_n}-\mu)}{\sigma}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
