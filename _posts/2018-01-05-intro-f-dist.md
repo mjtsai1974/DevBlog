@@ -25,12 +25,22 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >
 >&#10112;suppose $X$, $Y$ are two <font color="OrangeRed">independent</font> random variables with PDF $f_X(x)$, $f_Y(y)$.  
 >
->&#10113;let $Z$=$\frac {Y}{X}$, we denote $f_{XY}(x,y)$ to be the PDF of $Z$, where it is also a random variable.  
->For all $x\in X$, $y\in Y$, $z\in Z$, then we have it that:  
+>&#10113;let $Z$=$\frac {Y}{X}$, we denote $f_{XY}(x,y)$ to be the PDF of $Z$, where it is also a random variable.  Then for all $x\in X$, $y\in Y$, $z\in Z$, we have it that:  
 >$P(\frac {y}{x}\le z)$=$P(y\le z\cdot x)$  
->Therefore, $F_{XY}(z)$=$\int_0^{\infty}\int_{-\infty}^{z\cdot x}f_{XY}(x,y)\operatorname dy\operatorname dy$  
->, well, we can treat $Y\in \chi_{\nu_1}^2$, $X\in \chi_{\nu_2}^2$ by intuition.  
-
+>
+>Therefore, $F_{XY}(z)$=$\int_0^{\infty}\int_{-\infty}^{z\cdot x}f_{XY}(x,y)\operatorname dy\operatorname dx$  
+>, well, we can treat $Y\in \chi_{\nu_1}^2$, $X\in \chi_{\nu_2}^2$ by intuition, and $F_{XY}(z)$ is the CDF(cumulative distribution function).  
+>
+>&#10114;let $y=x\cdot v$, then, $\operatorname dy=x\cdot\operatorname dv$, this is a little utilization of integration by part.  
+>$F_{XY}(z)$=$\int_0^{\infty}\int_{-\infty}^{z}x\cdot f_{XY}(x,y)\operatorname dv\operatorname dx$  
+>$\;\;\;\;\;\;\;\;$=$\int_{-\infty}^{z}\int_0^{\infty}x\cdot f_{XY}(x,y)\operatorname dx\operatorname dv$  
+>
+>&#10115;derivate $F_{XY}(z)$ with respect to $v$, would we eliminate the term $\operatorname dv$, and express $f_{XY}(z)$, the PDF of F only in one term of $x$.  
+>$f_{XY}(z)$=$\frac {\operatorname dF_{XY}(z)}{\operatorname dv}$  
+>$\;\;\;\;\;\;\;\;$=$\int_0^{\infty}x\cdot f_{XY}(x,y)\operatorname dx$  
+>$\;\;\;\;\;\;\;\;$=$\int_0^{\infty}x\cdot f_{XY}(x,x\cdot z)\operatorname dx$...take $v=z$  
+>$\;\;\;\;\;\;\;\;$=$\int_0^{\infty}x\cdot f_{X}\cdot f_{Y}(x\cdot z)\operatorname dx$  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
