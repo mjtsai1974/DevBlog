@@ -11,10 +11,11 @@ It would be greatly helpful in the evaluation of the regression model build on y
 </p>
 
 ### From The Chi-Square Distribution To The <font color="Red">F</font> Distribution
->The model of F distribution is defined by the combination of two chi-square in ratio expression.  The definition is given by:  
+>The model of F distribution is defined by the combination of two chi-square in ratio expression.  
+>&#10112;the definition is given by:  
 >$F$=$\frac {\frac {\chi_{\nu_1}^2}{\nu_1}}{\frac {\chi_{\nu_2}^2}{\nu_2}}$, where $\chi_{\nu_i}^2$ is the chi-square PDF of degree of freedom $\nu_i$, for $i=1,2$.  
 >
->The F distribution PDF is expressed in below equality:  
+>&#10113;the F distribution PDF is expressed in below equality:  
 >$h(f)$=$\frac {\Gamma(\frac {\nu_1+\nu_2}{2})\cdot (\frac {\nu_1}{\nu_2})^{\frac {\nu_1}{2}}}{\Gamma(\frac {\nu_1}{2})\cdot\Gamma(\frac {\nu_2}{2})}\cdot\frac {f^{\frac {\nu_1}{2}-1}}{(1+\frac {\nu_1}{\nu_2}\cdot f)^{\frac {\nu_1+\nu_2}{2}}}$   
 
 <!-- Γ -->
