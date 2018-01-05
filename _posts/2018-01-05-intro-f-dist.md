@@ -13,7 +13,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 ### From The Chi-Square Distribution To The <font color="Red">F</font> Distribution
 >The model of F distribution is defined by the combination of two chi-square in ratio expression.  
 >&#10112;the definition is given by:  
->$F$=$\frac {\frac {\chi_{\nu_1}^2}{\nu_1}}{\frac {\chi_{\nu_2}^2}{\nu_2}}$, where $\chi_{\nu_i}^2$ is the chi-square PDF of degree of freedom $\nu_i$, for $i=1,2$.  
+>$F$=$\frac {\frac {\chi_{\nu_1}^2}{\nu_1}}{\frac {\chi_{\nu_2}^2}{\nu_2}}$, where $\chi_{\nu_i}^2$ is the chi-square PDF of DOF(degree of freedom) $\nu_i$, for $i=1,2$.  
 >
 >&#10113;the F distribution PDF is expressed in below equality:  
 >$h(f)$=$\frac {\Gamma(\frac {\nu_1+\nu_2}{2})\cdot (\frac {\nu_1}{\nu_2})^{\frac {\nu_1}{2}}}{\Gamma(\frac {\nu_1}{2})\cdot\Gamma(\frac {\nu_2}{2})}\cdot\frac {f^{\frac {\nu_1}{2}-1}}{(1+\frac {\nu_1}{\nu_2}\cdot f)^{\frac {\nu_1+\nu_2}{2}}}$   
@@ -41,6 +41,8 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\;\;\;\;\;\;\;\;$=$\int_0^{\infty}x\cdot f_{XY}(x,x\cdot z)\operatorname dx$...take $v=z$  
 >$\;\;\;\;\;\;\;\;$=$\int_0^{\infty}x\cdot f_{X}\cdot f_{Y}(x\cdot z)\operatorname dx$  
 >
+>&#10116;let $X$, $Y$ now be the random variables in chi-square PDF with DOF=$n$, $m$ respectively, and recall that $Z$=$\frac {Y}{X}$, then:  
+>$f_Z(z)$=$\int_0^{\infty}x\cdot\frac {x^{\frac {n}{2}-1}\cdot e^{-\frac {x}{2}}}{2^{\frac {n}{2}}\cdot\Gamma(\frac {n}{2})}\cdot\frac {(x\cdot z)^{\frac {m}{2}-1}\cdot e^{-\frac {x\cdot z}{2}}}{2^{\frac {m}{2}}\cdot\Gamma(\frac {m}{2})}\operatorname dx$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
