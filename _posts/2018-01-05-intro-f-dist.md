@@ -17,6 +17,20 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >
 >&#10113;the F distribution PDF is expressed in below equality:  
 >$h(f)$=$\frac {\Gamma(\frac {\nu_1+\nu_2}{2})\cdot (\frac {\nu_1}{\nu_2})^{\frac {\nu_1}{2}}}{\Gamma(\frac {\nu_1}{2})\cdot\Gamma(\frac {\nu_2}{2})}\cdot\frac {f^{\frac {\nu_1}{2}-1}}{(1+\frac {\nu_1}{\nu_2}\cdot f)^{\frac {\nu_1+\nu_2}{2}}}$   
+>
+>In the next paragraph, this article would prove &#10113 by means of the joint probability density function in conjunction with the integration by part.  
+
+### The <font color="Red">F</font> Distribution And The Joint PDF
+>This section would like to detail the joint PDF for the <font color="Red">F</font> distribution model.  
+>
+>&#10112;suppose $X$, $Y$ are two <font color="OrangeRed">independent</font> random variables with PDF $f_X(x)$, $f_Y(y)$.  
+>
+>&#10113;let $Z$=$\frac {Y}{X}$, we denote $f_{XY}(x,y)$ to be the PDF of $Z$, where it is also a random variable.  
+>For all $x\in X$, $y\in Y$, $z\in Z$, then we have it that:  
+>$P(\frac {y}{x}\le z)$=$P(y\le z\cdot x)$  
+>Therefore, $F_{XY}(z)$=$\int_0^{\infty}\int_{-\infty}^{z\cdot x}f_{XY}(x,y)\operatorname dy\operatorname dy$  
+>, well, we can treat $Y\in \chi_{\nu_1}^2$, $X\in \chi_{\nu_2}^2$ by intuition.  
+
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
