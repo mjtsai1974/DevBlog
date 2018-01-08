@@ -68,7 +68,10 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >&#10115;because $f_Z(z)$=$f_{XY}(z)$, now we have it that:  
 >$f_Z(z)$=$\frac {m}{n}\int_0^{\infty}x\cdot\frac {x^{\frac {n}{2}-1}\cdot e^{-\frac {x}{2}}}{2^{\frac {n}{2}}\cdot\Gamma(\frac {n}{2})}\cdot\frac {(\frac {m}{n}\cdot x\cdot z)^{\frac {m}{2}-1}\cdot e^{-\frac {\frac {m}{n}\cdot x\cdot z}{2}}}{2^{\frac {m}{2}}\cdot\Gamma(\frac {m}{2})}\operatorname dx$  
 >$\;\;\;\;\;\;\;\;$=$\frac {\frac {m}{n}\cdot(\frac {m}{n}\cdot z)^{\frac {m}{2}-1}}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot 2^{\frac {m+n}{2}}}\cdot\int_0^{\infty}x^{\frac{m+n}{2}-1}\cdot e^{-\frac {x}{2}\cdot(\frac {m}{m}\cdot z+1)}\operatorname dx$  
-
+>
+>&#10116;let $t$=$\frac {x}{2}\cdot(\frac {m}{m}\cdot z+1)$, then we have it that:  
+>$x$=$\frac {2\cdot t}{\frac {m}{m}\cdot z+1}$, $\operatorname dx$=$\frac {2\cdot t}{\frac {m}{m}\cdot z+1}\cdot\operatorname dt$  
+>$f_Z(z)$=$\frac {\frac {m}{n}\cdot(\frac {m}{n}\cdot z)^{\frac {m}{2}-1}}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot 2^{\frac {m+n}{2}}}\cdot\int_0^{\infty}(\frac {2\cdot t}{\frac {m}{m}\cdot z+1})^{\frac{m+n}{2}-1}\cdot e^{-t}\frac {2\cdot t}{\frac {m}{m}\cdot z+1}\cdot\operatorname dt$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
