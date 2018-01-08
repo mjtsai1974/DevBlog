@@ -75,7 +75,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\;\;\;\;\;\;\;\;$=$\frac {\frac {m}{n}\cdot(\frac {m}{n}\cdot z)^{\frac {m}{2}-1}}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot 2^{\frac {m+n}{2}}}\cdot(\frac {2}{\frac {m}{n}\cdot z+1})^{\frac{m+n}{2}}\cdot\int_0^{\infty}t^{\frac {m+n}{2}-1}\cdot e^{-t}\frac {2\cdot t}{\frac {m}{n}\cdot z+1}\cdot\operatorname dt$  
 >$\;\;\;\;\;\;\;\;$=$\frac {\frac {m}{n}\cdot(\frac {m}{n}\cdot z)^{\frac {m}{2}-1}\cdot\Gamma(\frac {m+n}{2})}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot(\frac {m}{n}\cdot z+1)^{\frac{m+n}{2}}}$  
 >$\;\;\;\;\;\;\;\;$=$\frac {(\frac {m}{n})^{\frac {m}{2}}\cdot z^{\frac {m}{2}-1}\cdot\Gamma(\frac {m+n}{2})}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot(\frac {m}{n}\cdot z+1)^{\frac{m+n}{2}}}$  
->, where $X$, $Y$ are the random variables in chi-square PDF with DOF=$n$, $m$ respectively, and recall that $Z$=$\frac {\frac {Y}{m}}{\frac {X}{n}}$  
+>, where $X$, $Y$ are the random variables in chi-square PDF with DOF=$n$, $m$ respectively, and recall that $Z$=$\frac {\frac {Y}{m}}$/${\frac {X}{n}}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
