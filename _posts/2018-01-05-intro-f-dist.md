@@ -43,7 +43,10 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >
 >&#10116;let $X$, $Y$ now be the random variables in chi-square PDF with DOF=$n$, $m$ respectively, and recall that $Z$=$\frac {Y}{X}$, then:  
 >$f_Z(z)$=$\int_0^{\infty}x\cdot\frac {x^{\frac {n}{2}-1}\cdot e^{-\frac {x}{2}}}{2^{\frac {n}{2}}\cdot\Gamma(\frac {n}{2})}\cdot\frac {(x\cdot z)^{\frac {m}{2}-1}\cdot e^{-\frac {x\cdot z}{2}}}{2^{\frac {m}{2}}\cdot\Gamma(\frac {m}{2})}\operatorname dx$  
->$\;\;\;\;\;\;\;\;$=$\frac {z^{\frac {m}{2}-1}}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot 2^{\frac {m+n}{2}}}\cdot\int_0^{\infty}x^{\frac{m+n}{2}-1}\cdot e^{-\frac {x\cdot\(z+1)}{2}}$\operatorname dx$  
+>$\;\;\;\;\;\;\;\;$=$\frac {z^{\frac {m}{2}-1}}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot 2^{\frac {m+n}{2}}}\cdot\int_0^{\infty}x^{\frac{m+n}{2}-1}\cdot e^{-\frac {x\cdot\(z+1)}{2}}\operatorname dx$  
+>
+>&#10117;let $t$=$\frac {x\cdot(z+1)}{2}$, then $\operatorname dt$=$\frac {z+1}{2}\cdot \operatorname dx$, and $x$=$\frac {2\cdot t}{z+1}$  
+>$f_Z(z)$=
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
