@@ -50,6 +50,10 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\;\;\;\;\;\;\;\;$=$\frac {z^{\frac {m}{2}-1}\cdot(\frac {2}{z+1})^{\frac {m+n}{2}}}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot 2^{\frac {m+n}{2}}}\cdot\int_0^{\infty}t^{\frac{m+n}{2}-1}\cdot e^{-t}\operatorname dt$  
 >$\;\;\;\;\;\;\;\;$=$\frac {z^{\frac {m}{2}-1}\cdot\Gamma(\frac {m+n}{2})}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot (z+1)^{\frac {m+n}{2}}}$  
 
+### The <font color="Red">F</font> Distribution PDF Deduction
+>Above section, &#10117; leaves a useful <font color="DeepPink">expression of joint PDF of two chi-square in the form $Z$=$\frac {Y}{X}$</font>, inheriting from it, we will continue to deduce it out for the Z distribution PDF.  
+>
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
