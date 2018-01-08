@@ -59,6 +59,13 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >&#10113;this time, let $y$=$\frac {m}{n}\cdot x\cdot v$, then, $\operatorname dy$=$\frac {m}{n}x\cdot\operatorname dv$:  
 >$F_{XY}(z)$=$\int_{-\infty}^{z}\int_0^{\infty}\frac {m}{n}\cdot x\cdot f_{XY}(x,y)\operatorname dx\operatorname dv$  
 >
+>&#10114;Differentiate $F_{XY}(z)$ by $\operatorname dv$:  
+>$f_{XY}(z)$=$\frac {\operatorname dF_{XY}(z)}{\operatorname dv}$  
+>$\;\;\;\;\;\;\;\;$=$\frac {m}{n}\int_0^{\infty}x\cdot f_{XY}(x,\frac {m}{n}\cdot x\cdot z)\operatorname dx$...take $v=z$  
+>$\;\;\;\;\;\;\;\;$=$\frac {m}{n}\int_0^{\infty}x\cdot f_{X}\cdot f_{Y}(\frac {m}{n}\cdot x\cdot z)\operatorname dx$  
+>...replace $x\cdot z$ by $\frac {m}{n}\cdot x\cdot z$
+>
+>&#10115;because $f_Z(z)$=$f_{XY}(z)$, now we have it that:  
 
 
 <!-- Γ -->
