@@ -31,7 +31,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >Therefore, $F_{XY}(z)$=$\int_0^{\infty}\int_{-\infty}^{z\cdot x}f_{XY}(x,y)\operatorname dy\operatorname dx$  
 >, well, we can treat $Y\in \chi_{\nu_1}^2$, $X\in \chi_{\nu_2}^2$ by intuition, and $F_{XY}(z)$ is the CDF(cumulative distribution function).  
 >
->&#10114;let $y=x\cdot v$, then, $\operatorname dy=x\cdot\operatorname dv$, this is a little utilization of integration by part.  
+>&#10114;let $y$=$x\cdot v$, then, $\operatorname dy$=$x\cdot\operatorname dv$, this is a little utilization of integration by part.  
 >$F_{XY}(z)$=$\int_0^{\infty}\int_{-\infty}^{z}x\cdot f_{XY}(x,y)\operatorname dv\operatorname dx$  
 >$\;\;\;\;\;\;\;\;$=$\int_{-\infty}^{z}\int_0^{\infty}x\cdot f_{XY}(x,y)\operatorname dx\operatorname dv$  
 >
@@ -53,6 +53,13 @@ It would be greatly helpful in the evaluation of the regression model build on y
 ### The <font color="Red">F</font> Distribution PDF Deduction
 >Above section, &#10117; leaves a useful <font color="DeepPink">expression of joint PDF of two chi-square in the form $Z$=$\frac {Y}{X}$</font>, inheriting from it, we will continue to deduce it out for the Z distribution PDF.  
 >
+>&#10112;let $Z$=$\frac {\frac {Y}{m}}{\frac {X}{n}}$ to meet F distribution definition,  then for all $x\in X$, $y\in Y$, $z\in Z$, we have:  
+>$z$=$\frac {y}{x}\cdot\frac {n}{m}$, $y$=$\frac {m}{n}\cdot x\cdot z$  
+>
+>&#10113;this time, let $y$=$\frac {m}{n}\cdot x\cdot v$, then, $\operatorname dy$=$\frac {m}{n}x\cdot\operatorname dv$:  
+>$F_{XY}(z)$=$\int_{-\infty}^{z}\int_0^{\infty}\frac {m}{n}\cdot x\cdot f_{XY}(x,y)\operatorname dx\operatorname dv$  
+>
+
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
