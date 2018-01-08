@@ -46,7 +46,9 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\;\;\;\;\;\;\;\;$=$\frac {z^{\frac {m}{2}-1}}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot 2^{\frac {m+n}{2}}}\cdot\int_0^{\infty}x^{\frac{m+n}{2}-1}\cdot e^{-\frac {x\cdot\(z+1)}{2}}\operatorname dx$  
 >
 >&#10117;let $t$=$\frac {x\cdot(z+1)}{2}$, then $\operatorname dt$=$\frac {z+1}{2}\cdot \operatorname dx$, and $x$=$\frac {2\cdot t}{z+1}$  
->$f_Z(z)$=
+>$f_Z(z)$=$\frac {z^{\frac {m}{2}-1}}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot 2^{\frac {m+n}{2}}}\cdot\int_0^{\infty}(\frac {2\cdot t}{z+1})^{\frac{m+n}{2}-1}\cdot e^{-t}\cdot\frac {2}{z+1}\operatorname dt$  
+>$\;\;\;\;\;\;\;\;$=$\frac {z^{\frac {m}{2}-1}\cdot(\frac {2}{z+1})^{\frac {m+n}{2}}}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot 2^{\frac {m+n}{2}}}\cdot\int_0^{\infty}t^{\frac{m+n}{2}-1}\cdot e^{-t}\operatorname dt$  
+>$\;\;\;\;\;\;\;\;$=$\frac {z^{\frac {m}{2}-1}\cdot\Gamma(\frac {m+n}{2})}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot (z+1)^{\frac {m+n}{2}}}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
