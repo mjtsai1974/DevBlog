@@ -89,7 +89,8 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\Leftrightarrow P\lbrack f(\nu_2,\nu_1)>f_{1-\alpha}(\nu_2,\nu_1)\rbrack$=$1-\alpha$  
 >therefore, we have $f_{1-\alpha}(\nu_2,\nu_1)$=$\frac {1}{f_\alpha(\nu_1,\nu_2)}$  
 >
->&#10114;
+
+### Expect Value And Variance Of <font color="Red">F</font> Distribution
 >
 
 <!-- Γ -->
