@@ -53,7 +53,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 ### The <font color="Red">F</font> Distribution PDF Deduction
 >Above section, &#10117; leaves a useful <font color="DeepPink">expression of joint PDF of two chi-square in the form $Z$=$\frac {Y}{X}$</font>, inheriting from it, we will continue to deduce it out for the Z distribution PDF.  
 >
->&#10112;let $Z$=$\frac {\frac {Y}{m}}{\frac {X}{n}}$ to meet F distribution definition,  then for all $x\in X$, $y\in Y$, $z\in Z$, we have:  
+>&#10112;let $Z$=$\frac {Y}{m}/\frac {X}{n}$ to meet F distribution definition,  then for all $x\in X$, $y\in Y$, $z\in Z$, we have:  
 >$z$=$\frac {y}{x}\cdot\frac {n}{m}$, $y$=$\frac {m}{n}\cdot x\cdot z$  
 >
 >&#10113;this time, let $y$=$\frac {m}{n}\cdot x\cdot v$, then, $\operatorname dy$=$\frac {m}{n}x\cdot\operatorname dv$:  
@@ -75,7 +75,15 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\;\;\;\;\;\;\;\;$=$\frac {\frac {m}{n}\cdot(\frac {m}{n}\cdot z)^{\frac {m}{2}-1}}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot 2^{\frac {m+n}{2}}}\cdot(\frac {2}{\frac {m}{n}\cdot z+1})^{\frac{m+n}{2}}\cdot\int_0^{\infty}t^{\frac {m+n}{2}-1}\cdot e^{-t}\frac {2\cdot t}{\frac {m}{n}\cdot z+1}\cdot\operatorname dt$  
 >$\;\;\;\;\;\;\;\;$=$\frac {\frac {m}{n}\cdot(\frac {m}{n}\cdot z)^{\frac {m}{2}-1}\cdot\Gamma(\frac {m+n}{2})}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot(\frac {m}{n}\cdot z+1)^{\frac{m+n}{2}}}$  
 >$\;\;\;\;\;\;\;\;$=$\frac {(\frac {m}{n})^{\frac {m}{2}}\cdot z^{\frac {m}{2}-1}\cdot\Gamma(\frac {m+n}{2})}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot(\frac {m}{n}\cdot z+1)^{\frac{m+n}{2}}}$  
->, where $X$, $Y$ are the random variables in chi-square PDF with DOF=$n$, $m$ respectively, and recall that $Z$=$\frac {\frac {Y}{m}}{\frac {X}{n}}$  
+>, where $X$, $Y$ are the random variables in chi-square PDF with DOF=$n$, $m$ respectively, and recall that $Z$=$\frac {Y}{m}/\frac {X}{n}$  
+
+### ### The <font color="Red">F</font> Distribution Features
+>&#10112;$f(\nu_1,\nu_2)$=$\frac {\chi_{\nu_1}^2}{\nu_1}/\frac {\chi_{\nu_2}^2}{\nu_2}$=$1/\frac {\frac {\chi_{\nu_2}^2}{\nu_2}}{\frac {\chi_{\nu_1}^2}{\nu_1}}$=$\frac {1}{f(\nu_2,\nu_1)}$  
+>
+>&#10113;
+>
+>&#10114;
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
