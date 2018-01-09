@@ -77,7 +77,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\;\;\;\;\;\;\;\;$=$\frac {(\frac {m}{n})^{\frac {m}{2}}\cdot z^{\frac {m}{2}-1}\cdot\Gamma(\frac {m+n}{2})}{\Gamma(\frac {m}{2})\cdot\Gamma(\frac {n}{2})\cdot(\frac {m}{n}\cdot z+1)^{\frac{m+n}{2}}}$  
 >, where $X$, $Y$ are the random variables in chi-square PDF with DOF=$n$, $m$ respectively, and recall that $Z$=$\frac {Y}{m}/\frac {X}{n}$  
 
-### ### The <font color="Red">F</font> Distribution Features
+### The <font color="Red">F</font> Distribution Features
 >&#10112;$f(\nu_1,\nu_2)$=$\frac {\chi_{\nu_1}^2}{\nu_1}/\frac {\chi_{\nu_2}^2}{\nu_2}$=$1/\frac {\frac {\chi_{\nu_2}^2}{\nu_2}}{\frac {\chi_{\nu_1}^2}{\nu_1}}$=$\frac {1}{f(\nu_2,\nu_1)}$  
 >
 >&#10113;
