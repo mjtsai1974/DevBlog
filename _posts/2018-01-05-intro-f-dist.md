@@ -80,7 +80,10 @@ It would be greatly helpful in the evaluation of the regression model build on y
 ### The <font color="Red">F</font> Distribution Features
 >&#10112;$f(\nu_1,\nu_2)$=$\frac {\chi_{\nu_1}^2}{\nu_1}/\frac {\chi_{\nu_2}^2}{\nu_2}$=$1/\frac {\frac {\chi_{\nu_2}^2}{\nu_2}}{\frac {\chi_{\nu_1}^2}{\nu_1}}$=$\frac {1}{f(\nu_2,\nu_1)}$  
 >
->&#10113;
+>&#10113;$f_{1-\alpha}(\nu_2,\nu_1)$=$\frac {1}{f_{\alpha}(\nu_1,\nu_2)}$, let's see why.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-05-intro-f-dist-prob.png "the F distribution")
+>
+>$\Rightarrow P\lbrack f(\nu_1,\nu_2)<f_\alpha(\nu_1,\nu_2)\rbrack$=$1-\alpha$  
 >
 >&#10114;
 >
