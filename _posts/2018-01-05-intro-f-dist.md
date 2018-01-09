@@ -84,6 +84,10 @@ It would be greatly helpful in the evaluation of the regression model build on y
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-05-intro-f-dist-prob.png "the F distribution")
 >
 >$\Rightarrow P\lbrack f(\nu_1,\nu_2)<f_\alpha(\nu_1,\nu_2)\rbrack$=$1-\alpha$  
+>$\Rightarrow P\lbrack \frac {1}{f(\nu_2,\nu_1)}<f_\alpha(\nu_1,\nu_2)\rbrack$=$1-\alpha$  
+>$\Rightarrow P\lbrack \frac {1}{f_\alpha(\nu_1,\nu_2)}<f(\nu_2,\nu_1)\rbrack$=$1-\alpha$  
+>$\Leftrightarrow P\lbrack f(\nu_2,\nu_1)>f_{1-\alpha}(\nu_2,\nu_1)\rbrack$=$1-\alpha$  
+>therefore, we have $f_{1-\alpha}(\nu_2,\nu_1)$=$\frac {1}{f_\alpha(\nu_1,\nu_2)}$  
 >
 >&#10114;
 >
