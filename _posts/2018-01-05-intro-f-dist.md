@@ -98,8 +98,15 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\;\;\;\;\;\;$=$\frac {\nu_2}{\nu_1}\cdot E\lbrack \chi_{\nu_1}^2\rbrack\cdot E\lbrack \frac {1}{\chi_{\nu_2}^2}\rbrack\$  
 >, where we have $E\lbrack \chi_{\nu_1}^2\rbrack$=$\nu_1$, next for $E\lbrack \frac {1}{\chi_{\nu_2}^2}\rbrack$.  
 >
->&#10113;let $x \in \chi_{\nu_2}^2$,   
+>&#10113;for all $x \in \chi_{\nu_2}^2$,   
 >$E\lbrack \frac {1}{\chi_{\nu_2}^2}\rbrack$=$\int_0^{\infty}\frac {1}{x}\cdot\frac {x^{\frac {\nu_2}{2}-1}\cdot e^{-\frac {x}{\beta}}}{\beta^{\frac {\nu_2}{2}}\cdot\Gamma(\frac {\nu_2}{2})}\operatorname dx$  
+>$\;\;\;\;\;\;$=$\int_0^{\infty}\frac {1}{x}\cdot\frac {x^{\frac {\nu_2}{2}-1}\cdot e^{-\frac {x}{2}}}{2^{\frac {\nu_2}{2}}\cdot\Gamma(\frac {\nu_2}{2})}\operatorname dx$, where $\beta$=$2$  
+>
+>&#10114;to eliminate the complexity and try to express in terms of $\Gamma(\alpha)$,  
+>let $y$=$\frac {x}{2}$, then we have $2\cdot\operatorname dy$=$\operatorname dx$,  
+>$\Rightarrow\int_0^{\infty}\frac {1}{2\cdot y}\cdot\frac {(2\cdot y)^{\frac {\nu_2}{2}-1}\cdot e^{-\frac {x}{2}}\cdot 2}{2^{\frac {\nu_2}{2}}\cdot\Gamma(\frac {\nu_2}{2})}\operatorname dy$  
+>$=\frac {2^{\frac {\nu_2}{2}}-1}{2^{\frac {\nu_2}{2}}\cdot\Gamma(\frac {\nu_2}{2})}\int_0^{\infty}y^{(\frac {\nu_2}{2}-1)-1}\cdot e^{-y}\operatorname dy$  
+>$=$  
 
 ### Variance Of <font color="Red">F</font> Distribution
 >
