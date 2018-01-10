@@ -92,7 +92,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 
 ### Expect Value Of <font color="Red">F</font> Distribution
 >By definition, $F$=$\frac {\chi_{\nu_1}^2}{\nu_1}/\frac {\chi_{\nu_2}^2}{\nu_2}$  
->&#10112;to ask for its expect value:  
+>&#10112;for all $f \in F$, to ask for its expect value:  
 >$E\lbrack f\rbrack$=$E\lbrack \frac {\chi_{\nu_1}^2}{\nu_1}/\frac {\chi_{\nu_2}^2}{\nu_2}\rbrack$  
 >$\;\;\;\;\;\;$=$\frac {\nu_2}{\nu_1}\cdot E\lbrack \frac {\chi_{\nu_1}^2}{\chi_{\nu_2}^2}\rbrack$  
 >$\;\;\;\;\;\;$=$\frac {\nu_2}{\nu_1}\cdot E\lbrack \chi_{\nu_1}^2\rbrack\cdot E\lbrack \frac {1}{\chi_{\nu_2}^2}\rbrack\$  
@@ -109,7 +109,9 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$=\frac {1}{2\cdot\Gamma(\frac {\nu_2}{2})}\cdot\Gamma(\frac {\nu_2}{2}-1)$  
 >$=\frac {\Gamma(\frac {\nu_2}{2}-1)}{2\cdot(\frac {\nu_2}{2}-1)\cdot\Gamma(\frac {\nu_2}{2}-1)}$  
 >$=\frac {1}{\nu_2-2}$  
-
+>
+>Therefore, $E\lbrack f\rbrack$=$\frac {\nu_2}{\nu_1}\cdot\nu_1\cdot\frac {1}{\nu_2-2}$=$\frac {\nu_2}{\nu_2-2}$  
+>
 ### Variance Of <font color="Red">F</font> Distribution
 >
 
