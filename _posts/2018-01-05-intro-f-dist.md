@@ -13,7 +13,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 ### From The Chi-Square Distribution To The <font color="Red">F</font> Distribution
 >The model of F distribution is defined by the combination of two chi-square in ratio expression.  
 >&#10112;the definition is given by:  
->$F$=$\frac {\frac {\chi_{\nu_1}^2}{\nu_1}}{\frac {\chi_{\nu_2}^2}{\nu_2}}$, where $\chi_{\nu_i}^2$ is the chi-square PDF of DOF(degree of freedom) $\nu_i$, for $i=1,2$.  
+>$F$=$\frac {\chi_{\nu_1}^2}{\nu_1}/\frac {\chi_{\nu_2}^2}{\nu_2}$, where $\chi_{\nu_i}^2$ is the chi-square PDF of DOF(degree of freedom) $\nu_i$, for $i=1,2$.  
 >
 >&#10113;the F distribution PDF is expressed in below equality:  
 >$h(f)$=$\frac {\Gamma(\frac {\nu_1+\nu_2}{2})\cdot (\frac {\nu_1}{\nu_2})^{\frac {\nu_1}{2}}}{\Gamma(\frac {\nu_1}{2})\cdot\Gamma(\frac {\nu_2}{2})}\cdot\frac {f^{\frac {\nu_1}{2}-1}}{(1+\frac {\nu_1}{\nu_2}\cdot f)^{\frac {\nu_1+\nu_2}{2}}}$   
@@ -90,7 +90,18 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >therefore, we have $f_{1-\alpha}(\nu_2,\nu_1)$=$\frac {1}{f_\alpha(\nu_1,\nu_2)}$  
 >
 
-### Expect Value And Variance Of <font color="Red">F</font> Distribution
+### Expect Value Of <font color="Red">F</font> Distribution
+>By definition, $F$=$\frac {\chi_{\nu_1}^2}{\nu_1}/\frac {\chi_{\nu_2}^2}{\nu_2}$  
+>&#10112;to ask for its expect value:  
+>$E\lbrack f\rbrack$=$E\lbrack \frac {\chi_{\nu_1}^2}{\nu_1}/\frac {\chi_{\nu_2}^2}{\nu_2}\rbrack$  
+>$\;\;\;\;\;\;$=$\frac {\nu_2}{\nu_1}\cdot E\lbrack \frac {\chi_{\nu_1}^2}{\chi_{\nu_2}^2}\rbrack$  
+>$\;\;\;\;\;\;$=$\frac {\nu_2}{\nu_1}\cdot E\lbrack \chi_{\nu_1}^2\rbrack\cdot E\lbrack \frac {1}{\chi_{\nu_2}^2}\rbrack\$  
+>, where we have $E\lbrack \chi_{\nu_1}^2\rbrack$=$\nu_1$, next for $E\lbrack \frac {1}{\chi_{\nu_2}^2}\rbrack$.  
+>
+>&#10113;let $x \in \chi_{\nu_2}^2$,   
+>$E\lbrack \frac {1}{\chi_{\nu_2}^2}\rbrack$=$\int_0^{\infty}\frac {1}{x}\cdot\frac {x^{\frac {\nu_2}{2}-1}\cdot e^{-\frac {x}{\beta}}}{\beta^{\frac {\nu_2}{2}}\cdot\Gamma(\frac {\nu_2}{2})}\operatorname dx$  
+
+### Variance Of <font color="Red">F</font> Distribution
 >
 
 <!-- Γ -->
