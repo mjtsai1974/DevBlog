@@ -123,12 +123,19 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$=\frac {2^{-r}}{\Gamma(\frac {\nu_2}{2})}\cdot\int_0^{\infty}y^{\frac {\nu_2}{2}-r-1}\cdot e^{-y}\operatorname dy$  
 >$=\frac {2^{-r}}{\Gamma(\frac {\nu_2}{2})}\cdot\Gamma(\frac {\nu_2}{2}-r)$  
 >
-&#10114;for $r=1$, $\mu_1$, we have it that:  
+>&#10114;for $r=1$, $\mu_1$, we have it that:  
 >$E_1\lbrack\frac {1}{\chi_{\nu_2}^2}\rbrack$  
 >$=\mu_1$  
->$=\frac {2^{-r}}{\Gamma(\frac {\nu_2}{2})}\cdot\Gamma(\frac {\nu_2}{2}-1)$  
->$=\frac {2^{-r}}{(\frac {\nu_2}{2}-1)\cdot\Gamma(\frac {\nu_2}{2}-1)}\cdot\Gamma(\frac {\nu_2}{2}-1)$  
+>$=\frac {2^{-1}}{\Gamma(\frac {\nu_2}{2})}\cdot\Gamma(\frac {\nu_2}{2}-1)$  
+>$=\frac {2^{-1}}{(\frac {\nu_2}{2}-1)\cdot\Gamma(\frac {\nu_2}{2}-1)}\cdot\Gamma(\frac {\nu_2}{2}-1)$  
 >$=\frac {1}{\nu_2-2}$  
+>
+>&#10115;for $r=2$, $\mu_2$, we have it that:  
+>$E_2\lbrack\frac {1}{\chi_{\nu_2}^2}\rbrack$  
+>$=\mu_2$  
+>$=\frac {2^{-2}}{\Gamma(\frac {\nu_2}{2})}\cdot\Gamma(\frac {\nu_2}{2}-2)$  
+>$=\frac {2^{-2}}{(\frac {\nu_2}{2}-1)\cdot(\frac {\nu_2}{2}-2)\cdot\Gamma(\frac {\nu_2}{2}-2)}\cdot\Gamma(\frac {\nu_2}{2}-2)$  
+
 
 ### Variance Of The <font color="Red">F</font> Distribution
 >
