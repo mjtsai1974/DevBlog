@@ -118,7 +118,8 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$E_r\lbrack\frac {1}{\chi_{\nu_2}^2}\rbrack$=$\int_0^{\infty}\frac {1}{x^r}\cdot\frac {x^{\frac {\nu_2}{2}-1}\cdot e^{-\frac {x}{2}}}{2^{\frac {\nu_2}{2}}\cdot\Gamma(\frac {\nu_2}{2})}\operatorname dx$  
 >
 >&#10113;let $y$=$\frac {x}{2}$, then $x$=$2\cdot y$, $\operatorname dx=2\cdot\operatorname dy$  
->$\Rightarrow=\int_0^{\infty}\frac {1}{(2\cdot y)^r}\cdot\frac {(2\cdot y)^{\frac {\nu_2}{2}-1}\cdot e^{-y}}{2^{\frac {\nu_2}{2}}\cdot\Gamma(\frac {\nu_2}{2})}\cdot 2\cdot\operatorname dy$  
+>$\Rightarrow\int_0^{\infty}\frac {1}{(2\cdot y)^r}\cdot\frac {(2\cdot y)^{\frac {\nu_2}{2}-1}\cdot e^{-y}}{2^{\frac {\nu_2}{2}}\cdot\Gamma(\frac {\nu_2}{2})}\cdot 2\cdot\operatorname dy$  
+>$=\frac {2\cdot 2^{-r}\cdot 2^{\frac {\nu_2}{2}-1}}{2^{\frac {\nu_2}{2}}\cdot\Gamma(\frac {\nu_2}{2})}\cdot\int_0^{\infty}y^{-r}\cdot y^{\frac {\nu_2}{2}-1}\cdot e^{-y}\operatorname dy$  
 
 ### Variance Of The <font color="Red">F</font> Distribution
 >
