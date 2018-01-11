@@ -141,7 +141,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 ### Variance Of The <font color="Red">F</font> Distribution
 >Succeeding to results of moments from above paragraph, we proceed to ask for the variance of <font color="Red">F</font> distribution.  Please recall that we have the 2nd ordinary moment of the chi-square $E_2\lbrack(\chi_{\nu}^2)^2\rbrack=\nu^2+2\cdot\nu$.  
 >
->$Var\lbrack f\rbrack$=$E\lbrack f^2\rbrack$-$E^2\lbrack f\rbrack$, next to figure out $E\lbrack f^2\rbrack$  
+>&#10112;$Var\lbrack f\rbrack$=$E\lbrack f^2\rbrack$-$E^2\lbrack f\rbrack$, next to figure out $E\lbrack f^2\rbrack$  
 >
 >$E\lbrack f^2\rbrack$  
 >$=E\lbrack (\frac {\chi_{\nu_1}^2}{\nu_1}/\frac {\chi_{\nu_2}^2}{\nu_2})^2\rbrack$  
@@ -150,11 +150,11 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$=(\frac {\nu_2}{\nu_1})^2\cdot(\nu_1^2+2\cdot\nu_1)\cdot\frac {1}{(\nu_2-2)\cdot(\nu_2-4)}$  
 >$=\frac {\nu_2^2}{\nu_1}\cdot(\nu_1+2)\cdot\frac {1}{(\nu_2-2)\cdot(\nu_2-4)}$  
 >
->Therefore, the variance could now be expressed:  
+>&#10113;therefore, the variance could now be expressed:  
 >$Var\lbrack f\rbrack$  
 >$=E\lbrack f^2\rbrack$-$E^2\lbrack f\rbrack$  
 >$=\frac {\nu_2^2}{\nu_1}\cdot(\nu_1+2)\cdot\frac {1}{(\nu_2-2)\cdot(\nu_2-4)}$-$(\frac {\nu_2}{\nu_2-2})^2$  
->$=\frac {\nu_2^2\cdot(\nu_1+2)\cdot(\nu_2-2)}{\nu_1\cdot(\nu_2-2)^2\cdot(\nu_2-4)}$-$\frac {\nu_1\cdot\nu_2^2\cdot(\nu_2-4)}{\nu_1\cdot(\nu_2-2)^2\cdot(\nu_2-4)}$
+>$=\frac {\nu_2^2\cdot(\nu_1+2)\cdot(\nu_2-2)}{\nu_1\cdot(\nu_2-2)^2\cdot(\nu_2-4)}$-$\frac {\nu_1\cdot\nu_2^2\cdot(\nu_2-4)}{\nu_1\cdot(\nu_2-2)^2\cdot(\nu_2-4)}$  
 >$=\frac {2\cdot\nu_2^2\cdot(\nu_1+\nu_2-2)}{\nu_1\cdot(\nu_2-2)^2\cdot(\nu_2-4)}$  
 >, where <font color="DeepPink">$\nu_2>4$</font> is the condition, it must hold!!!
 
