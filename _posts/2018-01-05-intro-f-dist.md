@@ -113,7 +113,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >Therefore, $E\lbrack f\rbrack$=$\frac {\nu_2}{\nu_1}\cdot\nu_1\cdot\frac {1}{\nu_2-2}$=$\frac {\nu_2}{\nu_2-2}$  
 
 ### Moments Of The <font color="Red">F</font> Distribution
->Before the variance of <font color="Red">F</font> distribution, by using the k-th ordinary moment could we speed up and be recalled that we have used it in [the article of chi-square distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/03/intro-chi-square-dist/).  
+>Before the variance of <font color="Red">F</font> distribution, <font color="DeepSkyBlue">by using the k-th ordinary moment could we speed up</font> and be recalled that we have used it in [the article of chi-square distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/03/intro-chi-square-dist/).  
 >&#10112;for all $x \in \chi_{\nu_2}^2$  
 >$E_r\lbrack\frac {1}{\chi_{\nu_2}^2}\rbrack$=$\int_0^{\infty}\frac {1}{x^r}\cdot\frac {x^{\frac {\nu_2}{2}-1}\cdot e^{-\frac {x}{2}}}{2^{\frac {\nu_2}{2}}\cdot\Gamma(\frac {\nu_2}{2})}\operatorname dx$  
 >
@@ -139,7 +139,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$=\frac {1}{(\nu_2-2)\cdot(\nu_2-4)}$  
 
 ### Variance Of The <font color="Red">F</font> Distribution
->Succeeding to results of moments from above paragraph, we proceed to ask for the variance of <font color="Red">F</font> distribution.  Please recall that we have the 2nd ordinary moment of the chi-square $E_2\lbrack(\chi_{\nu}^2)^2\rbrack$=$\nu^2+2\cdot\nu$.  
+>Succeeding to results of moments from above paragraph, we proceed to ask for the variance of <font color="Red">F</font> distribution.  Please recall that we have the 2nd ordinary moment of the chi-square $E_2\lbrack(\chi_{\nu}^2)^2\rbrack=\nu^2+2\cdot\nu$.  
 >
 >$Var\lbrack f\rbrack$=$E\lbrack f^2\rbrack$-$E^2\lbrack f\rbrack$, next to figure out $E\lbrack f^2\rbrack$  
 >
@@ -147,6 +147,16 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$=E\lbrack (\frac {\chi_{\nu_1}^2}{\nu_1}/\frac {\chi_{\nu_2}^2}{\nu_2})^2\rbrack$  
 >$=(\frac {\nu_2}{\nu_1})^2\cdot E\lbrack (\frac {\chi_{\nu_1}^2}{\chi_{\nu_2}^2})^2\rbrack$  
 >$=(\frac {\nu_2}{\nu_1})^2\cdot E\lbrack (\chi_{\nu_1}^2)^2\rbrack\cdot E\lbrack (\frac {1}{\chi_{\nu_2}^2})^2\rbrack$  
+>$=(\frac {\nu_2}{\nu_1})^2\cdot(\nu_1^2+2\cdot\nu_1)\cdot\frac {1}{(\nu_2-2)\cdot(\nu_2-4)}$  
+>$=\frac {\nu_2^2}{\nu_1}\cdot(\nu_1+2)\cdot\frac {1}{(\nu_2-2)\cdot(\nu_2-4)}$  
+>
+>Therefore, the variance could now be expressed:  
+>$Var\lbrack f\rbrack$  
+>$=E\lbrack f^2\rbrack$-$E^2\lbrack f\rbrack$  
+>$=\frac {\nu_2^2}{\nu_1}\cdot(\nu_1+2)\cdot\frac {1}{(\nu_2-2)\cdot(\nu_2-4)}$-$(\frac {\nu_2}{\nu_2-2})^2$  
+>$=\frac {\nu_2^2\cdot(\nu_1+2)\cdot(\nu_2-2)}{\nu_1\cdot(\nu_2-2)^2\cdot(\nu_2-4)}$-$\frac {\nu_1\cdot\nu_2^2\cdot(\nu_2-4)}{\nu_1\cdot(\nu_2-2)^2\cdot(\nu_2-4)}$
+>$=\frac {2\cdot\nu_2^2\cdot(\nu_1+\nu_2-2)}{\nu_1\cdot(\nu_2-2)^2\cdot(\nu_2-4)}$  
+>, where <font color="DeepPink">$\nu_2>4$</font> is the condition, it must hold!!!
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
