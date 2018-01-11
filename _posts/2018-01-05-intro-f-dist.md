@@ -135,7 +135,8 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$=\mu_2$  
 >$=\frac {2^{-2}}{\Gamma(\frac {\nu_2}{2})}\cdot\Gamma(\frac {\nu_2}{2}-2)$  
 >$=\frac {2^{-2}}{(\frac {\nu_2}{2}-1)\cdot(\frac {\nu_2}{2}-2)\cdot\Gamma(\frac {\nu_2}{2}-2)}\cdot\Gamma(\frac {\nu_2}{2}-2)$  
-
+>$=\frac {1}{2^2\cdot\frac {\nu_2-2}{2})\cdot(\frac {\nu_2-4}{2})}$  
+>$=\frac {1}{(\nu_2-2)\cdot(\nu_2-4)}$  
 
 ### Variance Of The <font color="Red">F</font> Distribution
 >
