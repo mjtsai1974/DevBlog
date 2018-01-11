@@ -120,6 +120,15 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >&#10113;let $y$=$\frac {x}{2}$, then $x$=$2\cdot y$, $\operatorname dx=2\cdot\operatorname dy$  
 >$\Rightarrow\int_0^{\infty}\frac {1}{(2\cdot y)^r}\cdot\frac {(2\cdot y)^{\frac {\nu_2}{2}-1}\cdot e^{-y}}{2^{\frac {\nu_2}{2}}\cdot\Gamma(\frac {\nu_2}{2})}\cdot 2\cdot\operatorname dy$  
 >$=\frac {2\cdot 2^{-r}\cdot 2^{\frac {\nu_2}{2}-1}}{2^{\frac {\nu_2}{2}}\cdot\Gamma(\frac {\nu_2}{2})}\cdot\int_0^{\infty}y^{-r}\cdot y^{\frac {\nu_2}{2}-1}\cdot e^{-y}\operatorname dy$  
+>$=\frac {2^{-r}}{\Gamma(\frac {\nu_2}{2})}\cdot\int_0^{\infty}y^{\frac {\nu_2}{2}-r-1}\cdot e^{-y}\operatorname dy$  
+>$=\frac {2^{-r}}{\Gamma(\frac {\nu_2}{2})}\cdot\Gamma(\frac {\nu_2}{2}-r)$  
+>
+&#10114;for $r=1$, $\mu_1$, we have it that:  
+>E_1\lbrack\frac {1}{\chi_{\nu_2}^2}\rbrack$  
+>$=\mu_1$  
+>$=\frac {2^{-r}}{\Gamma(\frac {\nu_2}{2})}\cdot\Gamma(\frac {\nu_2}{2}-1)$  
+>$=\frac {2^{-r}}{(\frac {\nu_2}{2}-1)\cdot\Gamma(\frac {\nu_2}{2}-1)}\cdot\Gamma(\frac {\nu_2}{2}-1)$  
+>$=\frac {1}{\nu_2-2}$  
 
 ### Variance Of The <font color="Red">F</font> Distribution
 >
