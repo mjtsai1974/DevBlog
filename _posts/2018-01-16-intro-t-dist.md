@@ -43,9 +43,12 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >&#10113;express the joint PDF in below form:  
 >$f_{Z,\chi_{\nu}^2}(z,x)$=$f_Z(z)\cdot f_{\chi_{\nu}^2}(x)$, where $z\in Z$, $x\in X$  
 >$\Rightarrow F_{Z,\chi_{\nu}^2}(z,x)$=$\int_{-\infty}^{\infty}\int_{0}^{\infty}f_Z(z)\cdot f_{X}(x)\operatorname dx\operatorname dz$  
->For the simplicity of notation, we use $f_{X}(x)$ for $f_{\chi_{\nu}^2}(x)$, since $X \sim\chi_{\nu}^2$.  
+>For the simplicity of notation, we use $f_{X}(x)$ for $f_{\chi_{\nu}^2}(x)$, since $X \sim\chi_{\nu}^2$, and the $F_{Z,\chi_{\nu}^2}(z,x)$ is the CDF(cumulative distributed function).  
 >
->&#10114;
+>&#10114;by the definition of $T$=$\frac {Z}{\sqrt {\frac {\chi_{n-1}^2}{n-1}}}$  
+>Let <font color="DeepSkyBlue">$t$=$z$/$\sqrt\frac {x}{\nu}$</font>, and, <font color="OrangeRed">why we use $x$, not $x^2$?</font>  
+>Be noted that <font color="DeepPink">$x$ is one sample distributed in $\chi_{\nu}^2$</font>.  Don't get confused!!  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
