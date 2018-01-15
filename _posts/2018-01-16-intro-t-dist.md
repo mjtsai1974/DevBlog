@@ -38,9 +38,11 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >proof:  
 >&#10112;please recall that $T$=$\frac {Z}{\sqrt {\frac {\chi_{n-1}^2}{n-1}}}$, and we learn the deduction of [the F distribution joint PDF]({{ site.github.repo }}{{ site.baseurl }}/2018/01/05/intro-f-dist/).  
 >Take $f_Z(z)$=$\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac {z^2}{2}}$, where $-\infty<z<\infty$, $Z\sim ɸ(0,1)$.  
->Take $f_{\chi_{\nu}^2}(x)$=$\frac {x^{\frac {\nu}{2}-1}}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\cdot e^{\frac {x}{2}}$, where $0<x<\infty$, $X \sim\chi_{\nu}^2$.  
+>Take $f_{\chi_{\nu}^2}(x)$=$\frac {x^{\frac {\nu}{2}-1}}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\cdot e^{-\frac {x}{2}}$, where $0<x<\infty$, $X \sim\chi_{\nu}^2$.  
 >
->&#1011;
+>&#10113;express the joint PDF in below form:  
+>$f_{Z,\chi_{\nu}^2}(z,x)$=$f_Z(z)\cdot f_{\chi_{\nu}^2$  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
