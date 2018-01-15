@@ -6,7 +6,7 @@ title: Introduction To The t Distribution
 ## Prologue To The <font color="SpringGreen">t</font> Distribution
 <p class="message">
 In probability theory and statistics, base on the most fundamental gamma distribution, <font color="SpringGreen">t</font> distribution is one of the many models of distributions further developed, furthermore, its definition is based on the central limit theorem.  
-With the basic realization of gamma, chi-square distributions, we could also treat the <font color="SpringGreen">t</font> distribution a special jointed case of standard normal distribution and the chi-square distribution.  
+With the basic realization of gamma, chi-square distributions, we could also treat the <font color="SpringGreen">t</font> distribution a special <font color="DeepSkyBlue">jointed case of standard normal distribution and the chi-square</font> distribution.  
 It would be greatly helpful in the evaluation of the regression model build on your hypothesis, the power of test for the precision in the machine learning results.   
 </p>
 
