@@ -15,7 +15,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >&#10112;$S$ is the sample deviation.  
 >&#10113;$\sigma$ is the population deviation.  
 >
->After experiments over so many years, statisticians have it that when sample size is less than 30, <font color="DimGray">$\frac {\overline {X_n}-\mu}{\delta/\sqrt n}\not\sim ɸ(0,\;1)$</font> as a conclusion, for $<30$, it would be insufficient the quantity of sample size to be distributed in normal distribution.  
+>After experiments over so many years, statisticians have it that when sample size is less than 30, <font color="RosyBrown">$\frac {\overline {X_n}-\mu}{\delta/\sqrt n}\not\sim ɸ(0,\;1)$</font> as a conclusion, for $<30$, it would be insufficient the quantity of sample size to be distributed in normal distribution.  
 >
 >That's why we need to have <font color="SpringGreen">t</font> distribution, by usual, we take $T=\frac {\overline {X_n}_n-\mu}{S/\sqrt n}$.  
 
@@ -42,7 +42,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 <!-- <font color="Green">new alpha</font> -->
 
 <!-- <font color="DeepPink">positive conclusion, finding</font> -->
-<!-- <font color="DimGray">negative conclusion, finding</font> -->
+<!-- <font color="RosyBrown">negative conclusion, finding</font> -->
 
 <!-- <font color="#00ADAD">policy</font> -->
 <!-- <font color="#6100A8">full observable</font> -->
