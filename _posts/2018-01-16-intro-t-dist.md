@@ -21,10 +21,14 @@ It would be greatly helpful in the evaluation of the regression model build on y
 
 ### Definition Of The <font color="Red">t</font> Distribution
 >Let T to be a random variable, expand from where it is defined:  
->$T$=$\frac {\overline {X_n}_n-\mu}{S/\sqrt n}$  
->$\;\;$=$\frac {\overline {X_n}_n-\mu}{\sigma/\sqrt n}$/$\frac {S/\sqrt n}{\sigma/\sqrt n}$  
+>$T$=$\frac {\overline {X_n}-\mu}{S/\sqrt n}$  
+>$\;\;$=$\frac {\overline {X_n}-\mu}{\sigma/\sqrt n}$/$\frac {S/\sqrt n}{\sigma/\sqrt n}$  
 >$\;\;$=$\frac {Z}{S/\sigma}$, where $Z\sim ɸ(0,1)$  
->$\;\;$=$\frac {Z}{\sqrt {\frac {S^2}{\sigma^2}}}$  
+>$\;\;$=$\frac {Z}{\sqrt {S^2/\sigma^2}}$  
+>$\;\;$=$\frac {Z}{\sqrt {\frac {\chi_{n-1}^2}{n-1}}}$, where we have:  
+>&#10112;$\chi_{n-1}^2$=$(n-1)\cdot S^2$/$\sigma^2$  
+>&#10113;$n-1$ is the degree of freedom.  
+
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
