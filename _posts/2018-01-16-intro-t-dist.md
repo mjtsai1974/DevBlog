@@ -6,7 +6,7 @@ title: Introduction To The t Distribution
 ## Prologue To The <font color="Red">t</font> Distribution
 <p class="message">
 In probability theory and statistics, base on the most fundamental gamma distribution, <font color="Red">t</font> distribution is one of the many models of distributions further developed, furthermore, its definition is based on the central limit theorem.  
-With the basic realization of gamma, chi-square distributions, we could also treat the <font color="Red">t</font> distribution a special <font color="DeepSkyBlue">jointed case of standard normal distribution and the chi-square</font> distribution.  
+With the basic realization of gamma, chi-square distributions, we could also treat the <font color="Red">t</font> distribution a special <font color="DeepSkyBlue">joint case of standard normal distribution and the chi-square</font> distribution.  
 It would be greatly helpful in the evaluation of the regression model build on your hypothesis, the power of test for the precision in the machine learning results.   
 </p>
 
@@ -31,7 +31,16 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >&#10113;$n-1$ is the degree of freedom.  
 
 ### The <font color="Red">t</font> Distribution PDF and Proof
+>The PDF of <font color="Red">t</font> distribution is given by:  
+>$f(t)$=$\frac {\Gamma(\frac {\nu+1}{2})}{\sqrt {\pi\cdot\nu}\cdot\Gamma(\frac {\nu}{2})}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}$,  
+>where $\nu$ is the degree of freedom, $-\infty<t<\infty$.  
 >
+>proof:  
+>&#10112;please recall that $T$=$\frac {Z}{\sqrt {\frac {\chi_{n-1}^2}{n-1}}}$, and we learn the deduction of [the F distribution joint PDF]({{ site.github.repo }}{{ site.baseurl }}/2018/01/05/intro-f-dist/).  
+>Take $f_Z(z)$=$\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac {z^2}{2}}$, where $-\infty<z<\infty$, $Z\sim ɸ(0,1)$.  
+>Take $f_{\chi_{\nu}^2}(x)$=$\frac {x^{\frac {\nu}{2}-1}}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\cdot e^{\frac {x}{2}}$, where $0<x<\infty$, $X \sim\chi_{\nu}^2$.  
+>
+>&#1011;
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
