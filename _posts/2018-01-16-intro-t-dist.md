@@ -11,7 +11,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 </p>
 
 ### Why Do We Need The <font color="SpringGreen">t</font> Distribution?
->As we know that <font color="DeepPink">$\frac {\overline {X_n}-\mu}{\delta/\sqrt n}\sim ɸ(0,\;1)$</font>, by the <font color="OrangeRed">central limit theorem</font>, when $n\rightarrow\infty$, the term $\frac {{\overline {X_n}}-\mu}{S/\sqrt n}$ approximates $\frac {\overline {X_n}-\mu}{\sigma/\sqrt n}$, where  
+>As we know that <font color="DeepPink">$\frac {\overline {X_n}-\mu}{\sigma/\sqrt n}\sim ɸ(0,\;1)$</font>, by the <font color="OrangeRed">central limit theorem</font>, when $n\rightarrow\infty$, the term $\frac {\overline {X_n}-\mu}{S/\sqrt n}$ approximates $\frac {\overline {X_n}-\mu}{\sigma/\sqrt n}$, where  
 >&#10112;$S$ is the sample deviation.  
 >&#10113;$\sigma$ is the population deviation.  
 >
