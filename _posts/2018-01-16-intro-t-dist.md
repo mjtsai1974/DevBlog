@@ -41,7 +41,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >Take $f_{\chi_{\nu}^2}(x)$=$\frac {x^{\frac {\nu}{2}-1}}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\cdot e^{-\frac {x}{2}}$, where $0<x<\infty$, $X \sim\chi_{\nu}^2$.  
 >
 >&#10113;express the joint PDF in below form:  
->$f_{Z,\chi_{\nu}^2}(z,x)$=$f_Z(z)\cdot f_{\chi_{\nu}^2$  
+>$f_{Z,\chi_{\nu}^2}(z,x)$=$f_Z(z)\cdot f_{\chi_{\nu}^2}$, where $z\in Z$, $x\in X$  
 >
 
 <!-- Γ -->
