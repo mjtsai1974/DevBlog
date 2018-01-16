@@ -39,6 +39,11 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$=\int_{0}^{1}w^{x-1}\cdot(1-w)^{y+1}\cdot(1-w)^{-2}\operatorname dw$  
 >$=\int_{0}^{1}w^{x-1}\cdot(1-w)^{y-1}\operatorname dw$  
 >
+>In some textbooks or web articles, they intend to use the form:  
+>$\beta(x,y)$=$\int_{0}^{1}t^{x}\cdot(1-t)^{y}\operatorname dt$  
+>The tiny difference mainly in the input parameters, $x\ge 1$, $y\ge 1$.  
+>
+
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
