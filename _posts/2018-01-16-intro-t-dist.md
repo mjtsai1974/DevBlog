@@ -32,7 +32,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 
 ### The <font color="Red">t</font> Distribution PDF and Proof
 >The PDF of <font color="Red">t</font> distribution is given by:  
->$f(t)$=$\frac {\Gamma(\frac {\nu+1}{2})}{\sqrt {\pi\cdot\nu}\cdot\Gamma(\frac {\nu}{2})}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}$,  
+>$f_{T}(t)$=$\frac {\Gamma(\frac {\nu+1}{2})}{\sqrt {\pi\cdot\nu}\cdot\Gamma(\frac {\nu}{2})}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}$,  
 >where $\nu$ is the degree of freedom, $-\infty<t<\infty$.  
 >
 >proof:  
