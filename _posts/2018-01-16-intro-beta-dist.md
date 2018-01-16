@@ -29,11 +29,13 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\Rightarrow \operatorname dt$=$(1+t)^{2}\cdot\operatorname dw$  
 >
 >&#10114;<font color="DeepPink">$\lim_{t\rightarrow\infty}\frac t{1+t}=1$</font>, therefore <font color="DeepSkyBlue">$\int_{0}^{\infty}\operatorname dt$ transforms to $\int_{0}^{1}\operatorname dw$ is reasonable</font>, it says that integration from $0$ to $\infty$ could be changed to integration from $0$ to $1$.  
+>
 >$\int_{0}^{\infty}(\frac {t}{1+t})^{x-1}\cdot(\frac {1}{1+t})^{y+1}$  
 >$=\int_{0}^{1}w^{x-1}\cdot(1-w)^{y+1}\cdot(1+t)^{2}\operatorname dw$  
 >
 >, where $1-w$=$(1+t)^{-1}$, and we have it that:  
->$(1+t)^{2}$=$((1+t)^{-1})^{-2}$=$(1-w)^{-2}$, therefore,  
+>$(1+t)^{2}$=$((1+t)^{-1})^{-2}$=$(1-w)^{-2}$  
+>therefore,  
 >$=\int_{0}^{1}w^{x-1}\cdot(1-w)^{y+1}\cdot(1-w)^{-2}\operatorname dw$  
 >$=\int_{0}^{1}w^{x-1}\cdot(1-w)^{y-1}\operatorname dw$  
 >
