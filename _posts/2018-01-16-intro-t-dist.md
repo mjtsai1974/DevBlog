@@ -17,7 +17,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >
 >After experiments over so many years, statisticians have it that when sample size is less than 30, <font color="RosyBrown">$\frac {\overline {X_n}-\mu}{S/\sqrt n}\not\sim ɸ(0,1)$</font> as a conclusion, for $n<30$, it would be insufficient the quantity of sample size to be distributed in normal distribution.  
 >
->That's why we need to have <font color="Red">t</font> distribution, by usual, we take $T$=$\frac {\overline {X_n}_n-\mu}{S/\sqrt n}$.  
+>That's why we need to have <font color="Red">t</font> distribution, by usual, we take $T$=$\frac {\overline {X_n}-\mu}{S/\sqrt n}$.  
 
 ### Expand The Definition Of The <font color="Red">t</font> Distribution
 >Let T to be a random variable, expand from where it is defined:  
@@ -79,6 +79,8 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >
 >After the deduction, we finally have it that:  
 >$f_{T}(t)$=$\frac {\Gamma(\frac {\nu+1}{2})}{\sqrt {\pi\cdot\nu}\cdot\Gamma(\frac {\nu}{2})}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}$  
+
+<!-- to be conti with E[t], Var[t] -->
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
