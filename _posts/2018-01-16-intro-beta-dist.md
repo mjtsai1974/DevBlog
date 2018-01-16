@@ -22,7 +22,11 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$=\int_{0}^{\infty}t^{x-1}\cdot\(frac {1}{1+t})^{x+y}\operatorname dt$  
 >$=\int_{0}^{\infty}(\frac {t}{1+t})^{x-1}\cdot(\frac {1}{1+t})^{y+1}$
 >
->&#10113;
+>&#10113;take $w$=$\frac {t}{1+t}$, then $1-w$=$\frac {1}{1+t}$  
+>$w$=$1-\frac {1}{1+t}$=$1-(1+t)^{-1}$  
+>$\Rightarrow\frac {\operatorname dw}{\operatorname dt}$=$(\frac {1}{1+t})^{2}$  
+>$\Rightarrow \operatorname dw$=$(\frac {1}{1+t})^{2}\cdot\operatorname dt$=$(1+t)^{-2}\cdot\operatorname dt$  
+>$\Rightarrow \operatorname dt$=$(1+t)^{2}\cdot\operatorname dw$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
