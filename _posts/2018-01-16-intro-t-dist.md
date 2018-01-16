@@ -65,17 +65,20 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >
 >$F_{T,\chi_{\nu}^2}(t,x)$  
 >$=\frac {1}{\sqrt {2\cdot\pi}\cdot\sqrt\nu}\cdot\frac {1}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\int_{-\infty}^{\infty}\int_{0}^{\infty}(\frac {2\cdot\nu}{t^2+\nu}\cdot w)^{\frac {\nu+1}{2}-1}\cdot e^{-w}\cdot\frac {2\cdot\nu}{t^2+\nu}\cdot\operatorname dw\operatorname dt$  
->$=\frac {1}{\sqrt {2\cdot\pi}\cdot\sqrt\nu}\cdot\frac {1}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\cdot\Gamma(\frac {\nu+1}{2})\int_{-\infty}^{\infty}(\frac {2\cdot\nu}{t^2+\nu})^{\frac {\nu+1}{2}-1}\operatorname dt$  
+>$=\frac {1}{\sqrt {2\cdot\pi}\cdot\sqrt\nu}\cdot\frac {1}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\cdot\Gamma(\frac {\nu+1}{2})\int_{-\infty}^{\infty}(\frac {2\cdot\nu}{t^2+\nu})^{\frac {\nu+1}{2}}\operatorname dt$  
 >, where $\Gamma(\frac {\nu+1}{2})$=$\int_{0}^{\infty}e^{-w}\cdot w^{\frac {\nu+1}{2}-1}\operatorname dw$  
->$=\frac {1}{\sqrt {2\cdot\pi}\cdot\sqrt\nu}\cdot\frac {1}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\cdot\Gamma(\frac {\nu+1}{2})\int_{-\infty}^{\infty}(\frac {t^2+\nu}{2\cdot\nu})^{-\frac {\nu+1}{2}-1}\operatorname dt$  
+>$=\frac {1}{\sqrt {2\cdot\pi}\cdot\sqrt\nu}\cdot\frac {1}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\cdot\Gamma(\frac {\nu+1}{2})\int_{-\infty}^{\infty}(\frac {t^2+\nu}{2\cdot\nu})^{-\frac {\nu+1}{2}}\operatorname dt$  
 >
 >&#10117;simplify the notation from $F_{T,\chi_{\nu}^2}(t,x)$ to $F_{T}(t)$, then:  
 >$F_{T,\chi_{\nu}^2}(t,x)$  
 >$=F_{T}(t)$  
->$=\frac {1}{\sqrt {2\cdot\pi}\cdot\sqrt\nu}\cdot\frac {1}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\cdot\Gamma(\frac {\nu+1}{2})\int_{-\infty}^{\infty}(\frac {t^2+\nu}{2\cdot\nu})^{-\frac {\nu+1}{2}-1}\operatorname dt$  
+>$=\frac {1}{\sqrt {2\cdot\pi}\cdot\sqrt\nu}\cdot\frac {1}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\cdot\Gamma(\frac {\nu+1}{2})\int_{-\infty}^{\infty}(\frac {t^2+\nu}{2\cdot\nu})^{-\frac {\nu+1}{2}}\operatorname dt$  
 >
 >$f_{T}(t)$=$\frac {\operatorname dF_{T}(t)}{\operatorname dt}$  
->$=\frac {1}{\sqrt {2\cdot\pi}\cdot\sqrt\nu}\cdot\frac {1}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\cdot\Gamma(\frac {\nu+1}{2})\cdot (\frac {t^2+\nu}{2\cdot\nu})^{-\frac {\nu+1}{2}-1}$  
+>$=\frac {1}{\sqrt {2\cdot\pi}\cdot\sqrt\nu}\cdot\frac {1}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\cdot\Gamma(\frac {\nu+1}{2})\cdot (\frac {t^2+\nu}{2\cdot\nu})^{-\frac {\nu+1}{2}}$  
+>
+>After the deduction, we finally have it that:  
+>$f_{T}(t)$=$\frac {\Gamma(\frac {\nu+1}{2})}{\sqrt {\pi\cdot\nu}\cdot\Gamma(\frac {\nu}{2})}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
