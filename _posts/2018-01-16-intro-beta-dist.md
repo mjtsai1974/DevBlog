@@ -34,8 +34,8 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >
 >, where $1-w$=$(1+t)^{-1}$, and we have it that:  
 >$(1+t)^{2}$=$((1+t)^{-1})^{-2}$=$(1-w)^{-2}$, therefore,  
->$\Rightarrow\int_{0}^{1}w^{x-1}\cdot(1-w)^{y+1}\cdot(1-w)^{-2}\operatorname dw$  
->$\Rightarrow\int_{0}^{1}w^{x-1}\cdot(1-w)^{y-1}\operatorname dw$  
+>$=\int_{0}^{1}w^{x-1}\cdot(1-w)^{y+1}\cdot(1-w)^{-2}\operatorname dw$  
+>$=\int_{0}^{1}w^{x-1}\cdot(1-w)^{y-1}\operatorname dw$  
 >
 
 <!-- Γ -->
