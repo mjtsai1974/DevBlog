@@ -57,6 +57,14 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$=\int_{-\infty}^{\infty}\int_{0}^{\infty}f_Z(\frac {t\cdot\sqrt x}{\sqrt \nu})\cdot f_{X}(x)\operatorname dx\frac {\sqrt x}{\sqrt \nu}\cdot\operatorname dt$  
 >$=\int_{-\infty}^{\infty}\int_{0}^{\infty}\frac {1}{\sqrt {2\cdot\pi}}\cdot e^{-\frac {t^2}{2}\cdot\frac {x}{\nu}}\cdot\frac {x^{\frac {\nu}{2}-1}\cdot e^{-\frac {x}{2}}}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\operatorname dx\frac {\sqrt x}{\sqrt \nu}\cdot\operatorname dt$  
 >$=\frac {1}{\sqrt {2\cdot\pi}\cdot\sqrt\nu}\cdot\frac {1}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\int_{-\infty}^{\infty}\int_{0}^{\infty}x^{\frac {\nu+1}{2}-1}\cdot e^{-(\frac {t^2}{2}\cdot\frac {x}{\nu}+\frac {x}{2})}\operatorname dx\operatorname dt$  
+>
+>&#10116;let $w$=$\frac {t^2}{2}\cdot\frac {x}{\nu}+\frac {x}{2}$=$\frac {(t^2+\nu)\cdot x}{2\cdot\nu}$  
+>, then $x$=$\frac {2\cdot\nu}{t^2+\nu}\cdot w$, $\operatorname dw$=$\frac {t^2+\nu}{2\cdot\nu}\cdot\operatorname dx$  
+>, and $\operatorname dx$=$\frac {2\cdot\nu}{t^2+\nu}\cdot\operatorname dw$  
+>
+>$F_{T,\chi_{\nu}^2}(t,x)$  
+>$=\frac {1}{\sqrt {2\cdot\pi}\cdot\sqrt\nu}\cdot\frac {1}{2^{\frac {\nu}{2}}\cdot\Gamma(\frac {\nu}{2})}\int_{-\infty}^{\infty}\int_{0}^{\infty}(\frac {2\cdot\nu}{t^2+\nu}\cdot w)^{\frac {\nu+1}{2}-1}\cdot e^{-w}\cdot\frac {2\cdot\nu}{t^2+\nu}\cdot\operatorname dw\operatorname dt$  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
