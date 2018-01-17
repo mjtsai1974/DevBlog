@@ -147,6 +147,18 @@ helpful in the evaluation, the power of test for the regression model build on y
 >...after deduction...  
 >$=\frac {a\cdot b}{(a+b+1)\cdot(a+b)^{2}}$  
 
+### The <font color="Red">Beta</font> Distribution CDF
+>The CDF of <font color="Red">beta</font> distribution is defined below:  
+><font color="DeepPink">$F_{X}(k)$=$\frac {\beta(k,a,b)}{\beta(a,b)}$=$\frac {\int_{0}^{k}x^{a-1}\cdot(1-x)^{b-1}}{\beta(a,b)}$</font>  
+>
+>proof:  
+><font color="DeepPink">$F_{X}(k)$</font>  
+>$=\int_{-\infty}^{k}f_X(x)\operatorname dx$  
+>$=\int_{0}^{k}\frac {1}{\beta(a,b)}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {1}{\beta(a,b)}\int_{0}^{k}x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>
+>, where we take $\beta(k,a,b)$=$\int_{0}^{k}x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+
 ### <font color="OrangeRed">k-th Moment</font> Of <font color="Red">Beta</font> Random Variable
 ><font color="OrangeRed">$\mu_{k}$</font>  
 >$=E\lbrack X^{k}\rbrack$  
@@ -170,7 +182,7 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=1+\sum_{k=1}^{\infty}\frac {t^{k}}{k!}\cdot\frac {\beta(a+k,b)}{\beta(a,b)}$  
 >
 >proof:  
->$M_{X}(t)$  
+><font color="OrangeRed">$M_{X}(t)$</font>  
 >$=\int_{0}^{1}e^{x\cdot t}\cdot\frac {x^{a-1}\cdot(1-x)^{b-1}}{\beta(a,b)}\operatorname dx$...MGF's definition  
 >$=\frac {1}{\beta(a,b)}\cdot\int_{0}^{1}e^{x\cdot t}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
 >$=\frac {1}{\beta(a,b)}\cdot\int_{0}^{1}(\sum_{k=0}^{\infty}\frac {(x\cdot t)^{k}}{k!})\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
