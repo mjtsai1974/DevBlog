@@ -7,11 +7,12 @@ title: Introduction To The Beta Distribution
 <p class="message">
 In probability theory and statistics, base on the most fundamental gamma distribution, <font color="Red">beta</font> distribution is one of the many models of distributions further developed.  
 With the basic realization of gamma distributions, we could also treat the <font color="Red">beta</font> function a <font color="DeepSkyBlue">special combination of gamma</font> functions.  
-It would be greatly helpful in the evaluation of the regression model build on your hypothesis, the power of test for the precision in the machine learning results.  
+The beta function is important in calculus and analysis due to its close connection to the gamma function, which is itself a generalization of the factorial function, and would be greatly 
+helpful in the evaluation, the power of test for the regression model build on your hypothesis, the precision in the machine learning results.  
 </p>
 
 ### Begin From The <font color="Red">Beta</font> Function
->We formulate the <font color="Red">beta</font> function in below two expressions:  
+>The beta function, also known as Euler's integral of the first kind.  We formulate the <font color="Red">beta</font> function in below two expressions:  
 >$\beta(x,y)$=$\int_{0}^{\infty}t^{x-1}\cdot(1+t)^{-x-y}\operatorname dt$...(1);  
 >$\beta(x,y)$=$\int_{0}^{1}t^{x-1}\cdot(1-t)^{y-1}\operatorname dt$...(2);  
 >Where (1)=(2), next to prove it.  
@@ -74,6 +75,21 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$\beta(x,y)$  
 >$=\Gamma(x+y)\cdot\int_{0}^{\infty}t^{x-1}\cdot (1+t)^{-x-y}\operatorname dt$  
 >$=\frac {\Gamma(x)\cdot\Gamma(y)}{\Gamma(x+y)}$  
+
+### Symmetry Of The <font color="Red">Beta</font> Function
+>$\beta(x,y)$=$\beta(y,x)$...$\beta$ is symmetric.  
+>
+>proof:  
+>&#10112;begin by definition,  
+>$\beta(x,y)$=$\int_{0}^{1}t^{x-1}\cdot(1-t)^{y-1}\operatorname dt$  
+>
+>&#10113;take $v$=$1-t$, then $t$=$1-v$  
+>therefore, $\operatorname dv$=$-\operatorname dt$, $\operatorname dt$=$-\operatorname dv$  
+>
+>&#10114;expand from <font color="Red">beta</font> function:  
+>$\beta(x,y)$  
+>$=\int_{0}^{1}t^{x-1}\cdot(1-t)^{y-1}\operatorname dt$  
+>>$=\int_{0}^{1}(1-v)^{x-1}\cdot(v)^{y-1}\operatorname -dv$
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
