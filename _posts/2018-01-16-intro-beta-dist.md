@@ -173,6 +173,7 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$M_{X}(t)$  
 >$=\int_{0}^{1}e^{x\cdot t}\cdot\frac {x^{a-1}\cdot(1-x)^{b-1}}{\beta(a,b)}\operatorname dx$...MGF's definition  
 >$=\frac {1}{\beta(a,b)}\cdot\int_{0}^{1}e^{x\cdot t}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {1}{\beta(a,b)}\cdot\int_{0}^{1}(\sum_{k=0}^{\infty}\frac {(x\cdot t)^{k}}{k!})\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
 >  
 >Where $X$ is any <font color="Red">beta</font> random variable, $x\in X$.  
 
