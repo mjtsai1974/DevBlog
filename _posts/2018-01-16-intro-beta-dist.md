@@ -98,13 +98,23 @@ helpful in the evaluation, the power of test for the regression model build on y
 ><font color="DeepPink">$\beta$ function is symmetric</font> is thus proved.  
 
 ### The <font color="Red">Beta</font> Distribution PDF
->For <font color="DeepPink">$0<x<1$</font> and <font color="DeepPink">$X$ is a random variable of beta distribution</font>, where <font color="DeepPink">$x\in X$</font>, the PDF of <font color="Red">beta</font> distribution is defined below:  
-><font color="DeepPink">$f_{X}(x)$=$\frac {1}{\beta(a,b)}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$</font>
+>For <font color="DeepPink">$0<x<1$</font> and <font color="DeepPink">$X$ is a random variable of beta distribution</font>, where <font color="DeepPink">$x\in X$</font>, the <font color="DeepPink">PDF</font> of <font color="Red">beta</font> distribution is defined below:  
+><font color="DeepPink">$f_{X}(x)$=$\frac {1}{\beta(a,b)}\cdot x^{a-1}\cdot(1-x)^{b-1}$</font>
 >
 >Caution must be made that <font color="OrangeRed">$f_{X}(x)=0$ for the case $x\not\in [0,1]$</font>.  Next we go to prove it.  
 >
 >proof:  
+>&#10112;departure from integrating its PDF from negative to positive infinity.  
+>$\int_{-\infty}^{\infty}f_{X}(x)\operatorname dx$  
+>$=\int_{-\infty}^{\infty}\frac {1}{\beta(a,b)}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {1}{\beta(a,b)}\int_{-\infty}^{\infty}x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
 >
+>&#10112;suppose the definition of its PDF is true, we can integrate, ranging from $0$ to $1$:  
+>$\frac {1}{\beta(a,b)}\int_{0}^{1}x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {1}{\beta(a,b)}\cdot\beta(a,b)$  
+>$=1$  
+>
+><font color="OrangeRed">$f_{X}(x)=0$ for the case $x\not\in [0,1]$</font>, this would be reminded.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
