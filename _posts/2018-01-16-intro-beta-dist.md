@@ -85,11 +85,13 @@ helpful in the evaluation, the power of test for the regression model build on y
 >
 >&#10113;take $v$=$1-t$, then $t$=$1-v$  
 >therefore, $\operatorname dv$=$-\operatorname dt$, $\operatorname dt$=$-\operatorname dv$  
+>and $0\le t\le 1$, $-1\le -v\le 0$  
 >
 >&#10114;expand from <font color="Red">beta</font> function:  
 >$\beta(x,y)$  
 >$=\int_{0}^{1}t^{x-1}\cdot(1-t)^{y-1}\operatorname dt$  
->$=\int_{0}^{1}(1-v)^{x-1}\cdot(v)^{y-1}(\operatorname -dv)$
+>$=\int_{-1}^{0}(1-v)^{x-1}\cdot(v)^{y-1}(\operatorname -dv)$  
+>$=\int_{-1}^{0}(1-v)^{x-1}\cdot(v)^{y-1}\operatorname d(-v)$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
