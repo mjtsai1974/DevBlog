@@ -161,6 +161,8 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=\frac {\Gamma(a+b)}{\Gamma(a)\cdot\Gamma(b)}\cdot\frac {(a+k-1)\cdot(a+k-2)...a\cdot\Gamma(a)\cdot\Gamma(b)}{(a+b+k-1)\cdot(a+b+k-2)...(a+b)\cdot\Gamma(a+b)}$  
 >$=\frac {a\cdot(a+1)\cdot(a+2)...(a+k-2)\cdot(a+k-1)}{(a+b)\cdot(a+b+1)...(a+b+k-2)\cdot(a+b+k-1)}$  
 >$={\textstyle\prod_{n=0}^{k-1}}\frac{a+n}{a+b+n}$  
+>
+>Where $X$ is any <font color="Red">beta</font> random variable, $x\in X$.  
 
 ### <font color="OrangeRed">Moment Generating Function</font> Of <font color="Red">Beta</font> Random Variable
 ><font color="OrangeRed">$M_{X}(t)$</font>  
@@ -169,6 +171,7 @@ helpful in the evaluation, the power of test for the regression model build on y
 >
 >proof:  
 >
+>Where $X$ is any <font color="Red">beta</font> random variable, $x\in X$.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
