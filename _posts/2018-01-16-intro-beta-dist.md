@@ -147,7 +147,7 @@ helpful in the evaluation, the power of test for the regression model build on y
 >...after deduction...  
 >$=\frac {a\cdot b}{(a+b+1)\cdot(a+b)^{2}}$  
 
-### <font color="OrangeRed">k-th Moment</font> Of Beta Random Variable
+### <font color="OrangeRed">k-th Moment</font> Of <font color="Red">Beta</font> Random Variable
 ><font color="OrangeRed">$\mu_{k}$</font>  
 >$=E\lbrack X^{k}\rbrack$  
 >$=\frac {\beta(a+k,b)}{\beta(a,b)}$  
@@ -161,6 +161,14 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=\frac {\Gamma(a+b)}{\Gamma(a)\cdot\Gamma(b)}\cdot\frac {(a+k-1)\cdot(a+k-2)...a\cdot\Gamma(a)\cdot\Gamma(b)}{(a+b+k-1)\cdot(a+b+k-2)...(a+b)\cdot\Gamma(a+b)}$  
 >$=\frac {a\cdot(a+1)\cdot(a+2)...(a+k-2)\cdot(a+k-1)}{(a+b)\cdot(a+b+1)...(a+b+k-2)\cdot(a+b+k-1)}$  
 >$={\textstyle\prod_{n=0}^{k-1}}\frac{a+n}{a+b+n}$  
+
+### <font color="OrangeRed">Moment Generating Function</font> Of <font color="Red">Beta</font> Random Variable
+><font color="OrangeRed">$M_{X}(t)$</font>  
+>$=\sum_{k=0}^{\infty}\frac {t^{k}}{k!}\cdot\frac {\beta(a+k,b)}{\beta(a,b)}$  
+>$=1+\sum_{k=1}^{\infty}\frac {t^{k}}{k!}\cdot\frac {\beta(a+k,b)}{\beta(a,b)}$  
+>
+>proof:  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
