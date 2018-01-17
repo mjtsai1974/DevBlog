@@ -170,7 +170,10 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=1+\sum_{k=1}^{\infty}\frac {t^{k}}{k!}\cdot\frac {\beta(a+k,b)}{\beta(a,b)}$  
 >
 >proof:  
->
+>$M_{X}(t)$  
+>$=\int_{0}^{1}e^{x\cdot t}\cdot\frac {x^{a-1}\cdot(1-x)^{b-1}}{\beta(a,b)}\operatorname dx$...MGF's definition  
+>$=\frac {1}{\beta(a,b)}\cdot\int_{0}^{1}e^{x\cdot t}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>  
 >Where $X$ is any <font color="Red">beta</font> random variable, $x\in X$.  
 
 <!-- Γ -->
