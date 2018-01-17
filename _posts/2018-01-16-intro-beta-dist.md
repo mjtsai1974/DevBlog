@@ -114,14 +114,14 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=\frac {1}{\beta(a,b)}\cdot\beta(a,b)$  
 >$=1$  
 >
->Be recalled that <font color="OrangeRed">$f_{X}(x)=0$ for the case $x\not\in [0,1]$</font>
+>Be recalled that <font color="OrangeRed">$f_{X}(x)=0$ for the case $x\not\in [0,1]$</font>  
 >Below we exhibit the PDF of $\beta(1,4)$, $\beta(2,5)$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-16-intro-beta-dist-pdf-1.png "the beta PDF 1")
 >Then exhibit the PDF of $\beta(4,1)$, $\beta(5,2)$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-16-intro-beta-dist-pdf-2.png "the beta PDF 2")
 >Finally, the exhibition of PDF of $\beta(2,2)$, $\beta(4,4)$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-16-intro-beta-dist-pdf-3.png "the beta PDF 3")
->You can find it more approximate for we input parameters with $a=b$, and the graph would be right skew for $a<b$, and right skew for $a>b$.  
+>You can find it more approximate normal distribution for we input parameters with $a=b$, and the graph would be right skew for $a<b$, and left skew for $a>b$.  
 
 ### The <font color="Red">Beta</font> Distribution CDF
 >The CDF of <font color="Red">beta</font> distribution is defined below:  
