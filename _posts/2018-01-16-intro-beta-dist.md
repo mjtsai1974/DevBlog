@@ -175,6 +175,13 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=\frac {1}{\beta(a,b)}\cdot\int_{0}^{1}e^{x\cdot t}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
 >$=\frac {1}{\beta(a,b)}\cdot\int_{0}^{1}(\sum_{k=0}^{\infty}\frac {(x\cdot t)^{k}}{k!})\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
 >$=\frac {1}{\beta(a,b)}\cdot\sum_{k=0}^{\infty}\int_{0}^{1}\frac {(x\cdot t)^{k}}{k!}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {1}{\beta(a,b)}\cdot\sum_{k=0}^{\infty}\frac {t^{k}}{k!}\int_{0}^{1}x^{k}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {1}{\beta(a,b)}\cdot\sum_{k=0}^{\infty}\frac {t^{k}}{k!}\int_{0}^{1}x^{a+k-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {1}{\beta(a,b)}\cdot\sum_{k=0}^{\infty}\frac {t^{k}}{k!}\cdot\beta(a+k,b)$  
+>$=\sum_{k=0}^{\infty}\frac {t^{k}}{k!}\frac {beta(a+k,b)}{\beta(a,b)}$  
+>$=1+\sum_{k=1}^{\infty}\frac {t^{k}}{k!}\cdot\mu_{k}$  
+>$=1+\sum_{k=1}^{\infty}\frac {t^{k}}{k!}\cdot E\lbrack X^{k}\rbrack$  
+>$=1+\sum_{k=1}^{\infty}\frac {t^{k}}{k!}\cdot{\textstyle\prod_{n=0}^{k-1}}\frac{a+n}{a+b+n}$  
 >  
 >Where $X$ is any <font color="Red">beta</font> random variable, $x\in X$.  
 
