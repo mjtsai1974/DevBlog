@@ -76,7 +76,7 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=\Gamma(x+y)\cdot\int_{0}^{\infty}t^{x-1}\cdot (1+t)^{-x-y}\operatorname dt$  
 >$=\frac {\Gamma(x)\cdot\Gamma(y)}{\Gamma(x+y)}$  
 
-### Symmetry Of The <font color="Red">Beta</font> Function
+### <font color="DeepPink">Symmetry</font> Of The <font color="Red">Beta</font> Function
 >$\beta(x,y)$=$\beta(y,x)$...$\beta$ is symmetric.  
 >
 >proof:  
@@ -92,10 +92,19 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=\int_{0}^{1}t^{x-1}\cdot(1-t)^{y-1}\operatorname dt$  
 >$=\int_{-1}^{0}(1-v)^{x-1}\cdot(v)^{y-1}(\operatorname -dv)$  
 >$=\int_{-1}^{0}(1-v)^{x-1}\cdot(v)^{y-1}\operatorname d(-v)$...$\operatorname -dv=\operatorname d(-v)$  
->$=\int_{0}^{1}(1-v)^{x-1}\cdot(v)^{y-1}(\operatorname dv)$  
+>$=\int_{0}^{1}(1-v)^{x-1}\cdot(v)^{y-1}\operatorname dv$  
 >$=\beta(y,x)$  
 >
->We have proved $\beta$ function is symmetric.  
+><font color="DeepPink">$\beta$ function is symmetric</font> is thus proved.  
+
+### The <font color="Red">Beta</font> Distribution PDF
+>For <font color="DeepPink">$0<x<1$</font> and <font color="DeepPink">$X$ is a random variable of beta distribution</font>, where <font color="DeepPink">$x\in X$</font>, the PDF of <font color="Red">beta</font> distribution is defined below:  
+><font color="DeepPink">$f_{X}(x)$=$\frac {1}{\beta(a,b)}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$</font>
+>
+>Caution must be made that <font color="OrangeRed">$f_{X}(x)=0$ for the case $x\not\in [0,1]$</font>.  Next we go to prove it.  
+>
+>proof:  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
@@ -129,3 +138,4 @@ helpful in the evaluation, the power of test for the regression model build on y
 <!-- <font color="#9300FF">immediate reward R(S)</font> -->
 
 <!-- https://www.medcalc.org/manual/gamma_distribution_functions.php -->
+<!-- https://homepage.tudelft.nl/11r49/documents/wi4006/gammabeta.pdf -->
