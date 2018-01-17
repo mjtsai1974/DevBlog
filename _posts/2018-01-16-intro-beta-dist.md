@@ -116,6 +116,18 @@ helpful in the evaluation, the power of test for the regression model build on y
 >
 >Be recalled that <font color="OrangeRed">$f_{X}(x)=0$ for the case $x\not\in [0,1]$</font>
 
+### The <font color="Red">Beta</font> Distribution CDF
+>The CDF of <font color="Red">beta</font> distribution is defined below:  
+><font color="DeepPink">$F_{X}(k)$=$\frac {\beta(k,a,b)}{\beta(a,b)}$=$\frac {\int_{0}^{k}x^{a-1}\cdot(1-x)^{b-1}}{\beta(a,b)}$</font>  
+>
+>proof:  
+><font color="DeepPink">$F_{X}(k)$</font>  
+>$=\int_{-\infty}^{k}f_X(x)\operatorname dx$  
+>$=\int_{0}^{k}\frac {1}{\beta(a,b)}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {1}{\beta(a,b)}\int_{0}^{k}x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>
+>, where we take $\beta(k,a,b)$=$\int_{0}^{k}x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+
 ### Expect Value Of The <font color="Red">Beta</font> Distribution
 >For any <font color="OrangeRed">valid</font> random variable X of <font color="Red">beta</font> distribution, the expect value is given:  
 >$E\lbrack X\rbrack$=$\frac {a}{a+b}$  
@@ -146,18 +158,6 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=\frac {1}{\beta(a,b)}\cdot\beta(a+2,b)$-$(\frac {a}{a+b})^{2}$  
 >...after deduction...  
 >$=\frac {a\cdot b}{(a+b+1)\cdot(a+b)^{2}}$  
-
-### The <font color="Red">Beta</font> Distribution CDF
->The CDF of <font color="Red">beta</font> distribution is defined below:  
-><font color="DeepPink">$F_{X}(k)$=$\frac {\beta(k,a,b)}{\beta(a,b)}$=$\frac {\int_{0}^{k}x^{a-1}\cdot(1-x)^{b-1}}{\beta(a,b)}$</font>  
->
->proof:  
-><font color="DeepPink">$F_{X}(k)$</font>  
->$=\int_{-\infty}^{k}f_X(x)\operatorname dx$  
->$=\int_{0}^{k}\frac {1}{\beta(a,b)}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
->$=\frac {1}{\beta(a,b)}\int_{0}^{k}x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
->
->, where we take $\beta(k,a,b)$=$\int_{0}^{k}x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
 
 ### <font color="OrangeRed">k-th Moment</font> Of <font color="Red">Beta</font> Random Variable
 ><font color="OrangeRed">$\mu_{k}$</font>  
@@ -228,5 +228,6 @@ helpful in the evaluation, the power of test for the regression model build on y
 <!-- <font color="#D600D6">$V(S)$</font> -->
 <!-- <font color="#9300FF">immediate reward R(S)</font> -->
 
+<!-- http://keisan.casio.com/ -->
 <!-- https://www.medcalc.org/manual/gamma_distribution_functions.php -->
 <!-- https://homepage.tudelft.nl/11r49/documents/wi4006/gammabeta.pdf -->
