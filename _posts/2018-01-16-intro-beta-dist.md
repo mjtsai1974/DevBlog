@@ -68,7 +68,9 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$=\int_{0}^{\infty}\int_{0}^{\infty}t^{x-1}\cdot (\frac {1}{1+t})^{x+y}\cdot w^{(x+y-1)}\cdot e^{-w}\operatorname dt\operatorname dw$  
 >$=\int_{0}^{\infty}w^{(x+y-1)}\cdot e^{-w}\operatorname dw\cdot\int_{0}^{\infty}t^{x-1}\cdot(\frac {1}{1+t})^{x+y}\operatorname dt$  
 >$=\Gamma(x+y)\cdot\int_{0}^{\infty}t^{x-1}\cdot (1+t)^{-x-y}\operatorname dt$  
+>$\Gamma(x+y)\cdot\beta(x,y)$  
 >
+>Finally, we just have it proved:  
 >$\beta(x,y)$  
 >$=\Gamma(x+y)\cdot\int_{0}^{\infty}t^{x-1}\cdot (1+t)^{-x-y}\operatorname dt$  
 >$=\frac {\Gamma(x)\cdot\Gamma(y)}{\Gamma(x+y)}$  
