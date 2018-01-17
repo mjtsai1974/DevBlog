@@ -134,6 +134,10 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=\frac {1}{\beta(a,b)}\int_{0}^{k}x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
 >
 >, where we take $\beta(k,a,b)$=$\int_{0}^{k}x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>
+>In general, two CDFs could be further defined:  
+>&#10112;<font color="OrangeRed">lower</font> CDF, $\frac {\int_{0}^{k}x^{a-1}\cdot(1-x)^{b-1}}{\beta(a,b)}$, where $k\le 1$.  
+>&#10113;<font color="OrangeRed">upper</font> CDF, $\frac {\int_{k}^{1}x^{a-1}\cdot(1-x)^{b-1}}{\beta(a,b)}$  
 
 ### Expect Value Of The <font color="Red">Beta</font> Distribution
 >For any <font color="OrangeRed">valid</font> random variable X of <font color="Red">beta</font> distribution, the expect value is given:  
