@@ -89,7 +89,7 @@ helpful in the evaluation, the power of test for the regression model build on y
 >&#10114;expand from <font color="Red">beta</font> function:  
 >$\beta(x,y)$  
 >$=\int_{0}^{1}t^{x-1}\cdot(1-t)^{y-1}\operatorname dt$  
->>$=\int_{0}^{1}(1-v)^{x-1}\cdot(v)^{y-1}\operatorname -dv$
+>$=\int_{0}^{1}(1-v)^{x-1}\cdot(v)^{y-1}\operatorname (-dv)$
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
