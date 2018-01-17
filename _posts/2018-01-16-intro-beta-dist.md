@@ -144,7 +144,7 @@ helpful in the evaluation, the power of test for the regression model build on y
 >
 >$Var\lbrack X\rbrack$  
 >$=\frac {1}{\beta(a,b)}\cdot\beta(a+2,b)$-$(\frac {a}{a+b})^{2}$  
->...after deduction  
+>...after deduction...  
 >$=\frac {a\cdot b}{(a+b+1)\cdot(a+b)^{2}}$  
 
 <!-- Γ -->
