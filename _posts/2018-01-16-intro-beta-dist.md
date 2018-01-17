@@ -54,13 +54,24 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$=\int_{0}^{\infty}\int_{0}^{\infty}u^{x-1}\cdot v^{y-1}\cdot e^{-u-v}\operatorname du\operatorname dv$  
 >
 >&#10113;take $u$=$v\cdot t$, then $\operatorname du$=$v\cdot\operatorname dt$  
->why? Because gamma function focus on the parameter of power, not integral itself. Expand from &#10112;  
+>why? <font color="OrangeRed">Because gamma function focus on the parameter of power, not integral itself</font>. Expand from &#10112;:  
 >
 >$\int_{0}^{\infty}\int_{0}^{\infty}u^{x-1}\cdot v^{y-1}\cdot e^{-(u+v)}\operatorname du\operatorname dv$  
 >$=\int_{0}^{\infty}\int_{0}^{\infty}v\cdot (v\cdot t)^{x-1}\cdot v^{y-1}\cdot e^{-(v\cdot t+v)}\operatorname dt\operatorname dv$  
 >$=\int_{0}^{\infty}\int_{0}^{\infty}t^{x-1}\cdot v^{x+y-1}\cdot e^{-(v\cdot t+v)}\operatorname dt\operatorname dv$  
 >
-
+>&#10114;take $w$=$v\cdot t+v$, then we have:  
+>$v$=$\frac {w}{1+t}$, $\operatorname dv$=$\frac {1}{1+t}\cdot\operatorname dw$  
+>
+>$\int_{0}^{\infty}\int_{0}^{\infty}t^{x-1}\cdot v^{x+y-1}\cdot e^{-(v\cdot t+v)}\operatorname dt\operatorname dv$  
+>$=\int_{0}^{\infty}\int_{0}^{\infty}t^{x-1}\cdot (\frac {w}{1+t})^{x+y-1}\cdot e^{-w}\operatorname dt\frac {1}{1+t}\cdot\operatorname dw$  
+>$=\int_{0}^{\infty}\int_{0}^{\infty}t^{x-1}\cdot (\frac {1}{1+t})^{x+y}\cdot w^{(x+y-1)}\cdot e^{-w}\operatorname dt\operatorname dw$  
+>$=\int_{0}^{\infty}w^{(x+y-1)}\cdot e^{-w}\operatorname dw\cdot\int_{0}^{\infty}t^{x-1}\cdot(\frac {1}{1+t})^{x+y}\operatorname dt$  
+>$=\Gamma(x+y)\cdot\int_{0}^{\infty}t^{x-1}\cdot (1+t)^{-x-y}\operatorname dt$  
+>
+>$\beta(x,y)$  
+>$=\Gamma(x+y)\cdot\int_{0}^{\infty}t^{x-1}\cdot (1+t)^{-x-y}\operatorname dt$  
+>$=\frac {\Gamma(x)\cdot\Gamma(y)}{\Gamma(x+y)}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
