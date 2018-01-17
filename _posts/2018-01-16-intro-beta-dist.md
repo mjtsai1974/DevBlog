@@ -120,7 +120,7 @@ helpful in the evaluation, the power of test for the regression model build on y
 >Then exhibit the PDF of $\beta(4,1)$, $\beta(5,2)$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-16-intro-beta-dist-pdf-2.png "the beta PDF 2")
 >Finally, the exhibition of PDF of $\beta(4,1)$, $\beta(5,2)$:  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-16-intro-beta-dist-pdf-2.png "the beta PDF 3")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-16-intro-beta-dist-pdf-3.png "the beta PDF 3")
 >You can find it more approximate for we input parameters with $a=b$, and the graph would be right skew for $a<b$, and right skew for $a>b$.  
 
 ### The <font color="Red">Beta</font> Distribution CDF
