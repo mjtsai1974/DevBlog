@@ -129,6 +129,24 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=\frac {\Gamma(a+b)}{\Gamma(a)\cdot\Gamma(b)}\cdot\frac {a\cdot\Gamma(a)\cdot\Gamma(b)}{(a+b)\cdot\Gamma(a+b)}$  
 >$=\frac {a}{a+b}$  
 
+### Variance Of The <font color="Red">Beta</font> Distribution
+>For any <font color="OrangeRed">valid</font> random variable X of <font color="Red">beta</font> distribution, the variance is given:  
+>$Var\lbrack X\rbrack$=$\frac {a\cdot b}{(a+b+1)\cdot(a+b)^{2}}$  
+>
+>proof:  
+>$Var\lbrack X\rbrack$=$E\lbrack X^{2}\rbrack$-$E^{2}\lbrack X\rbrack$, to figure out the variance, the term $E\lbrack X^{2}\rbrack$ should be come out.  
+>
+>$E\lbrack X^{2}\rbrack$  
+>$=\int_{0}^{\infty}x^{2}\cdot\frac {1}{\beta(a,b)}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\int_{0}^{\infty}\frac {1}{\beta(a,b)}\cdot x^{a+1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {1}{\beta(a,b)}\cdot\int_{0}^{\infty}x^{a+1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {1}{\beta(a,b)}\cdot\beta(a+2,b)$  
+>
+>$Var\lbrack X\rbrack$  
+>$=\frac {1}{\beta(a,b)}\cdot\beta(a+2,b)$-$(\frac {a}{a+b})^{2}$  
+>...after deduction  
+>$=\frac {a\cdot b}{(a+b+1)\cdot(a+b)^{2}}$  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
