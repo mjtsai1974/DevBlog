@@ -20,7 +20,7 @@ helpful in the evaluation, the power of test for the regression model build on y
 >proof:  
 >&#10112;to change from $\int_{0}^{\infty}$ to $\int_{0}^{1}$, we focus on $t$:  
 >$\int_{0}^{\infty}t^{x-1}\cdot(1+t)^{-x-y}\operatorname dt$  
->$=\int_{0}^{\infty}t^{x-1}\cdot\(frac {1}{1+t})^{x+y}\operatorname dt$  
+>$=\int_{0}^{\infty}t^{x-1}\cdot(\frac {1}{1+t})^{x+y}\operatorname dt$  
 >$=\int_{0}^{\infty}(\frac {t}{1+t})^{x-1}\cdot(\frac {1}{1+t})^{y+1}$
 >
 >&#10113;take $w$=$\frac {t}{1+t}$, then $1-w$=$\frac {1}{1+t}$  
@@ -109,12 +109,12 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=\int_{-\infty}^{\infty}\frac {1}{\beta(a,b)}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
 >$=\frac {1}{\beta(a,b)}\int_{-\infty}^{\infty}x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
 >
->&#10112;suppose the definition of its PDF is true, we can integrate, ranging from $0$ to $1$:  
+>&#10113;suppose the definition of its PDF is true, we can integrate, ranging from $0$ to $1$:  
 >$\frac {1}{\beta(a,b)}\int_{0}^{1}x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
 >$=\frac {1}{\beta(a,b)}\cdot\beta(a,b)$  
 >$=1$  
 >
-><font color="OrangeRed">$f_{X}(x)=0$ for the case $x\not\in [0,1]$</font>, this would be reminded.  
+>Be recalled that <font color="OrangeRed">$f_{X}(x)=0$ for the case $x\not\in [0,1]$</font>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
