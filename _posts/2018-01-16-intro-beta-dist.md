@@ -42,6 +42,23 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >In some textbooks or web articles, they intend to use the form:  
 >$\beta(x,y)$=$\int_{0}^{1}t^{x}\cdot(1-t)^{y}\operatorname dt$  
 >The tiny difference mainly in the input parameters, $x\ge 1$, $y\ge 1$.  
+
+### The Definition Of The <font color="Red">Beta</font> Function
+>Next come to visit the definition of the <font color="Red">beta</font> function.  
+>$\beta(x,y)$=$\frac {\Gamma(x)\cdot\Gamma(y)}{\Gamma(x+y)}$...by definition  
+>
+>proof:  
+>&#10112;  
+>$\Gamma(x)\cdot\Gamma(y)$  
+>$=\int_{0}^{\infty}u^{x-1}\cdot e^{-u}\operatorname du\cdot\int_{0}^{\infty}v^{y-1}\cdot e^{-v}\operatorname dv$  
+>$=\int_{0}^{\infty}\int_{0}^{\infty}u^{x-1}\cdot v^{y-1}\cdot e^{-u-v}\operatorname du\operatorname dv$  
+>
+>&#10113;take $u$=$v\cdot t$, then $\operatorname du$=$v\cdot\operatorname dt$  
+>why? Because gamma function focus on the parameter of power, not integral itself. Expand from &#10112;  
+>
+>$\int_{0}^{\infty}\int_{0}^{\infty}u^{x-1}\cdot v^{y-1}\cdot e^{-(u+v)}\operatorname du\operatorname dv$  
+>$=\int_{0}^{\infty}\int_{0}^{\infty}v\cdot (v\cdot t)^{x-1}\cdot v^{y-1}\cdot e^{-(v\cdot t+v)}\operatorname dt\operatorname dv$  
+>$=\int_{0}^{\infty}\int_{0}^{\infty}t^{x-1}\cdot v^{x+y-1}\cdot e^{-(v\cdot t+v)}\operatorname dt\operatorname dv$  
 >
 
 
