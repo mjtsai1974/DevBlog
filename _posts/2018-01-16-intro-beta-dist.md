@@ -147,6 +147,12 @@ helpful in the evaluation, the power of test for the regression model build on y
 >...after deduction...  
 >$=\frac {a\cdot b}{(a+b+1)\cdot(a+b)^{2}}$  
 
+### k-th Moment Of Beta Random Variable
+>$\mu_{k}$=$E\lbrack X^{k}\rbrack$=$\frac {\beta(a+k,b)}{\beta(a,b)}$=${\textstyle\prod_{n=0}^{k-1}}\frac{a+n}{a+b+n}$  
+>
+>proof:  
+>
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
