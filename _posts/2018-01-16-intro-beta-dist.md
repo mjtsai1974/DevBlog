@@ -116,6 +116,19 @@ helpful in the evaluation, the power of test for the regression model build on y
 >
 >Be recalled that <font color="OrangeRed">$f_{X}(x)=0$ for the case $x\not\in [0,1]$</font>
 
+### Expect Value Of The <font color="Red">Beta</font> Distribution
+>For any <font color="OrangeRed">valid</font> random variable X of <font color="Red">beta</font> distribution, the expect value is given:  
+>$E\lbrack X\rbrack$=$\frac {a}{a+b}$  
+>
+>proof:  
+>$E\lbrack X\rbrack$  
+>$=\int_{0}^{\infty}x\cdot\frac {1}{\beta(a,b)}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {1}{\beta(a,b)}\cdot\int_{0}^{\infty}x^{a}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=(\frac {\Gamma(a)\cdot\Gamma(b)}{\Gamma(a+b)})^{-1}\cdot\beta(a+1,b)$  
+>$=\frac {\Gamma(a+b)}{\Gamma(a)\cdot\Gamma(b)}\cdot\frac {\Gamma(a+1)\cdot\Gamma(b)}{\Gamma(a+b+1)}$  
+>$=\frac {\Gamma(a+b)}{\Gamma(a)\cdot\Gamma(b)}\cdot\frac {a\cdot\Gamma(a)\cdot\Gamma(b)}{(a+b)\cdot\Gamma(a+b)}$  
+>$=\frac {a}{a+b}$  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
