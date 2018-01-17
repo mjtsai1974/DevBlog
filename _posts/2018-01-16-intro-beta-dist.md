@@ -92,6 +92,10 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=\int_{0}^{1}t^{x-1}\cdot(1-t)^{y-1}\operatorname dt$  
 >$=\int_{-1}^{0}(1-v)^{x-1}\cdot(v)^{y-1}(\operatorname -dv)$  
 >$=\int_{-1}^{0}(1-v)^{x-1}\cdot(v)^{y-1}\operatorname d(-v)$...$\operatorname -dv=\operatorname d(-v)$  
+>$=\int_{0}^{1}(1-v)^{x-1}\cdot(v)^{y-1}(\operatorname dv)$  
+>$=\beta(y,x)$  
+>
+>We have proved $\beta$ function is symmetric.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
