@@ -74,7 +74,7 @@ the following:
 * [Jacobian and Integral]({{ site.github.repo }}{{ site.baseurl }}/2017/11/16/prereq-jacobian-integral/)
 * [Introduction To The Moment Generating Function]({{ site.github.repo }}{{ site.baseurl }}/2017/12/28/intro-mgf/)
 * [Introduction To The Gamma Distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/)
-* Introduction To The Beta Distribution
+* [Introduction To The Beta Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/16/intro-beta-dist/)
 * [Introduction To The Chi-Square Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/03/intro-chi-square-dist/)
 * [Introduction To The F Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/05/intro-f-dist/)
 * Introduction To The t Distribution
