@@ -151,7 +151,11 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$\mu_{k}$=$E\lbrack X^{k}\rbrack$=$\frac {\beta(a+k,b)}{\beta(a,b)}$=${\textstyle\prod_{n=0}^{k-1}}\frac{a+n}{a+b+n}$  
 >
 >proof:  
->
+>$E\lbrack X^{k}\rbrack$  
+>$=\int_{0}^{\infty}x^{k}\cdot\frac {1}{\beta(a,b)}\cdot x^{a-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {1}{\beta(a,b)}\cdot\int_{0}^{\infty}x^{a+k-1}\cdot(1-x)^{b-1}\operatorname dx$  
+>$=\frac {\Gamma(a+b)}{\Gamma(a)\cdot\Gamma(b)}\cdot\frac {\Gamma(a+k)\cdot\Gamma(b)}{\Gamma(a+b+k)}$  
+>$=\frac {\Gamma(a+b)}{\Gamma(a)\cdot\Gamma(b)}\cdot\frac {(a+k-1)\cdot(a+k-2)...\cdot a\cdot\Gamma(a)\cdot\Gamma(b)}{(a+b+k-1)\cdot(a+b+k-2)..(a+b)\cdot\Gamma(a+b)}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
