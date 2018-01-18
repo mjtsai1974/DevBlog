@@ -93,6 +93,13 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$E_{k}\lbrack t\rbrack$  
 >$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\int_{-\infty}^{\infty}t^{k}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}\operatorname dt$  
 >$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot(\int_{-\infty}^{0}t^{k}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}\operatorname dt$+$\int_{0}^{\infty}t^{k}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}\operatorname dt)$  
+>
+>For the case when $k=1$:  
+>$\int_{-\infty}^{0}t^{1}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}\operatorname dt$=$-\int_{0}^{\infty}t^{1}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}\operatorname dt$  
+>When $k=1$, integrate from negative infinity to $0$, is equivalent to negate the integration from $0$ to the infinity.  Therefore, $\mu_{1}$=$E\lbrack t\rbrack$=$0$, the expect value is $0$.  
+>
+>For the case when $k=2$:  
+>
 
 <!-- to be conti with E[t], Var[t] -->
 
