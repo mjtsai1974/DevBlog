@@ -30,7 +30,7 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >&#10112;[$\chi_{n-1}^2$=$(n-1)\cdot S^2$/$\sigma^2$]({{ site.github.repo }}{{ site.baseurl }}/2018/01/03/intro-chi-square-dist/)  
 >&#10113;$n-1$ is the degree of freedom.  
 
-### The <font color="Red">t</font> Distribution PDF and Proof
+### The <font color="Red">t</font> Distribution PDF
 >The PDF of <font color="Red">t</font> distribution is given by:  
 >$f_{T}(t)$=$\frac {\Gamma(\frac {\nu+1}{2})}{\sqrt {\pi\cdot\nu}\cdot\Gamma(\frac {\nu}{2})}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}$,  
 >where $\nu$ is the degree of freedom, $-\infty<t<\infty$.  
@@ -79,6 +79,14 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >
 >After the deduction, we finally have it that:  
 >$f_{T}(t)$=$\frac {\Gamma(\frac {\nu+1}{2})}{\sqrt {\pi\cdot\nu}\cdot\Gamma(\frac {\nu}{2})}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}$  
+
+### Moments Of The <font color="Red">t</font> Distribution
+>Begin from PDF of t distribution, we'd like to further regularize it:  
+>$f_{T}(t)$  
+>$=\frac {\Gamma(\frac {\nu+1}{2})}{\sqrt {\pi\cdot\nu}\cdot\Gamma(\frac {\nu}{2})}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}$  
+>$=\frac {1}{\sqrt\nu}\cdot\frac {\Gamma(\frac {\nu}{2}+\frac {1}{2})}{\Gamma(\frac {\nu}{2})\cdot\Gamma(\frac {1}{2})}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}$  
+>
+>The moments would be a cofactor in the expect value and variance of the <font color="Red">t</font> distribution.  Next to 
 
 <!-- to be conti with E[t], Var[t] -->
 
