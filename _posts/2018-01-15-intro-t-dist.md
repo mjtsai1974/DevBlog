@@ -111,15 +111,18 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >&#10113;take $w$=$\frac {t^{2}}{\nu}$, then $t$=$\sqrt w\cdot\nu$  
 >, and $\operatorname dw$=$\frac {2\cdot t}{\nu}\cdot\operatorname dt$, $\operatorname dt$=$\frac {\nu}{2\cdot t}\cdot\operatorname dw$  
 >
->&#10114;
+>&#10114;expand from the 2nd order moment:
 >$E_{2}\lbrack t\rbrack$  
 >$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot 2\cdot\int_{0}^{\infty}\frac {\nu}{2\cdot t}\cdot t^{2}\cdot(1+w)^{-\frac {\nu+1}{2}}\operatorname dw$  
 >$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot 2\cdot\int_{0}^{\infty}\frac {\nu}{2}\cdot(w\cdot\nu)^{\frac {1}{2}}\cdot(1+w)^{-\frac {\nu+1}{2}}\operatorname dw$  
 >$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot 2\cdot\frac {(\nu)^{\frac {3}{2}}}{2}\int_{0}^{\infty}(w)^{\frac {1}{2}}\cdot(1+w)^{-\frac {\nu+1}{2}}\operatorname dw$  
 >
 >&#10115;investigate the power term of $w$, $1+w$, they could be refined:  
->$\frac {1}{2}$=$\frac {3}{2}-1$, $-\frac {\nu+1}{2}$=$-\frac {3}{2}-frac {\nu-2}{2}$  
+>$\frac {1}{2}$=$\frac {3}{2}-1$, $-\frac {\nu+1}{2}$=$-\frac {3}{2}-\frac {\nu-2}{2}$  
 >
+>&#10116;continue above equality:  
+>$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot(\nu)^{\frac {3}{2}}\cdot\beta(\frac {3}{2},\frac {\nu-2}{2})$  
+>$=\nu\cdot\frac {\Gamma(\frac {\nu}{2}+\frac {1}{2})}{\Gamma(\frac {\nu}{2})\cdot\Gamma(\frac {1}{2})}\cdot\frac {\Gamma(\frac {3}{2})\cdot\Gamma {\nu-2}{2}}{\Gamma(\frac {3}{2}+\frac {\nu-2}{2})}$  
 
 <!-- to be conti with E[t], Var[t] -->
 
