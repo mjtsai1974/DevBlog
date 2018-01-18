@@ -108,13 +108,18 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$=E\lbrack t^{2}\rbrack$  
 >$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot 2\cdot\int_{0}^{\infty}t^{2}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}\operatorname dt$  
 >
->&#10113;take $w$=$\frac {t^{2}}{\nu}$, then $t$=$\sqrtw\cdot\nu}$  
+>&#10113;take $w$=$\frac {t^{2}}{\nu}$, then $t$=$\sqrt w\cdot\nu$  
 >, and $\operatorname dw$=$\frac {2\cdot t}{\nu}\cdot\operatorname dt$, $\operatorname dt$=$\frac {\nu}{2\cdot t}\cdot\operatorname dw$  
 >
 >&#10114;
 >$E_{2}\lbrack t\rbrack$  
 >$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot 2\cdot\int_{0}^{\infty}\frac {\nu}{2\cdot t}\cdot t^{2}\cdot(1+w)^{-\frac {\nu+1}{2}}\operatorname dw$  
 >$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot 2\cdot\int_{0}^{\infty}\frac {\nu}{2}\cdot(w\cdot\nu)^{\frac {1}{2}}\cdot(1+w)^{-\frac {\nu+1}{2}}\operatorname dw$  
+>$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot 2\cdot\frac {(\nu)^{\frac {3}{2}}}{2}\int_{0}^{\infty}(w)^{\frac {1}{2}}\cdot(1+w)^{-\frac {\nu+1}{2}}\operatorname dw$  
+>
+>&#10115;investigate the power term of $w$, $1+w$, they could be refined:  
+>$\frac {1}{2}$=$\frac {3}{2}-1$, $-\frac {\nu+1}{2}$=$-\frac {3}{2}-frac {\nu-2}{2}$  
+>
 
 <!-- to be conti with E[t], Var[t] -->
 
