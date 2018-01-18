@@ -85,6 +85,8 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >$f_{T}(t)$  
 >$=\frac {\Gamma(\frac {\nu+1}{2})}{\sqrt {\pi\cdot\nu}\cdot\Gamma(\frac {\nu}{2})}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}$  
 >$=\frac {1}{\sqrt\nu}\cdot\frac {\Gamma(\frac {\nu}{2}+\frac {1}{2})}{\Gamma(\frac {\nu}{2})\cdot\Gamma(\frac {1}{2})}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}$  
+>$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}$  
+>, where $\sqrt\pi$=$\Gamma(\frac {1}{2})$, $\frac {\Gamma(\frac {\nu}{2}+\frac {1}{2})}{\Gamma(\frac {\nu}{2})\cdot\Gamma(\frac {1}{2})}$=$(\beta(\frac {\nu}{2},\frac {1}{2}))^{-1}$  
 >
 >The moments would be a cofactor in the expect value and variance of the <font color="Red">t</font> distribution.  Next to 
 
