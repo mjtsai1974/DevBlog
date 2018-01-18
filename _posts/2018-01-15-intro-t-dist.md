@@ -122,7 +122,17 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >
 >&#10116;continue above equality:  
 >$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot(\nu)^{\frac {3}{2}}\cdot\beta(\frac {3}{2},\frac {\nu-2}{2})$  
->$=\nu\cdot\frac {\Gamma(\frac {\nu}{2}+\frac {1}{2})}{\Gamma(\frac {\nu}{2})\cdot\Gamma(\frac {1}{2})}\cdot\frac {\Gamma(\frac {3}{2})\cdot\Gamma {\nu-2}{2}}{\Gamma(\frac {3}{2}+\frac {\nu-2}{2})}$  
+>$=\nu\cdot\frac {\Gamma(\frac {\nu}{2}+\frac {1}{2})}{\Gamma(\frac {\nu}{2})\cdot\Gamma(\frac {1}{2})}\cdot\frac {\Gamma(\frac {3}{2})\cdot\Gamma(\frac {\nu-2}{2})}{\Gamma(\frac {3}{2}+\frac {\nu-2}{2})}$  
+>
+>&#10117;further simplify below terms:  
+>$\Gamma(\frac {3}{2})$=$\frac {1}{2}\cdot\Gamma(\frac {1}{2})$,  
+>$\Gamma(\frac {3}{2}+\frac {\nu-2}{2})$=$\Gamma(\frac {\nu}{2}+\frac {1}{2})$, and,  
+>As to $\Gamma(\frac {\nu-2}{2})$, begin by $\Gamma(\frac {\nu}{2})$:  
+>$\Gamma(\frac {\nu}{2})$=$\frac {\nu-2}{2}\cdot\Gamma(\frac {\nu}{2}-1)$  
+>thus, $\Gamma(\frac {\nu-2}{2})$=$\frac {2}{\nu-2}\cdot\Gamma(\frac {\nu}{2})$  
+>
+>&#10118;put it all together:  
+>$=\nu\cdot\frac {\Gamma(\frac {\nu}{2}+\frac {1}{2})}{\Gamma(\frac {\nu}{2})\cdot\Gamma(\frac {1}{2})}\cdot\frac {\frac {1}{2}\cdot\Gamma(\frac {1}{2})\cdot\frac {2}{\nu-2}\cdot\Gamma(\frac {\nu}{2})}{\Gamma(\frac {\nu}{2}+\frac {1}{2})}$  
 
 <!-- to be conti with E[t], Var[t] -->
 
