@@ -97,12 +97,24 @@ It would be greatly helpful in the evaluation of the regression model build on y
 ### Expect Value Of The <font color="Red">t</font> Distribution
 >It's the case when $k=1$:  
 >$\int_{-\infty}^{0}t^{1}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}\operatorname dt$=$-\int_{0}^{\infty}t^{1}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}\operatorname dt$  
+>
 >When $k=1$, integrate from negative infinity to $0$, is equivalent to negate the integration from $0$ to the infinity.  
+>
 >Therefore, $\mu_{1}$=$E\lbrack t\rbrack$=$0$, the expect value is $0$.  
 
 ### Variance Of The <font color="Red">t</font> Distribution
->It's the case when $k=2$:  
+>&#10112;the variance involves the 2nd order moment, it is the case when $k=2$, integrate from negative infinity to $0$, is equivalent to the integration from $0$ to the infinity.  Therefore, we have it that:  
+>$\mu_{2}$=$E_{2}\lbrack t\rbrack$  
+>$=E\lbrack t^{2}\rbrack$  
+>$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot 2\cdot\int_{0}^{\infty}t^{2}\cdot(1+\frac {t^2}{\nu})^{-\frac {\nu+1}{2}}\operatorname dt$  
 >
+>&#10113;take $w$=$\frac {t^{2}}{\nu}$, then $t$=$\sqrtw\cdot\nu}$  
+>, and $\operatorname dw$=$\frac {2\cdot t}{\nu}\cdot\operatorname dt$, $\operatorname dt$=$\frac {\nu}{2\cdot t}\cdot\operatorname dw$  
+>
+>&#10114;
+>$E_{2}\lbrack t\rbrack$  
+>$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot 2\cdot\int_{0}^{\infty}\frac {\nu}{2\cdot t}\cdot t^{2}\cdot(1+w)^{-\frac {\nu+1}{2}}\operatorname dw$  
+>$=\frac {1}{\sqrt\nu}\cdot\frac {1}{\beta(\frac {\nu}{2},\frac {1}{2})}\cdot 2\cdot\int_{0}^{\infty}\frac {\nu}{2}\cdot(w\cdot\nu)^{\frac {1}{2}}\cdot(1+w)^{-\frac {\nu+1}{2}}\operatorname dw$  
 
 <!-- to be conti with E[t], Var[t] -->
 
