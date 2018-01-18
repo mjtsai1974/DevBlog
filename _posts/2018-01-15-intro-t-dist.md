@@ -132,7 +132,17 @@ It would be greatly helpful in the evaluation of the regression model build on y
 >thus, $\Gamma(\frac {\nu-2}{2})$=$\frac {2}{\nu-2}\cdot\Gamma(\frac {\nu}{2})$  
 >
 >&#10118;put it all together:  
+>$E_{2}\lbrack t\rbrack$  
 >$=\nu\cdot\frac {\Gamma(\frac {\nu}{2}+\frac {1}{2})}{\Gamma(\frac {\nu}{2})\cdot\Gamma(\frac {1}{2})}\cdot\frac {\frac {1}{2}\cdot\Gamma(\frac {1}{2})\cdot\frac {2}{\nu-2}\cdot\Gamma(\frac {\nu}{2})}{\Gamma(\frac {\nu}{2}+\frac {1}{2})}$  
+>$=\frac {\nu}{\nu-2}$  
+>
+>Finally, we can deduce it out the variance:  
+>$Var\lbrack t\rbrack$  
+>$=E\lbrack t^{2}\rbrack$-$E\lbrack t\rbrack$  
+>$=E_{2}\lbrack t\rbrack$-$E\lbrack t\rbrack$  
+>$=\frac {\nu}{\nu-2}$  
+>
+>Cautions must made that <font color="DeepPink">the variance is only meaningful, when $\nu>2$</font>, otherwise, it doesn't exist.  
 
 <!-- to be conti with E[t], Var[t] -->
 
@@ -168,3 +178,4 @@ It would be greatly helpful in the evaluation of the regression model build on y
 <!-- <font color="#9300FF">immediate reward R(S)</font> -->
 
 <!-- https://www.medcalc.org/manual/gamma_distribution_functions.php -->
+<!-- https://www.statlect.com/probability-distributions/student-t-distribution#hid5 -->
