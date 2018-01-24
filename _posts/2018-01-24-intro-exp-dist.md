@@ -17,9 +17,9 @@ It would be greatly helpful in the evaluation of the experimental model build on
 >&#10113;suppose $V$ is the volumetric space where these events occur within.  Trivially, the success probability of event occurrence, we take it as $P_{success}$=$\frac {x\cdot t}{V}$, then the failure probability could be regarded as $P_{fail}$=$1-\frac {x\cdot t}{V}$.  
 >&#10114;suppose the <font color="DeepSkyBlue">rate</font> $x$ do exist and <font color="OrangeRed">remain constant</font> over each disjoint interval for some event occurrence.  
 >&#10115;each disjoint interval are of the same time length, say it $t$, and we further divide it into n subsections.  Then each subsection would have $P_{success}$=$\frac {x\cdot t}{V\cdot n}$, then the failure probability could be regarded as $P_{fail}$=$1-\frac {x\cdot t}{V\cdot n}$.  
->&#10116;we assume that <font color="DeepSkyBlue">each occurrence of the event in distinct subsection is independent<font>, the success v.s. failure probability in each subsection just matches the the Bernoulli distribution.
+>&#10116;we assume that <font color="DeepSkyBlue">each occurrence of the event in distinct subsection is independent</font>, the success v.s. failure probability in each subsection just matches the the Bernoulli distribution.  
 >&#10117;let the random variable $T$ to be the time it takes until the very first event to occur, and the whole behavior follows the geometric distribution, if it takes time larger than time $t$ for the very first event to occur, then we have such probability:  
->$P(T>t)$=$\lim_{t\rightarrow\infty}(P_{fail})^{n}$=$\lim_{t\rightarrow\infty}(1-\frac {x\cdot t}{V\cdot n})^{n}$
+>$P(T>t)$=$\lim_{t\rightarrow\infty}(P_{fail})^{n}$=$\lim_{t\rightarrow\infty}(1-\frac {x\cdot t}{V\cdot n})^{n}$  
 >
 
 <!-- Γ -->
