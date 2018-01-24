@@ -19,17 +19,26 @@ It would be greatly helpful in the evaluation of the experimental model build on
 >&#10115;each disjoint interval are of the same time length, say it $t$, and we further divide it into n subsections.  Then each subsection would have $P_{success}$=$\frac {x\cdot t}{V\cdot n}$, then the failure probability could be regarded as $P_{fail}$=$1-\frac {x\cdot t}{V\cdot n}$.  
 >&#10116;we assume that <font color="DeepSkyBlue">each occurrence of the event in distinct subsection is independent</font>, the success v.s. failure probability in each subsection just matches the the Bernoulli distribution.  
 >&#10117;let the random variable $T$ to be the time it takes until the very first event to occur, and the whole behavior follows the geometric distribution, if it takes time larger than time $t$ for the very first event to occur, then we have such probability:  
->$P(T>t)$=$\lim_{t\rightarrow\infty}(P_{fail})^{n}$=$\lim_{t\rightarrow\infty}(1-\frac {x\cdot t}{V\cdot n})^{n}$  
+>$P(T>t)$=$\lim_{n\rightarrow\infty}(P_{fail})^{n}$=$\lim_{n\rightarrow\infty}(1-\frac {x\cdot t}{V\cdot n})^{n}$  
 >
 >$(1-\frac {x\cdot t}{V\cdot n})^{n}$  
 >$=C_{0}^{n}1^{n}\cdot(-\frac {x\cdot t}{V\cdot n})^{0}$+$C_{1}^{n}1^{n-1}\cdot(-\frac {x\cdot t}{V\cdot n})^{1}$+$C_{2}^{n}1^{n-2}\cdot(-\frac {x\cdot t}{V\cdot n})^{2}$+...+$C_{n}^{n}1^{0}\cdot(-\frac {x\cdot t}{V\cdot n})^{n}$  
 >
->Since $\lim_{t\rightarrow\infty}(-\frac {x\cdot t}{V\cdot n})=0$, then:  
+>Since $\lim_{n\rightarrow\infty}(-\frac {x\cdot t}{V\cdot n})=0$, then:  
 >$P(T>t)$  
->$=\lim_{t\rightarrow\infty}(1-\frac {x\cdot t}{V\cdot n})^{n}$  
->$=\lim_{t\rightarrow\infty}1+(-\frac {x\cdot t}{V\cdot n})^{n}$  
->$\approx\lim_{t\rightarrow\infty}(1+\frac {-x\cdot t}{V\cdot n})^{n}$  
->$=e^{-\frac {x\cdot t}{V}}$  
+>$=\lim_{n\rightarrow\infty}(1-\frac {x\cdot t}{V\cdot n})^{n}$  
+>$=\lim_{n\rightarrow\infty}1+(-\frac {x\cdot t}{V\cdot n})^{n}$  
+>$\approx\lim_{n\rightarrow\infty}(1+\frac {-x\cdot t}{V\cdot n})^{n}$  
+>
+>Since $e$=$\lim_{n\rightarrow\infty}(1+\frac {1}{n})^{n}$, and  
+>$e^{2}$  
+>$=\lim_{n\rightarrow\infty}((1+\frac {1}{n})^{n})^{2}$  
+>$=\lim_{n\rightarrow\infty}((1+\frac {1}{n})^{2})^{n}$  
+>$=\lim_{n\rightarrow\infty}(1+\frac {2}{n}+\frac {1}{n^{2}})^{n}$  
+>$\approx\lim_{n\rightarrow\infty}(1+\frac {2}{n})^{n}$
+>
+>Therefore, $P(T>t)$=$e^{-\frac {x\cdot t}{V}}$  
+>
 >&#10118;therefore, $P(T\le t)$=$1-e^{-\frac {x\cdot t}{V}}$, it is the successful probability for events to occur within time $t$.  
 >
 >Above is just the basic illustration of the the <font color="Red">exponential</font> distribution.  Such scenario would be mostly found in chemical catalyst experiment, or fermentation test in biological laboratory.  
