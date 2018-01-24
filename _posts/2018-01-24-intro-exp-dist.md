@@ -32,7 +32,7 @@ It would be greatly helpful in the evaluation of the experimental model build on
 >$=e^{-\frac {x\cdot t}{V}}$  
 >&#10118;therefore, $P(T\le t)$=$1-e^{-\frac {x\cdot t}{V}}$, it is the successful probability for events to occur within time $t$.  
 >
->Above is just the basic illustration of the the <font color="Red">exponential</font> distribution.  
+>Above is just the basic illustration of the the <font color="Red">exponential</font> distribution.  Such scenario would be mostly found in chemical catalyst experiment, or fermentation test in biological laboratory.  
 
 ### Definition Of The <font color="Red">Exponential</font> Distribution
 >Succeeding to the last paragraph, for the simplicity, we take $\lambda$=$\frac {x}{V}$ to be the <font color="DeepSkyBlue">rate</font>, the <font color="DeepSkyBlue">intensity</font>.  The CDF could be easily defined as below:  
