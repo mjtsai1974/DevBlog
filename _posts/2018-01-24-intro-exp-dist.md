@@ -10,7 +10,7 @@ With the basic realization of gamma distributions, we could also treat the <font
 It would be greatly helpful in the evaluation of the experimental model build on your hypothesis, the power of test for the precision in the machine learning results.   
 </p>
 
-### Cases of The <font color="Red">Exponential</font> Distribution
+### The <font color="Red">Exponential</font> Distribution Illustration
 >This article would like to guide you through a design of a simple case to generalize the <font color="Red">exponential</font> distribution.  
 >
 >&#10112;the experiment is proceeded with the assumption that $x$ is the <font color="DeepSkyBlue">rate</font> of event occurrence during one time interval $t$, totally, $x\cdot t$ events.  
@@ -20,6 +20,17 @@ It would be greatly helpful in the evaluation of the experimental model build on
 >&#10116;we assume that <font color="DeepSkyBlue">each occurrence of the event in distinct subsection is independent</font>, the success v.s. failure probability in each subsection just matches the the Bernoulli distribution.  
 >&#10117;let the random variable $T$ to be the time it takes until the very first event to occur, and the whole behavior follows the geometric distribution, if it takes time larger than time $t$ for the very first event to occur, then we have such probability:  
 >$P(T>t)$=$\lim_{t\rightarrow\infty}(P_{fail})^{n}$=$\lim_{t\rightarrow\infty}(1-\frac {x\cdot t}{V\cdot n})^{n}$  
+>
+>$(1-\frac {x\cdot t}{V\cdot n})^{n}$  
+>$=C_{0}^{n}1^{n}\cdot(-\frac {x\cdot t}{V\cdot n})^{0}$+$C_{1}^{n}1^{n-1}\cdot(-\frac {x\cdot t}{V\cdot n})^{1}$+$C_{2}^{n}1^{n-2}\cdot(-\frac {x\cdot t}{V\cdot n})^{2}$+...+$C_{n}^{n}1^{0}\cdot(-\frac {x\cdot t}{V\cdot n})^{n}$  
+>
+>Since $\lim_{t\rightarrow\infty}(-\frac {x\cdot t}{V\cdot n})=0$, then:  
+>$P(T>t)$  
+>$=\lim_{t\rightarrow\infty}(1-\frac {x\cdot t}{V\cdot n})^{n}$  
+>$=\lim_{t\rightarrow\infty}1+(-\frac {x\cdot t}{V\cdot n})^{n}$  
+>$\approx\lim_{t\rightarrow\infty}(1+\frac {-x\cdot t}{V\cdot n})^{n}$  
+>$=e^{-\frac {x\cdot t}{V}}$  
+>&#10118;therefore, $P(T\le t)$=$1-e^{-\frac {x\cdot t}{V}}$, it is the successful probability for events to occur within time t.  
 >
 
 <!-- Γ -->
