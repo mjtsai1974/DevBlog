@@ -47,6 +47,12 @@ It would be greatly helpful in the evaluation of the experimental model build on
 >$=-e^{-\lambda\cdot t}\vert_{0}^{a}$  
 >$=1-e^{-\lambda\cdot a}$, take $t$=$a$  
 
+### Relationship With The Gamma Distribution
+>Be recalled that the PDF of [the gamma distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/):  
+>$f_{X}(x)=\frac {1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\cdot x^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$  
+>
+>Take $\alpha$=$1$, $\lambda$=$\frac {1}{\beta}$, you can easily find that the <font color="Red">exponential</font> distribution a <font color="DeepSkyBlue">special case of gamma</font> distribution. Change $X$ to $T$, $x$ to $t$, they are exactly the same thing!!!  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
