@@ -31,13 +31,12 @@ It would be greatly helpful in the evaluation of the experimental model build on
 >$\approx\lim_{n\rightarrow\infty}(1+\frac {-x\cdot t}{V\cdot n})^{n}$  
 >
 >Since $e$=$\lim_{n\rightarrow\infty}(1+\frac {1}{n})^{n}$, and  
->$e^{2}$  
->$=\lim_{n\rightarrow\infty}((1+\frac {1}{n})^{n})^{2}$  
+>$e^{2}$=$\lim_{n\rightarrow\infty}((1+\frac {1}{n})^{n})^{2}$  
 >$=\lim_{n\rightarrow\infty}((1+\frac {1}{n})^{2})^{n}$  
 >$=\lim_{n\rightarrow\infty}(1+\frac {2}{n}+\frac {1}{n^{2}})^{n}$  
 >$\approx\lim_{n\rightarrow\infty}(1+\frac {2}{n})^{n}$
 >
->Therefore, $P(T>t)$=$e^{-\frac {x\cdot t}{V}}$  
+>Then, $P(T>t)$=$e^{-\frac {x\cdot t}{V}}$  
 >
 >&#10118;therefore, $P(T\le t)$=$1-e^{-\frac {x\cdot t}{V}}$, it is the successful probability for events to occur within time $t$.  
 >
