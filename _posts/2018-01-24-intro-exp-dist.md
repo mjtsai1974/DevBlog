@@ -52,6 +52,11 @@ It would be greatly helpful in the evaluation of the experimental model build on
 >$f_{X}(x)=\frac {1}{\beta^{\alpha}\cdot\Gamma(\alpha)}\cdot x^{\alpha-1}\cdot e^{-\frac{x}{\beta}}$  
 >
 >Take $\alpha$=$1$, $\lambda$=$\frac {1}{\beta}$, you can easily find that the <font color="Red">exponential</font> distribution a <font color="DeepSkyBlue">special case of gamma</font> distribution. Change $X$ to $T$, $x$ to $t$, they are exactly the same thing!!!  
+>
+>Below chart exhibits its PDF with regards to $\lambda$ set to $0.5$,$0.333$:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-24-intro-exp-dist-pdf.png "exp dist pdf")
+>Next chart illustrate the cumulative distribution with $\lambda$ set to $0.5$,$0.333$:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-24-intro-exp-dist-cdf.png "exp dist cdf")
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
