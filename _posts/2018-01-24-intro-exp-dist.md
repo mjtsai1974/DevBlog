@@ -66,6 +66,23 @@ It would be greatly helpful in the evaluation of the experimental model build on
 >Next chart illustrate the cumulative distribution with $\lambda$ set to $0.5$,$0.333$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-24-intro-exp-dist-cdf.png "exp dist cdf")
 
+### Moments Of The <font color="Red">Exponential</font> Distribution
+>The most efficient way to get the expect value and variance would be the moments.  
+>&#10112;take $\alpha$=$1$, $\lambda$=$\frac {1}{\beta}$, we will have the moments below:  
+>$\mu_{r}$=$E\lbrack X^{r}\rbrack$=$\frac {1}{\beta}\int_{0}^{\infty}x^{r}\cdot e^{-\frac {x}{\beta}}\operatorname dx$  
+>
+>&#10113;let $y$=$\frac {x}{\beta}$, $\operatorname dy$=$\frac {1}{\beta}\cdot\operatorname dx$, then:  
+>$\mu_{r}$=$\frac {1}{\beta}\int_{0}^{\infty}(\beta\cdot y)^{r}\cdot e^{-y}\cdot\beta\cdot\operatorname dy$  
+>$\;\;\;\;$=$\beta^{r}\int_{0}^{\infty}(y)^{r}\cdot e^{-y}\operatorname dy$  
+>$\;\;\;\;$=$\beta^{r}\cdot\Gamma(r+1)$  
+>
+>Therefore, we have $\mu_1$=$\beta\cdot\Gamma(2)$=$\beta$  
+>And $\mu_2$=$\beta^{2}\cdot\Gamma(3)$=$\beta^{2}\cdot\2\cdot\Gamma(2)$=$2\cdot\beta^{2}$  
+>
+>Finally, the expect value $\mu_{1}$=$E\lbrack X\rbrack$=$\beta$.  
+>The variance $Var\lbrack X\rbrack$=$E\lbrack X^2\rbrack$-$E^2\lbrack X\rbrack$=$\beta^{2}$.  
+>Recall that we take $\lambda$=$\frac {1}{\beta}$, hence, $E\lbrack X\rbrack$=$\frac {1}{\lambda}$, $Var\lbrack X\rbrack$=$(\frac {1}{\lambda})^2$.  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
