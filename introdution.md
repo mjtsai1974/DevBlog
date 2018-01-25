@@ -78,9 +78,9 @@ the following:
 * [Introduction To The Chi-Square Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/03/intro-chi-square-dist/)
 * [Introduction To The F Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/05/intro-f-dist/)
 * [Introduction To The t Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/15/intro-t-dist/)
-* The relation in between The Normal, F, Chi-Square, t Distribution 
-* Introduction To The Exponential Distribution
+* [Introduction To The Exponential Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/24/intro-exp-dist/)
 * Introduction To The Poisson Distribution
+* The relation in between The Normal, F, Chi-Square, t, Exponential Distribution 
 * Univariate Regression Model
 * Multivariate Regression Model
 * Degree Of Freedom(dof)
