@@ -77,7 +77,7 @@ It would be greatly helpful in the evaluation of the experimental model build on
 >$\;\;\;\;$=$\beta^{r}\cdot\Gamma(r+1)$  
 >
 >Therefore, we have $\mu_1$=$\beta\cdot\Gamma(2)$=$\beta$  
->And $\mu_2$=$\beta^{2}\cdot\Gamma(3)$=$\beta^{2}\cdot\2\cdot\Gamma(2)$=$2\cdot\beta^{2}$  
+>And $\mu_2$=$\beta^{2}\cdot\Gamma(3)$=$\beta^{2}\cdot 2\cdot\Gamma(2)$=$2\cdot\beta^{2}$  
 >
 >Finally, the expect value $\mu_{1}$=$E\lbrack X\rbrack$=$\beta$.  
 >The variance $Var\lbrack X\rbrack$=$E\lbrack X^2\rbrack$-$E^2\lbrack X\rbrack$=$\beta^{2}$.  
