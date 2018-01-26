@@ -35,8 +35,21 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >$=f(0)$+$f'(0)\cdot\triangle x$+$\frac {1}{2}\cdot f''(0)\cdot(\triangle x)^2$+$\frac {1}{6}\cdot f'''(0)\cdot(\triangle x)^3$+...  
 >$=1$-$\triangle x$+$(\triangle x)^2$-$(\triangle x)^3$+$(\triangle x)^4$-$(\triangle x)^5$+...
 >
->Replace $\triangle x$ by $x$, we finally have $f(x)$, then:  
+><font color="DeepSkyBlue">Replace $\triangle x$ by $x$, we finally have $f(x)$</font>, then:  
+>&#10112;let $f(x)$=$\frac {1}{x}$, then $f(0)$=$\infty$, boom!  
+>&#10113;let $f(x)$=$\frac {1}{x-1}$, then $f(0)$=$-1$, a contradiction!  
+>&#10114;let $f(x)$=$\frac {1}{1-x}$, then:  
+>$f(0)$=$1$  
+>$f'(0)$=$-(1-x)^{-2}$=$-1$  
+>$f''(0)$=$-2\cdot(1-x)^{-3}$=$-2$, boom!  
+>&#10115;let $f(x)$=$\frac {1}{1+x}$, then:  
+>$f(0)$=$1$  
+>$f'(0)$=$-(1+x)^{-2}$=$-1$  
+>$f''(0)$=$2\cdot(1+x)^{-3}$=$2$, looks good    
+>$f'''(0)$=$-6\cdot(1+x)^{-4}$=$-6$, still holds  
+>$f''''(0)$=$24\cdot(1+x)^{-5}$=$24$, wow, that's it  
 >
+>Thus, $f(x)$=$\frac {1}{1+x}$ just satisfies this series.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
