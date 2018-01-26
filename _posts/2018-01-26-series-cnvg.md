@@ -51,6 +51,15 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >
 >Thus, $f(x)$=$\frac {1}{1+x}$ just satisfies this series.  
 
+### The Integral Of Series
+>&#10112;by given that $1+x+x^2+...+x^{n-1}$=$\frac {1}{1-x}$, as $n\rightarrow\infty$  
+>Then, $\int 1+x+x^2+...\operatorname dx$=$\int\frac {1}{1-x}\operatorname dx$  
+>$\Rightarraw x+\frac {1}{2}\cdot x^2+\frac {1}{3}\cdot x^3+...$=$-ln(1-x)$  
+>&#10113;by given that $1$-$x$+$x^2$-$x^3$+$x^4$-$x^5$+...+(x)^{n-1}=$\frac {1}{1+x}$, as $n\rightarrow\infty$  
+>then, $\int 1-x+x^2-x^3+x^4-x^5+...\operatorname dx$=$\int\frac {1}{1+x}$  
+>$\Rightarraw x-\frac {1}{2}\cdot x^2+\frac {1}{3}\cdot x^3-\frac {1}{4}\cdot x^4+\frac {1}{5}\cdot x^5...$=$ln(1+x)$  
+>
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
