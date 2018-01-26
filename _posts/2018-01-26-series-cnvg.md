@@ -72,7 +72,18 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >
 >Ex. the series $\frac {1}{2}$+$\frac {1}{4}$+$\frac {1}{8}$+...has partial sums:  
 >$S_1$=$\frac {1}{2}$,$S_2$=$\frac {3}{4}$,$S_3$=$\frac {7}{8}$,...,$S_n$=$1-\frac {1}{2^n}$  
->$\frac {1}{2}$+$\frac {1}{4}$+$\frac {1}{8}$+...converges to $1$, because $S_n\rightarrow 1$, as $a\rightarrow\infty$.  
+>Hence, <font color="DeepPink">$\frac {1}{2}$+$\frac {1}{4}$+$\frac {1}{8}$+...converges to $1$, because $S_n\rightarrow 1$, as $a\rightarrow\infty$.</font>  
+>
+>[2]The <font color="RoyalBlue">limit</font> of <font color="OrangeRed">partial sum</font>  
+><font color="DeepPink">The sum of a series is the limit of its partial sum</font>, for we can have a new idea that $\sum a_n$=$S$, where $S_n\rightarrow S$.  
+>
+>[3]Theorem:  
+><font color="DeepPink">If a series converges($S_n\rightarrow S$), then its terms must approach zero($a_n\rightarrow 0$).</font>  
+>
+>Proof:  
+>By given that $S_n\rightarrow S$, it just converges,  
+>then for $S_{n+1}$ of the $n+1$ terms, <font color="DeepPink">$S_{n+1}-S_n\rightarrow 0$</font> must hold to have $S_{n+1}\rightarrow S_n$, and $S_n\rightarrow S$ by given.  
+>Therefore, the <font color="DeepPink">$(n+1)$th term must approaches zero!!</font>  
 
 
 <!-- Γ -->
