@@ -31,7 +31,7 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >
 >Departure from $x$=$0$, where $\triangle x\rightarrow 0$, thus:  
 >$\lim_{\triangle x\rightarrow 0}f(x+\triangle x)$  
->$\approx\lim_{\triangle x\rightarrow\0}f(\triangle x)$  
+>$\approx\lim_{\triangle x\rightarrow 0}f(\triangle x)$  
 >$=f(0)$+$f^{(1)}(0)\cdot\triangle x$+$\frac {1}{2}\cdot f^{(2)}(0)\cdot(\triangle x)^2$+$\frac {1}{6}\cdot f^{(3)}(0)\cdot(\triangle x)^3$+...  
 >$=1$-$\triangle x$+$(\triangle x)^2$-$(\triangle x)^3$+$(\triangle x)^4$-$(\triangle x)^5$+...
 >
