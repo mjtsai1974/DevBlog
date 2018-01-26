@@ -65,6 +65,16 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >$\;\;$=$ln(1+x)$-$ln(1-x)$  
 >$\;\;$=$ln\frac {1+x}{1-x}$...magic  
 
+### <font color="DeepPink">Convergence</font> Test
+>[1]Definition of <font color="OrangeRed">partial sum</font>  
+>The <font color="OrangeRed">partial sum $S_n$</font> of the series $a_1$+$a_2$+$a_3$+... stops at $a_n$, then <font color="OrangeRed">the sum of the first n tems</font> is $S_n$=$a_1$+$a_2$+$a_3$+...+$a_n$.  
+>Thus, <font color="OrangeRed">$S_n$</font> is part of the total sum.  
+>
+>Ex. the series $\frac {1}{2}$+$\frac {1}{4}$+$\frac {1}{8}$+...has partial sums:  
+>$S_1$=$\frac {1}{2}$,$S_2$=$\frac {3}{4}$,$S_3$=$\frac {7}{8}$,...,$S_n$=$1-\frac {1}{2^n}$  
+>$\frac {1}{2}$+$\frac {1}{4}$+$\frac {1}{8}$+...converges to $1$, because $S_n\rightarrow 1$, as $a\rightarrow\infty$.  
+
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
