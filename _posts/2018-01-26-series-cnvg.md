@@ -75,10 +75,10 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >Hence, <font color="DeepPink">$\frac {1}{2}$+$\frac {1}{4}$+$\frac {1}{8}$+...converges to $1$, because $S_n\rightarrow 1$, as $a\rightarrow\infty$.</font>  
 >
 >[2]The <font color="RoyalBlue">limit</font> of <font color="OrangeRed">partial sum</font>  
-><font color="DeepPink">The sum of a series is the limit of its partial sum</font>, for we can have a new idea that $\sum a_n$=$S$, where $S_n\rightarrow S$.  
+>The <font color="DeepPink">sum of a series</font> is the <font color="DeepPink">limit of its partial sum</font>, for we can have a new idea that $\sum a_n$=$S$, where $S_n\rightarrow S$.  
 >
->[3]Theorem:  
-><font color="DeepPink">If a series converges($S_n\rightarrow S$), then its terms must approach zero($a_n\rightarrow 0$).</font>  
+>[3]<font color="DeepPink">Theorem:  
+>If a series converges($S_n\rightarrow S$), then its terms must approach zero($a_n\rightarrow 0$).</font>  
 >
 >Proof:  
 >By given that $S_n\rightarrow S$, it just converges,  
