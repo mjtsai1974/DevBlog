@@ -24,15 +24,15 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 
 ### What's The Function Of $1$-$x$+$x^2$-$x^3$+$x^4$-$x^5$+...?
 >Let $f(x)$=$1$-$x$+$x^2$-$x^3$+$x^4$-$x^5$+..., then their first, second, third, forth order derivative are below:  
->$f'(x)$=$-1$+$2\cdot x$-$3\cdot x^2$+$4\cdot x^3$-$5\cdot x^4$+...  
->$f''(x)$=$2$-$6\cdot x$+$12\cdot x^2$-$20\cdot x^3$+...  
->$f'''(x)$=$-6$+$24\cdot x$-$60\cdot x^2$+...  
->$f''''(x)$=$24$-$120\cdot x$+...  
+>$f^{(1)}(x)$=$-1$+$2\cdot x$-$3\cdot x^2$+$4\cdot x^3$-$5\cdot x^4$+...  
+>$f^{(2)}(x)$=$2$-$6\cdot x$+$12\cdot x^2$-$20\cdot x^3$+...  
+>$f^{(3)}(x)$=$-6$+$24\cdot x$-$60\cdot x^2$+...  
+>$f^{(4)}(x)$=$24$-$120\cdot x$+...  
 >
 >Departure from $x$=$0$, where $\triangle x\rightarrow 0$, thus:  
 >$\lim_{\triangle x\rightarrow 0}f(x+\triangle x)$  
 >$\approx\lim_{\triangle x\rightarrow\0}f(\triangle x)$  
->$=f(0)$+$f'(0)\cdot\triangle x$+$\frac {1}{2}\cdot f''(0)\cdot(\triangle x)^2$+$\frac {1}{6}\cdot f'''(0)\cdot(\triangle x)^3$+...  
+>$=f(0)$+$f^{(1)}(0)\cdot\triangle x$+$\frac {1}{2}\cdot f^{(2)}(0)\cdot(\triangle x)^2$+$\frac {1}{6}\cdot f^{(3)}(0)\cdot(\triangle x)^3$+...  
 >$=1$-$\triangle x$+$(\triangle x)^2$-$(\triangle x)^3$+$(\triangle x)^4$-$(\triangle x)^5$+...
 >
 ><font color="DeepSkyBlue">Replace $\triangle x$ by $x$, we finally have $f(x)$</font>, then:  
@@ -40,14 +40,14 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >&#10113;let $f(x)$=$\frac {1}{x-1}$, then $f(0)$=$-1$, a contradiction!  
 >&#10114;let $f(x)$=$\frac {1}{1-x}$, then:  
 >$f(0)$=$1$  
->$f'(0)$=$-(1-x)^{-2}$=$-1$  
->$f''(0)$=$-2\cdot(1-x)^{-3}$=$-2$, boom!  
+>$f^{(1)}(0)$=$-(1-x)^{-2}$=$-1$  
+>$f^{(2)}(0)$=$-2\cdot(1-x)^{-3}$=$-2$, boom!  
 >&#10115;let $f(x)$=$\frac {1}{1+x}$, then:  
 >$f(0)$=$1$  
->$f'(0)$=$-(1+x)^{-2}$=$-1$  
->$f''(0)$=$2\cdot(1+x)^{-3}$=$2$, looks good    
->$f'''(0)$=$-6\cdot(1+x)^{-4}$=$-6$, still holds  
->$f''''(0)$=$24\cdot(1+x)^{-5}$=$24$, wow, that's it  
+>$f^{(1)}(0)$=$-(1+x)^{-2}$=$-1$  
+>$f^{(2)}(0)$=$2\cdot(1+x)^{-3}$=$2$, looks good    
+>$f^{(3)}(0)$=$-6\cdot(1+x)^{-4}$=$-6$, still holds  
+>$f^{(4)}(0)$=$24\cdot(1+x)^{-5}$=$24$, wow, that's it  
 >
 >Thus, $f(x)$=$\frac {1}{1+x}$ just satisfies this series.  
 
