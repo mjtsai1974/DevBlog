@@ -19,7 +19,7 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >When <font color="RosyBrown">$\left|x\right|>1$</font>, it <font color="RosyBrown">divergence</font> and $\lim_{n\rightarrow\infty}\frac {1-x^n}{1-x}$=$\lim_{n\rightarrow\infty}\frac {1-x^n}{1-x}$  
 >
 >&#10114;by directly dividing, we have:
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-26-series-cnvg-direct-divide.png "1/(1-x) for geometric series")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-26-series-cnvg-direct-divide.png "direct div for geometric series")
 >This says $1+x+x^2+...+x^{n-1}$=$\frac {1}{1-x}$  
 
 
