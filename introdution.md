@@ -71,7 +71,7 @@ the following:
 * [QR Decomposition]({{ site.github.repo }}{{ site.baseurl }}/2017/10/31/prereq-qr-decomposition/)
 * Cholesky Decomposition
 * Spatial Value Decomposition(SVD)
-* Infinite Series
+* Convergence of Series
 * [Jacobian and Integral]({{ site.github.repo }}{{ site.baseurl }}/2017/11/16/prereq-jacobian-integral/)
 * [Introduction To The Moment Generating Function]({{ site.github.repo }}{{ site.baseurl }}/2017/12/28/intro-mgf/)
 * [Introduction To The Gamma Distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/)
