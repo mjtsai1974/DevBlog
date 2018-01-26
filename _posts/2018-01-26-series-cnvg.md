@@ -59,11 +59,11 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >then, $\int 1-x+x^2-x^3+x^4-x^5+...\operatorname dx$=$\int\frac {1}{1+x}$  
 >$\Rightarrow x-\frac {1}{2}\cdot x^2+\frac {1}{3}\cdot x^3-\frac {1}{4}\cdot x^4+\frac {1}{5}\cdot x^5...$=$ln(1+x)$  
 >&#10114;$\int 1+x+x^2+...\operatorname dx$+$\int 1-x+x^2-x^3+x^4-x^5+...\operatorname dx$  
->$\;\;\;\;$=$x+\frac {1}{2}\cdot x^2+\frac {1}{3}\cdot x^3+...$+$x-\frac {1}{2}\cdot x^2+\frac {1}{3}\cdot x^3...$  
->$\;\;\;\;$=$2\cdot(x+\frac {1}{3}\cdot x^3+\frac {1}{5}\cdot x^5...)$  
->$\;\;\;\;$=$-ln(1-x)$+$ln(1+x)$  
->$\;\;\;\;$=$ln(1+x)$-$ln(1-x)$  
->$\;\;\;\;$=$ln {1+x}{1-x}$...magic  
+>$\;\;$=$x+\frac {1}{2}\cdot x^2+\frac {1}{3}\cdot x^3+...$+$x-\frac {1}{2}\cdot x^2+\frac {1}{3}\cdot x^3...$  
+>$\;\;$=$2\cdot(x+\frac {1}{3}\cdot x^3+\frac {1}{5}\cdot x^5...)$  
+>$\;\;$=$-ln(1-x)$+$ln(1+x)$  
+>$\;\;$=$ln(1+x)$-$ln(1-x)$  
+>$\;\;$=$ln/frac {1+x}{1-x}$...magic  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
