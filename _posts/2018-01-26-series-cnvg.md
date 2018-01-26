@@ -11,7 +11,7 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 
 ### Begin By <font color="OrangeRed">Geometric Series</font>
 >&#10112;this is a geometric series, $1$,$x$,$x^2$,$x^3$,..., when you sum them up, then $1$+$x$+$x^2$+$x^3$+...=$\frac {1-x^{n+1}}{1-x}$, and why?  
->Since $1+x$=$\frac {1-x^2}{1-x}$,$1+x+x^2$=$\frac {1-x^3}{1-x}$,...,then, $1+x+x^2+...+x^n-1$=$\frac {1-x^n}{1-x}$  
+>Since $1+x$=$\frac {1-x^2}{1-x}$,$1+x+x^2$=$\frac {1-x^3}{1-x}$,...,then, $1+x+x^2+...+x^{n-1}$=$\frac {1-x^n}{1-x}$  
 >
 >&#10113;what $1$+$x$+$x^2$+$x^3$+...finally becomes?  
 >This equates to the discussion of the case when n approaches infinity:  
@@ -19,6 +19,10 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >When <font color="RosyBrown">$\left|x\right|>1$</font>, it <font color="RosyBrown">divergence</font> and $\lim_{n\rightarrow\infty}\frac {1-x^n}{1-x}$=$\lim_{n\rightarrow\infty}\frac {1-x^n}{1-x}$  
 >
 >&#10114;by directly dividing, we have:
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-26-series-cnvg-direct-divide.png "1/(1-x) for geometric series")
+>This says $1+x+x^2+...+x^{n-1}$=$\frac {1}{1-x}$  
+
+
 
 
 <!-- Γ -->
