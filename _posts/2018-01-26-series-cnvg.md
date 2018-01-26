@@ -63,7 +63,7 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >$\;\;$=$2\cdot(x+\frac {1}{3}\cdot x^3+\frac {1}{5}\cdot x^5...)$  
 >$\;\;$=$-ln(1-x)$+$ln(1+x)$  
 >$\;\;$=$ln(1+x)$-$ln(1-x)$  
->$\;\;$=$ln/frac {1+x}{1-x}$...magic  
+>$\;\;$=$ln\frac {1+x}{1-x}$...magic  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
