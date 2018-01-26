@@ -22,8 +22,21 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-26-series-cnvg-direct-divide.png "direct div for geometric series")
 >This says $1+x+x^2+...+x^{n-1}$=$\frac {1}{1-x}$  
 
-
-
+### What's The Function Of $1$-$x$+$x^2$-$x^3$+$x^4$-$x^5$+...?
+>Let $f(x)$=$1$-$x$+$x^2$-$x^3$+$x^4$-$x^5$+..., then their first, second, third, forth order derivative are below:  
+>$f'(x)$=$-1$+$2\cdot x$-$3\cdot x^2$+$4\cdot x^3$-$5\cdot x^4$+...  
+>$f''(x)$=$2$-$6\cdot x$+$12\cdot x^2$-$20\cdot x^3$+...  
+>$f'''(x)$=$-6$+$24\cdot x$-$60\cdot x^2$+...  
+>$f''''(x)$=$24$-$120\cdot x$+...  
+>
+>Departure from $x$=$0$, where $\triangle x\rightarrow\0}$, thus:  
+>$\lim_{\triangle x\rightarrow\0}f(x+\triangle x)$  
+>$\approx\lim_{\triangle x\rightarrow\0}f(\triangle x)$  
+>$=f(0)$+$f'(0)\cdot\triangle x$+$\frac {1}{2}\cdot f''(0)\cdot(\triangle x)^2$+$\frac {1}{6}\cdot f'''(0)\cdot(\triangle x)^3$+...  
+>$=1$-$\triangle x$+$(\triangle x)^2$-$(\triangle x)^3$+$(\triangle x)^4$-$(\triangle x)^5$+...
+>
+>Replace $\triangle x$ by $x$, we finally have $f(x)$, then:  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
@@ -34,6 +47,7 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 <!-- \overline{X_n} -->
 <!-- \frac{{\overline {X_n}}-\mu}{S/\sqrt n} -->
 <!-- \lim_{t\rightarrow\infty} -->
+<!-- \begin{array}{l}f'(x)\\f''(x)\\f'''(x)\\f''''(x)\end{array} -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
