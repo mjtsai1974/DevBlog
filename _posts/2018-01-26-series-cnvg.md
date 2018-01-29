@@ -115,7 +115,7 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >$\;\;\;\;$=$\int_{1}^{\infty}x^{-p}\operatorname dx$  
 >$\;\;\;\;$=$\frac {1}{-p+1}\cdot x\vert_1^\infty$  
 >$\;\;\;\;$=$\frac {1}{1-p}\cdot(\infty^{-p+1}-1)$  
->&#10114;therefore, <font color="DeepSkyBlue">this series converges, if $p>1$,</font>
+>&#10114;therefore, <font color="DeepSkyBlue">this series converges, if $p>1$,</font>  
 >hence, $1$+$\sum_{2}^{\infty}\frac {1}{n^p}$<$1$+$\frac {1}{1-p}\cdot(0-1)$=$\frac {p}{p-1}$  
 
 <!-- Γ -->
