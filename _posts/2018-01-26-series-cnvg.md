@@ -139,7 +139,7 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >$\Rightarrow\lim_{n\rightarrow\infty$}(a_n)\rightarrow L^n<1$  
 >&#10113;then for the n+1 term, we just have it hold:  
 >$\lim_{n\rightarrow\infty$}(a_{n+1})\rightarrow L^{n+1}<1$  
->>&#10114;$\lim_{n\rightarrow\infty$}\frac {a_{n+1}}{a_n}\rightarrow\frac {L^{n+1}}{L^{n}}=L<1$, therefore, this series just converges.    
+>&#10114;$\lim_{n\rightarrow\infty$}\frac {a_{n+1}}{a_n}\rightarrow\frac {L^{n+1}}{L^{n}}=L<1$, therefore, this series just converges.    
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
