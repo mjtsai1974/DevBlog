@@ -118,6 +118,19 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >&#10114;therefore, <font color="DeepSkyBlue">this series converges, if $p>1$,</font>  
 >hence, $1$+$\sum_{2}^{\infty}\frac {1}{n^p}$<$1$+$\frac {1}{1-p}\cdot(0-1)$=$\frac {p}{p-1}$  
 
+### <font color="Red">Ratio Test Theorem</font>
+><font color="DeepPink">If $\frac {a_{n+1}}{a_n}$ approaches a limit $L<1$, the series converges.</font>  
+>proof:  
+>There is a hint that we can <font color="DeepSkyBlue">compare $a_1$+$a_2$+$a_3$+... with $1$+$x$+$x^2$+...</font>  
+>&#10112;choose $L$<$x$<$1$, then we just have:  
+>$\frac {a_{n+1}}{a_n}$<$x$,$\frac {a_{n+2}}{a_{n+1}}$<$x$,$\frac {a_{n+3}}{a_{n+2}}$<$x$,...  
+>&#10113;multiply each inequality, we have:  
+>$\frac {a_{n+1}}{a_n}$<$x$,$\frac {a_{n+2}}{a_{n}}$<$x^2$,$\frac {a_{n+3}}{a_{n}}$<$^3x$,...  
+>$\Rightarrow a_{n+1}<a_{n}\cdot x$,$a_{n+2}<a_{n}\cdot x^2$,$a_{n+3}<a_{n}\cdot x^{3}$,...  
+>$\Rightarrow a_{n+1}$+$a_{n+2}$+$a_{n+3}$+...<$a_n\cdot(x+x^2+x^3+...)$  
+>$\Rightarrow a_{n+1}$+$a_{n+2}$+$a_{n+3}$+...<$a_n\cdot x\cdot(1+x+x^2+...)$  
+>&#10114;since <font color="DeepPink">$x$<$1$, compare with the geometric series, $\sum a_n$ just converges.</font> 
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
