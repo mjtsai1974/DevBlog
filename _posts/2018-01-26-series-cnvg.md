@@ -134,12 +134,12 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 ### Root Test
 ><font color="DeepPink">If the n term in root $(a_n)^{\frac {1}{n}}$ approaches $L$<$1$, the series just converges.</font>  
 >proof:  
->&#10112;$\lim_{n\rightarrow\infty$}(a_n)^{\frac {1}{n}}\rightarrow L<1$...by given  
->$\Rightarrow(\lim_{n\rightarrow\infty$}(a_n)^{\frac {1}{n}})^{n}\rightarrow L^n<1^n$  
->$\Rightarrow\lim_{n\rightarrow\infty$}(a_n)\rightarrow L^n<1$  
+>&#10112;$\lim_{n\rightarrow\infty}(a_n)^{\frac {1}{n}}\rightarrow L<1$...by given  
+>$\Rightarrow(\lim_{n\rightarrow\infty}(a_n)^{\frac {1}{n}})^{n}\rightarrow L^n<1^n$  
+>$\Rightarrow\lim_{n\rightarrow\infty}(a_n)\rightarrow L^n<1$  
 >&#10113;then for the n+1 term, we just have it hold:  
->$\lim_{n\rightarrow\infty$}(a_{n+1})\rightarrow L^{n+1}<1$  
->&#10114;$\lim_{n\rightarrow\infty$}\frac {a_{n+1}}{a_n}\rightarrow\frac {L^{n+1}}{L^{n}}=L<1$, therefore, this series just converges.    
+>$\lim_{n\rightarrow\infty}(a_{n+1})\rightarrow L^{n+1}<1$  
+>&#10114;$\lim_{n\rightarrow\infty}\frac {a_{n+1}}{a_n}\rightarrow\frac {L^{n+1}}{L^{n}}=L<1$, therefore, this series just converges.    
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
