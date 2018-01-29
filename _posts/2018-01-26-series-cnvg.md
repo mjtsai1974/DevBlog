@@ -144,8 +144,8 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 ### Theorem: Limit Comparison Test
 ><font color="DeepPink">If the ratio $\frac {a_n}{b_n}$ approaches a positive limit $L$, then $\sum a_n$,$\sum b_n$ either diverge or converge.</font>  
 >proof:  
->$\lim_{n\a\rightarrow\infty}\frac {a_n}{b_n}\rightarrow L>0$...by given  
->$\Rightarrow\lim_{n\a\rightarrow\infty}\frac {a_{n+1}}{b_{n+1}}\rightarrow L>0$, also holds  
+>$\lim_{n\rightarrow\infty}\frac {a_n}{b_n}\rightarrow L>0$...by given  
+>$\Rightarrow\lim_{n\rightarrow\infty}\frac {a_{n+1}}{b_{n+1}}\rightarrow L>0$, also holds  
 >, which implies that $\sum a_n$,$\sum b_n$ are two very closed series, if one converges, another would surely does; for divergence, it is the same.  
 
 <!-- Γ -->
