@@ -131,7 +131,7 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >$\Rightarrow a_{n+1}$+$a_{n+2}$+$a_{n+3}$+...<$a_n\cdot x\cdot(1+x+x^2+...)$  
 >&#10114;since <font color="DeepPink">$x$<$1$, compare with the geometric series, $\sum a_n$ just converges.</font> 
 
-### Root Test
+### Root Test Theorem
 ><font color="DeepPink">If the n term in root $(a_n)^{\frac {1}{n}}$ approaches $L$<$1$, the series just converges.</font>  
 >proof:  
 >&#10112;$\lim_{n\rightarrow\infty}(a_n)^{\frac {1}{n}}\rightarrow L<1$...by given  
@@ -140,6 +140,13 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >&#10113;then for the n+1 term, we just have it hold:  
 >$\lim_{n\rightarrow\infty}(a_{n+1})\rightarrow L^{n+1}<1$  
 >&#10114;$\lim_{n\rightarrow\infty}\frac {a_{n+1}}{a_n}\rightarrow\frac {L^{n+1}}{L^{n}}=L<1$, therefore, this series just converges.    
+
+### Theorem: Limit Comparison Test
+><font color="DeepPink">If the ratio $\frac {a_n}{b_n}$ approaches a positive limit $L$, then $\sum a_n$,$\sum b_n$ either diverge or converge.</font>  
+>proof:  
+>$\lim_{n\a\rightarrow\infty}\frac {a_n}{b_n}\rightarrow L>0$...by given  
+>$\Rightarrow\lim_{n\a\rightarrow\infty}\frac {a_{n+1}}{b_{n+1}}\rightarrow L>0$, also holds  
+>, which implies that $\sum a_n$,$\sum b_n$ are two very closed series, if one converges, another would surely does; for divergence, it is the same.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
