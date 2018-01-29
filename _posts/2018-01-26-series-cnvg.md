@@ -157,7 +157,7 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >$a_1$-$a_2$+$a_3$-$a_4$+$a_5$-$a_6$+..., in which the signs alternate between plus and minus.  
 >The series $1$-$\frac {1}{2}$+$\frac {1}{3}$-$\frac {1}{4}$+$\frac {1}{5}$-$\frac {1}{6}$+... converges, why?  
 >&#10112;the terms decreasing to zero  
->&#10113;it decreasing to zero with alternating signs, that is $a_n\rightarrow\0^{+}$,$a_{n+1}\rightarrow\0^{-}$,  
+>&#10113;it decreasing to zero with alternating signs, that is $a_n\rightarrow 0^{+}$,$a_{n+1}\rightarrow 0^{-}$,  
 >hence, $a_n+(-a_{n+1})\rightarrow 0$, where $a_n>a_{n+1}$, the series converges.  
 >
 >[3]An alternating series <font color="DeepPink">$a_1$-$a_2$+$a_3$-$a_4$+$a_5$-$a_6$+...converges, if every $a_{n+1}\le a_{n}$ and $a_{n}\rightarrow 0$.</font>  
