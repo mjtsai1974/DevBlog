@@ -148,6 +148,27 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >$\Rightarrow\lim_{n\rightarrow\infty}\frac {a_{n+1}}{b_{n+1}}\rightarrow L>0$, also holds  
 >, which implies that $\sum a_n$,$\sum b_n$ are two very closed series, if one converges, another would surely does; for divergence, it is the same.  
 
+### Convergence Tests: <font color="Red">All</font> Series
+>[1]Definition of absolute convergence:  
+><font color="DeepPink">The series $\sum a_n$ is absolutely convergent, if $\left|\sum a_n\right|$ converges.</font>  
+>Why? This is because <font color="DeepSkyBlue">changing from $a_n$ to $\left|a_n\right|$ increases the sum.  Thus, the smaller $a_n$ is surely to converge, if $\left|\sum a_n\right|$ converges.</font>    
+>
+>[2]Alternating series:  
+>$a_1$-$a_2$+$a_3$-$a_4$+$a_5$-$a_6$+..., in which the signs alternate between plus and minus.  
+>The series $1$-$\frac {1}{2}$+$\frac {1}{3}$-$\frac {1}{4}$+$\frac {1}{5}$-$\frac {1}{6}$+... converges, why?  
+>&#10112;the terms decreasing to zero  
+>&#10113;it decreasing to zero with alternating signs, that is $a_n\rightarrow\0^{+}$,$a_{n+1}\rightarrow\0^{-}$,  
+>hence, $a_n+(-a_{n+1})\rightarrow 0$, where $a_n>a_{n+1}$, the series converges.  
+>
+>[3]An alternating series <font color="DeepPink">$a_1$-$a_2$+$a_3$-$a_4$+$a_5$-$a_6$+...converges, if every $a_{n+1}\le a_{n}$ and $a_{n}\rightarrow 0$.</font>  
+><font color="DeepSkyBlue"proof::mjtsai</font>  
+>&#10112;by given that $a_n\ge a_{n+1}$,$a_n\rightarrow 0$, as $a\rightarrow\infty$, we define $b_i$=$a_i-a_{i+1}$  
+>&#10113;then, $b_n\rightarrow 0$ as $a\rightarrow\infty$ also holds.  
+>&#10114;and $a_n\ge a_{n+1}$ implies that $\frac {a_{n+1}}{a_n}\rightarrow L_a\le 1$, as $n\rightarrow\infty$.  
+>for $L_a=1$, we have $a_n$-$a_{n+1}$=$b_n$=$0$  
+>for $L_a<1$, we have $b_n\rightarrow 0$ also holds.  
+>&#10115;thus, $b_n$ is either zero or decreasing to zero, and $\frac {b_{n+1}}{b_n}\rightarrow L_b$, as $n\rightarrow\infty$, where $L_b\rightarrow 1$ must hold, if $L_a<1$.
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
