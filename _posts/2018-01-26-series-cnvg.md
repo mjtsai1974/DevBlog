@@ -104,6 +104,20 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >
 >By squeeze theorem, $1$+$\frac {1}{2}$+$\frac {1}{3}$+$\frac {1}{4}$+...$\rightarrow\infty$, it diverges!!
 
+### Integral Test
+>[1]If $y(x)$ is decreasing, and $y(n)$ agrees with $a_n$, then $a_1$+$a_2$+$a_3$+... and $\int_{0}^{\infty}y(x)\operatorname dx$ both converge or both diverge.  
+>
+>[2]The p-series $\frac {1}{2^p}$+$\frac {1}{3^p}$+$\frac {1}{4^p}$+$\frac {1}{5^p}$+... converges, if $p>1$.  
+>proof:  
+>&#10112;let $y$=$\frac {1}{x^p}$, then $\frac {1}{n^p}$<$\int_{n-1}^{n}\frac {1}{x^p}\operatorname dx$  
+>&#10113;sum it up, we get:  
+>$\sum_{n=2}^{\infty}\frac {1}{n^p}$<$\int_{1}^{\infty}\frac {1}{x^p}\operatorname dx$  
+>$\;\;\;\;$=$\int_{1}^{\infty}x^{-p}\operatorname dx$  
+>$\;\;\;\;$=$\frac {1}{-p+1}\cdot x\vert_1^\infty$  
+>$\;\;\;\;$=$\frac {1}{1-p}\cdot(\infty^{-p+1}-1)$  
+>&#10114;therefore, <font color="DeepSkyBlue">this series converges, if $p>1$,</font>
+>hence, $1$+$\sum_{2}^{\infty}\frac {1}{n^p}$<$1$+$\frac {1}{1-p}\cdot(0-1)$=$\frac {p}{p-1}$  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
