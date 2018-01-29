@@ -85,6 +85,24 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >then for $S_{n+1}$ of the $n+1$ terms, <font color="DeepPink">$S_{n+1}-S_n\rightarrow 0$</font> must hold to have $S_{n+1}\rightarrow S_n$, and $S_n\rightarrow S$ by given.  
 >Therefore, the <font color="DeepPink">$(n+1)$th term must approaches zero!!</font>  
 
+### Comparison Test
+>[1]Comparison test: suppose that $0\le a_n\le b_n$ and $\sum b_n$ converges.  Then, $\sum a_n$ converges.  <font color="DeepPink">A series diverges, if it is above another diverged series.</font>  
+>
+>[2]Comparison test on harmonic series:  <font color="DeepPink">the harmonic series series $1$+$\frac {1}{2}$+$\frac {1}{3}$+$\frac {1}{4}$+...diverges to infinity.</font>  
+>This section illustrates why by comparing the series with the curve $y$=$\frac {1}{x}$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-01-26-series-cnvg-harmonic-diverge.png "harmonic series diverges")
+>&#10112;for the rectangle <font color="OrangeRed">above</font> the curve, each rectangle area $a_n$=$\frac {1}{n}$, then:  
+>$\sum a_n\ge\int_{1}^{n+1}\frac {1}{x}\operatorname dx$=$ln(n+1)$, where $\lim_{n\rightarrow\infty}ln(n+1)$=$\infty$  
+>&#10113;for the area <font color="OrangeRed">below</font> the curve, we have it that:  
+>$\frac {1}{2}$+$\frac {1}{3}$+$\frac {1}{4}$+...$<\int_{1}^{n}\frac {1}{x}\operatorname dx$=$ln(n)$, $\lim_{n\rightarrow\infty}ln(n)$=$\infty$  
+>The reason we integrate up to $n$ only is due to that each rectangle at $x$ under the curve counts its area in the reciprocal of its next adjacent $x+1$, totally, $n-1$ rectangles.  
+>Then $1$+$\frac {1}{2}$+$\frac {1}{3}$+$\frac {1}{4}$+...$<(1+ln(n))\rightarrow\infty$, as $n\rightarrow\infty$  
+>
+>Put it all together:  
+>$ln(n+1)$<$1$+$\frac {1}{2}$+$\frac {1}{3}$+$\frac {1}{4}$+...<$1+ln(n)$  
+>$\Rightarrow\infty$<$1$+$\frac {1}{2}$+$\frac {1}{3}$+$\frac {1}{4}$+...<$\infty$, as $a\rightarrow\infty$  
+>
+>By squeeze theorem, $1$+$\frac {1}{2}$+$\frac {1}{3}$+$\frac {1}{4}$+...$\rightarrow\infty$, it diverges!!
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
