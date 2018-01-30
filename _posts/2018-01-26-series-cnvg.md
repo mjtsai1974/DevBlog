@@ -169,6 +169,10 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >for $L_a<1$, we have $b_n\rightarrow 0$ also holds.  
 >&#10115;thus, $b_n$ is either zero or decreasing to zero, and $\frac {b_{n+1}}{b_n}\rightarrow L_b$, as $n\rightarrow\infty$, where $L_b\rightarrow 1$ must hold, if $L_a<1$.
 
+### Addendum
+>&#10112;[MIT OCW Calculus On-line Textbook by Gilbert Strange](https://ocw.mit.edu/ans7870/resources/Strang/Edited/Calculus/Calculus.pdf)  
+>&#10113;[MIT OCW Calculus by Gilbert Strange](https://ocw.mit.edu/resources/res-18-005-highlights-of-calculus-spring-2010/)  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
