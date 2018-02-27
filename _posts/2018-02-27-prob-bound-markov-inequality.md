@@ -14,12 +14,12 @@ The <font color="Red">Markov inequality</font> is a rahter simple probabilistic 
 >
 >Proof::by mjtsai  
 >&#10112;let's begin by the definition of expect value of a random variable.  
->$E\lbrack Z\rbrack$=$\sum(P(Z\ge t)\cdot\left\{Z\vert Z\ge t\right\}$+$P(Z<t)\cdot\left\{Z\vert Z<t\right\})$  
->, where we denote $\left\{Z\vert Z\ge t\right\}$=$1$,$\left\{Z\vert Z<t\right\}$=$1$  
+>$E\lbrack Z\rbrack$=$\sum(P(Z\ge t)\cdot\{Z\vert Z\ge t\}$+$P(Z<t)\cdot\{Z\vert Z<t\})$  
+>, where we denote $\{Z\vert Z\ge t\}$=$1$,$\{Z\vert Z<t\}$=$1$  
 >&#10113;then:  
->$E\lbrack Z\rbrack\ge\sum P(Z\ge t)\cdot{Z|Z\ge t}$...this must hold  
->$\;\;\;\;\;\;\;$=$P(Z\ge t)\cdot\sum \{Z|Z\ge t\}$  
->&#10114;choose $Q_t$=$\sum \left\{Z\vert Z\ge t\right\}$ to be the total number of events in $\left\{Z\vert Z\ge t\right\}$, then:  
+>$E\lbrack Z\rbrack\ge\sum P(Z\ge t)\cdot\{Z\vert Z\ge t\}$...this must hold  
+>$\;\;\;\;\;\;\;$=$P(Z\ge t)\cdot\sum \{Z\vert Z\ge t\}$  
+>&#10114;choose $Q_t$=$\sum \left\{Z\vert Z\ge t\right\}$ to be the total number of events in $\{Z\vert Z\ge t\}$, then:  
 >$\frac {E\lbrack Z\rbrack}{Q_t}\ge P(Z\ge t)$, where $Q_t$=$0$,$1$,$2$,...  
 >&#10115;take $Q_t=t$ could also hold to have 
 >$\frac {E\lbrack Z\rbrack}{t}\ge P(Z\ge t)$  
