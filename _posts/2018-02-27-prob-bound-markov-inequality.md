@@ -19,7 +19,7 @@ The <font color="Red">Markov inequality</font> is a rahter simple probabilistic 
 >&#10113;then:  
 >$E\lbrack Z\rbrack\ge\sum P(Z\ge t)\cdot\{Z\vert Z\ge t\}$...this must hold  
 >$\;\;\;\;\;\;\;$=$P(Z\ge t)\cdot\sum \{Z\vert Z\ge t\}$  
->&#10114;choose $Q_t$=$\sum \left\{Z\vert Z\ge t\right\}$ to be the total number of events in $\{Z\vert Z\ge t\}$, then:  
+>&#10114;choose $Q_t$=$\sum \{Z\vert Z\ge t\}$ to be the total number of events in $\{Z\vert Z\ge t\}$, then:  
 >$\frac {E\lbrack Z\rbrack}{Q_t}\ge P(Z\ge t)$, where $Q_t$=$0$,$1$,$2$,...  
 >&#10115;take $Q_t=t$ could also hold to have 
 >$\frac {E\lbrack Z\rbrack}{t}\ge P(Z\ge t)$  
