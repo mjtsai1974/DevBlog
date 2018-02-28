@@ -22,7 +22,9 @@ The <font color="Red">Chernoff Bounds</font> is essential another variation base
 >Or equivalently,  
 >$Z-E\lbrack Z\rbrack\ge t$  
 >$\Leftrightarrow e^{\lambda\cdot (Z-E\lbrack Z\rbrack)}\ge e^{\lambda\cdot t}$  
->
+>&#10113;by <font color="Red">Markov inequality</font>, below holds:  
+>$P(\left|Z-E\lbrack Z\rbrack\right|\ge t)$  
+>$=P(e^{\lambda\cdot (Z-E\lbrack Z\rbrack)}\ge e^{\lambda\cdot t})\le E\lbrack e^{\lambda\cdot (Z-E\lbrack Z\rbrack)}\rbrack\cdot e^{-\lambda\cdot t}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
