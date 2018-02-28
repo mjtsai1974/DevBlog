@@ -31,13 +31,15 @@ The <font color="Red">Chernoff bounds</font> is essential another variation base
 
 ### <font color="Red">Chernoff Bounds</font> <font color="DeepSkyBlue">Extension</font>
 >We can further extend <font color="Red">Chernoff bounds</font> with summation of multiple random varaibles.  
->&#10112;suppose that all $Z_i$'s are independent for all $i$, then we have it that:  
+>&#10112;suppose that all $Z_i$'s are independent and zero meanfor all $i$, then we have it that:  
 >$\;\;M_{Z_1+...+Z_n}=\prod_{i=1}^{n}M_{Z_i}(\lambda)$  
 >, which is a consequence of the <font color="OrangeRed">moment generating function</font>, because the independence of each $Z_{i}$.  
 >$E\lbrack exp(\lambda\cdot\sum_{i=1}^{n}Z_{i})\rbrack$  
 >=$E\lbrack \prod_{i=1}^{n}exp(\lambda\cdot Z_{i})\rbrack$  
 >=$\prod_{i=1}^{n}E\lbrack exp(\lambda\cdot Z_{i})\rbrack$  
->&#10113;
+>&#10113;by <font color="Red">Chernoff inequality</font>, for any $\lambda>0$,  
+>$P(\sum_{i=1}^{n}Z_{i}\ge t)\le \prod_{i=1}^{n}E\lbrack exp(\lambda\cdot Z_{i})\rbrack\cdot e^{-\lambda\cdot t}$  
+>$\Rightarrow P(\sum_{i=1}^{n}Z_{i}\ge t)\le (E\lbrack exp(\lambda\cdot Z_{1})\rbrack)^{n}\cdot e^{-\lambda\cdot t}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
