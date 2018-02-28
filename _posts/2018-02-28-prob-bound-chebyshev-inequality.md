@@ -10,7 +10,8 @@ The <font color="Red">Chebyshev's inequality</font> is the variation based on th
 
 ### <font color="Red">Chebyshev's Inequality</font>
 >Let $Z$ be any random variable with $Var\lbrack Z\rbrack>\infty$, then  
->$\;\;\;\;\;\;\;\;P(Z\ge E\lbrack Z\rbrack+t\;or\;Z\le E\lbrack Z\rbrack-t)\le\frac {Var\lbrack Z\rbrack}{t^2}$, for any $t\ge 0$  
+>$\;\;\;\;P(Z\ge E\lbrack Z\rbrack+t\;or\;Z\le E\lbrack Z\rbrack-t)\le\frac {Var\lbrack Z\rbrack}{t^2}$  
+>$\;\;\;\;\;\;$, for any $t\ge 0$  
 >
 >Proof:  
 >&#10112;$Z\ge E\lbrack Z\rbrack+t$ or $Z\le E\lbrack Z\rbrack-t$ is exactly the same as $\left|Z-E\lbrack Z\rbrack\right|\ge t$.  
@@ -20,7 +21,7 @@ The <font color="Red">Chebyshev's inequality</font> is the variation based on th
 >=$P((Z-E\lbrack Z\rbrack)^2\ge t^2)$  
 >&#10114;by means of the <font color="Red">Markov inequality</font>, below inequality just holds.  
 >$P((Z-E\lbrack Z\rbrack)^2\ge t^2)\le\frac {(Z-E\lbrack Z\rbrack)^2}{t^2}$  
->$\Rightarrow P((Z-E\lbrack Z\rbrack)^2\ge t^2)\le\frac {Var\lbrack Z\rbrack}{t^2}$  
+>$\Rightarrow P(Z\ge E\lbrack Z\rbrack+t\;or\;Z\le E\lbrack Z\rbrack-t)\le\frac {Var\lbrack Z\rbrack}{t^2}$  
 >
 >Remember that we have a glance over the <font color="Red">Chebyshev's inequality</font> in [Hoeffding Inequality v.s. Law of Large Number]({{ site.github.repo }}{{ site.baseurl }}/2017/10/24/prereq-hoeffding-vs-law-large-number/), it has been proved by means of integral, now, distinct topic in the series of probability bounds would like to be chained together, said by using the <font color="Red">Markov inequality</font> in this proof.  
 
