@@ -16,6 +16,12 @@ The <font color="Red">Chernoff Bounds</font> is essential another variation base
 >; where $M_{Z}(\lambda)$=$E\lbrack exp(\lambda\cdot Z)\rbrack$ is the <font color="OrangeRed">moment generating function</font> of $Z$.  
 >
 >Proof:  
+>&#10112;for any $\lambda>0$, we have:  
+>$Z\ge E\lbrack Z\rbrack+t$  
+>$\Leftrightarrow e^{\lambda\cdot Z}\ge e^{\lambda\cdot (E\lbrack Z\rbrack+t)}$  
+>Or equivalently,  
+>$Z-E\lbrack Z\rbrack\ge t$  
+>$\Leftrightarrow e^{\lambda\cdot (Z-E\lbrack Z\rbrack)}\ge e^{\lambda\cdot t}$  
 >
 
 <!-- Γ -->
@@ -32,6 +38,7 @@ The <font color="Red">Chernoff Bounds</font> is essential another variation base
 <!-- E\lbrack Z\rbrack -->
 <!-- Var\lbrack Z\rbrack -->
 <!-- \left|X\right| absolute value of X-->
+<!-- \Leftrightarrow -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
