@@ -39,7 +39,7 @@ The <font color="Red">Chernoff bounds</font> is essential another variation base
 >=$\prod_{i=1}^{n}E\lbrack exp(\lambda\cdot Z_{i})\rbrack$  
 >&#10113;by <font color="Red">Chernoff inequality</font>, for any $\lambda>0$,  
 >$P(\sum_{i=1}^{n}Z_{i}\ge t)\le \prod_{i=1}^{n}E\lbrack exp(\lambda\cdot Z_{i})\rbrack\cdot e^{-\lambda\cdot t}$  
->$\Rightarrow P(\sum_{i=1}^{n}Z_{i}\ge t)\le (E\lbrack exp(\lambda\cdot Z_{1})\rbrack)^{n}\cdot e^{-\lambda\cdot t}$  
+>$\Leftrightarrow P(\sum_{i=1}^{n}Z_{i}\ge t)\le (E\lbrack exp(\lambda\cdot Z_{1})\rbrack)^{n}\cdot e^{-\lambda\cdot t}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
