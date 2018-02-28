@@ -5,7 +5,7 @@ title: Chernoff Bounds
 
 ## Prologue To The <font color="Red">Chernoff Bounds</font>
 <p class="message">
-The <font color="Red">Chernoff Bounds</font> is essential another variation based on the <font color="Red">Markov inequality</font>, it derivates the exponential deviation bounds.  
+The <font color="Red">Chernoff bounds</font> is essential another variation based on the <font color="Red">Markov inequality</font>, it derivates the exponential deviation bounds.  
 </p>
 
 ### <font color="Red">Chernoff Bounds</font>
@@ -29,8 +29,15 @@ The <font color="Red">Chernoff Bounds</font> is essential another variation base
 >
 >To be believed that <font color="DeepSkyBlue">a reasonable upper bound could be built by choosing appropriate $\lambda$.</font>  
 
-### <font color="Red">Chernoff Bounds</font> Extension
->
+### <font color="Red">Chernoff Bounds</font> <font color="DeepSkyBlue">Extension</font>
+>We can further extend <font color="Red">Chernoff bounds</font> with summation of multiple random varaibles.  
+>&#10112;suppose that all $Z_i$'s are independent for all $i$, then we have it that:  
+>$\;\;M_{Z_1+...+Z_n}=\prod_{i=1}^{n}M_{Z_i}(\lambda)$  
+>, which is a consequence of the <font color="OrangeRed">moment generating function</font>, because the independence of each $Z_{i}$.  
+>$E\lbrack exp(\lambda\cdot\sum_{i=1}^{n}Z_{i})\rbrack$  
+>=$E\lbrack \prod_{i=1}^{n}exp(\lambda\cdot Z_{i})\rbrack$  
+>=$\prod_{i=1}^{n}E\lbrack exp(\lambda\cdot Z_{i})\rbrack$  
+>&#10113;
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
