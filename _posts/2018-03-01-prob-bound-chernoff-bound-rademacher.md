@@ -11,3 +11,47 @@ It could efficiently relate the sample size to the error bias fits within the de
 
 ### The <font color="Red">Rademacher</font> Random Variable
 >It is also called the random sign variable.  Let S be a <font color="Red">Rademacher</font> random variable, its events are given $\\{1,-1\\}$, each with probability $\frac {1}{2}$.  
+>Then, it has the basic property that $E\lbrack S^{k}\rbrack$=$0$, for $k$ is odd, while $E\lbrack S^{k}\rbrack$=$1$, for $k$ is even.  
+>&#10112;$E\lbrack S^{1}\rbrack$=$\frac {1}{2}\cdot 1$+$\frac {1}{2}\cdot (-1)$=$0$  
+>&#10113;$E\lbrack S^{3}\rbrack$=$\frac {1}{2}\cdot 1^{3}$+$\frac {1}{2}\cdot (-1)^{3}$=$0$  
+>&#10114;$E\lbrack S^{2}\rbrack$=$\frac {1}{2}\cdot 1^{2}$+$\frac {1}{2}\cdot (-1)^{2}$=$1$  
+>&#10115;$E\lbrack S^{4}\rbrack$=$\frac {1}{2}\cdot 1^{4}$+$\frac {1}{2}\cdot (-1)^{4}$=$1$  
+
+
+<!-- Γ -->
+<!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
+<!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
+<!-- \vert_0^\infty -->
+<!-- &prime; ′ -->
+<!-- &Prime; ″ -->
+<!-- \overline{X_n} -->
+<!-- \frac{{\overline {X_n}}-\mu}{S/\sqrt n} -->
+<!-- \lim_{t\rightarrow\infty} -->
+<!-- \begin{array}{l}f'(x)\\f''(x)\\f'''(x)\\f''''(x)\end{array} -->
+<!-- \\{Z\vert Z\ge t\\} -->
+<!-- E\lbrack Z\rbrack -->
+<!-- Var\lbrack Z\rbrack -->
+<!-- \left|X\right| absolute value of X-->
+<!-- \Leftrightarrow -->
+
+<!-- Notes -->
+<!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
+<!-- <font color="Red">KKT</font> -->
+<!-- <font color="Red">SMO heuristics</font> -->
+<!-- <font color="Red">F</font> distribution -->
+<!-- <font color="Red">t</font> distribution -->
+<!-- <font color="DeepSkyBlue">suggested item, soft item</font> -->
+<!-- <font color="RoyalBlue">old alpha</font> -->
+<!-- <font color="Green">new alpha</font> -->
+
+<!-- <font color="DeepPink">positive conclusion, finding</font> -->
+<!-- <font color="RosyBrown">negative conclusion, finding</font> -->
+
+<!-- <font color="#00ADAD">policy</font> -->
+<!-- <font color="#6100A8">full observable</font> -->
+<!-- <font color="#FFAC12">partial observable</font> -->
+<!-- <font color="#EB00EB">stochastic</font> -->
+<!-- <font color="#8400E6">state transition</font> -->
+<!-- <font color="#D600D6">discount factor gamma $\gamma$</font> -->
+<!-- <font color="#D600D6">$V(S)$</font> -->
+<!-- <font color="#9300FF">immediate reward R(S)</font> -->
