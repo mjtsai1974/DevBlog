@@ -40,7 +40,7 @@ It could efficiently relate the sample size to the error bias fits within the de
 >$P(Z\ge t)$  
 >$\le \frac {E\lbrack Z\rbrack}{t}$...<font color="Red">Markov inequality</font>  
 >=$\frac {E\lbrack\sum_{i=1}^{n}S_{i}\rbrack}{t}$  
->=$\frac {E\lbrack e^{\lambda\cdot\sum_{i=1}^{n}S_{i}}\rbrack}{e^{\lambda\cdot t}}$  
+>=$\frac {E\lbrack e^{\lambda\cdot\sum_{i=1}^{n}S_{i}}\rbrack}{e^{\lambda\cdot t}}$......<font color="Red">Chernoff bounds</font>  
 >=$\frac {E^{n}\lbrack e^{\lambda\cdot S_{1}}\rbrack}{e^{\lambda\cdot t}}$  
 >$\le (e^{(\frac {\lambda^{2}}{2})})^{n}\cdot e^{-\lambda\cdot t}$  
 >$\Rightarrow P(Z\ge t)\le e^{(\frac {n\cdot\lambda^{2}}{2})}\cdot e^{-\lambda\cdot t}$  
