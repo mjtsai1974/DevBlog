@@ -20,10 +20,17 @@ The <font color="Red">Chernoff bounds</font> is a convenient way to build the sh
 >=$E\lbrack 1+\frac {\lambda\cdot Z}{1!}+\frac {(\lambda\cdot Z)^{2}}{2!}+\frac {(\lambda\cdot Z)^{3}}{3!}+...\rbrack$  
 >=$1$+$\frac {\lambda}{1!}\cdot E\lbrack Z\rbrack$+$\frac {(\lambda)^{2}}{2!}\cdot E\lbrack Z^{2}\rbrack$+$\frac {(\lambda)^{3}}{3!}\cdot E\lbrack Z^{3}\rbrack$+$\frac {(\lambda)^{4}}{4!}\cdot E\lbrack Z^{4}\rbrack$+...  
 [2]Next to ask for the r-th ordinary moment of each term.  
->&#10112;$E\lbrack Z^{r}\rbrack$=$\int_{0}^{\infty}\frac {z^{r}}{\sqrt{2\cdot\pi}}\cdot e^{\frac {z^{2}}{2\cdot\sigma^{2}}}\operatorname dz$  
+>&#10112;$E\lbrack Z^{r}\rbrack$=$\int_{0}^{\infty}\frac {z^{r}}{\sqrt {2\cdot\pi}}\cdot e^{-\frac {z^{2}}{2\cdot\sigma^{2}}}\operatorname dz$  
 >; where $z\in Z$, $z$ is the events.  
->&#10113;
->&#10114;
+>&#10113;take $x$=$\frac {z^{2}}{2\cdot\sigma^{2}}$, then  
+>$z$=$\sqrt{2\cdot\sigma^{2}\cdot x}$, and  
+>$\operatorname dz$=$\frac {\sigma^{2}}{z}\cdot\operatorname dx$  
+>&#10114;just replace $\operatorname dz$ with $\operatorname dx$  
+>$E\lbrack Z^{r}\rbrack$  
+>=$\frac {1}{\sqrt {2\cdot\pi}}\int_{0}^{\infty}z^{r}\cdot e^{-x}\cdot\frac {\sigma^{2}}{z}\cdot\operatorname dx$  
+>=$\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\int_{0}^{\infty}z^{r-1}\cdot e^{-x}\operatorname dx$  
+>=$\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(r)$  
+>, where <font color="OrangeRed">$\Gamma(r)$=$\int_{0}^{\infty}z^{r-1}\cdot e^{-x}\operatorname dx$</font>, it is just the <font color="OrangeRed">Gamma</font> function in $Z$.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
