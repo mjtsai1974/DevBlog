@@ -36,6 +36,12 @@ It could efficiently relate the sample size to the error bias fits within the de
 >$\le \sum_{k=0}^{\infty}\frac {\lambda^{2\cdot k}}{2^{k}\cdot k!}$  
 >=$\sum_{k=0}^{\infty}(\frac {\lambda^{2}}{2})^{k}/k!$  
 >=$e^{(\frac {\lambda^{2}}{2})}$  
+>&#10114;by given $Z$=$\sum_{i=1}^{n}S_{i}$, we have  
+>$P(Z\ge t)$  
+>$\le \frac {E\lbrack Z\rbrack}{t}$...<font color="Red">Markov inequality</font>  
+>$=\frac {E\lbrack\sum_{i=1}^{n}S_{i}\rbrack}{t}$  
+>$=\frac {E\lbrack e^{\lambda\cdot\sum_{i=1}^{n}S_{i}}\rbrack}{e^{\lambda\cdot t}}$  
+>$=\frac {E^{n}\lbrack e^{\lambda\cdot\S_{1}}\rbrack}{e^{\lambda\cdot t}}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
