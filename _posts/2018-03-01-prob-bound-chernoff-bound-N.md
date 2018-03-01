@@ -12,14 +12,14 @@ The <font color="Red">Chernoff bounds</font> is a convenient way to build the sh
 >Given that $Z$ is a random variable, normally distributed in $Z\sim N(0,\sigma^2)$, then  
 >
 >Proof:  
->The proof would be categorized into 3 major parts, the first part is to ask for $E\lbrack e^{\lambda\cdot Z}\rbrack$, the second part is to figure out the k-th moment, the third part is the upper bounds in the <font color="Red">Chernoff Bounds</form> form.  
->[1]We begin from $E\lbrack e^{\lambda\cdot Z}\rbrack$
->We begin by expressing the MGF of Z in terms of the Taylor series:  
+>The proof would be categorized into 3 major parts, the first part is to ask for $E\lbrack e^{\lambda\cdot Z}\rbrack$, the second part is to figure out the k-th moment, the third part is the upper bounds in the <font color="Red">Chernoff Bounds</font> form.  
+>[1]We begin from $E\lbrack e^{\lambda\cdot Z}\rbrack$  
+>First, express the MGF of Z in terms of the Taylor series:  
 >$M_{Z}(\lambda)$  
 >=$E\lbrack e^{\lambda\cdot Z}\rbrack$  
 >=$E\lbrack 1+\frac {\lambda\cdot Z}{1!}+\frac {(\lambda\cdot Z)^{2}}{2!}+\frac {(\lambda\cdot Z)^{3}}{3!}+...\rbrack$  
 >=$1$+$\frac {\lambda}{1!}\cdot E\lbrack Z\rbrack$+$\frac {(\lambda)^{2}}{2!}\cdot E\lbrack Z^{2}\rbrack$+$\frac {(\lambda)^{3}}{3!}\cdot E\lbrack Z^{3}\rbrack$+$\frac {(\lambda)^{4}}{4!}\cdot E\lbrack Z^{4}\rbrack$+...  
-[2]
+[2]Next to ask for the k-th ordinary moment of each term.  
 >&#10112;
 >&#10113;
 >&#10114;
