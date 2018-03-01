@@ -45,6 +45,12 @@ It could efficiently relate the sample size to the error bias fits within the de
 >$\le (e^{(\frac {\lambda^{2}}{2})})^{n}\cdot e^{-\lambda\cdot t}$  
 >$\Rightarrow P(Z\ge t)\le e^{(\frac {n\cdot\lambda^{2}}{2})}\cdot e^{-\lambda\cdot t}$  
 
+### <font color="Red">Chernoff Bounds</font> <font color="DeepSkyBlue">Extension</font>
+>In this section, we'd like to inspect <font color="OrangeRed">probability</font>, <font color="OrangeRed">sample size</font> and the <font color="OrangeRed">desired bias</font>.  
+>$P(Z\ge t)\le e^{(\frac {n\cdot\lambda^{2}}{2})}\cdot e^{-\lambda\cdot t}$  
+>$\Rightarrow P(Z\ge t)\le e^{(\frac {n\cdot\lambda^{2}}{2})-\lambda\cdot t}$  
+>
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
