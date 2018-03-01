@@ -45,13 +45,13 @@ The <font color="Red">Chernoff bounds</font> is a convenient way to build the sh
 >&#10112;$\frac {a_2}{a_1}$=$\frac {\lambda^{3}/3}{\lambda^{2}/2}$=$\frac {2}{3}\cdot\lambda$  
 >&#10113;$\frac {a_3}{a_2}$=$\frac {\lambda^{4}/4}{\lambda^{3}/3}$=$\frac {3}{4}\cdot\lambda$  
 >&#10114;$\frac {a_4}{a_3}$=$\frac {\lambda^{5}/5}{\lambda^{4}/4}$=$\frac {4}{5}\cdot\lambda$  
->Trivially, $\frac {a_2}{a_1}$<$\frac {a_3}{a_2}$<$\frac {a_4}{a_3}$<...$\rightarrow 1}$, the ratio is increasing and becomes much much close to $1$, <font color="DeepPink">this series would just diverge to infinity</font>, by <font color="DeepPink">ratio test theorem</font>.  
+>Trivially, $\frac {a_2}{a_1}$<$\frac {a_3}{a_2}$<$\frac {a_4}{a_3}$<...$\rightarrow 1$, the ratio is increasing and becomes much much close to $1$, <font color="DeepPink">this series would just diverge to infinity</font>, by <font color="DeepPink">ratio test theorem</font>.  
 >Therefore, the whole equality becomes  
 >$M_{Z}(\lambda)$  
 >=$1$+$(\lambda\cdot \sigma)^{2}\cdot(\frac {1}{2\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda}{3\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda^{2}}{4\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda^{3}}{5\cdot\sqrt{2\cdot\pi}}$+...+$)$  
 >$\approx 1+(\lambda\cdot \sigma)^{2}\cdot\infty$  
->$\approx\lim_{h\rightarrow 0}1+\frac {(\lambda\cdot \sigma)^{2}}{h}}$  
->$\approx\lim_{h\rightarrow 0}(1+\frac {(\lambda\cdot \sigma)^{2}}{h}})^{\frac {1}{h}}$  
+>$\approx\lim_{h\rightarrow 0}1+\frac {(\lambda\cdot \sigma)^{2}}{h}$  
+>$\approx\lim_{h\rightarrow 0}(1+\frac {(\lambda\cdot \sigma)^{2}}{h})^{\frac {1}{h}}$  
 >=<font color="DeepSkyBlue">$e^{(\lambda\cdot \sigma)^{2}}$</font>  
 
 <!-- Γ -->
