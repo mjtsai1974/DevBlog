@@ -26,10 +26,16 @@ It could efficiently relate the sample size to the error bias fits within the de
 >&#10112;begin by Taylor series of exponential function.  
 >$E\lbrack e^{\lambda\cdot S}\rbrack$  
 >=$E\lbrack\sum_{k=0}^{\infty}\frac {(\lambda\cdot S)^{k}}{k!}\rbrack$  
->=$sum_{k=0}^{\infty}\frac {\lambda^{k}\cdot E\lbrack S^{k}\rbrack}{k!}$  
->=$sum_{k=0,2,4,...}^{\infty}\frac {\lambda^{k}}{k!}$  
->=$sum_{k=0}^{\infty}\frac {\lambda^{2\cdot k}}{2\cdot k!}$  
-
+>=$\sum_{k=0}^{\infty}\frac {\lambda^{k}\cdot E\lbrack S^{k}\rbrack}{k!}$  
+>=$\sum_{k=0,2,4,...}^{\infty}\frac {\lambda^{k}}{k!}$  
+>=$\sum_{k=0}^{\infty}\frac {\lambda^{2\cdot k}}{2\cdot k!}$  
+>&#10113;next to find the closest upper bound, specifically, in exponential form.  
+>since $2\cdot k!\ge 2^{k}\cdot k!$, we have  
+>$E\lbrack e^{\lambda\cdot S}\rbrack$  
+>=$\sum_{k=0}^{\infty}\frac {\lambda^{2\cdot k}}{2\cdot k!}$  
+>$\le \sum_{k=0}^{\infty}\frac {\lambda^{2\cdot k}}{2^{k}\cdot k!}$  
+>=$\sum_{k=0}^{\infty}(\frac {\lambda^{2}}{2})^{k}/k!$  
+>=$e^{(\frac {\lambda^{2}}{2})}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
