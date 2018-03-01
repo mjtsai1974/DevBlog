@@ -49,7 +49,7 @@ The <font color="Red">Chernoff bounds</font> is a convenient way to build the sh
 >Therefore, the whole equality becomes  
 >$M_{Z}(\lambda)$  
 >=$1$+$(\lambda\cdot \sigma)^{2}\cdot(\frac {1}{2\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda}{3\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda^{2}}{4\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda^{3}}{5\cdot\sqrt{2\cdot\pi}}$+...+$)$  
->$\approx 1+(\lambda\cdot \sigma)^{2}\cdot\infity$  
+>$\approx 1+(\lambda\cdot \sigma)^{2}\cdot\infty$  
 >$\approx\lim_{h\rightarrow 0}1+\frac {(\lambda\cdot \sigma)^{2}}{h}}$  
 >$\approx\lim_{h\rightarrow 0}(1+\frac {(\lambda\cdot \sigma)^{2}}{h}})^{\frac {1}{h}}$  
 >=<font color="DeepSkyBlue">$e^{(\lambda\cdot \sigma)^{2}}$</font>  
