@@ -54,7 +54,7 @@ It could efficiently relate the sample size to the error bias fits within the de
 >&#10112;taking derivatives with respect to $\lambda$, and set it to $0$, we get $\lambda$=$\frac {t}{n}$.  
 >&#10113;replace $\lambda$ with $\frac {t}{n}$ in inequality, we have  
 >$P(Z\ge t)\le e^{-\frac {t^{2}}{2\cdot n}}$  
->&#10114;suppose you'd like to constraint the testing result, the quantity from random variable $Z$, bigger than the bias, denote it $t$, with the probability as a whole limited within $\delta$, we can express it below: 
+>&#10114;suppose you'd like to constraint the <font color="OrangeRed">testing result</font>, the quantity from random variable <font color="OrangeRed">$Z$</font>, bigger than the <font color="OrangeRed">bias</font>, denote it <font color="OrangeRed">$t$</font>, with the <font color="OrangeRed">error probability</font> as a whole, limited within <font color="OrangeRed">$\delta$</font>, we can express it below: 
 >$P(Z\ge t)\le\delta$, where $\delta$=$e^{-\frac {t^{2}}{2\cdot n}}$  
 >Then, $t$=$\sqrt {2\cdot n\cdot ln\frac {1}{\delta}}$  
 >Finally, we can <font color="DeepSkyBlue">get the appropriate data size in terms of bias, $t$ and the error probability, say it $\delta$</font>. 
