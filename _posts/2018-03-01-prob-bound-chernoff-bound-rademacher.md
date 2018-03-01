@@ -3,7 +3,7 @@ layout: post
 title: Chernoff Bounds For Rademacher Random Variable
 ---
 
-## Prologue To The <font color="Red">Chernoff Bounds For Rademacher Random Variable</font>
+## Prologue To The <font color="Red">Chernoff Bounds</font> For <font color="Red">Rademacher</font> Random Variable
 <p class="message">
 The <font color="Red">Chernoff bounds</font> is a convenient way to build the shaper bounds in exponential form for the <font color="Red">Rademacher</font> random variable.  
 It could efficiently relate the sample size to the error bias fits within the desired probability.  
@@ -11,11 +11,24 @@ It could efficiently relate the sample size to the error bias fits within the de
 
 ### The <font color="Red">Rademacher</font> Random Variable
 >It is also called the random sign variable.  Let S be a <font color="Red">Rademacher</font> random variable, its events are given $\\{1,-1\\}$, each with probability $\frac {1}{2}$.  
+>
 >Then, it has the basic property that $E\lbrack S^{k}\rbrack$=$0$, for $k$ is odd, while $E\lbrack S^{k}\rbrack$=$1$, for $k$ is even.  
 >&#10112;$E\lbrack S^{1}\rbrack$=$\frac {1}{2}\cdot 1$+$\frac {1}{2}\cdot (-1)$=$0$  
 >&#10113;$E\lbrack S^{3}\rbrack$=$\frac {1}{2}\cdot 1^{3}$+$\frac {1}{2}\cdot (-1)^{3}$=$0$  
 >&#10114;$E\lbrack S^{2}\rbrack$=$\frac {1}{2}\cdot 1^{2}$+$\frac {1}{2}\cdot (-1)^{2}$=$1$  
 >&#10115;$E\lbrack S^{4}\rbrack$=$\frac {1}{2}\cdot 1^{4}$+$\frac {1}{2}\cdot (-1)^{4}$=$1$  
+
+### <font color="Red">Chernoff Bounds</font> For <font color="Red">Rademacher</font> Random Variable
+>Given $S$ is a <font color="Red">Rademacher</font> random variable, then  
+>$\;\;P(Z\ge t)\le exp(\frac {n\cdot\lambda^{2}}{2})\cdot e^{-\lambda\cdot t}$  
+>, where $Z$=$\sum_{i=1}^{n}S_{i}$  
+>Proof:  
+>&#10112;begin by Taylor series of exponential function.  
+>$E\lbrack e^{\lambda\cdot S}\rbrack$  
+>=$E\lbrack\sum_{k=0}^{\infty}\frac {(\lambda\cdot S)^{k}}{k!}\rbrack$  
+>=$sum_{k=0}^{\infty}\frac {\lambda^{k}\cdot E\lbrack S^{k}\rbrack}{k!}$  
+>=$sum_{k=0,2,4,...}^{\infty}\frac {\lambda^{k}}{k!}$  
+>=$sum_{k=0}^{\infty}\frac {\lambda^{2\cdot k}}{2\cdot k!}$  
 
 
 <!-- Γ -->
