@@ -50,6 +50,16 @@ It could efficiently relate the sample size to the error bias fits within the de
 >$P(Z\ge t)\le e^{(\frac {n\cdot\lambda^{2}}{2})}\cdot e^{-\lambda\cdot t}$  
 >$\Rightarrow P(Z\ge t)\le e^{(\frac {n\cdot\lambda^{2}}{2})-\lambda\cdot t}$  
 >
+>We can get the minimum upper bound by finding some $\lambda$, which is equivalent to finding $\underset{\lambda\ge 0}{min}\\{\frac{n\cdot\lambda^2}2-\lambda\cdot t\\}$  
+>&#10112;taking derivatives with respect to $\lambda$, and set it to $0$, we get $\lambda$=$\frac {t}{n}$.  
+>&#10113;replace $\lambda$ with $\frac {t}{n}$ in inequality, we have  
+>$P(Z\ge t)\le e^{-\frac {t^{2}}{2\cdot n}}$  
+>&#10114;suppose you'd like to constraint the testing result, the quantity from random variable $Z$, bigger than the bias, denote it $t$, with the probability as a whole limited within $\delta$, we can express it below: 
+>$P(Z\ge t)\le\delta$, where $\delta$=$e^{-\frac {t^{2}}{2\cdot n}}$  
+>Then, $t$=$\sqrt {2\cdot n\cdot ln\frac {1}{\delta}}$  
+>Finally, we can <font color="DeepSkyBlue">get the appropriate data size in terms of bias, $t$ and the error probability, say it $\delta$</font>. 
+>
+>Cautions must be made that <font color="DeepPink">such extension holds only on event containing true and false</font>.  Other articles in my dev blog would inspect the form with respect to events of multiple results(more than 2 results). 
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
