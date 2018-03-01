@@ -31,7 +31,7 @@ The <font color="Red">Chernoff bounds</font> is a convenient way to build the sh
 >=$\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\int_{0}^{\infty}z^{r-1}\cdot e^{-x}\operatorname dx$  
 >=$\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(r)$  
 >, where <font color="OrangeRed">$\Gamma(r)$=$\int_{0}^{\infty}z^{r-1}\cdot e^{-x}\operatorname dx$</font>, it is just the <font color="OrangeRed">Gamma</font> function in $Z$.  
->[3]we know $\Gamma(n)$=$(n-1)!$ in [Introduction To The Gamma Distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/), then,  
+>[3]We know $\Gamma(n)$=$(n-1)!$ in [Introduction To The Gamma Distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/), then,  
 >$M_{Z}(\lambda)$  
 >=$1$+$\frac {\lambda}{1!}\cdot E\lbrack Z\rbrack$+$\frac {(\lambda)^{2}}{2!}\cdot E\lbrack Z^{2}\rbrack$+$\frac {(\lambda)^{3}}{3!}\cdot E\lbrack Z^{3}\rbrack$+$\frac {(\lambda)^{4}}{4!}\cdot E\lbrack Z^{4}\rbrack$+...  
 >=$1$+$\frac {\lambda}{1!}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(1)$+$\frac {(\lambda)^{2}}{2!}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(2)$+$\frac {(\lambda)^{3}}{3!}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(3)$+$\frac {(\lambda)^{4}}{4!}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(4)$+...  
@@ -48,11 +48,14 @@ The <font color="Red">Chernoff bounds</font> is a convenient way to build the sh
 >Trivially, $\frac {a_2}{a_1}$<$\frac {a_3}{a_2}$<$\frac {a_4}{a_3}$<...$\rightarrow 1$, the ratio is increasing and becomes much much close to $1$, <font color="DeepPink">this series would just diverge to infinity</font>, by <font color="DeepPink">ratio test theorem</font>.  
 >Therefore, the whole equality becomes  
 >$M_{Z}(\lambda)$  
->=$1$+$(\lambda\cdot \sigma)^{2}\cdot(\frac {1}{2\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda}{3\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda^{2}}{4\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda^{3}}{5\cdot\sqrt{2\cdot\pi}}$+...+$)$  
->$\approx 1+(\lambda\cdot \sigma)^{2}\cdot\infty$  
->$\approx\lim_{h\rightarrow 0}1+\frac {(\lambda\cdot \sigma)^{2}}{h}$  
->$\approx\lim_{h\rightarrow\infty}(1+\frac {(\lambda\cdot \sigma)^{2}}{h})^{h}$  
->=<font color="DeepSkyBlue">$e^{(\lambda\cdot \sigma)^{2}}$</font>  
+>=$1$+$(\lambda\cdot\sigma)^{2}\cdot(\frac {1}{2\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda}{3\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda^{2}}{4\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda^{3}}{5\cdot\sqrt{2\cdot\pi}}$+...+$)$  
+>$\approx 1+(\lambda\cdot\sigma)^{2}\cdot\infty$  
+>$\approx\lim_{h\rightarrow 0}1+\frac {(\lambda\cdot\sigma)^{2}}{h}$  
+>$\approx\lim_{h\rightarrow\infty}(1+\frac {(\lambda\cdot\sigma)^{2}}{h})^{h}$  
+>=<font color="DeepSkyBlue">$e^{(\lambda\cdot\sigma)^{2}}$</font>  
+>[4]By <font color="Red">Chernoff Bounds</font>, for any $\lambda>0$, then  
+>$P(Z\ge t)\le \frac {E\lbrack e^{(\lambda\cdot Z)}\rbrack}{e^{\lambda\cdot t}}$  
+>$\Rightarrow P(Z\ge t)\le e^{(\lambda\cdot\sigma)^{2}}\cdot e^{-\lambda\cdot t}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
