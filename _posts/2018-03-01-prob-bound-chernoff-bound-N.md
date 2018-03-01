@@ -12,7 +12,7 @@ The <font color="Red">Chernoff bounds</font> is a convenient way to build the sh
 >Given that $Z$ is a random variable, normally distributed in $Z\sim N(0,\sigma^2)$, then  
 >
 >Proof:  
->The proof would be categorized into 3 major parts, the first part is to ask for $E\lbrack e^{\lambda\cdot Z}\rbrack$, the second part is to figure out the r-th moment, the third part is the upper bounds in the <font color="Red">Chernoff Bounds</font> form.  
+>The proof would be categorized into 4 major parts, the first part is to ask for $E\lbrack e^{\lambda\cdot Z}\rbrack$, the second part is to figure out the r-th moment, we'll make reference to the ratio test theorem in the third part, finally is the upper bounds in the <font color="Red">Chernoff Bounds</font> form.  
 >[1]We begin from $E\lbrack e^{\lambda\cdot Z}\rbrack$  
 >First, express the MGF of Z in terms of the Taylor series:  
 >$M_{Z}(\lambda)$  
@@ -31,7 +31,7 @@ The <font color="Red">Chernoff bounds</font> is a convenient way to build the sh
 >=$\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\int_{0}^{\infty}z^{r-1}\cdot e^{-x}\operatorname dx$  
 >=$\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(r)$  
 >, where <font color="OrangeRed">$\Gamma(r)$=$\int_{0}^{\infty}z^{r-1}\cdot e^{-x}\operatorname dx$</font>, it is just the <font color="OrangeRed">Gamma</font> function in $Z$.  
->[3]we know $\Gamma(n)$=$(n-1)!$ in [Introduction To The Gamma Distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/).  
+>[3]we know $\Gamma(n)$=$(n-1)!$ in [Introduction To The Gamma Distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/), then,  
 >$M_{Z}(\lambda)$  
 >=$1$+$\frac {\lambda}{1!}\cdot E\lbrack Z\rbrack$+$\frac {(\lambda)^{2}}{2!}\cdot E\lbrack Z^{2}\rbrack$+$\frac {(\lambda)^{3}}{3!}\cdot E\lbrack Z^{3}\rbrack$+$\frac {(\lambda)^{4}}{4!}\cdot E\lbrack Z^{4}\rbrack$+...  
 >=$1$+$\frac {\lambda}{1!}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(1)$+$\frac {(\lambda)^{2}}{2!}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(2)$+$\frac {(\lambda)^{3}}{3!}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(3)$+$\frac {(\lambda)^{4}}{4!}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(4)$+...  
@@ -39,6 +39,20 @@ The <font color="Red">Chernoff bounds</font> is a convenient way to build the sh
 >...$\Gamma(1)$=$(1-1)!$=$0$  
 >=$1$+$\frac {(\lambda)^{2}}{2}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}$+$\frac {(\lambda)^{3}}{3}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}$+$\frac {(\lambda)^{4}}{4}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}$+$\frac {(\lambda)^{5}}{5}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}$...  
 >=$1$+$(\lambda\cdot \sigma)^{2}\cdot(\frac {1}{2\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda}{3\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda^{2}}{4\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda^{3}}{5\cdot\sqrt{2\cdot\pi}}$+...+$)$  
+>
+>Be recalled that we have convergence evaluation by the <font color="DeepPink">ratio test theorem</font> in [Series Convergence]({{ site.github.repo }}{{ site.baseurl }}/2018/01/26/series-cnvg/).  
+><font color="DeepPink">If $\frac {a_{n+1}}{a_n}$ approaches a limit $L<1$, the series converges.</font>  
+>&#10112;$\frac {a_2}{a_1}$=$\frac {\lambda^{3}/3}{\lambda^{2}/2}$=$\frac {2}{3}\cdot\lambda$  
+>&#10113;$\frac {a_3}{a_2}$=$\frac {\lambda^{4}/4}{\lambda^{3}/3}$=$\frac {3}{4}\cdot\lambda$  
+>&#10114;$\frac {a_4}{a_3}$=$\frac {\lambda^{5}/5}{\lambda^{4}/4}$=$\frac {4}{5}\cdot\lambda$  
+>Trivially, $\frac {a_2}{a_1}$<$\frac {a_3}{a_2}$<$\frac {a_4}{a_3}$<...$\rightarrow 1}$, the ratio is increasing and becomes much much close to $1$, <font color="DeepPink">this series would just diverge to infinity</font>, by <font color="DeepPink">ratio test theorem</font>.  
+>Therefore, the whole equality becomes  
+>$M_{Z}(\lambda)$  
+>=$1$+$(\lambda\cdot \sigma)^{2}\cdot(\frac {1}{2\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda}{3\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda^{2}}{4\cdot\sqrt{2\cdot\pi}}$+$\frac {\lambda^{3}}{5\cdot\sqrt{2\cdot\pi}}$+...+$)$  
+>$\approx 1+(\lambda\cdot \sigma)^{2}\cdot\infity$  
+>$\approx\lim_{h\rightarrow 0}1+\frac {(\lambda\cdot \sigma)^{2}}{h}}$  
+>$\approx\lim_{h\rightarrow 0}(1+\frac {(\lambda\cdot \sigma)^{2}}{h}})^{\frac {1}{h}}$  
+>=<font color="DeepSkyBlue">$e^{(\lambda\cdot \sigma)^{2}}$</font>  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
