@@ -31,6 +31,10 @@ The <font color="Red">Chernoff bounds</font> is a convenient way to build the sh
 >=$\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\int_{0}^{\infty}z^{r-1}\cdot e^{-x}\operatorname dx$  
 >=$\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(r)$  
 >, where <font color="OrangeRed">$\Gamma(r)$=$\int_{0}^{\infty}z^{r-1}\cdot e^{-x}\operatorname dx$</font>, it is just the <font color="OrangeRed">Gamma</font> function in $Z$.  
+>[3]we know $\Gamma(n)$=$(n-1)!$ in [Introduction To The Gamma Distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/).  
+>$M_{Z}(\lambda)$  
+>=$1$+$\frac {\lambda}{1!}\cdot E\lbrack Z\rbrack$+$\frac {(\lambda)^{2}}{2!}\cdot E\lbrack Z^{2}\rbrack$+$\frac {(\lambda)^{3}}{3!}\cdot E\lbrack Z^{3}\rbrack$+$\frac {(\lambda)^{4}}{4!}\cdot E\lbrack Z^{4}\rbrack$+...  
+>=$1$+$\frac {\lambda}{1!}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(1)$+$\frac {(\lambda)^{2}}{2!}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(2)$+$\frac {(\lambda)^{3}}{3!}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(3)$++$\frac {(\lambda)^{4}}{4!}\cdot\frac {\sigma^{2}}{\sqrt {2\cdot\pi}}\cdot\Gamma(4)$+...  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
