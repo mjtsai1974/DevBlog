@@ -7,7 +7,7 @@ title: Jensen's Inequality
 <p class="message">
 The <font color="Red">Jensen's inequality</font> is an important inequality in the proof of many famous lemmas, theorems,   
 it reveals that equality, <font color="RosyBrown">$E\lbrack g(X)\rbrack$=$g(E\lbrack X\rbrack)$ rarely occur for nonlinear function g.</font>  
-Without actually computing the distribution of $g(X)$, we can easily relate $E\lbrack g(X)\rbrack$ to $g(E\lbrack X\rbrack).
+Without actually computing the distribution of $g(X)$, we can easily relate $E\lbrack g(X)\rbrack$ to $g(E\lbrack X\rbrack)$.  
 </p>
 
 ### <font color="Red">Jensen's Inequality</font>
@@ -16,15 +16,16 @@ Without actually computing the distribution of $g(X)$, we can easily relate $E\l
 >
 >&#10112;why focus on the <font color="DeepSkyBlue">convex</font> function?  
 >Be recalled that the second derivative of convex function is positive, that is $g″(X)\ge 0$.  The curve would be in a bowl shape.  
->&#10113;suppose $X$=$\\{e_1,e_2\\}$ is a random variable, containing 2 events with event $e_1$ the probability $\frac {3}{4}$, and event $e_2$ the probability $\frac {1}{4}$.  You can treat the 2 events as the inputs.  
+>&#10113;suppose $X$=$\\{e_1,e_2\\}$ is a random variable, containing 2 events with event $e_1$ the probability $\frac {4}{7}$, and event $e_2$ the probability $\frac {3}{7}$.  
+>You can treat the 2 events as the inputs.  
 ><font color="DeepPink">Convexity of $g$ forces all line segments connecting 2 points on the curve lie above the part of the curve segment in between.</font>  
->If we choose the line ranging from $(a,g(a))$ to $b,g(b)$, then  
+>&#10114;if we choose the line ranging from $(a,g(a))$ to $b,g(b)$, then  
 >$(E\lbrack X\rbrack,E\lbrack g(X)\rbrack)$  
->=$(\frac {3}{4}\cdot a+\frac {1}{4}\cdot b,\frac {3}{4}\cdot g(a)+\frac {1}{4}\cdot g(b))$    
->=$\frac {3}{4}\cdot (a,g(a))+\frac {1}{4}\cdot (b,g(b))$  
+>=$(\frac {4}{7}\cdot a+\frac {3}{7}\cdot b,\frac {4}{7}\cdot g(a)+\frac {3}{7}\cdot g(b))$    
+>=$\frac {4}{7}\cdot (a,g(a))+\frac {3}{7}\cdot (b,g(b))$  
 >This point $(E\lbrack X\rbrack,E\lbrack g(X)\rbrack)$ must lie above the point $(E\lbrack X\rbrack,g(E\lbrack X\rbrack))$.  
 >Therefore, we have proved $g(E\lbrack X\rbrack)\le E\lbrack g(X)\rbrack$.  
-
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-03-02-prob-bound-jensen-inequality.png "g(E[X])<=E[g(X)]")
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
