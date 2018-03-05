@@ -12,7 +12,8 @@ In machine, statistics, probability theory, the <font color="Red">symmetrization
 >Given a <font color="OrangeRed">bounded</font> random variable $Z\in\lbrack a,b\rbrack$, we perform <font color="OrangeRed">multiple</font> tests of it with instances of $Z$ <font color="OrangeRed">duplicated</font>, choose one of the clones to be $Z'$, so that $Z'\in\lbrack a,b\rbrack$ and $E\lbrack Z\rbrack$=$E\lbrack Z'\rbrack$.  
 >There exists some properties:  
 >[1]$E_Z\lbrack e^{Z-E\lbrack Z\rbrack}\rbrack\le E_Z\lbrack E_{Z'}\lbrack e^{Z-Z'}\rbrack\rbrack$  
->[2]$P(\left|Z-E\lbrack Z\rbrack\right|\ge t)$=$P(\left|Z-E\lbrack Z'\rbrack\right|\ge t)$<font color="OrangeRed">$\le$</font>$E\lbrack e^{\lambda\cdot E\lbrack\left|Z-Z'\right|\rbrack}\rbrack\cdot e^{-\lambda\cdot t}$  
+>[2]$P(\left|Z-E\lbrack Z\rbrack\right|\ge t)$=$P(\left|Z-E\lbrack Z'\rbrack\right|\ge t)$  
+><font color="OrangeRed">$\le$</font>$E\lbrack e^{\lambda\cdot E\lbrack\left|Z-Z'\right|\rbrack}\rbrack\cdot e^{-\lambda\cdot t}$  
 >[3]$E_Z\lbrack E_{Z'}\lbrack e^{\lambda\cdot (Z-Z')}\rbrack\rbrack\le e^{\frac {(\lambda\cdot (b-a'))^{2}}{2}}$  
 >
 >Proof::mjtsai  
