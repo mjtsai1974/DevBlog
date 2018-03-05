@@ -12,18 +12,31 @@ In machine, statistics, probability theory, the <font color="Red">symmetrization
 >Given a <font color="OrangeRed">bounded</font> random variable $Z\in\lbrack a,b\rbrack$, we perform <font color="OrangeRed">multiple</font> tests of it with instances of $Z$ <font color="OrangeRed">duplicated</font>, choose one of the clones to be $Z'$, so that $Z'\in\lbrack a,b\rbrack$ and $E\lbrack Z\rbrack$=$E\lbrack Z'\rbrack$.  
 >Then,  
 >
->Proof:
->&#10112;by known, $E\lbrack Z\rbrack$=$E\lbrack Z'\rbrack$, then,  
->$P(Z-E\lbrack Z\rbrack)$=$P(Z-E\lbrack Z'\rbrack)$, which implies that  
+>Proof::mjtsai  
+>&#10112;by given, $E\lbrack Z\rbrack$=$E\lbrack Z'\rbrack$, then,  
 >$E_Z\lbrack Z-E\lbrack Z\rbrack\rbrack$=$E_Z\lbrack Z-E\lbrack Z'\rbrack\rbrack$  
->&#10113;by <font color="Red">Jensen's inequality</font>, we have it that  
->$P(e^{Z-E\lbrack Z\rbrack})$  
->=$P(e^{Z-E\lbrack Z'\rbrack})$  
->$\le P(E\lbrack e^{Z-Z'}\rbrack)$  
->, which in turns implies that  
+>And according to the <font color="Red">Jensen's inequality</font>, we have it that  
 >$E_Z\lbrack e^{Z-E\lbrack Z\rbrack}\rbrack$  
 >=$E_Z\lbrack e^{Z-E\lbrack Z'\rbrack}\rbrack$  
 >$\le E_Z\lbrack E_{Z'}\lbrack e^{Z-Z'}\rbrack\rbrack$  
+>&#10113;by the <font color="Red">Chernoff bounds</font>, we can have  
+>$P(\left|Z-E\lbrack Z\rbrack\right|\ge t)$  
+>=$P(\left|Z-E\lbrack Z'\rbrack\right|\ge t)$  
+>=$P(e^{\lambda\cdot\left|Z-E\lbrack Z'\rbrack\right|}\ge e^{\lambda\cdot t})$  
+>$\le E\lbrack e^{\lambda\cdot\left|Z-E\lbrack Z'\rbrack\right|}\rbrack\cdot e^{-\lambda\cdot t}$  
+>&#10114;given that $S\in\\{+1,-1\\}$, a <font color="Red">Rademacher</font> random variable, and $(S\cdot (Z-Z'))\in\lbrack a,b\rbrack$, it implies that  
+>$E_Z\lbrack E_{Z'}\lbrack e^{Z-Z'}\rbrack\rbrack$  
+>=$E_Z\lbrack E_{Z'}\lbrack e^{S\cdot (Z-Z')}\rbrack\rbrack$  
+>=$E_{Z,Z'}\lbrack E_{S}\lbrack e^{S\cdot (Z-Z')}\rbrack\rbrack$  
+>Then, below holds,  
+>$E_Z\lbrack E_{Z'}\lbrack e^{\lambda\cdot (Z-Z')}\rbrack\rbrack$  
+>=$E_Z\lbrack E_{Z'}\lbrack e^{S\cdot\lambda\cdot (Z-Z')}\rbrack\rbrack$  
+>=$E_{Z,Z'}\lbrack E_{S}\lbrack e^{S\cdot\lambda\cdot (Z-Z')}\rbrack\rbrack$  
+>&#10115;by MGF, we have below holds  
+>$E_{S}\lbrack e^{S\cdot\lambda\cdot (Z-Z')}\rbrack\le e^{\frac {(\lambda\cdot (Z-Z'))^{2}}{2}}$  
+>Because <font color="DeepPink">$S\cdot (Z-Z')$ and $Z-Z'$ have the same distribution</font>, then  
+>$E_{S}\lbrack e^{S\cdot\lambda\cdot (Z-Z')}\rbrack\le e^{\frac {(\lambda\cdot (b-a'))^{2}}{2}}$  
+>Therefore, $E_Z\lbrack E_{Z'}\lbrack e^{\lambda\cdot (Z-Z')}\rbrack\rbrack\le e^{\frac {(\lambda\cdot (b-a'))^{2}}{2}}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
