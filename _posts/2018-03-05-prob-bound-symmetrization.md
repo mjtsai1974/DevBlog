@@ -24,7 +24,7 @@ In machine, statistics, probability theory, the <font color="Red">symmetrization
 >=$P(\left|Z-E\lbrack Z'\rbrack\right|\ge t)$  
 >=$P(e^{\lambda\cdot\left|Z-E\lbrack Z'\rbrack\right|}\ge e^{\lambda\cdot t})$  
 >$\le E\lbrack e^{\lambda\cdot\left|Z-E\lbrack Z'\rbrack\right|}\rbrack\cdot e^{-\lambda\cdot t}$  
->&#10114;given that $S\in\\{+1,-1\\}$, a <font color="Red">Rademacher</font> random variable, and $(S\cdot (Z-Z'))\in\lbrack a,b\rbrack$, it implies that  
+>&#10114;given that $S\in\\{+1,-1\\}$, a <font color="Red">Rademacher</font> random variable, and <font color="DeepPink">$S\cdot (Z-Z')$ and $Z-Z'$ have the same distribution</font>, it implies that  
 >$E_Z\lbrack E_{Z'}\lbrack e^{Z-Z'}\rbrack\rbrack$  
 >=$E_Z\lbrack E_{Z'}\lbrack e^{S\cdot (Z-Z')}\rbrack\rbrack$  
 >=$E_{Z,Z'}\lbrack E_{S}\lbrack e^{S\cdot (Z-Z')}\rbrack\rbrack$  
@@ -34,7 +34,7 @@ In machine, statistics, probability theory, the <font color="Red">symmetrization
 >=$E_{Z,Z'}\lbrack E_{S}\lbrack e^{S\cdot\lambda\cdot (Z-Z')}\rbrack\rbrack$  
 >&#10115;by MGF, we have below holds  
 >$E_{S}\lbrack e^{S\cdot\lambda\cdot (Z-Z')}\rbrack\le e^{\frac {(\lambda\cdot (Z-Z'))^{2}}{2}}$  
->Because <font color="DeepPink">$S\cdot (Z-Z')$ and $Z-Z'$ have the same distribution</font>, then  
+>Because <font color="DeepPink">$\left|Z-Z'\right|\le (b-a)$ guarantees $(Z-Z')^{2}\le (b-a)^{2}$</font> , then  
 >$E_{S}\lbrack e^{S\cdot\lambda\cdot (Z-Z')}\rbrack\le e^{\frac {(\lambda\cdot (b-a'))^{2}}{2}}$  
 >Therefore, $E_Z\lbrack E_{Z'}\lbrack e^{\lambda\cdot (Z-Z')}\rbrack\rbrack\le e^{\frac {(\lambda\cdot (b-a'))^{2}}{2}}$  
 
