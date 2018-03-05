@@ -21,9 +21,9 @@ In machine, statistics, probability theory, the <font color="Red">symmetrization
 >=$P(e^{Z-E\lbrack Z'\rbrack})$  
 >$\le P(E\lbrack e^{Z-Z'}\rbrack)$  
 >, which in turns implies that  
->$E_Z\lbrack e^{Z-E\lbrack Z\rbrack}\lright$  
->=$E_Z\lbrack e^{Z-E\lbrack Z'\rbrack}\lright$  
->$\le E_Z\lbrack E_{Z'}\lbrack e^{Z-Z'}\rbrack\lright$  
+>$E_Z\lbrack e^{Z-E\lbrack Z\rbrack}\rbrack$  
+>=$E_Z\lbrack e^{Z-E\lbrack Z'\rbrack}\rbrack$  
+>$\le E_Z\lbrack E_{Z'}\lbrack e^{Z-Z'}\rbrack\rbrack$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
