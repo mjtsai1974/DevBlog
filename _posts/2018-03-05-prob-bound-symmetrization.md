@@ -40,8 +40,8 @@ In machine, statistics, probability theory, the <font color="Red">symmetrization
 >&#10115;by MGF, we have below holds  
 >$E_{S}\lbrack e^{S\cdot\lambda\cdot (Z-Z')}\rbrack\le e^{\frac {(\lambda\cdot (Z-Z'))^{2}}{2}}$  
 >Because <font color="DeepPink">$\left|Z-Z'\right|\le (b-a)$ guarantees $(Z-Z')^{2}\le (b-a)^{2}$</font> , then  
->$E_{S}\lbrack e^{S\cdot\lambda\cdot (Z-Z')}\rbrack\le e^{\frac {(\lambda\cdot (b-a'))^{2}}{2}}$  
->Therefore, $E_Z\lbrack E_{Z'}\lbrack e^{\lambda\cdot (Z-Z')}\rbrack\rbrack\le e^{\frac {(\lambda\cdot (b-a'))^{2}}{2}}$  
+>$E_{S}\lbrack e^{S\cdot\lambda\cdot (Z-Z')}\rbrack\le e^{\frac {(\lambda\cdot (b-a))^{2}}{2}}$  
+>Therefore, $E_Z\lbrack E_{Z'}\lbrack e^{\lambda\cdot (Z-Z')}\rbrack\rbrack\le e^{\frac {(\lambda\cdot (b-a))^{2}}{2}}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
