@@ -17,12 +17,12 @@ In machine, statistics, probability theory, the <font color="Red">symmetrization
 >$P(Z-E\lbrack Z\rbrack)$=$P(Z-E\lbrack Z'\rbrack)$, which implies that  
 >$E_Z\lbrack Z-E\lbrack Z\rbrack\rbrack$=$E_Z\lbrack Z-E\lbrack Z'\rbrack\rbrack$  
 >&#10113;by <font color="Red">Jensen's inequality</font>, we have it that  
->$P(e^{Z-E\lbrack Z\rbrack))$  
+>$P(e^{Z-E\lbrack Z\rbrack})$  
 >=$P(e^{Z-E\lbrack Z'\rbrack})$  
 >$\le P(E\lbrack e^{Z-Z'}\rbrack)$  
 >, which in turns implies that  
->$E_Z\lbrack e^{Z-E\lbrack Z\rbrack)\lright$  
->=$E_Z\lbrack e^{Z-E\lbrack Z'\rbrack)\lright$  
+>$E_Z\lbrack e^{Z-E\lbrack Z\rbrack}\lright$  
+>=$E_Z\lbrack e^{Z-E\lbrack Z'\rbrack}\lright$  
 >$\le E_Z\lbrack E_{Z'}\lbrack e^{Z-Z'}\rbrack\lright$  
 
 <!-- Γ -->
