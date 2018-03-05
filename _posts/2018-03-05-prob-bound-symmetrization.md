@@ -10,7 +10,12 @@ In machine, statistics, probability theory, the <font color="Red">symmetrization
 
 ### The <font color="Red">Symmetrization</font>
 >Given a <font color="OrangeRed">bounded</font> random variable $Z\in\lbrack a,b\rbrack$, we perform <font color="OrangeRed">multiple</font> tests of it with instances of $Z$ <font color="OrangeRed">duplicated</font>, choose one of the clones to be $Z'$, so that $Z'\in\lbrack a,b\rbrack$ and $E\lbrack Z\rbrack$=$E\lbrack Z'\rbrack$.  
->Then,  
+>There exists some properties:  
+>&#10112;$E_Z\lbrack e^{Z-E\lbrack Z\rbrack}\rbrack\le E_Z\lbrack E_{Z'}\lbrack e^{Z-Z'}\rbrack\rbrack$  
+>&#10113;$P(\left|Z-E\lbrack Z\rbrack\right|\ge t)$  
+>=$P(\left|Z-E\lbrack Z'\rbrack\right|\ge t)$  
+>$\le E\lbrack e^{\lambda\cdot E\lbrack\left|Z-Z'\right|\rbrack}\rbrack\cdot e^{-\lambda\cdot t}$  
+>&#10114;$E_Z\lbrack E_{Z'}\lbrack e^{\lambda\cdot (Z-Z')}\rbrack\rbrack\le e^{\frac {(\lambda\cdot (b-a'))^{2}}{2}}$  
 >
 >Proof::mjtsai  
 >&#10112;by given, $E\lbrack Z\rbrack$=$E\lbrack Z'\rbrack$, then,  
@@ -24,6 +29,7 @@ In machine, statistics, probability theory, the <font color="Red">symmetrization
 >=$P(\left|Z-E\lbrack Z'\rbrack\right|\ge t)$  
 >=$P(e^{\lambda\cdot\left|Z-E\lbrack Z'\rbrack\right|}\ge e^{\lambda\cdot t})$  
 >$\le E\lbrack e^{\lambda\cdot\left|Z-E\lbrack Z'\rbrack\right|}\rbrack\cdot e^{-\lambda\cdot t}$  
+>$\le E\lbrack e^{\lambda\cdot E\lbrack\left|Z-Z'\right|\rbrack}\rbrack\cdot e^{-\lambda\cdot t}$  
 >&#10114;given that $S\in\\{+1,-1\\}$, a <font color="Red">Rademacher</font> random variable, and <font color="DeepPink">$S\cdot (Z-Z')$ and $Z-Z'$ have the same distribution</font>, it implies that  
 >$E_Z\lbrack E_{Z'}\lbrack e^{Z-Z'}\rbrack\rbrack$  
 >=$E_Z\lbrack E_{Z'}\lbrack e^{S\cdot (Z-Z')}\rbrack\rbrack$  
