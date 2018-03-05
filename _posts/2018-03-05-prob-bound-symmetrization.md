@@ -9,11 +9,21 @@ In machine, statistics, probability theory, the <font color="Red">symmetrization
 </p>
 
 ### The <font color="Red">Symmetrization</font>
->Given a <font color="OrangeRed">bounded</font> random variable $Z\in\lbrack a,b\rbrack$, we perform <font color="OrangeRed">multiple</font> test of it with instances of $Z$ <font color="OrangeRed">duplicated</font>, choose one of the clones to be $Z'$, so that $Z'\in\lbrack a,b\rbrack$ and $E\lbrack Z\rbrack$=$E\lbrack Z'\rbrack$.  
+>Given a <font color="OrangeRed">bounded</font> random variable $Z\in\lbrack a,b\rbrack$, we perform <font color="OrangeRed">multiple</font> tests of it with instances of $Z$ <font color="OrangeRed">duplicated</font>, choose one of the clones to be $Z'$, so that $Z'\in\lbrack a,b\rbrack$ and $E\lbrack Z\rbrack$=$E\lbrack Z'\rbrack$.  
 >Then,  
 >
 >Proof:
->
+>&#10112;by known, $E\lbrack Z\rbrack$=$E\lbrack Z'\rbrack$, then,  
+>$P(Z-E\lbrack Z\rbrack)$=$P(Z-E\lbrack Z'\rbrack)$, which implies that  
+>$E_Z\lbrack Z-E\lbrack Z\rbrack\rbrack$=$E_Z\lbrack Z-E\lbrack Z'\rbrack\rbrack$  
+>&#10113;by <font color="Red">Jensen's inequality</font>, we have it that  
+>$P(e^{Z-E\lbrack Z\rbrack))$  
+>=$P(e^{Z-E\lbrack Z'\rbrack})$  
+>$\le P(E\lbrack e^{Z-Z'}\rbrack)$  
+>, which in turns implies that  
+>$E_Z\lbrack e^{Z-E\lbrack Z\rbrack)\lright$  
+>=$E_Z\lbrack e^{Z-E\lbrack Z'\rbrack)\lright$  
+>$\le E_Z\lbrack E_{Z'}\lbrack e^{Z-Z'}\rbrack\lright$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
