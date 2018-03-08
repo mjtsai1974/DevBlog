@@ -5,7 +5,7 @@ title: Symmetrization
 
 ## Prologue To The <font color="Red">Symmetrization</font>
 <p class="message">
-In machine, statistics, probability theory, the <font color="Red">symmetrization</font> is commonly used to <font color="OrangeRed">relate the random variables belonging to the same distribution</font>.  
+In machine learning, statistics, probability theory, the <font color="Red">symmetrization</font> is commonly used to <font color="OrangeRed">relate the random variables belonging to the same distribution</font>.  
 </p>
 
 ### The <font color="Red">Symmetrization</font>
