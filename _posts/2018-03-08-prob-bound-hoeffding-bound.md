@@ -52,8 +52,14 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >Proof::mjtsai  
 >We would inherit from &#10116; in the proof of <font color="Red">Mjtsai1974 Light Weight Upper Bound</font>, begin from $ln\theta(u)$=$ln((1-p)\cdot e^{s\cdot u}+p)$+$s\cdot (p-1)\cdot u$, where $u$=$a-b$,$\theta(u)$=$((1-p)\cdot e^{s\cdot u}+p)\cdot e^{s\cdot (p-1)\cdot u}$.  
 >&#10112;take $M(u)$=$ln\theta(u)$, by <font color="OrangeRed">Taylor theorem</font>, for $w\in\lbrack u,0\rbrack$, where in this case $u\le 0$, we have  
->$\lim_{w\rightarrow\u}M(w)\approx ln\theta(u)$+$\frac {ln^{′}\theta(u)}{1!}\cdot (w-u)$+$\frac {ln^{″}\theta(u)}{2!}\cdot (w-u)^2$+$\frac {ln^{′″}\theta(u)}{3!}\cdot (w-u)^3$+...  
+>$\lim_{w\rightarrow u}M(w)$  
+>$\approx ln\theta(u)$+$\frac {ln^{′}\theta(u)}{1!}\cdot (w-u)$+$\frac {ln^{″}\theta(u)}{2!}\cdot (w-u)^2$+$\frac {ln^{′″}\theta(u)}{3!}\cdot (w-u)^3$+...  
 >$\le ln\theta(0)$+$\frac {ln^{′}\theta(0)}{1!}\cdot (0-u)$+$\frac {ln^{″}\theta(0)}{2!}\cdot (0-u)^2$+$\frac {ln^{′″}\theta(0)}{3!}\cdot (0-u)^3$+...  
+>&#10113;from above, we must make first, second derivatives, they are  
+>$ln^{′}\theta(u)$=$(p+(1-p)\cdot e^{s\cdot u})^{-1}\cdot ((1-p)\cdot s\cdot e^{s\cdot u})$+$s\cdot(p-1)$  
+>$ln^{″}\theta(u)$=$-1\cdot (p+(1-p)\cdot e^{s\cdot u})^{-2}\cdot ((1-p)\cdot s\cdot e^{s\cdot u})^{2}$  
+>$\;\;\;\;\;\;\;\;+(p+(1-p)\cdot e^{s\cdot u})^{-1}\cdot ((1-p)\cdot s^2\cdot e^{s\cdot u})$  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
