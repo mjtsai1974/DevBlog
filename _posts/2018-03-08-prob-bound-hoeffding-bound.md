@@ -45,7 +45,7 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >$\le ln(e^{s\cdot u})$  
 >=$s\cdot u$  
 >, then <font color="DeepPink">$\theta(u)\le e^{s\cdot u}$</font>  
->Therefore, $E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$ is thus proved.  
+>Therefore, $E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$ is thus proved, this is a simple, light weight inequality, I denote it <font color="Red">Mjtsai1974 Upper Bound</font>.  
 
 ### The <font color="Red">Hoeffding Lemma</font>
 >
