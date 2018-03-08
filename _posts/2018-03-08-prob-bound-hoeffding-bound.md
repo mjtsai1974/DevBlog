@@ -10,8 +10,8 @@ and lectures in machine learning, statistics, probability theory, such inequalit
 belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlue">stepping toward the minimum bias with the suggested sampling size</font>.  
 </p>
 
-### The <font color="Red">Mjtsai1974 Upper Bound</font>
->Before stepping into the major topic, make ourself a tiny break in a corner with a rather simple inequality, constrain still the same random variable as <font color="Red">Hoeffding lemma</font>.  It's just the trivial finding during my proof in these <font color="Red">Hoeffding bounds</font>.  I nicknamed it the <font color="Red">Mjtsai1974 Upper Bound</font>.  
+### The <font color="Red">Mjtsai1974 Light Weight Upper Bound</font>
+>Before stepping into the major topic, make ourself a tiny break in a corner with a rather simple inequality, constrain still the same random variable as <font color="Red">Hoeffding lemma</font>.  It's just the trivial finding during my proof in these <font color="Red">Hoeffding bounds</font>.  I nicknamed it the <font color="Red">Mjtsai1974 Light Weight Upper Bound</font>.  
 >
 >Given $X\in\lbrack a,b\rbrack$, it's a random variable with $E\lbrack x\rbrack$=$0$, then for any $s>0$, we have $E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$  
 >
@@ -44,11 +44,15 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >$\le ln(e^{s\cdot u})$  
 >=$s\cdot u$  
 >, then <font color="DeepPink">$\theta(u)\le e^{s\cdot u}$</font>  
->Therefore, $E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$ is thus proved, this is a simple, light weight inequality, I denote it <font color="Red">Mjtsai1974 Upper Bound</font>.  
+>Therefore, $E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$ is thus proved, this is a simple, light weight inequality, I denote it <font color="Red">Mjtsai1974 Light Weight Upper Bound</font>.  
 
 ### The <font color="Red">Hoeffding Lemma</font>
+>Given $X\in\lbrack a,b\rbrack$, it's a random variable with $E\lbrack x\rbrack$=$0$, then for any $s>0$, we have $E\lbrack e^{s\cdot X}\rbrack\le e^{\frac {s^2\cdot(a-b)^2}{8}}$  
 >
->
+>Proof::mjtsai  
+>We would inherit from &#10116; in the proof of <font color="Red">Mjtsai1974 Light Weight Upper Bound</font>,  
+>begin from $ln\theta(u)$=$ln((1-p)\cdot e^{s\cdot u}+p)$+$s\cdot (p-1)\cdot u$, where $u$=$a-b$,$\theta(u)$=$((1-p)\cdot e^{s\cdot u}+p)\cdot e^{s\cdot (p-1)\cdot u}$.  
+>&#10112;  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
