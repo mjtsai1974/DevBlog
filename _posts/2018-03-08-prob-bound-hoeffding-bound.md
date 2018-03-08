@@ -44,7 +44,7 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >$\le ln((1-p)\cdot e^{s\cdot u})$...since $p\le 1$    
 >$\le ln(e^{s\cdot u})$  
 >=$s\cdot u$  
->, then $\theta(u)$=$e^{s\cdot u}$.  
+>, then <font color="DeepPink">$\theta(u)\le e^{s\cdot u}$</font>  
 >Therefore, $E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$ is thus proved.  
 
 ### The <font color="Red">Hoeffding Lemma</font>
