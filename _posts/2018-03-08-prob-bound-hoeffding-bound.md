@@ -59,6 +59,10 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >$ln^{′}\theta(u)$=$(p+(1-p)\cdot e^{s\cdot u})^{-1}\cdot ((1-p)\cdot s\cdot e^{s\cdot u})$+$s\cdot(p-1)$  
 >$ln^{″}\theta(u)$=$-1\cdot (p+(1-p)\cdot e^{s\cdot u})^{-2}\cdot ((1-p)\cdot s\cdot e^{s\cdot u})^{2}$  
 >$\;\;\;\;\;\;\;\;+(p+(1-p)\cdot e^{s\cdot u})^{-1}\cdot ((1-p)\cdot s^2\cdot e^{s\cdot u})$  
+>And, $ln\theta(0)$=$0$, $ln^{′}\theta(0)$=$0$,  
+>$ln^{″}\theta(0)$=$-1\cdot((1-p)\cdot s)^2$+$(1-p)\cdot s^2$=$p\cdot (1-p)\cdot s^2$  
+>&#10114;therefore, we'd like to maximum the term $ln^{″}\theta(u)$, it could be further regularized as   
+>$ln^{″}\theta(u)$=$\frac {p\cdot (1-p)\cdot s^2\cdot e^{s\cdot u}}{(p+(1-p)\cdot e^{s\cdot u})^{2}}$  
 >
 
 <!-- Γ -->
