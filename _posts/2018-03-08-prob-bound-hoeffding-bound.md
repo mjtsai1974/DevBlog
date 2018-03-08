@@ -17,6 +17,8 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >$E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$  
 >
 >Proof::mjtsai
+>&#10112;by given $X\in\lbrack a,b\rbrack$, take $\lambda$=$\frac {x-a}{b-a}$, we just have $x$=$(1-\lambda)\cdot a$+$\lambda\cdot b$.  
+>Since <font color="Red">Jensen's inequality</font> guarantees that <font color="DeepPink">$g(E\lbrack s\cdot X\rbrack)\le E\lbrack g(s\cdot X)\rbrack$</font> for any convex function $g(X)$.  
 >
 
 ### The <font color="Red">Hoeffding Lemma</font>
