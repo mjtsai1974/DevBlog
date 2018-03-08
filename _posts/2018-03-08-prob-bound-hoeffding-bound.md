@@ -61,9 +61,11 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >$\;\;\;\;\;\;\;\;+(p+(1-p)\cdot e^{s\cdot u})^{-1}\cdot ((1-p)\cdot s^2\cdot e^{s\cdot u})$  
 >And, $ln\theta(0)$=$0$, $ln^{′}\theta(0)$=$0$,  
 >$ln^{″}\theta(0)$=$-1\cdot((1-p)\cdot s)^2$+$(1-p)\cdot s^2$=$p\cdot (1-p)\cdot s^2$  
->&#10114;therefore, we'd like to maximum the term $ln^{″}\theta(u)$, it could be further regularized as   
->$ln^{″}\theta(u)$=$\frac {p\cdot (1-p)\cdot s^2\cdot e^{s\cdot u}}{(p+(1-p)\cdot e^{s\cdot u})^{2}}$  
->
+>&#10114;therefore, we'd like to maximum the term $ln^{″}\theta(u)$, take $z$=$e^{s\cdot u}$, $s$=$\frac {ln(z)}{u}$, then  
+>$ln^{″}\theta(u)$...further regularized  
+>=$\frac {p\cdot (1-p)\cdot s^2\cdot e^{s\cdot u}}{(p+(1-p)\cdot e^{s\cdot u})^{2}}$  
+>=$\frac {p\cdot (1-p)\cdot (\frac {ln(z)}{u})^2\cdot z}{(p+(1-p)\cdot z)^{2}}$  
+>$\le \frac {p\cdot (1-p)\cdot z}{(p+(1-p)\cdot z)^{2}}$...$(\frac {ln(z)}{u})^2\le 1$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
@@ -81,6 +83,7 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 <!-- Var\lbrack Z\rbrack -->
 <!-- \left|X\right| absolute value of X-->
 <!-- \Leftrightarrow -->
+<!-- \ln\left(\right)-->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
