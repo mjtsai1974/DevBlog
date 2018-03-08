@@ -50,9 +50,10 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >Given $X\in\lbrack a,b\rbrack$, it's a random variable with $E\lbrack x\rbrack$=$0$, then for any $s>0$, we have $E\lbrack e^{s\cdot X}\rbrack\le e^{\frac {s^2\cdot(a-b)^2}{8}}$  
 >
 >Proof::mjtsai  
->We would inherit from &#10116; in the proof of <font color="Red">Mjtsai1974 Light Weight Upper Bound</font>,  
->begin from $ln\theta(u)$=$ln((1-p)\cdot e^{s\cdot u}+p)$+$s\cdot (p-1)\cdot u$, where $u$=$a-b$,$\theta(u)$=$((1-p)\cdot e^{s\cdot u}+p)\cdot e^{s\cdot (p-1)\cdot u}$.  
->&#10112;  
+>We would inherit from &#10116; in the proof of <font color="Red">Mjtsai1974 Light Weight Upper Bound</font>, begin from $ln\theta(u)$=$ln((1-p)\cdot e^{s\cdot u}+p)$+$s\cdot (p-1)\cdot u$, where $u$=$a-b$,$\theta(u)$=$((1-p)\cdot e^{s\cdot u}+p)\cdot e^{s\cdot (p-1)\cdot u}$.  
+>&#10112;take $M(u)$=$ln\theta(u)$, by <font color="OrangeRed">Taylor theorem</font>, for $w\in\lbrack u,0\rbrack$, where in this case $u\le 0$, we have  
+>$\lim_{w\rightarrow\u}M(w)\approx ln\theta(u)$+$\frac {ln^{′}\theta(u)}{1!}\cdot (w-u)$+$\frac {ln^{″}\theta(u)}{2!}\cdot (w-u)^2$+$\frac {ln^{′″}\theta(u)}{3!}\cdot (w-u)^3$+...  
+>$\le ln\theta(0)$+$\frac {ln^{′}\theta(0)}{1!}\cdot (0-u)$+$\frac {ln^{″}\theta(0)}{2!}\cdot (0-u)^2$+$\frac {ln^{′″}\theta(0)}{3!}\cdot (0-u)^3$+...  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
