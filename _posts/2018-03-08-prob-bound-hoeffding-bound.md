@@ -47,7 +47,7 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >Therefore, $E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$ is thus proved, this is a simple, light weight inequality, I denote it <font color="Red">Mjtsai1974 Light Weight Upper Bound</font>.  
 
 ### The <font color="Red">Hoeffding Lemma</font>
->Given $X\in\lbrack a,b\rbrack$, it's a random variable with $E\lbrack x\rbrack$=$0$, then for any $s>0$, we have $E\lbrack e^{s\cdot X}\rbrack\le e^{\frac {s^2\cdot(a-b)^2}{8}}$  
+>Given $X\in\lbrack a,b\rbrack$, it's a random variable with $E\lbrack x\rbrack$=$0$, then for any $s>0$, we have $E\lbrack e^{s\cdot X}\rbrack\le e^{\frac {s^2\cdot(b-a)^2}{8}}$  
 >
 >Proof::mjtsai  
 >We would inherit from &#10116; in the proof of <font color="Red">Mjtsai1974 Light Weight Upper Bound</font>, begin from $ln\theta(u)$=$ln((1-p)\cdot e^{s\cdot u}+p)$+$s\cdot (p-1)\cdot u$, where $u$=$a-b$,$\theta(u)$=$((1-p)\cdot e^{s\cdot u}+p)\cdot e^{s\cdot (p-1)\cdot u}$.  
@@ -71,13 +71,20 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >After we solve it, we get $z$=$\frac {p}{1-p}$ is the <font color="DeepSkyBlue">critical point</font>.  
 >&#10116;take $z$=$\frac {p}{1-p}$ in $N(z)$  
 >$N(z)$=$\frac {p\cdot (1-p)\cdot\frac {p}{1-p}}{(p+(1-p)\cdot\frac {p}{1-p})^{2}}$=$\frac {p^{2}}{4\cdot p^{2}}$=$\frac {1}{4}$  
->Be recalled that <font color="DeepSkyBlue">$ln^{″}\theta(u)$=$s^2\cdot N(z)$</font>, back to the <font color="OrangeRed">Taylor expansion</font> in &#10113;, we have 
+>Be recalled that <font color="DeepSkyBlue">$ln^{″}\theta(u)$=$s^2\cdot N(z)$</font>, back to the <font color="OrangeRed">Taylor expansion</font> in &#10113;, we have  
 >$ln\theta(u)$  
 >=$M(u)$  
 >$\le \frac {ln^{″}\theta(0)}{2!}\cdot(u)^{2}$  
 >=$\frac {s^{2}\cdot N(z)}{2!}\cdot (u)^2$  
 >$\le \frac {1}{2!}\cdot s^{2}\cdot\frac {1}{4}\cdot u^{2}$  
 >=$\frac {1}{8}\cdot s^{2}\cdot u^{2}$  
+>Therefore, $\theta(u)\le e^{\frac {1}{8}\cdot s^{2}\cdot u^{2}}$  
+>&#10117;finally, we just proved that  
+>$E\lbrack e^{s\cdot X}\rbrack$  
+>$\le \theta(u)$  
+>$\le e^{\frac {1}{8}\cdot s^{2}\cdot u^{2}}$  
+>=$e^{\frac {s^{2}\cdot (a-b)^{2}}{8}}$  
+>=$e^{\frac {s^{2}\cdot (b-a)^{2}}{8}}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
