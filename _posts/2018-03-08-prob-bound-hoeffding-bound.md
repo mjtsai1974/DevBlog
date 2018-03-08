@@ -61,7 +61,8 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >$\;\;\;\;\;\;\;\;+(p+(1-p)\cdot e^{s\cdot u})^{-1}\cdot ((1-p)\cdot s^2\cdot e^{s\cdot u})$  
 >And, $ln\theta(0)$=$0$, $ln^{′}\theta(0)$=$0$,  
 >$ln^{″}\theta(0)$=$-1\cdot((1-p)\cdot s)^2$+$(1-p)\cdot s^2$=$p\cdot (1-p)\cdot s^2$  
->&#10114;therefore, we'd like to maximum the term $ln^{″}\theta(u)$, take $z$=$e^{s\cdot u}$, $s$=$\frac {ln(z)}{u}$, then  
+>&#10114;therefore, we'd like to <font color="DeepSkyBlue">maximum the term $ln^{″}\theta(u)$</font>,  
+>take $z$=$e^{s\cdot u}$, $s$=$\frac {ln(z)}{u}$, then  
 >$ln^{″}\theta(u)$...further regularized  
 >=$\frac {p\cdot (1-p)\cdot s^2\cdot e^{s\cdot u}}{(p+(1-p)\cdot e^{s\cdot u})^{2}}$  
 >=$\frac {p\cdot (1-p)\cdot (\frac {ln(z)}{u})^2\cdot z}{(p+(1-p)\cdot z)^{2}}$  
@@ -80,11 +81,7 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >=$\frac {1}{8}\cdot s^{2}\cdot u^{2}$  
 >Therefore, $\theta(u)\le e^{\frac {1}{8}\cdot s^{2}\cdot u^{2}}$  
 >&#10117;finally, we just proved that  
->$E\lbrack e^{s\cdot X}\rbrack$  
->$\le \theta(u)$  
->$\le e^{\frac {1}{8}\cdot s^{2}\cdot u^{2}}$  
->=$e^{\frac {s^{2}\cdot (a-b)^{2}}{8}}$  
->=$e^{\frac {s^{2}\cdot (b-a)^{2}}{8}}$  
+>$E\lbrack e^{s\cdot X}\rbrack\le \theta(u)\le e^{\frac {1}{8}\cdot s^{2}\cdot u^{2}}$=$e^{\frac {s^{2}\cdot (a-b)^{2}}{8}}$=$e^{\frac {s^{2}\cdot (b-a)^{2}}{8}}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
