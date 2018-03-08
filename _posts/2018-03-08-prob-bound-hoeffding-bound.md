@@ -13,8 +13,7 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 ### The <font color="Red">Mjtsai1974 Upper Bound</font>
 >Before stepping into the major topic, make ourself a tiny break in a corner with a rather simple inequality, constrain still the same random variable as <font color="Red">Hoeffding lemma</font>.  It's just the trivial finding during my proof in these <font color="Red">Hoeffding bounds</font>.  I nicknamed it the <font color="Red">Mjtsai1974 Upper Bound</font>.  
 >
->Given $X\in\lbrack a,b\rbrack$, it's a random variable with $E\lbrack x\rbrack$=$0$, then for any $s>0$, we have  
->$E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$  
+>Given $X\in\lbrack a,b\rbrack$, it's a random variable with $E\lbrack x\rbrack$=$0$, then for any $s>0$, we have $E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$  
 >
 >Proof::mjtsai  
 >&#10112;by given $X\in\lbrack a,b\rbrack$, take $\lambda$=$\frac {x-a}{b-a}$,  
