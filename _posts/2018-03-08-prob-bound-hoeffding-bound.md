@@ -17,16 +17,25 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >$E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$  
 >
 >Proof::mjtsai  
->&#10112;by given $X\in\lbrack a,b\rbrack$, take $\lambda$=$\frac {x-a}{b-a}$, we just have $x$=$(1-\lambda)\cdot a$+$\lambda\cdot b$.  
->Since $g(E\lbrack s\cdot X\rbrack)\le E\lbrack g(s\cdot X)\rbrack$ by <font color="Red">Jensen's inequality</font> for any convex function $g(X)$=$e^{X}$, then  
+>&#10112;by given $X\in\lbrack a,b\rbrack$, take $\lambda$=$\frac {x-a}{b-a}$,  
+>we just have $x$=$(1-\lambda)\cdot a$+$\lambda\cdot b$.  
+>&#10113;since $g(E\lbrack s\cdot X\rbrack)\le E\lbrack g(s\cdot X)\rbrack$ by <font color="Red">Jensen's inequality</font> for any convex function $g(X)$=$e^{X}$, then  
 >$e^{(1-\lambda)\cdot s\cdot a+\lambda\cdot s\cdot b}\le (1-\lambda)\cdot e^{s\cdot a}+\lambda\cdot e^{s\cdot b}$  
 >$\Rightarrow E\lbrack e^{(1-\lambda)\cdot s\cdot a+\lambda\cdot s\cdot b}\rbrack\le E\lbrack (1-\lambda)\cdot e^{s\cdot a}+\lambda\cdot e^{s\cdot b}\rbrack$  
->That is to say, for any $x\in X$  
->$\Rightarrow E\lbrack e^{s\cdot x}\rbrack$  
+>&#10114;that is to say, for any $x\in X$, we have  
+>$E\lbrack e^{s\cdot x}\rbrack$  
 >$\le E\lbrack (1-\lambda)\cdot e^{s\cdot a}+\lambda\cdot e^{s\cdot b}\rbrack$  
 >=$E\lbrack (\lambda+(1-\lambda)\cdot e^{s\cdot a-s\cdot b})\cdot e^{s\cdot b}\rbrack$  
 >=$E\lbrack (\frac {x-a}{b-a}+(\frac {b-x}{b-a})\cdot e^{s\cdot a-s\cdot b})\cdot e^{s\cdot b}\rbrack$  
->=$(\frac {-a}{b-a}+(\frac {b}{b-a})\cdot e^{s\cdot a-s\cdot b})\cdot e^{s\cdot b}$  
+>=$(\frac {-a}{b-a}+(\frac {b}{b-a})\cdot e^{s\cdot (a-b)})\cdot e^{s\cdot b}$...$E\lbrack x\rbrack$=$0$  
+>, which is equivalent to ask for its approximation.   
+>&#10115;take $p$=$\frac {-a}{b-a}$, then $1-p$=$\frac {b}{b-a}$.  From the two equalities, we can deduce out two expression for $b$.  
+>$b$=$\frac {a\cdot (p-1)}{p}$ and $b$=$(1-p)\cdot (b-a)$  
+>Choose $b$=$(1-p)\cdot (b-a)$ to express $b$, then above inequality becomes  
+>$E\lbrack e^{s\cdot x}\rbrack$  
+>$\le (\frac {-a}{b-a}+(\frac {b}{b-a})\cdot e^{s\cdot (a-b)})\cdot e^{s\cdot b}$  
+>=$((1-p)\cdot e^{s\cdot (a-b)}+p)\cdot e^{s\cdot (1-p)\cdot (b-a)}$  
+>=$((1-p)\cdot e^{s\cdot (a-b)}+p)\cdot e^{s\cdot (p-1)\cdot (a-b)}$  
 
 ### The <font color="Red">Hoeffding Lemma</font>
 >
