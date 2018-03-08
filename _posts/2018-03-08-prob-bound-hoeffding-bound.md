@@ -16,10 +16,11 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >Given $X\in\lbrack a,b\rbrack$, it's a random variable with $E\lbrack x\rbrack$=$0$, then for any $s>0$, we have  
 >$E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$  
 >
->Proof::mjtsai
+>Proof::mjtsai  
 >&#10112;by given $X\in\lbrack a,b\rbrack$, take $\lambda$=$\frac {x-a}{b-a}$, we just have $x$=$(1-\lambda)\cdot a$+$\lambda\cdot b$.  
->Since <font color="Red">Jensen's inequality</font> guarantees that <font color="DeepPink">$g(E\lbrack s\cdot X\rbrack)\le E\lbrack g(s\cdot X)\rbrack$</font> for any convex function $g(X)$.  
->
+>Since <font color="Red">Jensen's inequality</font> guarantees that $g(E\lbrack s\cdot X\rbrack)\le E\lbrack g(s\cdot X)\rbrack$ for any convex function $g(X)$=$e^{X}$, then  
+>$e^{(1-\lambda)\cdot s\cdot a+\lambda\cdot s\cdot b}\le (1-\lambda)\cdot e^{s\cdot a}+\lambda\cdot e^{s\cdot b}$  
+>$\Rightarrow E\lbrack e^{(1-\lambda)\cdot s\cdot a+\lambda\cdot s\cdot b}\rbrack\le E\lbrack (1-\lambda)\cdot e^{s\cdot a}+\lambda\cdot e^{s\cdot b}\rbrack$  
 
 ### The <font color="Red">Hoeffding Lemma</font>
 >
