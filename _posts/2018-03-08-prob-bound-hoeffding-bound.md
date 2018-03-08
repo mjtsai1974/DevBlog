@@ -29,13 +29,23 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >=$E\lbrack (\frac {x-a}{b-a}+(\frac {b-x}{b-a})\cdot e^{s\cdot a-s\cdot b})\cdot e^{s\cdot b}\rbrack$  
 >=$(\frac {-a}{b-a}+(\frac {b}{b-a})\cdot e^{s\cdot (a-b)})\cdot e^{s\cdot b}$...$E\lbrack x\rbrack$=$0$  
 >, which is equivalent to ask for its approximation.   
->&#10115;take $p$=$\frac {-a}{b-a}$, then $1-p$=$\frac {b}{b-a}$.  From the two equalities, we can deduce out two expression for $b$.  
+>&#10115;take $p$=$\frac {-a}{b-a}$, then $1-p$=$\frac {b}{b-a}$.  From the two equalities, we can deduce out two expressions for $b$:  
 >$b$=$\frac {a\cdot (p-1)}{p}$ and $b$=$(1-p)\cdot (b-a)$  
 >Choose $b$=$(1-p)\cdot (b-a)$ to express $b$, then above inequality becomes  
 >$E\lbrack e^{s\cdot x}\rbrack$  
 >$\le (\frac {-a}{b-a}+(\frac {b}{b-a})\cdot e^{s\cdot (a-b)})\cdot e^{s\cdot b}$  
 >=$((1-p)\cdot e^{s\cdot (a-b)}+p)\cdot e^{s\cdot (1-p)\cdot (b-a)}$  
 >=$((1-p)\cdot e^{s\cdot (a-b)}+p)\cdot e^{s\cdot (p-1)\cdot (a-b)}$  
+>The reason we choose such $b$ expression is to simplify the inequality.  
+>&#10116;take $u$=$a-b$,$\theta(u)$=$((1-p)\cdot e^{s\cdot u}+p)\cdot e^{s\cdot (p-1)\cdot u}$, then  
+>$ln\theta(u)$  
+>=$ln((1-p)\cdot e^{s\cdot u}+p)$+$s\cdot (p-1)\cdot u$  
+>$\le ln((1-p)\cdot e^{s\cdot u}+p)$...since $p-1\le 0$  
+>$\le ln((1-p)\cdot e^{s\cdot u})$...since $p\le 1$    
+>$\le ln(e^{s\cdot u})$  
+>=$s\cdot u$  
+>, then $\theta(u)$=$e^{s\cdot u}$.  
+>Therefore, $E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$ is thus proved.  
 
 ### The <font color="Red">Hoeffding Lemma</font>
 >
