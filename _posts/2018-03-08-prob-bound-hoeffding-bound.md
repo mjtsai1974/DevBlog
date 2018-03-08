@@ -7,8 +7,20 @@ title: Hoeffding Bounds
 <p class="message">
 The <font color="Red">Hoeffding lemma</font> and <font color="Red">Hoeffding inequality</font> are pervasively found in tremendous papers 
 and lectures in machine learning, statistics, probability theory, such inequality <font color="OrangeRed">relates the random variables 
-belonging to the same distribution</font>, to facilitate stepping toward the minimum bias with the suggested sampling size.  
+belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlue">stepping toward the minimum bias with the suggested sampling size</font>.  
 </p>
+
+### The <font color="Red">Mjtsai1974 Upper Bound</font>
+>Before stepping into the major topic, make ourself a tiny break in a corner with a rather simple inequality,
+>constrain still the same random variable as <font color="Red">Hoeffding lemma</font>.  It's just the trivial finding during my proof in these
+><font color="Red">Hoeffding bounds</font>.  I nicknamed it the <font color="Red">Mjtsai1974 Upper Bound</font>.
+>
+>Given 
+
+
+### The <font color="Red">Hoeffding Lemma</font>
+>
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
