@@ -106,6 +106,9 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >Therefore,$P(\sum_{i=1}^{n}(Z_i)\ge t)\le exp(\frac {-2\cdot t^2}{\sum_{i=1}^{n}(b_i-a_i)^2})$  
 >Finally, replace $t$ with $n\cdot\varepsilon$, we have it proved that  
 >$P(\sum_{i=1}^{n}(Z_i)\ge n\cdot\varepsilon)\le exp(\frac {-2\cdot n^2\cdot\varepsilon^2}{\sum_{i=1}^{n}(b_i-a_i)^2})$  
+>
+>If we are given that $Z_i\in\lbrack a,b\rbrack$, then the inequality would become  
+>$P(\sum_{i=1}^{n}(Z_i)\ge n\cdot\varepsilon)\le exp(\frac {-2\cdot n\cdot\varepsilon^2}{(b-a)^2})$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
