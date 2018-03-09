@@ -107,7 +107,7 @@ a series of probability bounds, they all facilitate your study in learning theor
 * [Hoeffding Bounds]({{ site.github.repo }}{{ site.baseurl }}/2018/03/08/prob-bound-hoeffding-bound/)
 * [Addendum]({{ site.github.repo }}{{ site.baseurl }}/2018/03/08/prob-bound-addendum/)
 
-> The related posts would be new added in the future, the context in this section is subject  to change at any time.  
+> The related posts would be new added in the future, the context in this section is subject to change at any time.  
 
 ### Machine Learning Foundation
 
