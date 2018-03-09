@@ -97,8 +97,8 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >$P(\sum_{i=1}^{n}(Z_i)\ge n\cdot\varepsilon)$  
 >=$P(exp(\sum_{i=1}^{n}(s\cdot Z_i))\ge exp(s\cdot t))$  
 >$\le E\lbrack (\prod_{i=1}^{n}exp(s\cdot Z_i))\rbrack\cdot exp(-s\cdot t)$  
->=$\prod_{i=1}^{n}(E\lbrack exp(s\cdot Z_i))\rbrack\cdot exp(-s\cdot t)$  
-
+>=$\prod_{i=1}^{n} E\lbrack exp(s\cdot Z_i)\rbrack\cdot exp(-s\cdot t)$  
+>$\le exp(-s\cdot t)\cdot\prod_{i=1}^{n} exp(\frac {s^2\cdot (b_i-a_i)^2}{8})$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
