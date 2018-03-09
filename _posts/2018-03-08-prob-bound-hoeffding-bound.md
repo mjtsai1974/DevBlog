@@ -94,9 +94,11 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >$P(\frac {1}{n}\cdot\sum_{i=1}^{n}(X_i-E\lbrack X_i\rbrack)\ge\varepsilon)$=$P(\frac {1}{n}\cdot\sum_{i=1}^{n}(Z_i)\ge\varepsilon)$  
 >$\Rightarrow P(\sum_{i=1}^{n}(X_i-E\lbrack X_i\rbrack)\ge n\cdot\varepsilon)$=$P(\sum_{i=1}^{n}(Z_i)\ge n\cdot\varepsilon)$  
 >&#10113;take $t$=$n\cdot\varepsilon$, then we have  
->$P(exp(\sum_{i=1}^{n}(s\cdot Z_i))\ge exp(s\cdot t))$  
+>$P(\sum_{i=1}^{n}(Z_i)\ge n\cdot\varepsilon)$  
+>=$P(exp(\sum_{i=1}^{n}(s\cdot Z_i))\ge exp(s\cdot t))$  
 >$\le E\lbrack (\prod_{i=1}^{n}exp(s\cdot Z_i))\rbrack\cdot exp(-s\cdot t)$  
->
+>=$\prod_{i=1}^{n}(E\lbrack exp(s\cdot Z_i))\rbrack\cdot exp(-s\cdot t)$  
+
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
