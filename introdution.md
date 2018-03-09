@@ -48,6 +48,7 @@ machine learning.
 The context of this bog just like current artificial intelligence, comes without any warranty and would be subject to change any time in the future.  It would be categorized into below major parts:
 
 * Prerequisites
+* Probability Bounds
 * Machine Learning Foundation
 * Neural Network
 * Support Vector Machine(SVM)
@@ -90,6 +91,23 @@ the following:
 * Still others...
 
 > The related posts would be new added in the future, and supposed you are comfortable with calculus and linear algebra, and a little intuition about statistics is mandatory. 
+
+### Probability Bounds
+
+Scientific experiments nowadays are all under sophisticated evaluation with rigorous probabilistic boundary check, thus come out with statistical guarantee on its result.  This section would guide you through 
+a series of probability bounds, they all facilitate your study in learning theorem:  
+
+* [Markov Inequality]({{ site.github.repo }}{{ site.baseurl }}/2018/02/27/prob-bound-markov-inequality/)
+* [Chebyshev's Inequality]({{ site.github.repo }}{{ site.baseurl }}/2018/02/28/prob-bound-chebyshev-inequality/)
+* [Chernoff Bounds]({{ site.github.repo }}{{ site.baseurl }}/2018/03/01/prob-bound-chernoff-bound/)
+* [Chernoff Bounds For Normal Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/03/01/prob-bound-chernoff-bound-N/)
+* [Chernoff Bounds For Rademacher Random Variable]({{ site.github.repo }}{{ site.baseurl }}/2018/03/01/prob-bound-chernoff-bound-rademacher/)
+* [Jensen's Inequality]({{ site.github.repo }}{{ site.baseurl }}/2018/03/02/prob-bound-jensen-inequality/)
+* [Symmetrization]({{ site.github.repo }}{{ site.baseurl }}/2018/03/05/prob-bound-symmetrization/)
+* [Hoeffding Bounds]({{ site.github.repo }}{{ site.baseurl }}/2018/03/08/prob-bound-hoeffding-bound/)
+* Addendum
+
+> The related posts would be new added in the future, the context in this section is subject  to change at any time.  
 
 ### Machine Learning Foundation
 
