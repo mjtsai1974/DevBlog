@@ -85,9 +85,18 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 
 ### The <font color="Red">Hoeffding Inequality</font>
 >Given that $X_1$,$X_2$,,,$X_n$ are independent random variables with $a_i\le X_i\le b_i$, then  
->$P(\frac {1}{n}\cdot\sum_{1}^{n}(X_i-E\lbrack X_i\rbrack)\ge\varepsilon)\le exp(\frac {-2\cdot n^2\cdot\varepsilon^2}{\sum_{1}^{n}(b_i-a_i)^2})$  
+>$\;\;\;\;P(\frac {1}{n}\cdot\sum_{1}^{n}(X_i-E\lbrack X_i\rbrack)\ge\varepsilon)\le exp(\frac {-2\cdot n^2\cdot\varepsilon^2}{\sum_{1}^{n}(b_i-a_i)^2})$  
 >
 >Proof:  
+>We'd like to prove it by <font color="Red">Hoeffding lemma</font>.  
+>&#10112;take $Z_i$=$X_i-E\lbrack X_i\rbrack$, for all $i$, then $Z_i\in\lbrack a_i,b_i\rbrack$ and $E\lbrack Z_i\rbrack$=$0$ just holds.  
+>$P(\frac {1}{n}\cdot\sum_{i=1}^{n}(X_i-E\lbrack X_i\rbrack))$=$P(\frac {1}{n}\cdot\sum_{i=1}^{n}(Z_i))$, then  
+>$P(\frac {1}{n}\cdot\sum_{i=1}^{n}(X_i-E\lbrack X_i\rbrack)\ge\varepsilon)$=$P(\frac {1}{n}\cdot\sum_{i=1}^{n}(Z_i)\ge\varepsilon)$  
+>$\Rightarrow P(\sum_{i=1}^{n}(X_i-E\lbrack X_i\rbrack)\ge n\cdot\varepsilon)$=$P(\sum_{i=1}^{n}(Z_i)\ge n\cdot\varepsilon)$  
+>&#10113;take $t$=$n\cdot\varepsilon$, then we have  
+>$P(exp(\sum_{i=1}^{n}(s\cdot Z_i))\ge exp(s\cdot t))$  
+>$\le E\lbrack (\prod_{i=1}^{n}exp(s\cdot Z_i))\rbrack\cdot exp(-s\cdot t)$  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
@@ -106,6 +115,7 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 <!-- \left|X\right| absolute value of X-->
 <!-- \Leftrightarrow -->
 <!-- \ln\left(\right)-->
+<!-- \prod_{}^{}-->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
