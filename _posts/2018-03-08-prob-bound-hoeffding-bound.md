@@ -67,7 +67,7 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >=$\frac {p\cdot (1-p)\cdot s^2\cdot e^{s\cdot u}}{(p+(1-p)\cdot e^{s\cdot u})^{2}}$  
 >=$\frac {p\cdot (1-p)\cdot (\frac {ln(z)}{u})^2\cdot z}{(p+(1-p)\cdot z)^{2}}$  
 >$\le \frac {p\cdot (1-p)\cdot z}{(p+(1-p)\cdot z)^{2}}$...$(\frac {ln(z)}{u})^2\le 1$  
->&#10115;take $N(z)$=$\frac {p\cdot (1-p)\cdot z}{(p+(1-p)\cdot z)^{2}}$, and <font color="DeepSkyBlue">$ln^{″}\theta(u)$=$s^2\cdot N(z)$</font>, <font color="OrangeRed">this is equivalent to ask for the maximum of $N(z)$</font>, the formal procedure would be to take its first derivative and set it to $0$, next to get the possible $z$ expressed in terms of $p$, in this case.  
+>&#10115;take $N(z)$=$\frac {p\cdot (1-p)\cdot z}{(p+(1-p)\cdot z)^{2}}$, and <font color="DeepSkyBlue">$ln^{″}\theta(u)$=$s^2\cdot N(z)$</font>, <font color="OrangeRed">this is equivalent to ask for the maximum of $N(z)$</font>, the formal procedure would be to take its first derivative and set it to $0$, next to get the possible $z$ expressed in terms of $p$, in this case, <font color="DeepSkyBlue">$z$ is the input parameter in $N(z)$</font>.  
 >$N′(z)$=$\frac {p^{2}\cdot (1-p)-p\cdot (1-p)^{2}\cdot z}{(p+(1-p)\cdot z)^{3}}$=$0$  
 >After we solve it, we get $z$=$\frac {p}{1-p}$ is the <font color="DeepSkyBlue">critical point</font>.  
 >&#10116;take $z$=$\frac {p}{1-p}$ in $N(z)$  
