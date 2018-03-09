@@ -84,7 +84,7 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >$E\lbrack e^{s\cdot X}\rbrack\le \theta(u)\le e^{\frac {1}{8}\cdot s^{2}\cdot u^{2}}$=$e^{\frac {s^{2}\cdot (a-b)^{2}}{8}}$=$e^{\frac {s^{2}\cdot (b-a)^{2}}{8}}$  
 
 ### The <font color="Red">Hoeffding Inequality</font>
->Given that $X_1$,$X_2$,,,$X_n$ are independent random variables with $a_i\le X_i\le b_i$, then  
+>Given that $X_1$,$X_2$,,,$X_n$ are independent random variables with <font color="OrangeRed">$a_i\le X_i\le b_i$</font>, then  
 >$\;\;\;\;P(\frac {1}{n}\cdot\sum_{1}^{n}(X_i-E\lbrack X_i\rbrack)\ge\varepsilon)\le exp(\frac {-2\cdot n^2\cdot\varepsilon^2}{\sum_{1}^{n}(b_i-a_i)^2})$  
 >
 >Proof:  
@@ -95,19 +95,19 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >$\Rightarrow P(\sum_{i=1}^{n}(X_i-E\lbrack X_i\rbrack)\ge n\cdot\varepsilon)$=$P(\sum_{i=1}^{n}(Z_i)\ge n\cdot\varepsilon)$  
 >&#10113;take $t$=$n\cdot\varepsilon$, then we have  
 >$P(\sum_{i=1}^{n}(Z_i)\ge n\cdot\varepsilon)$  
->$P(\sum_{i=1}^{n}(Z_i)\ge t)$  
+>=$P(\sum_{i=1}^{n}(Z_i)\ge t)$  
 >=$P(exp(\sum_{i=1}^{n}(s\cdot Z_i))\ge exp(s\cdot t))$  
 >$\le E\lbrack (\prod_{i=1}^{n}exp(s\cdot Z_i))\rbrack\cdot exp(-s\cdot t)$  
 >=$\prod_{i=1}^{n} E\lbrack exp(s\cdot Z_i)\rbrack\cdot exp(-s\cdot t)$  
 >$\le exp(-s\cdot t)\cdot\prod_{i=1}^{n} exp(\frac {s^2\cdot (b_i-a_i)^2}{8})$  
 >=$exp(\sum_{i=1}^{n}\frac {s^2\cdot (b_i-a_i)^2}{8}-s\cdot t)$  
->&#10114;it's equivalent to find the <font color="DeepSkyBlue">minimum</font> of the term, the formal procedure would be to take the first derivative with respect to $s$, set it to $0$, solve $s$ in terms of $t$.  
+>&#10114;it's equivalent to find the <font color="DeepSkyBlue">minimum</font> of the term, the formal procedure would be to take the first derivative with respect to $s$, set it to $0$, solve $s$ in terms of $t$, since <font color="DeepSkyBlue">$s$ is a further expanded term in the proof process, we should eliminate $s$</font>.  
 >After that we find $s$=$\frac {4\cdot t}{\sum_{i=1}^{n}(b_i-a_i)^2}$ is the <font color="DeepSkyBlue">critical point</font>.  
 >Therefore,$P(\sum_{i=1}^{n}(Z_i)\ge t)\le exp(\frac {-2\cdot t^2}{\sum_{i=1}^{n}(b_i-a_i)^2})$  
 >Finally, replace $t$ with $n\cdot\varepsilon$, we have it proved that  
 >$P(\sum_{i=1}^{n}(Z_i)\ge n\cdot\varepsilon)\le exp(\frac {-2\cdot n^2\cdot\varepsilon^2}{\sum_{i=1}^{n}(b_i-a_i)^2})$  
 >
->If we are given that $Z_i\in\lbrack a,b\rbrack$, then the inequality would become  
+>If we are given all <font color="OrangeRed">$Z_i\in\lbrack a,b\rbrack$</font>, then the inequality would become  
 >$P(\sum_{i=1}^{n}(Z_i)\ge n\cdot\varepsilon)\le exp(\frac {-2\cdot n\cdot\varepsilon^2}{(b-a)^2})$  
 
 <!-- Γ -->
