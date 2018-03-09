@@ -83,6 +83,12 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >&#10117;finally, we just proved that  
 >$E\lbrack e^{s\cdot X}\rbrack\le \theta(u)\le e^{\frac {1}{8}\cdot s^{2}\cdot u^{2}}$=$e^{\frac {s^{2}\cdot (a-b)^{2}}{8}}$=$e^{\frac {s^{2}\cdot (b-a)^{2}}{8}}$  
 
+### The <font color="Red">Hoeffding Inequality</font>
+>Given that $X_1$,$X_2$,,,$X_n$ are independent random variables with $a_i\le X_i\le b_i$, then  
+>$P(\frac {1}{n}\cdot\sum_{1}^{n}(X_i-E\lbrack X_i\rbrack)\ge\varepsilon)\le exp(\frac {-2\cdot n^2\cdot\varepsilon^2}{\sum_{1}^{n}(b_i-a_i)^2})$  
+>
+>Proof:  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
