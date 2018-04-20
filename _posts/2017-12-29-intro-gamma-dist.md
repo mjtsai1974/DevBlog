@@ -73,7 +73,7 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$\;\;\;\;$=$\frac{\pi}{4}$
 >
 >$\Gamma(\frac{1}{2})$=$2\cdot\int_0^\infty e^{-u^{2}}\operatorname du$=$2\cdot I$, where $I$=$\int_0^\infty e^{-u^{2}}\operatorname du$ is something we have already known.  
->Therefore, $I^2$=$\frac{\pi}{4}$, and $I$=$\frac{\sqrt\pi}{2}$, finally, we have $\Gamma(\frac{1}{2})$=$\frac{\sqrt\pi}{2}$ thus proved.  
+>Therefore, $I^2$=$\frac{\pi}{4}$, and $I$=$\frac{\sqrt\pi}{2}$, finally, we have $\Gamma(\frac{1}{2})$=$\sqrt\pi$ thus proved.  
 >
 >proof::&#10113;  
 >$\Gamma(\frac{1}{2})$=$\int_0^\infty x^{-\frac{1}{2}}\cdot e^{-x}\operatorname dx$, here we are again.  
