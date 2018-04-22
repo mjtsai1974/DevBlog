@@ -51,8 +51,9 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >
 ><font color="OrangeRed">[Definition]</font>  
 >For any discrete random variable X with parameter $\mu$, it is said to have a <font color="Red">Poisson</font> distribution if its <font color="DeepSkyBlue">probability mass function</font> is given by  
->$P(X=k)$=$\frac {(\mu)^{k}}{k!}\cdot e^{-\mu}$, for $k$=$0$,$1$,$2$,..., denote it as $Pois(\mu)$.  
->Where $\mu$=$\lambda\cdot t$, and $\lambda$ is a constant event occurrance rate in the format of (event counts)/(time unit), $t$ is the period of time in the unit with respect to the time unit of the rate by $\lambda$.  
+>\;\;\;\;$P(X=k)$=$\frac {(\mu)^{k}}{k!}\cdot e^{-\mu}$, for $k$=$0$,$1$,$2$,..., denote it as $Pois(\mu)$, where  
+>&#10112;$\mu$=$\lambda\cdot t$, and $\lambda$ is a constant event occurrance rate in the format of (event counts)/(time unit).  
+>&#10113;$t$ is the period of time in the unit with respect to the time unit of the rate by $\lambda$.  
 >
 >Please recall that we use the term <font color="DeepSkyBlue">probability mass function</font>, since this random process is deducing from a rather <font color="OrangeRed">discrete</font> distributed case.
 
