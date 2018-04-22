@@ -17,11 +17,12 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >[2]<font color="OrangeRed">independence</font>: it assumes all random occurrances are independent.  This says that the number of arrivals over <font color="DeepSkyBlue">disjoint</font> time intervals are independent random variables.  
 >
 >Next the illustration of the procerss.  
->&#10112;suppose within a time interval $t$, the arrival of points or the occurrance of events are random and is represented by random variables $X_{1}$, $X_{2}$, $X_{3}$..., and this scenario is compliants with <font color="OrangeRed">homogeneity</font> and <font color="OrangeRed">independence</font>.  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-22-intro-poisson-dist-random-arrival.png "random arrival")
->&#10113;
->&#10114;
->&#10115;
+>&#10112;suppose within a time interval $[0,t]$, the arrival of points or the occurrance of events are random and is represented by random variables $X_{1}$, $X_{2}$, $X_{3}$..., and this scenario is compliants with <font color="OrangeRed">homogeneity</font> and <font color="OrangeRed">independence</font>.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-22-intro-poisson-dist-random-arrival.png "random arrival")  
+>This article denotes the total number of occurrances within $[0,t]$ as $N([0,t])$, or just abbreviating $N_{t}$ for over time length $t$.  The <font color="OrangeRed">homogeneity</font> implies that $E\lbrack N_{t}\rbrack$=$\lambda\cdot t$  
+>&#10113;  
+>&#10114;  
+>&#10115;  
 
 
 <!-- Γ -->
@@ -30,6 +31,7 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 <!-- \vert_0^\infty -->
 <!-- &prime; ′ -->
 <!-- &Prime; ″ -->
+<!-- $E\lbrack X\rbrack$ -->
 <!-- \overline{X_n} -->
 <!-- \frac{{\overline {X_n}}-\mu}{S/\sqrt n} -->
 <!-- \lim_{t\rightarrow\infty} -->
