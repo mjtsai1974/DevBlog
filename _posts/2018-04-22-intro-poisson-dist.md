@@ -32,6 +32,9 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >&#10116;$C_{k}^{n}(\frac {\lambda\cdot t}{n})^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$ is the probability we have $k$ arrivals in the Binomial distribution, and <font color="OrangeRed">the value of $n$ really matters</font>.  To get rid of this concern, we treat $n$ as <font color="DeepSkyBlue">infinity</font>.  
 >$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {\lambda\cdot t}{n})^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$  
 >=$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {1}{n})^{k}\cdot(\lambda\cdot t)^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$  
+>&#10116;$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {1}{n})^{k}$  
+>=$\lim_{n\rightarrow\infty}\frac {n}{n}\cdot\frac {n-1}{n}\cdot\frac {n-2}{n}\cdot\cdot\cdot\frac {n-k+1}{n}\cdot\frac {1}{k!}$  
+>=$\frac {1}{k!}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
