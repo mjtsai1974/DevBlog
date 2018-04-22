@@ -26,8 +26,7 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >&#10114;each subinterval has time length $\frac {t}{n}$, the $i$-th subinterval ranges from time $\frac {(i-1)\cdot t}{n}$ to $\frac {i\cdot t}{n}$.  We take $R_{i}$ as the $i$-th event in each distinct subinterval. 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-22-intro-poisson-dist-time-subinterval-bernoulli.png "subintervel bernoulli")
 >The <font color="OrangeRed">Bernoulli</font> random variable would have its outcome as $1$ for success and $0$ for failure in its distribution.  So the expected value of the $i$-th arrival is:  
->$E\lbrack R_{i}\rbrack$=$1\cdot P_{i}$+$0\cdot F_{i}$, where $F_{i}$=$1$-$P_{i}$ for each $i$.  
->And $P_{i}$=$\frac {\lambda\cdot t}{n}$  
+>$E\lbrack R_{i}\rbrack$=$1\cdot P_{i}$+$0\cdot F_{i}$, where $F_{i}$=$1$-$P_{i}$ for each $i$, and $P_{i}$=$\frac {\lambda\cdot t}{n}$  
 >&#10115;  
 
 
