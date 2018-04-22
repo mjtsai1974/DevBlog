@@ -6,9 +6,18 @@ title: Introduction To The Poisson Distribution
 ## Prologue To The <font color="Red">Poisson</font> Distribution
 <p class="message">
 In probability theory and statistics, the <font color="Red">poisson</font> distribution is the <font color="DeepSkyBlue">process</font> developed with a hope to approximate the scenario of random arrival within a given time period.  
-The random variable of the <font color="DeepSkyBlue">interarrival time</font> modeled by the <font color="Red">poisson</font> process is identical to the result deduced out by the exponential distribution, we could also express the <font color="DeepSkyBlue">interarrival time</font> as kind of a <font color="DeepSkyBlue">special case of gamma</font> distribution.  
-The realization of the poisson model would be greatly helpful in the evaluation of maximum likelihood estimation and the machine learning results correctness for some discrete or even the continuous cases in the future.  
+The random variable of the <font color="DeepSkyBlue">interarrival time</font> modeled by the <font color="Red">poisson</font> process is identical to the result deduced out by the exponential distribution, we could also express the <font color="DeepSkyBlue">interarrival time</font> as kind of a <font color="DeepSkyBlue">special case of gamma</font> distribution.    
 </p>
+
+<!-- The realization of the poisson model would be greatly helpful in the evaluation of maximum likelihood estimation and the machine learning results correctness for some discrete or even the continuous cases in the future. -->
+
+### The <font color="Red">Poisson</font> Process Illustration
+>The poisson process is a simple kind of random process, describing random points distribution in time or space.  It is developedn based on be low two assumptions:  
+>[1]<font color="OrangeRed">homogeneity</font>: it assumes the rate $\lambda$ of event occurrance is constant over time.  The expected unmber of random points arrival over time period $t$ is $\lambda\cdot t$.  
+>[2]<font color="OrangeRed">independence</font>: it assumes all random occurrances are independent.  This says that the number of arrivals over disjoint time intervals are independent random variables.  
+>
+
+
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
