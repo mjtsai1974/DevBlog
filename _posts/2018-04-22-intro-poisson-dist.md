@@ -22,7 +22,7 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >This article denotes the total number of occurrances within $[0,t]$ as $N([0,t])$, or just abbreviating $N_{t}$ for over time length $t$.  The <font color="OrangeRed">homogeneity</font> implies that <font color="DeepSkyBlue">$E\lbrack N_{t}\rbrack$=$\lambda\cdot t$</font>.  
 >&#10113;to be more precisely approximate to the distribution of such random arrivals, we <font color="DeepSkyBlue">divide the time period $t$ by $n$, to be believed that $n$ is large enough</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-22-intro-poisson-dist-time-interval-div-by-n.png "divide by n")
->Then we have each distinct subinterval of time length $\frac {1}{n}$, and <font color="DeepPink">each subinterval would just have success of arrival for $1$, failure of arrival for $0$</font>, which itself is a <font color="OrangeRed">Bernoulli distribution</font>.
+>Then we have each distinct subinterval of time length $\frac {1}{n}$, and <font color="DeepPink">each subinterval would just have success of arrival for $1$, failure of arrival for $0$</font>, which itself is a <font color="OrangeRed">Bernoulli distribution</font>.  
 >&#10114;  
 >&#10115;  
 
