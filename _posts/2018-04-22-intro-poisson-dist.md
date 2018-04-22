@@ -27,8 +27,10 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-22-intro-poisson-dist-time-subinterval-bernoulli.png "subintervel bernoulli")
 >The <font color="OrangeRed">Bernoulli</font> random variable would have <font color="DeepPink">its outcome as $1$ for success and $0$ for failure in its distribution</font>.  So the expected value of the $i$-th arrival is:  
 >$E\lbrack R_{i}\rbrack$=$1\cdot P_{i}$+$0\cdot F_{i}$, where $F_{i}$=$1$-$P_{i}$ for each $i$, and $P_{i}$=$\frac {\lambda\cdot t}{n}$.  
->&#10115; we then accumulate all outcomes of all $R_{i}$, trivially, the total number of event occurrances remains the same.  
+>&#10115;we then accumulate all outcomes of all $R_{i}$, trivially, the total number of event occurrances remains the same.  
 >$N_{t}$=$R_{1}$+$R_{2}$+...+$R_{i}$+...+$R_{n}$, the point is that <font color="DeepSkyBlue">each $R_{i}$ is independent</font> random variable, now <font color="DeepPink">the original random process behaves in the Binomial distribution as a whole</font>, therefor <font color="DeepPink">$N_{t}$ has Binomial distribution</font> of Bin($n$,$p$), where $p$=$\frac {\lambda\cdot t}{n}$.  
+>&#10116;$C_{k}^{n}(\frac {\lambda\cdot t}{n})^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$ is the probability we have $k$ arrivals in the Binomial distribution, and <font color="OrangeRed">the value of $n$ really matters</font>.  To get rid of this concern, we treat $n$ as <font color="DeepSkyBlue">infinity</font>.  
+>$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {\lambda\cdot t}{n})^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$  
 >
 
 <!-- Γ -->
