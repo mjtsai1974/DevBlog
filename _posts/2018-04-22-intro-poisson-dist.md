@@ -31,7 +31,7 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >$N_{t}$=$R_{1}$+$R_{2}$+...+$R_{i}$+...+$R_{n}$, the point is that <font color="DeepSkyBlue">each $R_{i}$ is independent</font> random variable, now <font color="DeepPink">the original random process behaves in the Binomial distribution as a whole</font>, therefor <font color="DeepPink">$N_{t}$ has Binomial distribution</font> of Bin($n$,$p$), where $p$=$\frac {\lambda\cdot t}{n}$.  
 >&#10116;$C_{k}^{n}(\frac {\lambda\cdot t}{n})^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$ is the probability we have $k$ arrivals in the Binomial distribution, and <font color="OrangeRed">the value of $n$ really matters</font>.  To get rid of this concern, we treat $n$ as <font color="DeepSkyBlue">infinity</font>.  
 >$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {\lambda\cdot t}{n})^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$  
->
+>=$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {1}{n})^{k}\cdot(\lambda\cdot t)^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
