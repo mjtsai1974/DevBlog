@@ -13,10 +13,15 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 
 ### The <font color="Red">Poisson</font> Process Illustration
 >The poisson process is a simple kind of random process, describing random points distribution in time or space.  It is developedn based on be low two assumptions:  
->[1]<font color="OrangeRed">homogeneity</font>: it assumes the rate $\lambda$ of event occurrance is constant over time.  The expected unmber of random points arrival over time period $t$ is $\lambda\cdot t$.  
->[2]<font color="OrangeRed">independence</font>: it assumes all random occurrances are independent.  This says that the number of arrivals over disjoint time intervals are independent random variables.  
+>[1]<font color="OrangeRed">homogeneity</font>: it assumes the rate $\lambda$ of event occurrance is constant over time.  The expected unmber of random point arrivals over time period $t$ is $\lambda\cdot t$.  
+>[2]<font color="OrangeRed">independence</font>: it assumes all random occurrances are independent.  This says that the number of arrivals over <font color="DeepSkyBlue">disjoint</font> time intervals are independent random variables.  
 >
-
+>Next the illustration of the procerss.  
+>&#10112;suppose within a time interval $t$, the arrival of points or the occurrance of events are random and is represented by random variables $X_{1}$, $X_{2}$, $X_{3}$..., and this scenario is compliants with <font color="OrangeRed">homogeneity</font> and <font color="OrangeRed">independence</font>.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-22-intro-poisson-dist-random-arrival.png "random arrival")
+>&#10113;
+>&#10114;
+>&#10115;
 
 
 <!-- Γ -->
