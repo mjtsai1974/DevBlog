@@ -44,7 +44,10 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 ><font color="OrangeRed">$P(N_{t}=k)$</font>  
 >=$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {\lambda\cdot t}{n})^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$  
 >=$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {1}{n})^{k}\cdot(\lambda\cdot t)^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$  
->=<font color="DeepPink">$\frac {\lambda\cdot t}{k!}\cdot e^{-\lambda\cdot t}$</font>  
+>=<font color="DeepPink">$\frac {(\lambda\cdot t)^{k}}{k!}\cdot e^{-\lambda\cdot t}$</font>  
+
+### The <font color="Red">Poisson</font> Distribution Definition
+>By the illustration step &#10119;, we have <font color="DeepPink">$\frac {\lambda\cdot t}{k!}\cdot e^{-\lambda\cdot t}$</font> as <font color="DeepSkyBlue">the probability of $k$ random arrivals</font>, as a result of the fact that <font color="DeepPink">$e^{-\lambda\cdot t}\cdot\sum_{k=0}^{\infty}\frac {(\lambda\cdot t)^{k}}{k!}$=$1$</font>, we have below formal claim the definition of the <font color="Red">poisson</font> distribution.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
