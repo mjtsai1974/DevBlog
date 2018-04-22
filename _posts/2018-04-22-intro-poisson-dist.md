@@ -40,9 +40,11 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >=$e^{-\lambda\cdot t}$  
 >where by calculus, <font color="DeepPink">$\lim_{n\rightarrow\infty}(1-\frac {\lambda\cdot t}{n})^{n}$=$e^{-\lambda\cdot t}$</font>,  
 >and $\lim_{n\rightarrow\infty}(1-\frac {\lambda\cdot t}{n})^{k}$=$1$.  
->&#10119;$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {\lambda\cdot t}{n})^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$  
+>&#10119;thus <font color="DeepSkyBlue">the probability we have $k$ random arrivals</font> is deduced out below:  
+><font color="OrangeRed">$P(N_{t}=k)$</font>  
+>=$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {\lambda\cdot t}{n})^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$  
 >=$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {1}{n})^{k}\cdot(\lambda\cdot t)^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$  
->=$\frac {\lambda\cdot t}{k!}\cdot e^{-\lambda\cdot t}$  
+>=<font color="DeepPink">$\frac {\lambda\cdot t}{k!}\cdot e^{-\lambda\cdot t}$</font>  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
