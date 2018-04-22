@@ -37,10 +37,12 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >=$\frac {1}{k!}$...by using some algebra  
 >&#10118;$\lim_{n\rightarrow\infty}(1-\frac {\lambda\cdot t}{n})^{n-k}$  
 >=$\lim_{n\rightarrow\infty}(1-\frac {\lambda\cdot t}{n})^{n}\cdot(1-\frac {\lambda\cdot t}{n})^{k}$  
->=$e^{-\lambda\cdot t}\cdot 1$
+>=$e^{-\lambda\cdot t}$  
 >where by calculus, <font color="DeepPink">$\lim_{n\rightarrow\infty}(1-\frac {\lambda\cdot t}{n})^{n}$=$e^{-\lambda\cdot t}$</font>,  
 >and $\lim_{n\rightarrow\infty}(1-\frac {\lambda\cdot t}{n})^{k}$=$1$.  
-
+>&#10119;$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {\lambda\cdot t}{n})^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$  
+>=$\lim_{n\rightarrow\infty}C_{k}^{n}(\frac {1}{n})^{k}\cdot(\lambda\cdot t)^{k}\cdot(1-\frac {\lambda\cdot t}{n})^{n-k}$  
+>=$\frac {\lambda\cdot t}{k!}\cdot e^{-\lambda\cdot t}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
