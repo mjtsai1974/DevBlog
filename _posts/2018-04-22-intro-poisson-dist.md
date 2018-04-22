@@ -47,7 +47,7 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >=<font color="DeepPink">$\frac {(\lambda\cdot t)^{k}}{k!}\cdot e^{-\lambda\cdot t}$</font>  
 
 ### The <font color="Red">Poisson</font> Distribution Definition
->By the illustration step &#10119;, we have <font color="DeepPink">$\frac {\lambda\cdot t}{k!}\cdot e^{-\lambda\cdot t}$</font> as <font color="DeepSkyBlue">the probability of $k$ random arrivals</font>, as a result of the fact that <font color="DeepPink">$e^{-\lambda\cdot t}\cdot\sum_{k=0}^{\infty}\frac {(\lambda\cdot t)^{k}}{k!}$=$1$</font>, we have below formal claim the definition of the <font color="Red">poisson</font> distribution.  
+>By the illustration step &#10119;, we have <font color="DeepPink">$\frac {(\lambda\cdot t)^{k}}{k!}\cdot e^{-\lambda\cdot t}$</font> as <font color="DeepSkyBlue">the probability of $k$ random arrivals</font>, we have below formal claim the definition of the <font color="Red">poisson</font> distribution, as a result of the fact that <font color="DeepPink">$e^{-\lambda\cdot t}\cdot\sum_{k=0}^{\infty}\frac {(\lambda\cdot t)^{k}}{k!}$=$1$</font>.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
