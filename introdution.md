@@ -81,7 +81,7 @@ the following:
 * [Introduction To The F Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/05/intro-f-dist/)
 * [Introduction To The t Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/15/intro-t-dist/)
 * [Introduction To The Exponential Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/24/intro-exp-dist/)
-* Introduction To The Poisson Distribution
+* [Introduction To The Poisson Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/04/22/intro-poisson-dist/)
 * The relation in between The Normal, F, Chi-Square, t, Exponential Distribution 
 * Univariate Regression Model
 * Multivariate Regression Model
