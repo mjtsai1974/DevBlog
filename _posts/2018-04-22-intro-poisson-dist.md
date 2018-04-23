@@ -84,6 +84,7 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >=$\lambda\cdot t$, where $\lim_{n\rightarrow\infty}(1-\frac {\lambda\cdot t}{n})$=$1$  
 >
 >We found that <font color="DeepPink">the Poisson distribution has the same expect value and variance.</font>  
+>You can also see [Poisson variance proof on WiKi](https://proofwiki.org/wiki/Variance_of_Poisson_Distribution)
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
