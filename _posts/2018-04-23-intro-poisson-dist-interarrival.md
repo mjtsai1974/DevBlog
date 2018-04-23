@@ -8,6 +8,10 @@ title: Introduction To The Poisson Process Interarrivals
 On the way to the <font color="Red">Poisson</font> distribution, the <font color="Red">interarrivals</font> could be easily found, and both exponential and <font color="Red">Poisson</font> distribution could be an appropriate modeling of it.  Formally, <font color="Red">interarrivals</font> could be distributed in gamma probability as a result of the nature of exponential distribution.  
 </p>
 
+### The <font color="Red">Interarrival Times</font>
+>Given that $X_{1}$,$X_{2}$,...,$X_{n}$ are random variables with event outcome occurrences arrived at specific time.  To make it more formally, we take the difference $T_{i}$=$X_{i}$-$X_{i-1}$ as the <font color="Red">interarrival times</font>.  
+>
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
