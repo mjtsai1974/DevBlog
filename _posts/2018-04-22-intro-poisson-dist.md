@@ -83,8 +83,15 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >=$\lim_{n\rightarrow\infty}n\cdot \frac {\lambda\cdot t}{n}\cdot(1-\frac {\lambda\cdot t}{n})$  
 >=$\lambda\cdot t$, where $\lim_{n\rightarrow\infty}(1-\frac {\lambda\cdot t}{n})$=$1$  
 >
->We found that <font color="DeepPink">the Poisson distribution has the same expect value and variance.</font>  
->You can also see [Poisson variance proof on WiKi](https://proofwiki.org/wiki/Variance_of_Poisson_Distribution)
+>You can also see [Poisson variance proof on WiKi](https://proofwiki.org/wiki/Variance_of_Poisson_Distribution).  We found that <font color="DeepPink">the Poisson distribution has the same expect value and variance.</font>  
+
+### <font color="RoyalBlue">Example</font>: Simple <font color="Red">Poisson Probability</font> Illustration
+>Given that $\lambda$ is the constant rate for the event occurrence over time, then the probability of one arrival within $[0,2s]$ would just be $P(N_{2s}=1)$=$\frac {\lambda\cdot 2s}{1!}\cdot e^{-\lambda\cdot 2s}$.  
+>And <font color="DeepSkyBlue">one arrival within $[0,2s]$ is identical to the case that one arrival within $[0,s]$, zero arrival within $[s,2s]$ or the case that zero arrival within $[0,s]$, one arrival within $[s,2s]$</font>.  Therefore,  
+>$P(N_{2s}=1)  
+>=$P(N_{0,s}=1,N_{s,2s}=0)+$P(N_{0,s}=0,N_{s,2s}=1)  
+>=$(\frac {\lambda\cdot s}{1!}\cdot e^{-\lambda\cdot s})\cdot(\frac {(\lambda\cdot s)^{0}}{0!}\cdot e^{-\lambda\cdot s})$+$(\frac {(\lambda\cdot s)^{0}}{0!}\cdot e^{-\lambda\cdot s})\cdot(\frac {\lambda\cdot s}{1!}\cdot e^{-\lambda\cdot s})$  
+>=$\frac {\lambda\cdot 2s}{1!}\cdot e^{-\lambda\cdot 2s}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
@@ -104,7 +111,7 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 <!-- <font color="Red">F</font> distribution -->
 <!-- <font color="Red">t</font> distribution -->
 <!-- <font color="DeepSkyBlue">suggested item, soft item</font> -->
-<!-- <font color="RoyalBlue">old alpha</font> -->
+<!-- <font color="RoyalBlue">old alpha, quiz, example</font> -->
 <!-- <font color="Green">new alpha</font> -->
 
 <!-- <font color="DeepPink">positive conclusion, finding</font> -->
