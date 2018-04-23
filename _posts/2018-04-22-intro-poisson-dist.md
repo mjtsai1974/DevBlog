@@ -93,6 +93,9 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >=$(\frac {\lambda\cdot s}{1!}\cdot e^{-\lambda\cdot s})\cdot(\frac {(\lambda\cdot s)^{0}}{0!}\cdot e^{-\lambda\cdot s})$+$(\frac {(\lambda\cdot s)^{0}}{0!}\cdot e^{-\lambda\cdot s})\cdot(\frac {\lambda\cdot s}{1!}\cdot e^{-\lambda\cdot s})$  
 >=$\frac {\lambda\cdot 2s}{1!}\cdot e^{-\lambda\cdot 2s}$  
 
+### Addendum
+>&#10112;A Modern Introduction to Probability and Statistics, published by Springer.  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
