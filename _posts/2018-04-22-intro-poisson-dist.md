@@ -64,7 +64,7 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >=$E\lbrack\sum_{i=1}^{n}R_{i}\rbrack$  
 >=$\sum_{i=1}^{n}E\lbrack R_{i}\rbrack$  
 >=$n\cdot\frac {\lambda\cdot t}{n}$  
->=$\lambda\cdot t$...hold for $a\rightarrow\infty$  
+>=$\lambda\cdot t$...hold for $n\rightarrow\infty$  
 >[2]<font color="OrangeRed">variance</font>::mjtsai  
 >&#10112;begin from the Binomial variance.  
 >$Var\lbrack N_{t}\rbrack$  
@@ -83,7 +83,7 @@ The random variable of the <font color="DeepSkyBlue">interarrival time</font> mo
 >=$\lim_{n\rightarrow\infty}n\cdot \frac {\lambda\cdot t}{n}\cdot(1-\frac {\lambda\cdot t}{n})$  
 >=$\lambda\cdot t$, where $\lim_{n\rightarrow\infty}(1-\frac {\lambda\cdot t}{n})$=$1$  
 >
->We found that <font color="DeepPink">the <font color="Red">Poisson</font> distribution has the same expect value and variance.</font>  
+>We found that <font color="DeepPink">the Poisson distribution has the same expect value and variance.</font>  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
