@@ -82,8 +82,7 @@ the following:
 * [Introduction To The t Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/15/intro-t-dist/)
 * [Introduction To The Exponential Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/24/intro-exp-dist/)
 * [Introduction To The Poisson Distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/04/22/intro-poisson-dist/)
-* Introduction To The One-Dimensional Poisson Process
-* Introduction To The Higher-Dimensional Poisson Process
+* Introduction To The Poisson Process Interarrivals
 * The relation in between The Normal, F, Chi-Square, t, Exponential Distribution 
 * Univariate Regression Model
 * Multivariate Regression Model
