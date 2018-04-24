@@ -35,14 +35,14 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >Therefore, $P(T_{i+1}\le t|T_{i}=s)$=1-$P(T_{i+1}>t|T_{i}=s)$=1-$e^{-\lambda\cdot(t)}$  
 >We can claim that each <font color="DeepPink">distinct inter-arrival times has an exponential distribution.</font>  Some textbook treat it as the <font color="Red">one-dimensional Poisson process</font>.  
 
-### The <font color="Red">Joint</font> Distribution Of <font color="Red">Distinct Inter-arrival Times</font>::mjtsai1974
->Due to the nature of the exponential distribution, we can then derive the <font color="Red">joint</font> distribution of numerous <font color="Red">distinct inter-arrival times</font> as a whole.  
+### The <font color="Red">Joint</font> Distribution Of <font color="Red">Random Arrivals</font>::mjtsai1974
+>Due to the nature of the exponential distribution, we can then derive the <font color="Red">joint</font> distribution of numerous <font color="Red">random arrivals</font> in the unit of each <font color="Red">distinct inter-arrival times</font> as a whole.  
 >By one-dimensional Poisson process, we know that all $T_{i}$'s are independent and each has an $Exp(\lambda\cdot t)$ distribution, where $t$ is the <font color="Red">inter-arrival times</font>.  Let me state below claim:  
 >&#10112;$T_{i}$=$X_{i}$-$X_{i-1}$  
 >&#10113;$X_{i}$=$T_{i}$+$T_{i-1}$  
 >&#10114;where &#10112;,&#10113;is the rule for each new arrival, $T_{0}$=$X_{0}$=$0$ by default.  
 >Then, $F_{T_{i}}$=$P(T_{i}\le t)$=1-$e^{-\lambda\cdot t}$, for $i$=$1$,$2$,$3$,...  
->I'd like to prove that the <font color="DeepPink">joint distribution Of distinct inter-arrival times is just a gamma distribution.</font>  
+>I'd like to prove that the <font color="DeepPink">joint distribution of random arrivals is just a gamma distribution.</font>  
 >proof::mjtsai1974  
 >[1]begin by time tick at $0$, say we use $X_{1}$ as the random variable to represent the first one arrival within whatever time length $t$ is, denote time period $[0,t]$ as $T_{1}$.  
 >&#10112;$F_{X_{1}}(t)$=$F_{T_{1}+T_{0}}(t)$=$P(T_{1}\le t)$=1-$e^{-\lambda\cdot t}$, where $T_{0}$=$0$  
@@ -55,7 +55,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$P(T_{2}+T_{1}\le t)$...take $Y$=$T_{1}$,$X$=$T_{2}$  
 >=$\int_{0}^{t}\int_{0}^{t-y}f_{X}(x)\cdot f_{Y}(y)\operatorname dx\operatorname dy$  
 >=$\int_{0}^{t}F_{X}(t-y)\cdot f_{Y}(y)\operatorname dy$  
->&#10114;differentiate $F_{X_{2}}(t)$ with respect to its current variable, say $x$.  
+>&#10114;differentiate $F_{X_{2}}(t)$ with respect to its current variable, say $t$.  
 >$f_{X_{2}}(t)$  
 >=$\int_{0}^{t}f_{X}(t-y)\cdot f_{Y}(y)\operatorname dy$  
 >=$\int_{0}^{t}\lambda\cdot e^{-\lambda\cdot(t-y)}\cdot\lambda\cdot e^{-\lambda\cdot y}\operatorname dy$  
@@ -70,7 +70,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$P(T_{3}+T_{2}+T_{1}\le t)$...take $Y$=$T_{2}$+$T_{1}$,$X$=$T_{3}$  
 >=$\int_{0}^{t}\int_{0}^{t-y}f_{X}(x)\cdot f_{Y}(y)\operatorname dx\operatorname dy$  
 >=$\int_{0}^{t}F_{X}(t-y)\cdot f_{Y}(y)\operatorname dy$  
->&#10114;differentiate $F_{X_{3}}(t)$ with respect to its current variable, say $x$.  
+>&#10114;differentiate $F_{X_{3}}(t)$ with respect to its current variable, say $t$.  
 >$f_{X_{3}}(t)$  
 >=$\int_{0}^{t}f_{X}(t-y)\cdot f_{Y}(y)\operatorname dy$  
 >=$\int_{0}^{t}\lambda\cdot e^{-\lambda\cdot(t-y)}\cdot(\lambda)^{2}\cdot y\cdot e^{-\lambda\cdot y}\operatorname dy$  
@@ -79,7 +79,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >
 >If you set $X$=$T_{2}$+$T_{1}$,$Y$=$T_{3}$ in deduction, still the same result you can get.  
 >[4]repeat above procedure until $n\rightarrow\infty$, we will have $F_{X_{n}}(t)$ holds to have its derivative $f_{X_{n}}(t)$=$\frac {\lambda\cdot(\lambda\cdot t)^{n-1}\cdot e^{-\lambda\cdot t}}{(n-1)!}$, for $n$=$1$,$2$,..., where $\Gamma(n)$=$(n-1)!$.  
->[5]by means of mathematics induction, we can conclude that the <font color="DeepPink">joint distribution Of distinct inter-arrival times is just a gamma distribution.</font>  Be recalled that $f_{X_{n}}(t)$=$\frac {\lambda\cdot(\lambda\cdot t)^{n-1}\cdot e^{-\lambda\cdot t}}{(n-1)!}$ is a gamma probability function in [Introduction To The Gamma Distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/).  
+>[5]by means of mathematics induction, we can conclude that the <font color="DeepPink">joint distribution of random arrivals is just a gamma distribution.</font>  Be recalled that $f_{X_{n}}(t)$=$\frac {\lambda\cdot(\lambda\cdot t)^{n-1}\cdot e^{-\lambda\cdot t}}{(n-1)!}$ is a gamma probability function in [Introduction To The Gamma Distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/).  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
