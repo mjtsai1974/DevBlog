@@ -82,8 +82,20 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >[4]repeat above procedure until $n\rightarrow\infty$, we will have $F_{X_{n}}(t)$ holds to have its derivative $f_{X_{n}}(t)$=$\frac {\lambda\cdot(\lambda\cdot t)^{n-1}\cdot e^{-\lambda\cdot t}}{(n-1)!}$, for $n$=$1$,$2$,..., where $\Gamma(n)$=$(n-1)!$.  
 >[5]by means of mathematics induction, we can conclude that the <font color="DeepPink">joint distribution of random arrivals is just a gamma distribution.</font>  Be recalled that <font color="DeepSkyBlue">$f_{X_{n}}(t)$=$\frac {\lambda\cdot(\lambda\cdot t)^{n-1}\cdot e^{-\lambda\cdot t}}{(n-1)!}$ is a gamma probability function</font> in [Introduction To The Gamma Distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/).  
 
-### <font color="RoyalBlue">Example</font>: Illustrate The <font color="Red">Poisson Probability</font> For Point Location(I)
+### <font color="RoyalBlue">Example</font>: Illustrate The <font color="Red">Poisson Probability</font> For <font color="DeepSkyBlue">Points Distribution</font>
+>Suppose you are given $n$ points randomly generated within an interval, how to evaluate the <font color="DeepSkyBlue">points location</font>?  Just <font color="DeepSkyBlue">treat the inter-arrival times as the location info</font>, it suffice to evaluate the probability of points arrival by means of <font color="Red">Poisson</font> distribution.  
 >
+>Let's say the interval is $[0,a]$, explore one arrival case within this interval as a beginning.  
+>[1]Assume $0<s<a$, we now know one arrival occurred within $[0,a]$, the probability of this one arrival occurrence within $s$, under the condition that this occurrence is within $[0,a]$:  
+><font color="DeepSkyBlue">$P(X_{1}\le s|N_{[0,a]}=1)$</font>  
+>=$P(X_{1}\le s,N_{[0,a]}=1|N_{[0,a]}=1)$  
+>=$P(N_{(0,s]}=1,N_{[0,a]}=1|N_{[0,a]}=1)$  
+>=<font color="DeepSkyBlue">$P(N_{(0,s]}=1,N_{[s,a]}=0|N_{[0,a]}=1)$</font>  
+>=$\frac {\lambda\cdot s\cdot e^{-\lambda\cdot s}\cdot e^{-\lambda\cdot(a-s)}}{\lambda\cdot a\cdot e^{-\lambda\cdot a}}$  
+>=$\frac {s}{a}$  
+>
+>$X_{1}$ is uniformly distributed within $[0,a]$, given the event ${N_{[0,a]}=1}$ as the condition, since $\sum_{i=1}^{s}\frac {1}{a}$=$\frac {s}{a}$  
+>[2]
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
