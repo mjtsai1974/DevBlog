@@ -43,7 +43,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >&#10114;where &#10112;,&#10113;is the rule for each new arrival, $T_{0}$=$X_{0}$=$0$ by default.  
 >Then, $F_{T_{i}}$=$P(T_{i}\le t)$=1-$e^{-\lambda\cdot t}$, for $i$=$1$,$2$,$3$,...  
 >I'd like to prove that the <font color="DeepPink">joint distribution Of distinct inter-arrival times is just a gamma distribution.</font>  
->proof:  
+>proof::mjtsai1974  
 >[1]begin by time tick at $0$, say we use $X_{1}$ as the random variable to represent the first one arrival within whatever time length $t$ is, denote time period $[0,t]$ as $T_{1}$.  
 >&#10112;$F_{X_{1}}(t)$=$F_{T_{1}+T_{0}}(t)$=$P(T_{1}\le t)$=1-$e^{-\lambda\cdot t}$, where $T_{0}$=$0$  
 >&#10113;$f_{X_{1}}(t)$=<font color="DeepPink">$\lambda\cdot e^{-\lambda\cdot t}$</font>  
@@ -55,16 +55,27 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$P(T_{2}+T_{1}\le t)$...take $Y$=$T_{1}$,$X$=$T_{2}$  
 >=$\int_{0}^{t}\int_{0}^{t-y}f_{X}(x)\cdot f_{Y}(y)\operatorname dx\operatorname dy$  
 >=$\int_{0}^{t}F_{X}(t-y)\cdot f_{Y}(y)\operatorname dy$  
->&#10114;differentiate $F_{X_{2}}(t)$ with respect to its current variable, say $t$.  
->$f_{X_{2}}(t)$
+>&#10114;differentiate $F_{X_{2}}(t)$ with respect to its current variable, say $x$.  
+>$f_{X_{2}}(t)$  
 >=$\int_{0}^{t}f_{X}(t-y)\cdot f_{Y}(y)\operatorname dy$  
 >=$\int_{0}^{t}\lambda\cdot e^{-\lambda\cdot(t-y)}\cdot\lambda\cdot e^{-\lambda\cdot y}\operatorname dy$  
->=$(\lambda)^{2}\cdot e^{-\lambda\cdot t}\int_{0}^{t}\operatorname dy$  
->=<font color="DeepPink">$(\lambda)^{2}\cdot t\cdot e^{-\lambda\cdot t}$</font>  
+>=$\lambda^{2}\cdot e^{-\lambda\cdot t}\int_{0}^{t}\operatorname dy$  
+>=<font color="DeepPink">$\lambda^{2}\cdot t\cdot e^{-\lambda\cdot t}$</font>  
 >
 >If you set $X$=$T_{1}$,$Y$=$T_{2}$ in deduction, still the same result you can get.  
->[3]for whatever $T_{2}$ is, after that, say we'd like to have the third arrival within time length $t$, and use the $X_{3}$ as the random variable for the third arrival.  
->
+>[3]for whatever $T_{2}$ is, after that, we use the $X_{3}$ as the random variable for the third arrival, and would like to have it within time length $t$.  
+>&#10112;$X_{3}$=$T_{3}$+$T_{2}$+$T_{1}$  
+>&#10113;$F_{X_{3}}(t)$  
+>=$F_{T_{3}+T_{2}+T_{1}}(t)$  
+>=$P(T_{3}+T_{2}+T_{1}\le t)$...take $Y$=$T_{2}$+$T_{1}$,$X$=$T_{3}$  
+>=$\int_{0}^{t}\int_{0}^{t-y}f_{X}(x)\cdot f_{Y}(y)\operatorname dx\operatorname dy$  
+>=$\int_{0}^{t}F_{X}(t-y)\cdot f_{Y}(y)\operatorname dy$  
+>&#10114;differentiate $F_{X_{3}}(t)$ with respect to its current variable, say $x$.  
+>$f_{X_{3}}(t)$  
+>=$\int_{0}^{t}f_{X}(t-y)\cdot f_{Y}(y)\operatorname dy$  
+>=$\int_{0}^{t}\lambda\cdot e^{-\lambda\cdot(t-y)}\cdot(\lambda)^{2}\cdot y\cdot e^{-\lambda\cdot y}\operatorname dy$  
+>=$\lambda^{3}\cdot e^{-\lambda\cdot t}\int_{0}^{t}y\operatorname dy$  
+>=<font color="DeepPink">$\frac {1}{2}\cdot\lambda^{3}\cdot t^{2}\cdot e^{-\lambda\cdot t}$</font>  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
