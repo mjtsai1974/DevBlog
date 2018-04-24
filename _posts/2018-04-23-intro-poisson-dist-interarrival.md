@@ -105,6 +105,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$\frac {P(X_{1},X_{2}\le t)-P(s<X_{1},X_{2}\le t)}{P(N_{[0,a]}=2)}$  
 >=$\frac {P(N_{[0,t]}=2)\cdot P(N_{(t,a]}=0)-P(N_{[0,s)}=0)\cdot P(N_{[s,t]}=2)\cdot P(N_{(t,a]}=0)}{P(N_{[0,a]}=2)}$  
 >=$\frac {\frac {(\lambda\cdot t)^{2}}{2!}\cdot e^{-\lambda\cdot t}\cdot\frac {(\lambda\cdot(a-t))^{0}}{0!}\cdot e^{-\lambda\cdot(a-t)}-\frac {(\lambda\cdot s)^{0}}{0!}\cdot e^{-\lambda\cdot s}\cdot\frac {(\lambda\cdot(t-s))^{2}}{2!}\cdot e^{-\lambda\cdot(t-s)}\cdot\frac {(\lambda\cdot(a-t))^{0}}{0!}\cdot e^{-\lambda\cdot(a-t)}}{\frac {(\lambda\cdot a)^{2}}{2!}\cdot e^{-\lambda\cdot a}}$  
+>=$\frac {\frac {(\lambda\cdot t)^{2}}{2!}\cdot e^{-\lambda\cdot t}-\frac {(\lambda\cdot(t-s))^{2}}{2!}\cdot e^{-\lambda\cdot(t-s)-\lambda\cdot s-\lambda\cdot(a-t)}}{\frac {(\lambda\cdot a)^{2}}{2!}\cdot e^{-\lambda\cdot a}}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
