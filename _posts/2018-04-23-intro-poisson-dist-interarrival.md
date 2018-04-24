@@ -1,16 +1,26 @@
 ---
 layout: post
-title: Introduction To The Poisson Process Interarrivals
+title: Introduction To The Poisson Process Inter-arrival Times
 ---
 
-## Prologue To The <font color="Red">Poisson</font> Process <font color="Red">Interarrivals</font>
+## Prologue To The <font color="Red">Poisson</font> Process <font color="Red">Inter-arrival Times</font>
 <p class="message">
-On the way to the <font color="Red">Poisson</font> distribution, the <font color="Red">interarrivals</font> could be easily found, and both exponential and <font color="Red">Poisson</font> distribution could be an appropriate modeling of it.  Formally, <font color="Red">interarrivals</font> could be distributed in gamma probability as a result of the nature of exponential distribution.  
+On the way to the <font color="Red">Poisson</font> distribution, the <font color="Red">inter-arrival times</font> could be easily found, and both exponential and <font color="Red">Poisson</font> distribution could be an appropriate modeling of it.  Formally, <font color="Red">inter-arrival times</font> could be distributed in gamma probability as a result of the nature of exponential distribution.  
 </p>
 
-### The <font color="Red">Interarrival Times</font>
->Given that $X_{1}$,$X_{2}$,...,$X_{n}$ are random variables with event outcome occurrences arrived at specific time.  To make it more formally, we take the difference $T_{i}$=$X_{i}$-$X_{i-1}$ as the <font color="Red">interarrival times</font>.  
+### The <font color="Red">Inter-arrival Times</font>
+>Given that $X_{1}$,$X_{2}$,...,$X_{n}$ are random variables with event outcome occurrences arrived at specific time.  To make it more formally, we take the difference $T_{i}$=$X_{i}$-$X_{i-1}$ as the <font color="Red">inter-arrival times</font>.  
+
+### The Very First <font color="Red">Inter-arrival Times</font> Follows <font color="DeepSkyBlue">Exponential Distribution</font>
+>We start to derive the probability distribution of <font color="Red">inter-arrival times</font>, let's focus on the <font color="OrangeRed">very first one</font> as the prelude.  
+>&#10112;take $T_{1}$=$X_{1}$ as the very first arrival time.  
+>&#10113;the probability of first arrival at time greater than t is equivalent to the probability of zero arrival within time $[0,t]$.  
+>$P(T_{1}>t)$=1-$P(T_{1}\le t)$=1-$P(N_{[0,t]}=0)$=1-$e^{-\lambdat\cdot t}$  
+>, where $\lambda$ is the intensity, the rate of event occurrence.  
 >
+><font color="DeepPink">The very first inter-arrival times is itself an exponential distribution.</font>  
+
+
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
