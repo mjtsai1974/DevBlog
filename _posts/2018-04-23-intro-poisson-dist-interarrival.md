@@ -43,6 +43,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >&#10114;where &#10112;,&#10113;is the rule for each new arrival, $T_{0}$=$X_{0}$=$0$ by default.  
 >Then, $F_{T_{i}}$=$P(T_{i}\le t)$=1-$e^{-\lambda\cdot t}$, for $i$=$1$,$2$,$3$,...  
 >I'd like to prove that the <font color="DeepPink">joint distribution of random arrivals is just a gamma distribution.</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-23-intro-poisson-dist-interarrival.png "inter-arrival times")
 >proof::mjtsai1974  
 >[1]begin by time tick at $0$, say we use $X_{1}$ as the random variable to represent the first one arrival within whatever time length $t$ is, denote time period $[0,t]$ as $T_{1}$.  
 >&#10112;$F_{X_{1}}(t)$=$F_{T_{1}+T_{0}}(t)$=$P(T_{1}\le t)$=1-$e^{-\lambda\cdot t}$, where $T_{0}$=$0$  
