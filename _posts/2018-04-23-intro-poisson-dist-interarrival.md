@@ -33,11 +33,22 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$e^{-\lambda\cdot(t)}$  
 >
 >Therefore, $P(T_{i+1}\le t|T_{i}=s)$=1-$P(T_{i+1}>t|T_{i}=s)$=1-$e^{-\lambda\cdot(t)}$  
->We can claim that each <font color="DeepPink">distinct inter-arrival times has an exponential distribution.</font>  Some textbook treat it as the <font color="Red">one-dimensional Poisson process</font>.
+>We can claim that each <font color="DeepPink">distinct inter-arrival times has an exponential distribution.</font>  Some textbook treat it as the <font color="Red">one-dimensional Poisson process</font>.  
 
-### The <font color="Red">Joint</font> Distribution Of <font color="Red">Distinct Inter-arrival Times</font>
+### The <font color="Red">Joint</font> Distribution Of <font color="Red">Distinct Inter-arrival Times</font>::mjtsai1974
 >Due to the nature of the exponential distribution, we can then derive the <font color="Red">joint</font> distribution of numerous <font color="Red">distinct inter-arrival times</font> as a whole.  
->
+>By one-dimensional Poisson process, we know that all $T_{i}$'s are independent and each has an $Exp(\lambda\cdot t)$ distribution, where $t$ is the <font color="Red">inter-arrival times</font>.  Let me state below claim:  
+>&#10112;$T_{i}$=$X_{i}$-$X_{i-1}$  
+>&#10113;$X_{i}$=$T_{i}$+$T_{i-1}$  
+>&#10113;where &#10112;,&#10113;is the rule for each new arrival, $T_{0}$=$X_{0}$=$0$ by default.  
+>Then, $F_{X_{i}}$=P(T_{i}\le t)=1-$e^{-\lambda\cdot t}$, for $i$=$1$,$2$,$3$,...  
+>I'd like to prove that the <font color="DeepPink">joint distribution Of distinct inter-arrival times is just a gamma distribution.</font>  
+>proof:  
+>[1]begin by time tick at $0$, say we use $X_{1}$ as the random variable to represent the first one arrival within whatever time length $t$ is, denote time period $[0,t]$ as $T_{1}$.  
+>&#10112;$F_{X_{1}}$=$F_{T_{1}+T_{0}}$=P(T_{1}\le t)=1-$e^{-\lambda\cdot t}$, where $T_{0}$=$0$  
+>Trivially, by previous section, $X_{1}$ just has an exponential distribution.  
+>[2]for whatever $T_{1}$ is, after that, say we'd like to have the second arrival within time length $t$, and use the $X_{2}$ as the random variable for the second arrival.  
+>&#10112;$T_{2}$=$X_{2}$-$X_{1}$ and
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
