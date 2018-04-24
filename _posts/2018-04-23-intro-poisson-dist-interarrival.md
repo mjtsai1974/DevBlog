@@ -94,7 +94,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$\frac {\lambda\cdot s\cdot e^{-\lambda\cdot s}\cdot e^{-\lambda\cdot(a-s)}}{\lambda\cdot a\cdot e^{-\lambda\cdot a}}$  
 >=$\frac {s}{a}$  
 >
->$X_{1}$ is uniformly distributed within $[0,a]$, given the event ${N_{[0,a]}=1}$ as the condition, since $\sum_{i=1}^{s}\frac {1}{a}$=$\frac {s}{a}$  
+><font color="DeepPink">$X_{1}$ is uniformly distributed within $[0,a]$</font>, given the event <font color="DeepPink">${N_{[0,a]}=1}$ as the condition</font>, since $\sum_{i=1}^{s}\frac {1}{a}$=$\frac {s}{a}$.  
 >[2]suppose that there are two arrivals in $[0,a]$, that is $N_{[0,a]}=2$, and given $0<s<t<a$, we can show $P(X_{1}\le s,X_{2}\le t|N_{[0,a]}=2)$=$\frac {t^{2}-(t-s)^{2}}{a^{2}}$.  
 >proof::mjtsai1974  
 >&#10112;this is to ask out the probability that first arrival falls within $[0,s]$, the second arrival falls within $(s,t]$.  Below graph exhibits the possible cases.  
@@ -109,8 +109,8 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$\frac {\frac {(\lambda\cdot t)^{2}}{2!}\cdot e^{-\lambda\cdot t}-\frac {(\lambda\cdot(t-s))^{2}}{2!}\cdot e^{-\lambda\cdot a}}{\frac {(\lambda\cdot a)^{2}}{2!}\cdot e^{-\lambda\cdot a}}$  
 >=$\frac {t^{2}-(t-s)^{2}}{a^{2}}$  
 >
->Cautions must be made that the order matters.  
->
+>Cautions must be made that <font color="OrangeRed">the event order just matters</font>.  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
