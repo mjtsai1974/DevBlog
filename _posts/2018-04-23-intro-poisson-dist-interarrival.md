@@ -86,7 +86,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >Suppose you are given $n$ points randomly generated within an interval, how to evaluate the <font color="DeepSkyBlue">points location</font>?  Just <font color="DeepSkyBlue">treat the inter-arrival times as the location info</font>, it suffice to evaluate the probability of points arrival by means of <font color="Red">Poisson</font> distribution.  
 >
 >Let's say the interval is $[0,a]$, explore one arrival case within this interval as a beginning.  
->[1]assume $0<s<a$, we now know one arrival occurred within $[0,a]$, the probability of this one arrival occurrence within $s$, under the condition that this occurrence is within $[0,a]$:  
+><font color="OrangeRed">[1]</font>assume $0<s<a$, we now know one arrival occurred within $[0,a]$, the probability of this one arrival occurrence within $s$, under the condition that this occurrence is within $[0,a]$:  
 ><font color="DeepSkyBlue">$P(X_{1}\le s|N_{[0,a]}=1)$</font>  
 >=$P(X_{1}\le s,N_{[0,a]}=1|N_{[0,a]}=1)$  
 >=$P(N_{(0,s]}=1,N_{[0,a]}=1|N_{[0,a]}=1)$  
@@ -95,7 +95,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$\frac {s}{a}$  
 >
 ><font color="DeepPink">$X_{1}$ is uniformly distributed within $[0,a]$</font>, given the event <font color="DeepPink">${N_{[0,a]}=1}$ as the condition</font>, since $\sum_{i=1}^{s}\frac {1}{a}$=$\frac {s}{a}$.  
->[2]suppose that there are two arrivals in $[0,a]$, that is $N_{[0,a]}=2$, and given $0<s<t<a$, we can show $P(X_{1}\le s,X_{2}\le t|N_{[0,a]}=2)$=$\frac {t^{2}-(t-s)^{2}}{a^{2}}$.  
+><font color="OrangeRed">[2]</font>suppose that there are two arrivals in $[0,a]$, that is $N_{[0,a]}=2$, and given $0<s<t<a$, we can show $P(X_{1}\le s,X_{2}\le t|N_{[0,a]}=2)$=$\frac {t^{2}-(t-s)^{2}}{a^{2}}$.  
 >proof::mjtsai1974  
 >&#10112;this is to ask out the probability that first arrival falls within $[0,s]$, the second arrival falls within $(s,t]$.  Below graph exhibits the possible cases.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-23-intro-poisson-dist-interarrival-prob-2-events.png "2 events")
@@ -110,6 +110,12 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$\frac {t^{2}-(t-s)^{2}}{a^{2}}$  
 >
 >Cautions must be made that <font color="OrangeRed">the event order just matters</font>.  
+>&#10114;$P(X_{1}\le s,X_{2}\le t|N_{[0,a]}=2)$  
+>=$\frac {t^{2}-(t-s)^{2}}{a^{2}}$  
+>=$\frac {t-(t-s)}{a}\cdot\frac {t+(t-s)}{a}$  
+>=$\frac {s}{a}\cdot\frac {t+(t-s)}{a}$  
+>=$\frac {s}{a}\cdot\frac {t}{a}$+$\frac {s}{a}\cdot\frac {(t-s)}{a}$  
+
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
