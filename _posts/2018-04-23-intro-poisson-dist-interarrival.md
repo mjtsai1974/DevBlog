@@ -115,7 +115,10 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$\frac {t-(t-s)}{a}\cdot\frac {t+(t-s)}{a}$  
 >=$\frac {s}{a}\cdot\frac {t+(t-s)}{a}$  
 >=$\frac {s}{a}\cdot\frac {t}{a}$+$\frac {s}{a}\cdot\frac {(t-s)}{a}$  
-
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-23-intro-poisson-dist-interarrival-prob-uniform-dist.png "uniform dist")
+><font color="DeepPink">$X_{1}$,$X_{2}$ are uniformly distributed within $[0,a]$</font>, given the event <font color="DeepPink">${N_{[0,a]}=2}$ as the condition</font>.
+>
+>Therefore, we can claim that <font color="DeepPink">the Poisson process has $n$ random arrivals in time inteerval $[a,b]$, the locations of these points are independent distributed, and each of them has a uniform distribution.</font>  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
