@@ -76,6 +76,10 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$\int_{0}^{t}\lambda\cdot e^{-\lambda\cdot(t-y)}\cdot(\lambda)^{2}\cdot y\cdot e^{-\lambda\cdot y}\operatorname dy$  
 >=$\lambda^{3}\cdot e^{-\lambda\cdot t}\int_{0}^{t}y\operatorname dy$  
 >=<font color="DeepPink">$\frac {1}{2}\cdot\lambda^{3}\cdot t^{2}\cdot e^{-\lambda\cdot t}$</font>  
+>
+>If you set $X$=$T_{2}$+$T_{1}$,$Y$=$T_{3}$ in deduction, still the same result you can get.  
+>[4]repeat above procedure until $n\rightarrow\infty$, we will have $F_{X_{n}}(t)$ holds to have its derivative $f_{X_{n}}(t)$=$\frac {\lambda\cdot(\lambda\cdot t)^{n-1}\cdot e^{-\lambda\cdot t}}{(n-1)!}$, for $n$=$1$,$2$,..., where $\Gamma(n)$=$(n-1)!$.  
+>[5]by means of mathematics induction, we can conclude that the <font color="DeepPink">joint distribution Of distinct inter-arrival times is just a gamma distribution.</font>  Be recalled that $f_{X_{n}}(t)$=$\frac {\lambda\cdot(\lambda\cdot t)^{n-1}\cdot e^{-\lambda\cdot t}}{(n-1)!}$ is a gamma probability function in [Introduction To The Gamma Distribution]({{ site.github.repo }}{{ site.baseurl }}/2017/12/29/intro-gamma-dist/).  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
