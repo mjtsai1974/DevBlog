@@ -22,7 +22,8 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 
 ### The Distribution Of <font color="Red">Distinct Inter-arrival Times</font>
 >If you take a close look at the random arrivals over the horizon, trivially, numerous <font color="Red">distinct inter-arrival times</font> could be found.  
->Suppose you are given two adjacent <font color="Red">inter-arrival times</font>, $T_{i}$=$s$,$T_{i+1}$=$t$.  We are pondering what <font color="OrangeRed">the probability is for we have the second arrival after time duration $t$, under the condition that we have the first arrival with regards to $T_{i}$=$s$</font>.  This turns into the conditional probability.  
+>Suppose you are given two adjacent <font color="Red">inter-arrival times</font>, $T_{i}$=$s$,$T_{i+1}$=$t$.  We are asking the <font color="DeepSkyBlue">probability for we have the second arrival after time duration $t$, under the condition that we have the first arrival with regards to $T_{i}$=$s$</font>.  
+>This turns into the <font color="DeepSkyBlue">conditional probability</font>.  
 >$P(T_{i+1}>t|T_{i}=s)$  
 >=$P(T_{i+1}>t,T_{i}=s|T_{i}=s)$  
 >=$P(N_{(s,s+t]}=0,N_{[0,s]}=1|N_{[0,s]}=1)$  
@@ -31,6 +32,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$P(N_{(s,s+t]}=0)$  
 >=$e^{-\lambda\cdot(t)}$  
 >
+>Therefore, $P(T_{i+1}\le t|T_{i}=s)$=1-$P(T_{i+1}>t|T_{i}=s)$=1-$e^{-\lambda\cdot(t)}$  
 >We can claim that each <font color="DeepPink">distinct inter-arrival times has an exponential distribution.</font>  
 
 <!-- Γ -->
