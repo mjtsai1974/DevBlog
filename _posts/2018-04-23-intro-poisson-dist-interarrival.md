@@ -46,7 +46,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >proof:  
 >[1]begin by time tick at $0$, say we use $X_{1}$ as the random variable to represent the first one arrival within whatever time length $t$ is, denote time period $[0,t]$ as $T_{1}$.  
 >&#10112;$F_{X_{1}}(t)$=$F_{T_{1}+T_{0}}(t)$=$P(T_{1}\le t)$=1-$e^{-\lambda\cdot t}$, where $T_{0}$=$0$  
->&#10113;$f_{X_{1}}(t)$=<font color="DeepPink">$e^{-\lambda\cdot t}$</font>  
+>&#10113;$f_{X_{1}}(t)$=<font color="DeepPink">$\lambda\cdot e^{-\lambda\cdot t}$</font>  
 >Trivially, by previous section, each $X_{i}$ just has an exponential distribution.  
 >[2]for whatever $T_{1}$ is, after that, say we'd like to have the second arrival within time length $t$, and use the $X_{2}$ as the random variable for the second arrival.  
 >&#10112;$T_{2}$=$X_{2}$-$X_{1}$ and $X_{2}$=$T_{2}$+$T_{1}$  
@@ -55,13 +55,16 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >=$P(T_{2}+T_{1}\le t)$...take $Y$=$T_{1}$,$X$=$T_{2}$  
 >=$\int_{0}^{t}\int_{0}^{t-y}f_{X}(x)\cdot f_{Y}(y)\operatorname dx\operatorname dy$  
 >=$\int_{0}^{t}F_{X}(t-y)\cdot f_{Y}(y)\operatorname dy$  
->&#10114;$f_{X_{2}}(t)$  
+>&#10114;differentiate $F_{X_{2}}(t)$ with respect to its current variable, say $t$.  
+>$f_{X_{2}}(t)$
 >=$\int_{0}^{t}f_{X}(t-y)\cdot f_{Y}(y)\operatorname dy$  
 >=$\int_{0}^{t}\lambda\cdot e^{-\lambda\cdot(t-y)}\cdot\lambda\cdot e^{-\lambda\cdot y}\operatorname dy$  
 >=$(\lambda)^{2}\cdot e^{-\lambda\cdot t}\int_{0}^{t}\operatorname dy$  
 >=<font color="DeepPink">$(\lambda)^{2}\cdot t\cdot e^{-\lambda\cdot t}$</font>  
 >
 >If you set $X$=$T_{1}$,$Y$=$T_{2}$ in deduction, still the same result you can get.  
+>[3]for whatever $T_{2}$ is, after that, say we'd like to have the third arrival within time length $t$, and use the $X_{3}$ as the random variable for the third arrival.  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
