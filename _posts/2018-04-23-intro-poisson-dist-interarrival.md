@@ -36,7 +36,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >We can claim that each <font color="DeepPink">distinct inter-arrival times has an exponential distribution.</font>  Some textbook treat it as the <font color="Red">one-dimensional Poisson process</font>.
 
 ### The <font color="Red">Joint</font> Distribution Of <font color="Red">Distinct Inter-arrival Times</font>
->Due to the nature of the exponential distribution, we can then derive the joint distribution of numerous <font color="Red">distinct inter-arrival times</font> as a whole.  
+>Due to the nature of the exponential distribution, we can then derive the <font color="Red">joint</font> distribution of numerous <font color="Red">distinct inter-arrival times</font> as a whole.  
 >
 
 <!-- Γ -->
