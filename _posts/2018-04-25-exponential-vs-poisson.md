@@ -21,11 +21,13 @@ This is the case where $\lambda$=$\frac {k}{time length}$.
 >&#10114;it takes up time length of $\frac {k}{\lambda}$ to have $k$ random arrivals, for $\lambda$=$\frac {k}{time\;length}$.  So, it holds to say that the adjacent two events of random arrival would just take time $\frac {1}{\lambda}$, which is the ideal inter-arrival times.  
 >&#10115;each distinct inter-arrival times could then be modelled by random variable distributed in exponential probability.  
 >&#10116;the joint distribution of random arrivals would be modelled by gamma distribution.  
->&#10116;<font color="DeepPink">the Poisson process has $n$ random arrivals in time inteerval $[a,b]$, the locations of these points are independent distributed, and each of them has a uniform distribution.</font>  
+>&#10117;<font color="DeepPink">the Poisson process has $n$ random arrivals in time inteerval $[a,b]$, the locations of these points are independent distributed, and each of them has a uniform distribution.</font>  
+>
 >[2]the exponential distribution  
 >&#10112;suppose $X$ is the rate of event occurrences during time period $t$.  
->&#10113;suppose $V$ is the space where events take place within, then the <font color="OrangeRed">success probability</font> over time period $t$ is <font color="OrangeRed">$\underset{Succss}P$=$\frac {X\cdot t}{V}$</font>, and the <font color="OrangeRed">failure probability</font> is <font color="OrangeRed">$\underset{Fail}P$=$1$-$\frac {X\cdot t}{V}$</font>.  
->
+>&#10113;suppose $V$ is the space where events take place within, then the <font color="DeepSkyBlue">success probability</font> over time period $t$ is <font color="DeepSkyBlue">$\underset{Succss}P$=$\frac {X\cdot t}{V}$</font>, and the <font color="DeepSkyBlue">failure probability</font> is <font color="DeepSkyBlue">$\underset{Fail}P$=$1$-$\frac {X\cdot t}{V}$</font>.  
+>&#10114;we divide time period $t$ by $n$, where $n\rightarrow\infty$, then <font color="OrangeRed">success probability</font> over time period $t$ becomes <font color="OrangeRed">$\underset{Succss}P$=$\frac {X\cdot t}{V\cdot n}$</font>, and the <font color="OrangeRed">failure probability</font> becomes <font color="OrangeRed">$\underset{Fail}P$=$1$-$\frac {X\cdot t}{V\cdot n}$</font>.  
+>&#10115;
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
