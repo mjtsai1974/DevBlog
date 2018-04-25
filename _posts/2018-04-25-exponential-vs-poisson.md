@@ -27,7 +27,15 @@ This is the case where $\lambda$=$\frac {k}{time length}$.
 >&#10112;suppose $X$ is the rate of event occurrences during time period $t$.  
 >&#10113;suppose $V$ is the space where events take place within, then the <font color="DeepSkyBlue">success probability</font> over time period $t$ is <font color="DeepSkyBlue">$\underset{Succss}P$=$\frac {X\cdot t}{V}$</font>, and the <font color="DeepSkyBlue">failure probability</font> is <font color="DeepSkyBlue">$\underset{Fail}P$=$1$-$\frac {X\cdot t}{V}$</font>.  
 >&#10114;we divide time period $t$ by $n$, where $n\rightarrow\infty$, then <font color="OrangeRed">success probability</font> over time period $t$ becomes <font color="OrangeRed">$\underset{Succss}P$=$\frac {X\cdot t}{V\cdot n}$</font>, and the <font color="OrangeRed">failure probability</font> becomes <font color="OrangeRed">$\underset{Fail}P$=$1$-$\frac {X\cdot t}{V\cdot n}$</font>.  
->&#10115;
+>After time period $t$, what is the probability for no event occurrence? Equivalently, it is asking the probability for the very first event taking place after time period $t$.  
+>&#10115;<font color="DeepPink">This presumes that each subinterval $\frac {t}{n}$ is a failure case of the event</font>, then:
+><font color="DeepSkyBlue">$P(T>t)$</font>  
+>=$\lim_{n\rightarrow\infty}(\underset{Fail}P)^{n}$  
+>=$\lim_{n\rightarrow\infty}(1-\frac {X\cdot t}{V\cdot n})^{n}$  
+><font color="DeepSkyBlue">$\approx e^{-\frac {X\cdot t}{V}}$</font>  
+>&#10116;the success probability within time period $t$ could be expressed:  
+>$\underset{Succss}P$=$1$-$e^{-\frac {X\cdot t}{V}}$=$P(T\le t)$  
+>&#10117;  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
