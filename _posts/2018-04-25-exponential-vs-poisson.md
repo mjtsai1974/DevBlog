@@ -10,6 +10,18 @@ When we involve the reinforcement learning issues, or the statistics regression 
 Then, that connects the <font color="Red">Poisson</font> distribution to the <font color="Red">exponential</font> distribution, and the <font color="DeepPink">random arrivals probability could be modelled by gamma distribution as a result of the nature of exponential distribution</font>.  
 </p>
 
+### Overview The Similarities And Differences
+>[1]Poisson distribution  
+>&#10112;we have an assumption that the intensity of event occurrence over time is invariant for Poisson process.  
+>&#10113;suppose it is $\lambda$=$\frac {event counts}{time length}$  
+Below exhibits the case where $\lambda$=$\frac {1}{time length}$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-25-exponential-vs-poisson-lambda-for-1-evt.png "1 event")
+This is the case where $\lambda$=$\frac {k}{time length}$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-25-exponential-vs-poisson-lambda-for-k-evts.png "k events")
+>&#10114;
+>[2]
+>
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
