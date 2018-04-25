@@ -32,10 +32,12 @@ This is the case where $\lambda$=$\frac {k}{time length}$.
 ><font color="DeepSkyBlue">$P(T>t)$</font>  
 >=$\lim_{n\rightarrow\infty}(\underset{Fail}P)^{n}$  
 >=$\lim_{n\rightarrow\infty}(1-\frac {X\cdot t}{V\cdot n})^{n}$  
-><font color="DeepSkyBlue">$\approx e^{-\frac {X\cdot t}{V}}$</font>  
+>$\approx e^{-\frac {X\cdot t}{V}}$    
 >&#10116;the success probability within time period $t$ could be expressed:  
 >$\underset{Succss}P$=$1$-$e^{-\frac {X\cdot t}{V}}$=$P(T\le t)$  
->&#10117;  
+>&#10117;take $\lambda$=$\frac {X}{V}$, then, $P(T\le t)$=$1$-$e^{-\lambda\cdot t}$  
+>$f_{T}(t)$=$D_{t}(1-e^{-\lambda\cdot t})$=$\lambda\cdot e^{-\lambda\cdot t}$  
+>, where $lambda$ is the intensity, the rate of success, or of event occurrence.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
