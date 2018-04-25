@@ -39,6 +39,7 @@ This is the case where $\lambda$=$\frac {k}{time length}$.
 >$f_{T}(t)$=$D_{t}(1-e^{-\lambda\cdot t})$=$\lambda\cdot e^{-\lambda\cdot t}$  
 >, where $lambda$ is the intensity, the rate of success, or of event occurrence.  
 
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
