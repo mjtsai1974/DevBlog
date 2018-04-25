@@ -37,7 +37,7 @@ This is the case where $\lambda$=$\frac {k}{time length}$.
 >$\underset{Succss}P$=$1$-$e^{-\frac {X\cdot t}{V}}$=$P(T\le t)$  
 >&#10117;take $\lambda$=$\frac {X}{V}$, then, $P(T\le t)$=$1$-$e^{-\lambda\cdot t}$  
 >$f_{T}(t)$=$D_{t}(1-e^{-\lambda\cdot t})$=$\lambda\cdot e^{-\lambda\cdot t}$  
->, where $lambda$ is the intensity, the rate of success, or of event occurrence.  
+>, where $\lambda$ is the intensity, the rate of success, or of event occurrence.  
 
 ### <font color="RoyalBlue">Example</font>: Illustration Of The Similarities And Differences
 >
