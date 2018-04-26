@@ -83,6 +83,24 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >$f_{X_{8}}(\frac {8}{6})$  
 >=$\frac {6\cdot(6\cdot \frac {8}{6})^{7}\cdot e^{-6\cdot \frac {8}{6}}}{(7)!}$  
 >=$0.8375191$  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="Black">What is the probability of the $8$-th, $12$-th, $16$-th car passing by at the $3$-rd time interval unit?</font>  
+>&#10112;
+>$f_{X_{8}}(\frac {3}{6})$  
+>=$\frac {6\cdot(6\cdot \frac {3}{6})^{7}\cdot e^{-6\cdot \frac {3}{6}}}{(7)!}$  
+>=$0.12962418871490290869$  
+>&#10113;
+>$f_{X_{12}}(\frac {3}{6})$  
+>=$\frac {6\cdot(6\cdot \frac {3}{6})^{11}\cdot e^{-6\cdot \frac {3}{6}}}{(11)!}$  
+>=$0.00132570193003877975$  
+>&#10114;
+>$f_{X_{16}}(\frac {3}{6})$  
+>=$\frac {6\cdot(6\cdot \frac {3}{6})^{15}\cdot e^{-6\cdot \frac {3}{6}}}{(15)!}$  
+>=$0.00000327783444240358$  
+>
+>We can easily tell, <font color="DeepPink">the arrivals in the time interval unit of the order less than it, the probability would just decrease almost to $0$ as the order of arrival increases</font>.  
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
