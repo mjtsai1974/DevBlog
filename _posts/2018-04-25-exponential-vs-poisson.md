@@ -77,11 +77,11 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 ><font color="Black">Still using the same intensity, the rate that $6$ vehicles pass through a highway toll station per minute, then, <font color="OrangeRed">what's the probability of the $8$-th vehicle passing through the toll station?</font></font>  
 >&#10112;<font color="DeepSkyBlue">random arrivals doesn't reinforce the occurrence of specific event at dedicated time interval</font>, in distinct time interval unit with regard to the given rate, which is $\frac {1}{rate}$, event outcome might just be true or false.  Then, the k-th car should pass by after time length of $k\cdot\frac {1}{rate}$, if all goes well, just right at the k-th moment.  
 >&#10113;this involves <font color="DeepSkyBlue">the distribution of inter-arrival times</font>, which is in <font color="DeepSkyBlue">exponential distribution</font> itself, and <font color="DeepSkyBlue">the accumulation of which would leads to the gamma distribution</font>, see [Introduction To The Poisson Process Inter-arrival Times]({{ site.github.repo }}{{ site.baseurl }}/2018/04/23/intro-poisson-dist-interarrival/).  
->&#10114;in this question, the most beautiful k-th random arrival takes place at the k-th moment of time interval unit.  We need to transform the correct interval unit from the given rate by the reciprocal value of it.  
+>&#10114;in this question, <font color="DeepSkyBlue">the most beautiful k-th random arrival takes place at the k-th moment of time interval unit.  We need to transform the correct interval unit from the reciprocal value of the given rate.</font>  
 >The time interval unit would be $\frac {1}{\lambda}$.  The k-th random arrival takes place at the k-th time interval unit, $\frac {k}{\lambda}$, in this example is $\frac {8}{6}$.  
 >&#10115;we have already proved that <font color="DeepPink">$f_{X_{n}}(t)$=$\frac {\lambda\cdot(\lambda\cdot t)^{n-1}\cdot e^{-\lambda\cdot t}}{(n-1)!}$, for $n$=$1$,$2$,..., where $\Gamma(n)$=$(n-1)!$</font>.  
 >$f_{X_{8}}(\frac {8}{6})$  
->=$\frac {6\cdot(6\cdot \frac {8}{6})^{7}\cdot e^{-\6\cdot \frac {8}{6}}}{(7)!}$  
+>=$\frac {6\cdot(6\cdot \frac {8}{6})^{7}\cdot e^{-6\cdot \frac {8}{6}}}{(7)!}$  
 >=$0.8375191$  
 
 <!-- Γ -->
