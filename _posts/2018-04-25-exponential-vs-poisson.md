@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Exponential versus Poisson Distribution
+title: Exponential versus Poisson Distribution::mjtsai1974
 ---
 
-## Prologue To <font color="Red">Exponential</font> versus <font color="Red">Poisson</font> Distribution
+## Prologue To <font color="Red">Exponential</font> versus <font color="Red">Poisson</font> Distribution::mjtsai1974
 <p class="message">
 In the world of <font color="OrangeRed">stochasticity</font>, pass and failure evaluation often been proceeded under <font color="DeepSkyBlue">the assumption that the intensity of event occurrence is constant over time</font>, which is debatable.  
 When we involve the reinforcement learning issues, or the statistics regression topics, although the discrete case is easily constructed and simulated by bootstrapping algorithm in conjunction with the maximum likelihood estimation, the migration to continuous case would be just to split the test horizon into many, many, uncountable subintervals.  
