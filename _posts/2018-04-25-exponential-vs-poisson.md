@@ -79,7 +79,7 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >&#10113;this involves <font color="DeepSkyBlue">the distribution of inter-arrival times</font>, which is in <font color="DeepSkyBlue">exponential distribution</font> itself, and <font color="DeepSkyBlue">the accumulation of which would leads to the gamma distribution</font>, see [Introduction To The Poisson Process Inter-arrival Times]({{ site.github.repo }}{{ site.baseurl }}/2018/04/23/intro-poisson-dist-interarrival/).  
 >&#10114;in this question, <font color="DeepSkyBlue">the most beautiful k-th random arrival takes place at the k-th moment of time interval unit.  We need to transform the correct interval unit from the reciprocal value of the given rate.</font>  
 >The time interval unit would be $\frac {1}{\lambda}$.  The k-th random arrival takes place at the k-th time interval unit, $\frac {k}{\lambda}$, in this example is $\frac {8}{6}$.  
->&#10115;we have already proved that <font color="DeepPink">$f_{X_{n}}(t)$=$\frac {\lambda\cdot(\lambda\cdot t)^{n-1}\cdot e^{-\lambda\cdot t}}{(n-1)!}$, for $n$=$1$,$2$,..., where $\Gamma(n)$=$(n-1)!$</font>.  
+>&#10115;we have already proved that <font color="DeepPink">$f_{X_{n}}(t)$=$\frac {\lambda\cdot(\lambda\cdot t)^{n-1}\cdot e^{-\lambda\cdot t}}{(n-1)!}$, for $n$=$1$,$2$,..., where $\Gamma(n)$=$(n-1)!$</font>.  Then the probability of the <font color="OrangeRed">8-th vehicle</font> passing through the toll station at the <font color="OrangeRed">8-th time interval unit</font> would be calculated in this way.  
 >$f_{X_{8}}(\frac {8}{6})$  
 >=$\frac {6\cdot(6\cdot \frac {8}{6})^{7}\cdot e^{-6\cdot \frac {8}{6}}}{(7)!}$  
 >=$0.8375191$  
