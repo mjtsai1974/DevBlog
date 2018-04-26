@@ -21,7 +21,7 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >&#10114;it takes up time length of $\frac {k}{\lambda}$ to have $k$ random arrivals, for $\lambda$=$\frac {k}{time\;length}$.  So, it holds to say that the adjacent two events of random arrival would just take time $\frac {1}{\lambda}$, which is the ideal inter-arrival times.  
 >&#10115;each distinct inter-arrival times could then be modelled by random variable distributed in exponential probability.  
 >&#10116;the joint distribution of random arrivals would be modelled by gamma distribution.  
->&#10117;<font color="DeepPink">the Poisson process has $n$ random arrivals in time inteerval $[a,b]$, the locations of these points are independent distributed, and each of them has a uniform distribution.</font>  
+>&#10117;<font color="DeepPink">the Poisson process has $n$ random arrivals in time interval $[a,b]$, the locations of these points are independent distributed, and each of them has a uniform distribution.</font>  
 >
 >[2]the exponential distribution  
 >&#10112;suppose $X$ is the rate of event occurrences during time period $t$.  
@@ -41,24 +41,32 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 
 ### <font color="RoyalBlue">Example</font>: Illustration Of The Similarities And Differences
 >[1]given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?  
->&#10112;by exponential distribution, we take $\lambda$=$6$ ($\frac {vehicles}{1\;minute}$), its PDF is $f_{exp}(t)$=$6\cdot e^{-6\cdot t}$, where $t>0$.  
+>&#10112;by <font color="OrangeRed">exponential</font> distribution, we take $\lambda$=$6$ ($\frac {vehicles}{1\;minute}$), its PDF is $f_{exp}(t)$=$6\cdot e^{-6\cdot t}$, where $t>0$.  
 >No cars within $30$ seconds asks for no car within $0.5$ minute, and we are figuring out the probability that $t>0.5$ will we just have the very first car come in, then:  
 >$F_{exp}(t>0.5)$  
 >=$\int_{0.5}^{\infty}6\cdot e^{-6\cdot t}\operatorname dt$  
 >=$-e^{-6\cdot t}\vert_{0.5}^{\infty}$  
 >=$e^{-3}$  
->&#10113;by Poisson distribution, we can still use $\lambda$=$6$ ($\frac {vehicles}{1\;minute}$), its PDF is $f_{Pois}(x,t)$=$\frac {(6\cdot t)^{x}}{x!}\cdot e^{-6\cdot t}$, $t$ is now $0.5$.  
+>&#10113;by <font color="OrangeRed">Poisson</font> distribution, we can still use $\lambda$=$6$ ($\frac {vehicles}{1\;minute}$), its PDF is $f_{Pois}(x,t)$=$\frac {(6\cdot t)^{x}}{x!}\cdot e^{-6\cdot t}$, $t$ is now $0.5$.  
 >Therefore, $f_{Pois}(x,0.5)$=$\frac {(6\cdot 0.5)^{0}}{0!}\cdot e^{-6\cdot 0.5}$=$e^{-3}$  
 >
->We have found that the probability for no vehicles within the dedicated time interval is <font color="DeepSkyBlue">the same</font> in both exponential and Poisson distribution.  This is fully compliant with the claim that <font color="DeepPink">the very first inter-arrival times is itself an exponential distribution</font> in [Introduction To The Poisson Process Inter-arrival Times]({{ site.github.repo }}{{ site.baseurl }}/2018/04/23/intro-poisson-dist-interarrival/).
+>We have found that the probability for no vehicles within the dedicated time interval is <font color="DeepPink">the same in both exponential and Poisson distribution</font>.  This is fully compliant with the claim that <font color="DeepPink">the very first inter-arrival times is itself an exponential distribution</font> in [Introduction To The Poisson Process Inter-arrival Times]({{ site.github.repo }}{{ site.baseurl }}/2018/04/23/intro-poisson-dist-interarrival/).
 >
->[2]still use the same rate that $6$ vehicles pass through a highway toll station per minute, then, what is the probability that all 6 cars crossing the toll station within 30 seconds?  
->&#10112;from exponential distribution view point, this is asking the success probability within 30 seconds.  
+>[2]still using the same rate that $6$ vehicles pass through a highway toll station per minute, then, what is the probability that all 6 cars crossing the toll station within 30 seconds?  
+>&#10112;from <font color="OrangeRed">exponential</font> distribution view point, this is asking the success probability within 30 seconds.  
 >$F_{exp}(0.5)$  
 >=$P_{exp}(t\le 0.5)$  
 >=$\int_{0}^{0.5}6\cdot e^{-6\cdot t}\operatorname dt$  
 >=$1$-$e^{-6\cdot 0.5}$=$0.950$  
-
+>&#10113;for <font color="OrangeRed">Poisson</font> distribution, this is to calculate the probability of distribution on the number $6$, which is the number of the requested target crossing vehicle counts within $0.5$ minute.  
+>$P_{Pois}(x)$=$\frac {(\lambda\cdot t)^{x}}{x!}\cdot e^{-\lambda\cdot t}$...the Poisson PMF.  
+>Now $t$=$0.5$, $x$=$6$, $P_{Pois}(6)$=$\frac {3^6}{6!}\cdot e^{-3}$=$0.168$  
+>
+><font color="DeepSkyBlue">Notes:</font>
+><font color="OrangeRed">Why at this moment, the Poisson and exponential probability come out with different result?</font>  
+>As a result of the fact that we treat the pass probability as a whole by integration from each distinct exponential probability from $t$=$0$ to $t$=$0.5$, whereas we only calculate the Poisson probability distributed on the number $6$.  
+>If we accumulate the distinct Poisson probability distributed on the numbers from $0$ to $6$, that is $\sum_{x=0}^{6}\frac {(\lambda\cdot t)^{x}}{x!}\cdot e^{-\lambda\cdot t}$, in this example, we get the probability $0.96649146...$, and the bias of $0.01$ could then be found.  
+>By accumulating the distinct Poisson probability distribution from $0$ to $6$ is just to answer different question asking the probability of the number of cars passing by up to 6.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
