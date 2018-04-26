@@ -11,7 +11,8 @@ Then, that connects the <font color="Red">Poisson</font> distribution to the <fo
 </p>
 
 ### Overview The Similarities And Differences
-><font color="OrangeRed">[1]</font>the Poisson distribution  
+><font color="RoyalBlue">[1]</font>
+><font color="OrangeRed">the Poisson distribution</font>  
 >&#10112;we have an assumption that the intensity of event occurrence over time is invariant for Poisson process.  
 >&#10113;suppose it is $\lambda$=$\frac {event\;counts}{time\;length}$  
 Below exhibits the case where $\lambda$=$\frac {1}{time\;length}$.  
@@ -23,7 +24,8 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >&#10116;the joint distribution of random arrivals would be modelled by gamma distribution.  
 >&#10117;<font color="DeepPink">the Poisson process has $n$ random arrivals in time interval $[a,b]$, the locations of these points are independent distributed, and each of them has a uniform distribution.</font>  
 >
-><font color="OrangeRed">[2]</font>the exponential distribution  
+><font color="RoyalBlue">[2]</font>
+><font color="OrangeRed">the exponential distribution</font>  
 >&#10112;suppose $X$ is the rate of event occurrences during time period $t$.  
 >&#10113;suppose $V$ is the space where events take place within, then the <font color="DeepSkyBlue">success probability</font> over time period $t$ is <font color="DeepSkyBlue">$\underset{Succss}P$=$\frac {X\cdot t}{V}$</font>, and the <font color="DeepSkyBlue">failure probability</font> is <font color="DeepSkyBlue">$\underset{Fail}P$=$1$-$\frac {X\cdot t}{V}$</font>.  
 >&#10114;we divide time period $t$ by $n$, where $n\rightarrow\infty$, then <font color="OrangeRed">success probability</font> over time period $t$ becomes <font color="OrangeRed">$\underset{Succss}P$=$\frac {X\cdot t}{V\cdot n}$</font>, and the <font color="OrangeRed">failure probability</font> becomes <font color="OrangeRed">$\underset{Fail}P$=$1$-$\frac {X\cdot t}{V\cdot n}$</font>.  
@@ -108,6 +110,12 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 <!-- <font color="#D600D6">discount factor gamma $\gamma$</font> -->
 <!-- <font color="#D600D6">$V(S)$</font> -->
 <!-- <font color="#9300FF">immediate reward R(S)</font> -->
+
+<!-- 
+[1]Given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?</font>  
+-->
 
 <!-- https://www.medcalc.org/manual/gamma_distribution_functions.php -->
 <!-- https://www.statlect.com/probability-distributions/student-t-distribution#hid5 -->
