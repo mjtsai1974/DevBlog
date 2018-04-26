@@ -48,7 +48,7 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >=$-e^{-6\cdot t}\vert_{0.5}^{\infty}$  
 >=$e^{-3}$  
 >&#10113;by <font color="OrangeRed">Poisson</font> distribution, we can still use $\lambda$=$6$ ($\frac {vehicles}{1\;minute}$), its PDF is $f_{Pois}(x,t)$=$\frac {(6\cdot t)^{x}}{x!}\cdot e^{-6\cdot t}$, $t$ is now $0.5$.  
->Therefore, $f_{Pois}(x,0.5)$=$\frac {(6\cdot 0.5)^{0}}{0!}\cdot e^{-6\cdot 0.5}$=$e^{-3}$  
+>Therefore, $f_{Pois}(6,0.5)$=$\frac {(6\cdot 0.5)^{0}}{0!}\cdot e^{-6\cdot 0.5}$=$e^{-3}$  
 >
 >We have found that the probability for no vehicles within the dedicated time interval is <font color="DeepPink">the same in both exponential and Poisson distribution</font>.  This is fully compliant with the claim that <font color="DeepPink">the very first inter-arrival times is itself an exponential distribution</font> in [Introduction To The Poisson Process Inter-arrival Times]({{ site.github.repo }}{{ site.baseurl }}/2018/04/23/intro-poisson-dist-interarrival/).
 >
@@ -62,11 +62,11 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >$P_{Pois}(x)$=$\frac {(\lambda\cdot t)^{x}}{x!}\cdot e^{-\lambda\cdot t}$...the Poisson PMF.  
 >Now $t$=$0.5$, $x$=$6$, $P_{Pois}(6)$=$\frac {3^6}{6!}\cdot e^{-3}$=$0.168$  
 >
-><font color="DeepSkyBlue">Notes:</font>
+><font color="DeepSkyBlue">[Notes]</font>
 ><font color="OrangeRed">Why at this moment, the Poisson and exponential probability come out with different result?</font>  
 >As a result of the fact that we treat the pass probability as a whole by integration from each distinct exponential probability from $t$=$0$ to $t$=$0.5$, whereas we only calculate the Poisson probability distributed on the number $6$.  
 >If we accumulate the distinct Poisson probability distributed on the numbers from $0$ to $6$, that is $\sum_{x=0}^{6}\frac {(\lambda\cdot t)^{x}}{x!}\cdot e^{-\lambda\cdot t}$, in this example, we get the probability $0.96649146...$, and the bias of $0.01$ could then be found.  
->By accumulating the distinct Poisson probability distribution from $0$ to $6$ is just to answer different question asking the probability of the number of cars passing by up to 6.  
+><font color="DeepSkyBlue">By accumulating the distinct Poisson probability distribution from $0$ to $6$ is just to answer different question asking the probability of the number of cars passing by up to 6.</font>  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
