@@ -74,6 +74,11 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 
 ### <font color="RoyalBlue">Example</font>: Illustration Of <font color="OrangeRed">Random Arrivals</font>
 >
+<font color="DeepSkyBlue">[1]</font>
+Still using the same intensity, the rate that $6$ vehicles pass through a highway toll station per minute, then, <font color="OrangeRed">what's the probability of the $8$-th vehicle passing through the toll station?</font>  
+>&#10112;<font color="DeepSkyBlue">random arrivals doesn't reinforce the occurrence of specific event at dedicated time interval</font>, in distinct time interval unit with regard to the given rate, which is $\frac {1}{rate}$, event outcome might just be true or false.  Then, the k-th car should pass by after time length of $k\cdot\frac {1}{rate}$, if all goes well, just right at the k-th moment.  
+>&#10113;this involves the distribution of inter-arrival times, which is in exponential distribution itself, and the accumulation of which would leads to the gamma distribution, see [Introduction To The Poisson Process Inter-arrival Times]({{ site.github.repo }}{{ site.baseurl }}/2018/04/23/intro-poisson-dist-interarrival/).  
+
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
