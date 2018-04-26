@@ -114,13 +114,13 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >&#10112;we can have a more random question about the probability of $10$-th car passing by after 10 minutes.  
 >$f_{X_{10}}(10)$  
 >=$\frac {6\cdot(6\cdot 10)^{9}\cdot e^{-6\cdot 10}}{(9)!}$  
->=$0.00000000000000145908$
->This is quiet small probability for the $10$-th car passing by after 10 minutes, given that 6 cars would just across every one minute is the constant rate.  
+>=$0.00000000000000145908$  
+>This is <font color="OrangeRed">quiet small</font> probability for the $10$-th car passing by after 10 minutes, given that 6 cars would just across every one minute is the constant rate.  
 >&#10113;we then regularize the question by the probability of $60$-th car passing by after 10 minutes.  
 >$f_{X_{60}}(10)$  
 >=$\frac {6\cdot(6\cdot 10)^{59}\cdot e^{-6\cdot 10}}{(59)!}$  
 >=$0.30859046994207513678$  
->This is a much higher probability than the probability for $10$-th car passing by after 10 minutes.  
+>This is a <font color="OrangeRed">much higher</font> probability than the probability for $10$-th car passing by after 10 minutes.  
 >&#10113;we then ask the question by the probability of $59$-th car passing by after 10 minutes.  
 >$f_{X_{59}}(10)$  
 >=$\frac {6\cdot(6\cdot 10)^{58}\cdot e^{-6\cdot 10}}{(58)!}$  
@@ -143,10 +143,10 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >=$0.03560745811847304799$  
 >Here we concrete above conclusion.  
 >
-><font color="DeepSkyBlue">[4]</font>
+><font color="DeepSkyBlue">[5]</font>
 ><font color="Black">We are here with below probability as a summary</font> for the final finding.  
 >$f_{X_{8}}(\frac {8}{6})$=$0.8375191$  
->$f_{X_{25}}(\frac {25}{6})$==$0.4771377088083926763$  
+>$f_{X_{25}}(\frac {25}{6})$=$0.4771377088083926763$  
 >$f_{X_{60}}(10)$=$0.30859046994207513678$, where $10$=$\frac {60}{6}$  
 >
 ><font color="DeepSkyBlue">As the event arrives at the time interval unit of appropriate proportion, which is also more closed to $1$, like $\frac {8}{6}$, it will just have higher probability by using the gamma distribution for a prediction.</font>  
