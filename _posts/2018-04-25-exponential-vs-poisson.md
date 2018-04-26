@@ -86,21 +86,70 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="Black">What is the probability of the $8$-th, $12$-th, $16$-th car passing by at the $3$-rd time interval unit?</font>  
->&#10112;
->$f_{X_{8}}(\frac {3}{6})$  
+>&#10112;$f_{X_{8}}(\frac {3}{6})$  
 >=$\frac {6\cdot(6\cdot \frac {3}{6})^{7}\cdot e^{-6\cdot \frac {3}{6}}}{(7)!}$  
 >=$0.12962418871490290869$  
->&#10113;
->$f_{X_{12}}(\frac {3}{6})$  
+>&#10113;$f_{X_{12}}(\frac {3}{6})$  
 >=$\frac {6\cdot(6\cdot \frac {3}{6})^{11}\cdot e^{-6\cdot \frac {3}{6}}}{(11)!}$  
 >=$0.00132570193003877975$  
->&#10114;
->$f_{X_{16}}(\frac {3}{6})$  
+>&#10114;$f_{X_{16}}(\frac {3}{6})$  
 >=$\frac {6\cdot(6\cdot \frac {3}{6})^{15}\cdot e^{-6\cdot \frac {3}{6}}}{(15)!}$  
 >=$0.00000327783444240358$  
 >
 >We can easily tell, <font color="DeepPink">the arrivals in the time interval unit of the order less than it, the probability would just decrease almost to $0$ as the order of arrival increases</font>.  
 >
+><font color="DeepSkyBlue">[3]</font>
+><font color="Black">What is the probability of the $5$-th, $4$-th car passing by at the $5$-th, $4$-th time interval unit?</font>  
+>&#10112;$f_{X_{5}}(\frac {5}{6})$  
+>=$\frac {6\cdot(6\cdot \frac {5}{6})^{4}\cdot e^{-6\cdot \frac {5}{6}}}{(4)!}$  
+>=$1.05280421860710423385$  
+>&#10113;$f_{X_{4}}(\frac {4}{6})$  
+>=$\frac {6\cdot(6\cdot \frac {4}{6})^{3}\cdot e^{-6\cdot \frac {4}{6}}}{(3)!}$  
+>=$1.1722008888789875388$  
+>
+>There exists <font color="DeepSkyBlue">no probability larger than $1.0$</font>, above answer from gamma PDF just guarantees that <font color="DeepSkyBlue">$5$-th, $4$-th car passing by at the $5$-th, $4$-th time interval unit would definitely happen</font>.  
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="Black">All we have done is by assuming that <font color="RosyBrown">each i-th event arrival occurrs at the i-th time interval unit, this is not the normal case</font>!!!</font>  
+>&#10112;we can have a more random question about the probability of $10$-th car passing by after 10 minutes.  
+>$f_{X_{10}}(10)$  
+>=$\frac {6\cdot(6\cdot 10)^{9}\cdot e^{-6\cdot 10}}{(9)!}$  
+>=$0.00000000000000145908$
+>This is quiet small probability for the $10$-th car passing by after 10 minutes, given that 6 cars would just across every one minute is the constant rate.  
+>&#10113;we then regularize the question by the probability of $60$-th car passing by after 10 minutes.  
+>$f_{X_{60}}(10)$  
+>=$\frac {6\cdot(6\cdot 10)^{59}\cdot e^{-6\cdot 10}}{(59)!}$  
+>=$0.30859046994207513678$  
+>This is a much higher probability than the probability for $10$-th car passing by after 10 minutes.  
+>&#10113;we then ask the question by the probability of $59$-th car passing by after 10 minutes.  
+>$f_{X_{59}}(10)$  
+>=$\frac {6\cdot(6\cdot 10)^{58}\cdot e^{-6\cdot 10}}{(58)!}$  
+>=$0.30344729544304055116$  
+>It's a <font color="DeepSkyBlue">little</font> smaller.  
+>&#10114;we then ask the question by the probability of $25$-th car passing by after 10 minutes.  
+>$f_{X_{25}}(10)$  
+>=$\frac {6\cdot(6\cdot 10)^{24}\cdot e^{-6\cdot 10}}{(24)!}$  
+>=$0.00000040124226676254$  
+>It's <font color="OrangeRed">much</font> smaller.  
+>
+>As we can tell that <font color="DeepPink">the most optimized probability of random arrival by means of the gamma distribution would be the order of arrival is in 100 percent proportional to the time length it takes, given that the rate is a constant over time!!</font>  
+>&#10115;soon we verify it with the case the $25$-th arrival at $25$-th time interval unit, that is  
+>$f_{X_{25}}(\frac {25}{6})$  
+>=$\frac {6\cdot(6\cdot \frac {25}{6})^{24}\cdot e^{-6\cdot \frac {25}{6}}}{(24)!}$  
+>=$0.4771377088083926763$  
+>Next, compare it with the $15$-th arrival at $25$-th time interval unit, that is  
+>$f_{X_{15}}(\frac {25}{6})$  
+>=$\frac {6\cdot(6\cdot \frac {25}{6})^{14}\cdot e^{-6\cdot \frac {25}{6}}}{(14)!}$  
+>=$0.03560745811847304799$  
+>Here we concrete above conclusion.  
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="Black">We are here with below probability as a summary</font> for the final finding.  
+>$f_{X_{8}}(\frac {8}{6})$=$0.8375191$  
+>$f_{X_{25}}(\frac {25}{6})$==$0.4771377088083926763$  
+>$f_{X_{60}}(10)$=$0.30859046994207513678$, where $10$=$\frac {60}{6}$  
+>
+><font color="DeepSkyBlue">As the event arrives at the time interval unit of appropriate proportion, which is also more closed to $1$, like $\frac {8}{6}$, it will just have higher probability by using the gamma distribution for a prediction.</font>  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
