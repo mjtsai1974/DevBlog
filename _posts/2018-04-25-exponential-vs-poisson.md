@@ -81,7 +81,8 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >The time interval unit would be $\frac {1}{\lambda}$.  The k-th random arrival takes place at the k-th time interval unit, $\frac {k}{\lambda}$, in this example is $\frac {8}{6}$.  
 >&#10115;we have already proved that <font color="DeepPink">$f_{X_{n}}(t)$=$\frac {\lambda\cdot(\lambda\cdot t)^{n-1}\cdot e^{-\lambda\cdot t}}{(n-1)!}$, for $n$=$1$,$2$,..., where $\Gamma(n)$=$(n-1)!$</font>.  
 >$f_{X_{8}}(\frac {8}{6})$  
->=$\frac {\6\cdot(\6\cdot \frac {8}{6})^{7}\cdot e^{-\6\cdot \frac {8}{6}}}{(7)!}$  
+>=$\frac {6\cdot(6\cdot \frac {8}{6})^{7}\cdot e^{-\6\cdot \frac {8}{6}}}{(7)!}$  
+>=$0.8375191$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
