@@ -11,7 +11,7 @@ Then, that connects the <font color="Red">Poisson</font> distribution to the <fo
 </p>
 
 ### Overview The Similarities And Differences
->[1]the Poisson distribution  
+><font color="OrangeRed">[1]</font>the Poisson distribution  
 >&#10112;we have an assumption that the intensity of event occurrence over time is invariant for Poisson process.  
 >&#10113;suppose it is $\lambda$=$\frac {event\;counts}{time\;length}$  
 Below exhibits the case where $\lambda$=$\frac {1}{time\;length}$.  
@@ -23,7 +23,7 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >&#10116;the joint distribution of random arrivals would be modelled by gamma distribution.  
 >&#10117;<font color="DeepPink">the Poisson process has $n$ random arrivals in time interval $[a,b]$, the locations of these points are independent distributed, and each of them has a uniform distribution.</font>  
 >
->[2]the exponential distribution  
+><font color="OrangeRed">[2]</font>the exponential distribution  
 >&#10112;suppose $X$ is the rate of event occurrences during time period $t$.  
 >&#10113;suppose $V$ is the space where events take place within, then the <font color="DeepSkyBlue">success probability</font> over time period $t$ is <font color="DeepSkyBlue">$\underset{Succss}P$=$\frac {X\cdot t}{V}$</font>, and the <font color="DeepSkyBlue">failure probability</font> is <font color="DeepSkyBlue">$\underset{Fail}P$=$1$-$\frac {X\cdot t}{V}$</font>.  
 >&#10114;we divide time period $t$ by $n$, where $n\rightarrow\infty$, then <font color="OrangeRed">success probability</font> over time period $t$ becomes <font color="OrangeRed">$\underset{Succss}P$=$\frac {X\cdot t}{V\cdot n}$</font>, and the <font color="OrangeRed">failure probability</font> becomes <font color="OrangeRed">$\underset{Fail}P$=$1$-$\frac {X\cdot t}{V\cdot n}$</font>.  
@@ -40,7 +40,7 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >, where $\lambda$ is the intensity, the rate of success, or of event occurrence.  
 
 ### <font color="RoyalBlue">Example</font>: Illustration Of The Similarities And Differences
->[1]given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?  
+><font color="OrangeRed">[1]</font>given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?  
 >&#10112;by <font color="OrangeRed">exponential</font> distribution, we take $\lambda$=$6$ ($\frac {vehicles}{1\;minute}$), its PDF is $f_{exp}(t)$=$6\cdot e^{-6\cdot t}$, where $t>0$.  
 >No cars within $30$ seconds asks for no car within $0.5$ minute, and we are figuring out <font color="DeepSkyBlue">the probability that $t>0.5$ will we just have the very first car come in</font>, then:  
 >$F_{exp}(t>0.5)$  
@@ -52,7 +52,7 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >
 >We have found that the probability for no vehicles within the dedicated time interval is <font color="DeepPink">the same in both exponential and Poisson distribution</font>.  This is fully compliant with the claim that <font color="DeepPink">the very first inter-arrival times is itself an exponential distribution</font> in [Introduction To The Poisson Process Inter-arrival Times]({{ site.github.repo }}{{ site.baseurl }}/2018/04/23/intro-poisson-dist-interarrival/).
 >
->[2]still using the same rate that $6$ vehicles pass through a highway toll station per minute, then, what is the probability that all 6 cars crossing the toll station within 30 seconds?  
+><font color="OrangeRed">[2]</font>still using the same rate that $6$ vehicles pass through a highway toll station per minute, then, what is the probability that all 6 cars crossing the toll station within 30 seconds?  
 >&#10112;from <font color="OrangeRed">exponential</font> distribution view point, this is asking <font color="DeepSkyBlue">the success probability within 30 seconds</font>.  
 >$F_{exp}(0.5)$  
 >=$P_{exp}(t\le 0.5)$  
@@ -64,9 +64,12 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >
 ><font color="DeepSkyBlue">[Notes]</font>
 ><font color="OrangeRed">Why at this moment, the Poisson and exponential probability come out with different result?</font>  
->As a result of the fact that we treat the pass probability as a whole by integration from each distinct exponential probability from $t$=$0$ to $t$=$0.5$, whereas we only calculate the Poisson probability distributed on the number $6$.  
->If we accumulate the distinct Poisson probability distributed on the numbers from $0$ to $6$, that is $\sum_{x=0}^{6}\frac {(\lambda\cdot t)^{x}}{x!}\cdot e^{-\lambda\cdot t}$, in this example, we get the probability $0.96649146...$, and the bias of $0.01$ could then be found.  
+>&#10112;as a result of the fact that we treat the pass probability as a whole by integration from each distinct exponential probability from $t$=$0$ to $t$=$0.5$, whereas we only calculate the Poisson probability distributed on the number $6$.  
+>&#10113;if we accumulate the distinct Poisson probability distributed on the numbers from $0$ to $6$, that is $\sum_{x=0}^{6}\frac {(\lambda\cdot t)^{x}}{x!}\cdot e^{-\lambda\cdot t}$, in this example, we get the probability $0.96649146...$, and the bias of $0.01$ could then be found.  
 ><font color="DeepSkyBlue">By accumulating the distinct Poisson probability distribution from $0$ to $6$ is just to answer different question asking the probability of the number of cars passing by up to 6.</font>  
+
+### <font color="RoyalBlue">Example</font>: Illustration Of <font color="OrangeRed">Random Arrivals</font>
+>
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
