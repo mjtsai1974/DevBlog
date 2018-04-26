@@ -40,7 +40,7 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >, where $\lambda$ is the intensity, the rate of success, or of event occurrence.  
 
 ### <font color="RoyalBlue">Example</font>: Illustration Of The Similarities And Differences
->[1]Given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?  
+>[1]given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?  
 >&#10112;by exponential distribution, we take $\lambda$=$6$ ($\frac {vehicles}{1\;minute}$), its PDF is $f_{exp}(t)$=$6\cdot e^{-6\cdot t}$, where $t>0$.  
 >No cars within $30$ seconds asks for no car within $0.5$ minute, and we are figuring out the probability that $t>0.5$ will we just have the very first car come in, then:  
 >$F_{exp}(t>0.5)$  
@@ -51,6 +51,14 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >Therefore, $f_{Pois}(x,0.5)$=$\frac {(6\cdot 0.5)^{0}}{0!}\cdot e^{-6\cdot 0.5}$=$e^{-3}$  
 >
 >We have found that the probability for no vehicles within the dedicated time interval is <font color="DeepSkyBlue">the same</font> in both exponential and Poisson distribution.  This is fully compliant with the claim that <font color="DeepPink">the very first inter-arrival times is itself an exponential distribution</font> in [Introduction To The Poisson Process Inter-arrival Times]({{ site.github.repo }}{{ site.baseurl }}/2018/04/23/intro-poisson-dist-interarrival/).
+>
+>[2]still use the same rate that $6$ vehicles pass through a highway toll station per minute, then, what is the probability that all 6 cars crossing the toll station within 30 seconds?  
+>&#10112;from exponential distribution view point, this is asking the success probability within 30 seconds.  
+>$F_{exp}(0.5)$  
+>=$P_{exp}(t\le 0.5)$  
+>=$\int_{0}^{0.5}6\cdot e^{-6\cdot t}\operatorname dt$  
+>=$1$-$e^{-6\cdot 0.5}$=$0.950$  
+
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
