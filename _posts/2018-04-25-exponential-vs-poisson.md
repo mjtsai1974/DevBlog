@@ -14,9 +14,9 @@ Then, that connects the <font color="Red">Poisson</font> distribution to the <fo
 >[1]the Poisson distribution  
 >&#10112;we have an assumption that the intensity of event occurrence over time is invariant for Poisson process.  
 >&#10113;suppose it is $\lambda$=$\frac {event\;counts}{time\;length}$  
-Below exhibits the case where $\lambda$=$\frac {1}{time length}$.  
+Below exhibits the case where $\lambda$=$\frac {1}{time\;length}$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-25-exponential-vs-poisson-lambda-for-1-evt.png "1 event")
-This is the case where $\lambda$=$\frac {k}{time length}$.  
+This is the case where $\lambda$=$\frac {k}{time\;length}$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-25-exponential-vs-poisson-lambda-for-k-evts.png "k events")
 >&#10114;it takes up time length of $\frac {k}{\lambda}$ to have $k$ random arrivals, for $\lambda$=$\frac {k}{time\;length}$.  So, it holds to say that the adjacent two events of random arrival would just take time $\frac {1}{\lambda}$, which is the ideal inter-arrival times.  
 >&#10115;each distinct inter-arrival times could then be modelled by random variable distributed in exponential probability.  
@@ -40,12 +40,20 @@ This is the case where $\lambda$=$\frac {k}{time length}$.
 >, where $\lambda$ is the intensity, the rate of success, or of event occurrence.  
 
 ### <font color="RoyalBlue">Example</font>: Illustration Of The Similarities And Differences
->
+>[1]Given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?  
+>&#10112;by exponential distribution, we take $\lambda$=$6$ ($\frac {vehicles}{1\;minute}$), its PDF is $f_{T}(t)$=$6\cdot e^{-\6\cdot t}$, where $t>0$.  
+>No cars within $30$ seconds asks for no car within $0.5$ minute, and we are figuring out the probability that $t>0.5$ will we just have the very first car come in, then:  
+>$F_{T}(t>0.5)$  
+>=$\int_{0.5}^{\infty}6\cdot e^{-6\cdot t}\operatorname dt$  
+>=$-e^{-6\cdot t}\vert_{0.5}^{\infty}$  
+>=$e^{-3}$  
+>&#10113;
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
 <!-- \vert_0^\infty -->
+<!-- \vert_{0.5}^{\infty} -->
 <!-- &prime; ′ -->
 <!-- &Prime; ″ -->
 <!-- $E\lbrack X\rbrack$ -->
