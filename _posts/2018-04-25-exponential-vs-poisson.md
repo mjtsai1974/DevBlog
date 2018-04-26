@@ -51,7 +51,7 @@ This is the case where $\lambda$=$\frac {k}{time\;length}$.
 >=$-e^{-6\cdot t}\vert_{0.5}^{\infty}$  
 >=$e^{-3}$  
 >&#10113;by <font color="OrangeRed">Poisson</font> distribution, we can still use $\lambda$=$6$ ($\frac {vehicles}{1\;minute}$), its PDF is $f_{Pois}(x,t)$=$\frac {(6\cdot t)^{x}}{x!}\cdot e^{-6\cdot t}$, $t$ is now $0.5$.  
->Therefore, $f_{Pois}(6,0.5)$=$\frac {(6\cdot 0.5)^{0}}{0!}\cdot e^{-6\cdot 0.5}$=$e^{-3}$  
+>Therefore, $f_{Pois}(0,0.5)$=$\frac {(6\cdot 0.5)^{0}}{0!}\cdot e^{-6\cdot 0.5}$=$e^{-3}$  
 >
 >We have found that the probability for no vehicles within the dedicated time interval is <font color="DeepPink">the same in both exponential and Poisson distribution</font>.  This is fully compliant with the claim that <font color="DeepPink">the very first inter-arrival times is itself an exponential distribution</font> in [Introduction To The Poisson Process Inter-arrival Times]({{ site.github.repo }}{{ site.baseurl }}/2018/04/23/intro-poisson-dist-interarrival/).
 >
