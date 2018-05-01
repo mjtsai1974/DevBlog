@@ -15,7 +15,7 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >
 >Given $X\in\lbrack a,b\rbrack$, it's a random variable with $E\lbrack x\rbrack$=$0$, then for any $s>0$, we have $E\lbrack e^{s\cdot X}\rbrack\le e^{s\cdot(a-b)}$  
 >
->Proof::mjtsai  
+>proof::mjtsai1974  
 >&#10112;by given $X\in\lbrack a,b\rbrack$, take $\lambda$=$\frac {x-a}{b-a}$,  
 >we just have $x$=$(1-\lambda)\cdot a$+$\lambda\cdot b$.  
 >&#10113;since $g(E\lbrack s\cdot X\rbrack)\le E\lbrack g(s\cdot X)\rbrack$ by <font color="Red">Jensen's inequality</font> for any convex function $g(X)$=$e^{X}$, then  
@@ -49,7 +49,7 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 ### The <font color="Red">Hoeffding Lemma</font>
 >Given $X\in\lbrack a,b\rbrack$, it's a random variable with $E\lbrack x\rbrack$=$0$, then for any $s>0$, we have $E\lbrack e^{s\cdot X}\rbrack\le e^{\frac {s^2\cdot(b-a)^2}{8}}$  
 >
->Proof::mjtsai  
+>proof::mjtsai1974  
 >We would inherit from &#10116; in the proof of <font color="Red">Mjtsai1974 Light Weight Upper Bound</font>, begin from $ln\theta(u)$=$ln((1-p)\cdot e^{s\cdot u}+p)$+$s\cdot (p-1)\cdot u$, where $u$=$a-b$,$\theta(u)$=$((1-p)\cdot e^{s\cdot u}+p)\cdot e^{s\cdot (p-1)\cdot u}$.  
 >&#10112;take $M(u)$=$ln\theta(u)$, by <font color="OrangeRed">Taylor theorem</font>, for $w\in\lbrack u,0\rbrack$, where in this case $u\le 0$, we have  
 >$\lim_{w\rightarrow u}M(w)$  

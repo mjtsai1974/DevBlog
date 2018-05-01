@@ -13,7 +13,7 @@ The <font color="Red">Chernoff bounds</font> is a convenient way to build the sh
 >$\;\;P(Z\ge t)\le e^{(\lambda\cdot\sigma)^{2}}\cdot e^{-\lambda\cdot t}$  
 >, where $M_{Z}(\lambda)$=<font color="DeepSkyBlue">$e^{(\lambda\cdot\sigma)^{2}}$</font>  
 >
->Proof::by mjtsai  
+>proof::mjtsai1974  
 >The proof would be categorized into 4 major parts, the first part is to ask for $E\lbrack e^{\lambda\cdot Z}\rbrack$, the second part is to figure out the r-th moment, we'll make reference to the ratio test theorem in the third part, finally is the upper bounds in the <font color="Red">Chernoff Bounds</font> form.  
 >[1]We begin from $E\lbrack e^{\lambda\cdot Z}\rbrack$  
 >First, express the MGF of Z in terms of the Taylor series:  
