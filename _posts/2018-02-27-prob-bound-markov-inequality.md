@@ -12,7 +12,7 @@ The <font color="Red">Markov inequality</font> is a rahter simple probabilistic 
 ### <font color="Red">Markov Inequality</font> Theorem
 >Given that $Z$ is a non-negative random variable, then for all $t\ge 0$, we have $P(Z\ge t)\le \frac {E\lbrack Z\rbrack}{t}$  
 >
-><font color="BurlyWood">proof::mjtsai1974</font>  
+><font color="Brown">proof::mjtsai1974</font>  
 >&#10112;let's begin by the definition of expect value of a random variable.  
 >$E\lbrack Z\rbrack$=$\sum(P(Z\ge t)\cdot\\{Z\vert Z\ge t\\}$+$P(Z<t)\cdot\\{Z\vert Z<t\\})$  
 >, where we denote $\\{Z\vert Z\ge t\\}$=$1$,$\\{Z\vert Z<t\\}$=$1$  

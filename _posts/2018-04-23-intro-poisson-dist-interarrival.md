@@ -44,7 +44,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >Then, $F_{T_{i}}$=$P(T_{i}\le t)$=1-$e^{-\lambda\cdot t}$, for $i$=$1$,$2$,$3$,...  
 >I'd like to prove that the <font color="DeepPink">joint distribution of random arrivals is just a gamma distribution.</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-23-intro-poisson-dist-interarrival.png "inter-arrival times")
-><font color="BurlyWood">proof::mjtsai1974</font>  
+><font color="Brown">proof::mjtsai1974</font>  
 >[1]begin by time tick at $0$, say we use $X_{1}$ as the random variable to represent the first one arrival within whatever time length $t$ is, denote time period $[0,t]$ as $T_{1}$.  
 >&#10112;$F_{X_{1}}(t)$=$F_{T_{1}+T_{0}}(t)$=$P(T_{1}\le t)$=1-$e^{-\lambda\cdot t}$, where $T_{0}$=$0$  
 >&#10113;$f_{X_{1}}(t)$=<font color="DeepPink">$\lambda\cdot e^{-\lambda\cdot t}$</font>  
@@ -96,7 +96,7 @@ On the way to the <font color="Red">Poisson</font> distribution, the <font color
 >
 ><font color="DeepPink">$X_{1}$ is uniformly distributed within $[0,a]$</font>, given the event <font color="DeepPink">${N_{[0,a]}=1}$ as the condition</font>, since $\sum_{i=1}^{s}\frac {1}{a}$=$\frac {s}{a}$.  
 >[2]suppose that there are two arrivals in $[0,a]$, that is $N_{[0,a]}=2$, and given $0<s<t<a$, we can show $P(X_{1}\le s,X_{2}\le t|N_{[0,a]}=2)$=$\frac {t^{2}-(t-s)^{2}}{a^{2}}$.  
-><font color="BurlyWood">proof::mjtsai1974</font>  
+><font color="Brown">proof::mjtsai1974</font>  
 >&#10112;this is to ask out the probability that first arrival falls within $[0,s]$, the second arrival falls within $(s,t]$.  Below graph exhibits the possible cases.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-04-23-intro-poisson-dist-interarrival-prob-2-events.png "2 events")
 >&#10113;by above table, we just need to accumulate the probability of the case (1) and (2), which is equivalent to <font color="DeepSkyBlue">substract the probability of two event occurrences in $(s,t]$ from the probability that two event arrivals in $[0,t]$.</font>  

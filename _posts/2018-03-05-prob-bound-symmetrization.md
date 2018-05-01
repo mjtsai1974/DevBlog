@@ -16,7 +16,7 @@ In machine learning, statistics, probability theory, the <font color="Red">symme
 >$\le E\lbrack e^{\lambda\cdot E\lbrack\left|Z-Z'\right|\rbrack}\rbrack\cdot e^{-\lambda\cdot t}$  
 >[3]$E_Z\lbrack E_{Z'}\lbrack e^{\lambda\cdot (Z-Z')}\rbrack\rbrack\le e^{\frac {(\lambda\cdot (b-a))^{2}}{2}}$  
 >
-><font color="BurlyWood">proof::mjtsai1974</font>  
+><font color="Brown">proof::mjtsai1974</font>  
 >&#10112;by given, $E\lbrack Z\rbrack$=$E\lbrack Z'\rbrack$, then,  
 >$E_Z\lbrack Z-E\lbrack Z\rbrack\rbrack$=$E_Z\lbrack Z-E\lbrack Z'\rbrack\rbrack$  
 >And according to the <font color="Red">Jensen's inequality</font>, we have it that  
