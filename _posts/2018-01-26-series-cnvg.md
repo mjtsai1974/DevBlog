@@ -161,7 +161,7 @@ Series is a collection of the data ordered by indices, maybe in a time sequence 
 >hence, $a_n+(-a_{n+1})\rightarrow 0$, where $a_n>a_{n+1}$, the series converges.  
 >
 >[3]An alternating series <font color="DeepPink">$a_1$-$a_2$+$a_3$-$a_4$+$a_5$-$a_6$+...converges, if every $a_{n+1}\le a_{n}$ and $a_{n}\rightarrow 0$.</font>  
->proof::mjtsai1974  
+><font color="BurlyWood">proof::mjtsai1974</font>  
 >&#10112;by given that $a_n\ge a_{n+1}$,$a_n\rightarrow 0$, as $a\rightarrow\infty$, we define $b_i$=$a_i-a_{i+1}$  
 >&#10113;then, $b_n\rightarrow 0$, as $a\rightarrow\infty$ also holds.  
 >&#10114;and $a_n\ge a_{n+1}$ implies that $\frac {a_{n+1}}{a_n}\rightarrow L_a\le 1$, as $n\rightarrow\infty$.  
