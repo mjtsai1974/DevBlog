@@ -9,5 +9,5 @@ The normal, F, chi-square, t, exponential, Poisson distributions are all interco
 </p>
 
 ### Brief Summary
->Here, I am just exhibit the interconnection by graph.  
+>Here, I am just exhibiting the interconnection by graph.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-03-dist-relationship.png "dist relation")
