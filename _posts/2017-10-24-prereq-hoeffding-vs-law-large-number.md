@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hoeffding Inequality versus Law of Large Number
+title: Hoeffding Inequality versus Chebyshev's Inequality
 ---
 
 ## Hoeffding Inequality
@@ -26,7 +26,7 @@ Hoeffding inequality claims &nu; = &mu; is probably approximate correct.
 
 > Above paragraph is my summary from [NTU H.T.Lin's Machine Learning Foundation](https://zh−tw.coursera.org/learn/ntumlone−mathematicalfoundations).
 
-## Chebyshev&#39;s Inequality(law of large number)
+## Chebyshev&#39;s Inequality
 
 <p class="message">
 Chebyshev&#39;s inequality claims that P(|Y − E(Y)| &gt; a) &le; (1 ∕ a) × Var(Y);  

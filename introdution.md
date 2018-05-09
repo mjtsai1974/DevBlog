@@ -66,7 +66,7 @@ The context of this bog just like current artificial intelligence, comes without
 Whatever topic playing the consolidated fundamental basis implicitly be constructed as computer algorithm, but explicitly help the learning flow to converge the result would be in this section, includes 
 the following:
 
-* [Hoeffding Inequality v.s. Law of Large Number]({{ site.github.repo }}{{ site.baseurl }}/2017/10/24/prereq-hoeffding-vs-law-large-number/)
+* [Hoeffding Inequality v.s. Chebyshev's Inequality]({{ site.github.repo }}{{ site.baseurl }}/2017/10/24/prereq-hoeffding-vs-law-large-number/)
 <!-- * <a href="{{ site.github.repo }}{{ site.baseurl }}/2017/10/24/prereq-hoeffding-vs-law-large-number/">Hoeffding Inequality v.s. Law of Large Number</a> --> <!-- this also works -->
 * [Lagrange Multiplier]({{ site.github.repo }}{{ site.baseurl }}/2017/10/27/prereq-lagrange-multiplier/)
 * [QR Decomposition]({{ site.github.repo }}{{ site.baseurl }}/2017/10/31/prereq-qr-decomposition/)
