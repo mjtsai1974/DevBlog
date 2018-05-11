@@ -23,6 +23,7 @@ Based on the result of the Chebyshev's inequality, the law of large number guara
 >=$P(|\overline {X_n}-\mu|\ge \varepsilon)$  
 >$\le \frac {Var\lbrack \overline {X_n}\rbrack}{\varepsilon^{2}\cdot n}$  
 >=$\frac {\sigma^{2}}{\varepsilon^{2}\cdot n}$, for any $\varepsilon>0$  
+>$\lim_{n\rightarrow\infty}P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)\le\lim_{n\rightarrow\infty}\frac {\sigma^{2}}{\varepsilon^{2}\cdot n}$, as $n\rightarrow\infty$, we will have it hold that $\lim_{n\rightarrow\infty}P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)$=$0$.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
