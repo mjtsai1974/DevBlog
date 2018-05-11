@@ -29,6 +29,18 @@ Based on the result of the Chebyshev's inequality, the law of large number guara
 >=$\frac {\sigma^{2}}{\varepsilon^{2}\cdot n}$, for any $\varepsilon>0$  
 >&#10114;$\lim_{n\rightarrow\infty}P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)\le\lim_{n\rightarrow\infty}\frac {\sigma^{2}}{\varepsilon^{2}\cdot n}$, <font color="DeepSkyBlue">as $n\rightarrow\infty$</font>, it holds that <font color="DeepPink">$\lim_{n\rightarrow\infty}P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)$=$0$</font>  
 
+### <font color="RoyalBlue">Example</font>: Illustration Of <font color="Red">The Law Of Large Number</font> For <font color="OrangeRed">Discrete</font> Random Variable
+>The execution of a random variable would be the event.  In this example, we'd like to know the probability of this event occurrence.  
+>If we treat $p$=$P(X\in C)$, where $C=(a,b]$ for $a<b$, we'd like to estimate this probability $p$.  The most usual way is by using <font color="DeepSkyBlue">the relative frequency</font> of $X_i\in C$ among $X_1$,$X_2$,...,$X_n$, that is the number of times $X_i$ hits $C$ divided by $n$.  
+>We then define the random variable by $Y_i$=$1, for X_i\in C;0, for X_i\not\in C$, above $X_i$ is just event, $Y_i$ just indicates whether $X_i$ hits $C$ for all $i$.  Each execution of $Y_i$ would we obtain the event $X_i$ occurrence probability, and is only determined by $X_i$, therefore, <font color="DeepPink">$Y_i$ is identically independent distributed</font>.  
+>$E\lbrack Y_i\rbrack$=$1\cdot P(X\in C)$+$0\cdot P(X\not\in C)$=$p$, for all $i$.  
+>$Var\lbrack Y_i\rbrack$=$E\lbrack (Y_i-E\lbrack Y_i\rbrack)^{2}\rbrack$=$E\lbrack Y_i^{2}\rbrack$-$E^{2}\lbrack Y_i\rbrack$=$p-p^{2}$=$p\cdot(1-p)$  
+>The <font color="DeepSkyBlue">relative frequency</font> is in this expression:  
+>$\overline {Y_n}$=$\frac {Y_1+Y_2+...+Y_n}{n}$, then  
+>$E\lbrack \overline {Y_n}\rbrack$=$\sum_{i=1}^{n}\frac {E\lbrack Y_i\rbrack}{n}$=$p$  
+>$Var\lbrack \overline {Y_n}\rbrack$=$Var\lbrack \sum_{i=1}^{n}\frac {Y_i}{n}\rbrack$=$\frac {p\cdot(1-p)}{n}$  
+>Then, <font color="DeepPink">$\lim_{n\rightarrow\infty}P(|\overline {Y_n}-p|\ge \varepsilon)$=$0$</font>, for any $\varepsilon>0$, since <font color="DeepSkyBlue">it is upper bounded to $\frac {p\cdot(1-p)}{\varepsilon^{2}\cdot n}$</font>.  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
