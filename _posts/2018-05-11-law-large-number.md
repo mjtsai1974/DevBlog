@@ -8,7 +8,7 @@ title: Introduction To The Law Of Large Number
 Based on the result of the Chebyshev's inequality, the law of large number guarantees the precision of the averaged term quantity of interest would be well approximated to the mean of the term in the sample data.  
 </p>
 
-### <font color="Red">The Chebyshev's Inequality</Font>
+### <font color="Red">The Chebyshev's Inequality</font>
 >For $X$ to be any arbitrary random variable, and for ang given $a>0$:  
 >$\;\;\;\;P(|X-E\lbrack X\rbrack|\ge a)\le \frac {1}{a^{2}}\cdot Var\lbrack X\rbrack$  
 >proof::&#10112;  
@@ -46,6 +46,13 @@ Based on the result of the Chebyshev's inequality, the law of large number guara
 
 ### <font color="RoyalBlue">Example</font>: Illustration Of <font color="Red">The Law Of Large Number</font> For <font color="OrangeRed">Continuous</font> Random Variable
 >We next have a look at the continuous case.  
+>Consider that $f$ is a PDF with respect to $F$, which is a CDF.  Choose $C=(a-h,a+h]$, where $h$ is some very small positive value.  
+>By above example equation, it holds to have:  
+>$\overline {Y_n}\approx p$  
+>=$P(X\in C)$  
+>=$\int_{a-h}^{a+h}f(x)\operatorname dx$  
+>$\approx 2\cdot h\cdot f(a)$  
+>then, $f(a)\approx\frac {\overline {Y_n}}{2\cdot h}$, which is just <font color="DeepSkyBlue">the number of times $X_i$ hits $C$ for $i<n$, divided by the length of $C$</font>. 
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
