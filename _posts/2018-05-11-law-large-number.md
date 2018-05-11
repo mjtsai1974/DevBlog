@@ -30,7 +30,7 @@ Based on the result of the Chebyshev's inequality, the law of large number guara
 >&#10114;$\lim_{n\rightarrow\infty}P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)\le\lim_{n\rightarrow\infty}\frac {\sigma^{2}}{\varepsilon^{2}\cdot n}$, <font color="DeepSkyBlue">as $n\rightarrow\infty$</font>, it holds that <font color="DeepPink">$\lim_{n\rightarrow\infty}P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)$=$0$</font>  
 
 ### <font color="RoyalBlue">Example</font>: Illustration Of <font color="Red">The Law Of Large Number</font> For <font color="OrangeRed">Discrete</font> Random Variable
-><font color="DeepSkyBlue">The execution of a random variable would be the event</font>.  In this example, we'd like to know the probability of this event occurrence.  
+><font color="DeepSkyBlue">The execution of a random variable would be the event.</font>  In this example, we'd like to know the probability of this event occurrence.  
 >&#10112;if we treat $p$=$P(X\in C)$, where $C=(a,b]$ for $a<b$, we'd like to estimate this probability $p$.  The most usual way is by using <font color="DeepSkyBlue">the relative frequency</font> of $X_i\in C$ among $X_1$,$X_2$,...,$X_n$, that is the number of times $X_i$ hits $C$ divided by $n$.  
 >&#10113;we then define the random variable by  
 >$Y_i$=$$\left\{\begin{array}{l}1, for X_i\in C\\0, for X_i\not\in C\end{array}\right.$$  
