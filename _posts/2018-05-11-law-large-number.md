@@ -18,11 +18,11 @@ Based on the result of the Chebyshev's inequality, the law of large number guara
 
 ### Theorem: <font color="Red">The Law Of Large Number</font>
 >Given random variables $X_1$,$X_2$,...,$X_n$, each is identically independent distributed with mean $\mu$ and variance $\sigma^{2}$.  Trivially, we can know that $E\lbrack \overline {X_n}\rbrack$=$\mu$, $Var\lbrack \overline {X_n}\rbrack$=$\frac {\sigma^{2}}{n}$.  
->By using the <font color="Red">Chebyshev's inequality</Font>, we have:  
->$P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \epsilon)$  
->=$P(|\overline {X_n}-\mu|\ge \epsilon)$  
->$\le \frac {Var\lbrack \overline {X_n}\rbrack}{\epsilon^{2}\cdot n}$  
->=$\frac {\sigma^{2}}{\epsilon^{2}\cdot n}$, for any $\epsilon>0$  
+>By using the <font color="Red">Chebyshev's inequality</font>, we have:  
+>$P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)$  
+>=$P(|\overline {X_n}-\mu|\ge \varepsilon)$  
+>$\le \frac {Var\lbrack \overline {X_n}\rbrack}{\varepsilon^{2}\cdot n}$  
+>=$\frac {\sigma^{2}}{\varepsilon^{2}\cdot n}$, for any $\varepsilon>0$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
