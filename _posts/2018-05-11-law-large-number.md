@@ -17,13 +17,17 @@ Based on the result of the Chebyshev's inequality, the law of large number guara
 >Or you can see it in [Chebyshev's Inequality]({{ site.github.repo }}{{ site.baseurl }}/2018/02/28/prob-bound-chebyshev-inequality/)
 
 ### Theorem: <font color="Red">The Law Of Large Number</font>
->Given random variables $X_1$,$X_2$,...,$X_n$, each is identically independent distributed with mean $\mu$ and variance $\sigma^{2}$.  Trivially, we can know that $E\lbrack \overline {X_n}\rbrack$=$\mu$, $Var\lbrack \overline {X_n}\rbrack$=$\frac {\sigma^{2}}{n}$.  
->By using the <font color="Red">Chebyshev's inequality</font>, we have:  
+>Given random variables $X_1$,$X_2$,...,$X_n$, each is <font color="OrangeRed">identically independent distributed</font> with mean $\mu$ and variance $\sigma^{2}$.  
+>$\;\;\;\;\lim_{n\rightarrow\infty}P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)$=$0$  
+>
+>proof:  
+>&#10112;trivially, we know that $E\lbrack \overline {X_n}\rbrack$=$\mu$, $Var\lbrack \overline {X_n}\rbrack$=$\frac {\sigma^{2}}{n}$.  
+>&#10113;by using the <font color="Red">Chebyshev's inequality</font>, we have:  
 >$P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)$  
 >=$P(|\overline {X_n}-\mu|\ge \varepsilon)$  
 >$\le \frac {Var\lbrack \overline {X_n}\rbrack}{\varepsilon^{2}\cdot n}$  
 >=$\frac {\sigma^{2}}{\varepsilon^{2}\cdot n}$, for any $\varepsilon>0$  
->$\lim_{n\rightarrow\infty}P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)\le\lim_{n\rightarrow\infty}\frac {\sigma^{2}}{\varepsilon^{2}\cdot n}$, as $n\rightarrow\infty$, we will have it hold that $\lim_{n\rightarrow\infty}P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)$=$0$.  
+>&#10114;$\lim_{n\rightarrow\infty}P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)\le\lim_{n\rightarrow\infty}\frac {\sigma^{2}}{\varepsilon^{2}\cdot n}$, <font color="DeepSkyBlue">as $n\rightarrow\infty$</font>, it holds that <font color="DeepPink">$\lim_{n\rightarrow\infty}P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \varepsilon)$=$0$</font>  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
