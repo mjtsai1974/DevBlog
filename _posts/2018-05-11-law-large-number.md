@@ -44,6 +44,9 @@ Based on the result of the Chebyshev's inequality, the law of large number guara
 >$Var\lbrack \overline {Y_n}\rbrack$=$Var\lbrack \sum_{i=1}^{n}\frac {Y_i}{n}\rbrack$=$\frac {p\cdot(1-p)}{n}$  
 >&#10116;then, <font color="DeepPink">$\lim_{n\rightarrow\infty}P(|\overline {Y_n}-p|\ge \varepsilon)$=$0$</font>, for any $\varepsilon>0$, since <font color="DeepSkyBlue">it is upper bounded to $\frac {p\cdot(1-p)}{\varepsilon^{2}\cdot n}$</font>.  
 
+### <font color="RoyalBlue">Example</font>: Illustration Of <font color="Red">The Law Of Large Number</font> For <font color="OrangeRed">Continuous</font> Random Variable
+>We next have a look at the continuous case.  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
