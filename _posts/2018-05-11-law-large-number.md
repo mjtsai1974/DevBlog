@@ -8,13 +8,21 @@ title: Introduction To The Law Of Large Number
 Based on the result of the Chebyshev's inequality, the law of large number guarantees the precision of the averaged term quantity of interest would be well approximated to the mean of the term in the sample data.  
 </p>
 
-### The Chebyshev's Inequality
+### <font color="Red">The Chebyshev's Inequality</Font>
 >For $X$ to be any arbitrary random variable, and for ang given $a>0$:  
 >$\;\;\;\;P(|X-E\lbrack X\rbrack|\ge a)\le \frac {1}{a^{2}}\cdot Var\lbrack X\rbrack$  
 >proof::&#10112;  
 >Please go to the article [Hoeffding Inequality v.s. Chebyshev's Inequality]({{ site.github.repo }}{{ site.baseurl }}/2017/10/24/prereq-hoeffding-vs-law-large-number/)  
 >proof::&#10113;  
 >Or you can see it in [Chebyshev's Inequality]({{ site.github.repo }}{{ site.baseurl }}/2018/02/28/prob-bound-chebyshev-inequality/)
+
+### Theorem: <font color="Red">The Law Of Large Number</font>
+>Given random variables $X_1$,$X_2$,...,$X_n$, each is identically independent distributed with mean $\mu$ and variance $\sigma^{2}$.  Trivially, we can know that $E\lbrack \overline {X_n}\rbrack$=$\mu$, $Var\lbrack \overline {X_n}\rbrack$=$\frac {\sigma^{2}}{n}$.  
+>By using the <font color="Red">Chebyshev's inequality</Font>, we have:  
+>$P(|\overline {X_n}-E\lbrack \overline {X_n}\rbrack|\ge \epsilon)$  
+>=$P(|\overline {X_n}-\mu|\ge \epsilon)$  
+>$\le \frac {Var\lbrack \overline {X_n}\rbrack}{\epsilon^{2}\cdot n}$  
+>=$\frac {\sigma^{2}}{\epsilon^{2}\cdot n}$, for any $\epsilon>0$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
