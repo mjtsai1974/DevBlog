@@ -8,18 +8,19 @@ title: Introduction To The Central Limit Theorem
 <font color="Red">The central limit theorem</font> is a <font color="DeepSkyBlue">refinement of the law of large number</font>.  For a large number of random variables $X_1$,$X_2$,...,$X_n$, with <font color="DeepSkyBlue">converged</font> expect value and <font color="DeepSkyBlue">finite</font> variance, the <font color="DeepPink">standardization process would settle down $\overline {X_n}$ in a normal distribution</font>, irrelevant to the original distribution these $X_i$ is belonging to.
 </p>
 
-### Standardizing The Average
+### <font color="Red">Standardizing</font> The Average
 >Given a large number of random variables $X_i$ belonging to the same sample, with the same expect value $\mu$ and variance $\sigma^{2}$, <font color="OrangeRed">the law of large number guarantees the average would approximate to $\mu$</font>.  
 >
 >Here comes the question as <font color="OrangeRed">what is the distribution of $\overline {X_n}$?</font>  Since each random variables $X_i$ has the same $\mu$ and $\sigma^{2}$, it would be a good idea <font color="DeepSkyBlue">to stablize the expect value and variance of $\overline {X_n}$</font>.  
 >
 >We already know $E\lbrack \overline{X_n}\rbrack$=$\mu$ and $Var\lbrack \overline{X_n}\rbrack$=$\frac {\sigma^{2}}{n}$.  <font color="OrangeRed">What would be the acceptable expect value with regards to the stablized variance?</font>  
->
 >&#10112;by $E\lbrack \overline{X_n}-\mu\rbrack$=$0$, we can <font color="DeepSkyBlue">zerolize</font> the expect value, to be believed the smallest value.  
 >&#10113;next to make the variance stable, suppose there exists any $c>0$ such that $Var\lbrack c\cdot\overline{X_n}\rbrack$ could be well stablized.  If we can <font color="DeepSkyBlue">factor out whatever the variance residing in the distribution of $\overline {X_n}$</font> itself, then there will be a hope.  For unknown distribution, this is quiet difficult.  
 >&#10114;but, we would make it easy by taking $c=\frac {\sqrt n}{\sigma}$, the mathematic thing guarantees the purity and balance of the variance, since $Var\lbrack \frac {\sqrt n}{\sigma}\cdot\overline{X_n}\rbrack$=$\frac {n}{\sigma^{2}}\cdot Var\lbrack \overline{X_n}\rbrack$=$1$  
->&#10115;$Var\lbrack \frac {\sqrt n}{\sigma}\cdot\(overline{X_n}-\mu)\rbrack$  
+>&#10115;$Var\lbrack \frac {\sqrt n}{\sigma}\cdot(\overline{X_n}-\mu)\rbrack$  
 >=$Var\lbrack \frac {\sqrt n}{\sigma}\cdot\overline{X_n}\rbrack$, we can further stablize the variance in a <font color="DeepSkyBlue">centered average</font> format.  
+>
+>Above procedure is the <font color="Red">standardization</font> or the <font color="Red">standardize process</font>.
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
