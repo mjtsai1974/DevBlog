@@ -38,12 +38,12 @@ title: Introduction To The Central Limit Theorem
 >$P(\overline {X_n}\ge 2.06)$  
 >=$P(\overline {X_n}-\mu\ge 2.06-\mu)$  
 >=$P(\frac {\overline {X_n}-\mu}{\sigma/\sqrt {n}}\ge \frac {2.06-\mu}{\sigma/\sqrt {n}})$  
->=$P(\frac {\overline {X_500}-\mu}{\sigma/\sqrt {500}}\ge \frac {2.06-2}{\sqrt {2}/\sqrt {500}})$...$\mu$=$2$,$\sigma$=$\sqrt {2}$  
->=$P(Z_500\ge 0.95)$  
->=1-$P(Z_500<0.95)$  
+>=$P(\frac {\overline {X_{500}}-\mu}{\sigma/\sqrt {500}}\ge \frac {2.06-2}{\sqrt {2}/\sqrt {500}})$...$\mu$=$2$,$\sigma$=$\sqrt {2}$  
+>=$P(Z_{500}\ge 0.95)$  
+>=1-$P(Z_{500}<0.95)$  
 >=1-$ɸ(0.95)$  
->$\approx 0.1711$, it indicates that there exists probability of $0.1711$ that the average is $0.06$ larger than $2$, the expect value of the real thing.  
->Since $0.1711$ is quiet a large probability, it is rather weak to say that $2.06$ is an abnormal experimental result of average.  
+>$\approx 0.1711$, <font color="DeepSkyBlue">it indicates that there exists probability of $0.1711$ that the average is $0.06$ larger than $2$</font>, the expect value of the real thing.  
+>Since $0.1711$ is quiet a large probability, it is rather weak to say that $2.06$ is an abnormal experimental result of average.  <font color="DeepPink">$2.06$ would thus be plausible.</font>  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
