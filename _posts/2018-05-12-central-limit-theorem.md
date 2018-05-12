@@ -30,6 +30,18 @@ title: Introduction To The Central Limit Theorem
 ><font color="DeepPink">$Z_n$ itself is the standard normal distribution, $N(0,1)$</font>, for any $a$, we have $F_{Z_n}(a)$=$ɸ(a)$.  
 >
 ><font color="DeepSkyBlue">We treat $Z_n$ as the standardized $\overline {X_n}$.</font>  
+
+### <font color="RoyalBlue">Example</font>: Illustration Of <font color="Red">The Central Limit Theorem</font>
+>Suppose you are given a random sample of size $500$ containing random variables $X_1$,$X_2$,...,$X_500$, all of them coming from the same <font color="OrangeRed">unknown</font> distribution with each having expect value $2$ and variance also $2$.  
+>After completing all the $500$ runs of test, we get the experiement average of $\overline {X_n}$=$2.06$, do you think it a plausible result?  
+>To answer this question, we have to compute the probability of the case that $\overline {X_n}$ is greater than or equal to $2.06$.  
+>$P(\overline {X_n}\ge 2.06)$  
+>=$P(\overline {X_n}-\mu\ge 2.06-\mu)$  
+>=$P(\frac {\overline {X_n}-\mu}{\sigma/\sqrt {n}}\ge \frac {2.06-\mu}{\sigma/\sqrt {n}})$  
+>=$P(\frac {\overline {X_n}-\mu}{\sigma/\sqrt {n}}\ge \frac {2.06-2}{\sqrt {2}/\sqrt {500}})$...$\mu$=$2$,$\sigma$=$\sqrt {2}$  
+>=$P(\frac {\overline {X_n}-\mu}{\sigma/\sqrt {n}}\ge 0.95)$  
+>=1-$P(\frac {\overline {X_n}-\mu}{\sigma/\sqrt {n}}<0.95)$  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
