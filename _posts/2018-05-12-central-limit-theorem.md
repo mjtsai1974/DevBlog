@@ -23,7 +23,9 @@ title: Introduction To The Central Limit Theorem
 >Above procedure is the <font color="Red">standardization</font> or the <font color="Red">standardize process</font>.
 
 ### <font color="Red">The Central Limit Theorem</font>
->Given $X_1$,$X_2$,...,$X_n$ are identically independent distributed random variables, each has the same expect value $\mu$ and variance $\sigma^{2}$, which are all finite.  
+>Given $X_1$,$X_2$,...,$X_n$ are <font color="DeepSkyBlue">identically independent distributed</font> random variables, each has the same expect value $\mu$ and variance $\sigma^{2}$, which are all <font color="OrangeRed">finite</font>.  
+>For any $n\ge 1$, let $Z_n$ be any random variable, defined by <font color="DeepSkyBlue">$Z_n$=$\frac {\overline {X_n}-\mu}{\sigma/n}$</font>;  
+>then, $E\lbrack Z_n\rbrack$=$0$ and $Var\lbrack X\rbrack$=$1$, <font color="DeepPink">$Z_n$ itself is the standard normal distribution</font>, for any $a$, we have $F_{Z_n}(a)$=$ɸ(a)$.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
