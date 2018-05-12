@@ -86,7 +86,7 @@ the following:
 * [Exponential versus Poisson Distribution::mjtsai1974]({{ site.github.repo }}{{ site.baseurl }}/2018/04/25/exponential-vs-poisson/)
 * [The relation in between The Normal, F, Chi-Square, t, Exponential, Poisson Distributions]({{ site.github.repo }}{{ site.baseurl }}/2018/05/03/dist-relationship/) 
 * [The Law Of Large Numbers]({{ site.github.repo }}{{ site.baseurl }}/2018/05/11/law-large-number/)
-* The Central Limit Theorem
+* [The Central Limit Theorem]({{ site.github.repo }}{{ site.baseurl }}/2018/05/12/central-limit-theorem/)
 * Unbiased Estimator Of A Random Sample
 * Univariate Regression Model
 * Multivariate Regression Model
