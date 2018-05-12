@@ -85,7 +85,7 @@ the following:
 * [Introduction To The Poisson Process Inter-arrival Times]({{ site.github.repo }}{{ site.baseurl }}/2018/04/23/intro-poisson-dist-interarrival/)
 * [Exponential versus Poisson Distribution::mjtsai1974]({{ site.github.repo }}{{ site.baseurl }}/2018/04/25/exponential-vs-poisson/)
 * [The relation in between The Normal, F, Chi-Square, t, Exponential, Poisson Distributions]({{ site.github.repo }}{{ site.baseurl }}/2018/05/03/dist-relationship/) 
-* The Law Of Large Numbers
+* [The Law Of Large Numbers]({{ site.github.repo }}{{ site.baseurl }}/2018/05/11/law-large-number/)
 * The Central Limit Theorem
 * Unbiased Estimator Of A Random Sample
 * Univariate Regression Model
