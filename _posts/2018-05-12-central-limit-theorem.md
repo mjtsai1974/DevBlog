@@ -22,6 +22,9 @@ title: Introduction To The Central Limit Theorem
 >
 >Above procedure is the <font color="Red">standardization</font> or the <font color="Red">standardize process</font>.
 
+### <font color="Red">The Central Limit Theorem</font>
+>Given $X_1$,$X_2$,...,$X_n$ are identically independent distributed random variables, each has the same expect value $\mu$ and variance $\sigma^{2}$, which are all finite.  
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
