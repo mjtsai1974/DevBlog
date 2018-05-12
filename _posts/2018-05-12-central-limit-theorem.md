@@ -13,12 +13,13 @@ title: Introduction To The Central Limit Theorem
 >
 >Here comes the question as <font color="OrangeRed">what is the distribution of $\overline {X_n}$?</font>  Since each random variables $X_i$ has the same $\mu$ and $\sigma^{2}$, it would be a good idea <font color="DeepSkyBlue">to stablize the expect value and variance of $\overline {X_n}$</font>.  
 >
-><font color="OrangeRed">What would be the acceptable expect value with regards to the stablized variance?</font>  
+>We already know $E\lbrack \overline{X_n}\rbrack$=$\mu$ and $Var\lbrack \overline{X_n}\rbrack$=$\frac {\sigma^{2}}{n}$.  <font color="OrangeRed">What would be the acceptable expect value with regards to the stablized variance?</font>  
 >
->We already know $E\lbrack \overline{X_n}\rbrack$=$\mu$ and $Var\lbrack \overline{X_n}\rbrack$=$\frac {\sigma^{2}}{n}$.  
->By $E\lbrack \overline{X_n}-\mu\rbrack$=$0$, we can <font color="DeepSkyBlue">zerolize</font> the expect value, to be believed the smallest value.  
->Next to make the variance stable, suppose there exists any $c>0$ such that $Var\lbrack c\cdot\overline{X_n}\rbrack$ could be well stablized.  If we can factor out whatever the variance residing in the distribution of $\overline {X_n}$ itself, then there will be a hope.  For unknown distribution, this is quiet difficult.  
->But, we would make it easy by taking $c=\frac {\sqrt n}{\sigma}$, the mathematic thing guarantees the purity and balance of the variance, since $Var\lbrack \frac {\sqrt n}{\sigma}\cdot\overline{X_n}\rbrack$=$\frac {n}{\sigma^{2}}\cdot Var\lbrack \overline{X_n}\rbrack$=$1$  
+>&#10112;by $E\lbrack \overline{X_n}-\mu\rbrack$=$0$, we can <font color="DeepSkyBlue">zerolize</font> the expect value, to be believed the smallest value.  
+>&#10113;next to make the variance stable, suppose there exists any $c>0$ such that $Var\lbrack c\cdot\overline{X_n}\rbrack$ could be well stablized.  If we can <font color="DeepSkyBlue">factor out whatever the variance residing in the distribution of $\overline {X_n}$</font> itself, then there will be a hope.  For unknown distribution, this is quiet difficult.  
+>&#10114;but, we would make it easy by taking $c=\frac {\sqrt n}{\sigma}$, the mathematic thing guarantees the purity and balance of the variance, since $Var\lbrack \frac {\sqrt n}{\sigma}\cdot\overline{X_n}\rbrack$=$\frac {n}{\sigma^{2}}\cdot Var\lbrack \overline{X_n}\rbrack$=$1$  
+>&#10115;$Var\lbrack \frac {\sqrt n}{\sigma}\cdot\(overline{X_n}-\mu)\rbrack$  
+>=$Var\lbrack \frac {\sqrt n}{\sigma}\cdot\overline{X_n}\rbrack$, we can further stablize the variance in a <font color="DeepSkyBlue">centered average</font> format.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
