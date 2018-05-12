@@ -28,7 +28,8 @@ title: Introduction To The Central Limit Theorem
 ><font color="DeepSkyBlue">$\;\;\;\;Z_n$=$\frac {\overline {X_n}-\mu}{\sigma/\sqrt {n}}$;</font>  
 >then, $E\lbrack Z_n\rbrack$=$0$ and $Var\lbrack Z_n\rbrack$=$1$.  
 ><font color="DeepPink">$Z_n$ itself is the standard normal distribution, $N(0,1)$</font>, for any $a$, we have $F_{Z_n}(a)$=$ɸ(a)$.  
-
+>
+><font color="DeepSkyBlue">We treat $Z_n$ as the standardized $\overline {X_n}$.</font>  
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
