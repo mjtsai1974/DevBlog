@@ -12,7 +12,7 @@ title: Unbiased Estimator And Random Sample
 >&#10112;a random sample is <font color="DeepSkyBlue">a collection of random variables</font>, say $X_1$,$X_2$,...,$X_n$, they have <font color="OrangeRed">the same probability distribution</font> and are assumed to be <font color="OrangeRed">mutually independent</font>.  Those random variables thus constitute a random sample of <font color="DeepSkyBlue">population</font>.  
 >&#10113;<font color="DeepSkyBlue">sampling is the behavior of taking samples from a population</font>, it must be representative to the population from which it is obtained.  
 >&#10114;whereas, <font color="DeepSkyBlue">datasets</font> are usually modelled as <font color="DeepSkyBlue">the realization of random samples</font>, $X_1$,...,$X_n$.  
->&#10115;<font color="red">sample statistic</font> is an object, which depends on the random samples, $X_1$,...,$X_n$.  To be more formally, the sample average $\overline {X_n}$=$\frac {X_1+X_2+...+X_n}{n}$ is just one of the commonly referenced <font color="DeepSkyBlue">sample statistic</font>.  
+>&#10115;<font color="red">sample statistic</font> is an object, which depends on the random samples, $X_1$,...,$X_n$.  To be more formally, the sample average $\overline {X_n}$=$\frac {X_1+X_2+...+X_n}{n}$ is just one of the commonly referenced <font color="red">sample statistic</font>.  
 >
 >You can also <font color="DeepSkyBlue">take one distinct random random variable $X$ as a random sample</font>; although we often expect multiple random variables in a set of random sample.  
 
