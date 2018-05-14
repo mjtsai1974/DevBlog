@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction To The Law Of Large Number
+title: The Law Of Large Number
 ---
 
 ## Prologue To <font color="Red">The Law Of Large Number</font>

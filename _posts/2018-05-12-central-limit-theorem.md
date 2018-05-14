@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction To The Central Limit Theorem
+title: The Central Limit Theorem
 ---
 
 ## Prologue To <font color="Red">The Central Limit Theorem</font>
