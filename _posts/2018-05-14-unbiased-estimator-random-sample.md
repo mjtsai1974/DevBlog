@@ -22,6 +22,9 @@ title: Unbiased Estimator And Random Sample
 >
 ><font color="DeepPink">The value of $\overline {X_n}$ is the estimate, $\frac {X_1+X_2+...+X_n}{n}$ is just the estimator.</font>  
 
+### <font color="Red">Unbiased Estimator</font> And <font color="DeepSkyBlue">Sampling Distribution</font>
+>
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
