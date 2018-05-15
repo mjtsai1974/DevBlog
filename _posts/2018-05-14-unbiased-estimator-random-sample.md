@@ -86,9 +86,10 @@ title: Unbiased Estimator And Random Sample
 >&#10113; it implies that $E\lbrack S_n\rbrack$<$\sigma$, <font color="RosyBrown">the unbiased estimator doesn't always hold</font>, even if we are given that $S_n^2$ is an unbiased estimator of $\sigma^{2}$.  <font color="RosyBrown">In this case, $E\lbrack S_n\rbrack$ is not an unbiased estimator for $\sigma$</font>.  
 >
 ><font color="DeepSkyBlue">[2]</font>
-><font color="Black">Suppose that we have $g(X)$=$e^{-X}$, can we take $e^{-\overline {X_n}}$ for the unbiased estimator of average of function g, say $\mu$=$E\lbrack\overline {X_n}\rbrack$?</font>  
+><font color="Black">Suppose that we have $g(X)$=$e^{-X}$ for the <font color="OrangeRed">zero arrival probability</font>, $p_0$=$e^{-\mu}$, in Pois($\mu$) distribution, say $\mu$=$E\lbrack\overline {X_n}\rbrack$, can we take $e^{-\overline {X_n}}$ for the unbiased estimator of zero arrival probability?</font>  
 >&#10112;begin from Jensen's inequality,  
->$E\lbrack e^{-\overline {X_n}}\rbrack$=$E\lbrack g(\overline {X_n})\rbrack$>$g(E\lbrack \overline {X_n}\rbrack)$=$e^{-E\lbrack\overline {X_n}\rbrack}$  
+>$E\lbrack e^{-\overline {X_n}}\rbrack$=$E\lbrack g(\overline {X_n})\rbrack$>$g(E\lbrack \overline {X_n}\rbrack)$=$e^{-E\lbrack\overline {X_n}\rbrack}$=$e^{\mu}$  
+>&#10113;hence, <font color="RosyBrown">$e^{-\overline {X_n}}$ is <font color="OrangeRed">not</font> an unbiased estimator for the zero arrival probability</font>.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
