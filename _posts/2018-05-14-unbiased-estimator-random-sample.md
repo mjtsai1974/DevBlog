@@ -66,6 +66,9 @@ title: Unbiased Estimator And Random Sample
 >=$E\lbrack \sum_{i=1}^{n}(X_i-\mu)^{2}\rbrack$-$n\cdot E\lbrack (\overline {X_n}-E\lbrack \overline {X_n}\rbrack)^{2}\rbrack$  
 >=$E\lbrack \sum_{i=1}^{n}(X_i-\mu)^{2}\rbrack$-$n\cdot Var\lbrack \overline {X_n}\rbrack$  
 >=$E\lbrack \sum_{i=1}^{n}(X_i-\mu)^{2}\rbrack$-$n\cdot \frac {\sigma^{2}}{n}$  
+>=$E\lbrack \sum_{i=1}^{n}(X_i-\mu)^{2}\rbrack$-$\sigma^{2}$  
+>=$\sum_{i=1}^{n}E\lbrack (X_i-\mu)^{2}\rbrack$-$\sigma^{2}$  
+>=$\sum_{i=1}^{n}E\lbrack (X_i-E\lbrack X_i\rbrack)^{2}\rbrack$-$\sigma^{2}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
