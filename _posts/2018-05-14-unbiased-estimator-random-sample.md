@@ -75,6 +75,11 @@ title: Unbiased Estimator And Random Sample
 >&#10115;from $E\lbrack \sum_{i=1}^{n}(X_i-\overline {X_n})^{2}\rbrack$=$(n-1)\cdot\sigma^{2}$,  
 >we can have <font color="DeepSkyBlue">$E\lbrack \sum_{i=1}^{n}\frac {(X_i-\overline {X_n})^{2}}{n-1}\rbrack$=$\sigma^{2}$</font>  
 
+### <font color="RoyalBlue">Example</font>: <font color="Red">Unbiased Estimator Doesn't Always Hold</font>
+>This article has shown the unbiased estimator of sample expectation and variance.  Cautions must be made that the unbiased estimator doesn't always hold.  
+>The mathematics thing can reveal it explicitly by means of the [Jensen's inequality]({{ site.github.repo }}{{ site.baseurl }}/2018/03/02/prob-bound-jensen-inequality/), which claims that <font color="DeepPink">$g(E\lbrack X\rbrack)$<$E\lbrack g(X)\rbrack$</font>, where $g(X)$ is a <font color="OrangeRed">convex</font> function.  
+>
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
