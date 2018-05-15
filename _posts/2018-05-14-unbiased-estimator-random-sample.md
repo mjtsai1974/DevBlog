@@ -89,7 +89,9 @@ title: Unbiased Estimator And Random Sample
 ><font color="Black">Suppose that we have $g(X)$=$e^{-X}$ for the <font color="OrangeRed">zero arrival probability</font>, $p_0$=$e^{-\mu}$, in Pois($\mu$) distribution, say $\mu$=$E\lbrack\overline {X_n}\rbrack$, can we take $e^{-\overline {X_n}}$ for the unbiased estimator of zero arrival probability?</font>  
 >&#10112;begin from Jensen's inequality,  
 >$E\lbrack e^{-\overline {X_n}}\rbrack$=$E\lbrack g(\overline {X_n})\rbrack$>$g(E\lbrack \overline {X_n}\rbrack)$=$e^{-E\lbrack\overline {X_n}\rbrack}$=$e^{\mu}$  
->&#10113;hence, <font color="RosyBrown">$e^{-\overline {X_n}}$ is <font color="OrangeRed">not</font> an unbiased estimator for the zero arrival probability</font>.  
+>&#10113;hence, <font color="RosyBrown">$e^{-\overline {X_n}}$ is <font color="OrangeRed">not</font> an unbiased estimator for the zero arrival probability</font>.
+>  
+>Suggestion is to be made to <font color="DeepSkyBlue">use $\overline {X_n}$ to be the unbiased estimator of $\mu$</font>, as <font color="OrangeRed">$n\rightarrow\infty$</font>, the law of large numbers would guarantee $E\lbrack\overline {X_n}\rbrack$=$\mu$, finally, by using $e^{E\lbrack\overline {X_n}\rbrack}$ to approximate the zero arrival probability.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
