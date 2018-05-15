@@ -80,11 +80,15 @@ title: Unbiased Estimator And Random Sample
 >The mathematics thing can reveal it explicitly by means of the [Jensen's inequality]({{ site.github.repo }}{{ site.baseurl }}/2018/03/02/prob-bound-jensen-inequality/), which claims that <font color="DeepPink">$g(E\lbrack X\rbrack)$<$E\lbrack g(X)\rbrack$</font>, where $g(X)$ is a <font color="OrangeRed">convex</font> function.  
 >
 ><font color="DeepSkyBlue">[1]</font>
-><font color="Black">Suppose that we have $g(X^{2})$=$X^{2}$, which is strictly a convex function.</font>  
+><font color="Black">Suppose that we have $g(X)$=$X^{2}$, which is strictly a convex function.</font>  
 >&#10112; take $X$=$S_n$, then  
 >$g(E\lbrack X\rbrack)$=$g(E\lbrack S_n\rbrack)$=$E^{2}\lbrack S_n\rbrack$<$E\lbrack g(S_n)\rbrack$=$E\lbrack S_n^{2}\rbrack$=$\sigma^{2}$  
->&#10113; it implies that $E\lbrack S_n\rbrack$<$\sigma^{2}$, <font color="RosyBrown">the unbiased estimator doesn't always hold</font>.    
-
+>&#10113; it implies that $E\lbrack S_n\rbrack$<$\sigma$, <font color="RosyBrown">the unbiased estimator doesn't always hold</font>, even if we are given that $S_n^2$ is an unbiased estimator of $\sigma^{2}$.  <font color="RosyBrown">In this case, $E\lbrack S_n\rbrack$ is not an unbiased estimator for $\sigma$</font>.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="Black">Suppose that we have $g(X)$=$e^{-X}$, can we take $e^{-\overline {X_n}}$ for the unbiased estimator of average of function g, say $\mu$=$E\lbrack\overline {X_n}\rbrack$?</font>  
+>&#10112;begin from Jensen's inequality,  
+>$E\lbrack e^{-\overline {X_n}}\rbrack$=$E\lbrack g(\overline {X_n})\rbrack$>$g(E\lbrack \overline {X_n}\rbrack)$=$e^{-E\lbrack\overline {X_n}\rbrack}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
