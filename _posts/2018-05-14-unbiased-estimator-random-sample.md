@@ -91,7 +91,7 @@ title: Unbiased Estimator And Random Sample
 >$E\lbrack e^{-\overline {X_n}}\rbrack$=$E\lbrack g(\overline {X_n})\rbrack$>$g(E\lbrack \overline {X_n}\rbrack)$=$e^{-E\lbrack\overline {X_n}\rbrack}$=$e^{\mu}$  
 >&#10113;hence, <font color="RosyBrown">$e^{-\overline {X_n}}$ is <font color="OrangeRed">not</font> an unbiased estimator for the zero arrival probability</font>.
 >  
->Suggestion is to be made to <font color="DeepSkyBlue">use $\overline {X_n}$ to be the unbiased estimator of $\mu$</font>, as <font color="OrangeRed">$n\rightarrow\infty$</font>, the law of large numbers would guarantee $E\lbrack\overline {X_n}\rbrack$=$\mu$, finally, by using $e^{E\lbrack\overline {X_n}\rbrack}$ to approximate the zero arrival probability.  
+>Suggestion is to be made to <font color="DeepSkyBlue">use $\overline {X_n}$ to be the unbiased estimator of $\mu$</font>, as <font color="DeepPink">$n\rightarrow\infty$, the law of large numbers would guarantee $E\lbrack\overline {X_n}\rbrack$=$\mu$</font>, finally, <font color="DeepSkyBlue">by using $e^{E\lbrack\overline {X_n}\rbrack}$ to approximate the zero arrival probability</font>.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
