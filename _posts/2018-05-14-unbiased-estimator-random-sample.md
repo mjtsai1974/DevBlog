@@ -76,9 +76,15 @@ title: Unbiased Estimator And Random Sample
 >we can have <font color="DeepSkyBlue">$E\lbrack \sum_{i=1}^{n}\frac {(X_i-\overline {X_n})^{2}}{n-1}\rbrack$=$\sigma^{2}$</font>  
 
 ### <font color="RoyalBlue">Example</font>: <font color="Red">Unbiased Estimator Doesn't Always Hold</font>
->This article has shown the unbiased estimator of sample expectation and variance.  Cautions must be made that the unbiased estimator doesn't always hold.  
+>This article has shown the unbiased estimator of sample expectation and variance.  Cautions must be made that <font color="RosyBrown">the unbiased estimator doesn't always hold</font>.  
 >The mathematics thing can reveal it explicitly by means of the [Jensen's inequality]({{ site.github.repo }}{{ site.baseurl }}/2018/03/02/prob-bound-jensen-inequality/), which claims that <font color="DeepPink">$g(E\lbrack X\rbrack)$<$E\lbrack g(X)\rbrack$</font>, where $g(X)$ is a <font color="OrangeRed">convex</font> function.  
 >
+><font color="DeepSkyBlue">[1]</font>
+><font color="Black">Suppose that we have $g(X^{2})$=$X^{2}$, which is strictly a convex function.</font>  
+>&#10112; take $X$=$S_n$, then  
+>$g(E\lbrack X\rbrack)$=$g(E\lbrack S_n\rbrack)$=$E^{2}\lbrack S_n\rbrack$<$E\lbrack g(S_n)\rbrack$=$E\lbrack S_n^{2}\rbrack$=$\sigma^{2}$  
+>&#10113; it implies that $E\lbrack S_n\rbrack$<$\sigma^{2}$, <font color="RosyBrown">the unbiased estimator doesn't always hold</font>.    
+
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
