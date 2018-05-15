@@ -26,8 +26,18 @@ title: Unbiased Estimator And Random Sample
 >&#10112;assume <font color="Red">the random variable $T$ is an estimator</font> based on random sample consisting of $X_1$,$X_2$,...,$X_n$ for the quantity of features of interest, <font color="DeepSkyBlue">the distribution of the estimator $T$ is the sampling distribution of $t$</font>.  
 >&#10113;the random variable $T$ is an <font color="Red">unbiased estimator</font> of the feature, denoted it as $\theta$, if and only if <font color="DeepSkyBlue">$E\lbrack T\rbrack$=$\theta$</font>, for any value of $\theta$.  
 
-### <font color="Red">Unbiased Estimator</font> For Expectation
+### <font color="Red">Unbiased Estimator</font> For <font color="DeepSkyBlue">Sample Expectation</font>
+>This section focus on the quantity of interest, the expect value of random sample, irrelevant of the original probabilistic distribution of the random sample it is.  
+>$\overline {X_n}$=$\frac {X_1+X_2+...+X_n}{n}$ is an unbiased estimator for the sample expectation, given that the sample is consisting of $X_1$,...,$X_n$, with $\mu$ and $\sigma^2$ as its finite expectation and variance.  
 >
+>proof:  
+>$E\lbrack \overline {X_n}\rbrack$  
+>=$E\lbrack \frac {X_1+X_2+...+X_n}{n}\rbrack$  
+>=$\sum_{i=1}^{n}\frac {E\lbrack X_i\rbrack}{n}$  
+>=$\sum_{i=1}^{n}\frac {\mu}{n}$  
+>=$\mu$  
+>
+>This proof is rather trivial.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
