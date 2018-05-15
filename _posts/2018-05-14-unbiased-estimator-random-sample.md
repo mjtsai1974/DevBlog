@@ -18,11 +18,15 @@ title: Unbiased Estimator And Random Sample
 
 ### <font color="Red">Estimate</font> versus <font color="Red">Estimator</font>
 >&#10112;the <font color="Red">estimate</font> is <font color="DeepSkyBlue">the pure quantity obtained by means of the estimator</font>.  
->&#10112;the <font color="Red">estimator</font> is an <font color="DeepSkyBlue">artificial designed operation by taking parameters constituting to a model distribution</font>.  
+>&#10112;the <font color="Red">estimator</font> is an <font color="DeepSkyBlue">artificial designed random variable by taking parameters constituting to a model distribution</font>.  
 >
 ><font color="DeepPink">The value of $\overline {X_n}$ is the estimate, $\frac {X_1+X_2+...+X_n}{n}$ is just the estimator.</font>  
 
 ### <font color="Red">Unbiased Estimator</font> And <font color="DeepSkyBlue">Sampling Distribution</font>
+>&#10112;assume <font color="Red">the random variable $T$ is an estimator</font> based on random sample consisting of $X_1$,$X_2$,...,$X_n$ for the quantity of features of interest, <font color="DeepSkyBlue">the distribution of the estimator $T$ is the sampling distribution of $t$</font>.  
+>&#10113;the random variable $T$ is an <font color="Red">unbiased estimator</font> of the feature, denoted it as $\theta$, if and only if <font color="DeepSkyBlue">$E\lbrack T\rbrack$=$\theta$</font>, for any value of $\theta$.  
+
+### <font color="Red">Unbiased Estimator</font> For Expectation
 >
 
 <!-- Γ -->
