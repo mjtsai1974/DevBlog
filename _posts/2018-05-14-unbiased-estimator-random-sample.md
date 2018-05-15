@@ -27,8 +27,8 @@ title: Unbiased Estimator And Random Sample
 >&#10113;the random variable $T$ is an <font color="Red">unbiased estimator</font> of the feature, denoted it as $\theta$, if and only if <font color="DeepSkyBlue">$E\lbrack T\rbrack$=$\theta$</font>, for any value of $\theta$.  
 
 ### <font color="Red">Unbiased Estimator</font> For <font color="DeepSkyBlue">Sample Expectation</font>
->This section focus on the quantity of interest, the expect value of random sample, irrelevant of the original probabilistic distribution of the random sample it is.  
->$\overline {X_n}$=$\frac {X_1+X_2+...+X_n}{n}$ is an unbiased estimator for the sample expectation, given that the sample is consisting of $X_1$,...,$X_n$, with $\mu$ and $\sigma^2$ as its finite expectation and variance.  
+>This section focus on the quantity of interest, the expect value of random sample.  
+><font color="OrangeRed">Irrelevant of the original probabilistic distribution</font> of the random sample it is, <font color="DeepSkyBlue">$\overline {X_n}$=$\frac {X_1+X_2+...+X_n}{n}$ is an unbiased estimator for the sample expectation</font>, given that the sample is consisting of $X_1$,...,$X_n$, with $\mu$ and $\sigma^2$ as its finite expectation and variance.  
 >
 >proof:  
 >$E\lbrack \overline {X_n}\rbrack$  
