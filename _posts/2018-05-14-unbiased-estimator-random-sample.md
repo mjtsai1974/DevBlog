@@ -41,7 +41,7 @@ title: Unbiased Estimator And Random Sample
 
 ### <font color="Red">Unbiased Estimator</font> For <font color="DeepSkyBlue">Sample Variance</font>
 >This section focus on the quantity of interest, the variance of random sample.  
-><font color="OrangeRed">Irrelevant of the original probabilistic distribution</font> of the random sample, <font color="DeepSkyBlue">$S_n^{2}$=$\frac {1}{n-1}\cdot\sum_{i=1}^{n}(X_i-\overline {X_n})^{2}$ is an unbiased estimator for the sample variance</font>, given that the sample is consisting of $X_1$,...,$X_n$, with $\mu$ and $\sigma^2$ as its <font color="OrangeRed">finite</font> expectation and variance.  
+><font color="OrangeRed">Irrelevant of the original probabilistic distribution</font> of the random sample, <font color="DeepSkyBlue">$S_n^{2}$=$\sum_{i=1}^{n}\frac {(X_i-\overline {X_n})^{2}}{n-1}$ is an unbiased estimator for the sample variance</font>, given that the sample is consisting of $X_1$,...,$X_n$, with $\mu$ and $\sigma^2$ as its <font color="OrangeRed">finite</font> expectation and variance.  
 >
 >proof:  
 >&#10112;we begin by the most basic definition of variance.  
@@ -72,9 +72,8 @@ title: Unbiased Estimator And Random Sample
 >; where $E\lbrack X_i\rbrack$=$\mu$,$E\lbrack (X_i-E\lbrack X_i\rbrack)^{2}$=$\sigma^2$  
 >=$\sum_{i=1}^{n}\sigma^{2}$-$\sigma^{2}$  
 >=$(n-1)\cdot\sigma^{2}$  
->&#10115;it leads us to below expression:  
->$E\lbrack \sum_{i=1}^{n}(X_i-\overline {X_n})^{2}\rbrack$=$(n-1)\cdot\sigma^{2}$  
->$\Rightarrow E\lbrack \sum_{i=1}^{n}\frac {(X_i-\overline {X_n})^{2}}{n-1}\rbrack$=$\sigma^{2}$  
+>&#10115;from $E\lbrack \sum_{i=1}^{n}(X_i-\overline {X_n})^{2}\rbrack$=$(n-1)\cdot\sigma^{2}$,  
+>we can have <font color="DeepSkyBlue">$E\lbrack \sum_{i=1}^{n}\frac {(X_i-\overline {X_n})^{2}}{n-1}\rbrack$=$\sigma^{2}$</font>  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
