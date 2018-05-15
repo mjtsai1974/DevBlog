@@ -57,7 +57,7 @@ title: Unbiased Estimator And Random Sample
 >=$(\overline {X_n}-\mu)\cdot(\sum_{i=1}^{n}X_i-n\cdot\mu)$  
 >=$(\overline {X_n}-\mu)\cdot(n\cdot\overline {X_n}-n\cdot\mu)$  
 >=$n\cdot (\overline {X_n}-\mu)^{2}$  
->&#10114;therefore,  
+>&#10114;therefore, original expression becomes:  
 >$E\lbrack \sum_{i=1}^{n}(X_i-\overline {X_n})^{2}\rbrack$  
 >=$E\lbrack \sum_{i=1}^{n}(X_i-\mu)^{2}$-$2\cdot\sum_{i=1}^{n}(X_i-\mu)\cdot(\overline {X_n}-\mu)$+$\sum_{i=1}^{n}(\overline {X_n}-\mu)^{2}\rbrack$  
 >=$E\lbrack \sum_{i=1}^{n}(X_i-\mu)^{2}$-$2\cdot n\cdot (\overline {X_n}-\mu)^{2}$+$n\cdot(\overline {X_n}-\mu)^{2}\rbrack$  
@@ -69,6 +69,12 @@ title: Unbiased Estimator And Random Sample
 >=$E\lbrack \sum_{i=1}^{n}(X_i-\mu)^{2}\rbrack$-$\sigma^{2}$  
 >=$\sum_{i=1}^{n}E\lbrack (X_i-\mu)^{2}\rbrack$-$\sigma^{2}$  
 >=$\sum_{i=1}^{n}E\lbrack (X_i-E\lbrack X_i\rbrack)^{2}\rbrack$-$\sigma^{2}$  
+>; where $E\lbrack X_i\rbrack$=$\mu$,$E\lbrack (X_i-E\lbrack X_i\rbrack)^{2}$=$\sigma^2$  
+>=$\sum_{i=1}^{n}\sigma^{2}$-$\sigma^{2}$  
+>=$(n-1)\cdot\sigma^{2}$  
+>&#10115;it leads us to below expression:  
+>$E\lbrack \sum_{i=1}^{n}(X_i-\overline {X_n})^{2}\rbrack$=$(n-1)\cdot\sigma^{2}$  
+>$\Rightarrow E\lbrack \sum_{i=1}^{n}\frac {(X_i-\overline {X_n})^{2}}{n-1}\rbrack$=$\sigma^{2}$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
