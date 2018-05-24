@@ -9,9 +9,16 @@ title: Introduction To The Bayes Theorem
 It could be pervasively found in the machine learning, reinforcement learning, wherein the POMDP transition probability is one such model.   
 </p>
 
+### Begin From The <font color="Red">Foundamental Probability</font>
+><font color="RoyalBlue">[1]</font>
+><font color="OrangeRed">sample space</font>  
+><font color="OrangeRed">Sample space</font> is just the set of elements describing the outcomes of the test, experiment, formally, the result after execution of certain action.  
+>In statistics reference text book, the letter $\Omega$ is most often used to represent the <font color="OrangeRed">sample space</font>.  
+>By flipping a coin one time, you will have two outcomes of head and tail, that is to say $\Omega$=$H,T$.  
 
 
 <!-- Γ -->
+<!-- \Omega -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
 <!-- \vert_0^\infty -->
@@ -55,3 +62,4 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 
 <!-- https://www.medcalc.org/manual/gamma_distribution_functions.php -->
 <!-- https://www.statlect.com/probability-distributions/student-t-distribution#hid5 -->
+<!-- http://www.wiris.com/editor/demo/en/ -->
