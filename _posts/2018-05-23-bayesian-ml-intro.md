@@ -47,7 +47,7 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 ><font color="RoyalBlue">[2]</font>
 ><font color="OrangeRed">the probability function</font>  
 >Since each event would be associated with a probability, then we are in need of <font color="OrangeRed">the probability function</font>.  
->&#10112;the uppercase "P" is <font color="OrangeRed">the probability function</font> on a sample space $\Omega$ to assign the event $A$ in $\Omega$ a number $P(A)$ in $[0,1]$.  <font color="DeepSkyBlue">The number $P(A)$ is the probability</font>.  
+>&#10112;the uppercase "P" is <font color="OrangeRed">the probability function</font> on a sample space $\Omega$ to assign the event $A$ in $\Omega$ a number $P(A)$ in $[0,1]$.  <font color="DeepSkyBlue">The number $P(A)$ is the probability of the occurrence of event $A$</font>.  
 >&#10113;wherein $P(\Omega)$=$1$  
 >&#10114;<font color="DeepPink">$P(A\cup B)$=$P(A)$+$P(B)$-$P(A\cap B)$</font>, where <font color="OrangeRed">$P(A\cap B)$=$0$</font> for $A$ and $B$ are <font color="OrangeRed">disjoint</font>.  
 
