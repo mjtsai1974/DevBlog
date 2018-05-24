@@ -14,14 +14,14 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 ><font color="OrangeRed">sample space</font>  
 >&#10112;<font color="OrangeRed">sample space</font> is just the set of elements describing the outcomes of the test, experiment, formally, the result after execution of certain action.  
 >In statistics reference text book, the letter $\Omega$ is most often used to represent the <font color="OrangeRed">sample space</font>.  
->&#10113;by flipping a coin one time, you will have two outcomes of head and tail, that is to say we associate the <font color="OrangeRed">sample space</font> with the set $\Omega$=$\{H,T\}$.  
->&#10114;to guess the birthday within one week, the <font color="OrangeRed">sample space</font> $\Omega$=$\{Sun,Mon,Tue,Wed,Thu,Fri,Sat\}$.  
+>&#10113;by flipping a coin one time, you will have two outcomes of head and tail, that is to say we associate the <font color="OrangeRed">sample space</font> with the set $\Omega$=$\\{H,T\\}$.  
+>&#10114;to guess the birthday within one week, the <font color="OrangeRed">sample space</font> $\Omega$=$\\{Sun,Mon,Tue,Wed,Thu,Fri,Sat\\}$.  
 >
 ><font color="RoyalBlue">[2]</font>
 ><font color="OrangeRed">event</font>  
 >&#10112;subset of a sample space is treated as <font color="OrangeRed">event</font>.  
->&#10113;in the birthday in one week example, suppose we'd like to ask for the days with uppercase "S" as the prefix, then, we can denote $S$=$\{Sun,Sat\}$.  
->&#10114;suppose we'd like to ask for the days with uppercase "T" as the prefix, then, we can denote $T$=$\{Tue,Thu\}$.  
+>&#10113;in the birthday in one week example, suppose we'd like to ask for the days with uppercase "S" as the prefix, then, we can denote $S$=$\\{Sun,Sat\\}$.  
+>&#10114;suppose we'd like to ask for the days with uppercase "T" as the prefix, then, we can denote $T$=$\\{Tue,Thu\\}$.  
 >
 ><font color="RoyalBlue">[3]</font>
 ><font color="OrangeRed">intersection, union, complement</font>  
