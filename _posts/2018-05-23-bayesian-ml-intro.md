@@ -37,6 +37,7 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 ><font color="OrangeRed">disjoint events</font>  
 >Suppose $A$ and $B$ are two events in the sample space $\Omega$.  They are said to be <font color="DeepPink">two disjoint events if they have no intersection.  $A\cap B$=$0$</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-23-bayesian-ml-intro-disjoint.png "disjoint")
+>Such events might be regarded as <font color="OrangeRed">mutually exclusive</font>.  
 
 <!-- Γ -->
 <!-- \Omega -->
