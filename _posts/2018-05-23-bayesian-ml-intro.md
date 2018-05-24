@@ -9,7 +9,7 @@ title: Introduction To The Bayes Theorem
 It could be pervasively found in the machine learning, reinforcement learning, wherein the POMDP transition probability is one such model.   
 </p>
 
-### Begin From The <font color="Red">Foundamental Probability</font>
+### Begin From The <font color="Red">Foundamental</font>
 ><font color="RoyalBlue">[1]</font>
 ><font color="OrangeRed">sample space</font>  
 >&#10112;<font color="OrangeRed">sample space</font> is just the set of elements describing the outcomes of the test, experiment, formally, the result after execution of certain action.  
@@ -38,6 +38,18 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >Suppose $A$ and $B$ are two events in the sample space $\Omega$.  They are said to be <font color="DeepPink">two disjoint events if they have no intersection.  $A\cap B$=$0$</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-23-bayesian-ml-intro-disjoint.png "disjoint")
 >Such events might be regarded as <font color="OrangeRed">mutually exclusive</font>.  
+
+### The <font color="Red">Probability</font>
+><font color="RoyalBlue">[1]</font>
+><font color="OrangeRed">why do we need the probability?</font>  
+>In order <font color="DeepSkyBlue">to express how likely it is that an event will occur</font>, during the experiment, by assigning probability to each <font color="DeepSkyBlue">distinct event</font> would be common.  To distribute the probability accurately would not be an easy task.  
+>
+><font color="RoyalBlue">[2]</font>
+><font color="OrangeRed">the probability function</font>  
+>Since each event would be associated with a probability, then we are in need of <font color="OrangeRed">the probability function</font>.  
+>&#10112;the uppercase "P" is <font color="OrangeRed">the probability function</font> on a sample space $\Omega$ to assign the event $A$ in $\Omega$ a number $P(A)$ in $[0,1]$.  <font color="DeepSkyBlue">The number $P(A)$ is the probability</font>.  
+>&#10113;wherein $P(\Omega)$=$1$  
+>&#10114;<font color="DeepPink">$P(A\cup B)$=$P(A)$+$P(B)$-$P(A\cap B)$</font>, where <font color="OrangeRed">$P(A\cap B)$=$0$</font> for $A$ and $B$ are <font color="OrangeRed">disjoint</font>.  
 
 <!-- Γ -->
 <!-- \Omega -->
