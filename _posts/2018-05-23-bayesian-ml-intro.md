@@ -49,7 +49,16 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >Since each event would be associated with a probability, then we are in need of <font color="OrangeRed">the probability function</font>.  
 >&#10112;the uppercase "P" is <font color="OrangeRed">the probability function</font> on a sample space $\Omega$ to assign the event $A$ in $\Omega$ a number $P(A)$ in $[0,1]$.  <font color="DeepSkyBlue">The number $P(A)$ is the probability of the occurrence of event $A$</font>.  
 >&#10113;wherein $P(\Omega)$=$1$  
->&#10114;<font color="DeepPink">$P(A\cup B)$=$P(A)$+$P(B)$-$P(A\cap B)$</font>, where <font color="OrangeRed">$P(A\cap B)$=$0$</font> for $A$ and $B$ are <font color="OrangeRed">disjoint</font>.  
+>&#10114;<font color="DeepPink">$P(A\cup B)$=$P(A)$+$P(B)$-$P(A\cap B)$</font>, where <font color="OrangeRed">$P(A\cap B)$=$0$</font> for $A$ and $B$ are <font color="OrangeRed">disjoint</font>. 
+>If $A$,$B$,$C$ are disjoint events, then $P(A\cup B\cup C)$=$P(A)$+$P(B)$+$P(C)$.  
+>
+><font color="RoyalBlue">[3]</font>
+><font color="DeepPink">the probability is defined on events, not on outcomes</font>  
+>&#10112;tossing a coin one time would we have $\Omega$=$\\{H,T\\}$, then $P(\\{H\\})$=$\frac {1}{2}$, $P(\\{T\\})$=$\frac {1}{2}$, under the assumption that head and tail chances are coming to an equilibrium.  
+>&#10113;given cards of read, blue, green colours.  The permutation of all the possible orders of cards would be $\Omega$=$\\{RGB$,$RBG$,$GRB$,$GBR$,$BRG$,$BGR\\}$.  
+>$P(\\{RGB\\})$=$P(\\{RBG\\}$=$P(\\{GRB\\}$=$P(\\{GBR\\}$=$P(\\{BRG\\}$=$P(\\{BGR\\}$=$\frac {1}{6}$...the same probability for each distinct event.  
+>&#10114;the same example as above, the probability of the event that green card is in the middle would be $P(\\{RGB,BGR\\})$=$\frac {1}{3}$.  
+> <font color="DeepSkyBlue">The $\\{RGB,BGR\\}$ is the event, wherein the $\\{RGB\\}$ and $\\{BGR\\}$ are the outcomes described by $\Omega$</font>.  
 
 <!-- Γ -->
 <!-- \Omega -->
