@@ -68,6 +68,18 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >&#10114;if $A$, $B$ are <font color="OrangeRed">not</font> disjoint, then $A$=$(A\cap B)\cup(A\cap B^{c})$, this is a disjoint union.  
 >Therefore, $P(A)$=$P(A\cap B)$+$P(A\cap B^{c})$.  
 
+### <font color="Red">Product</font> Of Sample Space
+><font color="RoyalBlue">[1]</font>
+><font color="OrangeRed">run the same test over multiple times</font>  
+>To justify the experiment result, one single test would be executed over multiple times.  
+>&#10112;suppose we flip the same coin over 2 times, the sample space $\Omega$=$\\{H,T\\}$x$\\{H,T\\}$.  
+>It is now $\Omega$=$\\{HH,HT,TH,TT\\}$.  Total 4 outcomes in it, we can take one outcome as one event, then $P(\\{HH\\})$=$P(\\{HT\\})$=$P(\\{TH\\})$=$P(\\{TT\\})$=$\frac {1}{4}$, under the assumption that $P(\\{H\\})$=$P(\\{T\\})$ in each single tossing of coin.  
+>
+><font color="RoyalBlue">[2]</font>
+><font color="OrangeRed">combine the sample space from different tests</font>  
+>&#10112;given that 2 sample spaces with respect to 2 different tests' outcomes, they are $\Omega_{1}$,$\Omega_{2}$, where sizeof($\Omega_{1}$)=$r$, sizeof($\Omega_{2}$)=$s$.  
+>&#10112;then $\Omega$=$\Omega_{1}$x$\Omega_{2}$, sizeof($\Omega$)=$r\cdot s$.  If we treat each distinct combination in the sample space as one single event, the probability of such distinct event is <font color="OrangeRed">$\frac {1}{r\cdot s}$</font>.  The $\frac {1}{r}$,$\frac {1}{s}$ are the probability for the occurrences of outcomes in the $\Omega_{1}$ and $\Omega_{2}$ with respect to test 1 and test 2.  
+
 <!-- Γ -->
 <!-- \Omega -->
 <!-- \cap intersection -->
