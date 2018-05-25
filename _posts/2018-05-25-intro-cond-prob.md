@@ -38,7 +38,7 @@ title: Introduction To The Conditional Probability
 >&#10112;$R_{4}$=$e^{-4}$  
 >&#10113;$R_{5}$=$e^{-5}$  
 >&#10114;since <font color="DeepPink">$R_{5}\subset R{4}$</font>, we have <font color="DeepPink">$R_{5}\cap R_{4}$=$R_{5}$</font>.  
->Therefore, $P(R_{5}\vert R_{4})$=$\frac {R_{5}\cap R_{4}}{R_{4}}$=$\frac {R_{5}}{R_{4}}$=$e^{-1}$.  
+>Therefore, $P(R_{5}\vert R_{4})$=$\frac {P(R_{5}\cap R_{4})}{P(R_{4})}$=$\frac {P(R_{5})}{P(R_{4})}$=$e^{-1}$.  
 
 <!-- to be conti for the multiplication rule-->
 
