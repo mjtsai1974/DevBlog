@@ -9,7 +9,7 @@ title: Introduction To The Conditional Probability
 </p>
 
 ### Definition: <font color="Red">Conditional Probability</font>
->Given the probability $P(C)$ of the <font color="OrangeRed">already occurred event</font> $C$, we can compute the probability $P(A\vert C)$ of another event $A$.  The <font color="Red">conditional probability</font> is defined:  
+>Given the probability $P(C)$ of the <font color="OrangeRed">already occurred event</font> $C$, we can compute another event $A$'s probability $P(A\vert C)$.  The <font color="Red">conditional probability</font> is defined:  
 >$\;\;\;\;P(A\vert C)$=$\frac {P(A\cap C)}{P(C)}$, provided that $P(C)>0$.  
 >
 >This implies that <font color="DeepSkyBlue">the conditonal probability could help to find out the fraction of the probability of event $C$ <font color="OrangeRed">is also</font> in event $A$</font>, which is <font color="OrangeRed">$P(A\cap C)$</font>.  
