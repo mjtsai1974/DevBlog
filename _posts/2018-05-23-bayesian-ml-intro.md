@@ -78,7 +78,11 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 ><font color="RoyalBlue">[2]</font>
 ><font color="OrangeRed">combine the sample space from different tests</font>  
 >&#10112;given that 2 sample spaces with respect to 2 different tests' outcomes, they are $\Omega_{1}$,$\Omega_{2}$, where sizeof($\Omega_{1}$)=$r$, sizeof($\Omega_{2}$)=$s$.  
->&#10112;then $\Omega$=$\Omega_{1}$x$\Omega_{2}$, sizeof($\Omega$)=$r\cdot s$.  If we treat each distinct combination in the sample space as one single event, the probability of such distinct event is <font color="OrangeRed">$\frac {1}{r\cdot s}$</font>.  The $\frac {1}{r}$,$\frac {1}{s}$ are the probability for the occurrences of outcomes in the $\Omega_{1}$ and $\Omega_{2}$ with respect to test 1 and test 2.  
+>&#10113;then $\Omega$=$\Omega_{1}$x$\Omega_{2}$, sizeof($\Omega$)=$r\cdot s$.  If we treat each distinct combination in the sample space as one single event, the probability of such distinct event is <font color="OrangeRed">$\frac {1}{r\cdot s}$</font>.  The $\frac {1}{r}$,$\frac {1}{s}$ are the probability for the occurrences of outcomes in the $\Omega_{1}$ and $\Omega_{2}$ with respect to test 1 and test 2.  
+>
+><font color="RoyalBlue">[3]</font>
+><font color="OrangeRed">general form of the same test over multiple times</font>  
+>&#10112;suppose we'd like to make experiment for n runs.  We take $\Omega_{i}$ to be the sample space of the i-th test result, $\omega_{i}$ to be one of the outcomes in $\Omega_{i}$.  
 
 <!-- Γ -->
 <!-- \Omega -->
