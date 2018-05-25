@@ -62,7 +62,7 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >
 ><font color="RoyalBlue">[4]</font>
 ><font color="OrangeRed">additivity of probability</font>  
->&#10112;using the same card example, the probability of the event that green card is in the middle could be $P(\\{XGX\\})$=$P(\\{RGB\\})$+$P(\\{BGR\\})$==$\frac {1}{3}$.  
+>&#10112;using the same card example, the probability of the event that green card is in the middle could be $P(\\{XGX\\})$=$P(\\{RGB\\})$+$P(\\{BGR\\})$=$\frac {1}{3}$.  
 >This implies that <font color="DeepPink">the probability of an event could be obtained by summing over the probabilities of the outcomes belonging to the same event</font>.  
 >&#10113;given $A$ is an event, then $P(A)$+$P(A^{c})$=$P(\Omega)$=$1$.  
 >&#10114;if $A$, $B$ are <font color="OrangeRed">not</font> disjoint, then $A$=$(A\cap B)\cup(A\cap B^{c})$, this is a disjoint union.  
