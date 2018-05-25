@@ -85,7 +85,8 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >&#10112;suppose we'd like to <font color="OrangeRed">make the experiment for n runs</font>.  We take $\Omega_{i}$ to be the sample space of the i-th test result, $\omega_{i}$ to be one of the outcomes in $\Omega_{i}$.  
 >&#10113;if the occurrence of each outcome $\omega_{i}$ has probability $p_{i}$, then $P(\\{\omega_{1},\omega_{2}...\omega_{n}\\})$=$p_{1}\cdot p_{2}...p_{n}$, which is the probability for the event $\\{\omega_{1},\omega_{2}...\omega_{n}\\}$ to take place.  
 >&#10114;assume we flip a coin with probability $p$ of head, that implies $1-p$ of tail.  Then the probability of 1 single head after 4 times of tossing would be $4\cdot (1-p)^3\cdot p$.  
->The sample space would be $\Omega$=$\\{(HTTT),(THTT),(TTHT),(TTTH)\\}$.  There are 4 combinations, with each has probability $(1-p)^{3}\cdot p$.  
+>The sample space would be  
+>$\Omega$=$\\{(HTTT),(THTT),(TTHT),(TTTH)\\}$.  There are 4 combinations, with each has probability $(1-p)^{3}\cdot p$.  
 
 ### An <font color="Red">Infinite</font> Sample Space
 ><font color="RoyalBlue">[1]</font>
@@ -104,7 +105,13 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >=$\lim_{n\rightarrow\infty}p+(1-p)\cdot p+...+(1-p)^{n-1}\cdot p$  
 >=$\lim_{n\rightarrow\infty}p\cdot\frac {1}{1-(1-p)}$  
 >=$p\cdot\frac {1}{p}$  
->=$1$...the total probability  
+>=$1$...<font color="DeepSkyBlue">the total probability</font>  
+>
+>In an infinite sample space, <font color="Red">if all the events</font> $A_{1}$,$A_{2}$,...,$A_{n}$ are <font color="Red">disjoint</font>, then,  
+>$P(\Omega)$  
+>=$P(A_{1}\cup A_{2}\cup...\cup A_{n})$  
+>=$P(A_{1})$+$P(A_{2})$+...$P(A_{n})$  
+>=$1$  
 
 <!-- Γ -->
 <!-- \Omega -->
