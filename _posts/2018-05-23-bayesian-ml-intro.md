@@ -84,6 +84,27 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 ><font color="OrangeRed">general form of the same test over multiple times</font>  
 >&#10112;suppose we'd like to <font color="OrangeRed">make the experiment for n runs</font>.  We take $\Omega_{i}$ to be the sample space of the i-th test result, $\omega_{i}$ to be one of the outcomes in $\Omega_{i}$.  
 >&#10113;if the occurrence of each outcome $\omega_{i}$ has probability $p_{i}$, then $P(\\{\omega_{1},\omega_{2}...\omega_{n}\\})$=$p_{1}\cdot p_{2}...p_{n}$, which is the probability for the event $\\{\omega_{1},\omega_{2}...\omega_{n}\\}$ to take place.  
+>&#10114;assume we flip a coin with probability $p$ of head, that implies $1-p$ of tail.  Then the probability of 1 single head after 4 times of tossing would be $4\cdot (1-p)^3\cdot p$.  
+>The sample space would be $\Omega$=$\\{(HTTT),(THTT),(TTHT),(TTTH)\\}$.  There are 4 combinations, with each has probability $(1-p)^{3}\cdot p$.  
+
+### An <font color="Red">Infinite</font> Sample Space
+><font color="RoyalBlue">[1]</font>
+><font color="OrangeRed">run the same test until succeeds</font>  
+>&#10112;suppose we'd like to toss a coin until it appears with head.  If the tail is always the result, the sample space $\Omega$=$\\{T_{1},T_{2},T_{3},...,T_{n}...\\}$, $n\rightarrow\infty$.  
+>Next to ask the <font color="OrangeRed">probability function</font> of this sample space.  Assume the probability of head is $p$, the tail is $1-p$.  
+>
+><font color="RoyalBlue">[2]</font>
+><font color="OrangeRed">run the same test until succeeds</font>  
+>&#10112;for the simplicity, we'd like to change the notation by $\Omega$=$\\{1,2,..,n,...\\}$ for the number of iterations the tossing coin result coming out with a head.  
+>&#10113;$P(1)$=$P(\\{H\\})$=$p$  
+>&#10114;$P(2)$=$P(\\{TH\\})$=$(1-p)\cdot p$  
+>&#10115;$P(n)$=$P(\\{T_{1}T_{2}...T_{n-1}H_{n}\\})$=$(1-p)^{n-1}\cdot p$  
+>&#10116;when $a$ is incredibly large, the total probability becomes  
+>$\lim_{n\rightarrow\infty}P(1)+P(2)+...+P(n)$  
+>=$\lim_{n\rightarrow\infty}p+(1-p)\cdot p+...+(1-p)^{n-1}\cdot p$  
+>=$\lim_{n\rightarrow\infty}p\cdot\frac {1}{1-(1-p)}$  
+>=$p\cdot\frac {1}{p}$  
+>=$1$...the total probability  
 
 <!-- Γ -->
 <!-- \Omega -->
