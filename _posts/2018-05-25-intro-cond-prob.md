@@ -31,12 +31,16 @@ title: Introduction To The Conditional Probability
 
 ### <font color="RoyalBlue">Example</font>: Illustration By Fuel Residence Time
 >Given a engine full of chemical fuel in its combustion chamber and just starts, we denote the event that the particle is left as <font color="OrangeRed">non-comleted chemical reaction state after t seconds</font> as $R_{t}$.  
+>
 >Suppose the probability of such chemical reaction is in [exponential distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/24/intro-exp-dist/), the probability of $R_{t}$, $P(R_{t})$=$e^{-t}$.   
+>
 >Then, <font color="DeepSkyBlue">the probability of the particle stay over 4 seconds will stay over 5 seconds</font> would be to ask for <font color="DeepSkyBlue">$P(R_{5}\vert R_{4})$</font>.  
 >&#10112;$R_{4}$=$e^{-4}$  
 >&#10113;$R_{5}$=$e^{-5}$  
 >&#10114;since <font color="DeepPink">$R_{5}\subset R{4}$</font>, we have <font color="DeepPink">$R_{5}\cap R_{4}$=$R_{5}$</font>.  
 >Therefore, $P(R_{5}\vert R_{4})$=$\frac {R_{5}\cap R_{4}}{R_{4}}$=$\frac {R_{5}}{R_{4}}$=$e^{-1}$.  
+
+<!-- to be conti for the multiplication rule-->
 
 <!-- Γ -->
 <!-- \Omega -->
