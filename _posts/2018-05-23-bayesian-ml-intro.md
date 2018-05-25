@@ -83,7 +83,7 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 ><font color="RoyalBlue">[3]</font>
 ><font color="OrangeRed">general form of the same test over multiple times</font>  
 >&#10112;suppose we'd like to <font color="OrangeRed">make the experiment for n runs</font>.  We take $\Omega_{i}$ to be the sample space of the i-th test result, $\omega_{i}$ to be one of the outcomes in $\Omega_{i}$.  
->&#10113;if the occurrence of each outcome $\omega_{i}$ has probability $p_{i}$, then $P(\\{\omega_{1},\omega_{2}...\omega_{n}\\})$=$p_{1}\cdotp_{2}...p_{n}$, which is the probability for the event $\\{\omega_{1},\omega_{2}...\omega_{n}\\}$ to take place.  
+>&#10113;if the occurrence of each outcome $\omega_{i}$ has probability $p_{i}$, then $P(\\{\omega_{1},\omega_{2}...\omega_{n}\\})$=$p_{1}\cdot p_{2}...p_{n}$, which is the probability for the event $\\{\omega_{1},\omega_{2}...\omega_{n}\\}$ to take place.  
 
 <!-- Γ -->
 <!-- \Omega -->
