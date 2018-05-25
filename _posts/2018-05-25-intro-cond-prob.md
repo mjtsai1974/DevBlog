@@ -21,6 +21,14 @@ title: Introduction To The Conditional Probability
 >&#10114;if $C\subset A$, then $A\cap C$=$C$, $P(A\vert C)$=$1$.  
 >&#10115;if $A\subset C$, then $A\cap C$=$A$, $P(A\vert C)$=$\frac {P(A)}{P(C)}\ge P(A)$, since $P(C)\le 1$.  
 
+### <font color="RoyalBlue">Example</font>: Illustration By Tossing A Fair Die
+>Suppose you are tossing a fair die, the sample space $\Omega$=$\\{1,2,3,4,5,6\\}$.  We denote the event of numbers smaller than $3$ as $A$=$\\{1,2\\}$, and denote the event of even numbers as $B$=$\\{2,4,6\\}$.  
+>&#10112;if we know the current rolled out number is even, what's the probability the number is smaller than $3$?  
+>$P(A\vert B)$=$\frac {P(A\cap B)}{P(B)}$=$\frac {\frac {1}{6}}{\frac {1}{2}}$=$\frac {1}{3}$,  
+>where $P(A\cap B)$=$P(\\{2\\})$=$\frac {1}{6}$.  
+>&#10113;if we know the rolled out number is smaller than $3$, what's the probability the number is even?  
+>$P(B\vert A)$=$\frac {P(B\cap A)}{P(A)}$=$\frac {\frac {1}{6}}{\frac {1}{3}}$=$\frac {1}{2}$.  
+
 <!-- Γ -->
 <!-- \Omega -->
 <!-- \subset -->
