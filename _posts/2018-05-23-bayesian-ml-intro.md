@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Introduction To The Probability
+title: Introduction To The Bayes Theorem
 ---
 
-## Prologue To Introduction To The <font color="Red">Probability</font>
+## Prologue To Introduction To The <font color="Red">Bayes Theorem</font>
 <p class="message">
-<font color="DeepSkyBlue">The probability describes how likely it is the test takes place with the expected result</font>.  It is the fundamental for modern world science.
+<font color="Red">The Bayes theorem</font> has been developed and evolved over time <font color="DeepPink">to enhance the accuracy of conditional probability prediction result</font>, especially, when you have only a few data gathered and would like to have a convincible, plausible result.
+It could be pervasively found in the machine learning, reinforcement learning, wherein the POMDP transition probability is one such model.   
 </p>
 
 ### Begin From The <font color="Red">Fundamental</font>
