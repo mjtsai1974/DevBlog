@@ -19,7 +19,7 @@ title: Introduction To The Conditional Probability
 >&#10112;$P(A\vert C)$+$P(A^{c}\vert C)$=$1$, holds for all conditions.  
 >&#10113;if $A\cap C$=$0$, then $P(A\vert C)$=$0$.  
 >&#10114;if $C\subset A$, then $A\cap C$=$C$, $P(A\vert C)$=$1$.  
->&#10115;if $A\subset c$, then $A\cap C$=$A$, $P(A\vert C)$=$\frac {P(A)}{P(C)}\ge P(A)$, since $P(C)\le 1$.  
+>&#10115;if $A\subset C$, then $A\cap C$=$A$, $P(A\vert C)$=$\frac {P(A)}{P(C)}\ge P(A)$, since $P(C)\le 1$.  
 
 <!-- Γ -->
 <!-- \Omega -->
