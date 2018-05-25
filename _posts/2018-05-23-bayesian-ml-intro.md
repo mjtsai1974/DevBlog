@@ -9,7 +9,7 @@ title: Introduction To The Bayes Theorem
 It could be pervasively found in the machine learning, reinforcement learning, wherein the POMDP transition probability is one such model.   
 </p>
 
-### Begin From The <font color="Red">Foundamental</font>
+### Begin From The <font color="Red">Fundamental</font>
 ><font color="RoyalBlue">[1]</font>
 ><font color="OrangeRed">sample space</font>  
 >&#10112;<font color="OrangeRed">sample space</font> is just the set of elements describing the outcomes of the test, experiment, formally, the result after execution of certain action.  
@@ -59,6 +59,14 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >$P(\\{RGB\\})$=$P(\\{RBG\\})$=$P(\\{GRB\\})$=$P(\\{GBR\\})$=$P(\\{BRG\\})$=$P(\\{BGR\\})$=$\frac {1}{6}$...the same probability for each distinct event.  
 >&#10114;the same example as above, the probability of the event that green card is in the middle would be $P(\\{RGB,BGR\\})$=$\frac {1}{3}$.  
 >The $\\{RGB,BGR\\}$ is such event we desire, wherein the $\\{RGB\\}$ and $\\{BGR\\}$ are the outcomes described by $\Omega$.  
+>
+><font color="RoyalBlue">[4]</font>
+><font color="OrangeRed">additivity of probability</font>  
+>&#10112;using the same card example, the probability of the event that green card is in the middle could be $P(\\{XGX\\})$=$P(\\{RGB\\})$+$P(\\{BGR\\})$==$\frac {1}{3}$.  
+>This implies that <font color="DeepPink">the probability of an event could be obtained by summing over the probabilities of the outcomes belonging to the same event</font>.  
+>&#10113;given $A$ is an event, then $P(A)$+$P(A^{c})$=$P(\Omega)$=$1$.  
+>&#10114;if $A$, $B$ are <font color="OrangeRed">not</font> disjoint, then $A$=$(A\cap B)\cup(A\cap B^{c})$, this is a disjoint union.  
+>Therefore, $P(A)$=$P(A\cap B)$+$P(A\cap B^{c})$.  
 
 <!-- Γ -->
 <!-- \Omega -->
