@@ -14,8 +14,8 @@ title: Introduction To The Conditional Probability
 >
 >This implies that <font color="DeepSkyBlue">the conditonal probability could help to find out the fraction of the probability of event $C$ <font color="OrangeRed">is also</font> in event $A$</font>, which is <font color="OrangeRed">$P(A\cap C)$</font>.  
 
-### <font color="Red">Conditional Probability</font> Properties
->Given that $P(C)>0$, we can deduce out below properties:  
+### <font color="Red">Conditional Probability</font> <font color="DeepSkyBlue">Properties</font>
+>Given that $P(C)>0$, we can deduce out below <font color="DeepSkyBlue">properties</font>:  
 >&#10112;$P(A\vert C)$+$P(A^{c}\vert C)$=$1$, holds for all conditions.  
 >&#10113;if $A\cap C$=$0$, then $P(A\vert C)$=$0$.  
 >&#10114;if $C\subset A$, then $A\cap C$=$C$, $P(A\vert C)$=$1$.  
