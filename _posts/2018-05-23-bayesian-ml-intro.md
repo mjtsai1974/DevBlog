@@ -56,9 +56,9 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 ><font color="DeepPink">the probability is defined on events, not on outcomes</font>  
 >&#10112;tossing a coin one time would we have $\Omega$=$\\{H,T\\}$, then $P(\\{H\\})$=$\frac {1}{2}$, $P(\\{T\\})$=$\frac {1}{2}$, under the assumption that head and tail chances are coming to an equilibrium.  
 >&#10113;given cards of read, blue, green colours.  The permutation of all the possible orders of cards would be $\Omega$=$\\{RGB$,$RBG$,$GRB$,$GBR$,$BRG$,$BGR\\}$.  
->$P(\\{RGB\\})$=$P(\\{RBG\\}$=$P(\\{GRB\\}$=$P(\\{GBR\\}$=$P(\\{BRG\\}$=$P(\\{BGR\\}$=$\frac {1}{6}$...the same probability for each distinct event.  
+>$P(\\{RGB\\})$=$P(\\{RBG\\})$=$P(\\{GRB\\})$=$P(\\{GBR\\})$=$P(\\{BRG\\})$=$P(\\{BGR\\})$=$\frac {1}{6}$...the same probability for each distinct event.  
 >&#10114;the same example as above, the probability of the event that green card is in the middle would be $P(\\{RGB,BGR\\})$=$\frac {1}{3}$.  
-> <font color="DeepSkyBlue">The $\\{RGB,BGR\\}$ is the event, wherein the $\\{RGB\\}$ and $\\{BGR\\}$ are the outcomes described by $\Omega$</font>.  
+>The $\\{RGB,BGR\\}$ is such event we desire, wherein the $\\{RGB\\}$ and $\\{BGR\\}$ are the outcomes described by $\Omega$.  
 
 <!-- Γ -->
 <!-- \Omega -->
