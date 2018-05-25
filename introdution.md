@@ -50,9 +50,9 @@ The context of this bog just like current artificial intelligence, comes without
 * Prerequisites
 * Probability Bounds
 * Machine Learning Foundation
+* Bayesian Statistics And Machine Learning
 * Neural Network
-* Support Vector Machine(SVM)
-* Bayesian Statistics And Machine Learning 
+* Support Vector Machine(SVM) 
 * Deep Learning
 * Markov Decision Process(MDP)
 * Partial Observable Markov Decision Process(POMDP)
@@ -85,6 +85,7 @@ the following:
 * [Introduction To The Poisson Process Inter-arrival Times]({{ site.github.repo }}{{ site.baseurl }}/2018/04/23/intro-poisson-dist-interarrival/)
 * [Exponential versus Poisson Distribution::mjtsai1974]({{ site.github.repo }}{{ site.baseurl }}/2018/04/25/exponential-vs-poisson/)
 * [The relation in between The Normal, F, Chi-Square, t, Exponential, Poisson Distributions]({{ site.github.repo }}{{ site.baseurl }}/2018/05/03/dist-relationship/)
+* [Introduction To The Probability]({{ site.github.repo }}{{ site.baseurl }}/2018-05-25-intro-prob/)
 * [The Law Of Large Numbers]({{ site.github.repo }}{{ site.baseurl }}/2018/05/11/law-large-number/)
 * [The Central Limit Theorem]({{ site.github.repo }}{{ site.baseurl }}/2018/05/12/central-limit-theorem/)
 * [Unbiased Estimator And Random Sample]({{ site.github.repo }}{{ site.baseurl }}/2018/05/14/unbiased-estimator-random-sample/)
@@ -128,6 +129,12 @@ After exploring in the prerequisites, you are supposed to come out with sufficie
 
 > The related posts would be new added in the future, and supposed you are comfortable with posts in prerequisite section. 
 
+### Bayesian Statistics And Machine Learning 
+
+* [Introduction To The Probability]({{ site.github.repo }}{{ site.baseurl }}/2018/05/23/bayesian-ml-intro/)
+
+> The related posts would be new added in the future, and supposed you are comfortable with posts in prerequisite section. 
+
 ### Neural Networks
 
 Neural network is the software or hardware emulation in the topology resembling to the organization of human brain.  H/W usually aims at speeding up.  S/W implementation wouldn't 
@@ -156,10 +163,6 @@ theorem to the formula deduction, finally algorithm of the real thing.
 * [Inside Sequential Minimum Optimization]({{ site.github.repo }}{{ site.baseurl }}/2017/12/07/smo-to-svm-inside/)
 * [SMO Framework And Algorithm]({{ site.github.repo }}{{ site.baseurl }}/2017/12/13/smo-to-svm-framework-algorithm/)
 * [Addendum]({{ site.github.repo }}{{ site.baseurl }}/2017/12/15/smo-to-svm-addendum/)
-
-### Bayesian Statistics And Machine Learning 
-
-Under construction...
 
 ### Deep Learning
 
