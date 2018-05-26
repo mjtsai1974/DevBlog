@@ -60,6 +60,8 @@ title: Introduction To The Conditional Probability
 >$\Rightarrow P(A\cap B\cap C)$=$P(A\vert (B\cap C))\cdot P(B\vert C)\cdot P(C)$  
 >
 >Also known as <font color="DeepSkyBlue">the multiplication rule</font>.  
+>Below expression illustrates <font color="Red">probability chaining rule</font> <font color="DeepSkyBlue">extension</font>:  
+>$P(N_{1}\cap N_{2}\cap N_{3}\cap ...\cap N_{m})$=$P(N_{1}\vert (N_{2}\cap N_{3}\cap ...\cap N_{m}))\cdot P(N_{2}\vert N_{3}\cap ...\cap N_{m})\cdot ...P(N_{m-1}\vert N_{m})\cdot P(N_{m})$  
 
 <!-- Γ -->
 <!-- \Omega -->
