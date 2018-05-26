@@ -47,8 +47,8 @@ title: Introduction To The Conditional Probability
 >&#10114;$P(A\cap B\cap C)$=$P(A\vert (B\cap C))\cdot P(B\vert C)\cdot P(C)$  
 >
 >proof::mjtsai1974  
->Begin from the conditional probability:  
->&#10112;$P(A\vert C)$=$\frac {P(A\cap C)}{P(C)}$  
+>&#10112;begin from the conditional probability:  
+>$P(A\vert C)$=$\frac {P(A\cap C)}{P(C)}$  
 >$\Leftrightarrow P(A\cap C)=P(A\vert C)\cdot P(C)$  
 >&#10113;$P((A\cap B)\vert C)$  
 >=$\frac {P((A\cap B)\cap C)}{P(C)}$  
