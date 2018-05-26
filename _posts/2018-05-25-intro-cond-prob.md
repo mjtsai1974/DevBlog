@@ -65,7 +65,7 @@ title: Introduction To The Conditional Probability
 >=$P(N_{1}\vert (N_{2}\cap N_{3}\cap ...\cap N_{m}))\cdot P(N_{2}\vert (N_{3}\cap ...\cap N_{m}))\cdot ...\cdot P(N_{m-1}\vert N_{m})\cdot P(N_{m})$  
 
 ### <font color="RoyalBlue">Example</font>: Illustration By Fuel Residence Time For <font color="DeepSkyBlue">Extension</font>
->If we are given the same condition to the engine containing a combustion chamber in it, we'd like to estimate the probability of the particle stay over 1 seconds will stay over 10 seconds.  
+>If we are given the same condition to the engine containing a combustion chamber in it, we'd like to estimate <font color="OrangeRed">the probability of the particle stay over 1 seconds will stay over 10 seconds</font>.  
 >
 ><font color="OrangeRed">Suppose the chemical particle still left at 10-th second is the final one molecular</font>, and the probability of such chemical reaction is in [exponential distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/24/intro-exp-dist/), the probability of $R_{t}$, $P(R_{t})$=$e^{-t}$.
 >
@@ -73,15 +73,18 @@ title: Introduction To The Conditional Probability
 >This is to ask for $P(R_{10}\vert R_{1})$=$\frac {P(R_{10}\cap R_{1})}{P(R_{1})}$.  
 >&#10112;by the given assumption, the final particle is in $R_{10}$, it just passed through $R_{1}$,$R_{2}$,...,$R_{10}$.  
 >Hence, $(R_{10}\cap R_{1})$=$(R_{10}\cap R_{9}\cap ... \cap R_{1})$  
->&#10113;by the <font color="OrangeRed">probability chaining rule</font>, 
+>&#10113;by the <font color="OrangeRed">probability chaining rule</font>,  
 >$P(R_{10}\cap R_{9}\cap ... \cap R_{1})$  
 >=$P(R_{10}\vert (R_{9}\cap ... \cap R_{1}))$  
 >$\;\;\;\;\cdot P(R_{9}\vert (R_{8}\cap ... \cap R_{1}))$  
 >$\;\;\;\;\cdot P(R_{8}\vert (R_{7}\cap ... \cap R_{1}))$  
->...  
+>$\;\;\;\;...$  
 >$\;\;\;\;\cdot P(R_{3}\vert (R_{2}\cap R_{1}))$  
 >$\;\;\;\;\cdot P(R_{2}\vert R_{1})$  
 >$\;\;\;\;\cdot P(R_{1})$  
+>&#10114;with each multiplication term equaling to $e^{-1}$,  
+>$P(R_{10}\cap R_{9}\cap ... \cap R_{1})$=$e^{-10}$  
+>then, $P(R_{10}\vert R_{1})$=$\frac {P(R_{10}\cap R_{1})}{P(R_{1})}$=$e^{-9}$.  
 
 <!-- Γ -->
 <!-- \Omega -->
