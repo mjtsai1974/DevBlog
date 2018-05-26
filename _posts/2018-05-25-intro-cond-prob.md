@@ -71,8 +71,7 @@ title: Introduction To The Conditional Probability
 ### <font color="RoyalBlue">Example</font>: Illustration By Fuel Residence Time For <font color="DeepSkyBlue">Extension</font>
 >If we are given the same condition to the engine containing a combustion chamber in it, we'd like to estimate <font color="OrangeRed">the probability of the particle stay over 1 seconds will stay over 10 seconds</font>.  
 >
-><font color="OrangeRed">Suppose the chemical particle still left at 10-th second is the final one molecular.</font>  
->And the probability of such chemical reaction is in [exponential distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/24/intro-exp-dist/), the probability of $R_{t}$, $P(R_{t})$=$e^{-t}$.
+><font color="OrangeRed">Suppose the chemical particle still left at 10-th second is the final one molecular.</font>  And the probability of such chemical reaction is in [exponential distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/24/intro-exp-dist/), the probability of $R_{t}$, $P(R_{t})$=$e^{-t}$.
 >
 ><font color="Brown">proof::mjtsai1974</font>  
 >This is to ask for $P(R_{10}\vert R_{1})$=$\frac {P(R_{10}\cap R_{1})}{P(R_{1})}$.  
