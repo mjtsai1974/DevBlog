@@ -66,7 +66,7 @@ The context of this bog just like current artificial intelligence, comes without
 Whatever topic playing the consolidated fundamental basis implicitly be constructed as computer algorithm, but explicitly help the learning flow to converge the result would be in this section, includes 
 the following:
 
-* [Hoeffding Inequality v.s. Chebyshev's Inequality]({{ site.github.repo }}{{ site.baseurl }}/2017/10/24/prereq-hoeffding-vs-law-large-number/)
+* [Hoeffding Inequality versus Chebyshev's Inequality]({{ site.github.repo }}{{ site.baseurl }}/2017/10/24/prereq-hoeffding-vs-law-large-number/)
 <!-- * <a href="{{ site.github.repo }}{{ site.baseurl }}/2017/10/24/prereq-hoeffding-vs-law-large-number/">Hoeffding Inequality v.s. Law of Large Number</a> --> <!-- this also works -->
 * [Lagrange Multiplier]({{ site.github.repo }}{{ site.baseurl }}/2017/10/27/prereq-lagrange-multiplier/)
 * [QR Decomposition]({{ site.github.repo }}{{ site.baseurl }}/2017/10/31/prereq-qr-decomposition/)
@@ -87,6 +87,7 @@ the following:
 * [The relation in between The Normal, F, Chi-Square, t, Exponential, Poisson Distributions]({{ site.github.repo }}{{ site.baseurl }}/2018/05/03/dist-relationship/)
 * [Introduction To The Probability]({{ site.github.repo }}{{ site.baseurl }}/2018/05/25/intro-prob/)
 * [Introduction To The Conditional Probability]({{ site.github.repo }}{{ site.baseurl }}/2018/05/25/intro-cond-prob/)
+* Event Independence versus Conditional Probability
 * [The Law Of Large Numbers]({{ site.github.repo }}{{ site.baseurl }}/2018/05/11/law-large-number/)
 * [The Central Limit Theorem]({{ site.github.repo }}{{ site.baseurl }}/2018/05/12/central-limit-theorem/)
 * [Unbiased Estimator And Random Sample]({{ site.github.repo }}{{ site.baseurl }}/2018/05/14/unbiased-estimator-random-sample/)
