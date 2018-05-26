@@ -43,7 +43,7 @@ title: Introduction To The Conditional Probability
 ### The <font color="Red">Probability Chaining Rule</font>
 >The probability chaining rule has it that:  
 >&#10112;$P(A\cap C)=P(A\vert C)\cdot P(C)$  
->&#10113;$P((A\cap B)\vert C)$=>=$P(A\vert (B\cap C))\cdot P(B\vert C)$  
+>&#10113;$P((A\cap B)\vert C)$=$P(A\vert (B\cap C))\cdot P(B\vert C)$  
 >&#10114;$P(A\cap B\cap C)$=$P(A\vert (B\cap C))\cdot P(B\vert C)\cdot P(C)$  
 >
 >proof::mjtsai1974  
