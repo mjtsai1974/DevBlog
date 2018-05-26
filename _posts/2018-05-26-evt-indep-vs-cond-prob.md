@@ -13,6 +13,11 @@ The inference from <font color="DeepSkyBlue">conditional probability</font> come
 >An event $A$ is said independent of event $B$, if  
 >$\;\;\;\;P(A\vert B)$=$P(A)$.  
 
+### <font color="Red">Event Independence</font> Equivalence
+>By the definition of <font color="Red">event independence</font>, we can have an equivalence of expression from <font color="DeepSkyBlue">conditional probability</font>:  
+>$P(A\vert B)$=$\frac {P(A\cap B)}{P(B)}$=$P(A)$  
+>$\Leftrightarrow P(A\cap B)=P(A)\cdot P(B)$  
+
 <!-- Γ -->
 <!-- \Omega -->
 <!-- \subset -->
