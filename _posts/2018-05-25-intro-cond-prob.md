@@ -46,7 +46,7 @@ title: Introduction To The Conditional Probability
 >&#10113;$P((A\cap B)\vert C)$=$P(A\vert (B\cap C))\cdot P(B\vert C)$  
 >&#10114;$P(A\cap B\cap C)$=$P(A\vert (B\cap C))\cdot P(B\vert C)\cdot P(C)$  
 >
->proof::mjtsai1974  
+><font color="Brown">proof::mjtsai1974</font>  
 >&#10112;begin from the conditional probability:  
 >$P(A\vert C)$=$\frac {P(A\cap C)}{P(C)}$  
 >$\Leftrightarrow P(A\cap C)=P(A\vert C)\cdot P(C)$  
@@ -57,12 +57,22 @@ title: Introduction To The Conditional Probability
 >=$P(A\vert (B\cap C))\cdot P(B\vert C)$  
 >&#10114;from above,  
 >$\frac {P((A\cap B)\cap C)}{P(C)}$=$P(A\vert (B\cap C))\cdot P(B\vert C)$  
->$\Rightarrow P(A\cap B\cap C)$=$P(A\vert (B\cap C))\cdot P(B\vert C)\cdot P(C)$  
+>$\Leftrightarrow P(A\cap B\cap C)$=$P(A\vert (B\cap C))\cdot P(B\vert C)\cdot P(C)$  
 >
 >Also known as <font color="DeepSkyBlue">the multiplication rule</font>.  
 >Below expression illustrates <font color="Red">probability chaining rule</font> <font color="DeepSkyBlue">extension</font>:  
 >$P(N_{1}\cap N_{2}\cap N_{3}\cap ...\cap N_{m})$  
->=$P(N_{1}\vert (N_{2}\cap N_{3}\cap ...\cap N_{m}))\cdot P(N_{2}\vert N_{3}\cap ...\cap N_{m})\cdot ...P(N_{m-1}\vert N_{m})\cdot P(N_{m})$  
+>=$P(N_{1}\vert (N_{2}\cap N_{3}\cap ...\cap N_{m}))\cdot P(N_{2}\vert N_{3}\cap ...\cap N_{m})\cdot ...\cdot P(N_{m-1}\vert N_{m})\cdot P(N_{m})$  
+
+### <font color="RoyalBlue">Example</font>: Illustration By Fuel Residence Time For <font color="DeepSkyBlue">Extension</font>
+>If we are given the same condition to the engine containing a combustion chamber in it, we'd like to estimate the probability of the particle stay over 1 seconds will stay over 10 seconds.  
+>
+><font color="OrangeRed">Suppose the chemical particle still left at 10-th second is the final one molecular</font>, and the probability of such chemical reaction is in [exponential distribution]({{ site.github.repo }}{{ site.baseurl }}/2018/01/24/intro-exp-dist/), the probability of $R_{t}$, $P(R_{t})$=$e^{-t}$.
+>
+>This is to ask for $P(R_{10}\vert R_{1})$=$\frac {P(R_{10}\cap R_{1})}{P(R_{1})}$.  
+>&#10112;by the given assumption, the final particle is in $R_{10}$, it just passed through $R_{1}$,$R_{2}$,...,$R_{10}$.  
+$(R_{10}\cap R_{1})$=$(R_{10}\cap R_{9}\cap ... \cap R_{1})$  
+>>&#10113;
 
 <!-- Γ -->
 <!-- \Omega -->
@@ -107,6 +117,8 @@ title: Introduction To The Conditional Probability
 <!-- <font color="#D600D6">discount factor gamma $\gamma$</font> -->
 <!-- <font color="#D600D6">$V(S)$</font> -->
 <!-- <font color="#9300FF">immediate reward R(S)</font> -->
+
+<!-- <font color="Brown">proof::mjtsai1974</font> -->
 
 <!-- 
 [1]Given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?
