@@ -17,6 +17,12 @@ The inference from <font color="DeepSkyBlue">conditional probability</font> come
 >By the definition of <font color="Red">event independence</font>, we can have an equivalence of expression from <font color="DeepSkyBlue">conditional probability</font>:  
 >$P(A\vert B)$=$\frac {P(A\cap B)}{P(B)}$=$P(A)$  
 >$\Leftrightarrow P(A\cap B)=P(A)\cdot P(B)$  
+>
+>Below lists the basic properties:  
+>&#10112;$P(A\cap B)$=$P(A)\cdot P(B)$ indicates event $A$ is independent of event $B$.  
+>&#10113;by its symmetry, $P(A)\cdot P(B)$=$P(B)\cdot P(A)$=$P(B\cap A)$, event $B$ is independent of event $A$.  
+>&#10114;$P(A\vert B)$=$P(A)$, and $P(B\vert A)$=$P(B)$.  
+
 
 <!-- Γ -->
 <!-- \Omega -->
