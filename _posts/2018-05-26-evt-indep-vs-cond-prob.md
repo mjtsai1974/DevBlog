@@ -26,9 +26,9 @@ The inference from <font color="DeepSkyBlue">conditional probability</font> come
 ### <font color="Red">Event Independence</font> <font color="DeepSkyBlue">Extension</font>
 ><font color="RoyalBlue">[1]</font>
 ><font color="OrangeRed">multiple events independence</font>  
->$P(N_{1}\cap N_{2}\cap...\cap N_{m})$=$P(N_{1})\cdot P(N_{1})\cdot ...\cdot P(N_{m})$, given that all events $N_{i}$ are all independent.  
+>$P(N_{1}\cap N_{2}\cap...\cap N_{m})$=$P(N_{1})\cdot P(N_{1})\cdot ...\cdot P(N_{m-1})\cdot P(N_{m})$, given that all events $N_{i}$ are all independent.  
 ><font color="Brown">proof::mjtsai1974</font>  
->$P(N_{1}\cap N_{2}\cap...\cap N_{m})$  
+<!-- >$P(N_{1}\cap N_{2}\cap...\cap N_{m})$  
 >=$P(N_{1}\vert (N_{2}\cap N_{3}\cap ...\cap N_{m}))$  
 >$\;\;\;\;\cdot P(N_{2}\vert (N_{3}\cap ...\cap N_{m}))$  
 >$\;\;\;\;\...$  
@@ -40,11 +40,13 @@ The inference from <font color="DeepSkyBlue">conditional probability</font> come
 >$\;\;\;\;\cdot \frac {P(N_{m-1}\cap N_{m})}{P(N_{m})}$  
 >$\;\;\;\;\cdot P(N_{m})$  
 >=$P(N_{1})\cdot P(N_{1})\cdot ...\cdot P(N_{m-1})\cdot P(N_{m})$  
->$\Rightarrow$  
+>$\Rightarrow$!-->
 >&#10112;$P(N_{m-1}\vert N_{m})$=$\frac {P(N_{m-1}\cap N_{m})}{P(N_{m})}$=$P(N_{m-1})$  
->Then $P(N_{m-1}\cap N_{m})$=$P(N_{m-1})\cdot P(N_{m})$ holds.  
+>Then $P(N_{m-1}\cap N_{m})$  
+>=$P(N_{m-1})\cdot P(N_{m})$.  
 >&#10113;$P(N_{m-2}\vert (N_{m-1}\cap N_{m}))$=$\frac {P(N_{m-2}\cap (N_{m-1}\cap N_{m}))}{P(N_{m-1}\cap N_{m})}$=$P(N_{m-2})$  
->Then $P(N_{m-2}\cap (N_{m-1}\cap N_{m}))$=$P(N_{m-2})\cdot P(N_{m-1})\cdot P(N_{m})$ holds.  
+>Then $P(N_{m-2}\cap (N_{m-1}\cap N_{m}))$  
+>=$P(N_{m-2})\cdot P(N_{m-1})\cdot P(N_{m})$.  
 >&#10114;by mathematics induction, could we finally have the equivalence of expression.  
 >
 
