@@ -9,7 +9,9 @@ In the disciplines of probability, <font color="Red">event independence</font> i
 The inference from <font color="DeepSkyBlue">conditional probability</font> come out with the result that one event occurrence is said to <font color="OrangeRed">not related</font> to another event, if the two events are <font color="OrangeRed">independent</font>.  
 </p>
 
-
+### Definition: <font color="Red">Event Independence</font>
+>An event $A$ is said independent of event $B$, if  
+>$\;\;\;\;P(A\vert B)$=$P(A)$.  
 
 <!-- Γ -->
 <!-- \Omega -->
