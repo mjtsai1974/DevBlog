@@ -40,7 +40,26 @@ title: Introduction To The Conditional Probability
 >&#10114;since <font color="DeepPink">$R_{5}\subset R{4}$</font>, we have <font color="DeepPink">$R_{5}\cap R_{4}$=$R_{5}$</font>.  
 >Therefore, $P(R_{5}\vert R_{4})$=$\frac {P(R_{5}\cap R_{4})}{P(R_{4})}$=$\frac {P(R_{5})}{P(R_{4})}$=$e^{-1}$.  
 
-<!-- to be conti for the multiplication rule-->
+### The <font color="Red">Probability Chaining Rule</font>
+>The probability chaining rule has it that:  
+>&#10112;$P(A\cap C)=P(A\vert C)\cdot P(C)$  
+>&#10113;$P((A\cap B)\vert C)$=>=$P(A\vert (B\cap C))\cdot P(B\vert C)$  
+>&#10114;$P(A\cap B\cap C)$=$P(A\vert (B\cap C))\cdot P(B\vert C)\cdot P(C)$  
+>
+>proof::mjtsai1974  
+>Begin from the conditional probability:  
+>&#10112;$P(A\vert C)$=$\frac {P(A\cap C)}{P(C)}$  
+>$\Leftrightarrow P(A\cap C)=P(A\vert C)\cdot P(C)$  
+>&#10113;$P((A\cap B)\vert C)$  
+>=$\frac {P((A\cap B)\cap C)}{P(C)}$  
+>=$\frac {P(A\cap (B\cap C))}{P(C)}$  
+>=$\frac {P(A\vert (B\cap C))\cdot P(B\cap C)}{P(C)}$  
+>=$P(A\vert (B\cap C))\cdot P(B\vert C)$  
+>&#10114;from above,  
+>$\frac {P((A\cap B)\cap C)}{P(C)}$=$P(A\vert (B\cap C))\cdot P(B\vert C)$  
+>$\Rightarrow P(A\cap B\cap C)$=$P(A\vert (B\cap C))\cdot P(B\vert C)\cdot P(C)$  
+>
+>Also known as <font color="DeepSkyBlue">the multiplication rule</font>.  
 
 <!-- Γ -->
 <!-- \Omega -->
@@ -48,6 +67,9 @@ title: Introduction To The Conditional Probability
 <!-- \cap intersection -->
 <!-- \cup union -->
 <!-- P(A\vert C) -->
+<!-- \Rightarrow -->
+<!-- \Leftarrow -->
+<!-- \Leftrightarrow -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
 <!-- \vert_0^\infty -->
