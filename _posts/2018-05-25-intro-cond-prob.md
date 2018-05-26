@@ -62,7 +62,11 @@ title: Introduction To The Conditional Probability
 >Also known as <font color="DeepSkyBlue">the multiplication rule</font>.  
 >Below expression illustrates <font color="Red">probability chaining rule</font> <font color="DeepSkyBlue">extension</font>:  
 >$P(N_{1}\cap N_{2}\cap N_{3}\cap ...\cap N_{m})$  
->=$P(N_{1}\vert (N_{2}\cap N_{3}\cap ...\cap N_{m}))\cdot P(N_{2}\vert (N_{3}\cap ...\cap N_{m}))\cdot ...\cdot P(N_{m-1}\vert N_{m})\cdot P(N_{m})$  
+>=$P(N_{1}\vert (N_{2}\cap N_{3}\cap ...\cap N_{m}))$  
+>$\;\;\;\;\cdot P(N_{2}\vert (N_{3}\cap ...\cap N_{m}))$  
+>$\;\;\;\;\...$  
+>$\;\;\;\;\cdot P(N_{m-1}\vert N_{m})$  
+>$\;\;\;\;\cdot P(N_{m})$  
 
 ### <font color="RoyalBlue">Example</font>: Illustration By Fuel Residence Time For <font color="DeepSkyBlue">Extension</font>
 >If we are given the same condition to the engine containing a combustion chamber in it, we'd like to estimate <font color="OrangeRed">the probability of the particle stay over 1 seconds will stay over 10 seconds</font>.  
@@ -71,7 +75,7 @@ title: Introduction To The Conditional Probability
 >
 ><font color="Brown">proof::mjtsai1974</font>  
 >This is to ask for $P(R_{10}\vert R_{1})$=$\frac {P(R_{10}\cap R_{1})}{P(R_{1})}$.  
->&#10112;by the given assumption, the final particle is in $R_{10}$, it just passed through $R_{1}$,$R_{2}$,...,$R_{10}$.  
+>&#10112;by the given assumption, <font color="DeepSkyBlue">the final particle is in $R_{10}$, it just passed through $R_{1}$,$R_{2}$,...,$R_{10}$</font>.  
 >Hence, $(R_{10}\cap R_{1})$=$(R_{10}\cap R_{9}\cap ... \cap R_{1})$  
 >&#10113;by the <font color="OrangeRed">probability chaining rule</font>,  
 >$P(R_{10}\cap R_{9}\cap ... \cap R_{1})$  
