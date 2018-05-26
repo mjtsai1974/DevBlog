@@ -13,7 +13,7 @@ The inference from <font color="DeepSkyBlue">conditional probability</font> come
 >An event $A$ is said independent of event $B$, if  
 >$\;\;\;\;P(A\vert B)$=$P(A)$.  
 
-### <font color="Red">Event Independence</font> Equivalence
+### <font color="Red">Event Independence</font> <font color="DeepSkyBlue">Equivalence</font>
 >By the definition of <font color="Red">event independence</font>, we can have an equivalence of expression from <font color="DeepSkyBlue">conditional probability</font>:  
 >$P(A\vert B)$=$\frac {P(A\cap B)}{P(B)}$=$P(A)$  
 >$\Leftrightarrow P(A\cap B)=P(A)\cdot P(B)$  
@@ -23,6 +23,22 @@ The inference from <font color="DeepSkyBlue">conditional probability</font> come
 >&#10113;by its symmetry, $P(A)\cdot P(B)$=$P(B)\cdot P(A)$=$P(B\cap A)$, event $B$ is independent of event $A$.  
 >&#10114;$P(A\vert B)$=$P(A)$ and $P(B\vert A)$=$P(B)$.  
 
+### <font color="Red">Event Independence</font> <font color="DeepSkyBlue">Extension</font>
+><font color="RoyalBlue">[1]</font>
+><font color="OrangeRed">multiple events independence</font>  
+>$P(N_{1}\cup N_{2}\cup...\cup N_{m})$=$P(N_{1})\cdot P(N_{1})\cdot ...\cdot P(N_{m})$, given that all events $N_{i}$ are all independent.  
+><font color="Brown">proof::mjtsai1974</font>  
+>$P(N_{1}\cup N_{2}\cup...\cup N_{m})$  
+>=$P(N_{1}\vert (N_{2}\cap N_{3}\cap ...\cap N_{m}))$  
+>$\;\;\;\;\cdot P(N_{2}\vert (N_{3}\cap ...\cap N_{m}))$  
+>$\;\;\;\;\...$  
+>$\;\;\;\;\cdot P(N_{m-1}\vert N_{m})$  
+>$\;\;\;\;\cdot P(N_{m})$  
+>$\Leftrightarrow \frac {P(N_{1}\cup (N_{2}\cap N_{3}\cap ...\cap N_{m}))}{P(N_{2}\cap N_{3}\cap ...\cap N_{m})}$  
+>$\;\;\;\;\cdot \frac {P(N_{2}\cap (N_{3}\cap ...\cap N_{m}))}{P(N_{3}\cap ...\cap N_{m})}$  
+>$\;\;\;\;\...$  
+>$\;\;\;\;\cdot \frac {P(N_{m-1}\cap N_{m})}{P(N_{m})}$  
+>$\;\;\;\;\cdot P(N_{m})$  
 
 <!-- Γ -->
 <!-- \Omega -->
