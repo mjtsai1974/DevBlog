@@ -50,6 +50,21 @@ The inference from <font color="DeepSkyBlue">conditional probability</font> come
 >=$P(N_{m-2})\cdot P(N_{m-1})\cdot P(N_{m})$.  
 >&#10114;by mathematics induction, could we finally have the equivalence of expression.  
 >
+><font color="RoyalBlue">[2]</font>
+><font color="OrangeRed">independence equivalence relation</font>  
+>Event $A$ is independent of event $B$  
+>$\Leftrightarrow$ event $A^{c}$ is independent of event $B$  
+><font color="Brown">proof::mjtsai1974</font>  
+>&#10112;$\Rightarrow$  
+>$1$-$P(A\vert B)$  
+>=$1$-$P(A)$  
+>=$P(A^{c})$  
+>=$P(A^{c}\vert B)$  
+>&#10113;$\Leftarrow$  
+>$P(A^{c}\vert B)$  
+>=$P(A^{c})$  
+>=$1$-$P(A)$  
+>$1$-$P(A\vert B)$  
 
 <!-- Γ -->
 <!-- \Omega -->
