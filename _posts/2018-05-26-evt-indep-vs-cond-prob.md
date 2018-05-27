@@ -75,6 +75,10 @@ The inference from <font color="DeepSkyBlue">conditional probability</font> come
 >$\Leftrightarrow P(A^{c}\vert B^{c})$=$P(A^{c})$  
 >
 >We conclude <font color="DeepPink">if $A$ is independent of $B$, then $A^{c}$ is independent of $B$, $A$ is independent of $B^{c}$, $A^{c}$ is independent of $B^{c}$</font>.  
+>
+><font color="RoyalBlue">[4]</font>
+><font color="OrangeRed">event and its complemenmt</font>  
+>The prpbability of intersection of any given event and its complement is $0$,  that is $P(A\cap A^{c})$=$0$.  
 
 ### <font color="RoyalBlue">Example</font>: 2nd Head following 1st Head
 >Suppose you are tossing a fair coin, the probability of head and tail are all $\frac {1}{2}$, and <font color="DeepSkyBlue">each tossing is an independent case</font>.  
