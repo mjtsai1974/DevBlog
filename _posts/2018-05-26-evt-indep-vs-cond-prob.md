@@ -60,6 +60,21 @@ The inference from <font color="DeepSkyBlue">conditional probability</font> come
 >=$P(A^{c})$  
 >=$P(A^{c}\vert B)$  
 >From the end to the beginning could we prove the inverse direction.  
+>
+><font color="RoyalBlue">[3]</font>
+><font color="OrangeRed">independence of all events</font>  
+>Given event $A$ is independent of event $B$, we can infer out all possible independence in between $A$, $A^{c}$, $B$, $B^{c}$.  
+><font color="Brown">proof::mjtsai1974</font>  
+>$P(A\vert B)$=$P(A)$  
+>$\Leftrightarrow P(A^{c}\vert B)$=$P(A^{c})$  
+>$\Leftrightarrow P(B\vert A^{c})$=$P(B)$  
+>$\Leftrightarrow P(B^{c}\vert A^{c})$=$P(B^{c})$  
+>$\Leftrightarrow P(B\vert A)$=$P(B)$  
+>$\Leftrightarrow P(B^{c}\vert A)$=$P(B^{c})$  
+>$\Leftrightarrow P(A\vert B^{c})$=$P(A)$  
+>$\Leftrightarrow P(A^{c}\vert B^{c})$=$P(A^{c})$  
+>
+>We conclude <font color="DeepPink">if $A$ is independent of $B$, then $A^{c}$ is independent of $B$, $A$ is independent of $B^{c}$, $A^{c}$ is independent of $B^{c}$</font>.  
 
 <!-- Γ -->
 <!-- \Omega -->
