@@ -55,16 +55,11 @@ The inference from <font color="DeepSkyBlue">conditional probability</font> come
 >Event $A$ is independent of event $B$  
 >$\Leftrightarrow$ event $A^{c}$ is independent of event $B$  
 ><font color="Brown">proof::mjtsai1974</font>  
->&#10112;$\Rightarrow$  
 >$1$-$P(A\vert B)$  
 >=$1$-$P(A)$  
 >=$P(A^{c})$  
 >=$P(A^{c}\vert B)$  
->&#10113;$\Leftarrow$  
->$P(A^{c}\vert B)$  
->=$P(A^{c})$  
->=$1$-$P(A)$  
->$1$-$P(A\vert B)$  
+>From the end to the beginning could we prove the inverse direction.  
 
 <!-- Γ -->
 <!-- \Omega -->
