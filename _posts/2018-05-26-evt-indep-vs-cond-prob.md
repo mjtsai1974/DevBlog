@@ -76,6 +76,20 @@ The inference from <font color="DeepSkyBlue">conditional probability</font> come
 >
 >We conclude <font color="DeepPink">if $A$ is independent of $B$, then $A^{c}$ is independent of $B$, $A$ is independent of $B^{c}$, $A^{c}$ is independent of $B^{c}$</font>.  
 
+### <font color="RoyalBlue">Example</font>: 2nd Head following 1st Head
+>Suppose you are tossing a fair coin, the probability of head and tail are all $\frac {1}{2}$, and <font color="DeepSkyBlue">each tossing is an independent case</font>.  
+>
+>We'd like to ask for <font color="OrangeRed">the probability that the 2nd tossing out a head, right after the 1st tossing out a head</font>, then,  
+>&#10112;take the event of 1st tossing as $A_{1}$=$\\{H,T\\}$, take the event of 2nd tossing as $A_{2}$=$\\{H,T\\}$.  
+>&#10113;the sample space of these 2 tossing would be $\Omega$=$\\{HH,HT,TH,TT\\}$.  The probability of 2 contiguous heads is $\frac {1}{4}$.  
+>&#10114;<font color="OrangeRed">the probability that the 2nd tossing out a head, right after the 1st tossing out a head</font> is asking for $P(A_{2}\cap A_{1})$, then  
+>$\frac {1}{4}$  
+>=$P(A_{2}\cap A_{1})$  
+>=$P(A_{2}\vert A_{1})\cdot P(A_{1})$  
+>=$\frac {1}{2}\cdot \frac {1}{2}$  
+>=$P(A_{2})\cdot P(A_{1})$  
+>Thus, we have $P(A_{2}\vert A_{1})$=$P(A_{2})$, it is fully compliant with the given that <font color="DeepSkyBlue">each tossing is an independent case</font>.  
+
 <!-- Γ -->
 <!-- \Omega -->
 <!-- \subset -->
