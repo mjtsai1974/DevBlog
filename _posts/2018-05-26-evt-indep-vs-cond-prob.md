@@ -97,7 +97,7 @@ The inference from <font color="DeepSkyBlue">conditional probability</font> come
 ### <font color="RoyalBlue">Example</font>: Illustration By Tossing A Fair Die
 >Suppose you are tossing a fair die, the sample space $\Omega$=$\\{1,2,3,4,5,6\\}$.  We denote the event of numbers smaller than $4$ as $A$=$\\{1,2,3\\}$, and denote the event of even numbers as $B$=$\\{2,4,6\\}$.  
 >
->To evaluate if event $A$ is independent of event $B$:  
+>To evaluate <font color="DeepSkyBlue">if event $A$ is independent of event $B$</font>:  
 >&#10112;$P(A\cap B)$=$P(\\{2\\})$=$\frac {1}{6}$  
 >&#10113;$P(A)\cdot P(B)$=$\frac {1}{2}\cdot \frac {1}{2}$=$\frac {1}{4}$  
 >Hence, the event of numbers smaller than $4$ is <font color="DeepPink">not independent</font> of the event of even numbers.  
