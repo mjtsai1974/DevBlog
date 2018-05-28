@@ -79,9 +79,9 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >=$\frac {P(Dog \vert Female)\cdot P(Female)}{P(Female)}$  
 >&#10113;trivially, <font color="DeepSkyBlue">back to $\frac {P(Dog \cap Female)}{P(Female)}$ is not incorporating anything already given to help to figure out something we don't know!!</font>  Although, we can also count it by means from the given sample space of 30 females, 20 dogs in it, to get the answer of $\frac {2}{3}$.  
 >
-><font color="DeepPink">The major purpose of Bayes theorem is to use known probability to figure out unknown probability in its maximum likelihood</font>, instead of manual counting in the sample space.  
->
-><font color="RoyalBlue">The tiny skill would be to advice the given condition in the first order in the intersection term, the to be asked probability in the second term.</font>  
+><font color="DeepSkyBlue">Conclusion</font>
+>&#10112;<font color="DeepPink">The major purpose of Bayes theorem is to use known probability to figure out unknown probability in its maximum likelihood</font>, instead of manual counting in the sample space.  
+>&#10113;<font color="RoyalBlue">The tiny skill would be to advice the given condition in the first order in the intersection term, the to be asked probability in the second term.</font>  
 
 <!-- Γ -->
 <!-- \Omega -->
