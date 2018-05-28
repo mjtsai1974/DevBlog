@@ -133,7 +133,7 @@ After exploring in the prerequisites, you are supposed to come out with sufficie
 
 ### Bayesian Statistics And Machine Learning 
 
-* [Introduction To The Probability]({{ site.github.repo }}{{ site.baseurl }}/2018/05/23/bayesian-ml-intro/)
+* [Introduction To The Bayes Theorem]({{ site.github.repo }}{{ site.baseurl }}/2018/05/23/bayesian-ml-intro/)
 
 > The related posts would be new added in the future, and supposed you are comfortable with posts in prerequisite section. 
 
