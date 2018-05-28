@@ -49,7 +49,7 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >
 >The we'd like to know how often could we have rain drops when we are under the sun shinning.  
 >
-><font color="DarkSlateBlue">[Answer]</font>
+><font color="DeepSkyBlue">[Answer]</font>
 >This is to ask for $P(Rainy\vert Sunny)$.  
 >$P(Rainy\vert Sunny)$=$\frac {P(Sunny\vert Rainy)\cdot P(Rainy)}{P(Sunny)}$=$\frac {\frac {1}{5}\cdot\frac {3}{7}}{\frac {4}{7}}$=$\frac {3}{20}$  
 
