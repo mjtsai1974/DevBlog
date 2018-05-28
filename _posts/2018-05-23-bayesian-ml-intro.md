@@ -18,7 +18,7 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >$A$  
 >=$A\cap \Omega$  
 >=$A\cap (B_{1}\cup B_{2}\cup...\cup B_{n})$  
->=$(A\cap (B_{1})\cup (A\cap (B_{2)...\cup (A\cap (B_{n}))$.  
+>=$(A\cap B_{1})\cup (A\cap B_{2})...\cup (A\cap B_{n})$.  
 >&#10113;the <font color="Red">total probability</font> of event $A$:  
 >$P(A)$  
 >=$P((A\cap B_{1})\cup (A\cap B_{2})...\cup (A\cap B_{n}))$  
