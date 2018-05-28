@@ -58,7 +58,7 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">When we pick up one female animal, what's the probability it is a dog?</font>  
-><font color="DeepSkyBlue">Total probability of female animals</font> should be calculated out in advance.  This is asking for $P(Dog\vert Female)$.  
+>This is asking for $P(Dog\vert Female)$.  <font color="DeepSkyBlue">Total probability of female animals</font> should be calculated out in advance.  
 >&#10112;probability of female animals:  
 >$P(Female)$  
 >=$P(Female \cap(Dog \cup Cat))$  
