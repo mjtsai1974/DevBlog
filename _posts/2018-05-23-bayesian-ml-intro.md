@@ -9,6 +9,23 @@ title: Introduction To The Bayes Theorem
 It could be pervasively found in the machine learning, reinforcement learning, wherein the POMDP transition probability is one such model.   
 </p>
 
+### Law Of <font color="Red">Total probability</font>
+>Consider in a random experiment, given below conditions:  
+>[1]$\Omega$=$\\{B_{1},B_{2},...,B_{n}\\}$, where $B_{i}\cap B_{j}$=$0$.  
+>[2]within the sample space, there exist another event $A$, partitioned by $B_{i}$ randomly.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-23-bayesian-ml-intro-total-prob.png "total probability")
+>&#10112;by intersection of $A$ and $\Omega$ could we get $A$:  
+>$A$  
+>=$A\cap \Omega$  
+>=$A\cap (B_{1}\cup B_{2}\cup...\cup B_{n})$  
+>=$(A\cap (B_{1})\cup (A\cap (B_{2)...\cup (A\cap (B_{n}))$.  
+>&#10113;the <font color="Red">total probability</font> of event $A$:  
+>$P(A)$  
+>=$P((A\cap B_{1})\cup (A\cap B_{2})...\cup (A\cap B_{n}))$  
+>=$P((A\cap B_{1}))$+$P(A\cap B_{2})$+...+$P(A\cap B_{n})$  
+>
+
+<!--
 ### Begin From The <font color="Red">Fundamental</font>
 ><font color="RoyalBlue">[1]</font>
 ><font color="OrangeRed">sample space</font>  
@@ -112,7 +129,7 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >=$P(A_{1}\cup A_{2}\cup...\cup A_{n})$  
 >=$P(A_{1})$+$P(A_{2})$+...$P(A_{n})$  
 >=$1$  
-
+-->
 <!-- Γ -->
 <!-- \Omega -->
 <!-- \cap intersection -->
