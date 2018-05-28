@@ -71,7 +71,7 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >=$\frac {\frac {20}{60}\cdot\frac {60}{100}}{\frac {3}{10}}$  
 >=$\frac {2}{3}$  
 >
-><font color="RoyalBlue">The tiny skill would be to advice the given condition in the first order in the intersection term, the to be asked probability in the second term.</font>
+><font color="RoyalBlue">The tiny skill would be to advice the given condition in the first order in the intersection term, the to be asked probability in the second term.</font>  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Back to $P(Dog\vert Female)$ again, for the term $\frac {P(Female \cap Dog)}{P(Female)}$, can we instead to express in the term $\frac {P(Dog \cap Female)}{P(Female)}$?</font>  
