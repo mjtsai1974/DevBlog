@@ -41,6 +41,18 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 >By using the law of <font color="Red">total probability</font>, the general form of <font color="Red">Bayes theorem</font> describing the probability of event $B$, given event $A$ could be expressed in below terms:  
 >$\;\;\;\;P(B\vert A)$=$\frac {P(A\vert B)\cdot P(B)}{P(A\vert B_{1})\cdot P(B_{1})+...+P(A\vert B_{n})\cdot P(B_{n})}$  
 
+### <font color="RoyalBlue">Example</font>: Illustration By Rainy And Sunny Days In One Week
+>[Question]  
+>Suppose we have a fully record of the weather in the past one week, they are rainy and sunny periods.  Say $P(Rainy)$=$\frac {3}{7}$, $P(Sunny)$=$\frac {4}{7}$.  
+>
+>In the rainy period of time, assume such probability when we look into the sky, we can see sun shinning(quiet strange earth weather), $P(Sunny\vert Rainy)$=$\frac {1}{5}$, that is $\frac {1}{5}$ of the time you can see the sun shining in the rainy days.  
+>
+>The we'd like to know how often could we have rain drops when we are under the sun shinning.  
+>
+>[Answer]  
+>This is to ask for $P(Rainy\vert Sunny)$.  
+>$P(Rainy\vert Sunny)$=$\frac {P(Sunny\vert Rainy)\cdot P(Rainy)}{P(Sunny)}$=$\frac {\frac {1}{5}\cdot\frac {3}{7}}{\frac {4}{7}}$=$\frac {3}{20}$  
+
 <!--
 ### Begin From The <font color="Red">Fundamental</font>
 ><font color="RoyalBlue">[1]</font>
