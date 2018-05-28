@@ -39,7 +39,7 @@ It could be pervasively found in the machine learning, reinforcement learning, w
 
 ### The General Form of <font color="Red">Bayes Theorem</font>
 >By using the law of <font color="Red">total probability</font>, the general form of <font color="Red">Bayes theorem</font> describing the probability of event $B$, given event $A$ could be expressed in below terms:  
->$\;\;\;\;P(B\vert A)$=$\frac {P(A\vert B)\cdot P(B)}{$P(A\vert B_{1})\cdot P(B_{1})$+...+$P(A\vert B_{n})\cdot P(B_{n})$}$  
+>$\;\;\;\;P(B\vert A)$=$\frac {P(A\vert B)\cdot P(B)}{P(A\vert B_{1})\cdot P(B_{1})+...+P(A\vert B_{n})\cdot P(B_{n})}$  
 
 <!--
 ### Begin From The <font color="Red">Fundamental</font>
