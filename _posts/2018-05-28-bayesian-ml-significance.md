@@ -64,7 +64,10 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 >&#10113;take $P(Shy\vert Mgr)$=$0.1$, $P(Shy\vert Sales)$=$0.24$, $P(Shy\vert M_{eng})$=$0.47$, $P(Shy\vert I_{eng})$=$0.29$ for given a manager, a marketing sales, a manufacturing engineer, IC design engineer, the probability being shy respectively, which are all the <font color="OrangeRed">likelihood function</font>, the <font color="RosyBrown">qualitative</font> term.  
 >&#10114;the question asks for the maximum in between $P(Mgr\vert Shy)$, $P(Sales\vert Shy)$, $P(M_{eng}\vert Shy)$, $P(I_{eng}\vert Shy)$.  Trivially, we need the <font color="OrangeRed">total probability</font> of being shy.  
 >$P(Shy)$  
->=$P(Shy\vert Mgr)\cdot P(Mgr)$+$P(Shy\vert Sales)\cdot P(Sales)$+$P(Shy\vert M_{eng})\cdot P(M_{eng})$+$P(Shy\vert I_{eng})\cdot P(I_{eng})$  
+>=$P(Shy\vert Mgr)\cdot P(Mgr)$+  
+>$\;\;\;\;P(Shy\vert Sales)\cdot P(Sales)$+  
+>$\;\;\;\;P(Shy\vert M_{eng})\cdot P(M_{eng})$+  
+>$\;\;\;\;P(Shy\vert I_{eng})\cdot P(I_{eng})$  
 >=$0.1\cdot 0.08$+$0.24\cdot 0.32$+$0.47\cdot 0.38$+$0.29\cdot 0.22$  
 >=$0.3272$  
 >&#10115;finally, the <font color="OrangeRed">posterior probability</font>:  
