@@ -55,11 +55,24 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 >Suppose the statistical population distribution in the Hsin-Chu science park area reports that $\\%8$ of the population is the managers, $\\%32$ is the marketing sales, $\\%38$ is the manufacturing engineers, $\\%22$ is the IC design engineers.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-q-q.png "quantative vs qualitative")
 >Given that Albert is a man, when you see him, his behavior is <font color="OrangeRed">a little shy</font>, talktive with strangers for road seeking, and is not talktive in political topics.  
+>
 >According to recent statistical research that given a manager, $0.1$ probability being shy; given a marketing sales, $0.24$ probability being shy; given a manufacturing engineer, $0.47$ probability being shy; given an IC design engineer, %0.29% probability being shy.  
 ><font color="OrangeRed">Under such condition, given that Albert is a shy man, what kind of identity has the maximum probability?</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-q-q-shy.png "q-q-shy")
-<font color="DeepSkyBlue">[Answer]</font>  
->
+><font color="DeepSkyBlue">[Answer]</font>  
+>&#10112;take $P(Mgr)$=$0.08$, $P(Sales)$=$0.32$, $P(M_{eng})$=$0.38$, $P(I_{eng})$=$0.22$ for probability of being managers, marketing sales, manufacture engineers, IC design engineers, which are all the <font color="OrangeRed">prior probability</font>.  
+>&#10113;take $P(Shy\vert Mgr)$=$0.1$, $P(Shy\vert Sales)$=$0.24$, $P(Shy\vert M_{eng})$=$0.47$, $P(Shy\vert I_{eng})$=$0.29$ for given a manager, a marketing sales, a manufacturing engineer, IC design engineer, the probability being shy respectively, which are all the <font color="OrangeRed">likelihood function</font>, the <font color="RosyBrown">qualitative</font> term.  
+>&#10114;the question asks for the maximum in between $P(Mgr\vert Shy)$, $P(Sales\vert Shy)$, $P(M_{eng}\vert Shy)$, $P(I_{eng}\vert Shy)$.  Trivially, we need the <font color="OrangeRed">total probability</font> of being shy.  
+>$P(Shy)$  
+>=$P(Shy\vert Mgr)\cdot P(Mgr)$+$P(Shy\vert Sales)\cdot P(Sales)$+$P(Shy\vert M_{eng})\cdot P(M_{eng})$+$P(Shy\vert I_{eng})\cdot P(I_{eng})$  
+>=$0.1\cdot 0.08$+$0.24\cdot 0.32$+$0.47\cdot 0.38$+$0.29\cdot 0.22$  
+>=$0.3272$  
+>&#10115;finally, the <font color="OrangeRed">posterior probability</font>:  
+>$P(Mgr\vert Shy)$=$\frac {P(Shy\vert Mgr)\cdot P(Mgr)}{P(Shy)}$=$\frac {0.1\cdot 0.08}{0.3272}$=$0.0244$  
+>$P(Sales\vert Shy)$=$\frac {P(Shy\vert Sales)\cdot P(Sales)}{P(Shy)}$=$\frac {0.24\cdot 0.32}{0.3272}$=$0.2347$  
+>$P(M_{eng}\vert Shy)$=$\frac {P(Shy\vert M_{eng})\cdot P(M_{eng})}{P(Shy)}$=$\frac {0.47\cdot 0.38}{0.3272}$=$0.5458$  
+>$P(I_{eng}\vert Shy)$=$\frac {P(Shy\vert I_{eng})\cdot P(I_{eng})}{P(Shy)}$=$\frac {0.29\cdot 0.22}{0.3272}$=$0.1949$  
+>We found that $P(M_{eng}\vert Shy)$ has the <font color="OrangeRed">largest posterior probability</font> and implies the maximum possibility that Albert is a shy man, he is a manufacture engineer.  
 
 <!-- Γ -->
 <!-- \Omega -->
