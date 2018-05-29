@@ -32,6 +32,18 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 >&#10115;$P(B_{i}\vert A)$ is the <font color="OrangeRed">posterior probability</font>, by intuition the <font color="DeepPink">quantative</font> target, now <font color="DeepSkyBlue">the sample space is the target event of interest $A$</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-4-factors.png "4 factors")
 
+### <font color="RoyalBlue">Example</font>: 3 Red And 2 White Balls
+><font color="RoyalBlue">[Question]</font>
+>Given that there are 3 red and 2 white balls in a bow.  Suppose you pick up 2 balls sequentially.  What's the probability of picking up the 2nd white ball <font color="OrangeRed">and</font> the 1st one is the red ball?  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-3r-2w.png "2 R, 3 W")
+><font color="DeepSkyBlue">[Answer]</font>
+>This is asking for $P(W_{2}\cap R_{1})$.  Denote $R_{i}$,$W_{i}$ as the i-th picking the red, white ball up.  
+>&#10112;when we pick up the very first ball, $\Omega$=$\\{r_{1},r_{2},r_{3},w_{1},w_{2}\\}$.  
+>$P(R_{1})$=$\frac {3}{5}$, the probability that the 1st ball is a red ball.  
+>&#10113;when we pick up the second ball, $\Omega$=$\\{r_{2},r_{3},w_{1},w_{2}\\}$.  
+>$P(W_{2}\vert R_{1})$=$\frac {2}{4}$, the probability that the 2nd ball is a white ball, given that the first one is the red ball.  
+>&#10114;$P(W_{2}\cap R_{1})$=$P(W_{2}\vert R_{1})\cdot P(R_{1})$=$\frac {6}{20}$.  
+
 
 <!-- Γ -->
 <!-- \Omega -->
