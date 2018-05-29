@@ -35,7 +35,7 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 ### <font color="RoyalBlue">Example</font>: 3 Red And 2 White Balls
 ><font color="RoyalBlue">[Question]</font>
 >Given that there are 3 red and 2 white balls in a bow.  Suppose you pick up 2 balls sequentially.  What's the probability of picking up the 2nd white ball <font color="OrangeRed">and</font> the 1st one is the red ball?  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-3r-2w.png "2 R, 3 W")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-3r-2w.png "3 R, 2 W")
 ><font color="DeepSkyBlue">[Answer]</font>
 >This is asking for $P(W_{2}\cap R_{1})$.  Denote $R_{i}$,$W_{i}$ as the i-th picking the red, white ball up.  
 >&#10112;when we pick up the very first ball, $\Omega$=$\\{r_{1},r_{2},r_{3},w_{1},w_{2}\\}$.  
