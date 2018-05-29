@@ -14,13 +14,14 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 >
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">The general form of Bayes theorem embedes a total probability expression in its denominator part.</font>  
->&#10112;such <font color="OrangeRed">total probability</font> is the <font color="DeepSkyBlue">linear combination of the events in the sample space</font> with the probability $P(A\vert B_{i})$, the occurrence of <font color="OrangeRed">the target condition $A$</font>, under the given partitioned sample space $B_{i}$ as $B_{i}$'s <font color="OrangeRed">weighting</font>.  
+>&#10112;such <font color="OrangeRed">total probability</font> is the <font color="DeepSkyBlue">linear combination of the events in the sample space</font> with the probability $P(A\vert B_{i})$, the occurrence of <font color="OrangeRed">the target condition $A$</font>, under the given partitioned sample space $B_{i}$ as it's <font color="OrangeRed">weighting</font>.  
 >&#10113;usually, $A$ is the <font color="OrangeRed">qualitative</font> feature of interest.  
 >&#10114;$\Omega$=$\\{B_{1},B_{2},...,B_{n}\\}$, where $B_{i}$ is the partition os the sample space.  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">The general form of Bayes theorem has joint probability expression in its nominator part.</font>  
->
+>&#10112;the <font color="DeepSkyBlue">joint probability</font> is expressed in terms of $P(A\vert B_{i})\cdot P(B_{i})$.  
+>&#10113;$P(A\vert B_{i})\cdot P(B_{i})$=$P(A\cap B_{i})$, is to calculate the <font color="OrangeRed">possible likelihood</font> of the probability of the coexistence of $A$ and $B_{i}$.  
 
 <!-- Γ -->
 <!-- \Omega -->
