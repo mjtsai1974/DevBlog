@@ -54,6 +54,11 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 ><font color="RoyalBlue">[Question]</font>
 >Suppose the statistical population distribution in the Hsin-Chu science park area reports that $\\%8$ of the population is the managers, $\\%32$ is the marketing sales, $\\%38$ is the manufacturing engineers, $\\%22$ is the IC design engineers.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-q-q.png "quantative vs qualitative")
+>Given that Albert is a man, when you see him, his behavior is <font color="OrangeRed">a little shy</font>, talktive with strangers for road seeking, and is not talktive in political topics.  
+>According to recent statistical research that given a manager, $0.1$ probability being shy; given a marketing sales, $0.24$ probability being shy; given a manufacturing engineer, $0.47$ probability being shy; given an IC design engineer, %0.29% probability being shy.  
+><font color="OrangeRed">Under such condition, given that Albert is a shy man, what kind of identity has the maximum probability?</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-q-q-shy.png "q-q-shy")
+<font color="DeepSkyBlue">[Answer]</font>  
 >
 
 <!-- Γ -->
