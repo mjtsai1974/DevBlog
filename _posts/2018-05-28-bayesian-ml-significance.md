@@ -12,8 +12,7 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 ### The <font color="Red">Bayes Theorem Significance</font>
 >$\;\;\;\;P(B_{i}\vert A)$=$\frac {P(A\vert B_{i})\cdot P(B_{i})}{P(A\vert B_{1})\cdot P(B_{1})+...+P(A\vert B_{n})\cdot P(B_{n})}$  
 >
-><font color="DeepSkyBlue">[1]</font>
->The general form of <font color="Red">Bayes theorem</font> embedes a <font color="OrangeRed">total probability</font> expression in its denominator part.  
+><font color="DeepSkyBlue">[1]</font>The general form of <font color="Red">Bayes theorem</font> embedes a <font color="OrangeRed">total probability</font> expression in its denominator part.  
 >&#10112;such <font color="OrangeRed">total probability</font> is the <font color="DeepSkyBlue">linear combination of the events in the sample space</font> with the probability $P(A\vert B_{i})$, the occurrence of <font color="OrangeRed">the target condition $A$</font>, under the given partitioned sample space $B_{i}$ as $B_{i}$'s <font color="OrangeRed">weighting</font>.  
 >&#10113;usually, $A$ is the <font color="OrangeRed">qualitative</font> feature of interest.  
 >&#10114;$\Omega$=$\\{B_{1},B_{2},...,B_{n}\\}$, where $B_{i}$ is the partition os the sample space.  
