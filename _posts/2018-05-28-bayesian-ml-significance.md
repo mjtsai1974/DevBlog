@@ -43,7 +43,11 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 >&#10113;when we pick up the second ball, $\Omega$=$\\{r_{2},r_{3},w_{1},w_{2}\\}$.  
 >$P(W_{2}\vert R_{1})$=$\frac {2}{4}$, the probability that the 2nd ball is a white ball, given that the first one is the red ball.  
 >&#10114;$P(W_{2}\cap R_{1})$=$P(W_{2}\vert R_{1})\cdot P(R_{1})$=$\frac {6}{20}$.  
-
+>
+><font color="#C20000">More details</font>
+>&#10112;$P(R_{1})$ is the <font color="OrangeRed">prior priority</font>.  
+>&#10113;$P(W_{2}\vert R_{1})$ is the <font color="OrangeRed">likelihood function</font> to estimate the probability that the 2nd ball is a white ball, given that the first one is the red ball.  
+>&#10114;$P(W_{2}\vert R_{1})\cdot P(R_{1})$ is the <font color="OrangeRed">joint probability</font> of the coexistence of $W_{2}$ and $R_{1}$, since we are asking for the probability of picking up the 2nd white ball <font color="OrangeRed">and</font> the 1st one is the red ball.  
 
 <!-- Γ -->
 <!-- \Omega -->
@@ -72,7 +76,7 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 <!-- <font color="RoyalBlue">old alpha, quiz, example</font> -->
 <!-- <font color="Green">new alpha</font> -->
 
-<!-- <font color="#C20000">conclusion, finding</font> -->
+<!-- <font color="#C20000">conclusion, finding, more details</font> -->
 <!-- <font color="DeepPink">positive conclusion, finding</font> -->
 <!-- <font color="RosyBrown">negative conclusion, finding</font> -->
 
