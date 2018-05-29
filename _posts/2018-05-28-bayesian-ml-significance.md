@@ -26,10 +26,10 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Take the Bayes theorem into parts</font>  
 >There exists 4 factors in the Bayes theorem expression.  
->&#10112;$B_{i}$ is the <font color="OrangeRed">prior</font> probability, the already known probability.  
->&#10113;$P(A\vert B_{i})$ is the <font color="OrangeRed">likelihood function</font>, by intuition the <font color="DeepSkyBlue">qualitative</font> term, its major effect is the estimation of <font color="DeepSkyBlue">the possible likely probability of the occurrence of target event of interest $A$, under the given condition/partition $B_{i}$ of sample space</font>.  
+>&#10112;$B_{i}$ is the <font color="OrangeRed">prior probability</font>, the already known probability.  
+>&#10113;$P(A\vert B_{i})$ is the <font color="OrangeRed">likelihood function</font>, by intuition the <font color="RosyBrown">qualitative</font> term, its major effect is the estimation of <font color="DeepSkyBlue">the possible likely probability of the occurrence of target event of interest $A$, under the given condition/partition $B_{i}$ of sample space</font>.  
 >&#10114;the <font color="OrangeRed">total probability</font> also called the <font color="OrangeRed">marginal probability</font>, it is the summation over the distribution of each distinct $B_{i}$ with regards to the specific $A$, that means there could be infinite numbers of $A$.  
->&#10115;$P(B_{i}\vert A)$ is the <font color="OrangeRed">posterior probability</font>, by intuition the <font color="DeepSkyBlue">quantative</font> target, now the sample space is the target event of interest $A$.  
+>&#10115;$P(B_{i}\vert A)$ is the <font color="OrangeRed">posterior probability</font>, by intuition the <font color="DeepPink">quantative</font> target, now <font color="DeepSkyBlue">the sample space is the target event of interest $A$</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-4-factors.png "4 factors")
 
 
