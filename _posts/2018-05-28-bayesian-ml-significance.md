@@ -74,8 +74,9 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 >$P(Mgr\vert Shy)$=$\frac {P(Shy\vert Mgr)\cdot P(Mgr)}{P(Shy)}$=$\frac {0.1\cdot 0.08}{0.3272}$=$0.0244$  
 >$P(Sales\vert Shy)$=$\frac {P(Shy\vert Sales)\cdot P(Sales)}{P(Shy)}$=$\frac {0.24\cdot 0.32}{0.3272}$=$0.2347$  
 >$P(M_{eng}\vert Shy)$=$\frac {P(Shy\vert M_{eng})\cdot P(M_{eng})}{P(Shy)}$=$\frac {0.47\cdot 0.38}{0.3272}$=$0.5458$  
->$P(I_{eng}\vert Shy)$=$\frac {P(Shy\vert I_{eng})\cdot P(I_{eng})}{P(Shy)}$=$\frac {0.29\cdot 0.22}{0.3272}$=$0.1949$  
->We found that $P(M_{eng}\vert Shy)$ has the <font color="OrangeRed">largest posterior probability</font> and implies the maximum possibility that Albert is a shy man, he is a manufacture engineer.  
+>$P(I_{eng}\vert Shy)$=$\frac {P(Shy\vert I_{eng})\cdot P(I_{eng})}{P(Shy)}$=$\frac {0.29\cdot 0.22}{0.3272}$=$0.1949$
+>  
+>By means of <font color="DeepPink">quantative posterior</font>, we found that $P(M_{eng}\vert Shy)$ has the <font color="OrangeRed">largest posterior probability</font> and implies the maximum possibility that Albert is a shy man, he is a manufacture engineer.  
 
 <!-- Γ -->
 <!-- \Omega -->
