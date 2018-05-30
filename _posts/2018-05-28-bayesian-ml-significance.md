@@ -50,7 +50,7 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 >&#10114;$P(W_{2}\vert R_{1})\cdot P(R_{1})$ is the <font color="OrangeRed">joint probability</font> of the coexistence of $W_{2}$ and $R_{1}$, since <font color="DeepSkyBlue">we are asking for the probability of picking up the 2nd white ball <font color="OrangeRed">and</font> the 1st one is the red ball</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-3r-2w-sample-space.png "sample space")
 
-### <font color="RoyalBlue">Example</font>: <font color="DeepPink">quantative</font> versus <font color="RosyBrown">qualitative</font>
+### <font color="RoyalBlue">Example</font>: <font color="DeepPink">quantative</font> versus <font color="RosyBrown">qualitative</font>::mjtsai1974
 ><font color="RoyalBlue">[Question]</font>
 >Suppose the statistical population distribution in the Hsin-Chu science park area reports that $\\%8$ of the population is the managers, $\\%32$ is the marketing sales, $\\%38$ is the manufacturing engineers, $\\%22$ is the IC design engineers.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-q-q.png "quantative vs qualitative")
