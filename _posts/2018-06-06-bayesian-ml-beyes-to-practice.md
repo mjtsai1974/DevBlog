@@ -22,8 +22,12 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >where $S_{n}^{2}$ is the <font color="Red">sample variance</font>.  
 >&#10114;next we look at <font color="Red">standard sample deviation</font>:  
 >$S_{n}$=$(\frac {\sum_{i=1}^{n}(X_{i}-\overline{X_{n})^{2}}{n-1})^{\frac {1}{2}}$ is the <font color="Red">sample standard deviation</font>, $n$=$3$ in this example.  
->&#10115;the the <font color="Red">standard error</font> term:  
+>&#10115;then, the the <font color="Red">standard error</font> term:  
+>$S.E$=$(\frac {\sum_{i=1}^{n}(X_{i}-\overline{X_{n})^{2}}{n})^{\frac {1}{2}}$, is the <font color="Red">standard error</font> in this sample.  
 >
+>All above are major terms in modern probability and statistics, and the <font color="Red">standard error</font> term have another expression in <font color="DeepSkyBlue">linear regression</font>:  
+>&#10112;suppose $Y$ is the real target, and $\widehat Y$ is the estimated value of target, in <font color="DeepSkyBlue">linear regression</font>, the term $RSS$=$\sum_{i=1}^{n} (Y_{i}-\widehat Y_{i})^{2}$ is the <font color="Red">residual sum of squares</font>.  
+>&#10113;we denote $\frac {RSS}{DOF}$ as the the <font color="Red">standard error</font> in <font color="DeepSkyBlue">linear regression</font>.  In this example, $DOF$ is unknown, since we have not yet build a linear regression model.  By intuition, $DOF$=$2$, because there is an average $\overline{X_{3}}$ taken into account.  
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
@@ -41,6 +45,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 <!-- &prime; ′ -->
 <!-- &Prime; ″ -->
 <!-- $E\lbrack X\rbrack$ -->
+<!-- \widehat X -->
 <!-- \overline{X_n} -->
 <!-- \underset{Succss}P -->
 <!-- \frac{{\overline {X_n}}-\mu}{S/\sqrt n} -->
