@@ -6,7 +6,7 @@ title: The Bayes Theorem Significance
 ## Prologue To The <font color="Red">Bayes Theorem Significance</font>
 <p class="message">
 <font color="#C20000">The most optimized effect of Bayes theorem is to use already known probability to figure out the maximum unknown probability in its likelihood</font>, instead of manual counting in the sample space.  
-The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPink">quantative critical thinking</font> to overcome the drawback of <font color="RosyBrown">qualitative thinking</font> of human nature.  
+The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPink">quantitative critical thinking</font> to overcome the drawback of <font color="RosyBrown">qualitative thinking</font> of human nature.  
 </p>
 
 ### The <font color="Red">Bayes Theorem Significance</font>
