@@ -15,7 +15,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >This article is illustrated from the example in [How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M).  
 
 ### Can We Try The <font color="DeepSkyBlue">Unbiased Estimator</font>?
->Since we are given a sample of $13.9$,$17.5$,$14.1$, how about the <font color="DeepSkyBlue">unbiased estimator</font>?  
+>[1]since we are given a sample of $13.9$,$17.5$,$14.1$, how about the <font color="DeepSkyBlue">unbiased estimator</font>?  
 >&#10112;by $\frac {X_{1}+X_{2}+X_{3}}{3}$=$\overline{X_{3}}$, this is <font color="DeepSkyBlue">to use sample average to approximate the mean</font>.  The current drawback might be that we have sample of only a few data.  
 >&#10113;next we look at <font color="Red">sample variance</font>:  
 >$\frac {\sum_{i=1}^{n}(X_{i}-\overline{X_{n})^{2}}}{n-1}$=$S_{n}^{2}$,  
@@ -25,7 +25,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10115;then, the the <font color="Red">standard error</font> term:  
 >$SE$=$(\frac {\sum_{i=1}^{n}(X_{i}-\overline{X_{n})^{2}}}{n})^{\frac {1}{2}}$, is the <font color="Red">standard error</font> in this sample.  
 >
->All above are major terms in modern probability and statistics, and the <font color="Red">standard error</font> term have another expression in <font color="DeepSkyBlue">linear regression</font>:  
+>[2]all above are major terms in modern probability and statistics, and the <font color="Red">standard error</font> term have another expression in <font color="DeepSkyBlue">linear regression</font>:  
 >&#10112;suppose $Y$ is the real target, and $\widehat Y$ is the estimated value of target, in <font color="DeepSkyBlue">linear regression</font>, the term $RSS$=$\sum_{i=1}^{n} (Y_{i}-\widehat Y_{i})^{2}$ is the <font color="Red">residual sum of squares</font>.  
 >&#10113;we denote $\frac {RSS}{dof}$ as the the <font color="Red">standard error</font> in <font color="DeepSkyBlue">linear regression</font>.  In this example, $dof$ is unknown, since we have not yet build a linear regression model.  By intuition, $DOF$=$2$, because there is an average $\overline{X_{3}}$ taken into account.  
 
