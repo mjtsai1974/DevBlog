@@ -29,7 +29,7 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 >&#10112;$B_{i}$ is the <font color="OrangeRed">prior probability</font>, the already known probability.  
 >&#10113;$P(A\vert B_{i})$ is the <font color="OrangeRed">likelihood function</font>, by intuition the <font color="RosyBrown">qualitative</font> term, its major effect is the estimation of <font color="DeepSkyBlue">the possible likely probability of the occurrence of target event of interest $A$, under the given condition/partition $B_{i}$ of sample space</font>.  
 >&#10114;the <font color="OrangeRed">total probability</font> also called the <font color="OrangeRed">marginal probability</font>, it is the summation over the distribution of each distinct $B_{i}$ with regards to the specific $A$, that means there could be infinite numbers of $A$.  
->&#10115;$P(B_{i}\vert A)$ is the <font color="OrangeRed">posterior probability</font>, by intuition the <font color="DeepPink">quantative</font> target, now <font color="DeepSkyBlue">the sample space is the target event of interest $A$</font>.  
+>&#10115;$P(B_{i}\vert A)$ is the <font color="OrangeRed">posterior probability</font>, by intuition the <font color="DeepPink">quantitative</font> target, now <font color="DeepSkyBlue">the sample space is the target event of interest $A$</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-4-factors.png "4 factors")
 
 ### <font color="RoyalBlue">Example</font>: 3 Red And 2 White Balls
@@ -50,10 +50,10 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 >&#10114;$P(W_{2}\vert R_{1})\cdot P(R_{1})$ is the <font color="OrangeRed">joint probability</font> of the coexistence of $W_{2}$ and $R_{1}$, since <font color="DeepSkyBlue">we are asking for the probability of picking up the 2nd white ball <font color="OrangeRed">and</font> the 1st one is the red ball</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-3r-2w-sample-space.png "sample space")
 
-### <font color="RoyalBlue">Example</font>: <font color="DeepPink">quantative</font> versus <font color="RosyBrown">qualitative</font>::mjtsai1974
+### <font color="RoyalBlue">Example</font>: <font color="DeepPink">quantitative</font> versus <font color="RosyBrown">qualitative</font>::mjtsai1974
 ><font color="RoyalBlue">[Question]</font>
 >Suppose the statistical population distribution in the Hsin-Chu science park area reports that $\\%8$ of the population is the managers, $\\%32$ is the marketing sales, $\\%38$ is the manufacturing engineers, $\\%22$ is the IC design engineers.  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-q-q.png "quantative vs qualitative")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-q-q.png "quantitative vs qualitative")
 >Given that Albert is a man, when you see him, his behavior is <font color="OrangeRed">a little shy</font>, talktive with strangers for road seeking, and is not talktive in political topics.  
 >
 >According to recent statistical research that given a manager, $0.1$ probability being shy; given a marketing sales, $0.24$ probability being shy; given a manufacturing engineer, $0.47$ probability being shy; given an IC design engineer, %0.29% probability being shy.  
@@ -76,7 +76,7 @@ The <font color="Red">Bayes theorem</font> is the weapon for <font color="DeepPi
 >$P(M_{eng}\vert Shy)$=$\frac {P(Shy\vert M_{eng})\cdot P(M_{eng})}{P(Shy)}$=$\frac {0.47\cdot 0.38}{0.3272}$=$0.5458$  
 >$P(I_{eng}\vert Shy)$=$\frac {P(Shy\vert I_{eng})\cdot P(I_{eng})}{P(Shy)}$=$\frac {0.29\cdot 0.22}{0.3272}$=$0.1949$
 >  
->By means of <font color="DeepPink">quantative posterior</font>, we found that $P(M_{eng}\vert Shy)$ has the <font color="OrangeRed">largest posterior probability</font> and implies the maximum possibility that Albert is a shy man, he is a manufacture engineer.  
+>By means of <font color="DeepPink">quantitative posterior</font>, we found that $P(M_{eng}\vert Shy)$ has the <font color="OrangeRed">largest posterior probability</font> and implies the maximum possibility that Albert is a shy man, he is a manufacture engineer.  
 
 <!-- Γ -->
 <!-- \Omega -->
