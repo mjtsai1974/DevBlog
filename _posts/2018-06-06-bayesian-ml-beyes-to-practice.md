@@ -14,6 +14,17 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >
 >This article is illustrated from the example in [How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M).  
 
+### Can We Try The <font color="DeepSkyBlue">Unbiased Estimator</font>?
+>Since we are given a sample of $13.9$,$17.5$,$14.1$, how about the <font color="DeepSkyBlue">unbiased estimator</font>?  
+>&#10112;by $\frac {X_{1}+X_{2}+X_{3}}{3}$=$\overline{X_{3}}$, this is <font color="DeepSkyBlue">to use sample average to approximate the mean</font>.  The current drawback might be that we have sample of only a few data.  
+>&#10113;next we look at <font color="Red">sample variance</font>:  
+>$\frac {\sum_{i=1}^{n}(X_{i}-\overline{X_{n})^{2}}{n-1}$=$S_{n}^{2}$,  
+>where $S_{n}^{2}$ is the <font color="Red">sample variance</font>.  
+>&#10114;next we look at <font color="Red">standard sample deviation</font>:  
+>$S_{n}$=$(\frac {\sum_{i=1}^{n}(X_{i}-\overline{X_{n})^{2}}{n-1})^{\frac {1}{2}}$ is the <font color="Red">sample standard deviation</font>, $n$=$3$ in this example.  
+>&#10115;the the <font color="Red">standard error</font> term:  
+>
+
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
 >&#10113;[Translated article of &#10112;](https://brohrer.mcknote.com/zh-Hant/statistics/how_bayesian_inference_works.html)  
