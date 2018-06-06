@@ -20,10 +20,10 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10113;next we look at <font color="Red">sample variance</font>:  
 >$\frac {\sum_{i=1}^{n}(X_{i}-\overline{X_{n})^{2}}}{n-1}$=$S_{n}^{2}$,  
 >where $S_{n}^{2}$ is the <font color="Red">sample variance</font>.  
->&#10114;next we look at <font color="Red">standard sample deviation</font>:  
+>&#10114;next we look at <font color="Red">sample standard deviation</font>:  
 >$S_{n}$=$(\frac {\sum_{i=1}^{n}(X_{i}-\overline{X_{n})^{2}}}{n-1})^{\frac {1}{2}}$ is the <font color="Red">sample standard deviation</font>, $n$=$3$ in this example.  
 >&#10115;then, the the <font color="Red">standard error</font> term:  
->$SE$=$(\frac {\sum_{i=1}^{n}(X_{i}-\overline{X_{n})^{2}}}{n})^{\frac {1}{2}}$, is the <font color="Red">standard error</font> in this sample.  
+>$se$=$(\frac {\sum_{i=1}^{n}(X_{i}-\overline{X_{n})^{2}}}{n})^{\frac {1}{2}}$, is the <font color="Red">standard error</font> in this sample.  
 >
 >[2]all above are major terms in modern probability and statistics, and the <font color="Red">standard error</font> term have another expression in <font color="DeepSkyBlue">linear regression</font>:  
 >&#10112;suppose $Y$ is the real target, and $\widehat Y$ is the estimated value of target, in <font color="DeepSkyBlue">linear regression</font>, the term $RSS$=$\sum_{i=1}^{n} (Y_{i}-\widehat Y_{i})^{2}$ is the <font color="Red">residual sum of squares</font>.  
@@ -33,7 +33,15 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10112;$\overline{x_{3}}$=$15.167$, <font color="DeepSkyBlue">the little case of letter $x$ indicates the value</font>.  
 >&#10113;$S_{n}^{2}$=$4.09333351$  
 >&#10114;$S_{n}$=$2.023$  
->&#10115;$SE$=$1.6519$  
+>&#10115;$se$=$1.6519$  
+
+### Before We Start
+>[1]we'd like to evaluate the possible accurate weight.  By given, we have 3 already known weights in the sample.  Suppose the weights are in normal distribution.  
+>&#10112;by $\overline{x_{3}}$=$15.167$, $S_{n}$=$2.023$, the shape of normal distribution is exhibited below:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-sample.png "sample N")
+>&#10113;by $\overline{x_{3}}$=$15.167$, $se$=$1.6519$, the shape of normal distribution is exhibited below:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-population.png "population N")
+>The shape of normal distribution is more sharpen, if we use the <font color="Red">population standard deviation(standard error)</font> to be the <font color="Red">standard deviation</font>, which is <font color="OrangeRed">smaller</font>, this indicates some bias exists in between 2 sources of <font color="Red">standard deviation</font>, they are <font color="Red">sample standard deviation</font> and the <font color="Red">population standard deviation(standard error)</font>.  
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
