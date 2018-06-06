@@ -6,15 +6,16 @@ title: Bayes From Theorem To Practice
 ## Prologue To <font color="Red">Bayes From Theorem To Practice</font>
 <p class="message">
 The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantitative critical thinking</font> rather than the <font color="RosyBrown">qualitative thinking</font> of human nature.  
-<font color="#C20000">By using already known probability of interested feature to figure out unknown probability in its maximum likelihood, the feature of interest would be more plausible.</font>
+<font color="#C20000">By using already known probability of feature to figure out unknown probability of interested feature in its maximum likelihood, the result would be more plausible.</font>
 </p>
 
-
+### You Are Given The Question
+>Given a dog, with 3 weights(lb) of measurement, $13.9$,$17.5$,$14.1$ in the past 3 records.  <font color="OrangeRed">What's the exact weight of the dog?</font>  And <font color="DeepSkyBlue">the scale tells that it is weighted 14.2 lb in this concurrent measurement</font>.  
 
 ### Addendum
->&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)
->&#10113;[Translated article of &#10112;](https://brohrer.mcknote.com/zh-Hant/statistics/how_bayesian_inference_works.html)
->&#10114;[Bayes theorem and conditional probability](https://ccjou.wordpress.com/2016/02/01/%E6%A2%9D%E4%BB%B6%E6%A9%9F%E7%8E%87%E8%88%87%E8%B2%9D%E6%B0%8F%E5%AE%9A%E7%90%86/)
+>&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
+>&#10113;[Translated article of &#10112;](https://brohrer.mcknote.com/zh-Hant/statistics/how_bayesian_inference_works.html)  
+>&#10114;[Bayes theorem and conditional probability](https://ccjou.wordpress.com/2016/02/01/%E6%A2%9D%E4%BB%B6%E6%A9%9F%E7%8E%87%E8%88%87%E8%B2%9D%E6%B0%8F%E5%AE%9A%E7%90%86/)  
 
 <!-- Γ -->
 <!-- \Omega -->
