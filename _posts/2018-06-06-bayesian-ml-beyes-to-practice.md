@@ -94,3 +94,4 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 <!-- https://www.medcalc.org/manual/gamma_distribution_functions.php -->
 <!-- https://www.statlect.com/probability-distributions/student-t-distribution#hid5 -->
 <!-- http://www.wiris.com/editor/demo/en/ -->
+<!-- http://www.astroml.org/book_figures/chapter3/fig_gaussian_distribution.html -->
