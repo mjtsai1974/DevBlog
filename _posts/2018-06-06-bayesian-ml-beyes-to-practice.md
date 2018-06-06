@@ -11,6 +11,8 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 
 ### You Are Given The Question
 >Given a dog, with 3 weights(lb) of measurement, $13.9$,$17.5$,$14.1$ in the past 3 records.  <font color="OrangeRed">What's the exact weight of the dog?</font>  And <font color="DeepSkyBlue">the scale tells that it is weighted 14.2 lb in this concurrent measurement</font>.  
+>
+>This example is extracted from [How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M).  
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
