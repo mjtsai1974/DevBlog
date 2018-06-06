@@ -48,6 +48,9 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10113;or by using $\frac {1}{\sigma\cdot\sqrt {2\cdot \pi}}\cdot e^{-\frac {(x-\mu)^{2}}{2\cdot\sigma^{2}}}$ to calculate the respective probability?  
 ><font color="RosyBrown">There is no standard answer, yet!!!</font>  
 
+### <font color="DeepSkyBlue">Translate The Target Into The Correct Probabilistic Expression</font>
+>It seems that the target of accurate weight is very clear, but, <font color="DeepSkyBlue">how to translate into the correct probabilistic expression</font> is the major topic.  
+
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
 >&#10113;[Translated article of &#10112;](https://brohrer.mcknote.com/zh-Hant/statistics/how_bayesian_inference_works.html)  
