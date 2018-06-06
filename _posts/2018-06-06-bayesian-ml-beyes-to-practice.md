@@ -50,6 +50,8 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 
 ### <font color="DeepSkyBlue">Translate The Target Into The Correct Probabilistic Expression</font>
 >It seems that the target of accurate weight is very clear, but, <font color="DeepSkyBlue">how to translate into the correct probabilistic expression</font> is the major topic.  
+>&#10112;denote $w$ to represent the weight.  
+>&#10113;denote $m$ as each measurement.  
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
