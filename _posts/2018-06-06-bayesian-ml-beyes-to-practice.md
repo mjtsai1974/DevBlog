@@ -36,12 +36,17 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10115;$se$=$1.6519$  
 
 ### Before We Start
->[1]we'd like to evaluate the possible accurate weight.  By given, we have 3 already known weights in the sample.  Suppose the weights are in normal distribution.  
+>[1]we'd like to evaluate the possible accurate weight.  By given, we have 3 already known weights in the sample.  <font color="DeepSkyBlue">Suppose the weights are in normal distribution.</font>  
 >&#10112;by $\overline{x_{3}}$=$15.167$, $S_{n}$=$2.023$, the shape of normal distribution is exhibited below:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-sample.png "sample N")
 >&#10113;by $\overline{x_{3}}$=$15.167$, $se$=$1.6519$, the shape of normal distribution is exhibited below:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-population.png "population N")
->The shape of normal distribution is more sharpen, if we use the <font color="Red">population standard deviation(standard error)</font> to be the <font color="Red">standard deviation</font>, which is <font color="OrangeRed">smaller</font>, this indicates some bias exists in between 2 sources of <font color="Red">standard deviation</font>, they are <font color="Red">sample standard deviation</font> and the <font color="Red">population standard deviation(standard error)</font>.  
+>The shape of normal distribution is more <font color="DeepSkyBlue">sharpen</font>, if we use the <font color="Red">population standard deviation(standard error)</font> to be the <font color="Red">standard deviation</font>, which is <font color="OrangeRed">smaller</font>, this indicates some bias exists in between 2 sources of <font color="Red">standard deviation</font>, they are <font color="Red">sample standard deviation</font> and the <font color="Red">population standard deviation(standard error)</font>.  
+>
+>[2]we have 3 already known weights in the sample, what are $P(13.9)$,$P(14.1)$ and $P(17.5)$?  
+>&#10112;should we treat $P(13.9)$=$P(14.1)$=$P(17.5)$=$\frac {1}{3}$?  Since each measurment comes out with one value of weight, the occurrence of getting the weight.  
+>&#10113;or by using $\frac {1}{\sigma\cdot\sqrt {2\cdot \pi}}\cdot e^{-\frac {(x-\mu)^{2}}{2\cdot\sigma^{2}}}$ to calculate the respective probability?  
+><font color="RosyBrown">There is no standard answer, yet!!!</font>  
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
