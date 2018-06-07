@@ -110,7 +110,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >
 >In my [Python simulator](https://mjtsai1974.github.io/DevBlog/template/BayesInferForDogWeightByMLE.py), the maximum likelihood estimation of $w_{real}$ is $15.126$, for whatever sample or population standard deviation we choose to make the normal distribution.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-compare.png "std compare")
->The estimated $w_{real}$=$15.126$, which is very close to $\overline{x_{3}}$=$15.167$, is this the most appropriate value?  
+>The estimated $w_{real}$=$15.126$, which is very close to $\overline{x_{3}}$=$15.167$, <font color="RoyalBlue">is this the most appropriate value?</font>  
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
