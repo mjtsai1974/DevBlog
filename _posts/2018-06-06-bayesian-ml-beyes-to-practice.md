@@ -84,13 +84,22 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 ><font color="C20000">It's the possible direction we can escape away from the space non-going anywhere, as a result of the chosen Bayes expression constructed by insufficient sample data.</font>  
 
 ### The <font color="DeepSkyBlue">Maximum Likelihood</font> For $P(w_{real}\vert m)$
->The working model <font color="OrangeRed">$P(w_{real}\vert m)$=$P(m\vert w_{real})$</font> leads us to the maximum likely possible real weight.  
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The working model filled with given data</font>  
+>$P(w_{real}\vert m)$=$P(m\vert w_{real})$ leads us to the maximum likely possible real weight.  
 >&#10112;fill in what we are given:  
 >$P(w_{real}\vert m=\\{13.9,14.1,17.5\\})$  
 >=$P(m=\\{13.9,14.1,17.5\\}\vert w_{real})$  
 >&#10113;next to interpret $P(m\vert w_{real})$ by the <font color="Red">Gaussian normal distribution</font>.  
+>
 >Because this is <font color="DeepSkyBlue">fully compliant with the assumption that the accuracy of measurement result of weight is of no concern, and the weight varies by time, thus come out with different results</font>.  
 >
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">The way to do the maximum likelihood estimation</font>  
+>&#10112;it is to be proceeded <font color="DeepSkyBlue">with a given possible real weight, to generate the maximum value of $P(m=\\{13.9,14.1,17.5\\}\vert w_{real})$</font>, and <font color="DeepSkyBlue">such $w_{real}$ will yield the largest probability of $P(w_{real}\vert m=\\{13.9,14.1,17.5\\})$</font>.  
+>&#10113;$\underset{w_{real}}{maxarg}P(m=\\{13.9,14.1,17.5\\}\vert w_{real})$  
+>=$\underset{w_{real}}{maxarg}P(m=\\{13.9\\}\vert w_{real})\cdot P(m=\\{14.1\\}\vert w_{real})\cdot P(m=\\{17.5\\}\vert w_{real})$  
+>This is just the maximum likelihood estimation for $w_{real}$.  
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
@@ -110,6 +119,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 <!-- $E\lbrack X\rbrack$ -->
 <!-- \widehat X -->
 <!-- \overline{X_n} -->
+<!-- \underset{w_{real}}{maxarg} -->
 <!-- \underset{Succss}P -->
 <!-- \frac{{\overline {X_n}}-\mu}{S/\sqrt n} -->
 <!-- \lim_{t\rightarrow\infty} -->
