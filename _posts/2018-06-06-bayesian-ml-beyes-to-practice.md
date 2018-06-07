@@ -10,7 +10,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 </p>
 
 ### You Are Given The Question
->Given a dog, with 3 weights(lb) of measurement, $13.9$,$17.5$,$14.1$ in the past 3 records.  <font color="OrangeRed">What's the exact weight of the dog?</font>  And <font color="DeepSkyBlue">the scale tells that it is weighted 14.2 lb in this concurrent measurement</font>.  
+>Given a dog, with 3 measurement results(lb) of weight, $13.9$,$17.5$,$14.1$ in the past 3 records.  <font color="OrangeRed">What's the exact weight of the dog?</font>  And <font color="DeepSkyBlue">the scale tells that it is weighted 14.2 lb in this concurrent measurement</font>.  
 >
 >This article is illustrated from the example in [How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M).  
 
@@ -74,13 +74,13 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10112;suppose the dog's weight would vary by time, thus we are given 3 different measurement results of weight.  
 >$P(m)$=$P(m\vert w_{1})\cdot P(w_{1})$+$P(m\vert w_{2})\cdot P(w_{2})$+$P(m\vert w_{3})\cdot P(w_{3})$  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-total-prob-m.png "total prob m")
->&#10113;we believe there exists indeed a true value of dog's weight, $w_{real}$.  Base on the total probability of these 3 measurements, we'd like to estimate out the probability of such $w_{real}$ by $P(w_{real}\vert m)$.  
+>&#10113;we believe there exists indeed a <font color="DeepSkyBlue">true value of dog's weight, $w_{real}$</font>.  Base on the total probability of these 3 measurements, we'd like to estimate out the probability of such $w_{real}$ by $P(w_{real}\vert m)$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-total-prob-w.png "total prob w")
 >&#10114;to further <font color="OrangeRed">regularize</font> our Bayes expression, let it becomes:  
 >$P(w_{real}\vert m)$=$\frac {P(m\vert w_{real})\cdot P(w)}{P(m)}$, where <font color="OrangeRed">$P(m)$ and $P(w_{real})$ are just constants</font>.  
 >&#10115;we can toss out the 2 terms $P(m)$ and $P(w_{real})$.  The working model now becomes:  
 >$P(w_{real}\vert m)$=$P(m\vert w_{real})$  
->It's the possible direction we can escape away from the space non-going anywhere, as a result of the chosen Bayes expression constructed by insufficient sample data.  
+><font color="DeepSkyBlue">It's the possible direction we can escape away from the space non-going anywhere</font>, as a result of the chosen Bayes expression constructed by insufficient sample data.  
 
 
 ### Addendum
