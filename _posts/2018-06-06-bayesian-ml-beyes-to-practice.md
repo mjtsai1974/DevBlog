@@ -101,7 +101,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >=$\underset{w_{real}}{maxarg}P(m=\\{13.9\\}\vert w_{real})\cdot P(m=\\{14.1\\}\vert w_{real})\cdot P(m=\\{17.5\\}\vert w_{real})$  
 >This is just the maximum likelihood estimation for $w_{real}$.  
 >&#10114;to have more probability and be centralized toward the $\overline{X_{3}}$, this article choose $\overline{x_{3}}$=$15.167$, $se$=$1.6519$ to build the Gaussian normal distribution.  
->Take $w_{real}\in\\{\overline{X_{3}}\pm\\se}$, ranges from $13.5151$ to $16.8189$.  
+>Take $w_{real}\in\\{\overline{X_{3}}\pm se\\}$, ranges from $13.5151$ to $16.8189$.  
 >&#10115;it's not inclusive of the given measurement result $17.5$, to make it more complete:  
 >$w_{real}$=$\\{13,...,18\\}$  
 >&#10116;<font color="DeepPink">let the data or the experiment result speaks!!</font>  
