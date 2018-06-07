@@ -112,6 +112,9 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-compare.png "std compare")
 >The estimated $w_{real}$=$15.126$, which is very close to $\overline{x_{3}}$=$15.167$, <font color="RoyalBlue">is this the most appropriate value?</font>  
 
+### Make The <font color="DeepPink">Bayes Inference From The Given Prior</font>
+>
+
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
 >&#10113;[Translated article of &#10112;](https://brohrer.mcknote.com/zh-Hant/statistics/how_bayesian_inference_works.html)  
