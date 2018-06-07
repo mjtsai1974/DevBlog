@@ -86,7 +86,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 ### The <font color="DeepSkyBlue">Maximum Likelihood</font> For $P(w_{real}\vert m)$
 >The working model <font color="OrangeRed">$P(w_{real}\vert m)$=$P(m\vert w_{real})$</font> leads us to the maximum likely possible real weight.  
 >&#10112;fill in what we are given:  
-><font color="DeepSkyBlue">$P(w_{real}\vert {m=\\{13.9,14.1,17.5\\}})$=$P({m=\\{13.9,14.1,17.5\\}}\vert w_{real})$</font>  
+>$P(w_{real}\vert {m=\\{13.9,14.1,17.5\\}})$=$P({m=\\{13.9,14.1,17.5\\}}\vert w_{real})$  
 >&#10113;next to interpret $P(m\vert w_{real})$ by the Gaussian normal distribution.  
 >Because it is fully compliant with the assumption that the accuracy of measurement result of weight is of no concern, and the weight varies by time, thus come out with different results.  
 >
