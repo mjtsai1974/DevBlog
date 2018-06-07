@@ -96,7 +96,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">The way to do the maximum likelihood estimation</font>  
->&#10112;it is to be proceeded <font color="DeepSkyBlue">with a given possible real weight, to generate the maximum value</font> of $P(m=\\{13.9,14.1,17.5\\}\vert w_{real})$, and <font color="DeepSkyBlue">such $w_{real}$ will yield the largest probability$</font> of $P(w_{real}\vert m=\\{13.9,14.1,17.5\\}).  
+>&#10112;it is to be proceeded <font color="DeepSkyBlue">with a given possible real weight, to generate the maximum value</font> of $P(m=\\{13.9,14.1,17.5\\}\vert w_{real})$, and <font color="DeepSkyBlue">such $w_{real}$ will yield the largest probability</font> of $P(w_{real}\vert m=\\{13.9,14.1,17.5\\})$.  
 >&#10113;$\underset{w_{real}}{maxarg}P(m=\\{13.9,14.1,17.5\\}\vert w_{real})$  
 >=$\underset{w_{real}}{maxarg}P(m=\\{13.9\\}\vert w_{real})\cdot P(m=\\{14.1\\}\vert w_{real})\cdot P(m=\\{17.5\\}\vert w_{real})$  
 >This is just the maximum likelihood estimation for $w_{real}$.  
