@@ -59,7 +59,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10112;this is to ask <font color="RosyBrown">the maximum probability of the accuracy of the measurement result from the given weight(to be believed such quantitative weight is verified and correct)</font>, the target <font color="Red">posterior</font> is $P(m\vert w)$, and the $P(m)$ is the already known measurement result(lb), the <font color="Red">prior</font>.  
 >&#10113;the major purpose of this expression should work <font color="RosyBrown">when we'd like to evaluate the accuracy of the measurement process or result</font>, it's the condition that we doubt the measurement result, we'd like to make further enhancement in the measurement equipment or the process.  
 >
->Therefore, we choose <font color="DeepPink">$P(w\vert m)$=$\frac {P(m\vert w)\cdot P(w)}{P(m)}$</font> as our Bayes expression.  
+>Therefore, we choose <font color="DeepPink">$P(w\vert m)$=$\frac {P(m\vert w)\cdot P(w)}{P(m)}$</font> as our Bayes expression, and $P(m\vert w)$ is the <font color="Red">likelihood function</font> for the probability of the measurement outcomes, $13.9$,$17.5$,$14.1$, given the true weight $w$.  
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
