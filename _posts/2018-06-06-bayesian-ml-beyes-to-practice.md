@@ -15,7 +15,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >This article is illustrated from the example in [How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M).  
 
 ### Can We Try The <font color="DeepSkyBlue">Unbiased Estimator</font>?
->[1]since we are given a sample of $13.9$,$17.5$,$14.1$, how about the <font color="DeepSkyBlue">unbiased estimator</font>?  
+>[1]Since we are given a sample of $13.9$,$17.5$,$14.1$, how about the <font color="DeepSkyBlue">unbiased estimator</font>?  
 >&#10112;by $\frac {X_{1}+X_{2}+X_{3}}{3}$=$\overline{X_{3}}$, this is <font color="DeepSkyBlue">to use sample average to approximate the mean</font>.  The current drawback might be that we have sample of only a few data.  
 >&#10113;next we look at <font color="Red">sample variance</font>:  
 >$\frac {\sum_{i=1}^{n}(X_{i}-\overline{X_{n})^{2}}}{n-1}$=$S_{n}^{2}$,  
@@ -25,26 +25,26 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10115;then, the the <font color="Red">standard error</font> term:  
 >$se$=$(\frac {\sum_{i=1}^{n}(X_{i}-\overline{X_{n})^{2}}}{n})^{\frac {1}{2}}$, is the <font color="Red">standard error</font> in this sample.  
 >
->[2]all above are major terms in modern probability and statistics, and the <font color="Red">standard error</font> term have another expression in <font color="DeepSkyBlue">linear regression</font>:  
+>[2]All above are major terms in modern probability and statistics, and the <font color="Red">standard error</font> term have another expression in <font color="DeepSkyBlue">linear regression</font>:  
 >&#10112;suppose $Y$ is the real target, and $\widehat Y$ is the estimated value of target, in <font color="DeepSkyBlue">linear regression</font>, the term $RSS$=$\sum_{i=1}^{n} (Y_{i}-\widehat Y_{i})^{2}$ is the <font color="Red">residual sum of squares</font>.  
 >&#10113;we denote $(\frac {RSS}{dof})^{\frac {1}{2}}$ as the the <font color="Red">standard error</font> in <font color="DeepSkyBlue">linear regression</font>.  In this example, $dof$ is unknown, since we have not yet build a linear regression model.  By intuition, $dof$=$2$, because there is an average $\overline{X_{3}}$ taken into account.  
 >
->[3]after simple calculation, we have:  
+>[3]After simple calculation, we have:  
 >&#10112;$\overline{x_{3}}$=$15.167$, <font color="DeepSkyBlue">the little case of letter $x$ indicates the value</font>.  
 >&#10113;$S_{n}^{2}$=$4.09333351$  
 >&#10114;$S_{n}$=$2.023$  
 >&#10115;$se$=$1.6519$  
 
 ### Before We Start
->[1]we'd like to evaluate the possible accurate weight.  By given, we have 3 already known weights in the sample.  <font color="DeepSkyBlue">Suppose the weights are in normal distribution.</font>  
+>[1]We'd like to evaluate the possible accurate weight.  By given, we have 3 already known weights in the sample.  <font color="DeepSkyBlue">Suppose the weights are in normal distribution.</font>  
 >&#10112;by $\overline{x_{3}}$=$15.167$, $S_{n}$=$2.023$, the shape of normal distribution is exhibited below:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-sample.png "sample N")
 >&#10113;by $\overline{x_{3}}$=$15.167$, $se$=$1.6519$, the shape of normal distribution is exhibited below:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-population.png "population N")
 >The shape of normal distribution is more <font color="DeepSkyBlue">sharpen</font>, if we use the <font color="Red">population standard deviation(standard error)</font> to be the <font color="Red">standard deviation</font>, which is <font color="OrangeRed">smaller</font>, this indicates some bias exists in between 2 sources of <font color="Red">standard deviation</font>, they are <font color="Red">sample standard deviation</font> and the <font color="Red">population standard deviation(standard error)</font>.  
 >
->[2]we have 3 already known weights in the sample, what are $P(13.9)$,$P(14.1)$ and $P(17.5)$?  
->&#10112;should we treat $P(13.9)$=$P(14.1)$=$P(17.5)$=$\frac {1}{3}$?  Since each measurment comes out with one value of weight, the occurrence of getting the weight.  
+>[2]We have 3 already known weights in the sample, what are $P(13.9)$,$P(14.1)$ and $P(17.5)$?  
+>&#10112;should we treat $P(13.9)$=$P(14.1)$=$P(17.5)$=$\frac {1}{3}$?  Since each measurement comes out with one value of weight, the occurrence of getting the weight.  
 >&#10113;or by using $\frac {1}{\sigma\cdot\sqrt {2\cdot \pi}}\cdot e^{-\frac {(x-\mu)^{2}}{2\cdot\sigma^{2}}}$ to calculate the respective probability?  
 ><font color="RosyBrown">There is no standard answer, yet!!!</font>  
 
@@ -59,7 +59,28 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10112;this is to ask <font color="RosyBrown">the maximum probability of the accuracy of the measurement result from the given weight(to be believed such quantitative weight is verified and correct)</font>, the target <font color="Red">posterior</font> is $P(m\vert w)$, and the $P(m)$ is the already known measurement result(lb), the <font color="Red">prior</font>.  
 >&#10113;the major purpose of this expression should work <font color="RosyBrown">when we'd like to evaluate the accuracy of the measurement process or result</font>, it's the condition that we doubt the measurement result, we'd like to make further enhancement in the measurement equipment or the process.  
 >
->[3]therefore, we choose <font color="DeepPink">$P(w\vert m)$=$\frac {P(m\vert w)\cdot P(w)}{P(m)}$</font> as our Bayes expression, and <font color="DeepSkyBlue">$P(m\vert w)$</font> is the <font color="Red">likelihood function</font> for <font color="DeepSkyBlue">the probability of the measurement outcomes, $13.9$,$17.5$,$14.1$, given the true weight $w$</font>.  
+>[3]Therefore, we choose <font color="DeepPink">$P(w\vert m)$=$\frac {P(m\vert w)\cdot P(w)}{P(m)}$</font> as our Bayes expression, and <font color="DeepSkyBlue">$P(m\vert w)$</font> is the <font color="Red">likelihood function</font> for <font color="DeepSkyBlue">the probability of the measurement outcomes, $13.9$,$17.5$,$14.1$, given the true weight $w$</font>.  
+
+### A <font color="Red">Dead Corner</font> Leading To <font color="Red">Nowhere</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">We are still in a no-escape corner, why?</font>  
+>By choosing $P(w\vert m)$=$\frac {P(m\vert w)\cdot P(w)}{P(m)}$ as our Bayes expression only makes it a point in intuition layer.  
+>&#10112;we don't know <font color="OrangeRed">how to make $P(w)$,$P(m)$,$P(m\vert w)$ quantitative</font>.  
+>&#10113;should we treat $P(m\vert w)$ to be in uniform or Gaussian distribution?  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Try to escape.</font>  
+>To be compliant with the Bayes expression of our choice, let's back to the inference for the total probability $P(m)$ of the measurement.  
+>&#10112;suppose the dog's weight would vary by time, thus we are given 3 different measurement results of weight.  
+>$P(m)$=$P(m\vert w_{1})\cdot P(w_{1})$+$P(m\vert w_{2})\cdot P(w_{2})$+$P(m\vert w_{3})\cdot P(w_{3})$  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-total-prob-m.png "total prob m")
+>&#10113;we believe there exists indeed a true value of dog's weight, $w_{real}$.  Base on the total probability of these 3 measurements, we'd like to estimate out the probability of such $w_{real}$ by $P(w_{real}\vert m)$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-total-prob-w.png "total prob w")
+>&#10114;to further <font color="OrangeRed">regularize</font> our Bayes expression, let it becomes:  
+>$P(w_{real}\vert m)$=$\frac {P(m\vert w_{real})\cdot P(w)}{P(m)}$, where <font color="OrangeRed">$P(m)$ and $P(w_{real})$ are just constants</font>.  
+>&#10115;we can toss out the 2 terms $P(m)$ and $P(w_{real})$.  The working model now becomes:  
+>$P(w_{real}\vert m)$=$P(m\vert w_{real})$  
+>It's the possible direction we can escape away from the space non-going anywhere, as a result of the chosen Bayes expression constructed by insufficient sample data.  
 
 
 ### Addendum
