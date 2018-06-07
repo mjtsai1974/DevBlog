@@ -10,7 +10,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 </p>
 
 ### You Are Given The Question
->Given a dog, with 3 measurement results(lb) of weight, $13.9$,$17.5$,$14.1$ in the past 3 records.  <font color="OrangeRed">What's the exact weight of the dog?</font>  And <font color="DeepSkyBlue">the scale tells that it is weighted 14.2 lb in this concurrent measurement</font>.  
+>Given a dog, with 3 measurement results(lb) of weight, $13.9$,$17.5$,$14.1$ in the past 3 records.  <font color="OrangeRed">What's the exact weight of the dog at this moment?</font>  And <font color="DeepSkyBlue">the scale tells that it is weighted 14.2 lb in this concurrent measurement</font>.  
 >
 >This article is illustrated from the example in [How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M).  
 
@@ -79,9 +79,17 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10114;to further <font color="OrangeRed">regularize</font> our Bayes expression, let it becomes:  
 >$P(w_{real}\vert m)$=$\frac {P(m\vert w_{real})\cdot P(w)}{P(m)}$, where <font color="OrangeRed">$P(m)$ and $P(w_{real})$ are just constants</font>.  
 >&#10115;we can toss out the 2 terms $P(m)$ and $P(w_{real})$.  The working model now becomes:  
->$P(w_{real}\vert m)$=$P(m\vert w_{real})$  
-><font color="DeepSkyBlue">It's the possible direction we can escape away from the space non-going anywhere</font>, as a result of the chosen Bayes expression constructed by insufficient sample data.  
+><font color="OrangeRed">$P(w_{real}\vert m)$=$P(m\vert w_{real})$</font>  
+>
+><font color="C20000">It's the possible direction we can escape away from the space non-going anywhere, as a result of the chosen Bayes expression constructed by insufficient sample data.</font>  
 
+### The <font color="DeepSkyBlue">Maximum Likelihood</font> For $P(w_{real}\vert m)$
+>The working model <font color="OrangeRed">$P(w_{real}\vert m)$=$P(m\vert w_{real})$</font> leads us to the maximum likely possible real weight.  
+>&#10112;fill in what we are given:  
+><font color="DeepSkyBlue">$P(w_{real}\vert m=\\{13.9,14.1,17.5\\})$=$P(m=\\{13.9,14.1,17.5\\}\vert w_{real})$</font>  
+>&#10113;next to interpret $P(m\vert w_{real})$ by the Gaussian normal distribution.  
+>Because it is fully compliant with the assumption that the accuracy of measurement result of weight is of no concern, and the weight varies by time, thus come out with different results.  
+>
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
