@@ -51,14 +51,15 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 ### <font color="DeepSkyBlue">Translate The Target Into The Correct Probabilistic Expression</font>
 >It seems that the <font color="OrangeRed">target of accurate weight</font> is very clear, but, <font color="DeepSkyBlue">how to translate into the correct probabilistic expression</font> is the major topic.  
 >We denote $w$ to represent the weight, $m$ as each measurement.  How to express the weight each time the dog is measured?  It is determinant in the <font color="Red">prior</font> and the target <font color="Red">posterior</font>.  Below lists 2 of my viewpoints:  
->&#10112;$P(w\vert m)$=$\frac {P(m\vert w)\cdot P(w)}{P(m)}$  
->This is to ask <font color="DeepPink">the maximum probability of the real weight from the given measurement</font>, the target <font color="Red">posterior</font> is $P(w\vert m)$, and the $P(w)$ is the already known weight(lb), the <font color="Red">prior</font>.  
->Suppose the measurement process is under certain quality control, and we no doubt the result.  
->&#10113;$P(m\vert w)$=$\frac {P(w\vert m)\cdot P(m)}{P(w)}$  
->This is to ask <font color="RosyBrown">the maximum probability of the accuracy of the measurement result from the given weight(to be believed such quantitative weight is verified and correct)</font>, the target <font color="Red">posterior</font> is $P(m\vert w)$, and the $P(m)$ is the already known measurement result(lb), the <font color="Red">prior</font>.  
->The major purpose of this expression should work when we'd like to evaluate the accuracy of the measurement process or result, it's the condition that we doubt the measurement result, we'd like to make further enhancement in the measurement equipment or the process.  
+>[1]$P(w\vert m)$=$\frac {P(m\vert w)\cdot P(w)}{P(m)}$  
+>&#10112;this is to ask <font color="DeepPink">the maximum probability of the real weight from the given measurement</font>, the target <font color="Red">posterior</font> is $P(w\vert m)$, and the $P(w)$ is the already known weight(lb), the <font color="Red">prior</font>.  
+>&#10113;suppose the measurement process is under certain quality control, and we no doubt the result.  
 >
->Therefore, we choose $P(w\vert m)$=$\frac {P(m\vert w)\cdot P(w)}{P(m)}$ as our Bayes expression.  
+>[2]$P(m\vert w)$=$\frac {P(w\vert m)\cdot P(m)}{P(w)}$  
+>&#10112;this is to ask <font color="RosyBrown">the maximum probability of the accuracy of the measurement result from the given weight(to be believed such quantitative weight is verified and correct)</font>, the target <font color="Red">posterior</font> is $P(m\vert w)$, and the $P(m)$ is the already known measurement result(lb), the <font color="Red">prior</font>.  
+>&#10113;the major purpose of this expression should work <font color="RosyBrown">when we'd like to evaluate the accuracy of the measurement process or result</font>, it's the condition that we doubt the measurement result, we'd like to make further enhancement in the measurement equipment or the process.  
+>
+>Therefore, we choose <font color="DeepPink">$P(w\vert m)$=$\frac {P(m\vert w)\cdot P(w)}{P(m)}$</font> as our Bayes expression.  
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
