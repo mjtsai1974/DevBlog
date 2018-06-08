@@ -125,6 +125,17 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10112;<font color="OrangeRed">the Bayes inference should begin with the given prior</font>, that's why we put the term P(w_{real}) at the right side.  
 >&#10113;the term $P(m)$ is just a constant, could be safely tossed out.  
 >
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Design the new flow</font>  
+>We'll still use the maximum likelihood estimation for the real weight, there will be some flow change:  
+>&#10112;take $\mu$=$14.2$ and the same sample or population standard deviation to build the normal distribution to <font color="OrangeRed">simulate</font> the real weight.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-compare-prior.png "std compare")  
+>The red solid line is the normal distribution of sample standard deviation, the dashed blue line is the version of population standard deviation.  
+>&#10113;iterate through each measured weight in the sample space.  
+>&#10114;take the current iterated measured weight as $\mu$ to build a new normal distribution, centrally distributed in accordance with it.  
+>&#10115;calculate the $P(w_{cur})$ with regards to the normal probability distributed in the normal distribution build in &#10112;.  
+>&#10116;calculate the sample and population standard deviation in this new build normal distribution.  
+>
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
