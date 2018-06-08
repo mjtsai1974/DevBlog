@@ -117,7 +117,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 ><font color="OrangeRed">The Bayes inference should begin with the given prior</font>  
 >Please recall that <font color="DeepSkyBlue">the scale tells the dog is weighted $14.2$ lb in this concurrent measurement</font>, and this is the <font color="Red">prior</font> to make Bayes inference with.  
 >&#10112;assumed the given <font color="Red">prior</font> $P(w_{real})$=$14.2$ is true.  
->&#10113;since $14.2$ is within the existing sample space, we can just take $\mu$=$14.2$ and the same sample or population standard deviation to build the normal distribution.  
+>&#10113;since $14.2$ is within the existing sample space, we can just take $\mu$=$14.2$ and the same sample or population standard deviation to build the <font color="OrangeRed">mother</font> normal distribution.  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Refine the working model</font>  
@@ -128,8 +128,8 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Design the new flow</font>  
 >We'll still use the maximum likelihood estimation for the real weight, there will be some flow change:  
->&#10112;take $\mu$=$14.2$ and the same sample or population standard deviation to build the normal distribution to <font color="OrangeRed">simulate</font> the real weight.  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-compare-prior.png "std compare")  
+>&#10112;take $\mu$=$14.2$ and the same sample or population standard deviation to build the <font color="OrangeRed">mother</font> normal distribution to <font color="OrangeRed">simulate</font> the real weight.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-compare-prior.png "std compare")
 >The red solid line is the normal distribution of sample standard deviation, the dashed blue line is the version of population standard deviation.  
 >&#10113;iterate through each measured weight in the sample space.  
 >&#10114;take the current iterated measured weight as $\mu$ to build a new normal distribution, centrally distributed in accordance with it.  
@@ -160,7 +160,10 @@ $\underset{w_{real}}{maxarg}P(m=\\{13.9,14.1,17.5\\}\vert w_{real})$
 >$\;\;\;\;\cdot P(m=\\{14.1\\}\vert w_{real})\cdot P(w_{real})$  
 >$\;\;\;\;\cdot P(m=\\{17.5\\}\vert w_{real})\cdot P(w_{real})$  
 >This is just the maximum likelihood estimation for $w_{real}$ in this <font color="DeepPink">Bayes inference</font>.  
->
+>&#10114;below exhibits the new distribution with regards to all sampling weights and the <font color="OrangeRed">mother</font> sample standard deviation.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-prior-sampl-std-sample.png "std compare")
+>&#10115;next it depects the new distribution with regards to all sampling weights and the <font color="OrangeRed">mother</font> population standard deviation.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-prior-popu-std-sample.png "std compare")
 >In my [Python simulator](https://mjtsai1974.github.io/DevBlog/template/BayesInferForDogWeightByMLE_Prio.py), the maximum likelihood estimation of $w_{real}$ is $14.1$, for whatever sample or population standard deviation we choose to make the <font color="OrangeRed">mother</font> normal distribution.  
 
 ### Addendum
