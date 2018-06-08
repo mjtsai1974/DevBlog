@@ -141,10 +141,13 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >thus, we can know the bandwidth of normal distribution regarding to $\mu$=$17.5$.  
 >After the calculation with sample standard deviation $2.023$, we have $\sigma_{\mu=13.9}$=$2.046$, $\sigma_{\mu=14.1}$=$2.026$, $\sigma_{\mu=17.5}$=$7.651$.  
 >And calculate with population standard deviation $1.652$, we have $\sigma_{\mu=13.9}$=$1.679$, $\sigma_{\mu=14.1}$=$1.655$, $\sigma_{\mu=17.5}$=$12.149$.  
+>&#10117;by using the maximum likelihood estimation to find out the possible $w_{real}$:  
+>$P(w_{real}\vert m)$=$P(m\vert w_{real}\cdot w_{real})$  
+>
 
-P(13.900) of N(14.200,1.652) = 0.238 for N(13.900), the std error 1.679
-P(14.100) of N(14.200,1.652) = 0.241 for N(14.100), the std error 1.655
-P(17.500) of N(14.200,1.652) = 0.033 for N(17.500), the std error 12.149
+<!--
+>$P(w_{real}\vert m)$=$P(m\vert w_{real}\cdot w_{real})$ leads us to the maximum likely possible real weight.  
+-->
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
