@@ -154,7 +154,12 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >=$P_{N(\mu=17.5)}(m=\\{13.9\\}\vert 17.5)\cdot P_{N(\mu=14.2)}(17.5)$  
 >$\;\;\;\;\cdot P_{N(\mu=17.5)}(m=\\{14.1\\}\vert 17.5)\cdot P_{N(\mu=14.2)}(17.5)$  
 >$\;\;\;\;\cdot P_{N(\mu=17.5)}(m=\\{17.5\\}\vert 17.5)\cdot P_{N(\mu=14.2)}(17.5)$  
-
+>&#10112;let's regularize it:  
+$\underset{w_{real}}{maxarg}P(m=\\{13.9,14.1,17.5\\}\vert w_{real})$  
+>=$\underset{w_{real}}{maxarg}P(m=\\{13.9\\}\vert w_{real})\cdot P(w_{real})$  
+>$\;\;\;\;\cdot P(m=\\{14.1\\}\vert w_{real})\cdot P(w_{real})$  
+>$\;\;\;\;\cdot P(m=\\{17.5\\}\vert w_{real})\cdot P(w_{real})$  
+>This is just the maximum likelihood estimation for $w_{real}$ in this <font color="DeepPink">Bayes inference</font>.  
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
