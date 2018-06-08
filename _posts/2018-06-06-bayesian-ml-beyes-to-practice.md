@@ -10,7 +10,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 </p>
 
 ### You Are Given The Question
->Given a dog, with 3 measurement results(lb) of weight, $13.9$,$17.5$,$14.1$ in the past 3 records.  <font color="OrangeRed">What's the exact weight of the dog at this moment?</font>  And <font color="DeepSkyBlue">the scale tells that it is weighted 14.2 lb in this concurrent measurement</font>.  
+>Given a dog, with 3 measurement results(lb) of weight, $13.9$,$17.5$,$14.1$ in the past 3 records of measurement.  <font color="OrangeRed">What's the exact weight of the dog at this moment?</font>  And <font color="DeepSkyBlue">the scale tells that it is weighted 14.2 lb in this concurrent measurement</font>.  
 >
 >This article is illustrated from the example in [How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M).  
 
@@ -79,7 +79,7 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10114;to further <font color="OrangeRed">regularize</font> our Bayes expression, let it becomes:  
 >$P(w_{real}\vert m)$=$\frac {P(m\vert w_{real})\cdot P(w)}{P(m)}$, where <font color="OrangeRed">$P(m)$ and $P(w_{real})$ are just constants</font>.  
 >&#10115;we can toss out the 2 terms $P(m)$ and $P(w_{real})$.  The working model now becomes:  
-><font color="OrangeRed">$P(w_{real}\vert m)$=$P(m\vert w_{real})$</font>  
+>$P(w_{real}\vert m)$=$P(m\vert w_{real})$  
 >
 ><font color="C20000">It's the possible direction we can escape away from the space non-going anywhere, as a result of the chosen Bayes expression constructed by insufficient sample data.</font>  
 
@@ -112,7 +112,18 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-06-bayesian-ml-beyes-to-practice-N-dist-compare.png "std compare")
 >The estimated $w_{real}$=$15.126$, which is very close to $\overline{x_{3}}$=$15.167$, <font color="RoyalBlue">is this the most appropriate value?</font>  
 
-### Make The <font color="DeepPink">Bayes Inference From The Given Prior</font>
+### Make The <font color="DeepPink">Bayes Inference With The Given Prior</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The Bayes inference should begin with the given prior</font>  
+>Please recall that <font color="DeepSkyBlue">the scale tells the dog is weighted $14.2$ lb in this concurrent measurement</font>, and this is the <font color="Red">prior</font> to make Bayes inference with.  
+>&#10112;assumed the given <font color="Red">prior</font> $P(w_{real})$=$14.2$ is true.  
+>&#10113;since $14.2$ is within the existing sample space, we can just take $\mu$=$14.2$ and the same sample or population standard deviation to build the normal distribution.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Refine the working model</font>  
+>$P(w_{real}\vert m)$=$P(m\vert w_{real})\cdot P(w_{real})$  
+>&#10112;<font color="OrangeRed">the Bayes inference should begin with the given prior</font>, that's why we put the term P(w_{real}) at the right side.  
+>&#10113;the term $P(m)$ is just a constant, could be safely tossed out.  
 >
 
 ### Addendum
