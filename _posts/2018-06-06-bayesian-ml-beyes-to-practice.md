@@ -138,9 +138,13 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >$P_{\mu=14.2}(17.5)$=$\frac {1}{\sigma_{\mu=17.5}\cdot\sqrt{2\cdot\pi}}\cdot e^{-\frac {1}{2}\cdot\frac {(x-17.5)}{\sigma_{\mu=17.5}^{2}}}$  
 >$\Rightarrow\sigma_{\mu=17.5}$=$\frac {1}{P_{\mu=14.2}(17.5)\cdot\sqrt{2\cdot\pi}}$  
 >;where $x=17.5$ and $P_{\mu=14.2}(17.5)$=$\frac {1}{\sigma_{\mu=14.2}\cdot\sqrt{2\cdot\pi}}\cdot e^{-\frac {1}{2}\cdot\frac {(17.5-14.2)}{\sigma_{\mu=14.2}^{2}}}$  
->thus, we can know the bandwidth of normal distribution regarding to $\mu$=$17.5$  
->After the calculation, we have $\sigma_{\mu=13.9}$=$2.046$, $\sigma_{\mu=14.1}$=$2.026$, $\sigma_{\mu=17.5}$=$7.651$.  
+>thus, we can know the bandwidth of normal distribution regarding to $\mu$=$17.5$.  
+>After the calculation with sample standard deviation $2.023$, we have $\sigma_{\mu=13.9}$=$2.046$, $\sigma_{\mu=14.1}$=$2.026$, $\sigma_{\mu=17.5}$=$7.651$.  
+>And calculate with population standard deviation $1.652$, we have $\sigma_{\mu=13.9}$=$1.679$, $\sigma_{\mu=14.1}$=$1.655$, $\sigma_{\mu=17.5}$=$12.149$.  
 
+P(13.900) of N(14.200,1.652) = 0.238 for N(13.900), the std error 1.679
+P(14.100) of N(14.200,1.652) = 0.241 for N(14.100), the std error 1.655
+P(17.500) of N(14.200,1.652) = 0.033 for N(17.500), the std error 12.149
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
