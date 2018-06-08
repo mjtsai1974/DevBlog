@@ -135,7 +135,9 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >&#10114;take the current iterated measured weight as $\mu$ to build a new normal distribution, centrally distributed in accordance with it.  
 >&#10115;calculate the $P(w_{cur})$ with regards to the normal probability distributed in the normal distribution build in &#10112;.  
 >&#10116;calculate the sample and population standard deviation in this new build normal distribution.  
->
+>$P_{\mu=14.2}(17.5)$=$\frac {1}{\sigma_{\mu=17.5}\cdot\sqrt{2\cdot\pi}}\cdot e^{-\frac {1}{2}\cdot\frac {(x-17.5)}{\sigma_{\mu=17.5}^{2}}}$  
+>$\Rightarrow\sigma_{\mu=17.5}$=$\frac {1}{P_{\mu=14.2}(17.5)\cdot\sqrt{2\cdot\pi}}$  
+>;where $x=17.5$ and $P_{\mu=14.2}(17.5)$=$\frac {1}{\sigma_{\mu=14.2}\cdot\sqrt{2\cdot\pi}}\cdot e^{-\frac {1}{2}\cdot\frac {(17.5-14.2)}{\sigma_{\mu=14.2}^{2}}}$  
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
