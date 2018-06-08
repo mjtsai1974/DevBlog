@@ -141,13 +141,20 @@ The <font color="Red">Bayes theorem</font> is the <font color="DeepPink">quantit
 >thus, we can know the bandwidth of normal distribution regarding to $\mu$=$17.5$.  
 >After the calculation with sample standard deviation $2.023$, we have $\sigma_{\mu=13.9}$=$2.046$, $\sigma_{\mu=14.1}$=$2.026$, $\sigma_{\mu=17.5}$=$7.651$.  
 >And calculate with population standard deviation $1.652$, we have $\sigma_{\mu=13.9}$=$1.679$, $\sigma_{\mu=14.1}$=$1.655$, $\sigma_{\mu=17.5}$=$12.149$.  
->&#10117;by using the maximum likelihood estimation to find out the possible $w_{real}$:  
+>&#10117;by using the maximum likelihood estimation(see [4]) to find out the maximum $P(w_{real})$:  
 >$P(w_{real}\vert m)$=$P(m\vert w_{real}\cdot w_{real})$  
+>&#10118;back to &#10113; until all sample weights are iterated.  
 >
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Bayes maximum likelihood estimation</font> 
+>$P(w_{real}\vert m)$=$P(m\vert w_{real})\cdot P(w_{real})$ leads us to the maximum likely possible real weight.  
+>&#10112;when iterating $17.5$, $w_{real}$=$17.5$.  
+>$P(w_{real}\vert m=\\{13.9,14.1,17.5\\})$  
+>=$P(m=\\{13.9,14.1,17.5\\}\vert w_{real})\cdot P(w_{real})$  
+>=$P_{N(\mu=17.5)}(m=\\{13.9\\}\vert 17.5)\cdot P_{N(\mu=14.2)}(17.5)$  
+>$\;\;\;\;\cdot P_{N(\mu=17.5)}(m=\\{14.1\\}\vert 17.5)\cdot P_{N(\mu=14.2)}(17.5)$  
+>$\;\;\;\;\cdot P_{N(\mu=17.5)}(m=\\{17.5\\}\vert 17.5)\cdot P_{N(\mu=14.2)}(17.5)$  
 
-<!--
->$P(w_{real}\vert m)$=$P(m\vert w_{real}\cdot w_{real})$ leads us to the maximum likely possible real weight.  
--->
 
 ### Addendum
 >&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
