@@ -135,7 +135,7 @@ After exploring in the prerequisites, you are supposed to come out with sufficie
 
 * [Introduction To The Bayes Theorem]({{ site.github.repo }}{{ site.baseurl }}/2018/05/23/bayesian-ml-intro/)
 * [The Bayes Theorem Significance]({{ site.github.repo }}{{ site.baseurl }}/2018/05/28/bayesian-ml-significance/)
-* Bayes From Theorem To Practice
+* [Bayes From Theorem To Practice]({{ site.github.repo }}{{ site.baseurl }}/2018/06/06/bayesian-ml-beyes-to-practice/)
 
 > The related posts would be new added in the future, and supposed you are comfortable with posts in prerequisite section. 
 
