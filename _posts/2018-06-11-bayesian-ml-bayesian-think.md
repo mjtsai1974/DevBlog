@@ -34,6 +34,7 @@ title: The Bayesian Thinking
 >By the way, <font color="#C20000">observation, hypothesis, likelihood function are all based on the <font color="RosyBrown">qualitative</font> belief, the total probability of the observation and the posterior are the <font color="DeepPink">quantitative</font> outcomes</font>.  
 
 ### The Bayesian Inference Framework
+>My illustration in this article was inspired from [Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134), it is using an example from [The Anatomy Of Bayes Theorem, The Cthaeh](https://www.probabilisticworld.com/anatomy-bayes-theorem/)  
 >
 
 ### Addendum
