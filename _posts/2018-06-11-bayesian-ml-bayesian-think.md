@@ -8,8 +8,20 @@ title: The Bayesian Thinking
 <font color="Red">Bayesian thinking</font> is an approach <font color="DeepPink">to systematizing reasoning under uncertainty</font> by means of the <font color="Red">Bayes theorem</font>.
 </p>
 
+### The <font color="DeepSkyBlue">Intuition</font> Behind The <font color="Red">Bayes Theorem</font>
+><font color="DeepSkyBlue">[1]</font>
+>ReCap The <font color="Red">Bayes Theorem</font>  
+>![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-4-factors.png "4 factors")
+>The detailed explanation of 4 factors are in my prior post, [The Bayes Theorem Significance](({{ site.github.repo }}{{ site.baseurl }}/2018/05/28/bayesian-ml-significance/)).  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">The intuition behind the theorem</font>  
+>![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-11-bayesian-ml-bayesian-think-intuition.png "intuition")
+
+
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
+>&#10113;[The Bayesian trap, Veritasium channel](https://www.youtube.com/watch?v=R13BD8qKeTg&vl=en)
 
 <!--
 [1]What is a Bayesian network?
@@ -48,11 +60,6 @@ https://www.quora.com/What-is-Bayesian-machine-learning
 
 https://www.quora.com/What-does-Bayesian-networks-mean-in-Machine-Learning
 -->
-
-### Addendum
->&#10112;[How Bayesian inference works, Brandon Rohrer](https://www.youtube.com/watch?v=5NMxiOGL39M)  
->&#10113;[Translated article of &#10112;](https://brohrer.mcknote.com/zh-Hant/statistics/how_bayesian_inference_works.html)  
->&#10114;[Bayes theorem and conditional probability](https://ccjou.wordpress.com/2016/02/01/%E6%A2%9D%E4%BB%B6%E6%A9%9F%E7%8E%87%E8%88%87%E8%B2%9D%E6%B0%8F%E5%AE%9A%E7%90%86/)  
 
 <!-- Γ -->
 <!-- \Omega -->
