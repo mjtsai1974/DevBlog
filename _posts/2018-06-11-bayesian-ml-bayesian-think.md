@@ -42,8 +42,8 @@ title: The Bayesian Thinking
 
 <table>
   <tr>
-    <td width="200px"></td>
-    <td width="200px">Probability</td>
+    <td width="100px"></td>
+    <td width="100px">Probability</td>
   </tr>
   <tr>
     <td>Infected</td>
@@ -170,6 +170,32 @@ https://www.quora.com/What-does-Bayesian-networks-mean-in-Machine-Learning
   <TR>
     <TD width="50px">A</TD>
     <TD width="100px">B</TD>
+  </TR>
+</TABLE>
+
+<TABLE border="1">
+  <TR>
+    <TD width="50px">A</TD>
+    <TD width="100px">B</TD>
+  </TR>
+  <TR>
+    <TD>C</TD>
+    <TD>D</TD>
+  </TR>
+</TABLE>
+
+<TABLE border="1">
+  <COL width="50px">
+  <COL width="100px">
+  <COL width="50px">
+  <TR>
+    <TD colspan="2">A</TD>
+    <TD>B</TD>
+  </TR>
+  <TR>
+    <TD>C</TD>
+    <TD>D</TD>
+    <TD>E</TD>
   </TR>
 </TABLE>
 -->
