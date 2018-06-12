@@ -39,7 +39,7 @@ title: The Bayesian Thinking
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Begin by a question</font>  
 >Suppose that there exists a rare disease, according to the medical library, only 1 from 1000 people would be infected.  
-<table>
+><table>
   <tr>
     <td></td>
     <td>Probability</td>
