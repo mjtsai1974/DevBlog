@@ -20,7 +20,7 @@ title: The Bayesian Thinking
 >The intuition behind encourages you to make further inference.  
 >&#10112;the <font color="Red">hypothesis</font>, mapped to the <font color="DeepSkyBlue">prior</font>, which are all probabilities.  
 >&#10113;the <font color="DeepSkyBlue">likelihood function</font> related to prior is expressed as the probability of the event occurrence of the <font color="Red">observation</font> given the event occurrence of <font color="Red">hypothesis</font>.  
->&#10114;the <font color="Red">total probability of the observation</font> is more well regularized.  
+>&#10114;the <font color="Red">total probability of the observation</font> is the well regularized <font color="Red">evidence</font>.  
 >&#10115;the <font color="Red">posterior is the probability of the hypothesis, given the observation</font>.  
 >
 ><font color="DeepSkyBlue">[3]</font>
@@ -36,6 +36,7 @@ title: The Bayesian Thinking
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
 >&#10113;[The Bayesian trap, Veritasium channel](https://www.youtube.com/watch?v=R13BD8qKeTg&vl=en)
+>&#10114;[The Anatomy Of Bayes Theorem, The Cthaeh](https://www.probabilisticworld.com/anatomy-bayes-theorem/)
 
 <!--
 [1]What is a Bayesian network?
