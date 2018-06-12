@@ -10,14 +10,20 @@ title: The Bayesian Thinking
 
 ### The <font color="DeepSkyBlue">Intuition</font> Behind The <font color="Red">Bayes Theorem</font>
 ><font color="DeepSkyBlue">[1]</font>
->ReCap The <font color="Red">Bayes Theorem</font>  
+><font color="OrangeRed">ReCap the Bayes theorem</font>  
 >![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-05-28-bayesian-ml-significance-4-factors.png "4 factors")
 >The detailed explanation of 4 factors are in my prior post, [The Bayes Theorem Significance](({{ site.github.repo }}{{ site.baseurl }}/2018/05/28/bayesian-ml-significance/)).  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">The intuition behind the theorem</font>  
 >![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-11-bayesian-ml-bayesian-think-intuition.png "intuition")
-
+>The intuition behind encourages you to make further inference.  
+>&#10112;the hypothesis, mapped to the prior, which are all probabilities.  
+>&#10113;the likelihood function related to prior is expressed as the probability of the event occurrence of the observation given the event occurrence of hypothesis.  
+>&#10114;the total probability of the observation is well more regularized.  
+>&#10115;the posterior is the probability of the hypothesis, given the observation.  
+>
+>The Bayesian inference has it that if we observe the truth or falsity of a relevant event, we can then use Bayes’ theorem to revise our probability assessment for other related events.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
