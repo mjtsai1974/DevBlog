@@ -39,10 +39,11 @@ title: The Bayesian Thinking
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Begin by a question</font>  
 >Suppose that there exists a rare disease, according to the medical library, only 1 from 1000 people would be infected.  
-><table>
+
+<table>
   <tr>
-    <td></td>
-    <td>Probability</td>
+    <td width="200px"></td>
+    <td width="200px">Probability</td>
   </tr>
   <tr>
     <td>Infected</td>
@@ -53,6 +54,8 @@ title: The Bayesian Thinking
     <td>0.999</td>
   </tr>
 </table>
+
+>
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
@@ -162,6 +165,13 @@ https://www.quora.com/What-does-Bayesian-networks-mean-in-Machine-Learning
     <td>iPhone 6 > 5</td>
   </tr>
 </table>
+
+<TABLE border="1">
+  <TR>
+    <TD width="50px">A</TD>
+    <TD width="100px">B</TD>
+  </TR>
+</TABLE>
 -->
 
 <!--
