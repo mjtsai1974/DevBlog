@@ -33,9 +33,17 @@ title: The Bayesian Thinking
 >
 >By the way, <font color="#C20000">observation, hypothesis, likelihood function are all based on the <font color="RosyBrown">qualitative</font> belief, the total probability of the observation and the posterior are the <font color="DeepPink">quantitative</font> outcomes</font>.  
 
-### The Bayesian Inference Framework
->My illustration in this article was inspired from [Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134), it is using an example from [The Anatomy Of Bayes Theorem, The Cthaeh](https://www.probabilisticworld.com/anatomy-bayes-theorem/)  
+### The <font color="Red">Bayesian Inference</font> Illustration
+>My illustration in this article was inspired from [Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134), it is using an example from [The Anatomy Of Bayes Theorem, The Cthaeh](https://www.probabilisticworld.com/anatomy-bayes-theorem/).  But, I have some different opinion.  
 >
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Begin by a question</font>  
+>Suppose that there exists a rare disease, according to the medical library, only 1 from 1000 people would be infected.  
+>|     | Probability|  
+>|:----:|:----:|  
+>|----|----|  
+>|Infected | 0.001|  
+>|Health |  0.999|  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
@@ -130,6 +138,18 @@ https://www.quora.com/What-does-Bayesian-networks-mean-in-Machine-Learning
 [1]Given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?</font>  
+-->
+
+<!--
+name | age
+---- | ---
+LearnShare | 12
+Mike |  32
+
+| left | center | right |
+| :--- | :----: | ----: |
+| aaaa | bbbbbb | ccccc |
+| a    | b      | c     |
 -->
 
 <!-- https://www.medcalc.org/manual/gamma_distribution_functions.php -->
