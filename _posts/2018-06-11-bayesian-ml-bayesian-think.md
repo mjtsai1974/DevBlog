@@ -18,12 +18,20 @@ title: The Bayesian Thinking
 ><font color="OrangeRed">The intuition behind the theorem</font>  
 >![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-11-bayesian-ml-bayesian-think-intuition.png "intuition")
 >The intuition behind encourages you to make further inference.  
->&#10112;the hypothesis, mapped to the prior, which are all probabilities.  
->&#10113;the likelihood function related to prior is expressed as the probability of the event occurrence of the observation given the event occurrence of hypothesis.  
->&#10114;the total probability of the observation is well more regularized.  
->&#10115;the posterior is the probability of the hypothesis, given the observation.  
+>&#10112;the <font color="Red">hypothesis</font>, mapped to the <font color="DeepSkyBlue">prior</font>, which are all probabilities.  
+>&#10113;the <font color="DeepSkyBlue">likelihood function</font> related to prior is expressed as the probability of the event occurrence of the <font color="Red">observation</font> given the event occurrence of <font color="Red">hypothesis</font>.  
+>&#10114;the <font color="Red">total probability of the observation</font> is more well regularized.  
+>&#10115;the <font color="Red">posterior is the probability of the hypothesis, given the observation</font>.  
 >
->The Bayesian inference has it that if we observe the truth or falsity of a relevant event, we can then use Bayes’ theorem to revise our probability assessment for other related events.  
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">The Bayesian inference</font>  
+>&#10112;at the first glance, we make an <font color="Red">observation</font> in the real world.  
+>&#10113;we'd like to identify it by making certain <font color="Red">hypothesis</font> of some classification.  
+>&#10114;the <font color="Red">likelihood function</font> estimates the possible probability of the observation given the hypothesis.  
+>&#10115;finally, the <font color="Red">posterior</font> is the probability of the <font color="Red">hypothesis</font> given the <font color="Red">observation</font>.  
+>Such process is called the <font color="Red">Bayesian inference</font>, full compliant with the classification of an observed object, which the hypothesis is made all about.  
+>
+>By the way, <font color="#C20000">observation, hypothesis, likelihood function are all based on the <font color="RosyBrown">qualitative</font> belief, the total probability of the observation and the posterior are the <font color="DeepPink">quantitative</font> outcomes</font>.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
