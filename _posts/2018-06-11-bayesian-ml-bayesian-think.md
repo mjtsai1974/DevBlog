@@ -42,8 +42,8 @@ title: The Bayesian Thinking
 
 <table>
   <tr>
-    <td width="100px"></td>
-    <td width="100px">Probability</td>
+    <td width="50px"></td>
+    <td width="75px">Probability</td>
   </tr>
   <tr>
     <td>Infected</td>
@@ -55,7 +55,7 @@ title: The Bayesian Thinking
   </tr>
 </table>
 
->
+>The above table reveals the already known prior.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
