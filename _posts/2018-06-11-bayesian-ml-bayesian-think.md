@@ -39,11 +39,20 @@ title: The Bayesian Thinking
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Begin by a question</font>  
 >Suppose that there exists a rare disease, according to the medical library, only 1 from 1000 people would be infected.  
-|     |Probability|  
-|:---|:---|  
-|----|----|  
-|Infected|0.001|  
-|Health|0.999|  
+<table>
+  <tr>
+    <td></td>
+    <td>Probability</td>
+  </tr>
+  <tr>
+    <td>Infected</td>
+    <td>0.001</td>
+  </tr>
+  <tr>
+    <td>Healthy</td>
+    <td>0.999</td>
+  </tr>
+</table>
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
@@ -138,6 +147,21 @@ https://www.quora.com/What-does-Bayesian-networks-mean-in-Machine-Learning
 [1]Given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?</font>  
+-->
+
+<!--
+<table>
+  <tr>
+    <td>項次</td>
+    <td>品名</td>
+    <td>描述</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>iPhone 5</td>
+    <td>iPhone 6 > 5</td>
+  </tr>
+</table>
 -->
 
 <!--
