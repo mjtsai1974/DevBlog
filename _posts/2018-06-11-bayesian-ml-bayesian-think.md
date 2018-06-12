@@ -33,10 +33,13 @@ title: The Bayesian Thinking
 >
 >By the way, <font color="#C20000">observation, hypothesis, likelihood function are all based on the <font color="RosyBrown">qualitative</font> belief, the total probability of the observation and the posterior are the <font color="DeepPink">quantitative</font> outcomes</font>.  
 
+### The Bayesian Inference Framework
+>
+
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
->&#10113;[The Bayesian trap, Veritasium channel](https://www.youtube.com/watch?v=R13BD8qKeTg&vl=en)
->&#10114;[The Anatomy Of Bayes Theorem, The Cthaeh](https://www.probabilisticworld.com/anatomy-bayes-theorem/)
+>&#10113;[The Bayesian trap, Veritasium channel](https://www.youtube.com/watch?v=R13BD8qKeTg&vl=en)  
+>&#10114;[The Anatomy Of Bayes Theorem, The Cthaeh](https://www.probabilisticworld.com/anatomy-bayes-theorem/)  
 
 <!--
 [1]What is a Bayesian network?
