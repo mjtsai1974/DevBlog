@@ -142,6 +142,14 @@ title: The Bayesian Thinking
 </table>
 
 >It is under the assumption that the run #2 is rather a <font color="OrangeRed">plausible</font>, not a vague result!!  
+>&#10113;recalculate with the <font color="Red">Bayes theorem</font>:  
+>$P(Cancer\vert Malignant)$  
+>=$\frac {0.99\cdot 0.91}{0.99\cdot 0.91+0.01\cdot 0.09}$  
+>=$0.999$  
+>$\approx 1$  
+>; where $P(Mass\vert Malignant)$=$0.00001$, after rounding.  
+>It is now almost $100%$ correct that the malignant report says that you have a cancer!!!  
+
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
