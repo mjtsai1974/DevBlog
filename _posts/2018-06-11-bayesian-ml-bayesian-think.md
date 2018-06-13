@@ -19,7 +19,7 @@ title: The Bayesian Thinking
 >![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-06-11-bayesian-ml-bayesian-think-intuition.png "intuition")
 >The intuition behind encourages you to make further inference.  
 >&#10112;the <font color="Red">hypothesis</font>, mapped to the <font color="DeepSkyBlue">prior</font>, which are all probabilities.  
->&#10113;the <font color="DeepSkyBlue">likelihood function</font> related to prior is expressed as the probability of the event occurrence of the <font color="Red">observation</font> given the event occurrence of <font color="Red">hypothesis</font>.  
+>&#10113;the <font color="Red">likelihood function</font> related to prior is expressed as the probability of the event occurrence of the <font color="Red">observation</font> given the event occurrence of <font color="Red">hypothesis</font>.  
 >&#10114;the <font color="Red">total probability of the observation</font> is the well regularized <font color="Red">evidence</font>.  
 >&#10115;the <font color="Red">posterior is the probability of the hypothesis, given the observation</font>.  
 >
@@ -55,7 +55,7 @@ title: The Bayesian Thinking
   </tr>
 </table>
 
->This table reveals the already known <font color="RoyalBlue">prior</font>, now turns into be the <font color="Red">hypothesis</font> of the probability of having a cancer.    
+>This table reveals the already known <font color="DeepSkyBlue">prior</font>, now turns into be the <font color="Red">hypothesis</font> of the probability of having a cancer.    
 >&#10113;suppose the accuracy of the medical detection is given in below table, where malignant stands for cancer of result, and benign stands for being detected as a normal mass.  
 
 <table>
@@ -85,7 +85,7 @@ title: The Bayesian Thinking
 >By the given <font color="Red">hypothesis</font>, <font color="Red">likelihood</font>, the <font color="Red">Bayes theorem</font> could be used for the <font color="Red">posterior</font>:  
 >&#10112;$P(Cancer\vert Malignant)$  
 >=$\frac {P(Malignant\vert Cancer)\cdot P(Cancer)}{P(Malignant)}$  
->&#10113;the total probability of malignant evidence:  
+>&#10113;the total probability of malignant <font color="Red">evidence</font>:  
 >$P(Malignant)$  
 >=$P(Malignant\vert Cancer)\cdot P(Cancer)$+$P(Malignant\vert Mass)\cdot P(Mass)$  
 >&#10114;therefore, the posterior is   
@@ -96,7 +96,7 @@ title: The Bayesian Thinking
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Test of run #2</font>  
 >Even if the accuracy of the medical detection is up to $0.99$, the probability for your mass is really a cancer given the malignant diagnostic result is only $0.09$.  That's why we decide to make the 2nd test.  
->&#10112;first we update the prior table with regard to the given run #1 result:  
+>&#10112;first we update the <font color="Red">prior</font> table with regard to the given run #1 result:  
 
 <table>
   <tr>
@@ -113,7 +113,13 @@ title: The Bayesian Thinking
   </tr>
 </table>
 
->It is under the assumption that the run #1 is rather a plausible, not a vague result!!  
+>It is under the assumption that the run #1 is rather a <font color="OrangeRed">plausible</font>, not a vague result!!  
+>&#10113;recalculate with the <font color="Red">Bayes theorem</font>:  
+>$P(Cancer\vert Malignant)$  
+>=$\frac {0.99\cdot 0.09}{0.99\cdot 0.09+0.01\cdot 0.91}$  
+>=$0.090733$
+>$\approx 0.91$    
+>; where $P(Mass\vert Malignant)$=$0.09266\approx 0.09$, after rounding.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
