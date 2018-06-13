@@ -96,7 +96,7 @@ title: The Bayesian Thinking
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Test of run #2</font>  
 >Even if the accuracy of the medical detection is up to $0.99$, the probability for your mass is really a cancer given the malignant diagnostic result is only $0.09$.  That's why we decide to make the 2nd test.  
->&#10112;first we update the <font color="Red">prior</font> table with regard to the given run #1 result:  
+>&#10112;first, we update the <font color="Red">prior</font> table with regard to the given run #1 result:  
 
 <table>
   <tr>
@@ -117,9 +117,31 @@ title: The Bayesian Thinking
 >&#10113;recalculate with the <font color="Red">Bayes theorem</font>:  
 >$P(Cancer\vert Malignant)$  
 >=$\frac {0.99\cdot 0.09}{0.99\cdot 0.09+0.01\cdot 0.91}$  
->=$0.090733$
+>=$0.90733$  
 >$\approx 0.91$    
->; where $P(Mass\vert Malignant)$=$0.09266\approx 0.09$, after rounding.  
+>; where $P(Mass\vert Malignant)$=$0.09266\approx 0.09$, after rounding.  Wow, it seems there is a great improvement in a malignant report and you do really have a cancer.  
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Test of run #3</font>  
+>Let's do it the 3rd run.  
+>&#10112;first, we update the <font color="Red">prior</font> table with regard to the given run #2 result:  
+
+<table>
+  <tr>
+    <td width="50px"></td>
+    <td width="75px">Probability</td>
+  </tr>
+  <tr>
+    <td>Cancer</td>
+    <td>0.91</td>
+  </tr>
+  <tr>
+    <td>Mass</td>
+    <td>0.09</td>
+  </tr>
+</table>
+
+>It is under the assumption that the run #2 is rather a <font color="OrangeRed">plausible</font>, not a vague result!!  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
