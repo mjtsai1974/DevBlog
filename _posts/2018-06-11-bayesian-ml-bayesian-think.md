@@ -148,15 +148,23 @@ title: The Bayesian Thinking
 >=$0.999$  
 >$\approx 1$  
 >; where $P(Mass\vert Malignant)$=$0.0001$, after rounding.  
->It is now almost $100$ percent correct that the malignant report says that you have a cancer!!!  
+>It is now almost $100\%$ correct that the malignant report says that you have a cancer!!!  
 >
 ><font color="DeepSkyBlue">[5]</font>
 ><font color="OrangeRed">Summary</font>  
 >This illustration begins with the given prior of having cancer, executes from run #1 to run #3, constantly <font color="DeepPink">updates the next prior probability with the current estimated posterior</font>, finally get the expected result.  It is called the <font color="Red">Bayesian inference</font>.  
 
-### The Review 
->Above illustration of <font color="Red">Bayesian inference</font>
+### The Review::mjtsai1974 
+>Above illustration of <font color="Red">Bayesian inference</font> might strike you on your head that <font color="DeepPink">by constantly updating the given prior(so that you can make finer hypothesis) would you gradually adjust the posterior(the experiment result) toward the direction you want</font>.  
 >
+><font color="RoyalBlue">[Question]</font>  
+>Below I comment out with 2 doubtable points:  
+>&#10112;why we update the prior, $P(Cancer)$ with $P(Cancel\vert Malignant)$ after each test?  
+>&#10113;is this the artificial bias leads to the contribution of $100\%$ identification of having a cancer given the malignant result?  
+>
+><font color="DeepSkyBlue">[Answer]</font>  
+>&#10112;I think it is indeed an artificial bias, since the term $P(Cancer\vert Malignant)$ is not equivalent to the very first given $P(Cancer)$ for all possible diseases one can have as a sample or population.  
+>&#10113;be remembered that it is <font color="OrangeRed">the common practices in Bayesian inference</font>.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
