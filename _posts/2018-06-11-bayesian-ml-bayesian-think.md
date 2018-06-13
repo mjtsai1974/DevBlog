@@ -71,8 +71,8 @@ title: The Bayesian Thinking
   </tr>
   <tr>
     <td>F(Not detected)</td>
-    <td>0.01, $P(F\vert Infected)</td>
-    <td>0.99, $P(F\vert Free)</td>
+    <td>0.01, $P(F\vert Infected)$</td>
+    <td>0.99, $P(F\vert Free)$</td>
   </tr>
 </table>
 
