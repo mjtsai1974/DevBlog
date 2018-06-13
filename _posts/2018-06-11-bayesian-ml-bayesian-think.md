@@ -147,9 +147,12 @@ title: The Bayesian Thinking
 >=$\frac {0.99\cdot 0.91}{0.99\cdot 0.91+0.01\cdot 0.09}$  
 >=$0.999$  
 >$\approx 1$  
->; where $P(Mass\vert Malignant)$=$0.00001$, after rounding.  
->It is now almost $100%$ correct that the malignant report says that you have a cancer!!!  
-
+>; where $P(Mass\vert Malignant)$=$0.0001$, after rounding.  
+>It is now almost $100$ percent correct that the malignant report says that you have a cancer!!!  
+>
+><font color="DeepSkyBlue">[5]</font>
+><font color="OrangeRed">Summary</font>  
+>This illustration begins with the given prior of having cancer, executes from run #1 to run #3, constantly <font color="DeepPink">updates the next prior probability with the current estimated posterior</font>, finally get the expected result.  It is called the <font color="Red">Bayesian inference</font>.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
