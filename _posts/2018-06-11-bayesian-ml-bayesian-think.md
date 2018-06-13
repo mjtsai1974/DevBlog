@@ -60,19 +60,19 @@ title: The Bayesian Thinking
 
 <table>
   <tr>
-    <td width="50px"></td>
-    <td width="75px">Cancer</td>
-    <td width="75px">Mass</td>
+    <td width="75px"></td>
+    <td width="65px">Cancer</td>
+    <td width="65px">Mass</td>
   </tr>
   <tr>
-    <td>T(Cancer)</td>
-    <td>$P(T\vert Cancer)$=0.99</td>
-    <td>$P(T\vert Mass)$=0.01</td>
+    <td>Malignant(Cancer)</td>
+    <td>$P(Malignant\vert Cancer)$=0.99</td>
+    <td>$P(Malignant\vert Mass)$=0.01</td>
   </tr>
   <tr>
-    <td>F(Not a cancer)</td>
-    <td>$P(F\vert Cancer)=0.01$</td>
-    <td>$P(F\vert Mass)$=0.99</td>
+    <td>Benign(Not a cancer)</td>
+    <td>$P(Benign\vert Cancer)=0.01$</td>
+    <td>$P(Benign\vert Mass)$=0.99</td>
   </tr>
 </table>
 
