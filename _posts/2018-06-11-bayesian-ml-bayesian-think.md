@@ -38,7 +38,7 @@ title: The Bayesian Thinking
 >
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Begin by a question</font>  
->Suppose that there exists a rare disease, according to the medical library, only 1 from 1000 people would be infected.  
+>&#10112;suppose that there exists a rare disease, according to the medical library, only 1 from 1000 people would be infected, given in below table.  
 
 <table>
   <tr>
@@ -50,12 +50,33 @@ title: The Bayesian Thinking
     <td>0.001</td>
   </tr>
   <tr>
-    <td>Healthy</td>
+    <td>Free</td>
     <td>0.999</td>
   </tr>
 </table>
 
->The above table reveals the already known prior.  
+>This table reveals the already known prior.  
+>&#10113;suppose the accuracy of the medical detection is given in below table, where T stands for medical detection as being infected, and F stands for not being detected as being infected.  
+
+<table>
+  <tr>
+    <td width="50px"></td>
+    <td width="75px">Infected</td>
+    <td width="75px">Free</td>
+  </tr>
+  <tr>
+    <td>T(Detected)</td>
+    <td>0.99, $P(T\vert Infected)$</td>
+    <td>0.01, $P(T\vert Free)$</td>
+  </tr>
+  <tr>
+    <td>F(Not detected)</td>
+    <td>0.01, $P(F\vert Infected)</td>
+    <td>0.99, $P(F\vert Free)</td>
+  </tr>
+</table>
+
+>This table directly reflects the possible likelihood for all conditions.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
