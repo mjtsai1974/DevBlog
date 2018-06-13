@@ -56,7 +56,7 @@ title: The Bayesian Thinking
 </table>
 
 >This table reveals the already known prior.  
->&#10113;suppose the accuracy of the medical detection is given in below table, where T stands for cancer of result, and F stands for being detected as a normal mass.  
+>&#10113;suppose the accuracy of the medical detection is given in below table, where malignant stands for cancer of result, and benign stands for being detected as a normal mass.  
 
 <table>
   <tr>
@@ -65,19 +65,20 @@ title: The Bayesian Thinking
     <td width="65px">Mass</td>
   </tr>
   <tr>
-    <td>Malignant(Cancer)</td>
+    <td>Malignant<br>(Cancer)</td>
     <td>$P(Malignant\vert Cancer)$=0.99</td>
     <td>$P(Malignant\vert Mass)$=0.01</td>
   </tr>
   <tr>
-    <td>Benign(Not a cancer)</td>
+    <td>Benign<br>(Not a cancer)</td>
     <td>$P(Benign\vert Cancer)=0.01$</td>
     <td>$P(Benign\vert Mass)$=0.99</td>
   </tr>
 </table>
 
 >This table directly reflects the possible likelihood for all conditions.  
->&#10113;unfortunately, you are detected as having a cancer, then, <font color="RoyalBlue">what's the probability that you are really having a cancer given that you are medically detected as a victim of cancer?</font>  
+>&#10114;unfortunately, you are detected as having a cancer, then, <font color="RoyalBlue">what's the probability that you are really having a cancer given that you are medically detected as a victim of cancer?</font>  
+>This given question is asking for the posterior, $P(Cancer\vert Malignant)$.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
