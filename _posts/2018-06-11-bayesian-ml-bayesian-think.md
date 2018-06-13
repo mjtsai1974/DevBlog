@@ -55,7 +55,7 @@ title: The Bayesian Thinking
   </tr>
 </table>
 
->This table reveals the already known prior, now turns into be the hypothesis of the probability of having a cancer.    
+>This table reveals the already known <font color="RoyalBlue">prior</font>, now turns into be the <font color="Red">hypothesis</font> of the probability of having a cancer.    
 >&#10113;suppose the accuracy of the medical detection is given in below table, where malignant stands for cancer of result, and benign stands for being detected as a normal mass.  
 
 <table>
@@ -76,13 +76,13 @@ title: The Bayesian Thinking
   </tr>
 </table>
 
->This table directly reflects the possible likelihood for all conditions.  
+>This table directly reflects the possible <font color="Red">likelihood</font> for all conditional combinations of 2 observations, malignant and benign.  
 >&#10114;unfortunately, you are detected as having a cancer, then, <font color="RoyalBlue">what's the probability that you are really having a cancer given that you are medically detected as a victim of cancer?</font>  
->This given question is asking for $P(Cancer\vert Malignant)$, which is the posterior.  
+>This given question is asking for $P(Cancer\vert Malignant)$, which is the <font color="Red">posterior</font>.  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Test of run #1</font>  
->By the given hypothesis, likelihood, the <font color="Red">Bayes theorem</font> could be used for the posterior:  
+>By the given <font color="Red">hypothesis</font>, <font color="Red">likelihood</font>, the <font color="Red">Bayes theorem</font> could be used for the <font color="Red">posterior</font>:  
 >&#10112;$P(Cancer\vert Malignant)$  
 >=$\frac {P(Malignant\vert Cancer)\cdot P(Cancer)}{P(Malignant)}$  
 >&#10113;the total probability of malignant evidence:  
@@ -91,11 +91,29 @@ title: The Bayesian Thinking
 >&#10114;therefore, the posterior is   
 >$P(Cancer\vert Malignant)$  
 >=$\frac {0.99\cdot 0.001}{0.99\cdot 0.001+0.01\cdot 0.999}$=$0.090163$    
+>; where $P(Mass\vert Malignant)$=$0.909837$, take it as $0.91$ after rounding.  
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Test of run #2</font>  
 >Even if the accuracy of the medical detection is up to $0.99$, the probability for your mass is really a cancer given the malignant diagnostic result is only $0.09$.  That's why we decide to make the 2nd test.  
->
+>&#10112;first we update the prior table with regard to the given run #1 result:  
+
+<table>
+  <tr>
+    <td width="50px"></td>
+    <td width="75px">Probability</td>
+  </tr>
+  <tr>
+    <td>Cancer</td>
+    <td>0.09</td>
+  </tr>
+  <tr>
+    <td>Mass</td>
+    <td>0.91</td>
+  </tr>
+</table>
+
+>It is under the assumption that the run #1 is rather a plausible, not a vague result!!  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
