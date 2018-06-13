@@ -154,6 +154,10 @@ title: The Bayesian Thinking
 ><font color="OrangeRed">Summary</font>  
 >This illustration begins with the given prior of having cancer, executes from run #1 to run #3, constantly <font color="DeepPink">updates the next prior probability with the current estimated posterior</font>, finally get the expected result.  It is called the <font color="Red">Bayesian inference</font>.  
 
+### The Review 
+>Above illustration of <font color="Red">Bayesian inference</font>
+>
+
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
 >&#10113;[The Bayesian trap, Veritasium channel](https://www.youtube.com/watch?v=R13BD8qKeTg&vl=en)  
