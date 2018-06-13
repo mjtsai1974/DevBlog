@@ -77,6 +77,7 @@ title: The Bayesian Thinking
 </table>
 
 >This table directly reflects the possible likelihood for all conditions.  
+>&#10113;unfortunately, you are detected as infected, then, <font color="RoyalBlue">what's the probability that you are really infected given that you are medically detected as being infected?</font>  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
