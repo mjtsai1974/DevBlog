@@ -88,9 +88,14 @@ title: The Bayesian Thinking
 >&#10113;the total probability of malignant evidence:  
 >$P(Malignant)$  
 >=$P(Malignant\vert Cancer)\cdot P(Cancer)$+$P(Malignant\vert Mass)\cdot P(Mass)$  
+>&#10114;therefore, the posterior is   
+>$P(Cancer\vert Malignant)$  
+>=$\frac {0.99\cdot 0.001}{0.99\cdot 0.001+0.01\cdot 0.999}$=$0.090163$    
 >
->Therefore, $P(Cancer\vert Malignant)$  
-=$\frac {0.99\cdot 0.001}{0.99\cdot 0.001+0.01\cdot 0.999}$=$0.090163$  
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Test of run #2</font>  
+>Even if the accuracy of the medical detection is up to $0.99$, the probability for your mass is really a cancer given the malignant diagnostic result is only $0.09$.  That's why we decide to make the 2nd test.  
+>
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
