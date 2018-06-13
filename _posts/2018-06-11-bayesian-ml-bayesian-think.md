@@ -38,7 +38,7 @@ title: The Bayesian Thinking
 >
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Begin by a question</font>  
->&#10112;suppose that there exists a rare disease, according to the medical library, only 1 from 1000 people would be infected, given in below table.  
+>&#10112;suppose everyone could casually find some mass in your body, like skin. It might be a rare disease, according to the medical library, only 1 from 1000 people having a mass would be the cancer, given in below table.  
 
 <table>
   <tr>
@@ -46,38 +46,38 @@ title: The Bayesian Thinking
     <td width="75px">Probability</td>
   </tr>
   <tr>
-    <td>Infected</td>
+    <td>Cancer</td>
     <td>0.001</td>
   </tr>
   <tr>
-    <td>Free</td>
+    <td>Mass</td>
     <td>0.999</td>
   </tr>
 </table>
 
 >This table reveals the already known prior.  
->&#10113;suppose the accuracy of the medical detection is given in below table, where T stands for medical detection as being infected, and F stands for not being detected as being infected.  
+>&#10113;suppose the accuracy of the medical detection is given in below table, where T stands for cancer of result, and F stands for being detected as a normal mass.  
 
 <table>
   <tr>
     <td width="50px"></td>
-    <td width="75px">Infected</td>
-    <td width="75px">Free</td>
+    <td width="75px">Cancer</td>
+    <td width="75px">Mass</td>
   </tr>
   <tr>
-    <td>T(Detected)</td>
-    <td>0.99, $P(T\vert Infected)$</td>
-    <td>0.01, $P(T\vert Free)$</td>
+    <td>T(Cancer)</td>
+    <td>$P(T\vert Cancer)$=0.99</td>
+    <td>$P(T\vert Mass)$=0.01</td>
   </tr>
   <tr>
-    <td>F(Not detected)</td>
-    <td>0.01, $P(F\vert Infected)$</td>
-    <td>0.99, $P(F\vert Free)$</td>
+    <td>F(Not a cancer)</td>
+    <td>$P(F\vert Cancer)=0.01$</td>
+    <td>$P(F\vert Mass)$=0.99</td>
   </tr>
 </table>
 
 >This table directly reflects the possible likelihood for all conditions.  
->&#10113;unfortunately, you are detected as infected, then, <font color="RoyalBlue">what's the probability that you are really infected given that you are medically detected as being infected?</font>  
+>&#10113;unfortunately, you are detected as having a cancer, then, <font color="RoyalBlue">what's the probability that you are really having a cancer given that you are medically detected as a victim of cancer?</font>  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Thinking: from Bayes theorem to Bayes networks, Felipe Sanchez](https://towardsdatascience.com/will-you-become-a-zombie-if-a-99-accuracy-test-result-positive-3da371f5134)  
