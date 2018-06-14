@@ -24,7 +24,7 @@ def UpdatePrior(cancer_prob):
     g_prior[0] = cancer_prob
     g_prior[1] = 1 - g_prior[0]
 
-    print('[UpdatePrior]P(Cancer)={0:5.3f}, P(Free)={1:5.3f}'.format(g_prior[0], g_prior[1]))
+    #print('[UpdatePrior]P(Cancer)={0:5.3f}, P(Free)={1:5.3f}'.format(g_prior[0], g_prior[1]))
 
 #Calculate the total probability of evidence
 def CalculateTotalProbability(idx_evidence):
@@ -83,30 +83,45 @@ def MakeBayesianInference(idx_run, hypothesis, evidence):
     str_hypothesis = lambda hypothesis: 'Cancer' if hypothesis == 0 else 'Free'
     str_evidence = lambda evidence: 'Malignant' if evidence == 0 else 'Benign'
 
-    print('[Bayesian]run {0:d}'.format(idx_run))
-    print('[Bayesian]P(Cancer)::0={0:.5f}, P(Free)::0={1:.5f}'.format(g_prior[0], g_prior[1]))
+    #print('[Bayesian]run {0:d}'.format(idx_run))
+    #print('[Bayesian]P(Cancer)::0={0:.5f}, P(Free)::0={1:.5f}'.format(g_prior[0], g_prior[1]))
 
     #Calculate the posterior - P(hypothesis|evidence)
     posterior = (g_prob_likelihood[evidence][hypothesis] * g_prior[hypothesis]) / CalculateTotalProbability(evidence)
 
-    print('[Bayesian]P({0:s}|{1:s})={2:.8f}'.format(str_hypothesis(hypothesis), str_evidence(evidence), posterior))
+    #print('[Bayesian]P({0:s}|{1:s})={2:.8f}'.format(str_hypothesis(hypothesis), str_evidence(evidence), posterior))
 
     #Update the the prior/hypothesis probability table
     g_prior[hypothesis] = posterior
     g_prior[idx_another(hypothesis)] = 1 - posterior
 
-    print('[Bayesian]P(Cancer)::1={0:.5f}, P(Free)::1={1:.5f}'.format(g_prior[0], g_prior[1]))
+    #print('[Bayesian]P(Cancer)::1={0:.5f}, P(Free)::1={1:.5f}'.format(g_prior[0], g_prior[1]))
 	
     return posterior
 
 #The batch execution
-def BatchExecution(q_idx, q_hypothesis, q_evidence, q_posterior):
-    g_prior[0] = 0.001
-    g_prior[1] = 0.999  #Restore the given prior/hypothesis table to the most initial value
+def BatchExecution(b_restore_prior, str_plot, q_idx, q_hypothesis, q_evidence, q_posterior):
+    if b_restore_prior > 0:  #Restore the given prior/hypothesis table to the most initial value
+        g_prior[0] = 0.001
+        g_prior[1] = 0.999
 
-    for i, h, e, p in zip(q_idx, q_hypothesis, q_evidence, q_posterior):
+    #for i, h, e, p in zip(q_idx, q_hypothesis, q_evidence, q_posterior):
+    for i in q_idx:
         #print('{0:d},{1:d},{2:d},{3:5.3f}'.format(i, h, e, p))  #for a debug purpose
-        p = MakeBayesianInference(i, h, e)
+        q_posterior[i] = MakeBayesianInference(i, q_hypothesis[i], q_evidence[i])
+
+    #Plot the distribution of the posterior given the evidence
+    fig, ax = plt.subplots(figsize=(5, 3.75))
+
+    plt.plot(q_idx, q_posterior, ls='-', c='red')
+    plt.xlim(q_idx[0], q_idx[len(q_idx)-1])
+    plt.ylim(-0.2, 1.2)
+    plt.xlabel('i-th run')
+    plt.ylabel('posterior')
+    plt.title(str_plot)
+    
+    plt.legend()
+    plt.show()
 
 if __name__ == '__main__':
     print('[main]P(Cancer)={0:5.3f}, P(Free)={1:5.3f}'.format(g_prior[0], g_prior[1]))
@@ -140,7 +155,7 @@ if __name__ == '__main__':
     #Execute the queued jobs
     print('Configuration 1: all P(Cancer|Benign)')
 
-    BatchExecution(q_idx, q_hypothesis, q_evidence, q_posterior)
+    BatchExecution(1, 'Configuration 1: all P(Cancer|Benign)', q_idx, q_hypothesis, q_evidence, q_posterior)
 
     #Define running queue of input parameters - configuration 2, all P(Cancer|Malignant)
     q_idx = np.arange(0, 100, dtype=int)  #Queue of index
@@ -151,4 +166,130 @@ if __name__ == '__main__':
     #Execute the queued jobs
     print('Configuration 2: all P(Cancer|Malignant)')
 
-    BatchExecution(q_idx, q_hypothesis, q_evidence, q_posterior)
+    BatchExecution(1, 'Configuration 2: all P(Cancer|Malignant)', q_idx, q_hypothesis, q_evidence, q_posterior)
+
+    #Configuration {0:d}, P(Cancer|Malignant)x{1:d}, P(Cancer|Benign)...
+    for i in np.arange(1, 12):
+        q_evidence = np.zeros(100, dtype=int)
+        q_posterior = np.zeros(100, dtype=float)
+
+        q_evidence[i:len(q_evidence)] = 1
+
+        str_label = 'configuration {0:d}, P(Cancer|Malignant)x{1:d}, P(Cancer|Benign)...'.format(2 + i, i)
+
+        #Execute the queued jobs
+        print(str_label)
+
+        BatchExecution(1, str_label, q_idx, q_hypothesis, q_evidence, q_posterior)
+
+    '''
+    #Define running queue of input parameters - configuration 3, P(Cancer|Malignant)x1, P(Cancer|Benign)...
+    q_idx = np.arange(0, 100, dtype=int)  #Queue of index
+    q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
+    q_evidence = np.zeros(100, dtype=int)  #Queue of evidence
+    q_posterior = np.zeros(100, dtype=float)  #Queue of posterior result thus obtained
+
+    q_evidence[9:len(q_evidence)] = 1
+	
+    #Execute the queued jobs
+    print('Configuration 3: P(Cancer|Malignant)x9, P(Cancer|Benign)...')
+
+    BatchExecution(1, 'Configuration 3: P(Cancer|Malignant)x9, P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
+
+    #Define running queue of input parameters - configuration 4, P(Cancer|Malignant)x10, P(Cancer|Benign)...
+    q_idx = np.arange(0, 100, dtype=int)  #Queue of index
+    q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
+    q_evidence = np.zeros(100, dtype=int)  #Queue of evidence
+    q_posterior = np.zeros(100, dtype=float)  #Queue of posterior result thus obtained
+
+    q_evidence[10:len(q_evidence)] = 1
+	
+    #Execute the queued jobs
+    print('Configuration 4: P(Cancer|Malignant)x10, P(Cancer|Benign)...')
+
+    BatchExecution(1, 'Configuration 4: P(Cancer|Malignant)x10, P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
+    '''
+
+    '''	
+    #Define running queue of input parameters - configuration 5, P(Cancer|Malignant)x3, P(Cancer|Benign)...
+    q_idx = np.arange(0, 100, dtype=int)  #Queue of index
+    q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
+    q_evidence = np.zeros(100, dtype=int)  #Queue of evidence
+    q_posterior = np.zeros(100, dtype=float)  #Queue of posterior result thus obtained
+
+    q_evidence[3:len(q_evidence)] = 1
+	
+    #Execute the queued jobs
+    print('Configuration 5: P(Cancer|Malignant)x3, P(Cancer|Benign)...')
+
+    BatchExecution(1, 'Configuration 5: P(Cancer|Malignant)x3, P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
+
+    #Define running queue of input parameters - configuration 6, P(Cancer|Malignant)x4, P(Cancer|Benign)...
+    q_idx = np.arange(0, 100, dtype=int)  #Queue of index
+    q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
+    q_evidence = np.zeros(100, dtype=int)  #Queue of evidence
+    q_posterior = np.zeros(100, dtype=float)  #Queue of posterior result thus obtained
+
+    q_evidence[4:len(q_evidence)] = 1
+	
+    #Execute the queued jobs
+    print('Configuration 6: P(Cancer|Malignant)x4, P(Cancer|Benign)...')
+
+    BatchExecution(1, 'Configuration 6: P(Cancer|Malignant)x4, P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
+
+    #Define running queue of input parameters - configuration 7, P(Cancer|Malignant)x5, P(Cancer|Benign)...
+    q_idx = np.arange(0, 100, dtype=int)  #Queue of index
+    q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
+    q_evidence = np.zeros(100, dtype=int)  #Queue of evidence
+    q_posterior = np.zeros(100, dtype=float)  #Queue of posterior result thus obtained
+
+    q_evidence[5:len(q_evidence)] = 1
+	
+    #Execute the queued jobs
+    print('Configuration 7: P(Cancer|Malignant)x5, P(Cancer|Benign)...')
+
+    BatchExecution(1, 'Configuration 7: P(Cancer|Malignant)x5, P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
+
+    #Define running queue of input parameters - configuration 8, P(Cancer|Malignant)x6, P(Cancer|Benign)...
+    q_idx = np.arange(0, 100, dtype=int)  #Queue of index
+    q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
+    q_evidence = np.zeros(100, dtype=int)  #Queue of evidence
+    q_posterior = np.zeros(100, dtype=float)  #Queue of posterior result thus obtained
+
+    q_evidence[6:len(q_evidence)] = 1
+	
+    #Execute the queued jobs
+    print('Configuration 8: P(Cancer|Malignant)x6, P(Cancer|Benign)...')
+
+    BatchExecution(1, 'Configuration 8: P(Cancer|Malignant)x6, P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
+    '''
+
+    '''
+    #Define running queue of input parameters - configuration 7, P(Cancer|Malignant)x50, P(Cancer|Benign)x50
+    q_idx = np.arange(0, 100, dtype=int)  #Queue of index
+    q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
+    q_evidence = np.zeros(100, dtype=int)  #Queue of evidence
+    q_posterior = np.zeros(100, dtype=float)  #Queue of posterior result thus obtained
+
+    q_evidence[49:len(q_evidence)] = 1
+
+    #Execute the queued jobs
+    print('Configuration 7: P(Cancer|Malignant)x50, P(Cancer|Benign)x50')
+
+    BatchExecution(1, 'Configuration 7: P(Cancer|Malignant)x50, P(Cancer|Benign)x50', q_idx, q_hypothesis, q_evidence, q_posterior)
+
+    #Define running queue of input parameters - configuration 8, P(Cancer|Malignant), P(Cancer|Benign), P(Cancer|Malignant), P(Cancer|Benign)...
+    q_idx = np.arange(0, 100, dtype=int)  #Queue of index
+    q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
+    q_evidence = np.zeros(100, dtype=int)  #Queue of evidence
+    q_posterior = np.zeros(100, dtype=float)  #Queue of posterior result thus obtained
+
+    for i in q_idx:
+        if i % 2 == 1:
+            q_evidence[i] = 1
+
+    #Execute the queued jobs
+    print('Configuration 8: P(Cancer|Malignant), P(Cancer|Benign), P(Cancer|Malignant), P(Cancer|Benign)...')
+
+    BatchExecution(1, 'Configuration 8: P(Cancer|Malignant), P(Cancer|Benign), \nP(Cancer|Malignant), P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
+    '''
