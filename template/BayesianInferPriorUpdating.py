@@ -83,19 +83,19 @@ def MakeBayesianInference(idx_run, hypothesis, evidence):
     str_hypothesis = lambda hypothesis: 'Cancer' if hypothesis == 0 else 'Free'
     str_evidence = lambda evidence: 'Malignant' if evidence == 0 else 'Benign'
 
-    #print('[Bayesian]run {0:d}'.format(idx_run))
-    #print('[Bayesian]P(Cancer)::0={0:.5f}, P(Free)::0={1:.5f}'.format(g_prior[0], g_prior[1]))
+    print('[Bayesian]run {0:d}'.format(idx_run))
 
     #Calculate the posterior - P(hypothesis|evidence)
     posterior = (g_prob_likelihood[evidence][hypothesis] * g_prior[hypothesis]) / CalculateTotalProbability(evidence)
 
-    #print('[Bayesian]P({0:s}|{1:s})={2:.8f}'.format(str_hypothesis(hypothesis), str_evidence(evidence), posterior))
+    print('[Bayesian]P({0:s}|{1:s})={2:.15f}'.format(str_hypothesis(hypothesis), str_evidence(evidence), posterior))
 
     #Update the the prior/hypothesis probability table
     g_prior[hypothesis] = posterior
     g_prior[idx_another(hypothesis)] = 1 - posterior
 
-    #print('[Bayesian]P(Cancer)::1={0:.5f}, P(Free)::1={1:.5f}'.format(g_prior[0], g_prior[1]))
+    print('[Bayesian]P(Cancer)={0:.15f}, P(Free)={1:.15f}'.format(g_prior[0], g_prior[1]))
+    print('[Bayesian]P({0:s})={1:.15f}, P({2:s})={3:.15f}'.format(str_evidence(def_row_idx_malignant), CalculateTotalProbability(def_row_idx_malignant), str_evidence(def_row_idx_benign), CalculateTotalProbability(def_row_idx_benign)))
 	
     return posterior
 
@@ -139,13 +139,14 @@ if __name__ == '__main__':
     print('[main]P(Benign|Cancer)={0:5.3f}, P(Benign|Free)={1:5.3f}'.format(g_prob_likelihood[def_row_idx_benign][def_col_idx_given_cancer], g_prob_likelihood[def_row_idx_benign][def_col_idx_given_free]))
 
     total_prob = CalculateTotalProbability(def_row_idx_malignant)
-    print('[main]P(Malignant)={0:5.3f}'.format(total_prob))
+    print('[main]P(Malignant)={0:.12f}'.format(total_prob))
 
     total_prob = CalculateTotalProbability(def_row_idx_benign)
-    print('[main]P(Benign)={0:5.3f}'.format(total_prob))
+    print('[main]P(Benign)={0:.12f}'.format(total_prob))
 
     #p = MakeBayesianInference(0, def_col_idx_given_cancer, def_row_idx_malignant)  #We want the posterior P(Cancer|Malignant), a simple distinct test
 
+    '''
     #Define running queue of input parameters - configuration 1, all P(Cancer|Benign)
     q_idx = np.arange(0, 100, dtype=int)  #Queue of index
     q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
@@ -156,7 +157,9 @@ if __name__ == '__main__':
     print('Configuration 1: all P(Cancer|Benign)')
 
     BatchExecution(1, 'Configuration 1: all P(Cancer|Benign)', q_idx, q_hypothesis, q_evidence, q_posterior)
+    '''
 
+    '''
     #Define running queue of input parameters - configuration 2, all P(Cancer|Malignant)
     q_idx = np.arange(0, 100, dtype=int)  #Queue of index
     q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
@@ -167,7 +170,9 @@ if __name__ == '__main__':
     print('Configuration 2: all P(Cancer|Malignant)')
 
     BatchExecution(1, 'Configuration 2: all P(Cancer|Malignant)', q_idx, q_hypothesis, q_evidence, q_posterior)
+    '''
 
+    '''
     #Configuration {0:d}, P(Cancer|Malignant)x{1:d}, P(Cancer|Benign)...
     for i in np.arange(1, 12):
         q_evidence = np.zeros(100, dtype=int)
@@ -181,6 +186,7 @@ if __name__ == '__main__':
         print(str_label)
 
         BatchExecution(1, str_label, q_idx, q_hypothesis, q_evidence, q_posterior)
+    '''
 
     '''
     #Define running queue of input parameters - configuration 3, P(Cancer|Malignant)x1, P(Cancer|Benign)...
@@ -195,6 +201,7 @@ if __name__ == '__main__':
     print('Configuration 3: P(Cancer|Malignant)x9, P(Cancer|Benign)...')
 
     BatchExecution(1, 'Configuration 3: P(Cancer|Malignant)x9, P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
+    '''
 
     #Define running queue of input parameters - configuration 4, P(Cancer|Malignant)x10, P(Cancer|Benign)...
     q_idx = np.arange(0, 100, dtype=int)  #Queue of index
@@ -208,7 +215,6 @@ if __name__ == '__main__':
     print('Configuration 4: P(Cancer|Malignant)x10, P(Cancer|Benign)...')
 
     BatchExecution(1, 'Configuration 4: P(Cancer|Malignant)x10, P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
-    '''
 
     '''	
     #Define running queue of input parameters - configuration 5, P(Cancer|Malignant)x3, P(Cancer|Benign)...

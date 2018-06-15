@@ -1,0 +1,406 @@
+[main]P(Cancer)=0.001, P(Free)=0.999
+[main]P(Malignant|Cancer)=0.990, P(Malignant|Free)=0.010
+[main]P(Benign|Cancer)=0.010, P(Benign|Free)=0.990
+[main]P(Malignant)=0.010980000000
+[main]P(Benign)=0.989020000000
+Configuration 2: all P(Cancer|Malignant)
+[Bayesian]run 0
+[Bayesian]P(Cancer|Malignant)=0.090163934426230
+[Bayesian]P(Cancer)=0.090163934426230, P(Free)=0.909836065573771
+[Bayesian]P(Malignant)=0.098360655737705, P(Benign)=0.901639344262295
+[Bayesian]run 1
+[Bayesian]P(Cancer|Malignant)=0.907500000000000
+[Bayesian]P(Cancer)=0.907500000000000, P(Free)=0.092500000000000
+[Bayesian]P(Malignant)=0.899350000000000, P(Benign)=0.100650000000000
+[Bayesian]run 2
+[Bayesian]P(Cancer|Malignant)=0.998971479401790
+[Bayesian]P(Cancer)=0.998971479401790, P(Free)=0.001028520598210
+[Bayesian]P(Malignant)=0.988992049813754, P(Benign)=0.011007950186246
+[Bayesian]run 3
+[Bayesian]P(Cancer|Malignant)=0.999989600314801
+[Bayesian]P(Cancer)=0.999989600314801, P(Free)=0.000010399685199
+[Bayesian]P(Malignant)=0.989989808308505, P(Benign)=0.010010191691495
+[Bayesian]run 4
+[Bayesian]P(Cancer|Malignant)=0.999999894951593
+[Bayesian]P(Cancer)=0.999999894951593, P(Free)=0.000000105048407
+[Bayesian]P(Malignant)=0.989999897052561, P(Benign)=0.010000102947439
+[Bayesian]run 5
+[Bayesian]P(Cancer|Malignant)=0.999999998938905
+[Bayesian]P(Cancer)=0.999999998938905, P(Free)=0.000000001061095
+[Bayesian]P(Malignant)=0.989999998960127, P(Benign)=0.010000001039873
+[Bayesian]run 6
+[Bayesian]P(Cancer|Malignant)=0.999999999989282
+[Bayesian]P(Cancer)=0.999999999989282, P(Free)=0.000000000010718
+[Bayesian]P(Malignant)=0.989999999989496, P(Benign)=0.010000000010504
+[Bayesian]run 7
+[Bayesian]P(Cancer|Malignant)=0.999999999999892
+[Bayesian]P(Cancer)=0.999999999999892, P(Free)=0.000000000000108
+[Bayesian]P(Malignant)=0.989999999999894, P(Benign)=0.010000000000106
+[Bayesian]run 8
+[Bayesian]P(Cancer|Malignant)=0.999999999999999
+[Bayesian]P(Cancer)=0.999999999999999, P(Free)=0.000000000000001
+[Bayesian]P(Malignant)=0.989999999999999, P(Benign)=0.010000000000001
+[Bayesian]run 9
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 10
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 11
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 12
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 13
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 14
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 15
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 16
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 17
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 18
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 19
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 20
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 21
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 22
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 23
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 24
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 25
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 26
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 27
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 28
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 29
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 30
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 31
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 32
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 33
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 34
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 35
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 36
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 37
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 38
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 39
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 40
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 41
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 42
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 43
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 44
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 45
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 46
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 47
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 48
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 49
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 50
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 51
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 52
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 53
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 54
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 55
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 56
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 57
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 58
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 59
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 60
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 61
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 62
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 63
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 64
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 65
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 66
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 67
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 68
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 69
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 70
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 71
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 72
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 73
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 74
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 75
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 76
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 77
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 78
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 79
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 80
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 81
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 82
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 83
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 84
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 85
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 86
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 87
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 88
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 89
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 90
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 91
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 92
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 93
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 94
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 95
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 96
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 97
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 98
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
+[Bayesian]run 99
+[Bayesian]P(Cancer|Malignant)=1.000000000000000
+[Bayesian]P(Cancer)=1.000000000000000, P(Free)=0.000000000000000
+[Bayesian]P(Malignant)=0.990000000000000, P(Benign)=0.010000000000000
