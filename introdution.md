@@ -137,6 +137,7 @@ After exploring in the prerequisites, you are supposed to come out with sufficie
 * [The Bayes Theorem Significance]({{ site.github.repo }}{{ site.baseurl }}/2018/05/28/bayesian-ml-significance/)
 * [Bayes From Theorem To Practice]({{ site.github.repo }}{{ site.baseurl }}/2018/06/06/bayesian-ml-beyes-to-practice/)
 * [The Bayesian Thinking]({{ site.github.repo }}{{ site.baseurl }}/2018/06/11/bayesian-ml-bayesian-think/)
+* [The Bayesian Inference Exploitation]({{ site.github.repo }}{{ site.baseurl }}/2018/06/17/bayesian-ml-bayesian-inf-exploit/)
 
 > The related posts would be new added in the future, and supposed you are comfortable with posts in prerequisite section. 
 
