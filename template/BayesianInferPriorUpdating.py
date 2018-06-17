@@ -26,6 +26,7 @@ def_print_debug_msg = 1
 #Define preprocessor to if draw by subplot2grid
 def_plot = 0
 def_subplot2grid = 1
+def_subplot2grid_all_in_one = 2
 
 g_subplot2grid_cfg = [0, 0, 0]  #[1 for already subplot2grid, 0 not yet; row count; col count]
 g_subplot2grid_loc = [0, 0]  #[row, col], loc info for the subplot
@@ -148,28 +149,63 @@ def BatchExecution(b_restore_prior, b_subplot2grid, str_plot, q_idx, q_hypothesi
         plt.xlabel('i-th run')
         plt.ylabel('posterior')
         plt.title(str_plot)
-        
+
         plt.legend()
         plt.show()
     elif b_subplot2grid == def_subplot2grid:
         #Plot by subplot2grid()
+        fig = plt.figure()
+        fig.subplots_adjust(hspace = 1, wspace = 0.4)
+
+        #Plot posterior
+        ax1 = plt.subplot2grid(shape = (3, 2), loc = (0, 0), colspan = 2)
+        ax1.plot(q_idx, q_posterior, ls='-', c='green')
+        ax1.set_title('posterior')
+
+        #Plot P(Malignant)
+        ax2 = plt.subplot2grid(shape = (3, 2), loc = (1, 0))
+        ax2.plot(q_idx, q_updated_evidence_0, ls='-', c='red')
+        ax2.set_title('P(Malignant)')
+
+        #Plot P(Benign)
+        ax3 = plt.subplot2grid(shape = (3, 2), loc = (1, 1))
+        ax3.plot(q_idx, q_updated_evidence_1, ls='-', c='deeppink')
+        ax3.set_title('P(Benign)')
+
+        #Plot P(Cancer)
+        ax4 = plt.subplot2grid(shape = (3, 2), loc = (2, 0))
+        ax4.plot(q_idx, q_updated_hypothesis_0, ls='-', c='royalblue')
+        ax4.set_title('P(Cancer)')
+
+        #Plot P(Free)
+        ax5 = plt.subplot2grid(shape = (3, 2), loc = (2, 1))
+        ax5.plot(q_idx, q_updated_hypothesis_1, ls='-', c='deepskyblue')
+        ax5.set_title('P(Free)')
+
+        plt.xlim(q_idx[0], q_idx[len(q_idx)-1])
+        plt.ylim(-0.2, 1.2)
+        plt.title(str_plot)
+        plt.legend()
+        plt.show()
+    elif b_subplot2grid == def_subplot2grid_all_in_one:
+        #ALL in one plot by subplot2grid()
         if g_subplot2grid_cfg[0] == 0:
             fig = plt.figure()
             fig.subplots_adjust(hspace = 1, wspace = 0.4)
             #fig.tight_layout()  #No need in this sample, this is to have a tightly close subplots
             #fig.subplots_adjust(hspace=0)  #No need in this sample, this is to have a tightly close subplots
 
-            ax = plt.subplot2grid(shape=(g_subplot2grid_cfg[1], g_subplot2grid_cfg[2]), loc=(g_subplot2grid_loc[0], g_subplot2grid_loc[1]))
+            ax = plt.subplot2grid(shape = (g_subplot2grid_cfg[1], g_subplot2grid_cfg[2]), loc = (g_subplot2grid_loc[0], g_subplot2grid_loc[1]))
             ax.plot(q_idx, q_posterior)
             ax.set_title(str_plot)
 
             g_subplot2grid_cfg[0] = 1
         elif g_subplot2grid_cfg[0] == 1:
-            ax = plt.subplot2grid(shape=(g_subplot2grid_cfg[1], g_subplot2grid_cfg[2]), loc=(g_subplot2grid_loc[0], g_subplot2grid_loc[1]))
+            ax = plt.subplot2grid(shape = (g_subplot2grid_cfg[1], g_subplot2grid_cfg[2]), loc = (g_subplot2grid_loc[0], g_subplot2grid_loc[1]))
             ax.plot(q_idx, q_posterior)
             ax.set_title(str_plot)
         elif g_subplot2grid_cfg[0] == 2:
-            ax = plt.subplot2grid(shape=(g_subplot2grid_cfg[1], g_subplot2grid_cfg[2]), loc=(g_subplot2grid_loc[0], g_subplot2grid_loc[1]))
+            ax = plt.subplot2grid(shape = (g_subplot2grid_cfg[1], g_subplot2grid_cfg[2]), loc = (g_subplot2grid_loc[0], g_subplot2grid_loc[1]))
             ax.plot(q_idx, q_posterior)
             ax.set_title(str_plot)
 
@@ -211,7 +247,7 @@ if __name__ == '__main__':
     #Execute the queued jobs
     print('Configuration 1: all P(Cancer|Benign)')
 
-    BatchExecution(1, def_plot, 'Configuration 1: all P(Cancer|Benign)', q_idx, q_hypothesis, q_evidence, q_posterior)
+    BatchExecution(1, def_subplot2grid, 'Configuration 1: all P(Cancer|Benign)', q_idx, q_hypothesis, q_evidence, q_posterior)
 
     #Define running queue of input parameters - configuration 2, all P(Cancer|Malignant)
     q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
@@ -221,7 +257,7 @@ if __name__ == '__main__':
     #Execute the queued jobs
     print('Configuration 2: all P(Cancer|Malignant)')
 
-    BatchExecution(1, def_plot, 'Configuration 2: all P(Cancer|Malignant)', q_idx, q_hypothesis, q_evidence, q_posterior)
+    BatchExecution(1, def_subplot2grid, 'Configuration 2: all P(Cancer|Malignant)', q_idx, q_hypothesis, q_evidence, q_posterior)
 
     #Define running queue of input parameters - configuration 3, P(Cancer|Malignant)x1, P(Cancer|Benign)...
     q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
@@ -233,7 +269,7 @@ if __name__ == '__main__':
     #Execute the queued jobs
     print('Configuration 3: P(Cancer|Malignant)x9, P(Cancer|Benign)...')
 
-    BatchExecution(1, def_plot, 'Configuration 3: P(Cancer|Malignant)x9, P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
+    BatchExecution(1, def_subplot2grid, 'Configuration 3: P(Cancer|Malignant)x9, P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
 
     #Define running queue of input parameters - configuration 4, P(Cancer|Malignant)x10, P(Cancer|Benign)...
     q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
@@ -245,7 +281,7 @@ if __name__ == '__main__':
     #Execute the queued jobs
     print('Configuration 4: P(Cancer|Malignant)x10, P(Cancer|Benign)...')
 
-    BatchExecution(1, def_plot, 'Configuration 4: P(Cancer|Malignant)x10, P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
+    BatchExecution(1, def_subplot2grid, 'Configuration 4: P(Cancer|Malignant)x10, P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
 
     #Define running queue of input parameters - configuration 5, P(Cancer|Malignant)x50, P(Cancer|Benign)x50
     q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
@@ -257,7 +293,7 @@ if __name__ == '__main__':
     #Execute the queued jobs
     print('Configuration 7: P(Cancer|Malignant)x50, P(Cancer|Benign)x50')
 
-    BatchExecution(1, def_plot, 'Configuration 7: P(Cancer|Malignant)x50, P(Cancer|Benign)x50', q_idx, q_hypothesis, q_evidence, q_posterior)
+    BatchExecution(1, def_subplot2grid, 'Configuration 7: P(Cancer|Malignant)x50, P(Cancer|Benign)x50', q_idx, q_hypothesis, q_evidence, q_posterior)
 
     #Define running queue of input parameters - configuration 6, P(Cancer|Malignant), P(Cancer|Benign), P(Cancer|Malignant), P(Cancer|Benign)...
     q_hypothesis = np.zeros(100, dtype=int)  #Queue of hypothesis
@@ -271,7 +307,7 @@ if __name__ == '__main__':
     #Execute the queued jobs
     print('Configuration 8: P(Cancer|Malignant), P(Cancer|Benign), P(Cancer|Malignant), P(Cancer|Benign)...')
 
-    BatchExecution(1, def_plot, 'Configuration 8: P(Cancer|Malignant), P(Cancer|Benign), \nP(Cancer|Malignant), P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
+    BatchExecution(1, def_subplot2grid, 'Configuration 8: P(Cancer|Malignant), P(Cancer|Benign), \nP(Cancer|Malignant), P(Cancer|Benign)...', q_idx, q_hypothesis, q_evidence, q_posterior)
 
     #Configuration {0:d}, P(Cancer|Malignant)x{1:d}, P(Cancer|Benign)...
     g_subplot2grid_cfg[0] = 0  #Reset to not yet initialized
@@ -297,4 +333,4 @@ if __name__ == '__main__':
         #Execute the queued jobs
         #print(str_label)
 
-        BatchExecution(1, def_subplot2grid, str_label, q_idx, q_hypothesis, q_evidence, q_posterior)
+        BatchExecution(1, def_subplot2grid_all_in_one, str_label, q_idx, q_hypothesis, q_evidence, q_posterior)
