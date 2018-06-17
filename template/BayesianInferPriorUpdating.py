@@ -184,7 +184,7 @@ def BatchExecution(b_restore_prior, b_subplot2grid, str_plot, q_idx, q_hypothesi
 
         plt.xlim(q_idx[0], q_idx[len(q_idx)-1])
         plt.ylim(-0.2, 1.2)
-        plt.title(str_plot)
+        #plt.title(str_plot)
         plt.legend()
         plt.show()
     elif b_subplot2grid == def_subplot2grid_all_in_one:
