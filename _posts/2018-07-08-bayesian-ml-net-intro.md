@@ -9,6 +9,16 @@ A <font color="Red">Bayesian network</font> is a model of a system, consisting o
 when used, the <font color="Red">Bayesian network</font> comes out with <font color="#C20000">the probability distribution of the values of the random variable</font> to be predicted.  
 </p>
 
+### What is a <font color="Red">Bayesian Network</font>?
+>We begin by a simple graph illustration:  
+>&#10112;we can treat the it as <font color="DeepSkyBlue">a structured, graphical representation of probabilistic relationships between several random variables</font>.  
+>&#10113;it explicitly encodes the <font color="Red">conditional independences</font> by the <font color="OrangeRed">missing arcs</font>.  
+>&#10114;it can efficiently represent the joint PDF(probability distribution function) of the whole network or the combinatorial random variables in the model.  
+>&#10115;it is a generative model, which allows arbitrary queries to be answered.   
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-dag.png "BN")
+
+
+
 <!-- Γ -->
 <!-- \Omega -->
 <!-- \cap intersection -->
