@@ -17,7 +17,11 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >&#10115;it is a generative model, which allows arbitrary queries to be answered.   
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-dag.png "BN")
 
-
+### The <font color="Red">Conditional Independence</font> Relationship
+>In my previous article [Introduction To The Conditional Probability]({{ site.github.repo }}{{ site.baseurl }}/2018/05/25/intro-cond-prob/), I have guided you through the <font color="DeepSkyBlue">conditional dependence</font>.  This article would then step into the field of <font color="Red">conditional independence</font>.  
+>
+<!-- to be conti by 10.1.1.124.2195.pdf for conditional independence axioms -->
+<!-- to be conti by Lecture12.pdf for conditional independence in Bayesian  networks, p.7 -->
 
 <!-- Γ -->
 <!-- \Omega -->
