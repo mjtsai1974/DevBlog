@@ -47,8 +47,12 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >&#10114;<font color="Red">converging</font> connection, this is the <font color="#C20000">common effect</font>, <font color="DeepPink">not knowing $Y$ makes $X_{1}$,$X_{2}$,...,$X_{n}$ independent</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-converg-conn.png "converging connection")
 
-<!-- to be conti by 10.1.1.124.2195.pdf for conditional independence axioms -->
-<!-- to be conti by Lecture12.pdf for conditional independence in Bayesian  networks, p.7 -->
+### <font color="Red">Bayesian Network=$(G,\Theta)$</font>
+>In this article, we define $(G,\Theta)$ of the <font color="Red">Bayesian networks</font> to be the graphic representation of models capturing the relationships in between models' variables, where:  
+>&#10112;$G$ is the <font color="OrangeRed">DAG(directed acyclic graphic)</font> containing nodes connected by arcs with arrows, the nodes are the random variables, the direction of arcs begins from parent node(s) to its descendent nodes, the child node depends on its parent node.  
+>&#10113;$\Theta$ is <font color="OrangeRed">the set of parameters in all conditional probability distributions</font>.  
+>
+>Where the <font color="OrangeRed">DAG is the graphic containing no node of self-recycling path</font>.  
 
 ### Addendum
 >&#10112;[Bayesian network tutorial, Mark L Krieg](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf)  
