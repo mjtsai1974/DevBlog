@@ -15,7 +15,7 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >&#10113;it explicitly encodes the <font color="Red">conditional independences</font> by the <font color="OrangeRed">missing arcs</font>.  
 >&#10114;it can efficiently represent the joint PDF(probability distribution function) of the whole network or the combinatorial random variables in the model.  
 >&#10115;it is a generative model, which allows arbitrary queries to be answered.   
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-dag.png "bn")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-sample.png "bn")
 
 ### The <font color="Red">Conditional Independence</font> Relationship
 >In my previous article [Introduction To The Conditional Probability]({{ site.github.repo }}{{ site.baseurl }}/2018/05/25/intro-cond-prob/), I have guided you through the <font color="DeepSkyBlue">conditional dependence</font>.  This article would then step into the field of <font color="Red">conditional independence</font>.  
@@ -53,6 +53,7 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >&#10113;$\Theta$ is <font color="OrangeRed">the set of parameters in all conditional probability distributions</font>.  
 >
 >Where the <font color="OrangeRed">DAG is the graphic containing no node of self-recycling path</font>.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-dag.png "dag")
 
 ### Addendum
 >&#10112;[Bayesian network tutorial, Mark L Krieg](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf)  
