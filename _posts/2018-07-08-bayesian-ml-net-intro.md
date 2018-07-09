@@ -56,7 +56,28 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-dag.png "dag")
 
 ### The <font color="DeepSkyBlue">Joint Probability Distribution</font> Of <font color="Red">Bayesian Network</font>
+>Continue to use above DAG, I'd like to compute the joint probability of all random variables in this <font color="Red">Bayesian network</font>, I'm going to illustrate each step of proof:  
 >
+><font color="Brown">proof::mjtsai1974</font>  
+>[1]By <font color="DeepSkyBlue">chain rule</font>, we have:  
+>$P(A,B,C,D,E)$  
+>=$P(E\vert D,C,B,A)$  
+>$\;\;\cdot P(D\vert C,B,A)$  
+>$\;\;\cdot P(C\vert B,A)$  
+>$\;\;\cdot P(B\vert A)$  
+>$\;\;\cdot P(A)$  
+>
+>[2]By the <font color="Red">conditional independence</font> in this model, we can further simplify these terms:  
+>&#10112;$P(E\vert D,C,B,A)$=$P(E\vert C)$  
+>&#10113;$P(D\vert C,B,A)$=$P(D\vert C,B)$  
+>&#10114;$P(C\vert B,A)$=$P(C\vert A)$  
+>&#10115;therefore, the full joint probability is thus expressed:  
+>$P(A,B,C,D,E)$  
+>=$P(E\vert C)$  
+>$\;\;\cdot P(D\vert C,B)$  
+>$\;\;\cdot P(C\vert A)$  
+>$\;\;\cdot P(B\vert A)$  
+>$\;\;\cdot P(A)$  
 
 ### Addendum
 >&#10112;[Bayesian network tutorial, Mark L Krieg](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf)  
