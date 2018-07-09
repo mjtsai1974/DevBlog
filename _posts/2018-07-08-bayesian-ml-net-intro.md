@@ -24,7 +24,8 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 ><font color="OrangeRed">Conditional independence axioms</font>  
 >[Bayesian network tutorial, Mark L Krieg, p.3](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf) brief describes the axiomatic basics for the conditional independence, which is in turn from the paper by Pearl, 1988.  
 >
->Let $X$,$Y$,$Z$ denote any 3 distinct subsets of variables in the universe, called $U$.  We define $I(X,Y,Z)_p$ to represent the <font color="Red">conditional independence of $X$ from $Y$, given $Z$</font> in the probabilistic model $p$.  $I(X,Y,Z)_p$, iff $P(x\vert z,y)$=$P(x\vert z)$ and $P(y)>0$.  
+>Let $X$,$Y$,$Z$ denote any 3 distinct subsets of variables in the universe, called $U$.  We define $I(X,Y,Z)_p$ to represent the <font color="Red">conditional independence of $X$ from $Y$, given $Z$</font> in the probabilistic model $p$.  
+>$\;\;I(X,Y,Z)_p$, iff $P(x\vert z,y)$=$P(x\vert z)$ and $P(y)>0$.  
 >
 >The following relationships holds:  
 >&#10112;$I(X,Z,Y)_p$  
@@ -36,6 +37,15 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >
 >Above 3 equilibrium are based on the model that $X$ is the descendent of $Z$, where $Y$ is some unrelated node to both $X$,$Z$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-ci-axiom.png "ci axiom")
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">3 dependencies</font>  
+>They could be treated as 3 types of connections in the <font color="Red">Bayesian network</font>, they are:  
+>&#10112;<font color="Red">serial</font> connection, <font color="DeepPink">knowing $B$ makes $A$ and $C$ independent</font>, this is the <font color="#C20000">intermediate</font> cause.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-serial-conn.png "serial connection")
+>&#10113;<font color="Red">diverging</font> connection, <font color="DeepPink">knowing $B$ makes $A$ and $C$ independent</font>, this is the <font color="#C20000">common</font> cause.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-diverg-conn.png "diverging connection")
+>&#10114;<font color="Red">converging</font> connection, this is the <font color="#C20000">common effect</font>, <font color="DeepPink">not knowing $Y$ makes $X_{1}$,$X_{2}$,...,$X_{n}$ independent</font>.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-converg-conn.png "converging connection")
 
 <!-- to be conti by 10.1.1.124.2195.pdf for conditional independence axioms -->
 <!-- to be conti by Lecture12.pdf for conditional independence in Bayesian  networks, p.7 -->
