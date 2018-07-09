@@ -79,6 +79,9 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >$\;\;\cdot P(B\vert A)$  
 >$\;\;\cdot P(A)$  
 
+<!-- to be conti: the number of parameters in the Bayesian network -->
+<!-- to be conti: D-sepasration v.s. D-connection -->
+
 ### Addendum
 >&#10112;[Bayesian network tutorial, Mark L Krieg](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf)  
 
