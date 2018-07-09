@@ -25,12 +25,14 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >[Bayesian network tutorial, Mark L Krieg, p.3](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf) brief describes the axiomatic basics for the conditional independence, which is in turn from the paper by Pearl, 1988.  
 >Let $X$,$Y$,$Z$ denote any 3 distinct subsets of variables in the universe, called $U$.  We define $I(X,Z,Y)_{p}$ to represent the <font color="Red">conditional independence of $X$ from $Y$, given $Z$</font> in the probabilistic model $p$.  
 >$I(X,Z,Y)_{p}$, iff $P(x\vert z,y)$=$P(x\vert z)$ and $P(y)>0$, and the following relationships holds:  
+<!--
 >&#10112;$I(X,Z,Y)_{p}$  
 >$\Leftrightarrow P(x,y\vert z)$=$P(x\vert z)\cdot P(y\vert z)$  
 >&#10113;$I(X,Z,Y)_{p}$  
 >$\Leftrightarrow P(x,y,z)$=$P(x\vert z)\cdot P(y,z)$  
 >&#10114;$I(X,Z,Y)_{p}$  
 >$\Leftrightarrow\;\exists f,g: P(x,y,z)$=$f(x,z)\cdot g(y,z)$, where $f,g$ are arbitrary functions.  
+-->
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-ci-axiom.png "ci axiom")
 
 <!-- to be conti by 10.1.1.124.2195.pdf for conditional independence axioms -->
