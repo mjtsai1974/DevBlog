@@ -32,7 +32,9 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >&#10113;$I(X,Z,Y)_p$  
 >$\Leftrightarrow P(x,y,z)$=$P(x\vert z)\cdot P(y,z)$  
 >&#10114;$I(X,Z,Y)_p$  
->$\Leftrightarrow\;\exists f,g: P(x,y,z)$=$f(x,z)\cdot g(y,z)$, where $f,g$ are arbitrary functions.  
+>$\Leftrightarrow\;\exists f,g: P(x,y,z)$=$f(x,z)\cdot g(y,z)$, where $f,g$ are arbitrary functions of conditional probability or joint probability.  
+>
+>Above 3 equilibrium are based on the model that $X$ is the descendent of $Z$, where $Y$ is some unrelated node to both $X$,$Z$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-ci-axiom.png "ci axiom")
 
 <!-- to be conti by 10.1.1.124.2195.pdf for conditional independence axioms -->
