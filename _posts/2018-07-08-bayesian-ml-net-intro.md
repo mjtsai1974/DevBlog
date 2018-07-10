@@ -105,7 +105,7 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >
 ><font color="DeepSkyBlue">[3]</font>  
 ><font color="OrangeRed">conditional independence</font>  
-><font color="#C20000">$X$ and $Y$ are d-separated by $Z$, then they are conditionally independent given $Z$.</font>  
+>Nodes <font color="#C20000">$X$ and $Y$ are d-separated by $Z$, then they are conditionally independent given $Z$.</font>  
 
 ### Addendum
 >&#10112;[A tutorial on Bayesian belief networks, Mark L Krieg](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf)  
