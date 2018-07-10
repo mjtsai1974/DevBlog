@@ -91,8 +91,21 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >Such a reduction <font color="#C20000">provides benefits from inference, learning(parameter estimation) and compuutation perspective</font>.  
 
 ### The Concept Of <font color="Red">D-Separation</font>
->
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">d-separated</font>  
+>Nodes $X$ and $Y$ are <font color="Red">d-separated</font>, if on any (undirected)path in between $X$ and $Y$, there exists some random variable $Z$, such that:  
+>&#10112;$Z$ is in a <font color="Red">series</font> or <font color="Red">diverging</font> connection and $Z$ is known, or  
+>&#10113;$Z$ is in a <font color="Red">converging</font> connection, <font color="RosyBrown">neither</font> $Z$ nor any of its descendent(s) $W$ is known.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-d-seperation.png "d-separation")
+>There is one alternative condition, that $Z$ is <font color="RosyBrown">not</font> known, $X$, $Y$ and $W$ are all d-separated.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">d-connected</font>  
+>Nodes $X$ and $Y$ are <font color="Red">d-connected</font>, if they are <font color="RosyBrown">not</font> <font color="Red">d-separated</font>.  The most trivial example is that $Y$ is the descendent of $X$.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">conditional independence</font>  
+><font color="#C20000">$X$ and $Y$ are d-separated by $Z$, then they are conditionally independent given $Z$.</font>  
 
 ### Addendum
 >&#10112;[A tutorial on Bayesian belief networks, Mark L Krieg](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf)  
