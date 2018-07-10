@@ -71,7 +71,7 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >&#10112;$P(E\vert D,C,B,A)$=$P(E\vert C)$  
 >&#10113;$P(D\vert C,B,A)$=$P(D\vert C,B)$  
 >&#10114;$P(C\vert B,A)$=$P(C\vert A)$  
->&#10115;therefore, the full joint probability is thus expressed:  
+>&#10115;therefore, the <font color="DeepSkyBlue">full joint probability</font> is thus expressed:  
 >$P(A,B,C,D,E)$  
 >=$P(E\vert C)$  
 >$\;\;\cdot P(D\vert C,B)$  
@@ -79,7 +79,15 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >$\;\;\cdot P(B\vert A)$  
 >$\;\;\cdot P(A)$  
 
-<!-- to be conti: the number of parameters in the Bayesian network -->
+### The <font color="DeepSkyBlue">Number Of Parameters</font> In The <font color="Red">Bayesian Network</font>
+>In the <font color="Red">Bayesian network</font>, each node represents a random variable, each arc encodes the conditional dependency in between parent and child nodes.  
+>
+>Succeeding to the same DAG, I'd like to decode out the <font color="DeepSkyBlue">number of parameters</font> encoded in the conditional dependencies in the model, to which the network is trying to approximate.  
+>&#10112;the <font color="DeepSkyBlue">parameters</font> are <font color="RosyBrown">not</font> equivalent to the nodes of random variables.  
+>&#10113;<font color="DeepPink">the parameters are the compounded conditioning events</font>, depicted in below graph.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-dag-params.png "params")
+>&#10114;<!-- to be conti for the parameter numbers -->  
+
 <!-- to be conti: D-sepasration v.s. D-connection -->
 
 ### Addendum
