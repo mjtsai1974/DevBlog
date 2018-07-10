@@ -103,7 +103,7 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 ><font color="OrangeRed">d-connected</font>  
 >Nodes $X$ and $Y$ are <font color="Red">d-connected</font>, if they are <font color="RosyBrown">not</font> <font color="Red">d-separated</font>.  The most trivial example is that $Y$ is the descendent of $X$.  
 >
-><font color="DeepSkyBlue">[3]</font>
+><font color="DeepSkyBlue">[3]</font>  
 ><font color="OrangeRed">conditional independence</font>  
 ><font color="#C20000">$X$ and $Y$ are d-separated by $Z$, then they are conditionally independent given $Z$.</font>  
 
