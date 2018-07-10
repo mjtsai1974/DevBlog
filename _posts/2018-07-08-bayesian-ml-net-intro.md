@@ -22,7 +22,7 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Conditional independence axioms</font>  
->[Bayesian network tutorial, Mark L Krieg, p.3](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf) brief describes the axiomatic basics for the conditional independence, which is in turn from the paper by Pearl, 1988.  
+>[A tutorial on Bayesian belief networks, Mark L Krieg, p.3](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf) briefly describes the axiomatic basics for the conditional independence, which is in turn from the paper by Pearl, 1988.  
 >
 >Let $X$,$Y$,$Z$ denote any 3 distinct subsets of variables in the universe, called $U$.  We define $I(X,Y,Z)_p$ to represent the <font color="Red">conditional independence of $X$ from $Y$, given $Z$</font> in the probabilistic model $p$.  
 >$\;\;I(X,Y,Z)_p$, iff $P(x\vert z,y)$=$P(x\vert z)$ and $P(y)>0$.  
@@ -88,12 +88,15 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-dag-params.png "params")
 >&#10114;totally, $1$+$2$+$2$+$4$+$2$, there are $11$ parameters in this probabilistic model of network, compared to the <font color="OrangeRed">multinomial</font> distruibution, in this case $2^{5}-1$=$31$ parameters.  
 >
->Such a reduction <font color="RosyBrown">provides benefits from inference, learning(parameter estimation) and compuutation perspective</font>.  
+>Such a reduction <font color="#C20000">provides benefits from inference, learning(parameter estimation) and compuutation perspective</font>.  
 
-<!-- to be conti: D-sepasration v.s. D-connection -->
+### The Concept Of <font color="Red">D-Separation</font>
+>
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-d-seperation.png "d-separation")
 
 ### Addendum
->&#10112;[Bayesian network tutorial, Mark L Krieg](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf)  
+>&#10112;[A tutorial on Bayesian belief networks, Mark L Krieg](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf)  
+>&#10113;[A tutorial on learning and inference in the Bayesian networks, Irina Rish](http://www.ee.columbia.edu/~vittorio/Lecture12.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
