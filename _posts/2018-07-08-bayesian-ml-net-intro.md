@@ -86,7 +86,9 @@ when used, the <font color="Red">Bayesian network</font> comes out with <font co
 >&#10112;the <font color="DeepSkyBlue">parameters</font> are <font color="RosyBrown">not</font> equivalent to the nodes of random variables.  
 >&#10113;<font color="DeepPink">the parameters are the compounded conditioning events</font>, depicted in below graph.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-dag-params.png "params")
->&#10114;<!-- to be conti for the parameter numbers -->  
+>&#10114;totally, $1$+$2$+$2$+$4$+$2$, there are $11$ parameters in this probabilistic model of network, compared to the <font color="OrangeRed">multinomial</font> distruibution, in this case $2^{5}-1$=$31$ parameters.  
+>
+>Such a reduction <font color="RosyBrown">provides benefits from inference, learning(parameter estimation) and compuutation perspective</font>.  
 
 <!-- to be conti: D-sepasration v.s. D-connection -->
 
