@@ -21,6 +21,8 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >&#10112;in above graph, given nodes $C$, $D$, $E$, $F$, $G$, node $X$ is d-separated from all othere nodes, $A$, $B$, $H$, $I$, $J$.  
 >&#10113;<font color="DeepPink">the parents, the children, other parents of a node's children are called the Markov blanket of a node</font>.  
 >
+>Suppose we know the value of each node in the Markov blanket, if we'd like to predict the probability distribution of $X$, then there is no more information regarding to the value taken by the node $X$.  
+>
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Markov equivalence</font>  
 >
