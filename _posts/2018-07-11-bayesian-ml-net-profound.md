@@ -23,7 +23,7 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >&#10114;therefore <font color="#C20000">Markov blanket contains all the variables that shields the target node from the rest of the network</font>.  This means that <font color="#C20000">the Markov blanket of a target node is the only knowledge needed to predict the behavior of that target node</font>.  
 >
 >Suppose we know the value of each node in the Markov blanket, if we'd like to predict the probability distribution of $X$, then there is <font color="#C20000">no</font> more information regarding to the value taken by the node $X$.  
->
+
 <!--
 to be conti the concept of explain away
 ><font color="DeepSkyBlue">[3]</font>
