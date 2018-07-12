@@ -14,10 +14,13 @@ BNs combine principles from graph theory, probability theory, computer science, 
 ><font color="OrangeRed">Recap: d-separation</font>  
 >Accordingly, when one set of random variables, $\Theta_{1}$, is conditionally independent of another, $\Theta_{2}$, given a third, $\Theta_{3}$, then we say that the random variables in $\Theta_{1}$ are d-separated from $\Theta_{2}$ by $\Theta_{3}$.  For the simplicity, you can treat each set containing only one random variable.  
 >
-<!--
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Markov blanket</font>  
->
+>The <font color="Red">Markov blanket</font> claims <font color="#C20000">a node is conditionally independent(d-separated) from all of the other nodes(entire graph), given its parents, childs, child's parents.</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-markov-blanket.png "markov blanket")
+>In above graph, given nodes $C$, $D$, $E$, $F$, $G$, node $X$ is d-separated from all othere nodes, $A$, $B$, $H$, $I$, $J$.  
+
+<!--
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Markov equivalence</font>  
 >
