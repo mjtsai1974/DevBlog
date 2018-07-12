@@ -20,13 +20,22 @@ BNs combine principles from graph theory, probability theory, computer science, 
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-markov-blanket.png "markov blanket")
 >&#10112;in above graph, given nodes $C$, $D$, $E$, $F$, $G$, node $X$ is d-separated from all othere nodes, $A$, $B$, $H$, $I$, $J$.  
 >&#10113;<font color="DeepPink">the parents, the children, other parents of a node's children are called the Markov blanket of a node</font>.  
+>&#10114;therefore <font color="#C20000">Markov blanket contains all the variables that shields the target node from the rest of the network</font>.  This means that <font color="#C20000">the Markov blanket of a target node is the only knowledge needed to predict the behavior of that target node</font>.  
 >
->Suppose we know the value of each node in the Markov blanket, if we'd like to predict the probability distribution of $X$, then there is no more information regarding to the value taken by the node $X$.  
+>Suppose we know the value of each node in the Markov blanket, if we'd like to predict the probability distribution of $X$, then there is <font color="#C20000">no</font> more information regarding to the value taken by the node $X$.  
 >
+<!--
+to be conti the concept of explain away
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Explain away</font> 
+
+to be conti https://library.bayesia.com/display/FAQ/Markov+Blankets  
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Markov blanket, why?</font>  
+-->
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Markov equivalence</font>  
->
-
+>Two DAGs are to be said <font color="Red">Markov equivalent</font>, if they have the same d-separations.  
 
 ### Addendum
 >&#10112;A Brief Introduction to Graphical Models and Bayesian Networks, Murphy K. (1998)  
