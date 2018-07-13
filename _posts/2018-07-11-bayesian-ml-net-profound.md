@@ -9,7 +9,7 @@ title: The Bayesian Network Profound Meaning
 BNs combine principles from graph theory, probability theory, computer science, and statistics.  
 </p>
 
-### The <font color="Red">Markov Blanket</font> and <font color="Red">Markov Equivalence</font>
+### The <font color="Red">Markov Blanket</font> And <font color="Red">Markov Equivalence</font>
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Recap: d-separation</font>  
 >Accordingly, when one set of random variables, $\Theta_{1}$, is conditionally independent of another, $\Theta_{2}$, given a third, $\Theta_{3}$, then we say that the random variables in $\Theta_{1}$ are d-separated from $\Theta_{2}$ by $\Theta_{3}$.  For the simplicity, you can treat each set containing only one random variable.  
@@ -42,17 +42,24 @@ BNs combine principles from graph theory, probability theory, computer science, 
 ><font color="OrangeRed">Conclusion</font>  
 >D-connection in converging type networks requires some knowledge of the connection variable(the headache node in this example), at least one of the descendants, the observed evidence must have the positive or the negative information.  
 
-<!--
-to be conti https://library.bayesia.com/display/FAQ/Markov+Blankets  
-><font color="DeepSkyBlue">[4]</font>
-><font color="OrangeRed">Markov blanket, why?</font>  
--->
+### The <font color="Red">Markov Blanket</font>, Why?
+<font color="DeepSkyBlue">[1]</font>
+<font color="OrangeRed">Why, the Markov blanket?</font>  
+>A node is conditionally independent of all other nodes given its Markov blanket, i.e. its parents, its children, and parents of common children(spouses).  
+>
+><font color="Brown">proof::mjtsai1974</font>  
+>By using the same DAG of Markov blanket:  
+>&#10112;given target node's parent, the target node is conditionally independent from the parent's ascendant.  $X$ is d-separated from $A$, given $C$ or $D$.  
+>&#10113;given target node's children, the target node is conditionally independent from the children's descendants.  $X$ is d-separated from $H$, given $F$, is d-separated from $I$, $J$, given $G$.  
+>&#10114;given target node's children, the children's parent, the target node would be <font color="Red">explained away</font>, the same for that children's parent, depends on the information on that children.  
+>&#10115;continue on, given $E$, $G$ is d-separated from $B$, then $X$ is also d-separated from $B$.  
 
 ### Addendum
 >&#10112;A Brief Introduction to Graphical Models and Bayesian Networks, Murphy K. (1998)  
 >&#10113;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](http://people.math.aau.dk/~sorenh/misc/2014-useR-GMBN/bayesnet-slides.pdf)  
 >&#10114;[Bayesian Networks, Ben-Gal Irad, in Ruggeri F., Faltin F. & Kenett R., Encyclopedia of Statistics in Quality & Reliability, Wiley & Sons (2007).](http://www.eng.tau.ac.il/~bengal/BN.pdf)  
 >&#10115;[Introduction to discrete probability theory and Bayesian networks, Dr. Michael Ashcroft, September 15, 2011](https://www.it.uu.se/edu/course/homepage/ai/ht11/Lecture%20Notes%20BN.pdf)  
+>&#10117;[Markov blanket](https://library.bayesia.com/display/FAQ/Markov+Blankets)  
 
 <!-- Γ -->
 <!-- \Omega -->
