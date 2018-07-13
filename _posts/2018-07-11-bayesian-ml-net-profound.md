@@ -53,7 +53,7 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >&#10115;given target node's children, the children's parent, the target node would be <font color="Red">explained away</font>, the same for that children's parent, depends on the information on that children.  
 >&#10116;continue on, given $E$, $G$ is d-separated from $B$, then $X$ is also d-separated from $B$.  
 >
->Therefore, the Market blanket contains everything we need to predict and infer the target node.  
+>Therefore, the <font color="Red">Markov blanket</font> contains everything we need to predict and infer the target node.  
 
 ### Addendum
 >&#10112;A Brief Introduction to Graphical Models and Bayesian Networks, Murphy K. (1998)  
