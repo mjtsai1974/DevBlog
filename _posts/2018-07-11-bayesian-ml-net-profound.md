@@ -76,6 +76,8 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >New information about one or more nodes in the network updates the probability distributions over the possible values of each node.  There are two ways in which information can propagate in a Bayesian network:  
 >&#10112;<font color="DeepSkyBlue">predictive</font> propagation, it is straightforward, just by following the direction by the arrows.  Once new information changes the probability of a node, the node will pass the information to its children, which in turn pass to its children, and so on.  
 >&#10113;<font color="DeepSkyBlue">retrospective</font> propagation, it is an inverse of <font color="DeepSkyBlue">predictive</font> propagation.  Under ;<font color="DeepSkyBlue">retrospective</font> propagation, when a node is updated, it will pass the information to its child node.  But, if it is updated from the childe node, the information is passed to its parent node, and in turn pass to its parent node, and so on.  
+>
+>You can think of the update of information from one node to another is <font color="DeepPink">simultaneous</font>(maybe <font color="DeepPink">atomic</font>), if one node has multiple children, or parents.  
 
 ### Addendum
 >&#10112;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](http://people.math.aau.dk/~sorenh/misc/2014-useR-GMBN/bayesnet-slides.pdf)  
