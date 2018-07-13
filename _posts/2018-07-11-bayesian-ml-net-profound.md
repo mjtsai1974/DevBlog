@@ -11,6 +11,10 @@ BNs combine principles from graph theory, probability theory, computer science, 
 
 ### <font color="Red">Explaining Away</font>
 ><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Recap: d-separation</font>  
+>Accordingly, when one set of random variables, $\Theta_{1}$, is conditionally independent of another, $\Theta_{2}$, given a third, $\Theta_{3}$, then we say that the random variables in $\Theta_{1}$ are d-separated from $\Theta_{2}$ by $\Theta_{3}$.  For the simplicity, you can treat each set containing only one random variable.  
+>
+><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Illustration of explaining away</font>  
 >Given that you got a headache, there exists more than a dozen of possible causes, the causal relationship is depicted below.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-exp-away.png "explain away")
@@ -19,16 +23,12 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >&#10114;given the evidence of a headache, some knowledge of food poisoning, caffeine, alcohol, faulty posture would be inferred from the state of nasal congestion and the observation of a headache.  
 >&#10115;they are no longer d-separated, but d-connected.  Or they are <font color="Red">conditionally dependent</font> given a headache.  
 >
-><font color="DeepSkyBlue">[2]</font>
+><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Conclusion</font>  
 >D-connection in converging type networks requires some knowledge of the connection variable(the headache node in this example), at least one of the descendants, the observed evidence must have the positive or the negative information.  
 
 ### The <font color="Red">Markov Blanket</font> And <font color="Red">Markov Equivalence</font>
 ><font color="DeepSkyBlue">[1]</font>
-><font color="OrangeRed">Recap: d-separation</font>  
->Accordingly, when one set of random variables, $\Theta_{1}$, is conditionally independent of another, $\Theta_{2}$, given a third, $\Theta_{3}$, then we say that the random variables in $\Theta_{1}$ are d-separated from $\Theta_{2}$ by $\Theta_{3}$.  For the simplicity, you can treat each set containing only one random variable.  
->
-><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Markov blanket</font>  
 >The <font color="Red">Markov blanket</font> claims <font color="#C20000">a node is conditionally independent(d-separated) from all of the other nodes(entire graph), given its parents, childs, child's parents.</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-markov-blanket.png "Markov blanket")
@@ -38,7 +38,7 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >
 >Suppose we know the value of each node in the Markov blanket, if we'd like to predict the probability distribution of $X$, then there is <font color="#C20000">no</font> more information regarding to the value taken by the node $X$.  
 >
-><font color="DeepSkyBlue">[3]</font>
+><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Markov equivalence</font>  
 >Two DAGs are to be said <font color="Red">Markov equivalent</font>, if they have the same d-separations.  
 
