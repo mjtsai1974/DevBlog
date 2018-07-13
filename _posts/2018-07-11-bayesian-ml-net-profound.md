@@ -17,25 +17,32 @@ BNs combine principles from graph theory, probability theory, computer science, 
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Markov blanket</font>  
 >The <font color="Red">Markov blanket</font> claims <font color="#C20000">a node is conditionally independent(d-separated) from all of the other nodes(entire graph), given its parents, childs, child's parents.</font>  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-08-bayesian-ml-net-intro-markov-blanket.png "markov blanket")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-markov-blanket.png "Markov blanket")
 >&#10112;in above graph, given nodes $C$, $D$, $E$, $F$, $G$, node $X$ is d-separated from all othere nodes, $A$, $B$, $H$, $I$, $J$.  
 >&#10113;<font color="DeepPink">the parents, the children, other parents of a node's children are called the Markov blanket of a node</font>.  
 >&#10114;therefore <font color="#C20000">Markov blanket contains all the variables that shields the target node from the rest of the network</font>.  This means that <font color="#C20000">the Markov blanket of a target node is the only knowledge needed to predict the behavior of that target node</font>.  
 >
 >Suppose we know the value of each node in the Markov blanket, if we'd like to predict the probability distribution of $X$, then there is <font color="#C20000">no</font> more information regarding to the value taken by the node $X$.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Markov equivalence</font>  
+>Two DAGs are to be said <font color="Red">Markov equivalent</font>, if they have the same d-separations.  
+
+### <font color="Red">Explaining Away</font>
+>Given that you got a headache, there exists more than a dozen of possible causes, the causal relationship is depicted below.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-exp-away.png "explain away")
+>&#10112;suppose the <font color="DeepSkyBlue">inferred</font> correct root cause to your headache is the nasal congestion.  
+>&#10113;the possibility of the rest nodes to be the root cause is greatly reduced, said they has been <font color="Red">explained away</font>.  
+>&#10114;given the evidence of a headache, some knowledge of food poisoning, caffeine, alcohol, faulty posture would be inferred from the state of nasal congestion and the observation of a headache.  
+>&#10115;they are no longer d-separated, but d-connected.  Or they are <font color="Red">conditionally dependent</font> given a headache.  
+>
+>D-connection in converging type networks requires some knowledge of the connection variable, at least one of the descendants, the observed evidence must have the positive or the negative information.  
 
 <!--
-to be conti the concept of explain away
-><font color="DeepSkyBlue">[3]</font>
-><font color="OrangeRed">Explain away</font> 
-
 to be conti https://library.bayesia.com/display/FAQ/Markov+Blankets  
 ><font color="DeepSkyBlue">[4]</font>
 ><font color="OrangeRed">Markov blanket, why?</font>  
 -->
-><font color="DeepSkyBlue">[3]</font>
-><font color="OrangeRed">Markov equivalence</font>  
->Two DAGs are to be said <font color="Red">Markov equivalent</font>, if they have the same d-separations.  
 
 ### Addendum
 >&#10112;A Brief Introduction to Graphical Models and Bayesian Networks, Murphy K. (1998)  
