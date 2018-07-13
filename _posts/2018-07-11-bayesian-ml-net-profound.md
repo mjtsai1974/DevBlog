@@ -68,19 +68,21 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >&#10114;$P(E\vert H,C)$, the <font color="Red">likelihood</font> term, for the evidence, given the hypothesis and the <font color="DeepSkyBlue">background context</font>.  
 >&#10115;$P(E\vert C)$, the <font color="Red">total probability</font> of evidence given the <font color="DeepSkyBlue">background context</font>, and is independent of the hypothesis.  It is the <font color="OrangeRed">normalizing</font> or <font color="OrangeRed">scaling</font> factor.  
 >&#10116;$P(H\vert E,C)$, the <font color="Red">posterior</font> term, the belief in hypothesis given evidence and the <font color="DeepSkyBlue">background context</font>.  
-
-<!--
-to be conti...
+>
 ><font color="DeepSkyBlue">[2]</font>
-><font color="OrangeRed">Propagation</font>  
--->
+><font color="OrangeRed">Update probabilities of Bayesian network</font>  
+>In my prior post [The Bayesian Inference Exploitation]({{ site.github.repo }}{{ site.baseurl }}/2018/06/17/bayesian-ml-bayesian-inf-exploit/), I have exploited the process to update the prior(hypothesis) from the posterior.  
+>
+>New information about one or more nodes in the network updates the probability distributions over the possible values of each node.  There are two ways in which information can propagate in a Bayesian network:  
+>&#10112;<font color="DeepSkyBlue">predictive</font> propagation, it is straightforward, just by following the direction by the arrows.  Once new information changes the probability of a node, the node will pass the information to its children, which in turn pass to its children, and so on.  
+>&#10113;<font color="DeepSkyBlue">retrospective</font> propagation, it is an inverse of <font color="DeepSkyBlue">predictive</font> propagation.  Under ;<font color="DeepSkyBlue">retrospective</font> propagation, when a node is updated, it will pass the information to its child node.  But, if it is updated from the childe node, the information is passed to its parent node, and in turn pass to its parent node, and so on.  
 
 ### Addendum
->&#10112;A Brief Introduction to Graphical Models and Bayesian Networks, Murphy K. (1998)  
->&#10113;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](http://people.math.aau.dk/~sorenh/misc/2014-useR-GMBN/bayesnet-slides.pdf)  
->&#10114;[Bayesian Networks, Ben-Gal Irad, in Ruggeri F., Faltin F. & Kenett R., Encyclopedia of Statistics in Quality & Reliability, Wiley & Sons (2007).](http://www.eng.tau.ac.il/~bengal/BN.pdf)  
->&#10115;[Introduction to discrete probability theory and Bayesian networks, Dr. Michael Ashcroft, September 15, 2011](https://www.it.uu.se/edu/course/homepage/ai/ht11/Lecture%20Notes%20BN.pdf)  
->&#10116;[Markov blanket](https://library.bayesia.com/display/FAQ/Markov+Blankets)  
+>&#10112;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](http://people.math.aau.dk/~sorenh/misc/2014-useR-GMBN/bayesnet-slides.pdf)  
+>&#10113;[Bayesian Networks, Ben-Gal Irad, in Ruggeri F., Faltin F. & Kenett R., Encyclopedia of Statistics in Quality & Reliability, Wiley & Sons (2007).](http://www.eng.tau.ac.il/~bengal/BN.pdf)  
+>&#10114;[Introduction to discrete probability theory and Bayesian networks, Dr. Michael Ashcroft, September 15, 2011](https://www.it.uu.se/edu/course/homepage/ai/ht11/Lecture%20Notes%20BN.pdf)  
+>&#10115;[Markov blanket](https://library.bayesia.com/display/FAQ/Markov+Blankets)  
+>&#10116;[What are Bayesian belief networks?(part 1)](https://www.probabilisticworld.com/bayesian-belief-networks-part-1/)  
 
 <!-- Γ -->
 <!-- \Omega -->
