@@ -29,6 +29,8 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >Two DAGs are to be said <font color="Red">Markov equivalent</font>, if they have the same d-separations.  
 
 ### <font color="Red">Explaining Away</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Illustration of explaining away</font>  
 >Given that you got a headache, there exists more than a dozen of possible causes, the causal relationship is depicted below.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-exp-away.png "explain away")
 >&#10112;suppose the <font color="DeepSkyBlue">inferred</font> correct root cause to your headache is the nasal congestion.  
@@ -36,6 +38,8 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >&#10114;given the evidence of a headache, some knowledge of food poisoning, caffeine, alcohol, faulty posture would be inferred from the state of nasal congestion and the observation of a headache.  
 >&#10115;they are no longer d-separated, but d-connected.  Or they are <font color="Red">conditionally dependent</font> given a headache.  
 >
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Conclusion</font>  
 >D-connection in converging type networks requires some knowledge of the connection variable(the headache node in this example), at least one of the descendants, the observed evidence must have the positive or the negative information.  
 
 <!--
