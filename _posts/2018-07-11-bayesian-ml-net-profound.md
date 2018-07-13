@@ -49,7 +49,7 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >By using the same DAG of Markov blanket:  
 >&#10112;given target node's parent, the target node is conditionally independent from the parent's ascendant.  $X$ is d-separated from $A$, given $C$ or $D$.  
 >&#10113;knowing $A$ could <font color="DeepSkyBlue">predict</font> $C$, then from $C$ to <font color="DeepSkyBlue">predict</font> $X$; knowing $X$ could <font color="DeepSkyBlue">infer</font> $C$, then from $C$ to <font color="DeepSkyBlue">infer</font> $A$.  But, knowing $X$ helps nothing in inferring $A$, if we already know $C$; knowing $A$ makes no prediction about $X$, if we already know $C$.  
->&#10114;given target node's children, the target node is conditionally independent from the children's descendants.  $X$ is d-separated from $H$, given $F$, is d-separated from $I$, $J$, given $G$.  Similar in &#10112;.  
+>&#10114;given target node's children, the target node is conditionally independent from the children's descendants.  $X$ is d-separated from $H$, given $F$, and is d-separated from $I$, $J$, given $G$.  Similar in &#10112;.  
 >&#10115;given target node's children, the children's parent, the target node would be <font color="Red">explained away</font>, the same for that children's parent, depends on the information on that children.  
 >&#10116;continue on, given $E$, $G$ is d-separated from $B$, then $X$ is also d-separated from $B$.  
 >
