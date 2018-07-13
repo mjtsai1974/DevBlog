@@ -55,12 +55,24 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >
 >Therefore, the <font color="Red">Markov blanket</font> contains everything we need to predict and infer the target node.  
 
+### <font color="Red">Bayes Theorem</font> With <font color="DeepSkyBlue">Background Context</font>
+>Below is an intuitive <font color="Red">Bayesian network</font>:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-markov-blanket.png "Markov blanket")
+>We can deduce the posterior by incorporating the <font color="DeepSkyBlue">background context</font> in the <font color="Red">Bayes theorem</font> expression:  
+>$\;\;P(H\vert E,C)$=$\frac {P(E\vert H,C)\cdot P(H\vert C)}{P(E\vert C)}$  
+>
+>&#10112;$C$, the <font color="DeepSkyBlue">background context</font>.  
+>&#10113;$P(H\vert C)$, the hypothesis or prior term, based on the <font color="DeepSkyBlue">background context</font>.  
+>&#10114;$P(E\vert H,C)$, the likelihood term, for the evidence, given the hypothesis and the <font color="DeepSkyBlue">background context</font>.  
+>&#10115;$P(E\vert C)$, the total probability of evidence given the <font color="DeepSkyBlue">background context</font>, and is independent of the hypothesis.  It is the <font color="OrangeRed">normalizing</font> or <font color="OrangeRed">scaling</font> factor.  
+>&#10116;$P(H\vert E,C)$, the posterior term, the belief in hypothesis given evidence and the <font color="DeepSkyBlue">background context</font>.  
+
 ### Addendum
 >&#10112;A Brief Introduction to Graphical Models and Bayesian Networks, Murphy K. (1998)  
 >&#10113;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](http://people.math.aau.dk/~sorenh/misc/2014-useR-GMBN/bayesnet-slides.pdf)  
 >&#10114;[Bayesian Networks, Ben-Gal Irad, in Ruggeri F., Faltin F. & Kenett R., Encyclopedia of Statistics in Quality & Reliability, Wiley & Sons (2007).](http://www.eng.tau.ac.il/~bengal/BN.pdf)  
 >&#10115;[Introduction to discrete probability theory and Bayesian networks, Dr. Michael Ashcroft, September 15, 2011](https://www.it.uu.se/edu/course/homepage/ai/ht11/Lecture%20Notes%20BN.pdf)  
->&#10117;[Markov blanket](https://library.bayesia.com/display/FAQ/Markov+Blankets)  
+>&#10116;[Markov blanket](https://library.bayesia.com/display/FAQ/Markov+Blankets)  
 
 <!-- Γ -->
 <!-- \Omega -->
