@@ -42,17 +42,18 @@ BNs combine principles from graph theory, probability theory, computer science, 
 ><font color="OrangeRed">Conclusion</font>  
 >D-connection in converging type networks requires some knowledge of the connection variable(the headache node in this example), at least one of the descendants, the observed evidence must have the positive or the negative information.  
 
-### The <font color="Red">Markov Blanket</font>, Why?
-><font color="DeepSkyBlue">[1]</font>
-><font color="OrangeRed">Why, the Markov blanket?</font>  
+### Prove The <font color="Red">Markov Blanket</font>
 >A node is conditionally independent of all other nodes given its Markov blanket, i.e. its parents, its children, and parents of common children(spouses).  
 >
 ><font color="Brown">proof::mjtsai1974</font>  
 >By using the same DAG of Markov blanket:  
->&#10112;given target node's parent, the target node is conditionally independent from the parent's ascendant.  $X$ is d-separated from $A$, given $C$ or $D$.  Knowing $A$ could <font color="DeepSkyBlue">predict</font> $C$, then from $C$ to <font color="DeepSkyBlue">predict</font> $X$; knowing $X$ could <font color="DeepSkyBlue">infer</font> $C$, then from $C$ to <font color="DeepSkyBlue">infer</font> $A$.  But, knowing $X$ helps nothing in inferring $A$, if we already know $C$; knowing $A$ makes no prediction about $X$, if we already know $C$.  
->&#10113;given target node's children, the target node is conditionally independent from the children's descendants.  $X$ is d-separated from $H$, given $F$, is d-separated from $I$, $J$, given $G$.  Similar in &#10112;.  
->&#10114;given target node's children, the children's parent, the target node would be <font color="Red">explained away</font>, the same for that children's parent, depends on the information on that children.  
->&#10115;continue on, given $E$, $G$ is d-separated from $B$, then $X$ is also d-separated from $B$.  
+>&#10112;given target node's parent, the target node is conditionally independent from the parent's ascendant.  $X$ is d-separated from $A$, given $C$ or $D$.  
+>&#10113;knowing $A$ could <font color="DeepSkyBlue">predict</font> $C$, then from $C$ to <font color="DeepSkyBlue">predict</font> $X$; knowing $X$ could <font color="DeepSkyBlue">infer</font> $C$, then from $C$ to <font color="DeepSkyBlue">infer</font> $A$.  But, knowing $X$ helps nothing in inferring $A$, if we already know $C$; knowing $A$ makes no prediction about $X$, if we already know $C$.  
+>&#10114;given target node's children, the target node is conditionally independent from the children's descendants.  $X$ is d-separated from $H$, given $F$, is d-separated from $I$, $J$, given $G$.  Similar in &#10112;.  
+>&#10115;given target node's children, the children's parent, the target node would be <font color="Red">explained away</font>, the same for that children's parent, depends on the information on that children.  
+>&#10116;continue on, given $E$, $G$ is d-separated from $B$, then $X$ is also d-separated from $B$.  
+>
+>Therefore, the Market blanket contains everything we need to predict and infer the target node.  
 
 ### Addendum
 >&#10112;A Brief Introduction to Graphical Models and Bayesian Networks, Murphy K. (1998)  
