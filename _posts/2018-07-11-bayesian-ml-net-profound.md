@@ -36,7 +36,7 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >&#10114;given the evidence of a headache, some knowledge of food poisoning, caffeine, alcohol, faulty posture would be inferred from the state of nasal congestion and the observation of a headache.  
 >&#10115;they are no longer d-separated, but d-connected.  Or they are <font color="Red">conditionally dependent</font> given a headache.  
 >
->D-connection in converging type networks requires some knowledge of the connection variable, at least one of the descendants, the observed evidence must have the positive or the negative information.  
+>D-connection in converging type networks requires some knowledge of the connection variable(the headache node in this example), at least one of the descendants, the observed evidence must have the positive or the negative information.  
 
 <!--
 to be conti https://library.bayesia.com/display/FAQ/Markov+Blankets  
