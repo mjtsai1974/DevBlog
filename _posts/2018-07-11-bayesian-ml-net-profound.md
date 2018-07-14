@@ -104,13 +104,29 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >
 >These 2 expressions differ in that <font color="#C20000">the factorization of conditional independence for any descendant takes only its parents as the conditioning events</font>, as I have shown it in the section "The Joint Probability Distribution Of Bayesian Network" in [Introduction To The Bayesian Network]({{ site.github.repo }}{{ site.baseurl }}/2018/07/08/bayesian-ml-net-intro/).
 
+### <font color="RoyalBlue">Example</font>: The Possible Causes To Computer Failure
+>This is an example from [Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](https://www.bu.edu/sph/files/2014/05/bayesian-networks-final.pdf), which in turn simplified from Cowel et al, (1999).  This example is illustrated here provided that I have a full implementation and explaination with the consistent result.  
+><font color="RoyalBlue">[Scene 1: the prior, before evidence]</font>  
+>We are given a question of infering the possible root cause of computer failure(M), suppose the experiment comes with two possible suspects, electricity failure(E), computer malfunction(M):  
+>&#10112;the given prior, $P(E)$, $P(M)$ and the likelihoods of $P(C=t\vert E,M)$ are exhibited with the estimated probability for computer failure, $P(C)$ in below graph.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-emc-prior.png "emc-prior")
+>&#10113;$P(C=t)$  
+>=$\sum_{E,M}P(C\cert E,M)\cdot P(E,M)$  
+>=$1\cdot 0.1\cdot 0.2$+$1\cdot 0.1\cdot 0.8$+$0\cdot 0.9\cdot 0.8$+$0.5\cdot 0.9\cdot 0.2$  
+>=$0.02$+$0.08$+$0$+$0.09$  
+>=$0.19$...the estimated probability of computer failure  
+<!--
+><font color="RoyalBlue">[Scene 2: the posterior, after evidence]</font>  
+>
+-->
 ### Addendum
->&#10112;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](http://people.math.aau.dk/~sorenh/misc/2014-useR-GMBN/bayesnet-slides.pdf)  
+>&#10112;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](https://www.bu.edu/sph/files/2014/05/bayesian-networks-final.pdf)  
 >&#10113;[Bayesian Networks, Ben-Gal Irad, in Ruggeri F., Faltin F. & Kenett R., Encyclopedia of Statistics in Quality & Reliability, Wiley & Sons (2007).](http://www.eng.tau.ac.il/~bengal/BN.pdf)  
 >&#10114;[Introduction to discrete probability theory and Bayesian networks, Dr. Michael Ashcroft, September 15, 2011](https://www.it.uu.se/edu/course/homepage/ai/ht11/Lecture%20Notes%20BN.pdf)  
 >&#10115;[Markov blanket](https://library.bayesia.com/display/FAQ/Markov+Blankets)  
 >&#10116;[What are Bayesian belief networks?(part 1)](https://www.probabilisticworld.com/bayesian-belief-networks-part-1/)  
 >&#10117;[Introduction into Bayesian networks, Mgr. Libor Vaněk](http://www.fit.vutbr.cz/study/courses/VPD/public/0809VPD-Vanek.pdf)  
+>&#10118;Cowel R. G., Dawid A. P., Lauritzen S. L., Spiegelhalter D. J. (1999): Probabilistic Networks and Expert Systems. Springer-Verlag New York. ISBN 0-387-98767-3.
 
 <!-- Γ -->
 <!-- \Omega -->
