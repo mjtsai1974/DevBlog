@@ -106,19 +106,32 @@ BNs combine principles from graph theory, probability theory, computer science, 
 
 ### <font color="RoyalBlue">Example</font>: The Possible Causes To Computer Failure
 >This is an example from [Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](https://www.bu.edu/sph/files/2014/05/bayesian-networks-final.pdf), which in turn simplified from Cowel et al, (1999).  This example is illustrated here provided that I have a full implementation and explaination with the consistent result.  
-><font color="RoyalBlue">[Scene 1: the prior, before evidence]</font>  
+><font color="RoyalBlue">[Scene 1: the prior probability distribution, before evidence]</font>  
 >We are given a question of infering the possible root cause of computer failure(M), suppose the experiment comes with two possible suspects, electricity failure(E), computer malfunction(M):  
 >&#10112;the given prior, $P(E)$, $P(M)$ and the likelihoods of $P(C=t\vert E,M)$ are exhibited with the estimated probability for computer failure, $P(C)$ in below graph.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-emc-prior.png "emc-prior")
 >&#10113;$P(C=t)$  
->=$\sum_{E,M}P(C\cert E,M)\cdot P(E,M)$  
+>=$\sum_{E,M}P(C\vert E,M)\cdot P(E,M)$  
+>=$\sum_{E,M}P(C\vert E,M)\cdot P(E)\cdot P(M)$  
 >=$1\cdot 0.1\cdot 0.2$+$1\cdot 0.1\cdot 0.8$+$0\cdot 0.9\cdot 0.8$+$0.5\cdot 0.9\cdot 0.2$  
 >=$0.02$+$0.08$+$0$+$0.09$  
 >=$0.19$...the estimated probability of computer failure  
-<!--
-><font color="RoyalBlue">[Scene 2: the posterior, after evidence]</font>  
 >
--->
+><font color="RoyalBlue">[Scene 2: the posterior probability distribution, after evidence]</font>  
+>Assume we have been updated by the observation of physical computer failure, by the <font color="DeepSkyBlue">retrospective</font> propagation, we could <font color="DeepSkyBlue">infer</font> the possible root cause.  
+>&#10112;$P(E=t\vert C=t)$  
+>=$\sum_{M}P(E=t,M\vert C=t)$  
+>=$\frac {\sum_{M}P(C=t\vert E=t,M)\cdot P(E=t)\cdot P(M)}{P(C=t)}$  
+>=$\frac {1\cdot 0.1\cdot 0.2+1\cdot 0.1\cdot 0.8}{0.19}$  
+>=$0.526315789$  
+$\approx 0.53$  
+>&#10113;$P(M=t\vert C=t)$  
+>=$\sum_{E}P(M=t,E\vert C=t)$  
+>=$\frac {\sum_{E}P(C=t\vert E,M=t)\cdot P(E)\cdot P(M=t)}{P(C=t)}$  
+>=$\frac {1\cdot 0.1\cdot 0.2+0.5\cdot 0.9\cdot 0.2}{0.19}$  
+>=$0.578947368$  
+>$\approx 0.58$  
+
 ### Addendum
 >&#10112;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](https://www.bu.edu/sph/files/2014/05/bayesian-networks-final.pdf)  
 >&#10113;[Bayesian Networks, Ben-Gal Irad, in Ruggeri F., Faltin F. & Kenett R., Encyclopedia of Statistics in Quality & Reliability, Wiley & Sons (2007).](http://www.eng.tau.ac.il/~bengal/BN.pdf)  
