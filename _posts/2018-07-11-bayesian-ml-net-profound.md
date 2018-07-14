@@ -118,7 +118,7 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >=$0.19$...the estimated probability of computer failure  
 >
 ><font color="RoyalBlue">[Scene 2: the posterior probability distribution, after evidence]</font>  
->Assume we have been updated by the observation of physical computer failure, by the <font color="DeepSkyBlue">retrospective</font> propagation, we could <font color="DeepSkyBlue">infer</font> the possible root cause.  
+>Assume we have been updated by the observation of physical computer failure, by the <font color="DeepSkyBlue">retrospective</font> propagation, we could <font color="DeepSkyBlue">infer</font> the possible root cause from the <font color="OrangeRed">evidence</font>.  
 >&#10112;$P(E=t\vert C=t)$  
 >=$\sum_{M}P(E=t,M\vert C=t)$  
 >=$\frac {\sum_{M}P(C=t\vert E=t,M)\cdot P(E=t)\cdot P(M)}{P(C=t)}$  
@@ -131,6 +131,9 @@ $\approx 0.53$
 >=$\frac {1\cdot 0.1\cdot 0.2+0.5\cdot 0.9\cdot 0.2}{0.19}$  
 >=$0.578947368$  
 >$\approx 0.58$  
+>
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-emc-posterior.png "emc-posterior")
+>The <font color="OrangeRed">posterior</font> of $P(M=t\vert C=t)$ is greater than $P(E=t\vert C=t)$ has been <font color="DeepSkyBlue">inferred</font> by the observed <font color="OrangeRed">evidence</font> and depicted in above graph.  
 
 ### Addendum
 >&#10112;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](https://www.bu.edu/sph/files/2014/05/bayesian-networks-final.pdf)  
