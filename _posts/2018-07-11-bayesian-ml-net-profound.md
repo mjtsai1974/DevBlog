@@ -79,12 +79,20 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >
 >You can think of the update of information from one node to another is <font color="DeepPink">simultaneous</font>(maybe <font color="DeepPink">atomic</font>), if one node has multiple children, or parents.  
 
+### <font color="Red">Factorization</font> In <font color="Red">Bayesian Network</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Definition of DAG</font>  
+>According to [Introduction into Bayesian networks, p.6, Mgr. Libor Vaněk](http://www.fit.vutbr.cz/study/courses/VPD/public/0809VPD-Vanek.pdf), we can define DAG as $G$=$(V,E)$, $V$ for the <font color="DeepSkyBlue">set of indices to random variables</font>, $E$ for the <font color="DeepSkyBlue">edges</font>, and $X$=$\{X_{v}: v\inV\}$ to be the <font color="DeepSkyBlue">set of random variables indexed by $v$</font>.  
+>
+<!-- Chain Rule v.s. <font color="Red">Conditional Independence</font> -->
+
 ### Addendum
 >&#10112;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](http://people.math.aau.dk/~sorenh/misc/2014-useR-GMBN/bayesnet-slides.pdf)  
 >&#10113;[Bayesian Networks, Ben-Gal Irad, in Ruggeri F., Faltin F. & Kenett R., Encyclopedia of Statistics in Quality & Reliability, Wiley & Sons (2007).](http://www.eng.tau.ac.il/~bengal/BN.pdf)  
 >&#10114;[Introduction to discrete probability theory and Bayesian networks, Dr. Michael Ashcroft, September 15, 2011](https://www.it.uu.se/edu/course/homepage/ai/ht11/Lecture%20Notes%20BN.pdf)  
 >&#10115;[Markov blanket](https://library.bayesia.com/display/FAQ/Markov+Blankets)  
 >&#10116;[What are Bayesian belief networks?(part 1)](https://www.probabilisticworld.com/bayesian-belief-networks-part-1/)  
+>&#10117;[Introduction into Bayesian networks, Mgr. Libor Vaněk](http://www.fit.vutbr.cz/study/courses/VPD/public/0809VPD-Vanek.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
