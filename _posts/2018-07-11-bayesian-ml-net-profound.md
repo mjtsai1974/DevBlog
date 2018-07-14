@@ -82,8 +82,13 @@ BNs combine principles from graph theory, probability theory, computer science, 
 ### <font color="Red">Factorization</font> In <font color="Red">Bayesian Network</font>
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Definition of DAG</font>  
->According to [Introduction into Bayesian networks, p.6, Mgr. Libor Vaněk](http://www.fit.vutbr.cz/study/courses/VPD/public/0809VPD-Vanek.pdf), we can define DAG as $G$=$(V,E)$, $V$ for the <font color="DeepSkyBlue">set of indices to random variables</font>, $E$ for the <font color="DeepSkyBlue">edges</font>, and $X$=$\{X_{v}: v\inV\}$ to be the <font color="DeepSkyBlue">set of random variables indexed by $v$</font>.  
+>According to the [Introduction into Bayesian networks, p.6, Mgr. Libor Vaněk](http://www.fit.vutbr.cz/study/courses/VPD/public/0809VPD-Vanek.pdf), we can define DAG as $G$=$(V,E)$, $V$ for the <font color="DeepSkyBlue">set of indices to random variables</font>, $E$ for the <font color="DeepSkyBlue">edges</font>, and $X$=$\\{X_{v}: v\in V\\}$ to be the <font color="DeepSkyBlue">set of random variables indexed by $v$</font>.  
 >
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Factorization definition</font>  
+>$X$ is a <font color="Red">Bayesian network</font> with respect to $G$, if the model's <font color="OrangeRed">full</font> joint probability density function could be expressed as a <font color="OrangeRed">product</font> of a series of the random variables' probability density functions, with each PDF having its probability conditionally depending on its parents:  
+>$\;\;P(X)$=$\prod_{v\in V}P(X_{v}\vert pa(X_{v}))$, where $pa(X_{v})$ is the <font color="OrangeRed">set of parents</font> of $X_{v}$.  
+
 <!-- Chain Rule v.s. <font color="Red">Conditional Independence</font> -->
 
 ### Addendum
@@ -111,6 +116,7 @@ BNs combine principles from graph theory, probability theory, computer science, 
 <!-- \lim_{t\rightarrow\infty} -->
 <!-- \int_{0}^{a}\lambda\cdot e^{-\lambda\cdot t}\operatorname dt -->
 <!-- \Leftrightarrow -->
+<!-- \prod_{v\in V} -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
