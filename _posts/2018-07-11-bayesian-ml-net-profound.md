@@ -86,10 +86,23 @@ BNs combine principles from graph theory, probability theory, computer science, 
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Factorization definition</font>  
->$X$ is a <font color="Red">Bayesian network</font> with respect to $G$, if the model's <font color="OrangeRed">full</font> joint probability density function could be expressed as a <font color="OrangeRed">product</font> of a series of the random variables' probability density functions, with each PDF having its probability conditionally depending on its parents:  
+>$X$ is a <font color="Red">Bayesian network</font> with respect to $G$, if the model's <font color="OrangeRed">full</font> joint probability density function could be expressed as a <font color="OrangeRed">product</font> of a series of the random variables' PDFs(probability density functions), with each PDF having its probability <font color="OrangeRed">conditionally depending on its parents</font>:  
 >$\;\;P(X)$=$\prod_{v\in V}P(X_{v}\vert pa(X_{v}))$, where $pa(X_{v})$ is the <font color="OrangeRed">set of parents</font> of $X_{v}$.  
-
-<!-- Chain Rule v.s. <font color="Red">Conditional Independence</font> -->
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Compare chain rule with conditional independence</font>  
+>Suppose $X$ has $n$ nodes in its network:  
+>&#10112;$P(X_{1}=x_{1},...,X_{n}=x_{n})$...by <font color="Red">chain rule</font>  
+>=$\prod_{v=1}^{n}P(X_{v}=x_{v}\vert X_{v+1}=x_{v+1},...,X_{n}=x_{n})$  
+>=$P(X_{1}=x_{1}\vert X_{2}=x_{2},...,X_{n}=x_{n})$  
+>$\;\;\cdot P(X_{2}=x_{2}\vert X_{3}=x_{3},...,X_{n}=x_{n})$  
+>$\;\;...$  
+>$\;\;\cdot P(X_{n-1}=x_{n-1}\vert X_{n}=x_{n})$  
+>&#10113;$P(X_{1}=x_{1},...,X_{n}=x_{n})$...by <font color="Red">factorization</font>  
+>=$\prod_{v=1}^{n}P(X_{v}\vert (X_{i1},X_{i2},X_{i3},...))$  
+>; where $pa(X_{v})$=$\\{X_{i1},X_{i2},X_{i3},...\\}$  
+>
+>These 2 expressions differ in that <font color="#C20000">the factorization of conditional independence for any descendant takes only its parents as the conditioning events</font>, as I have shown it in the section "The Joint Probability Distribution Of Bayesian Network" in [Introduction To The Bayesian Network]({{ site.github.repo }}{{ site.baseurl }}/2018/07/08/bayesian-ml-net-intro/).
 
 ### Addendum
 >&#10112;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](http://people.math.aau.dk/~sorenh/misc/2014-useR-GMBN/bayesnet-slides.pdf)  
@@ -119,7 +132,7 @@ BNs combine principles from graph theory, probability theory, computer science, 
 <!-- \prod_{v\in V} -->
 
 <!-- Notes -->
-<!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
+<!-- <font color="OrangeRed">items, verb, to make it the focus, mathematic expression</font> -->
 <!-- <font color="Red">KKT</font> -->
 <!-- <font color="Red">SMO heuristics</font> -->
 <!-- <font color="Red">F</font> distribution -->
