@@ -132,8 +132,9 @@ $\approx 0.53$
 >=$0.578947368$  
 >$\approx 0.58$  
 >
+>The <font color="OrangeRed">posterior</font> of $P(M=t\vert C=t)$ is greater than $P(E=t\vert C=t)$ has been <font color="DeepSkyBlue">inferred</font> by the observed <font color="OrangeRed">evidence</font> and depicted in below graph.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-emc-posterior.png "emc-posterior")
->The <font color="OrangeRed">posterior</font> of $P(M=t\vert C=t)$ is greater than $P(E=t\vert C=t)$ has been <font color="DeepSkyBlue">inferred</font> by the observed <font color="OrangeRed">evidence</font> and depicted in above graph.  
+
 
 ### Addendum
 >&#10112;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](https://www.bu.edu/sph/files/2014/05/bayesian-networks-final.pdf)  
