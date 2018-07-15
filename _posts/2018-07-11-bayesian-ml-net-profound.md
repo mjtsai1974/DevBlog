@@ -163,9 +163,9 @@ $\approx 0.53$
 >=$\sum_{E}\sum_{M}P(E,M,C=t,L=t)$  
 >=$\sum_{E}\sum_{M}P(L=t\vert E)\cdot P(C=t\vert E,M)\cdot P(E)\cdot P(M)$  
 >=$1\cdot 1\cdot 0.1\cdot 0.2$  
->+$\;\;1\cdot 1\cdot 0.1\cdot 0.8$  
->+$\;\;0.2\cdot 0.5\cdot 0.9\cdot 0.2$  
->+$\;\;0.2\cdot 0\dot 0.9\cdot 0.8$  
+>$\;\;$+$1\cdot 1\cdot 0.1\cdot 0.8$  
+>$\;\;$+$0.2\cdot 0.5\cdot 0.9\cdot 0.2$  
+>$\;\;$+$0.2\cdot 0\dot 0.9\cdot 0.8$  
 >=$0.118$  
 >&#10116;$P(E=t\vert C=t,L=t)$  
 >=$\frac {E=t,C=t,L=t}{P(C=t,L=t)}$  
