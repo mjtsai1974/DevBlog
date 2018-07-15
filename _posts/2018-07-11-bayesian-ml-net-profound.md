@@ -107,7 +107,7 @@ BNs combine principles from graph theory, probability theory, computer science, 
 ### <font color="RoyalBlue">Example</font>: The Possible Causes To Computer Failure
 >This is an example from [Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](https://www.bu.edu/sph/files/2014/05/bayesian-networks-final.pdf), which in turn simplified from Cowel et al, (1999).  This example is illustrated here provided that I have a full implementation and explaination with the consistent result.  
 ><font color="RoyalBlue">[Scene 1: the prior probability distribution, before evidence]</font>  
->We are given a question of infering the possible root cause of computer failure(M), suppose the experiment comes with two possible suspects, electricity failure(E), computer malfunction(M):  
+>We are given a question of infering the possible root cause of computer failure(M), suppose the experiment comes with two possible suspects, electricity failure(E), computer malfunction(C):  
 >&#10112;the given prior, $P(E)$, $P(M)$ and the likelihoods of $P(C=t\vert E,M)$ are exhibited with the estimated probability for computer failure, $P(C)$ in below graph.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-emc-prior.png "emc-prior")
 >&#10113;$P(C=t)$  
@@ -135,6 +135,15 @@ $\approx 0.53$
 >The <font color="OrangeRed">posterior</font> of $P(M=t\vert C=t)$ is greater than $P(E=t\vert C=t)$ has been <font color="DeepSkyBlue">inferred</font> by the observed <font color="OrangeRed">evidence</font> and depicted in below graph.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-emc-posterior.png "emc-posterior")
 
+### <font color="RoyalBlue">Example</font>: The Possible Causes To Computer Failure And Light Failure
+>Extended from above example with one extra node of light failure(L) added in the network, <font color="DeepSkyBlue">conditionally dependent on</font> electricity failure.  
+><font color="RoyalBlue">[Scene 1: the prior probability distribution, before evidence]</font>  
+>&#10112;the given prior, $P(E)$, $P(M)$ and the likelihoods of $P(C=t\vert E,M)$, $P(L=t\vert E)$ are exhibited with the estimated probability for computer failure, $P(C)$, light failure, $P(L)$ in below graph. 
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-emcl-prior.png "emcl-prior")
+>&#10113;$P(L=t)$  
+>=$\sum_{E}P(L=t\vert)\cdot P(E)$  
+>=$0.1\cdot 1.0+0.9\cdot 0.2$  
+>=$0.28$...the estimated probability of light failure  
 
 ### Addendum
 >&#10112;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](https://www.bu.edu/sph/files/2014/05/bayesian-networks-final.pdf)  
