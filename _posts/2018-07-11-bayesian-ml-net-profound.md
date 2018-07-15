@@ -144,6 +144,46 @@ $\approx 0.53$
 >=$\sum_{E}P(L=t\vert)\cdot P(E)$  
 >=$0.1\cdot 1.0+0.9\cdot 0.2$  
 >=$0.28$...the estimated probability of light failure  
+>
+><font color="RoyalBlue">[Scene 2: the posterior probability distribution, after evidence]</font>  
+>Assume we have been updated by the observation of physical computer failure and light failure, by the <font color="DeepSkyBlue">retrospective</font> propagation, we could <font color="DeepSkyBlue">infer</font> the possible root cause from the <font color="OrangeRed">evidence</font>.  
+>
+>Cautions must be made that the probability distribution and its expression has been changed as a result that the network has been new added a node.  This is to ask for $P(E=t\vert C=t,L=t)$ and $P(M=t\vert C=t,L=t)$.  I am going to <font color="DeepSkyBlue">take the advantage of factorization in the full joint joint PDF</font> of this model:  
+>
+>&#10112;$P(E=t\vert C=t,L=t)$=$\frac {E=t,C=t,L=t}{P(C=t,L=t)}$  
+>,and $P(M=t\vert C=t,L=t)$=$\frac {M=t,C=t,L=t}{P(C=t,L=t)}$, for the commonality, we should deduce out the full joint PDF.  
+>&#10113;$P(E,M,C,L)$  
+>=$P(L\vert E)\cdot P(C\vert E,M)\cdot P(E)\cdot P(M)$  
+>&#10114;$P(E=t,C=t,L=t)$  
+>=$\sum_{M}P(E=t,M,C=t,L=t)$  
+>=$P(L=t\vert E=t)\cdot P(C=t\vert E=t,M)\cdot P(E=t)\cdot P(M)$  
+>=$1\cdot1\cdot 0.1\cdot 0.2+1\cdot 1\cdot 0.1\cdot 0.8$  
+>=$0.1$  
+>&#10115;$P(C=t,L=t)$  
+>=$\sum_{E}\sum_{M}P(E,M,C=t,L=t)$  
+>=$\sum_{E}\sum_{M}P(L=t\vert E)\cdot P(C=t\vert E,M)\cdot P(E)\cdot P(M)$  
+>=$1\cdot 1\cdot 0.1\cdot 0.2$  
+>+$\;\;1\cdot 1\cdot 0.1\cdot 0.8$  
+>+$\;\;0.2\cdot 0.5\cdot 0.9\cdot 0.2$  
+>+$\;\;0.2\cdot 0\dot 0.9\cdot 0.8$  
+>=$0.118$  
+>&#10116;$P(E=t\vert C=t,L=t)$  
+>=$\frac {E=t,C=t,L=t}{P(C=t,L=t)}$  
+>=$\frac {0.1}{0.118}$  
+>=$0.847457627$  
+>$\approx 0.85$  
+>&#10117;$P(M=t,C=t,L=t)$  
+>=$\sum_{E}P(M=t,M,C=t,L=t)$  
+>=$\sum_{E}P(L=t\vert E)\cdot P(C=t\vert E,M=t)\cdot P(E)\cdot P(M=t)$  
+>=$1\cdot 1\cdot 0.1\cdot 0.2+0.2\cdot 0.5\cdot 0.9\cdot 0.2$  
+>=$0.038$  
+>&#10118;$P(M=t\vert C=t,L=t)$  
+>=$\frac {M=t,C=t,L=t}{P(C=t,L=t)}$  
+>=$\frac {0.038}{0.118}$  
+>=$0.322033898$  
+>
+>The <font color="OrangeRed">posterior</font> of $P(E=t\vert C=t,L=t)$ is greater than $P(M=t\vert C=t,L=t)$ has been <font color="DeepSkyBlue">inferred</font> by the observed <font color="OrangeRed">evidence</font> and depicted in below graph.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-11-bayesian-ml-net-profound-emcl-posterior.png "emcl-posterior")
 
 ### Addendum
 >&#10112;[Bayesian networks, Michal Horný, Technical Report No. 5, April 18, 2014](https://www.bu.edu/sph/files/2014/05/bayesian-networks-final.pdf)  
