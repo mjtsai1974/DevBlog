@@ -5,14 +5,19 @@ title: Variable Elimination In Bayesian Network
 
 ## Prologue To Variable Elimination In <font color="Red">Bayesian Network</font>
 <p class="message">
-to be conti...
+<font color="DeepSkyBlue">Inference</font> via <font color="Red">Bayesian Network</font> could be achieved by probabilistic marginalization, i.e. summing out over <font color="DeepSkyBlue">irrelevant</font> or <font color="DeepSkyBlue">hidden</font> variables.  
 </p>
 
 <!--
-to be conti...
-http://kuleshov.github.io/cs228-notes/inference/ve/
-https://www.youtube.com/watch?v=FDNB0A61PGE
-https://www.youtube.com/watch?v=qyXspkUOhGc&list=PLBF898A2F63224F39&t=0s&index=14
+Given a well-constructed BN of nodes, 2 types of inference support, they are predictive(top-down reasoning) support with the evidence nodes connected to node $X$, through its parent nodes, and diagnostic support(bottom-up reasoning), with vidence nodes connected to node $X$, through its children nodes.  
+-->
+
+<!--
+### Addendum
+>&#10112;[](http://kuleshov.github.io/cs228-notes/inference/ve/)  
+>&#10113;[](https://www.youtube.com/watch?v=FDNB0A61PGE)  
+>&#10114;[](https://www.youtube.com/watch?v=qyXspkUOhGc&list=PLBF898A2F63224F39&t=0s&index=14)  
+>&#10115;[Bayesian Networks, Ben-Gal Irad, in Ruggeri F., Faltin F. & Kenett R., Encyclopedia of Statistics in Quality & Reliability, Wiley & Sons (2007).](http://www.eng.tau.ac.il/~bengal/BN.pdf)  
 -->
 
 <!-- Γ -->
