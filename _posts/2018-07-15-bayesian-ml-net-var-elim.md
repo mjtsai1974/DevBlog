@@ -5,12 +5,15 @@ title: Variable Elimination In Bayesian Network
 
 ## Prologue To Variable Elimination In <font color="Red">Bayesian Network</font>
 <p class="message">
-<font color="DeepSkyBlue">Inference</font> via <font color="Red">Bayesian Network</font> could be achieved by probabilistic marginalization, i.e. summing out over <font color="DeepSkyBlue">irrelevant</font> or <font color="DeepSkyBlue">hidden</font> variables.  
+<font color="Red">Inference</font> via <font color="Red">Bayesian Network</font> could be achieved by probabilistic marginalization, i.e. summing out over <font color="DeepSkyBlue">irrelevant</font> or <font color="DeepSkyBlue">hidden</font> variables.  
 </p>
 
-<!--
-Given a well-constructed BN of nodes, 2 types of inference support, they are predictive(top-down reasoning) support with the evidence nodes connected to node $X$, through its parent nodes, and diagnostic support(bottom-up reasoning), with vidence nodes connected to node $X$, through its children nodes.  
--->
+### <font color="Red">Inference</font> Via <font color="Red">Bayesian Network</font>
+>Given a well-constructed BN of nodes, 2 types of inference are supported:  
+>&#10112;<font color="Red">predictive</font> support(<font color="Red">top-down reasoning</font>) with the evidence nodes connected to node $X$, through its parent nodes, the same direction as predictive propagation.  
+>&#10113;<font color="Red">diagnostic</font> support(<font color="Red">bottom-up reasoning</font>), with vidence nodes connected to node $X$, through its children nodes, the same direction as <font color="Red">retrospective</font> propagation.  
+>
+>In my Bayesian articles, I have guided you through both types of support by means of <font color="DeepSkyBlue">variable enumeration</font> over the factorized terms of full joint PDF(probability distribution function).  Most of the examples are all in small network, trivially, <font color="DeepSkyBlue">variable enumeration</font> is old, she will hold for complex model consisting of a lot random variables, resulting in high expenditure of computation efficiency.  
 
 <!--
 ### Addendum
