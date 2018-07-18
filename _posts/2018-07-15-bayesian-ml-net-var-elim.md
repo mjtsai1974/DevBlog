@@ -16,6 +16,7 @@ title: Variable Elimination In Bayesian Network
 >In my Bayesian articles, I have guided you through both types of support by means of <font color="DeepSkyBlue">variable enumeration</font> over the factorized terms of full joint PDF(probability distribution function).  Most of the examples are all in small network, trivially, <font color="DeepSkyBlue">variable enumeration</font> is old, she will hold for complex model consisting of a lot random variables, resulting in high expenditure of computation efficiency.  Therefore, another technique of <font color="Red">variable elimination</font> is introduced.   
 
 ### <font color="RoyalBlue">Example</font>: Illustration Of <font color="Red">Variable Elimination</font>
+>This example is simplified from [variable elimination, Peter Norvig](https://www.youtube.com/watch?v=qyXspkUOhGc&list=PLBF898A2F63224F39&t=0s&index=14).  
 ><font color="RoyalBlue">[Question]</font>  
 >Suppose you are using a <font color="Red">Bayesian network</font> to infer the relationship in between raining, traffic and late(to office).  The probability of raining and the conditional probability of traffic jam, given raining, and being late, given traffic jam are all depicted in this graph.  What's the probability of being late?  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex.png "ve ex")
@@ -35,14 +36,14 @@ title: Variable Elimination In Bayesian Network
 >&#10113;next, we do a <font color="OrangeRed">join</font> over $T$ and $L$, by <font color="OrangeRed">combining</font> $P(T)$ and $P(L\vert T)$ to <font color="OrangeRed">get a new factor</font> of joint probability $P(T,L)$.  
 >&#10114;now, we are down to a network with a single node, $T,L$ with the joint probability table.  By <font color="OrangeRed">summing out</font> $P(T,L)$ over $T$ with respect for $L=t$ and $L=f$, finally we reach the single node $L$ with $P(L=t)$ and $P(L=f)$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex-final.png "final")
+>
+>It is <font color="DeepPink">a continued process of joining together factors to form a maybe larger factor and then eliminating variables by summing out(marginalization)</font>.  
 
-<!--
 ### Addendum
->&#10112;[](http://kuleshov.github.io/cs228-notes/inference/ve/)  
->&#10113;[](https://www.youtube.com/watch?v=FDNB0A61PGE)  
->&#10114;[](https://www.youtube.com/watch?v=qyXspkUOhGc&list=PLBF898A2F63224F39&t=0s&index=14)  
+>&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
+>&#10113;[Prof. Abbeel, steps through a few variable examples](https://www.youtube.com/watch?v=FDNB0A61PGE)  
+>&#10114;[Variable elimination, Peter Norvig](https://www.youtube.com/watch?v=qyXspkUOhGc&list=PLBF898A2F63224F39&t=0s&index=14)  
 >&#10115;[Bayesian Networks, Ben-Gal Irad, in Ruggeri F., Faltin F. & Kenett R., Encyclopedia of Statistics in Quality & Reliability, Wiley & Sons (2007).](http://www.eng.tau.ac.il/~bengal/BN.pdf)  
--->
 
 <!-- Γ -->
 <!-- \Omega -->
