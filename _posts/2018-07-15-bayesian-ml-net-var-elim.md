@@ -20,7 +20,13 @@ title: Variable Elimination In Bayesian Network
 >Suppose you are using a <font color="Red">Bayesian network</font> to infer the relationship in between raining, traffic and late(to office).  The probability of raining and the conditional probability of traffic jam, given raining, and being late, given traffic jam are all depicted in this graph.  What's the probability of being late?  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex.png "ve ex")
 ><font color="DeepSkyBlue">[Answer]</font>  
+>This is to ask for $P(L=t)$.  The full joint PDF would be $P(R,T,L)$=$P(L\vert T)\cdot P(T\vert R)\cdot P(R)$.  
 >
+>By the old <font color="DeepSkyBlue">variable enumeration</font>, $P(L=t)$=$\sum_{R}\sum_{T}P(R,T,L)$, the nested summation over $T$ would be proceeded inside the outer summation over $R$.  Here, we'd like to further reduce the computation complexity by means of <font color="Red">variable elimination</font>.  
+>[1]First would be to <font color="Red">join factors</font>:  
+>&#10112;a <font color="OrangeRed">factor</font> is one of these tables of probability, $P(R)$, or the conditional probability, $P(T\vert R)$, $P(L\vert T)$.  By usual, they are multi-dimensional matrix.  
+>&#10113;what we do is to <font color="OrangeRed">choose 2 or more</font> of these factors.  In this case, we choose $P(R)$ and $P(T\vert R)$, to <font color="OrangeRed">combine</font> them together to <font color="OrangeRed">form a new factor</font> which represent the joint probability of all variables, $R$ and $T$ in that new factor $P(R,T)$.  
+>&#10114;
 
 <!--
 ### Addendum
