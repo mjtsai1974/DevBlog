@@ -25,12 +25,16 @@ title: Variable Elimination In Bayesian Network
 >By the old <font color="DeepSkyBlue">variable enumeration</font>, $P(L=t)$=$\sum_{R}\sum_{T}P(R,T,L)$, the nested summation over $T$ would be proceeded inside the outer summation over $R$.  Here, we'd like to further reduce the computation complexity by means of <font color="Red">variable elimination</font>.  
 >[1]The first would be to <font color="Red">join factors</font>:  
 >&#10112;a <font color="OrangeRed">factor</font> is one of these tables of probability, $P(R)$, or the conditional probability, $P(T\vert R)$, $P(L\vert T)$.  By usual, they are multi-dimensional matrix.  
->&#10113;what we do is to <font color="OrangeRed">choose 2 or more</font> of these factors.  In this case, we choose $P(R)$ and $P(T\vert R)$, to <font color="OrangeRed">combine</font> them together to <font color="OrangeRed">form a new factor</font> which represent the joint probability of all variables, $R$ and $T$ in that new factor $P(R,T)$.  
+>&#10113;what we do is to <font color="OrangeRed">choose 2 or more</font> of these factors.  In this case, we choose $P(R)$ and $P(T\vert R)$, to <font color="OrangeRed">combine</font> them together to <font color="OrangeRed">form a new factor</font> which represents the joint probability of all variables, $R$ and $T$ in that new factor $P(R,T)$.  
 >&#10114;we perform the operation of joining factors on these 2 factors, $P(R)$, $P(T\vert R)$, getting a new factor which is part of the existing network.  Below exhibits what we have now.  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex-join-factor.png "ve ex")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex-join-factor.png "join factors")
 >
 >[2]The second is the operation of <font color="Red">elimination</font>, also called <font color="OrangeRed">summing out</font> or <font color="OrangeRed">marginalization</font>, to take the table $P(R,T)$, reduce it to $P(T)$, finally <font color="OrangeRed">combine</font> it with $P(L\vert T)$ to get $P(L)$.  
->
+>&#10112;by now, we sum out or marginalize $P(R,T)$ over the variable $R$ to get $P(T)$ that just operates on $T$.  That is what we have in the network, by <font color="OrangeRed">summing out</font> over all values of $R$, respectively for which $T=t$ and $T=f$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex-sum-out.png "sum out")
+>&#10113;next, we do a join over $T$ and $L$, by combining $P(T)$ and $P(L\vert T)$ to get a new factor of joint probability $P(T,L)$.  
+>&#10114;now, we are down to a network with a single node, $T,L$ with the joint probability table.  By summing out $P(T,L)$ over $T$, finally we reach the single node $L$ with $P(L=t)$ and $P(L=f)$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex-final.png "final")
 
 <!--
 ### Addendum
