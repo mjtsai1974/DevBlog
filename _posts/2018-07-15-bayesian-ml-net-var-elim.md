@@ -17,9 +17,10 @@ title: Variable Elimination In Bayesian Network
 
 ### <font color="RoyalBlue">Example</font>: Illustration Of <font color="Red">Variable Elimination</font>
 ><font color="RoyalBlue">[Question]</font>  
+>Suppose you are using a <font color="Red">Bayesian network</font> to infer the relationship in between raining, traffic and late(to office).  The probability of raining and the conditional probability of traffic jam, given raining, and being late, given traffic jam are all depicted in this graph.  What's the probability of being late?  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex.png "ve ex")
->
 ><font color="DeepSkyBlue">[Answer]</font>  
+>
 
 <!--
 ### Addendum
