@@ -13,7 +13,13 @@ title: Variable Elimination In Bayesian Network
 >&#10112;<font color="Red">predictive</font> support(<font color="Red">top-down reasoning</font>) with the evidence nodes connected to node $X$, through its parent nodes, the same direction as predictive propagation.  
 >&#10113;<font color="Red">diagnostic</font> support(<font color="Red">bottom-up reasoning</font>), with vidence nodes connected to node $X$, through its children nodes, the same direction as <font color="Red">retrospective</font> propagation.  
 >
->In my Bayesian articles, I have guided you through both types of support by means of <font color="DeepSkyBlue">variable enumeration</font> over the factorized terms of full joint PDF(probability distribution function).  Most of the examples are all in small network, trivially, <font color="DeepSkyBlue">variable enumeration</font> is old, she will hold for complex model consisting of a lot random variables, resulting in high expenditure of computation efficiency.  
+>In my Bayesian articles, I have guided you through both types of support by means of <font color="DeepSkyBlue">variable enumeration</font> over the factorized terms of full joint PDF(probability distribution function).  Most of the examples are all in small network, trivially, <font color="DeepSkyBlue">variable enumeration</font> is old, she will hold for complex model consisting of a lot random variables, resulting in high expenditure of computation efficiency.  Therefore, another technique of <font color="Red">variable elimination</font> is introduced.   
+
+### <font color="RoyalBlue">Example</font>: Illustration Of <font color="Red">Variable Elimination</font>
+><font color="RoyalBlue">[Question]</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex.png "ve ex")
+>
+><font color="DeepSkyBlue">[Answer]</font>  
 
 <!--
 ### Addendum
