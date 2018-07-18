@@ -33,7 +33,7 @@ title: Variable Elimination In Bayesian Network
 >&#10112;by now, we <font color="OrangeRed">sum out</font> or <font color="OrangeRed">marginalize</font> $P(R,T)$ over the variable $R$ to get $P(T)$ that just operates on $T$.  That is what we have in the network, by <font color="OrangeRed">summing out</font> over all values of $R$, respectively for which $T=t$ and $T=f$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex-sum-out.png "sum out")
 >&#10113;next, we do a <font color="OrangeRed">join</font> over $T$ and $L$, by <font color="OrangeRed">combining</font> $P(T)$ and $P(L\vert T)$ to <font color="OrangeRed">get a new factor</font> of joint probability $P(T,L)$.  
->&#10114;now, we are down to a network with a single node, $T,L$ with the joint probability table.  By <font color="OrangeRed">summing out</font> $P(T,L)$ over $T$, finally we reach the single node $L$ with $P(L=t)$ and $P(L=f)$.  
+>&#10114;now, we are down to a network with a single node, $T,L$ with the joint probability table.  By <font color="OrangeRed">summing out</font> $P(T,L)$ over $T$ with respect for $L=t$ and $L=f$, finally we reach the single node $L$ with $P(L=t)$ and $P(L=f)$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex-final.png "final")
 
 <!--
