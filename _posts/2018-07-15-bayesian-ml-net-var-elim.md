@@ -59,13 +59,23 @@ title: Variable Elimination In Bayesian Network
 >$f_{4}(+z,U)$=$\sum_{w}f_{3}(+z,U,W)\cdot P(w)$  
 >
 >We are left with $f_{4}(+z,U)$ and $P(U)$, then:  
->$P(U\vert +z)$=$\frac {P(U\cap +z)}{P(+z)}$  
->, where $P(+z)$=$\sum_{u}f_{4}(+z,u)$ and $P(U\cap +z)$=$\sum_{u}f_{4}(+z,u)\cdot P(u)$.  
+>$P(U\vert +z)$=$\frac {P(U\cap +z)}{P(+z)}$, where <font color="DeepPink">$P(+z)$=$\sum_{u}f_{4}(+z,u)$</font> and <font color="DeepPink">$P(U\cap +z)$=$\sum_{u}f_{4}(+z,u)\cdot P(u)$</font>.  Be noted that this description won't be repeated in below sections.  
 >
->We can examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each's number of variables.  
+>We can examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each distinct generated factor's number of variables.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-order-xyvw.png "xyvw")
 >The maximum number in the new generated factor is 3, is such order the most optimal?  Let's continue to walk it through.  
 >
+><font color="DeepSkyBlue">[Order: $V$,$W$,$X$,$Y$]</font>  
+>&#10112;do the factor join over $V$ to eliminate $V$:  
+>$f_{1}(X,U,Y,W)$=$\sum_{v}P(X\vert U,V)\cdot P(Y\vert V,W)\cdot P(V)$  
+>&#10112;do the factor join over $W$ to eliminate $W$:  
+>$f_{2}(X,U,Y)$=$\sum_{w}f_{1}(X,U,Y,w)\cdot p(w)$  
+>&#10112;do the factor join over $X$ to eliminate $X$:  
+>$f_{3}(+z,U,Y)$=$\sum_{x}f_{2}(X,U,Y)\cdot P(+z\vert x,Y)$  
+>&#10112;do the factor join over $Y$ to eliminate $Y$:  
+>$f_{4}(+z,U)$=$\sum_{y}f_{3}(+z,U,y)$  
+>
+>We can examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each distinct generated factor's number of variables.  
 
 
 ### Addendum
