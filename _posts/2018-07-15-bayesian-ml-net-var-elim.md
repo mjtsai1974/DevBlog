@@ -112,6 +112,21 @@ title: Variable Elimination In Bayesian Network
 >We then examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each distinct generated factor's number of variables.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-order-wyvx.png "wyvx")
 >The maximum number in the new generated factor is 2, this elimination order is much betten than all previous orders.  Let's continue one more to see if we can find another better one.  
+>
+><font color="DeepSkyBlue">[Order: $W$,$Y$,$X$,$V$]</font>  
+>&#10112;do the factor join over $W$ to eliminate $W$:  
+>$f_{1}(Y,V)$=$\sum_{w}P(Y\vert V,w)\cdot P(w)$  
+>&#10113;do the factor join over $Y$ to eliminate $Y$:  
+>$f_{2}(+z,X,V)$=$\sum_{y}f_{1}(y,V)\cdot P(+z\vert X,y)$  
+>&#10114;do the factor join over $X$ to eliminate $X$:  
+>$f_{3}(+z,U,V)$=$\sum_{x}f_{2}(+z,X,V)\cdot P(x\vert U,V)$  
+>&#10115;do the factor join over $V$ to eliminate $V$:  
+>$f_{4}(+z,U)$=$\sum_{v}f_{3}(+z,U,V)\cdot P(v)$  
+>
+>You can follow <font color="DeepSkyBlue">[Order: $X$,$Y$,$V$,$W$]</font>'s approach to renomalize for the answer.  
+>
+>We then examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each distinct generated factor's number of variables.  
+
 
 ### Addendum
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
