@@ -76,7 +76,8 @@ title: Variable Elimination In Bayesian Network
 >$f_{4}(+z,U)$=$\sum_{y}f_{3}(+z,U,y)$  
 >
 >We can examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each distinct generated factor's number of variables.  
-
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-order-vwxy.png "vwxy")
+>The maximum number in the new generated factor is 4, this elimination order is worse than $X$,$Y$,$V$,$W$ in computation efficiency.  Let's continue to walk it through to see if we can find another better one.  
 
 ### Addendum
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
