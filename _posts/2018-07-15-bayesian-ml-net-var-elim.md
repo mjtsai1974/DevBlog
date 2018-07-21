@@ -75,10 +75,27 @@ title: Variable Elimination In Bayesian Network
 >&#10112;do the factor join over $Y$ to eliminate $Y$:  
 >$f_{4}(+z,U)$=$\sum_{y}f_{3}(+z,U,y)$  
 >
+>You can follow <font color="DeepSkyBlue">[Order: $X$,$Y$,$V$,$W$]</font>'s approach to renomalize for the answer.  
+>
 >We can examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each distinct generated factor's number of variables.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-order-vwxy.png "vwxy")
 >The maximum number in the new generated factor is 4, this elimination order is worse than $X$,$Y$,$V$,$W$ in computation efficiency.  Let's continue to walk it through to see if we can find another better one.  
+>
+><font color="DeepSkyBlue">[Order: $W$,$V$,$Y$,$X$]</font>  
+>&#10112;do the factor join over $W$ to eliminate $W$:  
+>$f_{1}(Y,V)$=$\sum_{w}P(Y\vert V,w)\cdot P(w)$  
+>&#10112;do the factor join over $V$ to eliminate $V$:  
+>$f_{2}(Y,X,U)$=$\sum_{v}f_{1}(Y,v)\cdot P(X\vert U,v)\cdot P(v)$  
+>&#10112;do the factor join over $Y$ to eliminate $Y$:  
+>$f_{3}(+z,X,U)$=$\sum_{y}f_{2}(y,X,U)\cdot P(+z\vert X,y)$  
+>&#10112;do the factor join over $X$ to eliminate $X$:  
+>$f_{4}(+z,U)$=$\sum_{x}f_{3}(+z,X,U)$  
+>
+>You can follow <font color="DeepSkyBlue">[Order: $X$,$Y$,$V$,$W$]</font>'s approach to renomalize for the answer.  
+>
+>We can examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each distinct generated factor's number of variables.  
 
+ 
 ### Addendum
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
 >&#10113;[Prof. Abbeel, steps through a few variable examples](https://www.youtube.com/watch?v=FDNB0A61PGE)  
