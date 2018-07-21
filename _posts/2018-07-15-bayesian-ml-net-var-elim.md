@@ -126,7 +126,8 @@ title: Variable Elimination In Bayesian Network
 >You can follow <font color="DeepSkyBlue">[Order: $X$,$Y$,$V$,$W$]</font>'s approach to renomalize for the answer.  
 >
 >We then examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each distinct generated factor's number of variables.  
-
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-order-wyxv.png "wyxv")
+>The maximum number in the new generated factor is 2, this elimination order is the same good as $W$,$Y$,$V$,$X$, much betten than all other orders.  There exists total $4\cdot 3\cdot 2\cdot 1$ combinations.  So far, we reduce the scale(width) to 2 variables in the new generated factor should be confident to stop, since there should exist no factor ocntaining only 1 variable in this case!!  
 
 ### Addendum
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
