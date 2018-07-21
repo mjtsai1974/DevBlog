@@ -46,9 +46,9 @@ title: Variable Elimination In Bayesian Network
 ><font color="RoyalBlue">[Question]</font> 
 >The given BN is depicted below, what's $P(U\vert +z)$?  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-order-model.png "model")
->We are initialized with these factors, they are $P(U)$,$P(V)$,$P(W)$,$P(X\vert U,V)$,$P(Y\vert V,W)$,$Z\vert X,Y$.  Asking for $P(U\vert +z)$ is to eliminate the nodes of $X$,$Y$,$V$,$W$ in the network.  
+>We are initialized with these factors, they are $P(U)$,$P(V)$,$P(W)$,$P(X\vert U,V)$,$P(Y\vert V,W)$,$P(Z\vert X,Y)$.  Asking for <font color="OrangeRed">$P(U\vert +z)$</font> is <font color="OrangeRed">to eliminate the nodes of $X$,$Y$,$V$,$W$</font> in the network.  
 >
-><font color="DeepSkyBlue">Order: $X$,$Y$,$V$,$W$</font>  
+><font color="DeepSkyBlue">[Order: $X$,$Y$,$V$,$W$]</font>  
 >&#10112;do the factor join over $X$ to eliminate $X$:  
 >$f_{1}(+z,Y,U,V)$=$\sum_{x}P(+z\vert x,Y)\cdot P(x\vert U,V)$  
 >&#10113;do the factor join over $Y$ to eliminate $Y$:  
@@ -62,7 +62,11 @@ title: Variable Elimination In Bayesian Network
 >$P(U\vert +z)$=$\frac {P(U\cap +z)}{P(+z)}$  
 >, where $P(+z)$=$\sum_{u}f_{4}(+z,u)$ and $P(U\cap +z)$=$\sum_{u}f_{4}(+z,u)\cdot P(u)$.  
 >
+>We can examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each's number of variables.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-order-xyvw.png "xyvw")
+>The maximum number in the new generated factor is 3, is such order the most optimal?  Let's continue to walk it through.  
 >
+
 
 ### Addendum
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
