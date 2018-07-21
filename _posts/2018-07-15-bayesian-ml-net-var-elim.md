@@ -17,13 +17,14 @@ title: Variable Elimination In Bayesian Network
 
 ### <font color="RoyalBlue">Example</font>: Illustration Of <font color="Red">Variable Elimination</font>
 >This example is simplified from [variable elimination, Peter Norvig](https://www.youtube.com/watch?v=qyXspkUOhGc&list=PLBF898A2F63224F39&t=0s&index=14).  
+>
 ><font color="RoyalBlue">[Question]</font>  
 >Suppose you are using a <font color="Red">Bayesian network</font> to infer the relationship in between raining, traffic and late(to office).  The probability of raining and the conditional probability of traffic jam, given raining, and being late, given traffic jam are all depicted in this graph.  What's the probability of being late?  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex.png "ve ex")
 ><font color="DeepSkyBlue">[Answer]</font>  
 >This is to ask for $P(L=t)$.  The full joint PDF would be $P(R,T,L)$=$P(L\vert T)\cdot P(T\vert R)\cdot P(R)$.  
 >
->By the old <font color="DeepSkyBlue">variable enumeration</font>, $P(L=t)$=$\sum_{R}\sum_{T}P(R,T,L)$, the nested summation over $T$ would be proceeded inside the outer summation over $R$.  Here, we'd like to further reduce the computation complexity by means of <font color="Red">variable elimination</font>.  
+>By the old <font color="DeepSkyBlue">variable enumeration</font>, $P(L=t)$=$\sum_{R}\sum_{T}P(R,T,L=t)$, the nested summation over $T$ would be proceeded inside the outer summation over $R$.  Here, we'd like to further reduce the computation complexity by means of <font color="Red">variable elimination</font>.  
 >[1]The first would be to <font color="Red">join factors</font>:  
 >&#10112;a <font color="OrangeRed">factor</font> is one of these tables of probability, $P(R)$, or the conditional probability, $P(T\vert R)$, $P(L\vert T)$.  By usual, they are multi-dimensional matrix.  
 >&#10113;what we do is to <font color="OrangeRed">choose 2 or more</font> of these factors.  In this case, we choose $P(R)$ and $P(T\vert R)$, to <font color="OrangeRed">combine</font> them together to <font color="OrangeRed">form a new factor</font> which represents the joint probability of all variables, $R$ and $T$ in that new factor $P(R,T)$.  
@@ -38,6 +39,30 @@ title: Variable Elimination In Bayesian Network
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-ezex-final.png "final")
 >
 >It is <font color="DeepPink">a continued process of joining together factors to form a maybe larger factor and then eliminating variables by summing out(marginalization)</font>.  
+
+### <font color="DeepSkyBlue">Optimal</font> <font color="Red">Order</font> For <font color="Red">Variable Elimination</font> Is <font color="DeepSkyBlue">NP-Hard</font>
+>In this paragrapg, I'd like to illustrate the execution of different elimination order would probabilistically result in computational side effect.  I'm going to use an example from [Prof. Abbeel, steps through a few variable examples](https://www.youtube.com/watch?v=FDNB0A61PGE), but with my own viewpoint.  
+>
+><font color="RoyalBlue">[Question]</font> 
+>The given BN is depicted below, what's $P(U\vert +z)$?  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-order-model.png "model")
+>We are initialized with these factors, they are $P(U)$,$P(V)$,$P(W)$,$P(X\vert U,V)$,$P(Y\vert V,W)$,$Z\vert X,Y$.  Asking for $P(U\vert +z)$ is to eliminate the nodes of $X$,$Y$,$V$,$W$ in the network.  
+>
+><font color="DeepSkyBlue">Order: $X$,$Y$,$V$,$W$</font>  
+>&#10112;do the factor join over $X$ to eliminate $X$:  
+>$f_{1}(+z,Y,U,V)$=$\sum_{x}P(+z\vert x,Y)\cdot P(x\vert U,V)$  
+>&#10113;do the factor join over $Y$ to eliminate $Y$:  
+>$f_{2}(+z,U,V,W)$=$\sum_{y}f_{1}(+z,y,U,V)\cdot P(y\vert V,W)$  
+>&#10114;do the factor join over $V$ to eliminate $V$:  
+>$f_{3}(+z,U,W)$=$\sum_{v}f_{2}(+z,U,V,W)\cdot P(v)$  
+>&#10115;do the factor join over $W$ to eliminate $W$:  
+>$f_{4}(+z,U)$=$\sum_{w}f_{3}(+z,U,W)\cdot P(w)$  
+>
+>We are left with $f_{4}(+z,U)$ and $P(U)$, then:  
+>$P(U\vert +z)$=$\frac {P(U\cap +z)}{P(+z)}$  
+>, where $P(+z)$=$\sum_{u}f_{4}(+z,u)$ and $P(U\cap +z)$=$\sum_{u}f_{4}(+z,u)\cdot P(u)$.  
+>
+>
 
 ### Addendum
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
