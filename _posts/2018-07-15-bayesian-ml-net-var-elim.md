@@ -125,7 +125,8 @@ title: Variable Elimination In Bayesian Network
 >So far, we reduce the scale(width) to 2 variables in the new generated factor should be confident to stop, since there should exist no factor ocntaining only 1 variable in this case!!  
 >
 ><font color="#C20000">[Conclusion]</font>  
->If we <font color="DeepPink">make the good choice of the order in which we apply these operations</font>, then <font color="DeepPink">variable elimination can be much more efficient than just doing the whole enumeration</font>!!  
+>&#10112;if we <font color="DeepPink">make the good choice of the order in which we apply these operations</font>, then <font color="DeepPink">variable elimination can be much more efficient than just doing the whole enumeration</font>!!  
+>&#10113;it's <font color="DeepPink">an NP-hard issue to find an optimal order for variable elimination</font>.  
 
 ### Addendum
 >&#10112;[Prof. Abbeel, steps through a few variable examples](https://www.youtube.com/watch?v=FDNB0A61PGE)  
