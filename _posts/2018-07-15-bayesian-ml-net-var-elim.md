@@ -68,18 +68,18 @@ title: Variable Elimination In Bayesian Network
 ><font color="DeepSkyBlue">[Order: $V$,$W$,$X$,$Y$]</font>  
 >&#10112;do the factor join over $V$ to eliminate $V$:  
 >$f_{1}(X,U,Y,W)$=$\sum_{v}P(X\vert U,V)\cdot P(Y\vert V,W)\cdot P(V)$  
->&#10112;do the factor join over $W$ to eliminate $W$:  
+>&#10113;do the factor join over $W$ to eliminate $W$:  
 >$f_{2}(X,U,Y)$=$\sum_{w}f_{1}(X,U,Y,w)\cdot p(w)$  
->&#10112;do the factor join over $X$ to eliminate $X$:  
+>&#10114;do the factor join over $X$ to eliminate $X$:  
 >$f_{3}(+z,U,Y)$=$\sum_{x}f_{2}(X,U,Y)\cdot P(+z\vert x,Y)$  
->&#10112;do the factor join over $Y$ to eliminate $Y$:  
+>&#10115;do the factor join over $Y$ to eliminate $Y$:  
 >$f_{4}(+z,U)$=$\sum_{y}f_{3}(+z,U,y)$  
->
->You can follow <font color="DeepSkyBlue">[Order: $X$,$Y$,$V$,$W$]</font>'s approach to renomalize for the answer.  
->
->We then examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each distinct generated factor's number of variables.  
+>&#10116;you can follow <font color="DeepSkyBlue">[Order: $X$,$Y$,$V$,$W$]</font>'s approach to renomalize for the answer.  
+>&#10117;we then examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each distinct generated factor's number of variables.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-order-vwxy.png "vwxy")
 >The maximum number in the new generated factor is 4, this elimination order is worse than $X$,$Y$,$V$,$W$ in computation efficiency.  Let's continue to walk it through to see if we can find another better one.  
+>
+>Here is another finding that <font color="#C20000">the elimination of a node having more multiple children, then these children and their parents(if any), must be taken into computation cost</font>.  
 >
 ><font color="DeepSkyBlue">[Order: $W$,$V$,$Y$,$X$]</font>  
 >&#10112;do the factor join over $W$ to eliminate $W$:  
