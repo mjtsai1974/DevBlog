@@ -51,6 +51,7 @@ title: Variable Elimination In Bayesian Network
 ><font color="DeepSkyBlue">[Order: $X$,$Y$,$V$,$W$]</font>  
 >&#10112;do the factor join over $X$ to eliminate $X$:  
 >$f_{1}(+z,Y,U,V)$=$\sum_{x}P(+z\vert x,Y)\cdot P(x\vert U,V)$  
+>Here is a finding that <font color="#C20000">the elimination of the node with multiple parents would generate a new factor with the number of extra added variables eqivalent to the number of its parents</font>.  
 >&#10113;do the factor join over $Y$ to eliminate $Y$:  
 >$f_{2}(+z,U,V,W)$=$\sum_{y}f_{1}(+z,y,U,V)\cdot P(y\vert V,W)$  
 >&#10114;do the factor join over $V$ to eliminate $V$:  
@@ -63,11 +64,10 @@ title: Variable Elimination In Bayesian Network
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-order-xyvw.png "xyvw")
 >The maximum number in the new generated factor is 3, is such order the most optimal?  Let's continue to walk it through.  
 >
->Here is a finding that <font color="#C20000">the elimination of the node with multiple parents would generate a new factor with the number of extra added variables eqivalent to the number of its parents</font>.  
->
 ><font color="DeepSkyBlue">[Order: $V$,$W$,$X$,$Y$]</font>  
 >&#10112;do the factor join over $V$ to eliminate $V$:  
 >$f_{1}(X,U,Y,W)$=$\sum_{v}P(X\vert U,V)\cdot P(Y\vert V,W)\cdot P(V)$  
+>Here is another finding that <font color="#C20000">the elimination of a node having more multiple children, then these children and their parents(if any), must be taken into computation cost</font>.  
 >&#10113;do the factor join over $W$ to eliminate $W$:  
 >$f_{2}(X,U,Y)$=$\sum_{w}f_{1}(X,U,Y,w)\cdot p(w)$  
 >&#10114;do the factor join over $X$ to eliminate $X$:  
@@ -78,8 +78,6 @@ title: Variable Elimination In Bayesian Network
 >&#10117;we then examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each distinct generated factor's number of variables.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-order-vwxy.png "vwxy")
 >The maximum number in the new generated factor is 4, this elimination order is worse than $X$,$Y$,$V$,$W$ in computation efficiency.  Let's continue to walk it through to see if we can find another better one.  
->
->Here is another finding that <font color="#C20000">the elimination of a node having more multiple children, then these children and their parents(if any), must be taken into computation cost</font>.  
 >
 ><font color="DeepSkyBlue">[Order: $W$,$V$,$Y$,$X$]</font>  
 >&#10112;do the factor join over $W$ to eliminate $W$:  
