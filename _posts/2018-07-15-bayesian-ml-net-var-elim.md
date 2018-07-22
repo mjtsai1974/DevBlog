@@ -123,10 +123,12 @@ title: Variable Elimination In Bayesian Network
 >The maximum number in the new generated factor is 2, this elimination order is the same good as $W$,$Y$,$V$,$X$, much betten than all other orders.  There exists total $4\cdot 3\cdot 2\cdot 1$ combinations.  So far, we reduce the scale(width) to 2 variables in the new generated factor should be confident to stop, since there should exist no factor ocntaining only 1 variable in this case!!  
 
 ### Addendum
->&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
->&#10113;[Prof. Abbeel, steps through a few variable examples](https://www.youtube.com/watch?v=FDNB0A61PGE)  
->&#10114;[Variable elimination, Peter Norvig](https://www.youtube.com/watch?v=qyXspkUOhGc&list=PLBF898A2F63224F39&t=0s&index=14)  
->&#10115;[Bayesian Networks, Ben-Gal Irad, in Ruggeri F., Faltin F. & Kenett R., Encyclopedia of Statistics in Quality & Reliability, Wiley & Sons (2007).](http://www.eng.tau.ac.il/~bengal/BN.pdf)  
+>&#10112;[Prof. Abbeel, steps through a few variable examples](https://www.youtube.com/watch?v=FDNB0A61PGE)  
+>&#10113;[Variable elimination, Peter Norvig](https://www.youtube.com/watch?v=qyXspkUOhGc&list=PLBF898A2F63224F39&t=0s&index=14)  
+>&#10114;[Bayesian Networks, Ben-Gal Irad, in Ruggeri F., Faltin F. & Kenett R., Encyclopedia of Statistics in Quality & Reliability, Wiley & Sons (2007).](http://www.eng.tau.ac.il/~bengal/BN.pdf)  
+
+<!-- [Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  -->
+
 
 <!-- Γ -->
 <!-- \Omega -->
