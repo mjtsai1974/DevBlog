@@ -51,7 +51,7 @@ title: Variable Elimination In Bayesian Network
 ><font color="DeepSkyBlue">[Order: $X$,$Y$,$V$,$W$]</font>  
 >&#10112;do the factor join over $X$ to eliminate $X$:  
 >$f_{1}(+z,Y,U,V)$=$\sum_{x}P(+z\vert x,Y)\cdot P(x\vert U,V)$  
->There is a finding that <font color="#C20000">the elimination of the node with multiple parents would generate a new factor with the number of extra added variables eqivalent to the number of its parents</font>.  
+>There is a finding that <font color="DeepPink">the elimination of the node with multiple parents would generate a new factor with the number of extra added variables eqivalent to the number of its parents</font>.  
 >&#10113;do the factor join over $Y$ to eliminate $Y$:  
 >$f_{2}(+z,U,V,W)$=$\sum_{y}f_{1}(+z,y,U,V)\cdot P(y\vert V,W)$  
 >&#10114;do the factor join over $V$ to eliminate $V$:  
@@ -67,7 +67,7 @@ title: Variable Elimination In Bayesian Network
 ><font color="DeepSkyBlue">[Order: $V$,$W$,$X$,$Y$]</font>  
 >&#10112;do the factor join over $V$ to eliminate $V$:  
 >$f_{1}(X,U,Y,W)$=$\sum_{v}P(X\vert U,V)\cdot P(Y\vert V,W)\cdot P(V)$  
->There is another finding that <font color="#C20000">the elimination of a node having more multiple children, then these children and their parents(if any), must be taken into computation cost</font>.  
+>There is another finding that <font color="DeepPink">the elimination of a node having more multiple children, then these children and their parents(if any), must be taken into computation cost</font>.  
 >&#10113;do the factor join over $W$ to eliminate $W$:  
 >$f_{2}(X,U,Y)$=$\sum_{w}f_{1}(X,U,Y,w)\cdot p(w)$  
 >&#10114;do the factor join over $X$ to eliminate $X$:  
@@ -84,7 +84,7 @@ title: Variable Elimination In Bayesian Network
 >$f_{1}(Y,V)$=$\sum_{w}P(Y\vert V,w)\cdot P(w)$  
 >&#10113;do the factor join over $V$ to eliminate $V$:  
 >$f_{2}(Y,X,U)$=$\sum_{v}f_{1}(Y,v)\cdot P(X\vert U,v)\cdot P(v)$  
->This is the same finding that <font color="#C20000">the elimination of a node having more multiple children, then these children and their parents(if any), must be taken into computation cost</font>.  
+>This is the same finding that <font color="DeepPink">the elimination of a node having more multiple children, then these children and their parents(if any), must be taken into computation cost</font>.  
 >&#10114;do the factor join over $Y$ to eliminate $Y$:  
 >$f_{3}(+z,X,U)$=$\sum_{y}f_{2}(y,X,U)\cdot P(+z\vert X,y)$  
 >&#10115;do the factor join over $X$ to eliminate $X$:  
@@ -120,7 +120,12 @@ title: Variable Elimination In Bayesian Network
 >&#10116;you can follow <font color="DeepSkyBlue">[Order: $X$,$Y$,$V$,$W$]</font>'s approach to renomalize for the answer.  
 >&#10117;we then examine each new generated facor, inspect its <font color="DeepSkyBlue">scale</font>, the <font color="DeepSkyBlue">width</font>.  Below exhibits each distinct generated factor's number of variables.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-15-bayesian-ml-net-var-elim-order-wyxv.png "wyxv")
->The maximum number in the new generated factor is 2, this elimination order is the same good as $W$,$Y$,$V$,$X$, much betten than all other orders.  There exists total $4\cdot 3\cdot 2\cdot 1$ combinations.  So far, we reduce the scale(width) to 2 variables in the new generated factor should be confident to stop, since there should exist no factor ocntaining only 1 variable in this case!!  
+>The maximum number in the new generated factor is 2, this elimination order is the same good as $W$,$Y$,$V$,$X$, much betten than all other orders.  There exists total $4\cdot 3\cdot 2\cdot 1$ combinations.  
+>
+>So far, we reduce the scale(width) to 2 variables in the new generated factor should be confident to stop, since there should exist no factor ocntaining only 1 variable in this case!!  
+>
+><font color="#C20000">[Conclusion]</font>  
+>If we <font color="DeepPink">make the good choice of the order in which we apply these operations</font>, then <font color="DeepPink">variable elimination can be much more efficient than just doing the whole enumeration</font>!!  
 
 ### Addendum
 >&#10112;[Prof. Abbeel, steps through a few variable examples](https://www.youtube.com/watch?v=FDNB0A61PGE)  
