@@ -5,7 +5,7 @@ title: Variable Elimination In Bayesian Network
 
 ## Prologue To Variable Elimination In <font color="Red">Bayesian Network</font>
 <p class="message">
-<font color="Red">Inference</font> via <font color="Red">Bayesian Network</font> could be achieved by probabilistic marginalization, i.e. summing out over <font color="DeepSkyBlue">irrelevant</font> or <font color="DeepSkyBlue">hidden</font> variables.  
+<font color="Red">Inference</font> via <font color="Red">Bayesian network</font> could be achieved by probabilistic marginalization, i.e. summing out over <font color="DeepSkyBlue">irrelevant</font> or <font color="DeepSkyBlue">hidden</font> variables.  
 </p>
 
 ### <font color="Red">Inference</font> Via <font color="Red">Bayesian Network</font>
