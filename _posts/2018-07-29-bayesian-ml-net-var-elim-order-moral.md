@@ -6,8 +6,29 @@ title: Variable Elimination Order And Moral Graph
 ## Prologue To <font color="Red">Variable Elimination Order</font> And <font color="Red">Moral Graph</font>
 <p class="message">
 The <font color="Red">Bayesian network</font> is a DAG(directed acyclic graph), while the <font color="Red">moral graph</font> is an <font color="DeepSkyBlue">undirected</font> version, also known as the <font color="Red">Markov network</font>.  
-The <font color="Red">moral graph</font> could facilitate in the explanation of the <font color="DeepSkyBlue">factorization</font> in <font color="Red">variable elimination</font> process and its <font color="Red">order</font>.  
+The <font color="Red">moral graph</font> could facilitate the explanation of the <font color="DeepSkyBlue">factorization</font> in <font color="Red">variable elimination</font> process and its <font color="Red">order</font>.  
 </p>
+
+<!--
+### <font color="Red">Moral Graph</font> Of A <font color="Red">Bayesian Network</font>
+-->
+
+<!--
+### <font color="Red">I-Map</font>(Independence Map)
+p.5@http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf -->
+
+<!--
+### Factorization In Markov Network
+
+potential
+p.14@https://www.it.uu.se/edu/course/homepage/ai/ht11/Lecture%20Notes%20BN.pdf
+
+the probability of a variable conditioned on its Markov
+blanket depends only on potentials involving that node
+p.31@http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf 
+
+any BN conditioned on evidence can be regarded as a Markov network
+p.6@https://cedar.buffalo.edu/~srihari/CSE574/Chap8/8.7-FromBNtoMN.pdf -->
 
 ### Addendum
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
