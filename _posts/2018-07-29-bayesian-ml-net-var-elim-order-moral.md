@@ -9,9 +9,17 @@ The <font color="Red">Bayesian network</font> is a DAG(directed acyclic graph), 
 The <font color="Red">moral graph</font> could facilitate the explanation of the <font color="DeepSkyBlue">factorization</font> in <font color="Red">variable elimination</font> process and its <font color="Red">order</font>.  
 </p>
 
-<!--
 ### <font color="Red">Moral Graph</font> Of A <font color="Red">Bayesian Network</font>
--->
+>Here is the moralization algorithm:  
+>&#10112;<font color="DeepSkyBlue">drop the connectivity</font> in the original <font color="Red">Bayesian network</font>, that is to remove the arrow from the arc.  
+>&#10113;<font color="DeepSkyBlue">connect the parents that shares a common child</font>, that is to <font color="DeepSkyBlue">marry</font> them.  
+>
+>The resulting <font color="DeepSkyBlue">undirected</font> graph is the <font color="Red">moral graph</font> of a <font color="Red">Bayesian network</font>.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-mn.png "moralize")
+><font color="#C20000">This undirected graph is also named Markov network.</font>  
+>
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-factors.png "factor")
+><font color="#C20000">The Markov network encodes the CPD in the Bayesian network as a factor of all related variables, like $P(E\vert B,C)$ is expressed in a factor form, $f(B,C,E)$, related variables in each distinct CDP are now be connected by an edge.</font>  
 
 <!--
 ### <font color="Red">I-Map</font>(Independence Map)
