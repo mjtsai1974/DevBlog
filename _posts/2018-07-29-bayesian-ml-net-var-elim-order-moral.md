@@ -19,7 +19,7 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 ><font color="#C20000">This undirected graph is also named Markov network.</font>  
 >
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-factors.png "factor")
-><font color="#C20000">The Markov network encodes the CPD in the Bayesian network as a factor of all related variables</font>, like $P(E\vert B,C)$ is expressed in a factor form, $f(B,C,E)$, related variables in each distinct CDP are now be connected by an edge.  
+>The Markov network encodes the CPD in the Bayesian network as a factor of all related variables, like $P(E\vert B,C)$ is expressed in a factor form, $f(B,C,E)$, related variables in each distinct CDP are now be connected by an edge.  
 >
 ><font color="RoyalBlue">[Question]</font>  
 >Why we turn the CDP in the <font color="Red">Bayesian network</font> into the factorized form in the <font color="Red">Markov network</font>?  
