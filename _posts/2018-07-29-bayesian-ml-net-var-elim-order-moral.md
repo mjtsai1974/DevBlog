@@ -10,7 +10,7 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 </p>
 
 ### <font color="Red">Moral Graph</font> Of A <font color="Red">Bayesian Network</font>
->Here is the moralization algorithm:  
+><font color="OrangeRed">[The moralization algorithm]</font>  
 >&#10112;<font color="DeepSkyBlue">drop the connectivity</font> in the original <font color="Red">Bayesian network</font>, that is to remove the arrow from the arc.  
 >&#10113;<font color="DeepSkyBlue">connect the parents that shares a common child</font>, that is to <font color="DeepSkyBlue">marry</font> them.  
 >
@@ -20,6 +20,11 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-factors.png "factor")
 ><font color="#C20000">The Markov network encodes the CPD in the Bayesian network as a factor of all related variables, like $P(E\vert B,C)$ is expressed in a factor form, $f(B,C,E)$, related variables in each distinct CDP are now be connected by an edge.</font>  
+>
+><font color="RoyalBlue">[Question]</font>  
+>Why we turn the CDP in the <font color="Red">Bayesian network</font> into the factorized form in the <font color="Red">Markov network</font>?  
+><font color="DeepSkyBlue">[Answer]</font>  
+>Because the moral graph is <font color="DeepSkyBlue">undirected</font>, it is <font color="RosyBrown">not</font> in <font color="RosyBrown">conditionally distributed</font>, rather than, in <font color="DeepPink">joint distributed</font>!!  
 
 <!--
 ### <font color="Red">I-Map</font>(Independence Map)
