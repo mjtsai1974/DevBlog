@@ -26,9 +26,27 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 ><font color="DeepSkyBlue">[Answer]</font>  
 >Because the moral graph is <font color="DeepSkyBlue">undirected</font>, it is <font color="RosyBrown">not</font> in <font color="RosyBrown">conditionally distributed</font>, rather than, in <font color="DeepPink">joint distributed</font>!!  
 
-<!--
-### <font color="Red">I-Map</font>(Independence Map)
-p.5@http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf -->
+### <font color="Red">I-Map</font>(<font color="Red">Independence Map</font>)
+><font color="DeepSkyBlue">[Definition]</font>  
+>Given below 2 prerequisites:  
+>&#10112;let $I(G)$ be the set of all conditional independencies implied by the DAG, said $G$.  
+>&#10113;let $I(P)$ be the set of all conditional independencies that holds for or belongs to the joint probability distributiuon, said $P$.  
+>
+>We define <font color="#C20000">the DAG $G$ is an I-Map of a distribution $P$, if $I(G)\subseteq I(P)$</font>.  
+>
+><font color="DeepSkyBlue">[Full connected DAG]</font>  
+>A fully connected DAG $G$ is an I-Map for any probability distribution, since:  
+>$I(G)$=$\varnothing\subseteq I(P)$ for all $P$  
+>
+><font color="DeepSkyBlue">[Minimal I-Map]</font>  
+><font color="DeepPink">$G$ is a minimal I-Map for P, if any removal of a single edge makes it not an I-Map.</font>  
+>&#10112;a joint probability distributrion might have multiple minimal I-Maps.  
+>&#10113;each corresponds to a specific node-ordering.  
+>
+><font color="DeepSkyBlue">[Perfect map]</font>  
+>For <font color="DeepSkyBlue">$I(G)$=$I(P)$</font>, we say $G$ is a <font color="Red">perfect map</font> for $P$.  
+
+<!-- p.5@http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf -->
 
 <!--
 ### Factorization In Markov Network
@@ -65,6 +83,9 @@ p.6@https://cedar.buffalo.edu/~srihari/CSE574/Chap8/8.7-FromBNtoMN.pdf -->
 <!-- \int_{0}^{a}\lambda\cdot e^{-\lambda\cdot t}\operatorname dt -->
 <!-- \Leftrightarrow -->
 <!-- \prod_{v\in V} -->
+<!-- \subset -->
+<!-- \subseteq -->
+<!-- \varnothing -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus, mathematic expression</font> -->
@@ -97,6 +118,11 @@ p.6@https://cedar.buffalo.edu/~srihari/CSE574/Chap8/8.7-FromBNtoMN.pdf -->
 [1]Given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?</font>  
+-->
+
+<!--
+><font color="DeepSkyBlue">[Notes]</font>
+><font color="OrangeRed">Why at this moment, the Poisson and exponential probability come out with different result?</font>  
 -->
 
 <!-- https://www.medcalc.org/manual/gamma_distribution_functions.php -->
