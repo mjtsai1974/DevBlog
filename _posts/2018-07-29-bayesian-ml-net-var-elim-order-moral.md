@@ -39,7 +39,7 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >$I(G)$=$\varnothing\subseteq I(P)$ for all $P$  
 >
 ><font color="DeepSkyBlue">[Minimal I-Map]</font>  
-><font color="DeepPink">$G$ is a minimal I-Map for P, if any removal of a single edge makes it not an I-Map.</font>  
+>$G$ is a minimal I-Map for P, if any removal of a single edge makes it not an I-Map.  
 >&#10112;a joint probability distributrion might have multiple minimal I-Maps.  
 >&#10113;each corresponds to a specific node-ordering.  
 >
