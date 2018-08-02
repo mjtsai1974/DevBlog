@@ -48,11 +48,17 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 
 <!-- p.5@http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf -->
 
+### Concept Of <font color="Red">Potentials</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">What is a potential?</font>  
+>A <font color="Red">potential</font> $\phi_{\chi}$ over a set of random variables $\chi$ is a function that maps each combination of configurations to a <font color="DeepSkyBlue">non-negative real number</font>.  
+>
+>The <font color="DeepSkyBlue">conditional</font> probability distribution, <font color="DeepSkyBlue">joint</font> probability distribution are all the special cases of <font color="Red">potential</font>.  The domain of a <font color="Red">potential</font> $\chi$ is denoted as:  
+>$dom(\phi_{\chi})$=$\chi$  
+>
+
 <!--
 ### Factorization In Markov Network
-
-potential
-p.14@https://www.it.uu.se/edu/course/homepage/ai/ht11/Lecture%20Notes%20BN.pdf
 
 the probability of a variable conditioned on its Markov
 blanket depends only on potentials involving that node
