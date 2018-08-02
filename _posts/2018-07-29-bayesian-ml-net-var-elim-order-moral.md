@@ -56,6 +56,18 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >The <font color="DeepSkyBlue">conditional</font> probability distribution, <font color="DeepSkyBlue">joint</font> probability distribution are all the special cases of <font color="Red">potential</font>.  The domain of a <font color="Red">potential</font> $\chi$ is denoted as:  
 >$dom(\phi_{\chi})$=$\chi$  
 >
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Moralizing and domain graph</font>  
+>The <font color="Red">domain graph</font> is also known as <font color="Red">moral graph</font>.  
+>
+
+<!-- 
+https://pdfs.semanticscholar.org/presentation/22b4/97a5431e961792e5c46d6348e92b362d378b.pdf  
+
+Explain domain graph.
+
+Extend from 2018-07-29-bayesian-ml-net-var-elim-order-moral-factors.png, BN->MN, illustrate CPD with potentials and domain operator.
+-->
 
 <!--
 ### Factorization In Markov Network
