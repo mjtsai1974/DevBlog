@@ -62,6 +62,11 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >&#10112;the <font color="Red">domain graph</font> for $\phi$ is the <font color="DeepSkyBlue">undirected graph</font> with random variables $X_{1}$,...,$X_{m}$ as nodes and <font color="DeepPink">link exists between node pairs belonging to the same domain</font>.  
 >&#10113;it is also known as <font color="Red">moral graph</font>.  
 >
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Simple illustration</font>  
+>Given that $\phi$=$\\{\phi_{1},...,\phi_{5}\\}$ is a set of <font color="Red">potentials</font> over $\\{X_{1},...,X_{5}\\}$, below graph exhibits the <font color="Red">potential</font> with respect to its <font color="Red">domain</font>:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-potential.png "potential")
+>, where $\phi_{1}$=$P(X_{1})$,$\phi_{2}$=$P(X_{2}\vert X_{1})$,$\phi_{3}$=$P(X_{3}\vert X_{1})$,$\phi_{4}$=$P(X_{4}\vert X_{2},X_{3})$,$\phi_{5}$=$P(X_{5}\vert X_{4})$.  
 
 <!-- 
 https://pdfs.semanticscholar.org/presentation/22b4/97a5431e961792e5c46d6348e92b362d378b.pdf  
