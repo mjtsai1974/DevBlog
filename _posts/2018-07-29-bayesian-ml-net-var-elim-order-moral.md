@@ -58,7 +58,7 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Moralizing and domain graph</font>  
->Let $\phi$=$\{\phi_{1},\phi_{2},...,\phi_{n}\}$ to be the <font color="Red">potentials</font> over a set of random variables, $\chi$=$\{X_{1},...,X_{m}\}$, and with its domain distributed as $dim(\phi_{i})$=$D_{i}$.  
+>Let $\phi$=$\\{\phi_{1},\phi_{2},...,\phi_{n}\\}$ to be the <font color="Red">potentials</font> over a set of random variables, $\chi$=$\\{X_{1},...,X_{m}\\}$, and with its domain distributed as $dim(\phi_{i})$=$D_{i}$.  
 >&#10112;the <font color="Red">domain graph</font> for $\phi$ is the <font color="DeepSkyBlue">undirected graph</font> with random variables $X_{1}$,...,$X_{m}$ as nodes and <font color="DeepPink">link exists between node pairs belonging to the same domain</font>.  
 >&#10113;it is also known as <font color="Red">moral graph</font>.  
 >
