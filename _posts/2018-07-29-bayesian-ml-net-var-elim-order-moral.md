@@ -29,8 +29,8 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 ### <font color="Red">I-Map</font>(<font color="Red">Independence Map</font>)
 ><font color="DeepSkyBlue">[Definition]</font>  
 >Given below 2 prerequisites:  
->&#10112;let $I(G)$ be the set of all conditional independencies implied by the DAG, said $G$.  
->&#10113;let $I(P)$ be the set of all conditional independencies that holds for or belongs to the joint probability distributiuon, said $P$.  
+>&#10112;let $I(G)$ be the set of all conditional independences implied by the DAG, said $G$.  
+>&#10113;let $I(P)$ be the set of all conditional independences that holds for or belongs to the joint probability distributiuon, said $P$.  
 >
 >We define <font color="#C20000">the DAG $G$ is an I-Map of a distribution $P$, if $I(G)\subseteq I(P)$</font>.  
 >
@@ -58,7 +58,9 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Moralizing and domain graph</font>  
->The <font color="Red">domain graph</font> is also known as <font color="Red">moral graph</font>.  
+>Let $\phi$=$\{\phi_{1},\phi_{2},...,\phi_{n}\}$ to be the <font color="Red">potentials</font> over a set of random variables, $\chi$=$\{X_{1},...,X_{m}\}$, and with its domain distributed as $dim(\phi_{i})$=$D_{i}$.  
+>&#10112;the <font color="Red">domain graph</font> for $\phi$ is the <font color="DeepSkyBlue">undirected graph</font> with random variables $X_{1}$,...,$X_{m}$ as nodes and <font color="DeepPink">link exists between node pairs belonging to the same domain</font>.  
+>&#10113;it is also known as <font color="Red">moral graph</font>.  
 >
 
 <!-- 
