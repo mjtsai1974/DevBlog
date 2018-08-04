@@ -72,7 +72,7 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 ><font color="OrangeRed">The fill-ins</font>  
 >In <font color="DeepPink">variable elimination</font> process, <font color="DeepPink">the removal of one variable would possibly generate a new potential over a domain that didn't exist in the original domain graph, such new potential is the fill-in</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-fill-in.png "fill-in")
->
+>The <font color="DeepSkyBlue">goal</font> of the most optimal <font color="Red">variable elimination</font> sequence is <font color="#C20000">to introduce no extra fill-ins</font>.  
 
 <!-- 
 https://pdfs.semanticscholar.org/presentation/22b4/97a5431e961792e5c46d6348e92b362d378b.pdf  
