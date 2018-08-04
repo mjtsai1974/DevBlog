@@ -45,8 +45,8 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >
 ><font color="DeepSkyBlue">[Perfect map]</font>  
 >For <font color="DeepSkyBlue">$I(G)$=$I(P)$</font>, we say $G$ is a <font color="Red">perfect map</font> for $P$.  
-
-<!-- p.5@http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf -->
+>
+>This section could be found at [Probabilistic graphical models, David Sontag, New York University, Lecture 2, February 2, 2012, p.5](http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf)  
 
 ### Concept Of <font color="Red">Potentials</font>
 ><font color="DeepSkyBlue">[1]</font>
@@ -63,10 +63,16 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >&#10113;it is also known as <font color="Red">moral graph</font>.  
 >
 ><font color="DeepSkyBlue">[3]</font>
-><font color="OrangeRed">Simple illustration</font>  
+><font color="OrangeRed">Potential and its domain </font>  
 >Given that $\phi$=$\\{\phi_{1},...,\phi_{5}\\}$ is a set of <font color="Red">potentials</font> over $\\{X_{1},...,X_{5}\\}$, below graph exhibits the <font color="Red">potential</font> with respect to its <font color="Red">domain</font>:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-potential.png "potential")
 >, where $\phi_{1}$=$P(X_{1})$,$\phi_{2}$=$P(X_{2}\vert X_{1})$,$\phi_{3}$=$P(X_{3}\vert X_{1})$,$\phi_{4}$=$P(X_{4}\vert X_{2},X_{3})$,$\phi_{5}$=$P(X_{5}\vert X_{4})$.  
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">The fill-ins</font>  
+>In <font color="DeepPink">variable elimination</font> process, <font color="DeepPink">the removal of one variable would possibly generate a new potential over a domain that didn't exist in the original domain graph, such new potential is the fill-in</font>.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-fill-in.png "fill-in")
+>
 
 <!-- 
 https://pdfs.semanticscholar.org/presentation/22b4/97a5431e961792e5c46d6348e92b362d378b.pdf  
@@ -88,7 +94,7 @@ p.6@https://cedar.buffalo.edu/~srihari/CSE574/Chap8/8.7-FromBNtoMN.pdf -->
 
 ### Addendum
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
-
+>&#10113;[Probabilistic graphical models, David Sontag, New York University, Lecture 2, February 2, 2012](@http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
