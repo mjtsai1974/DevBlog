@@ -116,6 +116,10 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 <!--
 the probability of a variable conditioned on its Markov
 blanket depends only on potentials involving that node
+
+A->B<-C::BN => A-B-C::MN
+take B as the evidence node, then the probability of a variable conditioned on its Markov
+blanket depends only on potentials involving that node reveals that any BN conditioned on evidence can be regarded as a Markov network 
 p.31@http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf 
 
 any BN conditioned on evidence can be regarded as a Markov network
