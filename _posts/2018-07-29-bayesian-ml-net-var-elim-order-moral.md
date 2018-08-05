@@ -104,6 +104,14 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >=$\phi_{1}(B,A)\cdot\phi_{2}(B,C)\cdot\phi_{3}(D,C)\cdot\phi_{4}(D,A)$  
 >
 >$(B\perp D\vert A,C)$'s independence could be proved in similar way.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Factors in MN</font>  
+>A factor can below representations:  
+>&#10112;a joint distribution over $D$ by defining $\phi(D)$.  
+>&#10113;a CPD $P(X\vert D)$, by defining $\phi(X\cup D)$  
+>
+><font color="DeepPink">Factors in MN is a more symmetric parameterization that captures the affinities in between related random variables.</font>  
 
 <!--
 the probability of a variable conditioned on its Markov
