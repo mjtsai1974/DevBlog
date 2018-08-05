@@ -74,17 +74,38 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-fill-in.png "fill-in")
 >The <font color="DeepSkyBlue">goal</font> of the most optimal <font color="Red">variable elimination</font> sequence is <font color="#C20000">to introduce no extra fill-ins</font>.  
 
-<!-- 
-https://pdfs.semanticscholar.org/presentation/22b4/97a5431e961792e5c46d6348e92b362d378b.pdf  
-
-Explain domain graph.
-
-Extend from 2018-07-29-bayesian-ml-net-var-elim-order-moral-factors.png, BN->MN, illustrate CPD with potentials and domain operator.
--->
+### <font color="Red">Factorization</font> In <font color="Red">MN</font>(<font color="Red">Markov Network</font>)
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The full/joint PDF in MN</font>  
+>Given below <font color="Red">MN</font>, base on our concept that potential is a CPD or a factor of joint distribution, then:  
+>&#10112;$P(A,B,C,D)$...joint PDF  
+=$\frac {1}{Z}\cdot\phi_{1}(A,B)\cdot\phi_{2}(B,C)\cdot\phi_{3}(C,D)\cdot\phi_{4}(D,A)$  
+>&#10113;Z..<font color="OrangeRed">normalization</font> factor  
+>=$\sum_{A,B,C,D}\phi_{1}(A,B)\cdot\phi_{2}(B,C)\cdot\phi_{3}(C,D)\cdot\phi_{4}(D,A)$  
+>also called the <font color="OrangeRed">partition function</font>.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-mn-factor.png "MN-factor")
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Tight relation between factorization and independence</font>  
+>$X\perp Y\vert Z$ iff $P(X,Y,Z)$=$\phi_{1}(X,Z)\cdot\phi_{2}(Y,Z)$,  
+>then, $(A\perp C\vert D,B)$ and $(B\perp D\vert A,C)$.  
+>
+><font color="Brown">proof::mjtsai1974</font>  
+>To show $(A\perp C\vert D,B)$'s independence:  
+>&#10112;$P(A,C,D,B)$=$\psi_{1}(A,D,B)\cdot\psi_{2}(C,D,B)$  
+>, where $\psi_{i}$ is the potential.  
+>&#10113;for $\psi_{1}(A,D,B)$'s independence:  
+>$B\perp D\vert A$  
+>$\Leftrightarrow P(B,D,A)$=$\phi_{1}(B,A)\cdot\phi_{4}(D,A)$  
+>&#10114;for $\psi_{2}(C,D,B)$'s independence:  
+>$B\perp D\vert C$  
+>$\Leftrightarrow P(B,D,C)$=$\phi_{2}(B,C)\cdot\phi_{3}(D,C)$  
+>&#10115;$P(A,C,D,B)$  
+>=$\phi_{1}(B,A)\cdot\phi_{2}(B,C)\cdot\phi_{3}(D,C)\cdot\phi_{4}(D,A)$  
+>
+>$(B\perp D\vert A,C)$'s independence could be proved in similar way.  
 
 <!--
-### Factorization In Markov Network
-
 the probability of a variable conditioned on its Markov
 blanket depends only on potentials involving that node
 p.31@http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf 
@@ -94,7 +115,8 @@ p.6@https://cedar.buffalo.edu/~srihari/CSE574/Chap8/8.7-FromBNtoMN.pdf -->
 
 ### Addendum
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
->&#10113;[Probabilistic graphical models, David Sontag, New York University, Lecture 2, February 2, 2012](@http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf)  
+>&#10113;[Probabilistic graphical models, David Sontag, New York University, Lecture 2, February 2, 2012](http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf)  
+>&#10114;[Bayesian networks and decision graphs, F.V.Jensen, Springer-Verlag New York, 2001](https://pdfs.semanticscholar.org/presentation/22b4/97a5431e961792e5c46d6348e92b362d378b.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
@@ -117,6 +139,7 @@ p.6@https://cedar.buffalo.edu/~srihari/CSE574/Chap8/8.7-FromBNtoMN.pdf -->
 <!-- \subset -->
 <!-- \subseteq -->
 <!-- \varnothing -->
+<!-- \perp -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus, mathematic expression</font> -->
