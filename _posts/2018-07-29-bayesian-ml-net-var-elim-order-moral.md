@@ -122,8 +122,7 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >&#10113;$Z$...<font color="OrangeRed">partition function</font>  
 >=$\sum_{X_{1},...,X_{n}}\phi(D_{1})\cdot\cdots\cdot\phi(D_{m})$  
 >&#10114;a factor is one contribution on the <font color="DeepSkyBlue">joint</font> operation in <font color="Red">variable elimination</font> process.  
->
-><font color="DeepPink">A distribution $P_{\phi}$ with $\phi(D_{1})$,...,$\phi(D_{m})$ factorizes a Markov network if each $\phi_{i}$ is a complete subgraph</font> of it.  
+>&#10115;a <font color="DeepPink">distribution $P_{\phi}$ with $\phi(D_{1})$,...,$\phi(D_{m})$ factorizes a Markov network if each $\phi_{i}$ is a complete subgraph</font> of it.  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">The independence in MN</font>  
