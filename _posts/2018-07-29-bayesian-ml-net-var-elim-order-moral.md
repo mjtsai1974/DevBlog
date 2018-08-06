@@ -128,7 +128,7 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">The independence in MN</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-bn-mn-serial.png "BN-MN-series")
->Given this network, we'd like to prove $A\perp C\vertB$ given $P(A,B,C)$=$\frac {1}{Z}\cdot\phi_{A,B}(A,B)\cdot\phi_{B,C}(B,C)$:  
+>Given this network, we'd like to prove $A\perp C\vert B$ given $P(A,B,C)$=$\frac {1}{Z}\cdot\phi_{A,B}(A,B)\cdot\phi_{B,C}(B,C)$:  
 ><font color="Brown">proof::mjtsai1974</font>  
 >&#10112;$P(a\vert c)$  
 >=$\frac {P(a\cap c)}{P(c)}$  
@@ -146,7 +146,7 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >=$\frac {P(a,b,c)}{P(b)}$  
 >=$\frac {\phi_{A,B}(a,b)\cdot\phi_{B,C}(b,c)}{\sum_{a,c}\phi_{A,B}(a,b)\cdot\phi_{B,C}(b,c)}$  
 >=$\frac {\phi_{A,B}(a,b)\cdot\phi_{B,C}(b,c)}{\sum_{a}\phi_{A,B}(a,b)\cdot\sum_{c}\phi_{B,C}(b,c)}$  
->=$\frac {\phi_{A,B}(a,b)}{\sum_{a}\phi_{A,B}(a,b)}\cdot\frac {\phi_{B,C}(b,c)}{\sum_{c}\phi_{B,C}(b,c)}}$  
+>=$\frac {\phi_{A,B}(a,b)}{\sum_{a}\phi_{A,B}(a,b)}\cdot\frac {\phi_{B,C}(b,c)}{\sum_{c}\phi_{B,C}(b,c)}$  
 >=$P(a\vert b)\cdot P(c\vert b)$  
 >This evidence is more confident in our deduction result!!  
 
