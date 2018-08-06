@@ -9,7 +9,7 @@ The <font color="Red">Bayesian network</font> is a DAG(directed acyclic graph), 
 The <font color="Red">moral graph</font> could facilitate the explanation of the <font color="DeepSkyBlue">factorization</font> in <font color="Red">variable elimination</font> process and its <font color="Red">order</font>.  
 </p>
 
-### <font color="Red">Moral Graph</font> Of A <font color="Red">Bayesian Network</font>
+### <font color="Red">Moral Graph</font> Of A <font color="Red">BN</font>(<font color="Red">Bayesian Network</font>)
 ><font color="OrangeRed">[The moralization algorithm]</font>  
 >&#10112;<font color="DeepSkyBlue">drop the connectivity</font> in the original <font color="Red">Bayesian network</font>, that is to remove the arrow from the arc.  
 >&#10113;<font color="DeepSkyBlue">connect the parents that shares a common child</font>, that is to <font color="DeepSkyBlue">marry</font> them.  
@@ -113,6 +113,13 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >
 ><font color="DeepPink">Factors in MN is a more symmetric parameterization that captures the affinities in between related random variables.</font>  
 
+### The <font color="Red">Gibbs</font> Distribution For <font color="Red">BN</font> Versus <font color="Red">MN</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The Gibbs distribution</font>  
+>A distribution $P_{\phi}$ is a <font color="Red">Gibbs</font> distribution if it parameterizes a set of factors $\phi(D_{1})$,$\phi(D_{2)$,...,$\phi(D_{m})$ in the expression:  
+>$P_{\phi}(X_{1},...,X_{n})$=$\phi(D_{1})\cdot...\cdot\phi(D_{1})$  
+>, where $\\{X_{1},...,X_{n}\\}$ are the random variables, $\phi(D_{1}),...,\phi(D_{m})$ are the <font color="Red">domains</font> over distinct same group of variables.  
+
 <!--
 the probability of a variable conditioned on its Markov
 blanket depends only on potentials involving that node
@@ -129,6 +136,7 @@ p.6@https://cedar.buffalo.edu/~srihari/CSE574/Chap8/8.7-FromBNtoMN.pdf -->
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
 >&#10113;[Probabilistic graphical models, David Sontag, New York University, Lecture 2, February 2, 2012](http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf)  
 >&#10114;[Bayesian networks and decision graphs, F.V.Jensen, Springer-Verlag New York, 2001](https://pdfs.semanticscholar.org/presentation/22b4/97a5431e961792e5c46d6348e92b362d378b.pdf)  
+>&#10115;[Probabilistic graphical models, Raquel Urtasun and Tamir Hazan, TTI Chicago, April 4, 2011](https://www.cs.toronto.edu/~urtasun/courses/GraphicalModels/lecture4.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
