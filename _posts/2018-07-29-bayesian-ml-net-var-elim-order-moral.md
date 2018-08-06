@@ -118,9 +118,12 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 ><font color="OrangeRed">The Gibbs distribution</font>  
 >A distribution $P_{\phi}$ is a <font color="Red">Gibbs</font> distribution if it parameterizes a set of factors $\phi(D_{1})$,...,$\phi(D_{m})$ in the expression:  
 >$\;\;P_{\phi}(X_{1},...,X_{n})$=$\frac {1}{Z}\cdot\phi(D_{1})\cdot\cdots\cdot\phi(D_{m})$, where:  
->&#10112;$\\{X_{1},...,X_{n}\\}$ are the random variables, $\phi(D_{1}),...,\phi(D_{m})$ are the <font color="Red">domains</font> over distinct group of related variables.  
+>&#10112;$X_{1},...,X_{n}$ are the random variables, $\phi(D_{1}),...,\phi(D_{m})$ are the factors over <font color="Red">domains</font> grouped by the related variables and $D_{i}$'s are the <font color="Red">domains</font>.  
 >&#10113;$Z$...<font color="OrangeRed">partition function</font>  
 >=$\sum_{X_{1},...,X_{n}}\phi(D_{1})\cdot\cdots\cdot\phi(D_{m})$  
+>&#10114;a factor is one contribution on the <font color="DeepSkyBlue">joint</font> operation in <font color="Red">variable elimination</font> process.  
+>
+>A distribution $P_{\phi}$ with $\phi(D_{1})$,...,$\phi(D_{m})$ factorizes a Markov network if each $\phi_{i}$ is a complete subgraph of it.  
 
 <!--
 the probability of a variable conditioned on its Markov
