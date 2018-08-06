@@ -116,8 +116,8 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 ### The <font color="Red">Gibbs</font> Distribution For <font color="Red">BN</font> Versus <font color="Red">MN</font>
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">The Gibbs distribution</font>  
->A distribution $P_{\phi}$ is a <font color="Red">Gibbs</font> distribution if it parameterizes a set of factors $\phi(D_{1})$,$\phi(D_{2)$,...,$\phi(D_{m})$ in the expression:  
->$P_{\phi}(X_{1},...,X_{n})$=$\phi(D_{1})\cdot...\cdot\phi(D_{1})$  
+>A distribution $P_{\phi}$ is a <font color="Red">Gibbs</font> distribution if it parameterizes a set of factors $\phi(D_{1})$,...,$\phi(D_{m})$ in the expression:  
+>$\;\;P_{\phi}(X_{1},...,X_{n})$=$\phi(D_{1})\cdot...\cdot\phi(D_{1})$  
 >, where $\\{X_{1},...,X_{n}\\}$ are the random variables, $\phi(D_{1}),...,\phi(D_{m})$ are the <font color="Red">domains</font> over distinct same group of variables.  
 
 <!--
