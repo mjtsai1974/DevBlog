@@ -123,7 +123,33 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >=$\sum_{X_{1},...,X_{n}}\phi(D_{1})\cdot\cdots\cdot\phi(D_{m})$  
 >&#10114;a factor is one contribution on the <font color="DeepSkyBlue">joint</font> operation in <font color="Red">variable elimination</font> process.  
 >
->A distribution $P_{\phi}$ with $\phi(D_{1})$,...,$\phi(D_{m})$ factorizes a Markov network if each $\phi_{i}$ is a complete subgraph of it.  
+><font color="DeepPink">A distribution $P_{\phi}$ with $\phi(D_{1})$,...,$\phi(D_{m})$ factorizes a Markov network if each $\phi_{i}$ is a complete subgraph of it.</font>  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">The independence in MN</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-bn-mn-serial.png "BN-MN-series")
+>Given this network, we'd like to prove $A\perp C\vertB$ given $P(A,B,C)$=$\frac {1}{Z}\cdot\phi_{A,B}(A,B)\cdot\phi_{B,C}(B,C)$:  
+><font color="Brown">proof::mjtsai1974</font>  
+>&#10112;$P(a\vert c)$  
+>=$\frac {P(a\cap c)}{P(c)}$  
+>=$\frac {\sum_{b}P(a,b,c)}{\sum_{a,b}P(a,b,c)}$  
+>=$\frac {\sum_{b}\phi_{A,B}(a,b)\cdot\phi_{B,C}(b,c)}{\sum_{a,b}\phi_{A,B}(a,b)\cdot\phi_{B,C}(b,c)}$  
+>=$\frac {\phi_{A,C}(a,c)}{\phi_{C}(c)}$  
+>It is evident $A$ is independent from $C$ and could be figured out by factors of $A$ and $C$.  
+>&#10113;$P(a\vert b)$  
+>=$\frac {\sum_{c}P(a,b,c)}{\sum_{a,c}P(a,b,c)}$  
+>=$\frac {\sum_{c}\phi_{A,B}(a,b)\cdot\phi_{B,C}(b,c)}{\sum_{a,c}\phi_{A,B}(a,b)\cdot\phi_{B,C}(b,c)}$  
+>=$\frac {\phi_{A,B}(a,b)\cdot\sum_{c}\phi_{B,C}(b,c)}{\sum_{a}\phi_{A,B}(a,b)\cdot\sum_{c}\phi_{B,C}(b,c)}$  
+>=$\frac {\phi_{A,B}(a,b)}{\sum_{a}\phi_{A,B}(a,b)}$  
+>It is evident that the relationship of $A$ and $B$ is estimated by only factor of $A$ and $B$.  
+>&#10114;$P(a,c\vert b)$  
+>=$\frac {P(a,b,c)}{P(b)}$  
+>=$\frac {\phi_{A,B}(a,b)\cdot\phi_{B,C}(b,c)}{\sum_{a,c}\phi_{A,B}(a,b)\cdot\phi_{B,C}(b,c)}$  
+>=$\frac {\phi_{A,B}(a,b)\cdot\phi_{B,C}(b,c)}{\sum_{a}\phi_{A,B}(a,b)\cdot\sum_{c}\phi_{B,C}(b,c)}$  
+>=$\frac {\phi_{A,B}(a,b)}{\sum_{a}\phi_{A,B}(a,b)}\cdot\frac {\phi_{B,C}(b,c)}{\sum_{c}\phi_{B,C}(b,c)}}$  
+>=$P(a\vert b)\cdot P(c\vert b)$  
+>This evidence is more confident in our deduction result!!  
+
 
 <!--
 the probability of a variable conditioned on its Markov
