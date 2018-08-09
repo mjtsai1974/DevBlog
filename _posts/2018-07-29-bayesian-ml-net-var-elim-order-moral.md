@@ -147,7 +147,7 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >=$\frac {\phi_{A,B}(a,b)\cdot\phi_{B,C}(b,c)}{\sum_{a}\phi_{A,B}(a,b)\cdot\sum_{c}\phi_{B,C}(b,c)}$  
 >=$\frac {\phi_{A,B}(a,b)}{\sum_{a}\phi_{A,B}(a,b)}\cdot\frac {\phi_{B,C}(b,c)}{\sum_{c}\phi_{B,C}(b,c)}$  
 >=$P(a\vert b)\cdot P(c\vert b)$  
->This evidence is more confident in our deduction result!!  
+>This evidence is more confident in our deduction result!!  By &#10112;, &#10113;, we can conclude that <font color="DeepPink">the probability of a variable conditioned on its Markov blanket depends only on potentials involving that node</font>.  
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">BN with evidence is Gibbs in MN</font>  
@@ -166,7 +166,7 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >, where $\phi_{A,B,C}(A,B,C)$=$\phi_{A,B}(A,B)\cdot\phi_{A,C}(A,C)\cdot\phi_{A}(A)$  
 >&#10115;given the observation of $e$ on node $E$, then:  
 >$\phi(a,b,c,d\vert e)$  
->=$\frac {\phi(a,b,c,d,e)}{\phi(e)}$  
+>=$\frac {\phi_{\chi}(a,b,c,d,e)}{\phi(e)}$  
 >=$\frac {\phi_{A,B,C}(a,b,c)\cdot\phi_{B,C,D}(b,c,d)\cdot\phi_{C,E}(c,e)}{\sum_{A,B,C,D}\phi_{A,B,C}(A,B,C)\cdot\phi_{B,C,D}(B,C,D)\cdot\phi_{C,E}(C,e)}$  
 >Surprisingly, a <font color="Red">Gibbs</font> distribution again!!  
 >
