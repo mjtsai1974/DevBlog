@@ -148,7 +148,17 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >=$\frac {\phi_{A,B}(a,b)}{\sum_{a}\phi_{A,B}(a,b)}\cdot\frac {\phi_{B,C}(b,c)}{\sum_{c}\phi_{B,C}(b,c)}$  
 >=$P(a\vert b)\cdot P(c\vert b)$  
 >This evidence is more confident in our deduction result!!  
-
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">BN with evidence is Gibbs with MN</font>  
+>&#10112;suppose you are given a Bayesian network over $\chi$=$\\{A,B,C,D,E\\}$ illustrated in this graph, where we have the full joint PDF as:  
+>$P_{\chi}(A,B,C,D,E)$  
+>=$P(E\vert C)\cdot P(D\vert B,C)$  
+>$\;\;\cdot P(B\vert A)\cdot P(C\vert A)\cdot P(A)$  
+>&#10113;given the observation of $e$ on node $E$, then:  
+>$P(a,b,c,d\vert E=e)$  
+>=$\frac {P(a\cap b\cap c\cap d\cap e)}{P(e)}$  
+>=$\frac {P(e\vert c)\cdot P(d\vert b,c)\cdot P(b\vert a)\cdot P(c\vert a)\cdot P(a)}{\sum_{A,B,C,D}P(A,B,C,D,e)}$  
 
 <!--
 the probability of a variable conditioned on its Markov
