@@ -150,8 +150,8 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >This evidence is more confident in our deduction result!!  
 >
 ><font color="DeepSkyBlue">[3]</font>
-><font color="OrangeRed">BN with evidence is Gibbs with MN</font>  
->&#10112;suppose you are given a Bayesian network over $\chi$=$\\{A,B,C,D,E\\}$ illustrated in this graph, where we have the full joint PDF as:  
+><font color="OrangeRed">BN with evidence is Gibbs in MN</font>  
+>&#10112;suppose you are given a <font color="Red">Bayesian network</font> over $\chi$=$\\{A,B,C,D,E\\}$ illustrated in this graph, where we have the full joint PDF as:  
 >$P_{\chi}(A,B,C,D,E)$  
 >=$P(E\vert C)\cdot P(D\vert B,C)$  
 >$\;\;\cdot P(B\vert A)\cdot P(C\vert A)\cdot P(A)$  
@@ -159,6 +159,19 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >$P(a,b,c,d\vert E=e)$  
 >=$\frac {P(a\cap b\cap c\cap d\cap e)}{P(e)}$  
 >=$\frac {P(e\vert c)\cdot P(d\vert b,c)\cdot P(b\vert a)\cdot P(c\vert a)\cdot P(a)}{\sum_{A,B,C,D}P(A,B,C,D,e)}$  
+>Evidently, this is a <font color="Red">Gibbs</font> distribution!!  
+>&#10114;we <font color="DeepSkyBlue">moralize</font> the BN by connecting nodes $B$ and $C$ for they are parents of node $D$, and we have potentials thus expressed:  
+>$\phi_{\chi}(A,B,C,D,E)$  
+>=$\frac {\phi_{A,B,C}(A,B,C)\cdot\phi_{B,C,D}(B,C,D)\cdot\phi_{C,E}(C,E)}{Z}$  
+>, where $\phi_{A,B,C}(A,B,C)$=$\phi_{A,B}(A,B)\cdot\phi_{A,C}(A,C)\cdot\phi_{A}(A)$  
+>, and $Z$=$\sum_{A,B,C,D,E}\phi_{A,B,C}(A,B,C)\cdot\phi_{B,C,D}(B,C,D)\cdot\phi_{C,E}(C,E)$  
+>&#10115;given the observation of $e$ on node $E$, then:  
+>$\phi(a,b,c,d\vert e)$  
+>=$\frac {\phi(a,b,c,d,e)}{\phi(e)}$  
+>=$\frac {\phi_{A,B,C}(a,b,c)\cdot\phi_{B,C,D}(b,c,d)\cdot\phi_{C,E}(c,e)}{\sum_{A,B,C,D}\phi_{A,B,C}(A,B,C)\cdot\phi_{B,C,D}(B,C,D)\cdot\phi_{C,E}(C,e)}$  
+>Surprisingly, a <font color="Red">Gibbs</font> distribution again!!  
+>
+>We can conclude that <font color="DeepPink">any BN conditioned on evidence can be regarded as a Markov network</font>.  
 
 <!--
 the probability of a variable conditioned on its Markov
