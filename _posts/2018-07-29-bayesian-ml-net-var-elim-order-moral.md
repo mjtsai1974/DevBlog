@@ -162,9 +162,8 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >Evidently, this is a <font color="Red">Gibbs</font> distribution!!  
 >&#10114;we <font color="DeepSkyBlue">moralize</font> the BN by connecting nodes $B$ and $C$ for they are parents of node $D$, and we have potentials thus expressed:  
 >$\phi_{\chi}(A,B,C,D,E)$  
->=$\frac {\phi_{A,B,C}(A,B,C)\cdot\phi_{B,C,D}(B,C,D)\cdot\phi_{C,E}(C,E)}{Z}$  
+>=$\frac {\phi_{A,B,C}(A,B,C)\cdot\phi_{B,C,D}(B,C,D)\cdot\phi_{C,E}(C,E)}{\sum_{A,B,C,D,E}\phi_{A,B,C}(A,B,C)\cdot\phi_{B,C,D}(B,C,D)\cdot\phi_{C,E}(C,E)}$  
 >, where $\phi_{A,B,C}(A,B,C)$=$\phi_{A,B}(A,B)\cdot\phi_{A,C}(A,C)\cdot\phi_{A}(A)$  
->, and $Z$=$\sum_{A,B,C,D,E}\phi_{A,B,C}(A,B,C)\cdot\phi_{B,C,D}(B,C,D)\cdot\phi_{C,E}(C,E)$  
 >&#10115;given the observation of $e$ on node $E$, then:  
 >$\phi(a,b,c,d\vert e)$  
 >=$\frac {\phi(a,b,c,d,e)}{\phi(e)}$  
