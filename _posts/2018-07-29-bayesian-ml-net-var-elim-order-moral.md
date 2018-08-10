@@ -172,23 +172,19 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-gibbs-dist.png "Gibbs for BN-MN")
 >We can conclude that <font color="DeepPink">any BN conditioned on evidence can be regarded as a Markov network</font>.  
 
-<!--
-the probability of a variable conditioned on its Markov
-blanket depends only on potentials involving that node
+### <font color="Red">Variable Elimination</font> From <font color="Red">BN</font> To <font color="Red">MN</font>
+>Still using the same example in [Prof. Abbeel, steps through a few variable examples](https://www.youtube.com/watch?v=FDNB0A61PGE) for the illustration with a mapping of each step from <font color="Red">BN</font> to <font color="Red">MN</font>.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-illustrate.png "VE BN-MN")
+>To speed up the explanation, I use the optimal order of elimination: $W$,$Y$,$X$,$V$  
+>&#10112;eliminate node $W$.  
 
-A->B<-C::BN => A-B-C::MN
-take B as the evidence node, then the probability of a variable conditioned on its Markov
-blanket depends only on potentials involving that node reveals that any BN conditioned on evidence can be regarded as a Markov network 
-p.31@http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf 
-
-any BN conditioned on evidence can be regarded as a Markov network
-p.6@https://cedar.buffalo.edu/~srihari/CSE574/Chap8/8.7-FromBNtoMN.pdf -->
 
 ### Addendum
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
 >&#10113;[Probabilistic graphical models, David Sontag, New York University, Lecture 2, February 2, 2012](http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf)  
 >&#10114;[Bayesian networks and decision graphs, F.V.Jensen, Springer-Verlag New York, 2001](https://pdfs.semanticscholar.org/presentation/22b4/97a5431e961792e5c46d6348e92b362d378b.pdf)  
 >&#10115;[Probabilistic graphical models, Raquel Urtasun and Tamir Hazan, TTI Chicago, April 4, 2011](https://www.cs.toronto.edu/~urtasun/courses/GraphicalModels/lecture4.pdf)  
+>&#10116;[From Bayesian networks to Markov networks, Sargur Srihari](https://cedar.buffalo.edu/~srihari/CSE574/Chap8/8.7-FromBNtoMN.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
