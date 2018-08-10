@@ -141,6 +141,7 @@ After exploring in the prerequisites, you are supposed to come out with sufficie
 * [Introduction To The Bayesian Network]({{ site.github.repo }}{{ site.baseurl }}/2018/07/08/bayesian-ml-net-intro/)
 * [The Bayesian Network Profound Meaning]({{ site.github.repo }}{{ site.baseurl }}/2018/07/11/bayesian-ml-net-profound/)
 * [Variable Elimination In Bayesian Network]({{ site.github.repo }}{{ site.baseurl }}/2018/07/15/bayesian-ml-net-var-elim/)
+* [Variable Elimination Order And Moral Graph]({{ site.github.repo }}{{ site.baseurl }}/2018/07/29/bayesian-ml-net-var-elim-order-moral/)
 
 > The related posts would be new added in the future, and supposed you are comfortable with posts in prerequisite section. 
 
