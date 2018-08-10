@@ -169,7 +169,7 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >=$\frac {\phi_{\chi}(a,b,c,d,e)}{\phi(e)}$  
 >=$\frac {\phi_{A,B,C}(a,b,c)\cdot\phi_{B,C,D}(b,c,d)\cdot\phi_{C,E}(c,e)}{\sum_{A,B,C,D}\phi_{A,B,C}(A,B,C)\cdot\phi_{B,C,D}(B,C,D)\cdot\phi_{C,E}(C,e)}$  
 >Surprisingly, a <font color="Red">Gibbs</font> distribution again!!  
->
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-gibbs-dist.png "Gibbs for BN-MN")
 >We can conclude that <font color="DeepPink">any BN conditioned on evidence can be regarded as a Markov network</font>.  
 
 <!--
