@@ -160,7 +160,7 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 >=$\frac {P(a\cap b\cap c\cap d\cap e)}{P(e)}$  
 >=$\frac {P(e\vert c)\cdot P(d\vert b,c)\cdot P(b\vert a)\cdot P(c\vert a)\cdot P(a)}{\sum_{A,B,C,D}P(A,B,C,D,e)}$  
 >Evidently, this is a <font color="Red">Gibbs</font> distribution!!  
->&#10114;we <font color="DeepSkyBlue">moralize</font> the BN by connecting nodes $B$ and $C$ for they are parents of node $D$, and we have potentials thus expressed:  
+>&#10114;we <font color="DeepSkyBlue">moralize</font> the BN by connecting nodes $B$ and $C$ for they are parents of node $D$, and we have <font color="Red">potentials</font> thus expressed:  
 >$\phi_{\chi}(A,B,C,D,E)$  
 >=$\frac {\phi_{A,B,C}(A,B,C)\cdot\phi_{B,C,D}(B,C,D)\cdot\phi_{C,E}(C,E)}{\sum_{A,B,C,D,E}\phi_{A,B,C}(A,B,C)\cdot\phi_{B,C,D}(B,C,D)\cdot\phi_{C,E}(C,E)}$  
 >, where $\phi_{A,B,C}(A,B,C)$=$\phi_{A,B}(A,B)\cdot\phi_{A,C}(A,C)\cdot\phi_{A}(A)$  
@@ -175,9 +175,21 @@ The <font color="Red">moral graph</font> could facilitate the explanation of the
 ### <font color="Red">Variable Elimination</font> From <font color="Red">BN</font> To <font color="Red">MN</font>
 >Still using the same example in [Prof. Abbeel, steps through a few variable examples](https://www.youtube.com/watch?v=FDNB0A61PGE) for the illustration with a mapping of each step from <font color="Red">BN</font> to <font color="Red">MN</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-illustrate.png "VE BN-MN")
->To speed up the explanation, I use the optimal order of elimination: $W$,$Y$,$X$,$V$  
->&#10112;eliminate node $W$.  
-
+>To speed up the path to $P(U\vert +z)$, I use the optimal order of elimination: $W$,$Y$,$X$,$V$  
+>&#10112;eliminate the node $W$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-illustrate-w.png "remove W")
+>&#10113;eliminate the node $Y$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-illustrate-y.png "remove Y")
+>&#10114;eliminate the node $X$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-illustrate-x.png "remove X")
+>&#10115;eliminate the node $V$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-07-29-bayesian-ml-net-var-elim-order-moral-illustrate-v.png "remove V")
+>&#10116;therefore, we have:  
+>$P(U\vert +z)$  
+>=$\frac {f_{4}(+z,U)\cdot P(U)}{\sum_{u}f_{4}(+z,u)}$  
+>=$\frac {\phi_{Z,U}(+z,U)\cdot\phi_{U}(U)}{\sum_{u}\phi_{Z,U}(+z,u)}$  
+>
+>We conclude that <font color="DeepPink">each elimination in BN could be well expressed in terms of potentials in MN</font>.  
 
 ### Addendum
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
