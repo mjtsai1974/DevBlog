@@ -131,7 +131,7 @@ title: Variable Elimination In Bayesian Network
 ### <font color="Red">Variable Elimination Order</font> Heuristics
 >The following heuristics are not the final solution to the most optimal order of variable elimination:  
 >&#10112;choose the variable with the <font color="Red">fewest</font> dependent variables.  
->&#10113;choose the variable to <font color="Red">minimize</font> the product of cardinalities</font> of its dependent or related variables.   
+>&#10113;choose the variable to <font color="Red">minimize the product of cardinalities</font> of its dependent or related variables.   
 >&#10114;choose the vertices to minimize the size of factors to be added in the graph.  
 >Resort to related papers, textbooks, online references, I'd like to follow up [Variable elimination, CS228, Stefano Ermon](http://kuleshov.github.io/cs228-notes/inference/ve/), instead of the complicated algorithm description and implementation here, since they are not jargon-free, you are welcome to my future article.  
 
@@ -140,7 +140,6 @@ title: Variable Elimination In Bayesian Network
 >&#10113;[Variable elimination, Peter Norvig](https://www.youtube.com/watch?v=qyXspkUOhGc&list=PLBF898A2F63224F39&t=0s&index=14)  
 >&#10114;[Bayesian Networks, Ben-Gal Irad, in Ruggeri F., Faltin F. & Kenett R., Encyclopedia of Statistics in Quality & Reliability, Wiley & Sons (2007).](http://www.eng.tau.ac.il/~bengal/BN.pdf)  
 >&#10115;[Variable elimination, CS228, Stefano Ermon](http://kuleshov.github.io/cs228-notes/inference/ve/)  
-
 
 <!-- Γ -->
 <!-- \Omega -->
