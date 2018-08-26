@@ -9,6 +9,22 @@ The <font color="Red">respective</font> and <font color="Red">retrospective</fon
 An alternative to overcome these limitations is by using <font color="Red">propagation</font> in the <font color="Red">Bayesian network</font>.  
 </p>
 
+<!--
+### Posterior Probability(Belief) Update Upon New Evidence
+>
+
+p.13, "bayesian network tutorial"
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf
+
+New evidence enters a network when a variable is instantiated, ie when it receives a new value from the outside
+world. When this happens the posterior probabilities of each node in the whole network must be re-calculated.
+This is achieved by message passing.
+
+p.5
+https://www.doc.ic.ac.uk/~dfg/ProbabilisticInference/IDAPILecture04.pdf
+-->
+
+
 <!-- 
 ### Addendum
 >&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
