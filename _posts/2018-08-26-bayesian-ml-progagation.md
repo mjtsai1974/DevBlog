@@ -17,7 +17,7 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >&#10113;$e_{X}^{+}$ stands for the <font color="DeepSkyBlue">evidence</font> coming from its parent nodes, for $X$ to be a root node, $e_{X}^{+}$ is the background.  
 >
 ><font color="DeepSkyBlue">[2]</font>
-><font color="OrangeRed">Generalization of $Bel(x)$</font>  
+><font color="OrangeRed">Deduction of $Bel(x)$</font>  
 >Assume $e_{X}^{-}$ and $e_{X}^{+}$ are independent, then the <font color="Red">belief</font> of $X$=$x$:  
 >$Bel(x)$  
 >=$P(x\vert e_{X}^{-},e_{X}^{+})$  
@@ -30,6 +30,17 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >&#10113;$P(x\vert e_{X}^{+})$ says that the <font color="DeepSkyBlue">hypothesis</font> $X$=$x$ is propagated from the <font color="DeepSkyBlue">background context</font> $e_{X}^{+}$.  
 >&#10114;the <font color="OrangeRed">normalizing factor</font> $P(e_{X}^{-}\vert e_{X}^{+})$ <font color="DeepPink">encompasses everything ranging from the background context to the final observed evidence</font>, since $e_{X}^{-}$ and $e_{X}^{+}$ are independent, the denominator part becomes $P(e_{X}^{-})$.  
 >
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Generalization of $Bel(x)$</font>  
+>Most of the textbooks have below common definition:  
+>&#10112;$\pi(x)$=$P(x\vert e_{X}^{+})$ is the respective(predictive) direction of propagation.  
+>&#10113;$\lambda(x)$=$P(e_{X}^{-}\vert x)$ is retrospective(diagnostic) direction of propagation.  
+>
+>We thus express the belief of $x$ as $Bel(x)$=$\alpha\cdot\pi(x)\cdot\lambda(x)$,  
+>where $\alpha$ is the normalizing constant, in this illustration,  
+>$\alpha$  
+>=$[P(e_{X}^{-})]^{-1}$  
+>=$[\sum_{x}\pi(x)\cdot\lambda(x)]^{-1}$  
 
 <!--
 p.13, "bayesian network tutorial"
