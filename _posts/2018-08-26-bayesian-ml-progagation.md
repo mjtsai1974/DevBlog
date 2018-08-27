@@ -9,10 +9,14 @@ The <font color="Red">respective</font> and <font color="Red">retrospective</fon
 An alternative to overcome these limitations is by using <font color="Red">propagation</font> in the <font color="Red">Bayesian network</font>.  
 </p>
 
-<!--
-### Posterior Probability(Belief) Update Upon New Evidence
->
+### <font color="Red">Posterior Probability</font>(<font color="Red">Belief</font>) Update Upon New Evidence Arrives
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Posterior probability(belief)</font>  
+>The <font color="Red">posterior probability</font>(<font color="Red">belief</font>) of a random variable $X$=$x$, given <font color="DeepSkyBlue">evidence</font> $E$=$e$, is expressed as $Bel(x)\overset\triangle=P(x\vert e)$.  The <font color="DeepSkyBlue">evidence</font> could be further classified as 2 distinct subsets:  
+>&#10112;$e_{x}^{-}$ denotes the <font color="DeepSkyBlue">evidence</font> introduced through its children nodes.  
+>&#10113;$e_{x}^{+}$ stands for the <font color="DeepSkyBlue">evidence</font> coming from its parent nodes, even its background.  
 
+<!--
 p.13, "bayesian network tutorial"
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf
 
@@ -56,6 +60,7 @@ https://www.doc.ic.ac.uk/~dfg/ProbabilisticInference/IDAPILecture04.pdf
 <!-- \subseteq -->
 <!-- \varnothing -->
 <!-- \perp -->
+<!-- \overset\triangle= -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus, mathematic expression</font> -->
