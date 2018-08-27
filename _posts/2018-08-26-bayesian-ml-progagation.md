@@ -13,8 +13,23 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Posterior probability(belief)</font>  
 >The <font color="Red">posterior probability</font>(<font color="Red">belief</font>) of a random variable $X$=$x$, given <font color="DeepSkyBlue">evidence</font> $E$=$e$, is expressed as $Bel(x)\overset\triangle=P(x\vert e)$.  The <font color="DeepSkyBlue">evidence</font> could be further classified as 2 distinct subsets:  
->&#10112;$e_{x}^{-}$ denotes the <font color="DeepSkyBlue">evidence</font> introduced through its children nodes.  
->&#10113;$e_{x}^{+}$ stands for the <font color="DeepSkyBlue">evidence</font> coming from its parent nodes, even its background.  
+>&#10112;$e_{X}^{-}$ denotes the <font color="DeepSkyBlue">evidence</font> introduced through its children nodes.  
+>&#10113;$e_{X}^{+}$ stands for the <font color="DeepSkyBlue">evidence</font> coming from its parent nodes, for $X$ to be a root node, $e_{X}^{+}$ is the background.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Generalization of $bel(x)$</font>  
+>Assume $e_{X}^{-}$ and $e_{X}^{+}$ are independent, then the <font color="Red">belief</font> of $X$=$x$:  
+>$Bel(x)$  
+>=$P(x\vert e_{X}^{-},e_{X}^{+})$  
+>=$\frac {P(e_{X}^{-},x\vert e_{X}^{+})}{P(e_{X}^{-}\vert e_{X}^{+})}$  
+>=$\frac {P(e_{X}^{-}\vert x,e_{X}^{+})\cdot P(x\vert e_{X}^{+})}{P(e_{X}^{-}\vert e_{X}^{+})}$  
+>=$\frac {P(e_{X}^{-}\vert x)\cdot P(x\vert e_{X}^{+})}{P(e_{X}^{-})}$  
+>
+>Why we have such deduction?  
+>&#10112;the <font color="DeepSkyBlue">evidence</font> $e_{X}^{-}$ is given by <font color="DeepSkyBlue">hypothesis</font> $X$=$x$, and the <font color="DeepSkyBlue">background context</font> $e_{X}^{+}$, that explains $P(e_{X}^{-}\vert x,e_{X}^{+})$.  
+>&#10113;$P(x\vert e_{X}^{+})$ says that the <font color="DeepSkyBlue">hypothesis</font> $X$=$x$ is propagated from the <font color="DeepSkyBlue">background context</font> $e_{X}^{+}$.  
+>&#10114;the <font color="OrangeRed">normalizing factor</font> $P(e_{X}^{-}\vert e_{X}^{+})$ <font color="DeepPink">encompasses everything ranging from the background context to the final observed evidence</font>, since $e_{X}^{-}$ and $e_{X}^{+}$ are independent, the denominator part becomes $P(e_{X}^{-})$.  
+>
 
 <!--
 p.13, "bayesian network tutorial"
