@@ -17,7 +17,7 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >&#10113;$e_{X}^{+}$ stands for the <font color="DeepSkyBlue">evidence</font> coming from its parent nodes, for $X$ to be a root node, $e_{X}^{+}$ is the background.  
 >
 ><font color="DeepSkyBlue">[2]</font>
-><font color="OrangeRed">Generalization of $bel(x)$</font>  
+><font color="OrangeRed">Generalization of $Bel(x)$</font>  
 >Assume $e_{X}^{-}$ and $e_{X}^{+}$ are independent, then the <font color="Red">belief</font> of $X$=$x$:  
 >$Bel(x)$  
 >=$P(x\vert e_{X}^{-},e_{X}^{+})$  
