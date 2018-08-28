@@ -45,8 +45,10 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 ><font color="DeepSkyBlue">[4]</font>
 ><font color="OrangeRed">Message passing is propagation</font>  
 >New <font color="DeepSkyBlue">evidence</font> enters a network when a variable is instantiated, ie when it receives a new value from the outside world. When this happens, the <font color="Red">posterior probability</font> of each node in the whole network must be re-calculated.  
+>
 >This is achieved by <font color="DeepPink">message passing, known as progapation</font>.  
 
+<!--
 ### <font color="Red">Propagation</font> Illustration In Causal Tree
 >Given a causal tree of this serial chain <font color="Red">Bayesian network</font>, where $\lambda(Y)$=$P(e_{Y}^{-}\vert Y)$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-08-26-bayesian-ml-progagation-causal-t.png "causal t propagate")
@@ -56,6 +58,8 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Backward propagation</font>  
 >
+
+-->
 
 <!-- 
 ### Addendum
