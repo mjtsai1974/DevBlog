@@ -41,6 +41,11 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >$\alpha$  
 >=$[P(e_{X}^{-})]^{-1}$  
 >=$[\sum_{x}\pi(x)\cdot\lambda(x)]^{-1}$  
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Message passing is propagation</font>  
+>New evidence enters a network when a variable is instantiated, ie when it receives a new value from the outside world. When this happens, the <font color="Red">posterior probability</font> of each node in the whole network must be re-calculated.  
+>This is achieved by <font color="DeepPink">message passing, known as progapation</font>.  
 
 <!--
 p.13, "bayesian network tutorial"
@@ -57,11 +62,8 @@ https://www.doc.ic.ac.uk/~dfg/ProbabilisticInference/IDAPILecture04.pdf
 
 <!-- 
 ### Addendum
->&#10112;[Variable elimination, CS228, Stefano Ermon ](http://kuleshov.github.io/cs228-notes/inference/ve/)  
->&#10113;[Probabilistic graphical models, David Sontag, New York University, Lecture 2, February 2, 2012](http://people.csail.mit.edu/dsontag/courses/pgm12/slides/lecture2.pdf)  
->&#10114;[Bayesian networks and decision graphs, F.V.Jensen, Springer-Verlag New York, 2001](https://pdfs.semanticscholar.org/presentation/22b4/97a5431e961792e5c46d6348e92b362d378b.pdf)  
->&#10115;[Probabilistic graphical models, Raquel Urtasun and Tamir Hazan, TTI Chicago, April 4, 2011](https://www.cs.toronto.edu/~urtasun/courses/GraphicalModels/lecture4.pdf)  
->&#10116;[From Bayesian networks to Markov networks, Sargur Srihari](https://cedar.buffalo.edu/~srihari/CSE574/Chap8/8.7-FromBNtoMN.pdf)  
+>&#10112;[](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf)  
+>&#10113;[](https://www.doc.ic.ac.uk/~dfg/ProbabilisticInference/IDAPILecture04.pdf)  
 -->
 
 <!-- Γ -->
