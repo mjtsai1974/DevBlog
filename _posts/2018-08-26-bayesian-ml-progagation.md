@@ -48,18 +48,15 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >
 >This is achieved by <font color="DeepPink">message passing, known as progapation</font>.  
 
-<!--
 ### <font color="Red">Propagation</font> Illustration In Causal Tree
 >Given a causal tree of this serial chain <font color="Red">Bayesian network</font>, where $\lambda(Y)$=$P(e_{Y}^{-}\vert Y)$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-08-26-bayesian-ml-progagation-causal-t.png "causal t propagate")
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Forward propagation</font>  
->
+>  
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Backward propagation</font>  
->
-
--->
+>  
 
 <!-- 
 ### Addendum
