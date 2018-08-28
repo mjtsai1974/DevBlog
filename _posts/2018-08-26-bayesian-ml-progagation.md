@@ -44,7 +44,7 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >
 ><font color="DeepSkyBlue">[4]</font>
 ><font color="OrangeRed">Message passing is propagation</font>  
->New evidence enters a network when a variable is instantiated, ie when it receives a new value from the outside world. When this happens, the <font color="Red">posterior probability</font> of each node in the whole network must be re-calculated.  
+>New <font color="DeepSkyBlue">evidence</font> enters a network when a variable is instantiated, ie when it receives a new value from the outside world. When this happens, the <font color="Red">posterior probability</font> of each node in the whole network must be re-calculated.  
 >This is achieved by <font color="DeepPink">message passing, known as progapation</font>.  
 
 <!--
