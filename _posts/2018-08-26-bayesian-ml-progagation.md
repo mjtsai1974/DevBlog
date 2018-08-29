@@ -61,7 +61,7 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >=$P(x\vert e_{WX}^{+})$  
 >=$\sum_{w}P(x\vert w)\cdot P(w\vert e_{W}^{+})$, for $w\in W$.  
 >$\Rightarrow\pi(X)$=$P(X\vert W)\cdot\pi(W)$  
->Node $X$ receives $W$ forward propagated evidence $P(w\vert e_{W}^{+})$, with each $X=x$ weighted by $P(x\vert w)$ for all $w\in W$.  
+><font color="DeepPink">Node $X$ receives $W$ forward propagated evidence $P(w\vert e_{W}^{+})$, with each $X=x$ weighted by $P(x\vert w)$ for all $w\in W$.</font>  
 >&#10114;similarly, $\pi(Y)$=$P(Y\vert X)\cdot\pi(X)$  
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Backward propagation</font>  
@@ -73,7 +73,7 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >=$P(e_{YX}^{-}\vert x)$  
 >=$\sum_{y}P(y\vert x)\cdot\lambda(y)$, for $y\in Y$.  
 >$\Rightarrow\lambda(X)$=$P(Y\vert X)\cdot\lambda(Y)$  
->For each $x\in X$, $\lambda(x)$ is weighted by $P(y\vert x)$ with $\lambda(y)$, for all $y\in Y$.   
+><font color="DeepPink">For each $x\in X$, $\lambda(x)$ is weighted by $P(y\vert x)$ with $\lambda(y)$, for all $y\in Y$.</font>  
 >&#10113;similarly, for node $W$,  
 >$\lambda(w)$  
 >=$P(e_{W}^{-}\vert w)$  
