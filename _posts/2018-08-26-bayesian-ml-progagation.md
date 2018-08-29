@@ -59,11 +59,27 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >$\pi(x)$  
 >=$P(x\vert e_{X}^{+})$  
 >=$P(x\vert e_{WX}^{+})$  
->=$\sum_{w}P(x\vert w)\cdot P(w\vert e_{W}^{+})$  
+>=$\sum_{w}P(x\vert w)\cdot P(w\vert e_{W}^{+})$, for $w\in W$.  
 >$\Rightarrow\pi(X)$=$P(X\vert W)\cdot\pi(W)$  
+>Node $X$ receives $W$ forward propagated evidence $P(w\vert e_{W}^{+})$, with each $X=x$ weighted by $P(x\vert w)$ for all $w\in W$.  
+>&#10114;similarly, $\pi(Y)$=$P(Y\vert X)\cdot\pi(X)$  
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Backward propagation</font>  
->  
+>&#10112;$Y$ is the leaf node, the <font color="DeepPink">evidence of observation is the only backward propagated message</font>.  
+>$\lambda(y)$=$P(e_{Y}^{-}\vert y)$  
+>&#10113;as $X$ receives the backward propagated evidence from $Y$, then:  
+>$\lambda(x)$  
+>=$P(e_{X}^{-}\vert x)$  
+>=$P(e_{YX}^{-}\vert x)$  
+>=$\sum_{y}P(y\vert x)\cdot\lambda(y)$, for $y\in Y$.  
+>$\Rightarrow\lambda(X)$=$P(Y\vert X)\cdot\lambda(Y)$  
+>For each $x\in X$, $\lambda(x)$ is weighted by $P(y\vert x)$ with $\lambda(y)$, for all $y\in Y$.   
+>&#10113;similarly, for node $W$,  
+>$\lambda(w)$  
+>=$P(e_{W}^{-}\vert w)$  
+>=$P(e_{XW}^{-}\vert w)$  
+>=$\sum_{x}P(x\vert w)\cdot\lambda(x)$  
+>$\Rightarrow\lambda(W)$=$P(X\vert W)\cdot\lambda(X)$  
 
 <!-- 
 ### Addendum
