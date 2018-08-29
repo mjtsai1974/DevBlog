@@ -82,6 +82,11 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >$\Rightarrow\lambda(W)$=$P(X\vert W)\cdot\lambda(X)$  
 
 <!-- 
+introduction to instantiation and dependence 
+p.3@https://www.doc.ic.ac.uk/~dfg/ProbabilisticInference/IDAPILecture04.pdf
+-->
+
+<!-- 
 ### Addendum
 >&#10112;[](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf)  
 >&#10113;[](https://www.doc.ic.ac.uk/~dfg/ProbabilisticInference/IDAPILecture04.pdf)  
