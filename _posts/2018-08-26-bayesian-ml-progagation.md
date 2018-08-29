@@ -53,7 +53,14 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-08-26-bayesian-ml-progagation-causal-t.png "causal t propagate")
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Forward propagation</font>  
->  
+>&#10112;$W$ is now the root node, the <font color="DeepPink">background context is the only forward propagated evidence</font>.  
+>$\pi(w)$=$P(w\vert e_{W}^{+})$=$P(w)$, for $w\in W$.  
+>&#10113;for node $X$, it receives the forward propagated evidence pass through it, thus:  
+>$\pi(x)$  
+>=$P(x\vert e_{X}^{+})$  
+>=$P(x\vert e_{WX}^{+})$  
+>=$\sum_{w}P(x\vert w)\cdot P(w\vert e_{W}^{+})$  
+>$\Rightarrow\pi(X)$=$P(X\vert W)\cdot\pi(W)$  
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Backward propagation</font>  
 >  
