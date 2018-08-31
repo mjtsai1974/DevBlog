@@ -41,6 +41,7 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >$\alpha$  
 >=$[P(e_{X}^{-})]^{-1}$  
 >=$[\sum_{x}\pi(x)\cdot\lambda(x)]^{-1}$  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-08-26-bayesian-ml-progagation-message-passing.png "propagation")
 >
 ><font color="DeepSkyBlue">[4]</font>
 ><font color="OrangeRed">Message passing is propagation</font>  
