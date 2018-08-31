@@ -97,6 +97,23 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >$\lambda(w)$...$w\in W$  
 >=$\sum_{x}P(x\vert w)\cdot\lambda(x)$  
 >$\Rightarrow\lambda_{X}(W)$=$P(X\vert W)\cdot\lambda(X)$  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Forwardward propagation</font>  
+>&#10112;as to the forward propagated evidence in node $X$, that's $\pi(X)$, we evaluate it from its parent node $W$.  
+>$\pi(x)$...$x\in X$  
+>=$P(x\e_{X}^{+})$  
+>=$P(x\e_{WX}^{+})$  
+>=$\sum_{w}P(x\vert w)\cdot\pi(w)$  
+>$\Rightarrow\pi(X)$=$P(X\vert W)\cdot\pi(W)$  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Forwardward propagation to multiple descendent</font>  
+>The forward propagated evidence in node $X$ would be taken into 2 distinct parts.  Consider the evidence forward propagated from $X$ to $Y_{1}$, it consists of 2 major factors:  
+>&#10112;the forward propagated evidence from $W$.  
+>&#10113;the backward propagated evidence from $Y_{2}$.  
+>The point is that the total forward propoagated evidence $X$ is the joint probability function in combinatory format of these 2 factors.  
+>$\pi_{Y_{1}}(x)$=$P(y_{1}\vert e_{X}^{+},e_{Y_{2}}^{-})$, where $x\in X$, $e_{Y_{2}}^{-}\in e_{X}^{-}$, next to expand it.  
 
 <!-- 
 introduction to instantiation and dependence 
