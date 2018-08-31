@@ -116,9 +116,9 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >The point is that the total forward propoagated evidence from $X$ to $Y_{2}$ is the joint probability function in combinatory format of these 2 factors.  
 >$\pi_{Y_{1}}(x)$  
 >=$P(x\vert e_{X}^{+},e_{Y_{2}}^{-})$  
->=$\frac {P(e_{Y_{2}}^{-}\vert x,e_{X}^{+})\cdot P(x\vert e_{X}^{+})}{P(e_{Y_{2}}^{-})\vert e_{X}^{+}}$  
->=$\frac {P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})}{P(e_{Y_{2}}^{-})\vert e_{X}^{+}}$  
->, where $x\in X$, $e_{Y_{2}}^{-}\in e_{X}^{-}$, more precisely, we can take $e_{Y_{2}}^{-}$=$e_{XY_{2}}^{-}$, next to expand it.  
+>=$\frac {P(e_{Y_{2}}^{-}\vert x,e_{X}^{+})\cdot P(x\vert e_{X}^{+})}{P(e_{Y_{2}}^{-}\vert e_{X}^{+})}$  
+>=$\frac {P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})}{P(e_{Y_{2}}^{-}\vert e_{X}^{+})}$  
+>, where $x\in X$ and $e_{Y_{2}}^{-}\in e_{X}^{-}$, more precisely, we can take $e_{Y_{2}}^{-}$=$e_{XY_{2}}^{-}$, next to expand it.  
 
 <!-- 
 introduction to instantiation and dependence 
