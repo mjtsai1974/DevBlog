@@ -71,14 +71,14 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >&#10113;as $X$ receives the backward propagated evidence from $Y$, then:  
 >$\lambda(x)$  
 >=$P(e_{X}^{-}\vert x)$  
->=$P(e_{YX}^{-}\vert x)$  
+>=$P(e_{XY}^{-}\vert x)$  
 >=$\sum_{y}P(y\vert x)\cdot\lambda(y)$, for $y\in Y$.  
 >$\Rightarrow\lambda(X)$=$P(Y\vert X)\cdot\lambda(Y)$  
 ><font color="DeepPink">For each $x\in X$, $\lambda(x)$ is weighted by $P(y\vert x)$ with $\lambda(y)$, for all $y\in Y$.</font>  
 >&#10113;similarly, for node $W$,  
 >$\lambda(w)$  
 >=$P(e_{W}^{-}\vert w)$  
->=$P(e_{XW}^{-}\vert w)$  
+>=$P(e_{WX}^{-}\vert w)$  
 >=$\sum_{x}P(x\vert w)\cdot\lambda(x)$  
 >$\Rightarrow\lambda(W)$=$P(X\vert W)\cdot\lambda(X)$  
 
