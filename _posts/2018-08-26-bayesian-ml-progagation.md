@@ -102,8 +102,8 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 ><font color="OrangeRed">Forwardward propagation</font>  
 >&#10112;as to the forward propagated evidence in node $X$, that's $\pi(X)$, we evaluate it from its parent node $W$.  
 >$\pi(x)$...$x\in X$  
->=$P(x\e_{X}^{+})$  
->=$P(x\e_{WX}^{+})$  
+>=$P(x\vert e_{X}^{+})$  
+>=$P(x\vert e_{WX}^{+})$  
 >=$\sum_{w}P(x\vert w)\cdot\pi(w)$  
 >$\Rightarrow\pi(X)$=$P(X\vert W)\cdot\pi(W)$  
 >
