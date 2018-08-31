@@ -112,8 +112,8 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >The forward propagated evidence in node $X$ would be taken into 2 distinct parts.  Consider the evidence forward propagated from $X$ to $Y_{1}$, it consists of 2 major factors:  
 >&#10112;the forward propagated evidence from $W$.  
 >&#10113;the backward propagated evidence from $Y_{2}$.  
->The point is that the total forward propoagated evidence $X$ is the joint probability function in combinatory format of these 2 factors.  
->$\pi_{Y_{1}}(x)$=$P(y_{1}\vert e_{X}^{+},e_{Y_{2}}^{-})$, where $x\in X$, $e_{Y_{2}}^{-}\in e_{X}^{-}$, next to expand it.  
+>The point is that the total forward propoagated evidence from $X$ to $Y_{2}$ is the joint probability function in combinatory format of these 2 factors.  
+>$\pi_{Y_{1}}(x)$=$P(y_{1}\vert e_{X}^{+},e_{Y_{2}}^{-})$, where $x\in X$, $e_{Y_{2}}^{-}\in e_{X}^{-}$, more precisely, we can take $e_{Y_{2}}^{-}$=e_{XY_{2}}^{-}, next to expand it.  
 
 <!-- 
 introduction to instantiation and dependence 
