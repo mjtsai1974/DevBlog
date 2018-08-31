@@ -82,6 +82,22 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >=$\sum_{x}P(x\vert w)\cdot\lambda(x)$  
 >$\Rightarrow\lambda(W)$=$P(X\vert W)\cdot\lambda(X)$  
 
+### <font color="Red">Propagation</font> Illustration In Multiple Child Nodes
+>Now take a look at the illustration for the case of multiple child nodes.  
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Backward propagation</font>  
+>This time, we begin by inspecting the behavior in $\lambda$.  We have evidence on the subtree at node $X$ partitioned into 2 disjoint sets $e_{XY_{1}}^{-}$,$e_{XY_{2}}^{-}$.  
+>&#10112;as $X$ receives backward propagated evidence from $Y_{1}$, $Y_{2}$, the backward propagation is in joint distribution form:  
+>$\lambda(x)$...$x\in X$  
+>=$P(e_{X}^{-}\vert x)$  
+>=$P(e_{XY_{1}}^{-}\vert x)\cdot P(e_{XY_{2}}^{-}\vert x)$  
+>=$\prod_{Y_{i}\in Y}P(e_{XY_{i}}^{-}\vert x)$...multiple $Y_{i}$ children  
+>$\Rightarrow\lambda(x)$=$\lambda_{Y_{1}}(x)\cdot\lambda_{Y_{2}}(x)$  
+>&#10113;as $X$ backward propagates the evidence to $W$:  
+>$\lambda(w)$...$w\in W$  
+>=$\sum_{x}P(x\vert w)\cdot\lambda(x)$  
+>$\Rightarrow\lambda_{X}(W)$=$P(X\vert W)\cdot\lambda(X)$  
+
 <!-- 
 introduction to instantiation and dependence 
 p.3@https://www.doc.ic.ac.uk/~dfg/ProbabilisticInference/IDAPILecture04.pdf
