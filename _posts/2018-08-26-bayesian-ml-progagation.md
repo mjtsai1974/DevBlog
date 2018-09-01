@@ -29,6 +29,11 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >&#10112;the <font color="DeepSkyBlue">evidence</font> $e_{X}^{-}$ is given by <font color="DeepSkyBlue">hypothesis</font> $X$=$x$, and the <font color="DeepSkyBlue">background context</font> $e_{X}^{+}$, that explains $P(e_{X}^{-}\vert x,e_{X}^{+})$.  
 >&#10113;$P(x\vert e_{X}^{+})$ says that the <font color="DeepSkyBlue">hypothesis</font> $X$=$x$ is propagated from the <font color="DeepSkyBlue">background context</font> $e_{X}^{+}$.  
 >&#10114;the <font color="OrangeRed">normalizing factor</font> $P(e_{X}^{-}\vert e_{X}^{+})$ <font color="DeepPink">encompasses everything ranging from the background context to the final observed evidence</font>, since $e_{X}^{-}$ and $e_{X}^{+}$ are independent, the denominator part becomes $P(e_{X}^{-})$.  
+>$P(e_{X}^{-})$  
+>=$P(e_{X}^{-}\vert e_{X}^{+})$  
+>=$P(e_{X}^{-}\vert x,e_{X}^{+})\cdot P(x\vert e_{X}^{+})$  
+>=$P(e_{X}^{-}\vert x)\cdot P(x\vert e_{X}^{+})$  
+>=$\lambda(X)\cdot\pi(X)$  
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Generalization of $Bel(x)$</font>  
@@ -118,7 +123,21 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >=$P(x\vert e_{X}^{+},e_{Y_{2}}^{-})$  
 >=$\frac {P(e_{Y_{2}}^{-}\vert x,e_{X}^{+})\cdot P(x\vert e_{X}^{+})}{P(e_{Y_{2}}^{-}\vert e_{X}^{+})}$  
 >=$\frac {P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})}{P(e_{Y_{2}}^{-}\vert e_{X}^{+})}$  
->, where $x\in X$ and $e_{Y_{2}}^{-}\in e_{X}^{-}$, more precisely, we can take $e_{Y_{2}}^{-}$=$e_{XY_{2}}^{-}$, next to expand it.  
+>, where $x\in X$ and $e_{Y_{2}}^{-}\in e_{X}^{-}$, more precisely, we can take $e_{Y_{2}}^{-}$=$e_{XY_ {2}}^{-}$, next to expand it.  
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Forwardward propagation to multiple descendent: extension</font>  
+>Continue from $\pi_{Y_{1}}(x)$:  
+>&#10112;multiple nominator and denominator by $P(e_{Y_{1}}^{-}\vert x)$:  
+>$\pi_{Y_{1}}(x)$  
+>=$\frac {P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})\cdot P(e_{Y_{1}}^{-}\vert x)}{P(e_{Y_{2}}^{-}\vert e_{X}^{+})\cdot P(e_{Y_{1}}^{-}\vert x)}$  
+>&#10113;$P(e_{Y_{2}}^{-}\vert e_{X}^{+})$  
+>=$\sum_{x}P(e_{Y_{2}}^{-}\vert x,e_{X}^{+})\cdot P(x\vert e_{X}^{+})$  
+>=$\sum_{x}P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})$  
+>&#10114;$P(e_{Y_{2}}^{-}\vert e_{X}^{+})\cdot P(e_{Y_{1}}^{-}\vert x)$  
+>=$\sum_{x}P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})\cdot P(e_{Y_{1}}^{-}\vert x)$  
+>=$P(e_{X}^{-})$  
+>=$\alpha^{-1}$  
 
 <!-- 
 introduction to instantiation and dependence 
