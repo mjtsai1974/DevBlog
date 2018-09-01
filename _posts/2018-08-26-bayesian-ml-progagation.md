@@ -138,6 +138,11 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >=$\sum_{x}P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})\cdot P(e_{Y_{1}}^{-}\vert x)$  
 >=$P(e_{X}^{-})$  
 >=$\alpha^{-1}$  
+>&#10115;therefore, rewrite &#10112;:  
+>$\pi_{Y_{1}}(x)$  
+>=$\frac {P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})\cdot P(e_{Y_{1}}^{-}\vert x)}{P(e_{X}^{-})}$  
+>=$\frac {P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})\cdot P(e_{Y_{1}}^{-}\vert x)}{\alpha^{-1}}$  
+>
 
 <!-- 
 introduction to instantiation and dependence 
