@@ -136,7 +136,7 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >=$\sum_{x}P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})$  
 >&#10114;$P(e_{Y_{2}}^{-}\vert e_{X}^{+})\cdot P(e_{Y_{1}}^{-}\vert x)$  
 >=$\sum_{x}P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})\cdot P(e_{Y_{1}}^{-}\vert x)$  
->=$P(e_{X}^{-})$  
+>=$P(e_{Y_{2}}^{-})$  
 >=$\alpha^{-1}$  
 >&#10115;therefore, rewrite &#10112;:  
 >$\pi_{Y_{1}}(x)$  
