@@ -135,11 +135,11 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >=$\sum_{x}P(e_{Y_{2}}^{-}\vert x,e_{X}^{+})\cdot P(x\vert e_{X}^{+})$  
 >=$\sum_{x}P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})$  
 >=$\alpha_{XY_{2}}$  
->=$P(e_{XY_{2}}^{-})$...$e_{Y_{2}}^{-}$ and $e_{X}^{+}$ are independent 
->&#10114;we also have further deduction below for $P(e_{X}}^{-})$:  
+>=$P(e_{XY_{2}}^{-})$...$e_{Y_{2}}^{-}$ and $e_{X}^{+}$ are independent  
+>&#10114;we also have further deduction below for $P(e_{X}^{-})$:  
 >$P(e_{Y_{2}}^{-}\vert e_{X}^{+})\cdot P(e_{Y_{1}}^{-}\vert x)$  
 >=$\sum_{x}P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})\cdot P(e_{Y_{1}}^{-}\vert x)$  
->=$P(e_{X}}^{-})$  
+>=$P(e_{X}^{-})$  
 >=$\alpha_{X}^{-1}$  
 >&#10115;therefore, rewrite &#10112;:  
 >$\pi_{Y_{1}}(x)$  
