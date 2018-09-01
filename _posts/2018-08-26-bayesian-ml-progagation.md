@@ -127,6 +127,7 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >
 ><font color="DeepSkyBlue">[4]</font>
 ><font color="OrangeRed">Forwardward propagation to multiple descendent: extension</font>  
+><font color="Brown">proof::mjtsai1974</font>  
 >Continue from $\pi_{Y_{1}}(x)$:  
 >&#10112;multiple nominator and denominator by $P(e_{Y_{1}}^{-}\vert x)$:  
 >$\pi_{Y_{1}}(x)$  
