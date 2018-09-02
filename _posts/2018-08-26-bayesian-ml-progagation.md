@@ -151,6 +151,13 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >=$\frac {Bel_{Y_{1}}(x)}{\lambda_{Y_{1}}(x)}$  
 >Here, we take $Bel_{Y_{1}}(x)$  
 >=$\alpha_{XY_{2}}\cdot P(e_{Y_{2}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})\cdot P(e_{Y_{1}}^{-}\vert x)$  
+>
+><font color="DeepSkyBlue">[5]</font>
+><font color="OrangeRed">Forwardward propagation to multiple descendent: generalization</font>  
+>Given that node $X$ has $n$ multiple child nodes $\\{Y_{1},...,Y_{n}\\}$, then, the forward propagated evidence from $X$ to $Y_{k}$ could be generalized in below expression:  
+>$\pi_{Y_{k}}(x)$  
+>=$\frac {Bel_{Y_{k}}(x)}{\lambda_{Y_{k}}(x)}$  
+>, where $Bel_{Y_{k}}(x)$=$\alpha_{XY_{k}}\cdot\prod_{i\neq k} P(e_{Y_{k}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})$  
 
 <!-- 
 introduction to instantiation and dependence 
