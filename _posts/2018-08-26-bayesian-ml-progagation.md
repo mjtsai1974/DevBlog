@@ -89,6 +89,7 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 
 ### <font color="Red">Propagation</font> Illustration In Multiple Child Nodes
 >Now take a look at the illustration for the case of multiple child nodes.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-08-26-bayesian-ml-progagation-2-childs.png "2 childs")
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Backward propagation</font>  
 >This time, we begin by inspecting the behavior in $\lambda$.  We have evidence on the subtree at node $X$ partitioned into 2 disjoint sets $e_{XY_{1}}^{-}$,$e_{XY_{2}}^{-}$.  
@@ -157,7 +158,7 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >Given that node $X$ has $n$ multiple child nodes $\\{Y_{1},...,Y_{n}\\}$, then, the forward propagated evidence from $X$ to $Y_{k}$ could be generalized in below expression:  
 >$\pi_{Y_{k}}(x)$  
 >=$\frac {Bel_{Y_{k}}(x)}{\lambda_{Y_{k}}(x)}$  
->, where $Bel_{Y_{k}}(x)$=$\alpha_{XY_{k}}\cdot\prod_{i\neq k} P(e_{Y_{k}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})$  
+>, where $Bel_{Y_{k}}(x)$=$\alpha_{XY_{k}}\cdot\prod_{i\neq k} P(e_{Y_{i}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})$  
 
 <!-- 
 introduction to instantiation and dependence 
