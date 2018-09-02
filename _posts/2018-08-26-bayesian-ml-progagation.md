@@ -118,7 +118,7 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >The forward propagated evidence in node $X$ would be taken into 2 distinct parts.  Consider the evidence forward propagated from $X$ to $Y_{1}$, it consists of 2 major factors:  
 >&#10112;the forward propagated evidence from $W$.  
 >&#10113;the backward propagated evidence from $Y_{2}$.  
->
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-08-26-bayesian-ml-progagation-2-childs-fwd-xy1.png "fwd xy1")
 >The point is that the total forward propoagated evidence from $X$ to $Y_{2}$ is the joint probability function in combinatory format of these 2 factors.  
 >$\pi_{Y_{1}}(x)$  
 >=$P(x\vert e_{X}^{+},e_{Y_{2}}^{-})$  
