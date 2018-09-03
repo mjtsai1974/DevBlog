@@ -160,6 +160,21 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >=$\frac {Bel_{Y_{k}}(x)}{\lambda_{Y_{k}}(x)}$  
 >, where $Bel_{Y_{k}}(x)$=$\alpha_{XY_{k}}\cdot\prod_{i\neq k} P(e_{Y_{i}}^{-}\vert x)\cdot P(x\vert e_{X}^{+})$  
 
+### <font color="Red">Propagation</font> Illustration In Multiple Parent Nodes
+>Causal polytree is the structure to be used in this section, each node might have multiple parents.  
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Forward propagation</font>  
+>&#10112;the predictive support at $X$ comes from its 2 parents $W_{1}$, $W_{2}$.  
+>$\pi(x)$...$x\in X$  
+>=$P(x\vert e_{X}^{+})$  
+>=$P(x\vert e_{W_{1}X}^{+},e_{W_{2}X}^{+})\cdot P(x\vert W_{1},W_{2})$  
+>=$P(x\vert e_{W_{1}X}^{+})\cdot P(x\vert e_{W_{2}X}^{+})\cdot P(x\vert W_{1},W_{2})$  
+>=$\sum_{w_{1}}\sum_{w_{2}}P(x\vert e_{W_{1}X}^{+})\cdot P(x\vert e_{W_{2}X}^{+})\cdot P(x\vert w_{1},w_{2})$  
+>=$\sum_{w_{1}}\sum_{w_{2}}\pi_{W_{1}}(x)\cdot\pi_{W_{2}}(x)\cdot P(x\vert w_{1},w_{2})$  
+>&#10113;the generalization of forward propagation at $X$ for $n$ parents:  
+>$\pi(x)$=$\sum_{w_{1},...,w_{n}}\pi_{W_{1}}(x)\cdots\pi_{W_{n}}(x)\cdot P(x\vert w_{1},...,w_{n})$  
+>&#10114;as the forward propagation from $X$ to one of its child, say $Y_{k}$, it will have to combine the forward propagation thus obtain above with the backward propagated evidence from $\\{Y_{1},...,Y_{k-1},Y_{k+1},...,,Y_{m}\\}$, suppose $X$ has $m$ multiple child nodes.  
+
 <!-- 
 introduction to instantiation and dependence 
 p.3@https://www.doc.ic.ac.uk/~dfg/ProbabilisticInference/IDAPILecture04.pdf
