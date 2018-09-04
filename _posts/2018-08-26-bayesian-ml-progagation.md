@@ -189,6 +189,8 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >=$P(e_{X}^{-}\vert x)\cdot P(x\vert W_{1},W_{2})\cdot\beta\cdot P(e_{W_{2}X}^{+}\vert W_{2})$  
 >=$\beta\sum_{x}\lambda(x)\cdot\sum_{w_{2}}P(x\vert w_{1},w_{2})\cdot\pi_{W_{2}}(x)$  
 >, where the $S_{1}$,$S_{2}$,$\beta$ are arbitrary constants to hold the equality.  We turn from $P(W_{2}\vert e_{W_{2}X}^{+})$ to $P(e_{W_{2}X}^{+}\vert W_{2})$ to express the deduction in terms of $\pi_{W_{2}}(x)$ for its simplicity.  
+>&#10114;the generalization of $n$ multiple parents:  
+>$\lambda_{X}(w_{i})$=$\beta\sum_{x}\lambda(x)\cdot\sum_{w_{k}:k\neq i}P(x\vert w_{1},...,w_{n})\cdot\prod_{k=1:k\neq i}^{n}\pi_{W_{k}}(x)$  
 
 <!-- 
 introduction to instantiation and dependence 
