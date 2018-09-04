@@ -174,6 +174,21 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >&#10113;the generalization of forward propagation at $X$ for $n$ parents:  
 >$\pi(x)$=$\sum_{w_{1},...,w_{n}}\pi_{W_{1}}(x)\cdots\pi_{W_{n}}(x)\cdot P(x\vert w_{1},...,w_{n})$  
 >&#10114;as the forward propagation from $X$ to one of its child, say $Y_{k}$, it will have to combine the forward propagation thus obtain above with the backward propagated evidence from $\\{Y_{1},...,Y_{k-1},Y_{k+1},...,,Y_{m}\\}$, suppose $X$ has $m$ multiple child nodes.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Backward propagation</font>  
+>&#10112;the diagnostic support at $X$ comes from its 2 children $Y_{1}$, $Y_{2}$, where $\lambda(x)$=$\lambda_{Y_{1}}(x)\cdot\lambda_{Y_{2}}(x)$, must be splitted into 2 parts to be transfered to $W_{1}$, $W_{2}$, which are $\lambda_{X}(w_{1})$,$\lambda_{X}(w_{2})$.  
+>&#10113;to diagnose in $W_{1}$ the symptom/evidence backward propagated from $X$:  
+>$\lambda_{X}(w_{1})$  
+>=$P(e_{W_{1}X}^{-}\vert W_{1})$  
+>=$P(e_{X}^{-},e_{W_{2}X}^{+}\vert W_{1})$  
+>=$P(e_{X}^{-}\vert W_{1})\cdot P(e_{W_{2}X}^{+}\vert W_{1})$  
+>=$P(e_{X}^{-}\vert x)\cdot P(x\vert W_{1})\cdot P(e_{W_{2}X}^{+})$  
+>=$P(e_{X}^{-}\vert x)\cdot P(x\vert W_{1},W_{2})\cdot S_{1}\cdot P(e_{W_{2}X}^{+})$  
+>=$P(e_{X}^{-}\vert x)\cdot P(x\vert W_{1},W_{2})\cdot S_{2}\cdot P(W_{2}\vert e_{W_{2}X}^{+})$  
+>=$P(e_{X}^{-}\vert x)\cdot P(x\vert W_{1},W_{2})\cdot\beta\cdot P(e_{W_{2}X}^{+}\vert W_{2})$  
+>=$\beta\sum_{x}\lambda(x)\cdot\sum_{w_{2}}P(x\vert w_{1},w_{2})\cdot\pi_{W_{2}}(x)$  
+>, where the $S_{1}$,$S_{2}$,$\beta$ are arbitrary constants to hold the equality.  We turn from $P(W_{2}\vert e_{W_{2}X}^{+})$ to $P(e_{W_{2}X}^{+}\vert W_{2})$ to expreee the deduction in terms of $\pi_{W_{2}}(x)$ for its simplicity.  
 
 <!-- 
 introduction to instantiation and dependence 
