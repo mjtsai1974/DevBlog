@@ -162,6 +162,7 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 
 ### <font color="Red">Propagation</font> Illustration In Multiple Parent Nodes
 >Causal polytree is the structure to be used in this section, each node might have multiple parents.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-08-26-bayesian-ml-progagation-causal-poly-t.png "caual poly tree")
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Forward propagation</font>  
 >&#10112;the predictive support at $X$ comes from its 2 parents $W_{1}$, $W_{2}$.  
