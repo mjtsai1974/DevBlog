@@ -5,7 +5,7 @@ title: Propagation In The Bayesian Network
 
 ## Prologue To <font color="Red">Propagation</font> In The <font color="Red">Bayesian Network</font>
 <p class="message">
-The <font color="Red">respective</font> and <font color="Red">retrospective</font> inferences are ascertained by means of <font color="Red">variable elimination</font> is also computation expensive, it works for one variable at a time, the same operation would be repeated upon new inference on other variables is requested.  
+The <font color="Red">respective</font> and <font color="Red">retrospective</font> inferences ascertained by means of <font color="Red">variable elimination</font> is also computation expensive, it works for one variable at a time, the same operation would be repeated upon new inference on other variables is requested.  
 An alternative to overcome these limitations is by using <font color="Red">propagation</font> in the <font color="Red">Bayesian network</font>.  
 </p>
 
