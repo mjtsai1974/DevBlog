@@ -191,18 +191,16 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 >=$\beta\sum_{x}\lambda(x)\cdot\sum_{w_{2}}P(x\vert w_{1},w_{2})\cdot\pi_{W_{2}}(x)$  
 >, where the $S_{1}$,$S_{2}$,$\beta$ are arbitrary constants to hold the equality.  We turn from $P(W_{2}\vert e_{W_{2}X}^{+})$ to $P(e_{W_{2}X}^{+}\vert W_{2})$ to express the deduction in terms of $\pi_{W_{2}}(x)$ for its simplicity.  
 >&#10114;the generalization of $n$ multiple parents:  
->$\lambda_{X}(w_{i})$=$\beta\sum_{x}\lambda(x)\cdot\sum_{w_{k}:k\neq i}P(x\vert w_{1},...,w_{n})\cdot\prod_{k=1:k\neq i}^{n}\pi_{W_{k}}(x)$  
+>$\lambda_{X}(w_{i})$  
+=$\beta\sum_{x}\lambda(x)$  
+$\;\;\cdot\sum_{w_{k}:k\neq i}P(x\vert w_{1},...,w_{n})$  
+$\;\;\cdot\prod_{k=1:k\neq i}^{n}\pi_{W_{k}}(x)$  
+>
+>Cautions must be made that the belief updated by propagation would result in expensive computation consumption when there exists multiple parents.  The introduction of propagation aims to eliminate the potential expensive computation of NP-hard order in variable elimination, now it seems that it is struggling over.  Next to see the clique tree series, to be believed workable in a lot references.  
 
-<!-- 
-introduction to instantiation and dependence 
-p.3@https://www.doc.ic.ac.uk/~dfg/ProbabilisticInference/IDAPILecture04.pdf
--->
-
-<!-- 
 ### Addendum
 >&#10112;[](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf)  
 >&#10113;[](https://www.doc.ic.ac.uk/~dfg/ProbabilisticInference/IDAPILecture04.pdf)  
--->
 
 <!-- Γ -->
 <!-- \Omega -->
