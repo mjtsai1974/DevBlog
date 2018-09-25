@@ -196,7 +196,8 @@ An alternative to overcome these limitations is by using <font color="Red">propa
 $\;\;\cdot\sum_{w_{k}:k\neq i}P(x\vert w_{1},...,w_{n})$  
 $\;\;\cdot\prod_{k=1:k\neq i}^{n}\pi_{W_{k}}(x)$  
 >
-><font color="Red">Cautions</font> must be made that the belief updated by propagation would result in expensive computation consumption when there exists multiple parents.  The introduction of propagation aims to eliminate the potential expensive computation of NP-hard order in variable elimination, now it seems that it is struggling over.  Next to see the <font color="Red">clique tree</font> series, to be believed workable in a lot references.  
+><font color="Red">[Cautions]</font>
+>The belief updated by propagation would result in expensive computation consumption when there exists multiple parents.  The introduction of propagation aims to eliminate the potential expensive computation of NP-hard order in variable elimination, now it seems that it is struggling over.  Next to see the <font color="Red">clique tree</font> series, to be believed workable in a lot references.  
 
 ### Addendum
 >&#10112;[A T utorial on Bayesian Belief Networks, Mark L Krieg, Surveillance Systems Division Electronics and Surveillance Research Laboratory, DSTO-TN-0403](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.2195&rep=rep1&type=pdf)  
