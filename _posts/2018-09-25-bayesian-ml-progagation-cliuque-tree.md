@@ -16,6 +16,12 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >This is an <font color="RosyBrown">invalid</font> clique tree, variable B should exist in all the cliques in the path in between cliques of $(B,S)$ and $(R,D,B)$.  
 >![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-valid.png "valid")
 >This is a <font color="DeepPink">valid</font> clique tree, since it meets the criteria that a variable could be found on all cliques in the path between 2 cliques containing it.  
+>
+>A <font color="DeepSkyBlue">clique tree covers a Bayesian network</font> if below conditions are meet:  
+>![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-bn.png "BN sample")
+>&#10112;the union of the cliques is the set of the variables in the <font color="Red">Bayesian network</font>.  
+>&#10113;for any variable $X$, the clique tree has one clique containing this variable with all its parent variables, such clique is called the <font color="OrangeRed">family cover clique</font> of $X$.  
+>Suppose we are given this <font color="Red">Bayesian network</font>, above valid clique tree is just one such example.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
