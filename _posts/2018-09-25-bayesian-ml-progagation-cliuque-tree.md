@@ -10,10 +10,10 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 
 ### The <font color="Red">Clique Tree</font>
 >A <font color="Red">clique tree</font> is an <font color="Red">undirected</font> tree, where:  
->&#10112;each node in the tree is a set of variables, called a <font color="Red">clique</font>.
+>&#10112;each node in the tree is a set of variables, called a <font color="Red">clique</font>.  
 >&#10113;<font color="DeepPink">if one variable appears in 2 cliques, it must exist in all the cliques in the path between the 2 cliques</font>.  It is <font color="DeepPink">variable-connected</font>.  
->
->
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-invalid.png "invalid")
+>This is an invalid clique tree, variable B should exist in all the cliques in the path in between cliques of $(B,S)$ and $(R,D,B)$.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
