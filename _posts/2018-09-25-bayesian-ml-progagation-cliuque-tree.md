@@ -37,8 +37,9 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Instantiate the variable with the observed evidence</font>  
 >Using the same <font color="Red">Bayesian network</font>, we denote the observed evidence as $E$, <font color="OrangeRed">in the real world, we can have observation of multiple variables at the same time</font>.  
->Suppose we have observed $A=y$ and $X=y$, to instantiate the clique tree, we associate the independence probability function containing $A$ and $X$ with the observed value $y$.  
 >
+>Suppose we have observed $A=y$ and $X=y$, to instantiate the clique tree, we associate the independence probability function containing $A$ and $X$ with the observed value $y$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-ve-step-2.png "step 2")
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
