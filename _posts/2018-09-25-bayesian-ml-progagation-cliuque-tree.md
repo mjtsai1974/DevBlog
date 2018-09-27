@@ -14,14 +14,25 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >&#10113;<font color="DeepPink">if one variable appears in 2 cliques, it must exist in all the cliques in the path between the 2 cliques</font>.  It is <font color="DeepPink">variable-connected</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-invalid.png "invalid")
 >This is an <font color="RosyBrown">invalid</font> clique tree, variable B should exist in all the cliques in the path in between cliques of $(B,S)$ and $(R,D,B)$.  
->![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-valid.png "valid")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-valid.png "valid")
 >This is a <font color="DeepPink">valid</font> clique tree, since it meets the criteria that a variable could be found on all cliques in the path between 2 cliques containing it.  
 >
 >A <font color="DeepSkyBlue">clique tree covers a Bayesian network</font> if below conditions are meet:  
->![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-bn.png "BN sample")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-bn.png "BN sample")
 >&#10112;the union of the cliques is the set of the variables in the <font color="Red">Bayesian network</font>.  
 >&#10113;for any variable $X$, the clique tree has one clique containing this variable with all its parent variables, such clique is called the <font color="OrangeRed">family cover clique</font> of $X$.  
->Suppose we are given this <font color="Red">Bayesian network</font>, above valid clique tree is just one such example.  
+>Suppose we are given above <font color="Red">Bayesian network</font>, below <font color="Red">clique tree</font> is just one such example.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-family-cover.png "valid")
+
+### The <font color="Red">Clique Tree</font> For <font color="Red">Variable Elimination</font>
+>Supposed we are given this Bayesian network and would like to make the posterior belief update of <font color="Red">all</font> variables based on the observed evidence.  This paragraph will guide you through the whole process by using the <font color="Red">clique tree</font>.  
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">To instantiate the cliques with independence probability distribution of BN variables</font>  
+>For each variable $X$ in <font color="Red">Bayesian Network</font>:  
+>&#10112;find the probability of $P(X\vert Pa(X))$ and attach it onto the clique containing $X$.  
+>&#10113;if the clique has no probability of independence attached, set it to the <font color="Green">identity</font> function.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-ve-step-1.png "step 1")
+
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
