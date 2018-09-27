@@ -25,14 +25,20 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-family-cover.png "valid")
 
 ### The <font color="Red">Clique Tree</font> For <font color="Red">Variable Elimination</font>
->Supposed we are given this Bayesian network and would like to make the posterior belief update of <font color="Red">all</font> variables based on the observed evidence.  This paragraph will guide you through the whole process by using the <font color="Red">clique tree</font>.  
+>Supposed we are given this <font color="Red">Bayesian network</font> and would like to make the posterior belief update of <font color="Red">all</font> variables based on the observed evidence.  This paragraph will guide you through the whole process by using the <font color="Red">clique tree</font>.  
 ><font color="DeepSkyBlue">[1]</font>
-><font color="OrangeRed">To instantiate the cliques with independence probability distribution of BN variables</font>  
->For each variable $X$ in <font color="Red">Bayesian Network</font>:  
+><font color="OrangeRed">Initialize the cliques with independence probability distribution of BN variables</font>  
+>For each variable $X$ in <font color="Red">Bayesian network</font>:  
 >&#10112;find the probability of $P(X\vert Pa(X))$ and attach it onto the clique containing $X$.  
 >&#10113;if the clique has no probability of independence attached, set it to the <font color="Green">identity</font> function.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-ve-step-1.png "step 1")
-
+>Trivially, the multiplication of all functions on the clique tree is equivalent to the full joint probability distribution in the <font color="Red">Bayesian network</font>.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Instantiate the variable with the observed evidence</font>  
+>Using the same <font color="Red">Bayesian network</font>, we denote the observed evidence as $E$, <font color="OrangeRed">in the real world, we can have observation of multiple variables at the same time</font>.  
+>Suppose we have observed $A=y$ and $X=y$, to instantiate the clique tree, we associate the independence probability function containing $A$ and $X$ with the observed value $y$.  
+>
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
