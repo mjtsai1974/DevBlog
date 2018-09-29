@@ -58,7 +58,7 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >&#10112;$g_{i}$ is the message from $C_{i}$ to $C$.  
 >&#10113;$f_{j}$ is the function attached to $C$.  
 >&#10114;the messages passed to $C$, are trsnafered to $C'$, we denote it $H$.  
->$H(C\cap C'-E)$=$\sum_{C\\C'\cup E}\prod_{i}g_{i}\prod_{j}f_{j}$  
+>$H(C\cap C'-E)$=$\sum_{C\backslash C'\cup E}\prod_{i}g_{i}\prod_{j}f_{j}$  
 >The summation over elements purely from $C$, not belong to $C'$ and $E$(evidence).  
 
 ### Addendum
