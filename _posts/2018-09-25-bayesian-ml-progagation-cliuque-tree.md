@@ -49,7 +49,17 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >&#10113;for case of <font color="OrangeRed">two</font> query variables, then <font color="OrangeRed">combine the cliques of the queried variable together as the pivot</font>, or just <font color="OrangeRed">choose the clique containing these 2 queried variables</font>, if any exists.  
 >Suppose we'd like to query for $P(T,L\vert A=y,X=y)$, we can <font color="OrangeRed">directly take the clique $(T,L,R)$ as to pivot</font>.  If we'd like to query for $P(T,B\vert A=y,X=y)$, then <font color="OrangeRed">combine the cliques $(T,L,R)$,$(R,L,B)$ just holds</font>.  
 >&#10114;for multiple query variables case, follow &#10113;'s fashion, could we reach the goal.  
-
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Pass the messages from the leafs to the pivot</font>  
+>When we have a clique tree constructed, <font color="OrangeRed">the messages(evidence) are passed from the leafs to the pivot node</font>.  Supposed we have such example of undirected graph, the clique is expressed by uppercase C for better understanding.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-ve-step-4-msg-passing.png "msg passing")
+>This exhibition reveals the portion mostly closed to the target pivot $C_{Q}$, the messages are coming from $C_{i}$, where $i$=$1$ to $k$, such <font color="OrangeRed">message passing are triggered by the observed evidence on leaf nodes</font>, maybe far away from these $C_{i}$s.  
+>&#10112;$g_{i}$ is the message from $C_{i}$ to $C$.  
+>&#10113;$f_{j}$ is the function attached to $C$.  
+>&#10114;the messages passed to $C$, are trsnafered to $C'$, we denote it $H$.  
+>$H(C\cap C'-E)$=$\sum_{C\\C'\cup E}\prod_{i}g_{i}\prod_{j}f_{j}$  
+>The summation over elements purely from $C$, not belong to $C'$ and $E$(evidence).  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
