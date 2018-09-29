@@ -60,7 +60,7 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >&#10114;the messages passed to $C$, are trsnafered to $C'$, we denote it $H$.  
 >$H((C\cap C')-E)$=$\sum_{C\backslash C'\cup E}\prod_{i}g_{i}\prod_{j}f_{j}$  
 >The summation over elements purely from $C$, not belonging to $C'$ and $E$(evidence).  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-ve-step-4-msg-passing.png "msg passing function")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-ve-step-4-msg-passing-h.png "msg passing function")
 >The term $(C\cap C')-E$ is better understood by this illustration.  Since <font color="OrangeRed">$C$ and $C'$ are independent, the intersection of the 2 nodes is null</font>.  It's the evidence existing in the space in between $C$ and $C'$, after we minus $E$, what we want is the pure message from $C$ to $C'$.  
 
 
