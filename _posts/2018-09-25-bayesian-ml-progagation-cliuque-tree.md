@@ -63,7 +63,10 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-ve-step-4-msg-passing-func.png "msg passing function")
 >The term $(C\cap C')-E$ is better understood by this illustration.  Since <font color="OrangeRed">$C$ and $C'$ are independent, the intersection of the 2 nodes is null</font>.  It's the <font color="#C20000">evidence existing in the space in between $C$ and $C'$, after we minus $E$, what we want is the pure message from $C$ to $C'$</font>.  
 >
->
+><font color="DeepSkyBlue">[5]</font>
+><font color="OrangeRed">Posterior belief update</font>  
+>Supposed we'd like to query for $P(Q|E=e)$ in above given graph of <font color="Red">clique tree</font>, and we take $H(Q,\chi)$ to be the <font color="DeepSkyBlue">function attached or send to</font> $C_{Q}$, where $\chi$ stands for all <font color="OrangeRed">unobserved</font> variables other than $Q$ in $C_{Q}$:  
+>$P(Q|E=e)$=$\frac {\sum_{\chi}H(Q,\chi)}{\sum_{Q,\chi}H(Q,\chi)}$  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
