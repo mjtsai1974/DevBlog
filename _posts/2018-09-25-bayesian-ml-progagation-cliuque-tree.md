@@ -41,6 +41,14 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >Suppose we have observed $A=y$ and $X=y$, to instantiate the clique tree, we associate the independence probability function containing $A$ and $X$ with the observed value $y$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-ve-step-2.png "step 2")
 >If we take $\chi$ to be all unobserved variables, $P(\chi,E)$ is just the multiplication of all functions on the clique tess, which will laterly be proved.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Choose pivot for reference</font>  
+>&#10112;for <font color="DeepSkyBlue">one</font> query variable case, <font color="DeepSkyBlue">choose the clique containing that variable in it to be the pivot</font>.  
+>Suppose we'd like to query for $P(L\vert A=y,X=y)$, based on the observation of $A=y,X=y$, in the same example, take the <font color="Red">clique</font> $(R,L,B)$ to be the <font color="Red">pivot</font>, the $(T,L,R)$ could also be the candidate.  
+>&#10113;for case of <font color="OrangeRed">two</font> query variables, then <font color="OrangeRed">combine the cliques of the queried variable together as the pivot</font>, or just <font color="OrangeRed">choose the clique containing these 2 queried variables</font>, if any exists.  
+>Suppose we'd like to query for $P(T,L\vert A=y,X=y)$, we can <font color="OrangeRed">directly take the clique $(T,L,R)$ as to pivot</font>.  
+>If we'd like to query for $P(T,B\vert A=y,X=y)$, then <font color="OrangeRed">combine the cliques $T,L,R$,$R,L,B$ just holds</font>.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
