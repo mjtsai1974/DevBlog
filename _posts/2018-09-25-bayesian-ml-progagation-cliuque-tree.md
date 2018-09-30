@@ -86,9 +86,9 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >$f_{5}(L,R)$=$\sum_{T}f_{1}(T)\cdot f_{2}(R)\cdot P(R\vert T,L)$  
 >This time, join over $T$.  
 >&#10117;thus we have $f_{3}(L,B)$,$f_{4}(R,B)$ and $f_{5}(L,R)$, the joint probability is thus distributed and expressed as:  
->$H(R,L,B)$=$f_{3}(L,B)\cdot f_{4}(R,B)\cdot f_{5}(L,R)$  
+>$H(R,L,B)$=$f_{3}(L,B)\cdot f_{4}(R,B)\cdot f_{5}(L,R)\cdot 1$  
 >
->Finally, $P(L\vert A=y,X=y)$=$\frac {\sum_{R,B}H(R,L,B)}{}\sum_{R,L,B}H(R,L,B)$, since <font color="OrangeRed">$H(R,L,B)$ already encompass $A=y$ and $X=y$ in it</font>.  
+>Finally, $P(L\vert A=y,X=y)$=$\frac {\sum_{R,B}H(R,L,B)}{\sum_{R,L,B}H(R,L,B)}$, since <font color="OrangeRed">$H(R,L,B)$ already encompass $A=y$ and $X=y$ in it</font>.  
 
 
 ### Addendum
