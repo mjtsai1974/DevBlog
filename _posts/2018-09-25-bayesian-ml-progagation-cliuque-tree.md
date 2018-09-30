@@ -68,6 +68,14 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >Supposed we'd like to query for $P(Q|E=e)$ in above given graph of <font color="Red">clique tree</font>, and we take $H(Q,\chi)$ to be the <font color="DeepSkyBlue">function attached or send to</font> $C_{Q}$, where $\chi$ stands for all <font color="OrangeRed">unobserved</font> variables other than $Q$ in $C_{Q}$:  
 >$P(Q|E=e)$=$\frac {\sum_{\chi}H(Q,\chi)}{\sum_{Q,\chi}H(Q,\chi)}$  
 
+### <font color="Red">Posterior Belief Update</font> Illustration In <font color="Red">Clique Tree</font>
+<font color="RoyalBlue">[Question]</font>
+>Using the same <font color="Red">clique tree</font>, suppose we are given the observed evidence on $A=y$ and $X=y$, we'd like to make inference on $P(L\vert A=y,X=y)$.  
+<font color="DeepSkyBlue">[Answer]</font>
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-bel-upd.png "bel update")
+>Let's illustrate by this graph, similar to variable elimination process.  
+>
+
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
 
