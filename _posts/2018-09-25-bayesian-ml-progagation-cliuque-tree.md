@@ -72,9 +72,24 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 <font color="RoyalBlue">[Question]</font>
 >Using the same <font color="Red">clique tree</font>, suppose we are given the observed evidence on $A=y$ and $X=y$, we'd like to make inference on $P(L\vert A=y,X=y)$.  
 <font color="DeepSkyBlue">[Answer]</font>
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-bel-upd.png "bel update")
 >Let's illustrate by this graph, similar to variable elimination process.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-bel-upd.png "bel update")
+>&#10112;do the join over $A=y$ in clique $(A,T)$:  
+>$f_{1}(T)$=$P(A=y)\cdot P(T\vert A=y)$  
+>&#10113;directly take the only attached function in clique $(R,X)$:  
+>$f_{2}(R)$=$P(X=y\vert R)$  
+>&#10114;do the join over $S$ in clique $(L,S,B)$, we'd like to <font color="DeepSkyBlue">move toward the pivot</font>:  
+>$f_{3}(L,B)$=$\sum_{S}P(S)\cdot P(L\vert S)\cdot P(B\vert S)$  
+>&#10115;do the join over $D$ in clique $(R,D,B)$, we'd like to <font color="DeepSkyBlue">move toward the pivot</font>:  
+>$f_{4}(R,B)$=$\sum_{D}P(D\vert R,B)$  
+>&#10116;<font color="DeepSkyBlue">in clique $(T,L,R)$, collect the message from clique $(A,T)$ and $(R,X)$, pass it to the pivot</font>:  
+>$f_{5}(L,R)$=$\sum_{T}f_{1}(T)\cdot f_{2}(R)\cdot P(R\vert T,L)$  
+>This time, join over $T$.  
+>&#10117;thus we have $f_{3}(L,B)$,$f_{4}(R,B)$ and $f_{5}(L,R)$, the joint probability is thus distributed and expressed as:  
+>$H(R,L,B)$=$f_{3}(L,B)\cdot f_{4}(R,B)\cdot f_{5}(L,R)$  
 >
+>Finally, $P(L\vert A=y,X=y)$=$\frac {\sum_{R,B}H(R,L,B)}{}\sum_{R,L,B}H(R,L,B)$, since <font color="OrangeRed">$H(R,L,B)$ already encompass $A=y$ and $X=y$ in it</font>.  
+
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
