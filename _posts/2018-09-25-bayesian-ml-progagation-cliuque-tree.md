@@ -101,9 +101,15 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >Just like your eyes see somthing, stimulation from certain observation of evidence to the brain, next would be the inspiration from the brain central point back to each distinct parts that had joined in this message frowarding process, finally back to your eyes.  This explains why human sometimes tracks object movement, maybe.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-bel-upd-dist.png "distribution")
 >Using the same example of <font color="Red">clique tree</font>, the message is distributed from the pivot $(R,L,B)$ to all other cliques in reversed direction.  
->&#10112;  
->&#10113;  
-
+>&#10112;$f_{6}(R,L)$=$\sum_{B}f_{3}(L,B)\cdot f_{4}(R,B)\cdot 1$  
+>Combine the $f_{3}(L,B)$,$f_{4}(R,B)$ by joining over $B$, could we have the function of message passing to clique $(T,L,R)$.  
+>&#10113;$f_{7}(R,B)$=$\sum_{L}f_{3}(L,B)\cdot f_{5}(R,L)\cdot 1$  
+>&#10114;$f_{8}(L,B)$=$\sum_{R}f_{4}(R,B)\cdot f_{5}(R,L)\cdot 1$  
+>&#10115;$f_{9}(R)$=$\sum_{T,L}f_{1}(T)\cdot f_{6}(R,L)\cdot P(R\vert T,L)$  
+>Combine $P(R\vert T,L)$ with $f_{1}(T)$ and $f_{6}(R,L)$, join over $T,L$, could we have such expression of the message passing to clique $(R,X)$ from the pivot.  
+>&#10115;$f_{10}(T)$=$\sum_{R}f_{2}(R)\cdot f_{6}(R,L)$  
+>
+>Have you found that the function of the message from the pivot to the leafs are all expressed in terms of the variables the same as it is in the clique from which passes message to the pivot.  
 
 <!-- ### <font color="Red">Computation Sharing</font> In All Queries -->
 
