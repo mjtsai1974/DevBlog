@@ -90,6 +90,22 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >
 >Finally, $P(L\vert A=y,X=y)$=$\frac {\sum_{R,B}H(R,L,B)}{\sum_{R,L,B}H(R,L,B)}$, since <font color="OrangeRed">$H(R,L,B)$ already encompass $A=y$ and $X=y$ in it</font>.  
 
+### The <font color="Red">Clique Tree</font> Propagation Algorithm: <font color="Red">Computation Sharing</font> In All Queries
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The algorithm of two sweep message passing</font>  
+>&#10112;the first sweep is <font color="DeepSkyBlue">collection</font>, from the leafs to the pivot, above posterior belief update illustration is the example.  
+>&#10113;the second sweep is <font color="DeepSkyBlue">distribution</font>, from the pivot to the leafs.  Next to illustrate it.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Propagation from the pivot to the leafs</font>  
+>Just like your eyes see somthing, stimulation from certain observation of evidence to the brain, next would be the inspiration from the brain central point back to each distinct parts that had joined in this message frowarding process, finally back to your eyes.  This explains why human sometimes tracks object movement, maybe.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-bel-upd-dist.png "distribution")
+>Using the same example of <font color="Red">clique tree</font>, the message is distributed from the pivot $(R,L,B)$ to all other cliques in reversed direction.  
+>&#10112;  
+>&#10113;  
+
+
+<!-- ### <font color="Red">Computation Sharing</font> In All Queries -->
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
