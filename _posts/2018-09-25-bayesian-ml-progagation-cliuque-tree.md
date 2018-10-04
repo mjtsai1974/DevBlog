@@ -111,6 +111,19 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >
 >Have you found that <font color="DeepPink">the function of the message from the pivot to the leafs are all expressed in terms of the variables the same as it is in the clique from which passes message to the pivot</font>.  
 >
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Posterior belief update after distribution::mjtsai1974</font>  
+>Suppose you'd like to infer $P(L\vert A=y,X=y)$ in $(T'L'R)$, since we have $f_{1}(T)$,$f_{2}(R)$,$f_{6}(R,L)$ send to $(T'L'R)$ and $P(R\vert T,L)$ attached to it:  
+>&#10112;$I(T,L,R)$  
+>=$\sum_{B}f_{1}(T)\cdot f_{2}(R)\cdot$  
+>$..f_{3}(L,B)\cdot f_{4}(R,B)\cdot P(R\vert T,L)$  
+>=$f_{1}(T)\cdot f_{2}(R)\cdot f_{6}(R,L)\cdot P(R\vert T,L)$  
+>, where $f_{6}(R,L)$ is the join of $f_{3}(L,B)$ and $f_{4}(R,B)$ over $B$.  
+>&#10113;$P(L\vert A=y,X=y)$  
+>=$\frac {\sum_{T,L,R}I(T,R)}{\sum_{T,L,R}I(T,L,R)}$  
+>&#10114;by <font color="DeepPink">using $H(R,L,B)$ or $I(T,L,R)$ is to calculate $P(L\vert A=y,X=y)$ on the same sets of functions</font>!  
+>
+>This is my explain of <font color="Red">computation sharing</font>.  
 
 <!-- ### <font color="Red">Computation Sharing</font> In All Queries -->
 
