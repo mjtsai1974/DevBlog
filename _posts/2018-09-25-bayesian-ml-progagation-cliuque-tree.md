@@ -113,7 +113,7 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Posterior belief update after distribution::mjtsai1974</font>  
->Suppose you'd like to infer $P(L\vert A=y,X=y)$ in $(T'L'R)$, since we have $f_{1}(T)$,$f_{2}(R)$,$f_{6}(R,L)$ send to $(T'L'R)$ and $P(R\vert T,L)$ attached to it:  
+>Suppose you'd like to infer $P(L\vert A=y,X=y)$ in $(T,L,R)$, since we have $f_{1}(T)$,$f_{2}(R)$,$f_{6}(R,L)$ send to $(T'L'R)$ and $P(R\vert T,L)$ attached to it:  
 >&#10112;$I(T,L,R)$  
 >=$\sum_{B}f_{1}(T)\cdot f_{2}(R)\cdot$  
 >$..f_{3}(L,B)\cdot f_{4}(R,B)\cdot P(R\vert T,L)$  
