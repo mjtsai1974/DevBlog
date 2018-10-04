@@ -109,7 +109,8 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >Combine $P(R\vert T,L)$ with $f_{1}(T)$ and $f_{6}(R,L)$, join over $T,L$, could we have such expression of the message passing to clique $(R,X)$ from the pivot.  
 >&#10115;$f_{10}(T)$=$\sum_{R}f_{2}(R)\cdot f_{6}(R,L)$  
 >
->Have you found that the function of the message from the pivot to the leafs are all expressed in terms of the variables the same as it is in the clique from which passes message to the pivot.  
+>Have you found that <font color="DeepPink">the function of the message from the pivot to the leafs are all expressed in terms of the variables the same as it is in the clique from which passes message to the pivot</font>.  
+>
 
 <!-- ### <font color="Red">Computation Sharing</font> In All Queries -->
 
