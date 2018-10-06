@@ -125,7 +125,19 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >
 >This is my explain of <font color="Red">computation sharing</font>.  
 
-<!-- ### <font color="Red">Computation Sharing</font> In All Queries -->
+### The <font color="Red">Clique Tree</font> Properties
+><font color="DeepSkyBlue">Property 1</font>
+><font color="OrangeRed">The arguemnts of the functions attached or send to a clique are all veriables in the clique</font>  
+>In mjtsai's explain:  
+>&#10112;<font color="DeepSkyBlue">before</font> $C$ sends to $C'$, the arguments of the functions attached to $C$ or send to $C$ <font color="OrangeRed">would be passed to</font> a clique $C'$ are all variables in the clique $C$.  
+>&#10113;<font color="DeepSkyBlue">after</font> $C$ sends to $C'$, the arguments of the functions attached to $C$ or send to $C$ <font color="OrangeRed">has been passed to</font> a clique $C'$ are all variables in the clique $C$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-arguments-passing.png "arguments passing")
+><font color="Brown">proof::mjtsai1974</font>  
+>Using the same <font color="Red">clique tree</font> in above paragraph, focus on the left pink marked part.   
+>&#10112;by given we have $f_{j}$ attached to $C$ and passing message of $g_{i}$ from $C_{i}$.  
+>&#10113;the function of the messgae from $C$ to $C'$ is thus defined:  
+>$H((C\cap C')-E)$=$\sum_{C\backslash C'\cup E}\prod_{i}g_{i}\prod_{j}f_{j}$  
+>therefore, the arguments of the functions in the passing messgae from $C$ to $C'$ are all the variables in $C$.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
