@@ -145,11 +145,26 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >We denote <font color="DeepSkyBlue">a clique is un-activated if it has not send out messages</font>.  
 >Using the same <font color="Red">clique tree</font> in below paragraph.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-prod-of-funcs.png "prod of funcs")
->&#10112;take $\chi$ to be the set of <font color="OrangeRed">unobserved</font> variables in <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">before</font> $C$ sends message to $C'$.  
->&#10113;take $\chi'$ to be the set of <font color="OrangeRed">unobserved</font> variables in <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">after</font> $C$ sends message to $C'$.  
->&#10114;take $r$ to be the product of functions attached to or send to <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">after</font> $C$ sends message to $C'$, then $r$ is a function of $\chi'$, that is $r(\chi')$, where $H$ is <font color="RosyBrown">not</font> included, since <font color="DeepSkyBlue">$H$ is just the function of message passing in between</font>!!  
+>&#10112;take $\chi$ to be the set of <font color="OrangeRed">unobserved</font> variables in <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">before</font> $C$ send message to $C'$.  
+>&#10113;take $\chi'$ to be the set of <font color="OrangeRed">unobserved</font> variables in <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">after</font> $C$ send message to $C'$.  
+>&#10114;take $r$ to be the product of functions attached to or send to <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">after</font> $C$ send message to $C'$, then $r$ is a function of $\chi'$, that is $r(\chi')$, where $H$ is <font color="RosyBrown">not</font> included, since <font color="DeepSkyBlue">$H$ is just the function of message passing in between</font>!!  
 >&#10115;consider the message passing from $C$ to $C'$, take $C\backslash C'\cup E$ into account, for simplicity, treat $Z$=$C\backslash C'\cup E$, where $Z\in C$ and $Z\not\in C'$ is of no doubt.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-prod-of-funcs-unobserved.png "unobserved")
+>&#10116;under &#10115;, we have <font color="OrangeRed">$\chi$=$Z\cup\chi'$</font>, the full illustration is exhibited below:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-prod-of-funcs-unobserved-full.png "full unobserved")
+>&#10117;<font color="OrangeRed">suppose property 2 is true</font> that  
+>$r(\chi')\cdot\prod_{i}g_{i}\prod_{j}f_{j}$=$P(\chi,E=e)$, next, consider the time point of <font color="OrangeRed">"before being after"</font>(by $H$) and <font color="OrangeRed">"being after"</font>(by $r(\chi')$) $C$ send messages to $C'$, <font color="DeepSkyBlue">the combinatory of these two propagation provides a full image of distribution in this whole cliquer tree</font>:  
+>$r(\chi')\cdot H((C\cap C')-E)$  
+>=$r(\chi')\cdot\sum_{C\backslash C'\cup E}\prod_{i}g_{i}\prod_{j}f_{j}$  
+>=$\sum_{Z}r(\chi')\cdot\prod_{i}g_{i}\prod_{j}f_{j}$  
+>=$\sum_{Z}P(\chi,E=e)$  
+>=$\sum_{Z}P(Z,\chi',E=e)$  
+>=$P(\chi',E=e)$  
+>&#10118;$r(\chi')\cdot\prod_{i}g_{i}\prod_{j}f_{j}$=$P(\chi,E=e)$  
+>$\Leftrightarrow$  
+>$r(\chi')\cdot H((C\cap C')-E)$=$P(\chi',E=e)$  
+>
+>That is to say <font color="#C20000"><font color="DeepSkyBlue">before</font> $C$ send messages to $C'$, the product of all functions attached to or send to all un-activated cliques(at this moment, <font color="DeepSkyBlue">$C$, $C'$ and others</font> are all un-activated) is equivalent to the the product of all functions attached to or send to all un-activated cliques(at this moment, <font color="DeepSkyBlue">$C'$ and others</font> are all un-activated), <font color="DeepSkyBlue">after</font> $C$ send messages to $C'$</font>.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
