@@ -126,7 +126,7 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >This is my explain of <font color="Red">computation sharing</font>.  
 
 ### The <font color="Red">Clique Tree</font> Properties
-><font color="DeepSkyBlue">Property 1:</font>
+><font color="DeepSkyBlue">[Property 1]</font>  
 ><font color="OrangeRed">The arguemnts of the functions attached or send to a clique are all veriables in the clique</font>  
 >In mjtsai's explain:  
 >&#10112;<font color="DeepSkyBlue">before</font> $C$ sends to $C'$, the arguments of the functions attached to $C$ or send to $C$ <font color="OrangeRed">would be passed to</font> a clique $C'$ are all variables in the clique $C$.  
@@ -139,9 +139,14 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >$H((C\cap C')-E)$=$\sum_{C\backslash C'\cup E}\prod_{i}g_{i}\prod_{j}f_{j}$  
 >therefore, the arguments of the functions in the passing messgae from $C$ to $C'$ are all the variables in $C$.  
 >
-><font color="DeepSkyBlue">Property 2:</font>
+><font color="DeepSkyBlue">[Property 2]</font>  
 ><font color="OrangeRed">Product of functions attached to or send to all un-activated cliques=$P(\chi,E=e)$, where $\chi$ stands for all unobserved variables in these un-activated cliques</font>  
 >We denote <font color="DeepSkyBlue">a clique is un-activated if it has not send out messages</font>.  
+><font color="Brown">proof::mjtsai1974</font>  
+>Using the same <font color="Red">clique tree</font> in below paragraph.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-prod-of-funcs.png "prod of funcs")
+>&#10112;take $\chi$ to be the set of unobserved variables in <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">before</font> $C$ sends message to $C'$.  
+>&#10112;take $\chi'$ to be the set of unobserved variables in <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">after</font> $C$ sends message to $C'$.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
