@@ -164,7 +164,7 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >$\Leftrightarrow$  
 >$r(\chi')\cdot H((C\cap C')-E)$=$P(\chi',E=e)$  
 >
->That is to say <font color="#C20000"><font color="DeepSkyBlue">before</font> $C$ send messages to $C'$, the product of all functions attached to or send to all un-activated cliques(at this moment, <font color="DeepSkyBlue">$C$, $C'$ and others</font> are all un-activated) is equivalent to the the product of all functions attached to or send to all un-activated cliques(at this moment, <font color="DeepSkyBlue">$C'$ and others</font> are all un-activated), <font color="DeepSkyBlue">after</font> $C$ send messages to $C'$</font>.  
+>That is to say <font color="#C20000"><font color="DeepSkyBlue">before</font> $C$ send messages to $C'$, the product of all functions attached to or send to all un-activated cliques(at this moment, <font color="DeepSkyBlue">$C$, $C'$ and others</font> are all un-activated) is equivalent to the the product of all functions attached to or send to all un-activated cliques(at this moment, <font color="DeepSkyBlue">$C'$ and others</font> are all un-activated), <font color="DeepSkyBlue">after</font> $C$ send messages to $C'$</font>...<font color="Brown">by mjtsai1974</font>.    
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
