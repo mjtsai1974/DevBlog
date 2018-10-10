@@ -153,7 +153,7 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >&#10116;under &#10115;, we have <font color="OrangeRed">$\chi$=$Z\cup\chi'$</font>, the full illustration is exhibited below:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-prod-of-funcs-unobserved-full.png "full unobserved")
 >&#10117;<font color="OrangeRed">suppose property 2 is true</font> that  
->$r(\chi')\cdot\prod_{i}g_{i}\prod_{j}f_{j}$=$P(\chi,E=e)$, next, consider the time point of <font color="OrangeRed">"before being after"</font>(by $H$) and <font color="OrangeRed">"being after"</font>(by $r(\chi')$) $C$ send messages to $C'$, <font color="DeepSkyBlue">the combinatory of these two propagation provides a full image of distribution in this whole cliquer tree</font>:  
+>$r(\chi')\cdot\prod_{i}g_{i}\prod_{j}f_{j}$=$P(\chi,E=e)$, next, consider the time point of <font color="OrangeRed">"before being after"</font>(by $H$) and <font color="OrangeRed">"being after"</font>(by $r(\chi')$) $C$ send messages to $C'$, <font color="DeepSkyBlue">the combinatory of these two distributions provides a full image of distribution in this cliquer tree for the whole <font color="OrangeRed">"after"</font> $C$ send messages to $C'$</font>:  
 >$r(\chi')\cdot H((C\cap C')-E)$  
 >=$r(\chi')\cdot\sum_{C\backslash C'\cup E}\prod_{i}g_{i}\prod_{j}f_{j}$  
 >=$\sum_{Z}r(\chi')\cdot\prod_{i}g_{i}\prod_{j}f_{j}$  
