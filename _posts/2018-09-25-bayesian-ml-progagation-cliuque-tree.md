@@ -141,12 +141,15 @@ The introduction of <font color="Red">clique tree</font> algorithm aims at <font
 >
 ><font color="DeepSkyBlue">[Property 2]</font>  
 ><font color="OrangeRed">Product of functions attached to or send to all un-activated cliques=$P(\chi,E=e)$, where $\chi$ stands for all unobserved variables in these un-activated cliques</font>  
->We denote <font color="DeepSkyBlue">a clique is un-activated if it has not send out messages</font>.  
 ><font color="Brown">proof::mjtsai1974</font>  
+>We denote <font color="DeepSkyBlue">a clique is un-activated if it has not send out messages</font>.  
 >Using the same <font color="Red">clique tree</font> in below paragraph.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-prod-of-funcs.png "prod of funcs")
->&#10112;take $\chi$ to be the set of unobserved variables in <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">before</font> $C$ sends message to $C'$.  
->&#10112;take $\chi'$ to be the set of unobserved variables in <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">after</font> $C$ sends message to $C'$.  
+>&#10112;take $\chi$ to be the set of <font color="OrangeRed">unobserved</font> variables in <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">before</font> $C$ sends message to $C'$.  
+>&#10113;take $\chi'$ to be the set of <font color="OrangeRed">unobserved</font> variables in <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">after</font> $C$ sends message to $C'$.  
+>&#10114;take $r$ to be the product of functions attached to or send to <font color="OrangeRed">all un-activated cliques</font>, <font color="DeepSkyBlue">after</font> $C$ sends message to $C'$, then $r$ is a function of $\chi'$, that is $r(\chi')$, where $H$ is <font color="RosyBrown">not</font> included, since <font color="DeepSkyBlue">$H$ is just the function of message passing in between</font>!!  
+>&#10115;consider the message passing from $C$ to $C'$, take $C\backslash C'\cup E$ into account, for simplicity, treat $Z$=$C\backslash C'\cup E$, where $Z\in C$ and $Z\not\in C'$ is of no doubt.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-09-25-bayesian-ml-progagation-cliuque-tree-prod-of-funcs-unobserved.png "unobserved")
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
