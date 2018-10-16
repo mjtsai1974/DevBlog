@@ -19,10 +19,11 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Clique tree propagation</font>  
->&#10112;
->&#10113;
->&#10114;
+>&#10112;make posterior belief update for <font color="DeepPink">all</font> variables, inclusive of these <font color="DeepPink">un-observed</font> variables.  
+>&#10113;delete <font color="DeepPink">no</font> any variable in the propagation of message passing.  
+>&#10114;allows <font color="Red">computation sharing</font> among different queries.  
 >
+>Since <font color="Red">clique tree propagation</font> could be distributed on un-observed variables, empirical results suggest to use it when we'd like to make posteriro belief update on un-observed variables.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
