@@ -9,7 +9,20 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 </p>
 
 ### <font color="OrangeRed">VE</font> Versus <font color="Red">Clique Tree Propagation</font>
->In my early post [Variable Elimination Order And Moral Graph]({{ site.github.repo }}{{ site.baseurl }}/2018/07/29/bayesian-ml-net-var-elim-order-moral/), we have explored how to query <font color="DeepSkyBlue">non-directly connected</font> variables in the <font color="Red">BN</font> by means of VE and have a clear mapping in the <font color="Red">MN</font>.  In advance to construct the <font color="Red">clique tree</font>, recap the VE and make comparison with <font color="Red">Clique Tree Propagation</font>:  
+>In my early post [Variable Elimination Order And Moral Graph]({{ site.github.repo }}{{ site.baseurl }}/2018/07/29/bayesian-ml-net-var-elim-order-moral/), we have explored how to query <font color="DeepSkyBlue">non-directly connected</font> variables in the <font color="Red">BN</font> by means of VE and have a clear mapping in the <font color="Red">MN</font>.  In advance to construct the <font color="Red">clique tree</font>, recap the VE and make comparison with <font color="Red">clique tree propagation</font>.  
+>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Variable elimination</font>  
+>&#10112;<font color="DeepSkyBlue">answers one query at a time</font>, for query of other variables, the whole VE must be proceeded.  
+>&#10113;<font color="RosyBrown">delete non-queried</font> variables during VE process.  
+>&#10114;<font color="RosyBrown">no</font> computation sharing among different queries.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Clique tree propagation</font>  
+>&#10112;
+>&#10113;
+>&#10114;
+>
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
