@@ -25,6 +25,17 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >
 >Since <font color="Red">clique tree propagation</font> could be distributed on un-observed variables, empirical results suggest to use it when we'd like to make posteriro belief update on un-observed variables.  
 
+### <font color="Red">Clique Tree</font> Construction Algorithm
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Target</font>  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Algorithm</font>  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Illustration by example</font>  
+>
+
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
 
