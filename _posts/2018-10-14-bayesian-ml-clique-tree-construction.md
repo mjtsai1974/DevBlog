@@ -28,13 +28,16 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 ### <font color="Red">Clique Tree</font> Construction Algorithm
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Target</font>  
+>Given a <font color="Red">BN</font>, the target would be:  
+>&#10112;construct a <font color="Red">clique tree</font> that covers the <font color="Red">BN</font>, with <font color="DeepSkyBlue">its clique be the smallest</font>.  
+>&#10113;<font color="DeepSkyBlue">by using VE</font> in the moral graph as the solution.  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Algorithm</font>  
->
+>to be conti...
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Illustration by example</font>  
->
+>to be conti...
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
