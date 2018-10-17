@@ -43,7 +43,10 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-step-1.png "step 1")
 >&#10113;eliminate variable $X$, we get the clique $(X,R)$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-step-2.png "step 2")
->
+>&#10114;eliminate variable $A$, we get the clique $(A,T)$:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-step-3.png "step 3")
+>&#10115;eliminate variable $S$, we get the clique $(L,S,B)$:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-step-4.png "step 4")
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
