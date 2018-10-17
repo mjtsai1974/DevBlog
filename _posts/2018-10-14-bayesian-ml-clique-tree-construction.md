@@ -35,9 +35,15 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Algorithm</font>  
 >to be conti...
+>
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Illustration by example</font>  
->to be conti...
+>Given the same <font color="Red">BN</font>, suppose the elimination order is $X,A,S,D,B,L,T,R$, proceed with the following steps:  
+>&#10112;<font color="DeepSkyBlue">moralize</font> the <font color="Red">BN</font> to get the <font color="Red">MN</font>.
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-step-1.png "step 1")
+>&#10113;eliminate variable $X$, we get the clique $(X,R)$:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-step-2.png "step 2")
+>
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
