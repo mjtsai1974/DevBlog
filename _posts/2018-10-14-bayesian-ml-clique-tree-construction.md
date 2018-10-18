@@ -66,6 +66,12 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >In this section, I'd like to prove that constructing <font color="Red">clique tree</font> by using slight different elimination order would just make the same propagation.  
 ><font color="Brown">proof::by mjtsai1974</font>  
 >Suppose we are give the same above <font color="Red">BN</font>, this time, the elimination order is $X,A,S,B,D,L,T,R$, proceed with the following steps:  
+>&#10112;<font color="DeepSkyBlue">moralize</font> the <font color="Red">BN</font> to get the <font color="Red">MN</font>.  
+>&#10113;eliminate variable $X$, we get the clique $(X,R)$.  
+>&#10114;eliminate variable $A$, we get the clique $(A,T)$.  
+>&#10115;eliminate variable $S$, we get the clique $(L,S,B)$, where the green line is the new pairwise connection after $S$ has been removed.  
+>&#10116;
+
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
