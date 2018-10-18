@@ -80,7 +80,7 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-step-6.png "step 6")
 >&#10118;eliminate variable $L$, we get the <font color="OrangeRed">final</font> clique $(T,L,R)$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-step-7.png "step 7")
->Finally, connect the cliques thus obtained in accordance to the moralized <font color="Red">MN</font>.  
+>Finally, connect the cliques thus obtained in accordance to the moralized <font color="Red">MN</font>(<font color="DeepSkyBlue">This might not be a perfect clique tree</font>).  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">What is $P(L\vert X=y,A=y)$?</font>  
@@ -92,12 +92,12 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >&#10114;$f_{4}(L,B)$=$\sum_{S}P(S)\cdot P(L\vert S)\cdot P(B\vert S)$  
 >&#10115;$f_{5}(R,D)$=$\sum_{B}P(D\vert R,B)$  
 >&#10116;take $H_{\alpha}(R,L,D)$  
->=$\sum_{B}f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5}(R,D)$ as the joint probability function in <font color="#6100A8">this</font> clique tree.  
+>=$\sum_{B}f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5}(R,D)\cdot 1$ as the joint probability function in <font color="#6100A8">this</font> clique tree.  
 >&#10117;compare with the $H(R,L,B)$ in [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/), we turn $f_{5}(R,D)$ into $f_{5}(R,B)$:  
 >$f_{5.5}(R,B)$=$\sum_{D}P(D\vert R,B)$, therefore,  
 >$H_{\alpha}(R,L,D)$  
->=$\sum_{B}f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5}(R,D)$  
->=$f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5.5}(R,B)$  
+>=$\sum_{B}f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5}(R,D)\cdot 1$  
+>=$f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5.5}(R,B)\cdot 1$  
 >=$H_{\alpha}(R,L,B)$ in <font color="#6100A8">this</font> clique tree.  
 >=$H(R,L,B)$ in [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/)  
 >
