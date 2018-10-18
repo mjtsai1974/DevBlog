@@ -92,16 +92,16 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >&#10114;$f_{4}(L,B)$=$\sum_{S}P(S)\cdot P(L\vert S)\cdot P(B\vert S)$  
 >&#10115;$f_{5}(R,D)$=$\sum_{B}P(D\vert R,B)$  
 >&#10116;take $H_{\alpha}(R,L,D)$  
->=$\sum_{B}f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5}(R,D)$ as the joint probability function in <font color="Red">this</font> clique tree.  
+>=$\sum_{B}f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5}(R,D)$ as the joint probability function in <font color="#6100A8">this</font> clique tree.  
 >&#10117;compare with the $H(R,L,B)$ in [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/), we turn $f_{5}(R,D)$ into $f_{5}(R,B)$:  
 >$f_{5.5}(R,B)$=$\sum_{D}P(D\vert R,B)$, therefore,  
 >$H_{\alpha}(R,L,D)$  
 >=$\sum_{B}f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5}(R,D)$  
 >=$f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5.5}(R,B)$  
->=H_{\alpha}(R,L,B)$ in <font color="Red">this</font> clique tree.  
+>=$H_{\alpha}(R,L,B)$ in <font color="#6100A8">this</font> clique tree.  
 >=$H(R,L,B)$ in [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/)  
 >
->The clique trees are compared in this graph, the <font color="#6100A8">new</font> tree is under the <font color="#FFAC12">original</font> tree:    
+>The clique trees are compared in below graph, the <font color="#6100A8">new</font> tree is under the <font color="#FFAC12">original</font> tree:    
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-compare.png "compare")
 >The functions associated with <font color="#FFAC12">original clique tree</font> are listed below:  
 >$f_{1}(T)$=$P(A=y)\cdot P(T\vert A=y)$  
