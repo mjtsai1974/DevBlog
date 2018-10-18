@@ -66,8 +66,8 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >In this section, I'd like to prove that constructing <font color="Red">clique tree</font> by using slight different elimination order would just make the same propagation.  
 ><font color="RoyalBlue">[Question]</font>  
 >Suppose we are give the same above <font color="Red">BN</font>, this time, the elimination order is $X,A,S,B,D,L,T,R$, with the <font color="Red">clique tree</font> thus constructed, we are asked for the same $P(L\vert X=y,A=y)$, what's it?  
-><font color="DeepSkyBlue">[1]</font>  
-><font color="Brown">proof::by mjtsai1974</font>  
+><font color="DeepSkyBlue">[1]</font>
+><font color="Red">Clique tree construction</font>  
 >Suppose we are give the same above <font color="Red">BN</font>, this time, the elimination order is $X,A,S,B,D,L,T,R$, proceed with the following steps:  
 >&#10112;<font color="DeepSkyBlue">moralize</font> the <font color="Red">BN</font> to get the <font color="Red">MN</font>.  
 >&#10113;eliminate variable $X$, we get the clique $(X,R)$.  
@@ -83,8 +83,33 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >Finally, connect the cliques thus obtained in accordance to the moralized <font color="Red">MN</font>.  
 >
 ><font color="DeepSkyBlue">[2]</font>
-><font color="OrangeRed">what is $P(L\vert X=y,A=y)$?</font>  
+><font color="OrangeRed">What is $P(L\vert X=y,A=y)$?</font>  
+>Choose $(R,L,D)$ as the pivot:  
+>&#10112;$f_{1}$ and $f_{2}$ are the same:  
+>$f_{1}(T)$=$P(A=y)\cdot P(T\vert A=y)$  
+>$f_{2}(R)$=$P(X=y\vert R)$  
+>&#10113;$f_{3}(L,R)$=$\sum_{T}P(R\vert T,L)\cdot f_{1}(T)\cdot f_{2}(R)$  
+>&#10114;$f_{4}(L,B)$=$\sum_{S}P(S)\cdot P(L\vert S)\cdot P(B\vert S)$  
+>&#10115;$f_{5}(R,D)$=$\sum_{B}P(D\vert R,B)$  
+>&#10116;take $H_{\alpha}(R,L,D)$  
+>=$\sum_{B}f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5}(R,D)$ as the joint probability function in <font color="Red">this</font> clique tree.  
+>&#10117;compare with the $H(R,L,B)$ in [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/), we turn $f_{5}(R,D)$ into $f_{5}(R,B)$:  
+>$f_{5.5}(R,B)$=$\sum_{D}P(D\vert R,B)$, therefore,  
+>$H_{\alpha}(R,L,D)$  
+>=$\sum_{B}f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5}(R,D)$  
+>=$f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5.5}(R,B)$  
+>=H_{\alpha}(R,L,B)$ in <font color="Red">this</font> clique tree.  
+>=$H(R,L,B)$ in [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/)  
 >
+>The clique trees are compared in this graph, the <font color="#6100A8">new</font> tree is under the <font color="#FFAC12">original</font> tree:    
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-compare.png "compare")
+>The functions associated with <font color="#FFAC12">original clique tree</font> are listed below:  
+>$f_{1}(T)$=$P(A=y)\cdot P(T\vert A=y)$  
+>$f_{2}(R)$=$P(X=y\vert R)$  
+>$f_{3}(L,B)$=$\sum_{S}P(S)\cdot P(L\vert S)\cdot P(B\vert S)$  
+>$f_{4}(R,B)$=$\sum_{D}P(D\vert R,B)$  
+>$f_{5}(L,R)$=$\sum_{T}f_{1}(T)\cdot f_{2}(R)\cdot P(R\vert T,L)$  
+>$H(R,L,B)$=$f_{3}(L,B)\cdot f_{4}(R,B)\cdot f_{5}(L,R)\cdot 1$  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
