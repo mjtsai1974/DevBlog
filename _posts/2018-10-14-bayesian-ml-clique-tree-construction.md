@@ -62,6 +62,11 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >
 >Due to above concern, will the posterior belief update all the same in the <font color="Red">clique tree</font> thus constructed, versus <font color="Red">VE</font>?  I will prove my answer in the following sections.  
 
+### <font color="DeepPink">Slight Different Elimination Order Constructed Clique Tree Makes The Same Propagation</font>::<font color="Brown">by mjtsai1974</font>
+>In this section, I'd like to prove that constructing <font color="Red">clique tree</font> by using slight different elimination order would just make the same propagation.  
+><font color="Brown">proof::by mjtsai1974</font>  
+>Suppose we are give the same above <font color="Red">BN</font>, this time, the elimination order is $X,A,S,B,D,L,T,R$, proceed with the following steps:  
+
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
 
