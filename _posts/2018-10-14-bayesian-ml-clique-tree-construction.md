@@ -70,6 +70,7 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >&#10113;eliminate variable $X$, we get the clique $(X,R)$.  
 >&#10114;eliminate variable $A$, we get the clique $(A,T)$.  
 >&#10115;eliminate variable $S$, we get the clique $(L,S,B)$, where the green line is the new pairwise connection after $S$ has been removed.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-step-4.png "step 4")
 >&#10116;
 
 
