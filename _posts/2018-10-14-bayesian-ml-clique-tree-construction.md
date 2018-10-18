@@ -64,6 +64,9 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 
 ### <font color="DeepPink">Slight Different Elimination Order Constructed Clique Tree Makes The Same Propagation</font>::<font color="Brown">by mjtsai1974</font>
 >In this section, I'd like to prove that constructing <font color="Red">clique tree</font> by using slight different elimination order would just make the same propagation.  
+><font color="RoyalBlue">[Question]</font>  
+>Suppose we are give the same above <font color="Red">BN</font>, this time, the elimination order is $X,A,S,B,D,L,T,R$, with the <font color="Red">clique tree</font> thus constructed, we are asked for the same $P(L\vert X=y,A=y)$, what's it?  
+><font color="DeepSkyBlue">[1]</font>  
 ><font color="Brown">proof::by mjtsai1974</font>  
 >Suppose we are give the same above <font color="Red">BN</font>, this time, the elimination order is $X,A,S,B,D,L,T,R$, proceed with the following steps:  
 >&#10112;<font color="DeepSkyBlue">moralize</font> the <font color="Red">BN</font> to get the <font color="Red">MN</font>.  
@@ -75,13 +78,12 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-step-5.png "step 5")
 >&#10117;eliminate variable $D$, we get the clique $(R,L,D)$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-step-6.png "step 6")
->&#10118;eliminate variable $L$, we get the final clique $(T,L,R)$:  
+>&#10118;eliminate variable $L$, we get the <font color="OrangeRed">final</font> clique $(T,L,R)$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-step-7.png "step 7")
 >Finally, connect the cliques thus obtained in accordance to the moralized <font color="Red">MN</font>.  
 >
-><font color="RoyalBlue">[Question]</font>  
->Given this clique tree, suppose we are asked for the same $P(L\vert X=y,A=y)$, what's it?  
-><font color="DeepSkyBlue">[Answer]</font>  
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">what is $P(L\vert X=y,A=y)$?</font>  
 >
 
 ### Addendum
