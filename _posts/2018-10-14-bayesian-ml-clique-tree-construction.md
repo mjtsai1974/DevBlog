@@ -73,9 +73,16 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-step-4.png "step 4")
 >&#10116;eliminate variable $B$, we get the clique $(R,L,D,B)$, where the green line is the new pairwise connection after $B$ has been removed:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-step-5.png "step 5")
->&#10117;eliminate variable $D$, we get the clique $(R,L,D)$.  
+>&#10117;eliminate variable $D$, we get the clique $(R,L,D)$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-step-6.png "step 6")
-
+>&#10118;eliminate variable $L$, we get the final clique $(T,L,R)$:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-step-7.png "step 7")
+>Finally, connect the cliques thus obtained in accordance to the moralized <font color="Red">MN</font>.  
+>
+><font color="RoyalBlue">[Question]</font>  
+>Given this clique tree, suppose we are asked for the same $P(L\vert X=y,A=y)$, what's it?  
+><font color="DeepSkyBlue">[Answer]</font>  
+>
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
