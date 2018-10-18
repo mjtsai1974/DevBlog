@@ -8,7 +8,7 @@ title: The Clique Tree Construction
 The construction of <font color="Red">clique tree</font> aims at <font color="Red">minimal cliques</font> with none of them being the subsets of their neighbors, by using <font color="Red">VE(variable elimination) in moral graph</font>.
 </p>
 
-### <font color="OrangeRed">VE</font> Versus <font color="Red">Clique Tree Propagation</font>
+### <font color="Red">VE</font> Versus <font color="Red">Clique Tree Propagation</font>
 >In my early post [Variable Elimination Order And Moral Graph]({{ site.github.repo }}{{ site.baseurl }}/2018/07/29/bayesian-ml-net-var-elim-order-moral/), we have explored how to query <font color="DeepSkyBlue">non-directly connected</font> variables in the <font color="Red">BN</font> by means of VE and have a clear mapping in the <font color="Red">MN</font>.  In advance to construct the <font color="Red">clique tree</font>, recap the VE and make comparison with <font color="Red">clique tree propagation</font>.  
 >
 ><font color="DeepSkyBlue">[1]</font>
@@ -54,6 +54,13 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >&#10118;eliminate variable $L$, we get the <font color="OrangeRed">final</font> clique $(T,L,R)$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-step-7.png "step 7")
 >Finally, connect the cliques thus obtained in accordance to the moralized <font color="Red">MN</font>.   
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="Red">The clique tree is not unique</font>  
+>&#10112;will the different elimination order construct clique tree identical to the moralized <font color="Red">MN</font>, or the original <font color="Red">BN</font>?  
+>&#10113;<font color="DeepPink">the clique tree is not unique, if we are using different elimination orders</font>.  
+>
+>Due to above concern, will the posterior belief update all the same in the <font color="Red">clique tree</font> thus constructed, versus <font color="Red">VE</font>?  I will prove my answer in the following sections.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
