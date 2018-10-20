@@ -100,6 +100,7 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >=$f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5.5}(R,B)\cdot 1$  
 >=$H_{\alpha}(R,L,B)$ in <font color="#6100A8">this</font> clique tree.  
 >=$H(R,L,B)$ in [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/)  
+><font color="DeepPink">The answer of $P(L\vert X=y,A=y)$ would just be the same!!!</font>
 >
 >The clique trees are compared in below graph, the <font color="#6100A8">new</font> tree is under the <font color="#FFAC12">original</font> tree:    
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-slight-diff-e-o-compare.png "compare")
@@ -152,6 +153,11 @@ $\;\;\cdot f_{2}(R)\cdot f_{5}(R)$
 $\;\;\cdot f_{2}(R)\cdot f_{5.5}(R,B)$  
 >=$H_{\beta}(R,L,B)$  
 >=$H(R,L,B)$ in [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/)  
+><font color="DeepPink">The answer of $P(L\vert X=y,A=y)$ would just be the same!!!</font>
+>
+>The clique trees are compared in below graph, the <font color="#6100A8">new</font> tree is under the <font color="#FFAC12">original</font> tree:    
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-very-diff-e-o-compare.png "compare")
+>The functions associated with <font color="#FFAC12">original clique tree</font> could be found in prior section.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
