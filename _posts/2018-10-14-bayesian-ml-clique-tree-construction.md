@@ -63,7 +63,7 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >Due to above concern, will the posterior belief update all the same in the <font color="Red">clique tree</font> thus constructed, versus <font color="Red">VE</font>?  I will prove my answer in the following sections.  
 
 ### <font color="LightCoral">Slight Different</font> <font color="DeepPink">Elimination Order Constructed Clique Tree Makes The Same Propagation</font>::<font color="Brown">by mjtsai1974</font>
->In this section, I'd like to prove that constructing <font color="Red">clique tree</font> by using slight different elimination order would just make the same propagation.  
+>In this section, I'd like to prove that constructing <font color="Red">clique tree</font> by using <font color="LightCoral">slight different</font> elimination order would just make the same propagation.  
 ><font color="RoyalBlue">[Question]</font>  
 >Suppose we are give the same above <font color="Red">BN</font>, this time, the elimination order is $X,A,S,B,D,L,T,R$, with the <font color="Red">clique tree</font> thus constructed, we are asked for the same $P(L\vert X=y,A=y)$, what's it?  
 ><font color="DeepSkyBlue">[1]</font>
@@ -113,6 +113,9 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 
 ### <font color="LightSalmon">Very Different</font> <font color="DeepPink">Elimination Order Constructed Clique Tree Makes The Same Propagation</font>::<font color="Brown">by mjtsai1974</font>
 >In this section, I'd like to prove that by using <font color="LightSalmon">very different</font> elimination order in <font color="Red">clique tree</font> construction process will you get the <font color="DeepPink">identical</font> propagation of message passing for the same given <font color="Red">BN</font>.  
+><font color="RoyalBlue">[Question]</font>  
+>Suppose we are give the same above <font color="Red">BN</font>, this time, the elimination order is $X,A,T,R,B,D,L,S$, with the <font color="Red">clique tree</font> thus constructed, we are asked for the same $P(L\vert X=y,A=y)$, what's it?  
+
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
