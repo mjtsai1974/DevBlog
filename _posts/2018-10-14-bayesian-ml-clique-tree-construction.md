@@ -121,8 +121,10 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >&#10112;<font color="DeepSkyBlue">moralize</font> the <font color="Red">BN</font> to get the <font color="Red">MN</font>.  
 >&#10113;eliminate variable $X$, we get the clique $(X,R)$.  
 >&#10114;eliminate variable $A$, we get the clique $(A,T)$.  
->&#10115;eliminate variable $T$, we get the clique $(T,L,R)$. 
+>&#10115;eliminate variable $T$, we get the clique $(T,L,R)$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-very-diff-e-o-step-4.png "step 4")
+>&#10116;eliminate variable $R$, we get the clique $(R,L,D,B)$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-very-diff-e-o-step-5.png "step 5")
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">What is $P(L\vert X=y,A=y)$?</font>  
