@@ -93,7 +93,7 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >&#10115;$f_{5}(R,D)$=$\sum_{B}P(D\vert R,B)$  
 >&#10116;take $H_{\alpha}(R,L,D)$  
 >=$\sum_{B}f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5}(R,D)\cdot 1$ as the joint probability function in <font color="#6100A8">this</font> clique tree.  
->&#10117;compare with the $H(R,L,B)$ in [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/), we turn $f_{5}(R,D)$ into $f_{5}(R,B)$:  
+>&#10117;compare with the $H(R,L,B)$ in [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/), we turn $f_{5}(R,D)$ into $f_{5.5}(R,B)$:  
 >$f_{5.5}(R,B)$=$\sum_{D}P(D\vert R,B)$, therefore,  
 >$H_{\alpha}(R,L,D)$  
 >=$\sum_{B}f_{3}(L,R)\cdot f_{4}(L,B)\cdot f_{5}(R,D)\cdot 1$  
@@ -133,11 +133,25 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">What is $P(L\vert X=y,A=y)$?</font>  
->Choose $(R,L,D)$ as the pivot:  
+>Choose $(T,L,R)$ as the pivot:  
 >&#10112;$f_{1}$ and $f_{2}$ are the same:  
 >$f_{1}(T)$=$P(A=y)\cdot P(T\vert A=y)$  
->$f_{2}(R)$=$P(X=y\vert R)$ 
->
+>$f_{2}(R)$=$P(X=y\vert R)$  
+>&#10113;$f_{3}(L,D)$=$\sum_{S}P(L\vert S)\cdot P(S)$  
+>&#10114;$f_{4}(B,D)$=$\sum_{S}P(B\vert S)\cdot P(S)$  
+>&#10115;$f_{5}(R)$=$\sum_{B,D}P(D\vert R,B)\cdot f_{3}(L,D)\cdot f_{4}(B,D)$  
+>&#10116;take $H_{\beta}(T,L,R)$  
+>=$P(R\vert T,L)\cdot f_{1}(T)$  
+>$\;\;\cdot f_{2}(R)\cdot f_{5}(R)$ as the joint probability function in <font color="#6100A8">this</font> clique tree.  
+>&#10117;compare with the $H(R,L,B)$ in [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/), we turn $f_{5}(R)$ into $f_{5.5}(R,B)$:  
+>$f_{5.5}(R,B)$=$\sum_{D}P(D\vert R,B)\cdot f_{3}(L,D)\cdot f_{4}(B,D)$, therefore,  
+>$H_{\beta}(T,L,R)$  
+>=$P(R\vert T,L)\cdot f_{1}(T)$  
+$\;\;\cdot f_{2}(R)\cdot f_{5}(R)$  
+>=$\sum_{T}P(R\vert T,L)\cdot f_{1}(T)$  
+$\;\;\cdot f_{2}(R)\cdot f_{5.5}(R,B)$  
+>=$H_{\beta}(R,L,B)$  
+>=$H(R,L,B)$ in [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/)  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
