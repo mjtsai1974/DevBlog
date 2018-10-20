@@ -68,7 +68,7 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >Suppose we are give the same above <font color="Red">BN</font>, this time, the elimination order is $X,A,S,B,D,L,T,R$, with the <font color="Red">clique tree</font> thus constructed, we are asked for the same $P(L\vert X=y,A=y)$, what's it?  
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="Red">Clique tree construction</font>  
->Suppose we are give the same above <font color="Red">BN</font>, this time, the elimination order is $X,A,S,B,D,L,T,R$, proceed with the following steps:  
+>Suppose we are give the same above <font color="Red">BN</font>, with $X,A,S,B,D,L,T,R$ as the elimination order, proceed with the following steps:  
 >&#10112;<font color="DeepSkyBlue">moralize</font> the <font color="Red">BN</font> to get the <font color="Red">MN</font>.  
 >&#10113;eliminate variable $X$, we get the clique $(X,R)$.  
 >&#10114;eliminate variable $A$, we get the clique $(A,T)$.  
@@ -117,6 +117,12 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >Suppose we are give the same above <font color="Red">BN</font>, this time, the elimination order is $X,A,T,R,B,D,L,S$, with the <font color="Red">clique tree</font> thus constructed, we are asked for the same $P(L\vert X=y,A=y)$, what's it?  
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="Red">Clique tree construction</font>  
+>Assume we are give the same above <font color="Red">BN</font>, the elimination order is $X,A,T,R,B,D,L,S$, proceed with the following steps:
+>&#10112;<font color="DeepSkyBlue">moralize</font> the <font color="Red">BN</font> to get the <font color="Red">MN</font>.  
+>&#10113;eliminate variable $X$, we get the clique $(X,R)$.  
+>&#10114;eliminate variable $A$, we get the clique $(A,T)$.  
+>&#10115;eliminate variable $T$, we get the clique $(T,L,R)$. 
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-very-diff-e-o-step-4.png "step 4")
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">What is $P(L\vert X=y,A=y)$?</font>  
