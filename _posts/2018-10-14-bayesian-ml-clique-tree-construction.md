@@ -115,7 +115,12 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >In this section, I'd like to prove that by using <font color="LightSalmon">very different</font> elimination order in <font color="Red">clique tree</font> construction process will you get the <font color="DeepPink">identical</font> propagation of message passing for the same given <font color="Red">BN</font>.  
 ><font color="RoyalBlue">[Question]</font>  
 >Suppose we are give the same above <font color="Red">BN</font>, this time, the elimination order is $X,A,T,R,B,D,L,S$, with the <font color="Red">clique tree</font> thus constructed, we are asked for the same $P(L\vert X=y,A=y)$, what's it?  
-
+><font color="DeepSkyBlue">[1]</font>
+><font color="Red">Clique tree construction</font>  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">What is $P(L\vert X=y,A=y)$?</font>  
+>
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
