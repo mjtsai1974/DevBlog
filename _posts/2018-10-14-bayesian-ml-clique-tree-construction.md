@@ -133,6 +133,10 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">What is $P(L\vert X=y,A=y)$?</font>  
+>Choose $(R,L,D)$ as the pivot:  
+>&#10112;$f_{1}$ and $f_{2}$ are the same:  
+>$f_{1}(T)$=$P(A=y)\cdot P(T\vert A=y)$  
+>$f_{2}(R)$=$P(X=y\vert R)$ 
 >
 
 ### Addendum
