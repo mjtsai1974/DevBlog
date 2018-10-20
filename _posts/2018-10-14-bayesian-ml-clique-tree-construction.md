@@ -129,6 +129,7 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-very-diff-e-o-step-6.png "step 6")
 >&#10118;eliminate variable $D$, we get the clique $(L,S,D)$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-very-diff-e-o-step-7.png "step 7")
+>Finally, connect the cliques thus obtained in accordance to the moralized <font color="Red">MN</font>(<font color="DeepSkyBlue">This might not be a perfect clique tree</font>).  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">What is $P(L\vert X=y,A=y)$?</font>  
