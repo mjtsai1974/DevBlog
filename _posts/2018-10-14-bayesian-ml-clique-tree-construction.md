@@ -34,7 +34,7 @@ The construction of <font color="Red">clique tree</font> aims at <font color="Re
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Algorithm</font>  
->There exists over a dozen of clique tree construction algorithm, I list one workable and rather simple workflow, from [Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf), all related illustration in this article are under progress of this algorithm.  
+>There exists over a dozen of <font color="Red">clique tree</font> construction algorithm, I list one workable and rather simple workflow, from [Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf), all related illustration in this article are under progress of this algorithm.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-alg.png "algorithm")
 >In the incoming future, I might have my own version of algorithm.  
 ><font color="DeepSkyBlue">[3]</font>
