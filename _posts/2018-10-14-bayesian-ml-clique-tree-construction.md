@@ -162,6 +162,9 @@ $\;\;\cdot f_{2}(R)\cdot f_{5.5}(R,B)$
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
+>&#10113;[Clique Tree Algorithm - Computation](https://zh-tw.coursera.org/lecture/probabilistic-graphical-models-2-inference/clique-tree-algorithm-computation-Jm0AM)  
+>&#10114;[Clique Trees, Amr Ahmed, CS CMU, October 23, 2008](http://www.cs.cmu.edu/~guestrin/Class/10708/recitations/r7/Clique_Trees_2slides.pdf)  
+>&#10115;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
