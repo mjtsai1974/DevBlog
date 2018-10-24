@@ -170,15 +170,30 @@ $\;\;\cdot f_{2}(R)\cdot f_{5.5}(R,B)$
 
 ### <font color="DeepPink">Clique Tree Is Variable-Connected</font>
 >The <font color="Red">clique tree</font> by buildCliqueTree() from the un-connected <font color="Red">MN</font> is <font color="DeepPink">variable-connected</font>.  
->proof:  
+><font color="Brown">proof::mjtsai1974</font>  
 >By using mathematics induction fashion, we can prove it.  
-><font color="DeepSkyBlue">[1]</font>  
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">the case of $1$ clique</font>  
 >Suppose <font color="DeepSkyBlue">only one</font> clique in the tree, this just holds.  
 >
-><font color="DeepSkyBlue">[2]</font>  
->Suppose it hold for $n$ cliques in the tree, next to prove it holds for $n+1$ cliques in the tree.  
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">the case of $n$ cliques</font>  
+>Suppose it holds for $n$ cliques in the tree $\tao'$, next to prove it holds for $n+1$ cliques in the tree $\tao$.  
+>Below is the pre-requisite to next prove step:  
+>&#10112;the tree $\tao'$ contains cliques $C_{1}$ and $C_{2}$ with variable $X$ in it.  
+>&#10113;since $\tao'$ is the <font color="Red">clique tree</font>, variable $X$ exists in all the cliques of the path in between $C_{1}$ and $C_{2}$.  
 >
-
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">the case of $n+1$ cliques</font>  
+>We'd like to show $X$ exists in all the cliques of the path in between $C_{1}$ and $C_{2}$ in tree of $n+1$ cliques.  
+>To create tree $\tao$, we make below assumption:  
+>&#10112;$C_{1}$ is the clique by removing variable $Z$, where variable $X$ is not $Z$(since $X\in C_{1}\cap C_{2}$), therefore $X\in S$.  
+>&#10113;$\tao'$ is the tree obtained after &#10112;.  
+>&#10114;suppose $S'$ is obtained by removing some other node in $S$, then $S' \subseteq S$.  
+>&#10115;or suppose $S'$ is obtained by removing some other variables <font color="DeepSkyBlue">in adjacent to</font> all variables in $S$, then $S'$=$S$.  
+>&#10116;for bothe case $S' \subseteq S$ or $S'$=$S$, then $X\in S$ and $X\in S'$ must all hold.  By taking $\tao$=$C_{1}$+$\tao'$, trivially, the variable exists in the cliques of the path in between $C_{1}$ and $C_{2}$.  
+>
+>Evenmore, for the condition that $S'$ is obtained by removing variable $X$ from $S$, then $S' \subset S$, that is to say $C'$=$S'\cup X$.    By taking $\tao$=$C_{1}$+$\tao'$, we also find it true that the variable exists in the cliques of the path in between $C_{1}$ and $C_{2}$.  
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
