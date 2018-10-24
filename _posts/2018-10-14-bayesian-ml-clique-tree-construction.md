@@ -168,6 +168,18 @@ $\;\;\cdot f_{2}(R)\cdot f_{5.5}(R,B)$
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-minimal.png "minimal")
 >Current introduced buildCliqueTree() algorithm might not guarantee to have the minimal result, in the incoming future, I might develop a new algorithm for this. (to be conti...)  
 
+### <font color="DeepPink">Clique Tree Is Variable-Connected</font>
+>The <font color="Red">clique tree</font> by buildCliqueTree() from the un-connected <font color="Red">MN</font> is <font color="DeepPink">variable-connected</font>.  
+>proof:  
+>By using mathematics induction fashion, we can prove it.  
+><font color="DeepSkyBlue">[1]</font>  
+>Suppose <font color="DeepSkyBlue">only one</font> clique in the tree, this just holds.  
+>
+><font color="DeepSkyBlue">[2]</font>  
+>Suppose it hold for $n$ cliques in the tree, next to prove it holds for $n+1$ cliques in the tree.  
+>
+
+
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
 >&#10113;[Clique Tree Algorithm - Computation](https://zh-tw.coursera.org/lecture/probabilistic-graphical-models-2-inference/clique-tree-algorithm-computation-Jm0AM)  
