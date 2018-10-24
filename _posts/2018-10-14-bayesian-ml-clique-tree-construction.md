@@ -160,7 +160,7 @@ $\;\;\cdot f_{2}(R)\cdot f_{5.5}(R,B)$
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-very-diff-e-o-compare.png "compare")
 >The functions associated with <font color="#FFAC12">original clique tree</font> could be found in prior section.  
 
-### <font color="Red">Minimal Clique Trees</font>
+### The Target: <font color="Red">Minimal Clique Trees</font>
 >A <font color="DeepPink">clique tree is minimal if none of its cliques are subsets of their neighbors</font>, the ideal version after variable elimination should be <font color="DeepPink">minimal</font>.  
 >Below exhibits different <font color="Red">VE</font> leads to different <font color="Red">clique trees</font>(<font color="DeepSkyBlue">non-minimal</font>):  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-diff-ve.png "diff ve")
