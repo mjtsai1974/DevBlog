@@ -178,7 +178,8 @@ $\;\;\cdot f_{2}(R)\cdot f_{5.5}(R,B)$
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">the case of $n$ cliques</font>  
->Suppose it holds for $n$ cliques in the tree $\tau'$, next to prove it holds for $n+1$ cliques in the tree $\tau$.  
+>Suppose it holds for $n$ cliques in the tree $\tau'$, next to prove it holds for $n+1$ cliques in the tree $\tau$. 
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-vc-n.png "n cliques")
 >Below is the pre-requisite to next prove step:  
 >&#10112;the tree $\tau'$ contains cliques $C_{1}$ and $C_{2}$ with variable $X$ in it.  
 >&#10113;since $\tau'$ is the <font color="Red">clique tree</font>, variable $X$ exists in all the cliques of the path in between $C_{1}$ and $C_{2}$.  
@@ -189,11 +190,13 @@ $\;\;\cdot f_{2}(R)\cdot f_{5.5}(R,B)$
 >To create tree $\tau$, we make below assumption:  
 >&#10112;$C_{1}$ is the clique by removing variable $Z$, where variable $X$ is not $Z$(since $X\in C_{1}\cap C_{2}$), therefore $X\in S$.  
 >&#10113;$\tau'$ is the tree obtained after &#10112;.  
->&#10114;suppose $S'$ is obtained by removing some other node in $S$, then $S' \subseteq S$.  
+>&#10114;suppose $S'$ is obtained by removing some other node in $S$(not $X$), then $S' \subseteq S$.  
 >&#10115;or suppose $S'$ is obtained by removing some other variables <font color="DeepSkyBlue">in adjacent to</font> all variables in $S$, then $S'$=$S$.  
 >&#10116;for bothe case $S' \subseteq S$ or $S'$=$S$, then $X\in S$ and $X\in S'$ must all hold.  By taking $\tau$=$C_{1}$+$\tau'$, trivially, the variable exists in the cliques of the path in between $C_{1}$ and $C_{2}$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-vc-n1.png "n+1 cliques")
 >
->Evenmore, for the condition that $S'$ is obtained by removing variable $X$ from $S$, then $S' \subset S$, that is to say $C'$=$S'\cup X$.    By taking $\tau$=$C_{1}$+$\tau'$, we also find it true that the variable exists in the cliques of the path in between $C_{1}$ and $C_{2}$.  
+>Evenmore, for the condition that keeping &#10112;,&#10113; the same, where $S'$ is obtained by removing variable $X$ from $S$, then $S' \subset S$, that is to say $C'$=$S'\cup X$.  By taking $\tau$=$C_{1}$+$\tau'$, we also find it true that the variable exists in the cliques of the path in between $C_{1}$ and $C_{2}$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-10-14-bayesian-ml-clique-tree-construction-vc-n1_2.png "n+1 cliques")
 
 ### Addendum
 >&#10112;[Introduction to Bayesian Networks, Lecture 5: Inference as Message Propagation, Nevin L. Zhang, lzhang@cse.ust.hk, Department of Computer Science and Engineering, Hong Kong University of Science and Technology, Fall 2008](http://www.cse.ust.hk/bnbook/pdf/l05.h.pdf)  
