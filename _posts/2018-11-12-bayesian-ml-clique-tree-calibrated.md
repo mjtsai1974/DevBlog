@@ -8,6 +8,20 @@ title: The Calibrated Clique Tree
 The quantitative evaluation of messages from one clique to its adjacent clique and from this adjacent clique to itself would be a <font color="DeepPink">equilibrium</font> in a <font color="Red">calibrated clique tree</font>.
 </p>
 
+### Before We Go Any Farther
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Recap: variable-elimination constructed clique tree</font>  
+>Remember that my prior post [The Clique Tree Construction]({{ site.github.repo }}{{ site.baseurl }}/2018/10/14/bayesian-ml-clique-tree-construction/) has proved that <font color="DeepPink">slight different and very different elimination order constructed clique tree makes the same propagation</font>.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Recap: message passing in the clique tree</font>  
+>Still in another prior post of mine, [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/):  
+>&#10112;the message propagation in the <font color="Red">clique tree</font> is proceeded in two stage operations with the former the <font color="DeepSkyBlue">collection</font>(from leaf nodes to the pivot node) and the next is the <font color="DeepSkyBlue">distribution</font>(from pivot node to the leaf nodes).  
+>&#10113;<font color="Red">computation sharing</font> in all queries that <font color="#C20000">the function of the message from the pivot to the leafs are all expressed in terms of the variables the same as it is in the clique from which passes message to the pivot</font>.  
+
+### Addendum
+>&#10112;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
+
 <!-- Γ -->
 <!-- \Omega -->
 <!-- \cap intersection -->
