@@ -22,7 +22,7 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >$H((C\cap C')-E)$=$\sum_{C\backslash C'\cup E}\prod_{i}g_{i}\prod_{j}f_{j}$, with $E$ to be the evidence.  
 >
 ><font color="DeepPink">The summation over elements purely from $C$</font>, <font color="RosyBrown">not</font> belonging to $C'$ and $E$(evidence), then:  
->$H((C\cap C')-E)$=$\sum_{C\backslash C\cap C'}\prod_{i}g_{i}\prod_{j}f_{j}$ also holds!!
+>$H((C\cap C')-E)$=$\sum_{C\backslash C\cap C'}\prod_{i}g_{i}\prod_{j}f_{j}$ also holds for it sums out the variables only in $C$!!
 >The term $(C\cap C')-E$ illustrates that the message purely propagates from $C$ to $C'$, exclusive of the intermediate noise.  
 >
 ><font color="DeepSkyBlue">[3]</font>
