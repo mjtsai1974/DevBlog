@@ -18,6 +18,15 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >Still in another prior post of mine, [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/):  
 >&#10112;the message propagation in the <font color="Red">clique tree</font> is proceeded in two stage operations with the former the <font color="DeepSkyBlue">collection</font>(from leaf nodes to the pivot node) and the next is the <font color="DeepSkyBlue">distribution</font>(from pivot node to the leaf nodes).  
 >&#10113;<font color="Red">computation sharing</font> in all queries that <font color="#C20000">the function of the message from the pivot to the leafs are all expressed in terms of the variables the same as it is in the clique from which passes message to the pivot</font>.  
+>&#10114;given clique $C$ and $C'$ in adjacent, there exists $C_{i}$ for $i$=$1$ to $k$ to be $C$'s neighbors, $g_{i}$ is the message from $C_{i}$ to $C$, and $f_{j}$ is the $j$-th function attached to clique $C$, the message from $C$ to $C'$ is denoted as $H$, expressed as:  
+>$H((C\cap C')-E)$=$\sum_{C\backslash C'\cup E}\prod_{i}g_{i}\prod_{j}f_{j}$, with $E$ to be the evidence.  
+>The summation over elements purely from $C$, <font color="RosyBrown">not</font> belonging to $C'$ and $E$(evidence), then  
+>$H((C\cap C')-E)$=$\sum_{C\backslash C\cap C'}\prod_{i}g_{i}\prod_{j}f_{j}$ also holds!!
+>The term $(C\cap C')-E$ illustrates that the message purely propagates from $C$ to $C'$, exclusive of the intermediate noise.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Notes</font>  
+>The <font color="Red">clique tree</font> is also called a <font color="Red">junction tree</font> or a <font color="Red">join tree</font>.  
 
 ### Addendum
 >&#10112;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
