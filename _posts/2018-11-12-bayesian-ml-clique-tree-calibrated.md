@@ -29,6 +29,16 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 ><font color="OrangeRed">Notes</font>  
 >The <font color="Red">clique tree</font> is also called a <font color="Red">junction tree</font> or a <font color="Red">join tree</font>.  
 
+### What Is The <font color="Red">Calibrated Clique Tree</font>?
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Run message passing with each clique in the tree as the pivot(root)</font>  
+>Suppose you have a well constructed <font color="Red">clique tree</font>:  
+>&#10112;take one <font color="Red">clique</font> that <font color="RosyBrown">neither</font> has been used as a pivot <font color="RosyBrown">nor</font> all its containing variables has been belief updated.  
+>&#10113;run message passing from leave nodes to this pivot node with one variable chosen for <font color="DeepSkyBlue">belief update</font>(such variable must <font color="RosyBrown">not</font> have been propagated with message in this clique).  
+>&#10114;in the message passing from one clique to another, marginalizes over variables other than &#10113; chosen variable, thus to have the final factor containing only this variable in it.  
+>&#10115;repeat &#10112; until each clique and all variables in it has been <font color="DeepSkyBlue">belief updated</font>.  
+>
+
 ### Addendum
 >&#10112;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
 
