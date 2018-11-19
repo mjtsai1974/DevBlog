@@ -38,6 +38,14 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >&#10114;in the message passing from one clique to another, marginalizes over variables other than &#10113; chosen variable, thus to have the final factor containing only this variable in it.  
 >&#10115;repeat &#10112; until each clique and all variables in it has been <font color="DeepSkyBlue">belief updated</font>.  
 >
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">The calibrated clique tree</font>  
+>After each clique with all its variables has been <font color="DeepSkyBlue">belief updated</font>, we will have a <font color="Red">calibrated clique tree</font> if below condition is satisfied:  
+>$\;\;\sum_{C_{i}\backslash S_{i,j}}Bel_{i}$=$sum_{C_{j}\backslash S_{i,j}}Bel_{j}$  
+>where,  
+>&#10112;we denote $Bel_{i}$ for the belief update on clique $i$.  
+>&#10113;we take $S_{i,j}$=$C_{i}\cap C_{j}$ as the edge in between $C_{i}$ and $C_{j}$.  
+>&#10114;$C_{i}$ and $C_{j}$ are any two <font color="DeepSkyBlue">adjacent</font> cliques.  
 
 ### Addendum
 >&#10112;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
