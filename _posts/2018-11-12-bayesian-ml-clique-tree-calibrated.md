@@ -51,6 +51,24 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-11-12-bayesian-ml-clique-tree-calibrated-cliques.png "calibration")
 >We can also use $Bel_{i}(X)$ to be the <font color="DeepSkyBlue">posterior belief update</font> of variable $X$ in clique $i$; for the simplicity, the <font color="DeepSkyBlue">belief update</font> would be proceeded in the unit of each distinct clique in this article.  
 
+<!--
+### Illustrtation Of The <font color="Red">Calibrated Clique Tree</font>::<font color="Brown">by mjtsai1974</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">From BN to MN</font>  
+>to be conti...
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Construct the clique tree</font>  
+>to be conti...
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">The proof of the calibrated clique tree</font>  
+>When $C_{i}$ and $C_{j}$ are <font color="Red">calibrated</font>, $\sum_{C_{i}\backslash S_{i,j}}Bel_{i}$=$\sum_{C_{j}\backslash S_{i,j}}Bel_{j}$.  
+>
+><font color="Brown">proof::mjtsai1974</font>  
+>
+-->
+
 ### Addendum
 >&#10112;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
 
