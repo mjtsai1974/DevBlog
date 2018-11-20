@@ -45,10 +45,10 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >where,  
 >&#10112;we denote $Bel_{i}$ for the belief update on clique $i$.  
 >&#10113;we take $S_{i,j}$=$C_{i}\cap C_{j}$ as the edge in between $C_{i}$ and $C_{j}$.  
->&#10114;$C_{i}$ and $C_{j}$ are any two <font color="DeepSkyBlue">adjacent</font> cliques.  
+>&#10114;$C_{i}$ and $C_{j}$ are any two <font color="DeepSkyBlue">adjacent</font> cliques in the tree.  
 >
->We can also use $Bel_{i}(X)$ to be the <font color="DeepSkyBlue">posterior belief update</font> of variable $X$ in clique $i$, for the simplicity, the <font color="DeepSkyBlue">belief update</font> would be proceeded in the unit of each distinct clique in this article.  
-<!-- to be conti...add calibrated cliques exhibition-->
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-11-12-bayesian-ml-clique-tree-calibrated-cliques.png "calibration")
+>We can also use $Bel_{i}(X)$ to be the <font color="DeepSkyBlue">posterior belief update</font> of variable $X$ in clique $i$; for the simplicity, the <font color="DeepSkyBlue">belief update</font> would be proceeded in the unit of each distinct clique in this article.  
 
 ### Addendum
 >&#10112;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
