@@ -51,15 +51,22 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-11-12-bayesian-ml-clique-tree-calibrated-cliques.png "calibration")
 >We can also use $Bel_{i}(X)$ to be the <font color="DeepSkyBlue">posterior belief update</font> of variable $X$ in clique $i$; for the simplicity, the <font color="DeepSkyBlue">belief update</font> would be proceeded in the unit of each distinct clique in this article.  
 
-<!--
 ### Illustrtation Of The <font color="Red">Calibrated Clique Tree</font>::<font color="Brown">by mjtsai1974</font>
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">From BN to MN</font>  
->to be conti...
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-11-12-bayesian-ml-clique-tree-calibrated-illustration-bn.png "BN")
+>Suppose we are given this BN, with probability distributed over each variable:  
+>&#10112;the total joint probability would be  
+>$P(A,B,C,D,E,F)$  
+>=$P(F\vert C,D)\cdot P(E\vert C)\cdot P(D)$  
+>$\;\;P(C\vert A,B)\cdot P(B)\cdot P(A)$  
+>&#10113;we'd like to query for $P(A,B,C\vert d,e,f)$=$\frac {P(A,B,C,d,e,f)}{\sum_{A,B,C}P(A,B,C,d,e,f)}$, under the observation(evidence) that $D$=$d$,$E$=$e$,$F$=$f$.  
+>&#10114;moralize it, we get below MN.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-11-12-bayesian-ml-clique-tree-calibrated-illustration-mn.png "MN")
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Construct the clique tree</font>  
->to be conti...
+>to be conti...  
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">The proof of the calibrated clique tree</font>  
@@ -67,7 +74,6 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >
 ><font color="Brown">proof::mjtsai1974</font>  
 >
--->
 
 ### Addendum
 >&#10112;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
