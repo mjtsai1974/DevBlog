@@ -75,10 +75,10 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >$f_{0}(A,B,C)$=$f_{3}(C)\cdot f_{2}(C)\cdot f_{1}(A,B,C)$  
 >, where $f_{0}(A,B,C)$ is the final collected messages in the clique $(A,B,C)$.  
 >&#10113;in the 2nd phase of <font color="DeepSkyBlue">distribution</font>, from the pivot to the leafs:  
->$f_{2_1}(C,E)$=$f_{3}(C)\cdot(\sum_{A,B}f_{1}(A,B,C)\cdot P(E\vert C))$  
->$f_{3_1}(C,D,F)$=$P(D)\cdot P(F\vert C,D)$  
+>$f_{4}(C,E)$=$f_{3}(C)\cdot(\sum_{A,B}f_{1}(A,B,C)\cdot P(E\vert C))$  
+>$f_{5}(C,D,F)$=$P(D)\cdot P(F\vert C,D)$  
 >$\;\;\cdot(\sum_{A,B}f_{1}(A,B,C)\cdot f_{2}(C))$  
->, where $f_{2_1}(C,E)$ is the message from pivot to $(C,E)$, and $f_{3_1}(C,D,F)$ is the message from pivot to $(C,D,F)$.  
+>, where $f_{4}(C,E)$ is the message from pivot to $(C,E)$, and $f_{5}(C,D,F)$ is the message from pivot to $(C,D,F)$.  
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">The proof of the calibrated clique tree</font>  
