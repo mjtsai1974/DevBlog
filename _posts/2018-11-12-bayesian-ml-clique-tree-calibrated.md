@@ -85,6 +85,8 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >When $C_{i}$ and $C_{j}$ are <font color="Red">calibrated</font>, $\sum_{C_{i}\backslash S_{i,j}}Bel_{i}$=$\sum_{C_{j}\backslash S_{i,j}}Bel_{j}$.  
 >
 ><font color="Brown">proof::mjtsai1974</font>  
+>&#10112;$f_{0}(A,B,C)$ in the <font color="DeepSkyBlue">collection</font> phase, $f_{4}(C,E)$ and $f_{5}(C,D,F)$ in the <font color="DeepSkyBlue">distribution</font> phase are all operating over the same factors.  
+>&#10113;  
 >
 
 ### Addendum
