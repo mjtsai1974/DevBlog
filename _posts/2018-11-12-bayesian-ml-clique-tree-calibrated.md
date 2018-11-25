@@ -82,7 +82,7 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >
 >$f_{0}(A,B,C)$ in the <font color="DeepSkyBlue">collection</font> phase, $f_{4}(C,E)$ and $f_{5}(C,D,F)$ in the <font color="DeepSkyBlue">distribution</font> phase are all operating over the same factors.  
 >
-><font color="DeepPink">although the computation of $f_{0}(A,B,C)$, $f_{4}(C,E)$ and $f_{5}(C,D,F)$ are using the same factors, the marginalizations in these 2 phase are proceeded over different variables, which <font color="RosyBrown">doesn't</font> guarantee to have the equivalent posterior belief</font>.  
+><font color="DeepPink">Although the computation of $f_{0}(A,B,C)$, $f_{4}(C,E)$ and $f_{5}(C,D,F)$ are using the same factors, the marginalizations in these 2 phase are proceeded over different variables, which <font color="RosyBrown">doesn't</font> guarantee to have the equivalent posterior belief</font>.  
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">The proof of the calibrated clique tree</font>  
@@ -96,7 +96,6 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >&#10115;then we have below equilibrium holds:
 >$\sum_{A,B}Bel_{1}$=$\sum_{E}Bel_{2}$  
 >$\sum_{A,B}Bel_{1}$=$\sum_{D,F}Bel_{3}$  
-<!-- the point is that we are querying for $P(A,B,C\vert d,e,f)$ with $A$=$a1$,$B$=$b1$,$C$=$c1$ of specific combinatory values in one set of given input data; where $D$=$d$,$E$=$e$,$F$=$f$ are the observed evidence.  -->
 >
 
 ### Addendum
