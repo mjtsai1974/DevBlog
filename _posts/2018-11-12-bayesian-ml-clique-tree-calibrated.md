@@ -93,7 +93,7 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >&#10112;take $Bel_{1}$=$f_{0}(A,B,C)$ for the belief updated in clique $C_{1}$.  
 >&#10113;take $Bel_{2}$=$f_{4}(C,E)$ for the belief updated in clique $C_{2}$.  
 >&#10114;take $Bel_{3}$=$f_{5}(C,D,F)$ for the belief updated in clique $C_{3}$.  
->&#10115;then we have below equilibrium holds:
+>&#10115;then we have below equilibrium holds:  
 >$\sum_{A,B}Bel_{1}$=$\sum_{E}Bel_{2}$  
 >$\sum_{A,B}Bel_{1}$=$\sum_{D,F}Bel_{3}$  
 >
