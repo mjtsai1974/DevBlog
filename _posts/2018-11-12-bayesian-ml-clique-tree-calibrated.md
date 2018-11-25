@@ -80,15 +80,22 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >$\;\;\cdot(\sum_{A,B}f_{1}(A,B,C)\cdot f_{2}(C))$  
 >, where $f_{4}(C,E)$ is the message from pivot to $(C,E)$, and $f_{5}(C,D,F)$ is the message from pivot to $(C,D,F)$.  
 >
+>$f_{0}(A,B,C)$ in the <font color="DeepSkyBlue">collection</font> phase, $f_{4}(C,E)$ and $f_{5}(C,D,F)$ in the <font color="DeepSkyBlue">distribution</font> phase are all operating over the same factors.  
+>
+><font color="DeepPink">although the computation of $f_{0}(A,B,C)$, $f_{4}(C,E)$ and $f_{5}(C,D,F)$ are using the same factors, the marginalizations in these 2 phase are proceeded over different variables, which <font color="RosyBrown">doesn't</font> guarantee to have the equivalent posterior belief</font>.  
+>
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">The proof of the calibrated clique tree</font>  
 >When $C_{i}$ and $C_{j}$ are <font color="Red">calibrated</font>, $\sum_{C_{i}\backslash S_{i,j}}Bel_{i}$=$\sum_{C_{j}\backslash S_{i,j}}Bel_{j}$.  
 >
 ><font color="Brown">proof::mjtsai1974</font>  
 >Succeesding to above:  
->&#10112;$f_{0}(A,B,C)$ in the <font color="DeepSkyBlue">collection</font> phase, $f_{4}(C,E)$ and $f_{5}(C,D,F)$ in the <font color="DeepSkyBlue">distribution</font> phase are all operating over the same factors.  
->&#10113;<font color="DeepPink">although the computation of $f_{0}(A,B,C)$, $f_{4}(C,E)$ and $f_{5}(C,D,F)$ are using the same factors, the marginalizations in these 2 phase are proceeded over different variables, which <font color="RosyBrown">doesn't</font> guarantee to have the equivalent posterior belief</font>.  
->&#10114;
+>&#10112;take $Bel_{1}$=$f_{0}(A,B,C)$ for the belief updated in clique $C_{1}$.  
+>&#10113;take $Bel_{2}$=$f_{4}(C,E)$ for the belief updated in clique $C_{2}$.  
+>&#10114;take $Bel_{3}$=$f_{5}(C,D,F)$ for the belief updated in clique $C_{3}$.  
+>&#10115;then we have below equilibrium holds:
+>$\sum_{A,B}Bel_{1}$=$\sum_{E}Bel_{2}$  
+>$\sum_{A,B}Bel_{1}$=$\sum_{D,F}Bel_{3}$  
 <!-- the point is that we are querying for $P(A,B,C\vert d,e,f)$ with $A$=$a1$,$B$=$b1$,$C$=$c1$ of specific combinatory values in one set of given input data; where $D$=$d$,$E$=$e$,$F$=$f$ are the observed evidence.  -->
 >
 
