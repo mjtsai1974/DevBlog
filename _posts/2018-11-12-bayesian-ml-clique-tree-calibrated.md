@@ -97,6 +97,21 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >$\sum_{A,B}Bel_{1}$=$\sum_{E}Bel_{2}$  
 >$\sum_{A,B}Bel_{1}$=$\sum_{D,F}Bel_{3}$  
 >
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">The expression of the calibrated message</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-11-12-bayesian-ml-clique-tree-calibrated-message.png "calibrated message")
+>&#10112;take $\mu_{i,j}$ to be the <font color="Red">calibrated</font> message from clique $i$ to clique $j$.  
+>&#10113;still using the same example, $\mu_{1,2}$ is the <font color="Red">calibrated</font> message from clique $1$ to clique $2$, then  
+>$\mu_{1,2}$  
+>=$\sum_{A,B}Bel_{1}$  
+>=$\sum_{A,B}f_{3}(C)\cdot f_{2}(C)\cdot f_{1}(A,B,C)$  
+>=$\sum_{A,B}f_{3}(C)\cdot f_{1}(A,B,C)\cdot f_{2}(C)$  
+>=$(\sum_{A,B}f_{3}(C)\cdot f_{1}(A,B,C))\cdot (\sum_{E}P(E\vert C))$  
+>=$\delta_{1,2}\cdot\delta_{2,1}$  
+>, where $delta_{i,j}$ is the <font color="Red">before-calibrated</font> message propagated from clique $i$ to clique $j$.  
+>&#10114;$\mu_{1,3}$=$\delta_{1,3}\cdot\delta_{3,1}$ could also be proved, by mathematics induction, we can claim that <font color="DeepPink">$\mu_{i,j}$=$\delta_{i,j}\cdot\delta_{j,i}$</font>.  
+>
+><font color="#C20000">The <font color="DeepPink">calibrated message</font> from clique $i$ to clique $j$ is the joint probability function of the <font color="DeepPink">before-calibrated</font> message from clique $i$ to clique $j$ and the <font color="DeepPink">before-calibrated</font> message from clique $j$ to clique $i$.</font>  
 
 ### Addendum
 >&#10112;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
