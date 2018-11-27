@@ -111,7 +111,7 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >, where $delta_{i,j}$ is the <font color="Red">before-calibrated</font> message propagated from clique $i$ to clique $j$.  
 >&#10114;$\mu_{1,3}$=$\delta_{1,3}\cdot\delta_{3,1}$ could also be proved, by mathematics induction, we can claim that <font color="DeepPink">$\mu_{i,j}$=$\delta_{i,j}\cdot\delta_{j,i}$</font>.  
 >
-><font color="#C20000">The <font color="DeepPink">calibrated message</font> from clique $i$ to clique $j$ is the joint probability function of the <font color="DeepPink">before-calibrated</font> message from clique $i$ to clique $j$ and the <font color="DeepPink">before-calibrated</font> message from clique $j$ to clique $i$.</font>  
+><font color="#C20000">The <font color="DeepPink">calibrated message</font> from clique $i$ to clique $j$ is the joint probability function of the <font color="DeepPink">before-calibrated</font> message from clique $i$ to clique $j$ and the <font color="DeepPink">before-calibrated</font> message from clique $j$ to clique $i$</font>.  
 >
 ><font color="DeepSkyBlue">[5]</font>
 ><font color="OrangeRed">The generalization of the calibrated message</font>  
