@@ -112,6 +112,25 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >&#10114;$\mu_{1,3}$=$\delta_{1,3}\cdot\delta_{3,1}$ could also be proved, by mathematics induction, we can claim that <font color="DeepPink">$\mu_{i,j}$=$\delta_{i,j}\cdot\delta_{j,i}$</font>.  
 >
 ><font color="#C20000">The <font color="DeepPink">calibrated message</font> from clique $i$ to clique $j$ is the joint probability function of the <font color="DeepPink">before-calibrated</font> message from clique $i$ to clique $j$ and the <font color="DeepPink">before-calibrated</font> message from clique $j$ to clique $i$.</font>  
+>
+><font color="DeepSkyBlue">[5]</font>
+><font color="OrangeRed">The generalization of the calibrated message</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-11-12-bayesian-ml-clique-tree-calibrated-message-generalized.png "generalized")
+><font color="Brown">proof::mjtsai1974</font>  
+>&#10112;take $neighbor(C)$=$\{C"\}\cup\{C'\}$  
+>&#10113;take $\mu_{S=C\cap C'}$ te be the <font color="DeepPink">calibrated</font> message from clique $C$ to $C'$(or $C'$ to $C$), then  
+>$\mu_{S=C\cap C'}$  
+>=$\sum_{C\backslash S}\prod f_{j}\prod_{C"\in neighbor(C)}\delta_{C"\rightarrow C}$  
+>=$\sum_{C\backslash S}\prod f_{j}\prod_{C"\in neighbor(C)\backslash C'}\delta_{C"\rightarrow C}$  
+>$\;\;\cdot \delta_{C'\rightarrow C}$  
+>=$\delta_{C\rightarrow C'}\cdot \delta_{C'\rightarrow C}$  
+>, where $f_{j}$ is the function attached to clique $C$.  
+>&#10114;if we choose the calibrated message from clique $C$ to $C'$, then we have  
+>$\mu_{C\rightarrow C'}$  
+>=$\delta_{C\rightarrow C'}\cdot \delta_{C'\rightarrow C}$  
+>and, it also hods for below  
+>$\mu_{C'\rightarrow C}$  
+>=$\delta_{C'\rightarrow C}\cdot \delta_{C\rightarrow C'}$  
 
 ### Addendum
 >&#10112;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
