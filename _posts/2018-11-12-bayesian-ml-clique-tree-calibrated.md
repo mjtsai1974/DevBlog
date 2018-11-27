@@ -126,10 +126,10 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >=$\delta_{C\rightarrow C'}\cdot \delta_{C'\rightarrow C}$  
 >, where $f_{j}$ is the function attached to clique $C$.  
 >&#10114;if we choose the calibrated message from clique $C$ to $C'$, then we have  
->$\mu_{C\rightarrow C'}$  
+>$\mu_{C,C'}$  
 >=$\delta_{C\rightarrow C'}\cdot \delta_{C'\rightarrow C}$  
 >and, it also hods for below  
->$\mu_{C'\rightarrow C}$  
+>$\mu_{C',C}$  
 >=$\delta_{C'\rightarrow C}\cdot \delta_{C\rightarrow C'}$  
 
 ### Addendum
