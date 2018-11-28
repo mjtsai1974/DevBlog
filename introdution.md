@@ -145,6 +145,7 @@ After exploring in the prerequisites, you are supposed to come out with sufficie
 * [Propagation In The Bayesian Network]({{ site.github.repo }}{{ site.baseurl }}/2018/08/26/bayesian-ml-progagation/)
 * [The Bayesian Network Propagation And Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/09/25/bayesian-ml-progagation-cliuque-tree/)
 * [The Clique Tree Construction]({{ site.github.repo }}{{ site.baseurl }}/2018/10/14/bayesian-ml-clique-tree-construction/)
+* [The Calibrated Clique Tree]({{ site.github.repo }}{{ site.baseurl }}/2018/11/12/bayesian-ml-clique-tree-calibrated/)
 
 > The related posts would be new added in the future, and supposed you are comfortable with posts in prerequisite section. 
 
