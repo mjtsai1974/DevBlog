@@ -142,11 +142,14 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >&#10113;<font color="Red">predict</font> of the form $P(symptom\vert causes)$, the <font color="OrangeRed">qualitative</font> thinking.  
 >&#10114;<font color="Red">classification</font> of the form $\underset{class}{max}P(class\vert data)$.  
 >&#10115;<font color="Red">decision making</font> by given/develop certain kind of cost function in a subsystem.  
+>
 >I have &#10112; and &#10113; involved in a lot of my previous posts, in the incoming future, I expect myself to investigate &#10114; and &#10115;, you can find some future direction in p.11~43 of [A Tutorial on Inference and Learning in Bayesian Networks, Irina Rish, IBM T.J.Watson Research Center](http://www.ee.columbia.edu/~vittorio/Lecture12.pdf).  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Time to back to Reinforcement Learning</font>  
+>In the early May of 2018, I was struggling over <font color="Red">reinforcement learning</font> in <font color="Red">exploitation versus exploration</font>, for some terminology, <font color="DeepSkyBlue">prior</font> or <font color="DeepSkyBlue">posterior</font> alike, I explore to the <font color="Red">Bayesian network</font>, after months of <font color="Red">exploitation</font>, I should resume my <font color="Red">reinforcement learning</font> and explore to next station of unknow, maybe sooner or later involved in the <font color="Red">Bayesian network</font> due to this deep <font color="Red">exploitation</font> in these days.  
 >
+>Finally, <font color="DeepPink">the Bayesian network network is a network of multiple variables, while reinforcement learning is a network of only one variable iterating over multiple states.</font>  
 
 ### Addendum
 >&#10112;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
