@@ -132,8 +132,25 @@ The quantitative evaluation of messages from one clique to its adjacent clique a
 >$\mu_{C',C}$  
 >=$\delta_{C'\rightarrow C}\cdot \delta_{C\rightarrow C'}$  
 
+### Before The End Of <font color="Red">Bayesian Network</font> Begin@20181201
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Brief summary</font>  
+>Using <font color="Red">Bayesian network</font> to compute probability of the query in the form of $P(X\vert E)$ is called <font color="Red">inference</font>, where $E$ is the observed evidence variable(s), $X$ is the query variable(s) in the network.  
+>
+>The <font color="Red">Bayesian networks</font> are useful for these tasks:  
+>&#10112;<font color="Red">diagnosis</font> of the form $P(causes\vert symptom)$, the <font color="Red">quantitative</font> thinking.  
+>&#10113;<font color="Red">predict</font> of the form $P(symptom\vert causes)$, the <font color="OrangeRed">qualitative</font> thinking.  
+>&#10114;<font color="Red">classification</font> of the form $\underset{class}{max}P(class\vert data)$.  
+>&#10115;<font color="Red">decision making</font> by given/develop certain kind of cost function in a subsystem.  
+>I have &#10112; and &#10113; involved in a lot of my previous posts, in the incoming future, I expect myself to investigate &#10114; and &#10115;, you can find some future direction in p.11~43 of [A Tutorial on Inference and Learning in Bayesian Networks, Irina Rish, IBM T.J.Watson Research Center](http://www.ee.columbia.edu/~vittorio/Lecture12.pdf).  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Time to back to Reinforcement Learning</font>  
+>
+
 ### Addendum
 >&#10112;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
+>&#10113;[A Tutorial on Inference and Learning in Bayesian Networks, Irina Rish, IBM T.J.Watson Research Center](http://www.ee.columbia.edu/~vittorio/Lecture12.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
