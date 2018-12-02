@@ -46,7 +46,7 @@ $$V(S)=R(S)+\gamma\cdot(?)$$
 ### What The Future Might Be?
 >Given a intuition of value state, and a possible roadmap, what is the future value in the long run?   The expected long term value of the next state is by summing over all possible next states, $S'$;where $S'$ is the <font color="deeppink">product</font> of:  
 >&#10112;the probability of making transition from $S$ to $S'$, <font color="#00ADAD">$P(S'\left|S\right.)$</font>.  
->&#10113;the infinite hgorizon expected discounted reward(or the value of S'), <font color="#D600D6">$V(S')$</font>.  
+>&#10113;the infinite horizon expected discounted reward(or the value of S'), <font color="#D600D6">$V(S')$</font>.  
 >
 >At this moment, take the future value of current state $S$ as immediate reward of current valus $S$ plus the expected long term value of the next state $S'$:  
 $$V(S)=R(S)+\gamma\cdot\sum_{S'}P(S'\left|S\right.)\cdot V(S')$$
