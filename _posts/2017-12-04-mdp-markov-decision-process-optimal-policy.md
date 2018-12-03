@@ -32,7 +32,7 @@ $$E\left[\sum_{t=0}^\infty\gamma^t\cdot R_t\left|S_0\right.\right]$$
 
 ### The Optimal Value Function
 >Succeeding to the expression of the expected sum of future possible discounted rewards, to get the <font color="#00ADAD">optimal policy</font>, we need to further refine the <font color="red">state value function</font> so that it would be optimal for computation of <font color="#00ADAD">policy</font>:  
-$$V^\pi(S)=\underset\pi E\left[\sum_{t=0}^\infty\gamma\cdot R^t\left|S_0\right.=S\right]$$  
+$$V^\pi(S)=\underset\pi E\left[\sum_{t=0}^\infty\gamma^t\cdot R\left|S_0\right.=S\right]$$  
 >
 >For each state $S$, <font color="red">the value function of the state is the expected sum of future discounted reward</font>, provided that <font color="#00ADAD">you execute the policy $\pi$</font>.  
 >
