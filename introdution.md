@@ -26,9 +26,11 @@ adjust in my handwritings.  It is almost the time, I resume the same course and 
 existing machine learning has become a rather evolutionary version, the deep learning.
 
 For the time being(2017.10.24), I have completed below on-line courses and would like to further advance to deep learning:  
-
 [1][NTU H.T.Lin's Machine Learning Foundation](https://zh-tw.coursera.org/learn/ntumlone-mathematicalfoundations)  
 [2][Stanford CS221 Machine Learning of Coursera](https://www.coursera.org/learn/machine-learning)  
+
+At the moment 2018.04.13, I have just completed the on-line course, it took me almost 6 months:  
+[3][Reinforcement Learning By Georgia Tech(CS8803)](https://www.udacity.com/course/reinforcement-learning--ud600)  
 
 Review of the major topics would be quiet complicated, you might ponder to classify it as statistics or computer science NP-hard algorithm.  Statisticians tend more to regress on already known sampling 
 data, by means of mean squared error with F-test, t-test, Chi-square test to evaluate the fitness of the regression model in their hypothesis, even more, they are using likelihood ratio test to judge the 
