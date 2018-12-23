@@ -5,15 +5,13 @@ title: Temporal Difference Learning
 
 ## Prologue To The <font color="Red">Temporal Difference Learning</font>
 <p class="message">
-<font color="Red">Temporal difference learning</font>, called <font color="Red">TD Lambda</font>, <font color="Red">TD(\lambda)</font>, it is about <font color="DeepPink">to learn to make prediction that takes place over time</font>.  
+<font color="Red">Temporal difference learning</font>, called <font color="Red">TD Lambda</font>, <font color="Red">TD($\lambda$)</font>, it is about <font color="DeepPink">to learn to make prediction that takes place over time</font>.  
 </p>
 
-### <font color="Red">Temporal Difference Learning</font> Begin By Example
-><font color="DeepSkyBlue">[1]</font>
-><font color="OrangeRed">What TD(\lambda) is used for?</font>  
->Given below state transition, where $R_{i}$ is the <font color="#9300FF">immediate reward</font> associated with $S_{i}$, and we try to predict the expected sum of discounted rewards.    
+### Begin By Intuition
+>Given below state transition, where $R_{i}$ is the <font color="#9300FF">immediate reward</font> associated with $S_{i}$, and we try to predict the expected sum of discounted rewards by TD($\lambda$).  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-over-time.png "generalized")
->
+
 
 <!--
 ### Addendum
