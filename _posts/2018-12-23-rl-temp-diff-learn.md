@@ -10,13 +10,23 @@ title: Temporal Difference Learning
 
 ### Begin By Intuition
 >Given below state transition, where $R_{i}$ is the <font color="#9300FF">immediate reward</font> associated with $S_{i}$, and we try to predict the expected sum of discounted rewards by TD($\lambda$).  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-over-time.png "generalized")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-over-time.png "TD Lambda")
+
+### ReCap The <font color="DeepSkyBlue">Backup</font> In <font color="Red">Markov Chain</font>
+>Given this <font color="Red">Markov chain</font>, where all states are initialized with value $0$, and $S_{3}$ is stochastic with $0.9$ to $S_{4}$, $0.1$ to $S_{5}$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-mc.png "M.C")
+>For $S_{F}$ is the state we end up in, this final state is set to $0$ in its value.  As to other states, it's the expected value of the reward plus the discounted value of the state we end up in.  
+>$V(S)$=  
+>&#10112;$0$ for $S_{F}$.  
+>&#10113;$E\lbrack R_{i}+\gamma\cdot V(S')\rbrack$, $S'$ is the state we arrive in.  
+>The <font color="#9300FF">immediate reward</font> associated are $+1$ with $S_{1}$, $+2$ with $S_{2}$, $0$ with $S_{3}$, $+1$ with $S_{4}$ and $+10$ with $S_{5}$.  
+>
+>We'd like to use the <font color="DeepSkyBlue">backup propagation</font> to figure out the value function of these states.  
 
 
 <!--
 ### Addendum
->&#10112;[Graphical Models - Lecture 11: Clique Trees, Andrew McCallum, mccallum@cs.umass.edu](https://people.cs.umass.edu/~mccallum/courses/gm2011/11-clique-trees.pdf)  
->&#10113;[A Tutorial on Inference and Learning in Bayesian Networks, Irina Rish, IBM T.J.Watson Research Center](http://www.ee.columbia.edu/~vittorio/Lecture12.pdf)  
+>&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
 -->
 
 <!-- Γ -->
