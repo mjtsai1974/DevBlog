@@ -24,21 +24,13 @@ title: Temporal Difference Learning
 >
 ><font color="DeepSkyBlue">[Answer]</font>
 >We'd like to use the <font color="DeepSkyBlue">backup propagation</font> to figure out the value function of these states:  
->&#10112;V($S_{4}$)  
->=$1$+$\gamma\cdot 1\cdot 0$  
->=$1$  
->&#10113;V($S_{5}$)  
->=$10$+$\gamma\cdot 1\cdot 0$  
->=$10$  
+>&#10112;V($S_{4}$)=$1$+$\gamma\cdot 1\cdot 0$=$1$  
+>&#10113;V($S_{5}$)=$10$+$\gamma\cdot 1\cdot 0$=$10$  
 >&#10114;V($S_{3}$)  
 >=$0$+$\gamma\cdot(0.9\cdot 1+0.1\cdot 10)$  
 >=$1.9$, where $\gamma$=$1$  
->&#10115;V($S_{1}$)  
->=$1$+$\gamma\cdot 1\cdot 1.9$  
->=$2.9$  
->&#10116;V($S_{2}$)  
->=$2$+$\gamma\cdot 1\cdot 1.9$  
->=$3.9$  
+>&#10115;V($S_{1}$)=$1$+$\gamma\cdot 1\cdot 1.9$=$2.9$  
+>&#10116;V($S_{2}$)=$2$+$\gamma\cdot 1\cdot 1.9$=$3.9$  
 
 <!--
 ### Addendum
