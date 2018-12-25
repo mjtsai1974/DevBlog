@@ -13,16 +13,32 @@ title: Temporal Difference Learning
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-over-time.png "TD Lambda")
 
 ### ReCap The <font color="DeepSkyBlue">Backup</font> In <font color="Red">Markov Chain</font>
+><font color="RoyalBlue">[Question]</font>  
 >Given this <font color="Red">Markov chain</font>, where all states are initialized with value $0$, and $S_{3}$ is stochastic with $0.9$ to $S_{4}$, $0.1$ to $S_{5}$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-mc.png "M.C")
 >For $S_{F}$ is the state we end up in, this final state is set to $0$ in its value.  As to other states, it's the expected value of the reward plus the discounted value of the state we end up in.  
 >$V(S)$=  
 >&#10112;$0$ for $S_{F}$.  
 >&#10113;$E\lbrack R_{i}+\gamma\cdot V(S')\rbrack$, $S'$ is the state we arrive in.  
->The <font color="#9300FF">immediate reward</font> associated are $+1$ with $S_{1}$, $+2$ with $S_{2}$, $0$ with $S_{3}$, $+1$ with $S_{4}$ and $+10$ with $S_{5}$.  
+>The <font color="#9300FF">immediate reward</font> associated are $+1$ with $S_{1}$, $+2$ with $S_{2}$, $0$ with $S_{3}$, $+1$ with $S_{4}$ and $+10$ with $S_{5}$.  Let <font color="#D600D6">discounted factor</font> $\gamma$=$1$, <font color="RoyalBlue">what is V($S_{3}$)?</font>  
 >
->We'd like to use the <font color="DeepSkyBlue">backup propagation</font> to figure out the value function of these states.  
-
+<font color="DeepSkyBlue">[Answer]</font>
+>We'd like to use the <font color="DeepSkyBlue">backup propagation</font> to figure out the value function of these states:  
+>&#10112;V($S_{4}$)  
+>=$1$+$\gamma\cdot 1\cdot 0$  
+>=$1$  
+>&#10113;V($S_{5}$)  
+>=$10$+$\gamma\cdot 1\cdot 0$  
+>=$10$  
+>&#10114;V($S_{3}$)  
+>=$0$+$\gamma\cdot(0.9\cdot 1+0.1\cdot 10)$  
+>=$1.9$, where $\gamma$=$1$  
+>&#10115;V($S_{1}$)  
+>=$1$+$\gamma\cdot 1\cdot 1.9$  
+>=$2.9$  
+>&#10116;V($S_{2}$)  
+>=$2$+$\gamma\cdot 1\cdot 1.9$  
+>=$3.9$  
 
 <!--
 ### Addendum
