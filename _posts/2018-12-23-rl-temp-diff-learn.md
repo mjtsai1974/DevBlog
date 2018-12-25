@@ -22,7 +22,7 @@ title: Temporal Difference Learning
 >&#10113;$E\lbrack R_{i}+\gamma\cdot V(S')\rbrack$, $S'$ is the state we arrive in.  
 >The <font color="#9300FF">immediate reward</font> associated are $+1$ with $S_{1}$, $+2$ with $S_{2}$, $0$ with $S_{3}$, $+1$ with $S_{4}$ and $+10$ with $S_{5}$.  Let <font color="#D600D6">discounted factor</font> $\gamma$=$1$, <font color="RoyalBlue">what is V($S_{3}$)?</font>  
 >
-<font color="DeepSkyBlue">[Answer]</font>
+><font color="DeepSkyBlue">[Answer]</font>
 >We'd like to use the <font color="DeepSkyBlue">backup propagation</font> to figure out the value function of these states:  
 >&#10112;V($S_{4}$)  
 >=$1$+$\gamma\cdot 1\cdot 0$  
