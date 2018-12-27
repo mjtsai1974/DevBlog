@@ -31,6 +31,29 @@ title: Temporal Difference Learning
 >&#10115;V($S_{1}$)=$1$+$\gamma\cdot 1\cdot 1.9$=$2.9$  
 >&#10116;V($S_{2}$)=$2$+$\gamma\cdot 1\cdot 1.9$=$3.9$  
 
+### Estimate From Data In Example
+><font color="RoyalBlue">[Question]</font>  
+>Given the same <font color="Red">Markov chain</font> with $\gamma$=$1$, this is the simulation before we know the whole image of the model.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-mc-2.png "M.C")
+>We'd like to estimate the value of $S_{1}$ after 3 and 4 episodes, since nothing related to $S_{2}$, just ignore it.   
+>
+><font color="DeepSkyBlue">[Hints]::by mjtsai1974</font>
+>The red marked numbers are the value of $S_{1}$ in each episode.  <font color="DeepPink">By using backup or expect discounted reward could we obtain the same value function of states, even for $\gamma$=$0.9$.</font>  Let me do the illustrtation of the 1st episode.  
+>[1]by using <font color="DeepSkyBlue">backup</font>:  
+>&#10112;$V(S_{4})$=$1+\gamma\cdot 1\cdot 1$  
+>$V(S_{4})$=1 for $\gamma$=$1$ and $0.9$  
+>&#10113;$V(S_{3})$=$0+\gamma\cdot V(S_{4})$  
+>$V(S_{3})$=$1$ for $\gamma$=$1$ and $0.9$ for $\gamma$=$0.9$  
+>&#10114;$V(S_{1})$=$1+\gamma\cdot V(S_{3})$  
+>$V(S_{1})$=$2$ for $\gamma$=$1$ and $1.81$ for $\gamma$=$0.9$  
+>[2]by using <font color="DeepSkyBlue">expect discounted reward</font>:  
+>&#10112;$V(S_{1})$ expression  
+>=$1$+$\gamma\cdot 1\cdot(0+\gamma\cdot 1\cdot(1+\gamma\cdot 1\cdot 0))$  
+>, where $V(S_{1})$=$2$ for $\gamma$=$1$ and $1.81$ for $\gamma$=$0.9$  
+>
+><font color="DeepSkyBlue">[Answer]</font>
+>to be conti...  
+
 <!--
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
