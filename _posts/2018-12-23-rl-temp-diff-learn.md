@@ -35,7 +35,7 @@ title: Temporal Difference Learning
 ><font color="RoyalBlue">[Question]</font>  
 >Given the same <font color="Red">Markov chain</font> with $\gamma$=$1$, this is the simulation before we know the whole image of the model.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-mc-2.png "M.C")
->We'd like to estimate the value of $S_{1}$ after 3 and 4 episodes, since nothing related to $S_{2}$, just ignore it.   
+><font color="RoyalBlue">We'd like to estimate the value of $S_{1}$ after 3 and 4 episodes</font>, since nothing related to $S_{2}$, just ignore it.   
 >
 ><font color="DeepSkyBlue">[Hints]::by mjtsai1974</font>
 >The red marked numbers are the value of $S_{1}$ in each episode.  <font color="DeepPink">By using backup or expect discounted reward could we obtain the same value function of states, even for $\gamma$=$0.9$.</font>  Let me do the illustrtation of the 1st episode.  
@@ -52,7 +52,10 @@ title: Temporal Difference Learning
 >, where $V(S_{1})$=$2$ for $\gamma$=$1$ and $1.81$ for $\gamma$=$0.9$  
 >
 ><font color="DeepSkyBlue">[Answer]</font>
->to be conti...  
+>The appropriate estimate for $V(S_{1})$ after 3 and 4 episodes would be $\frac {2+11+2}{3}$=$5$ and $\frac {2+11+2+2}{4}$=$4.25$ respectively.  
+>
+>To estimate from data is asking to do an <font color="DeepSkyBlue">expectation</font>, it is just <font color="DeepSkyBlue">averaging</font> things.  We can <font color="DeepPink">incrementally compute an estimate for the value of a state, given the previous estimate.</font>  
+>
 
 <!--
 ### Addendum
