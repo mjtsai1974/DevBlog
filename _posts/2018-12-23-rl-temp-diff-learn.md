@@ -56,6 +56,9 @@ title: Temporal Difference Learning
 >
 >To estimate from data is asking to do an <font color="DeepSkyBlue">expectation</font>, it is just <font color="DeepSkyBlue">averaging</font> things.  We can <font color="DeepPink">incrementally compute an estimate for the value of a state, given the previous estimate.</font>  
 >
+>But, it is a big jump for $V(S_{1})$ from $5$ to $4.25$, when it is estimated from eposide 3 to 4.  With an inifinite amount of data in an already known <font color="Red">Markov chain</font> model, we should get $V(S_{1})$=$2.9$, which is the converged value, could be found in above section ReCap The <font color="DeepSkyBlue">Backup</font> In <font color="Red">Markov Chain</font>.  
+>
+>Because, <font color="RosyBrown">not enough data</font>, just 3 episodes, an over-representation of the higher reward, that's why we have higher skewed estimate of $5$ than $4.25$ in 4 episodes.  
 
 <!--
 ### Addendum
