@@ -32,7 +32,7 @@ title: Temporal Difference Learning
 >&#10116;V($S_{2}$)=$2$+$\gamma\cdot 1\cdot 1.9$=$3.9$  
 
 ### Estimate From Data In Example
-><font color="RoyalBlue">[Question]</font>  
+><font color="RoyalBlue">[Question]</font>
 >Given the same <font color="Red">Markov chain</font> with $\gamma$=$1$, this is the simulation before we know the whole image of the model.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-mc-2.png "M.C")
 ><font color="RoyalBlue">We'd like to estimate the value of $S_{1}$ after 3 and 4 episodes</font>, since nothing related to $S_{2}$, just ignore it.   
@@ -61,11 +61,21 @@ title: Temporal Difference Learning
 >Because, <font color="RosyBrown">not enough data</font>, just 3 episodes, an over-representation of the higher reward, that's why we have higher skewed estimate of $5$ than $4.25$ in 4 episodes.  
 
 ### Computing Estimates Incrementally
-><font color="RoyalBlue">[Question]</font>  
->From prior example, we have the value of $S_{1}$=$5$ after 3 episodes, then we ran an eposide, and the return of the episode, the total discounted reward of $S_{1}$ in this distinct 4-th sequence was $2$.  
+><font color="RoyalBlue">[Question]</font>
+>From prior example, we have the value of $S_{1}$=$5$, say $V_{3}(S_{1})$ after 3 episodes, then we ran an eposide, and the return of the episode, the total discounted reward of $S_{1}$ in this distinct 4-th sequence was $2$, say $R_{4}(S_{1})$.  
 >
-><font color="RoyalBlue">Could we figure out what the new estimate of value of $S_{1}$, just from this information?</font>  
+><font color="RoyalBlue">Could we figure out what the new estimate of value of $S_{1}$, say $V_{4}(S_{1})$, just from this information?</font>  
 >
+><font color="DeepSkyBlue">[Answer]</font>
+>By <font color="DeepSkyBlue">weighting</font>, $\frac {3\cdot 5 + 1\cdot 2}{4}$=$4.25$, we could get the same estimate identical to the way of <font color="DeepSkyBlue">expectation</font>.  
+>
+><font color="DeepSkyBlue">[The generalization]</font>
+>Can we generalize it?  Yes!  
+>$V_{T}(S_{1})$  
+>=$\frac {(T-1)\cdot V_{T-1}(S_{1})+1\cdot R_{T}(S_{1})}{T}$  
+>=$\frac {(T-1)\cdot V_{T-1}(S_{1})}{T}$+$\frac {1\cdot R_{T}(S_{1})}{T}$  
+>=$V_{T-1}(S_{1})$+$\alpha_{T}(R_{T}(S_{1})-V_{T-1}(S_{1}))$  
+>, where $\alpha_{T}$=$\frac {1}{T}$  
 
 <!--
 ### Addendum
