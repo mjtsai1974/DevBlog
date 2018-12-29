@@ -60,6 +60,13 @@ title: Temporal Difference Learning
 >
 >Because, <font color="RosyBrown">not enough data</font>, just 3 episodes, an over-representation of the higher reward, that's why we have higher skewed estimate of $5$ than $4.25$ in 4 episodes.  
 
+### Computing Estimates Incrementally
+><font color="RoyalBlue">[Question]</font>  
+>From prior example, we have the value of $S_{1}$=$5$ after 3 episodes, then we ran an eposide, and the return of the episode, the total discounted reward of $S_{1}$ in this distinct 4-th sequence was $2$.  
+>
+><font color="RoyalBlue">Could we figure out what the new estimate of value of $S_{1}$, just from this information?</font>  
+>
+
 <!--
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
