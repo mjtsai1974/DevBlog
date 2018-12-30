@@ -73,10 +73,13 @@ title: Temporal Difference Learning
 >Can we generalize it?  Yes!  
 >$V_{T}(S_{1})$  
 >=$\frac {(T-1)\cdot V_{T-1}(S_{1})+1\cdot R_{T}(S_{1})}{T}$  
->=$\frac {(T-1)\cdot V_{T-1}(S_{1})}{T}$+$\frac {1\cdot R_{T}(S_{1})}{T}$
+>=$\frac {(T-1)\cdot V_{T-1}(S_{1})}{T}$+$\frac {1\cdot R_{T}(S_{1})}{T}$  
 >=$\frac {(T-1)\cdot V_{T-1}(S_{1})}{T}$+$\frac {V_{T-1}(S_{1})}{T}$+$\frac {1\cdot R_{T}(S_{1})}{T}$-$\frac {V_{T-1}(S_{1})}{T}$  
 >=$V_{T-1}(S_{1})$+$\alpha_{T}(R_{T}(S_{1})-V_{T-1}(S_{1}))$  
->, where $\alpha_{T}$=$\frac {1}{T}$  
+>, where we have it that:  
+>&#10112;$\alpha_{T}$=$\frac {1}{T}$, <font color="DeepSkyBlue">the learning rate</font>  
+>&#10113;<font color="Red">the temporal difference</font> is <font color="DeepPink">the difference between the reward we get at this step and the estimate we had at th eprevious step</font>.  
+
 
 <!--
 ### Addendum
