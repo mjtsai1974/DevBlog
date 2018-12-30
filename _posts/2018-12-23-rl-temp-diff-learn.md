@@ -75,11 +75,13 @@ title: Temporal Difference Learning
 >=$\frac {(T-1)\cdot V_{T-1}(S_{1})+1\cdot R_{T}(S_{1})}{T}$  
 >=$\frac {(T-1)\cdot V_{T-1}(S_{1})}{T}$+$\frac {1\cdot R_{T}(S_{1})}{T}$  
 >=$\frac {(T-1)\cdot V_{T-1}(S_{1})}{T}$+$\frac {V_{T-1}(S_{1})}{T}$+$\frac {1\cdot R_{T}(S_{1})}{T}$-$\frac {V_{T-1}(S_{1})}{T}$  
->=$V_{T-1}(S_{1})$+$\alpha_{T}(R_{T}(S_{1})-V_{T-1}(S_{1}))$  
+>=$V_{T-1}(S_{1})$+$\alpha_{T}\cdot (R_{T}(S_{1})-V_{T-1}(S_{1}))$  
 >, where we have it that:  
->&#10112;$\alpha_{T}$=$\frac {1}{T}$, <font color="DeepSkyBlue">the learning rate</font>  
->&#10113;<font color="Red">the temporal difference</font> is <font color="DeepPink">the difference between the reward we get at this step and the estimate we had at th eprevious step</font>.  
-
+>&#10112;$\alpha_{T}$=$\frac {1}{T}$, the <font color="DeepSkyBlue">learning rate(parameter)</font>  
+>&#10113;the <font color="Red">temporal difference</font> is <font color="DeepPink">the difference between the reward we get at this step and the estimate we had at th eprevious step</font>.  
+>&#10114;$R_{T}(S_{1})-V_{T-1}(S_{1})$ is <font color="DeepSkyBlue">the error term</font>.  If the difference is <font color="OrangeRed">zero</font>, then <font color="OrangeRed">no change</font>; if the difference is <font color="DeepPink">(big) positive</font>, then, it <font color="DeepPink">goes up</font>; if the difference is <font color="RosyBrown">big negative</font>, then, it <font color="RosyBrown">goes down</font>.  
+>
+>As we get more and more eposides, this <font color="DeepSkyBlue">learning parameter</font> $\alpha_{T}$ is getting small and small, and making smaller and smaller changes.  It's just like the update rule in perceptrons learning and neural network learning.  
 
 <!--
 ### Addendum
