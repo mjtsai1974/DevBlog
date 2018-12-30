@@ -84,6 +84,11 @@ title: Temporal Difference Learning
 >As we get more and more eposides, this <font color="DeepSkyBlue">learning parameter</font> $\alpha_{T}$ is getting small and small, and making smaller and smaller changes.  It's just like the update rule in perceptrons learning and neural network learning.  
 
 <!--
+### The Property Of Learning Rate
+>next to proof the learning rate property by using geometric series copnvergence/divergence by Gilbert Strange in Calculus,... 
+-->
+
+<!--
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
 -->
