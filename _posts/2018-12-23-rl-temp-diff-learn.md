@@ -73,7 +73,8 @@ title: Temporal Difference Learning
 >Can we generalize it?  Yes!  
 >$V_{T}(S_{1})$  
 >=$\frac {(T-1)\cdot V_{T-1}(S_{1})+1\cdot R_{T}(S_{1})}{T}$  
->=$\frac {(T-1)\cdot V_{T-1}(S_{1})}{T}$+$\frac {1\cdot R_{T}(S_{1})}{T}$  
+>=$\frac {(T-1)\cdot V_{T-1}(S_{1})}{T}$+$\frac {1\cdot R_{T}(S_{1})}{T}$
+>=$\frac {(T-1)\cdot V_{T-1}(S_{1})}{T}$+$\frac {V_{T-1}(S_{1})}{T}$+$\frac {1\cdot R_{T}(S_{1})}{T}$-$\frac {V_{T-1}(S_{1})}{T}$  
 >=$V_{T-1}(S_{1})$+$\alpha_{T}(R_{T}(S_{1})-V_{T-1}(S_{1}))$  
 >, where $\alpha_{T}$=$\frac {1}{T}$  
 
