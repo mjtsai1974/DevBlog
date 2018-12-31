@@ -83,10 +83,12 @@ title: Temporal Difference Learning
 >
 >As we get more and more eposides, this <font color="DeepSkyBlue">learning parameter</font> $\alpha_{T}$ is getting small and small, and making smaller and smaller changes.  It's just like the update rule in perceptrons learning and neural network learning.  
 
-<!--
-### The Property Of Learning Rate
+### The Property Of <font color="DeepSkyBlue">Learning Rate</font>
+>By given $V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(R_{T}(S)-V_{T-1}(S))$, then, $\lim_{T\rightarrow\infty}V_{T}(S)$=$V(S)$, with below 2 properties guarantee the convergence:  
+>&#10112;$\sum_{T\rightarrow\infty}\alpha_{T}\rightarrow\infty$  
+>&#10113;$\sum_{T\rightarrow\infty}(\alpha_{T})^{2}<\infty$  
+><font color="Brown">proof::mjtsai1974</font>  
 >next to proof the learning rate property by using geometric series copnvergence/divergence by Gilbert Strange in Calculus,... 
--->
 
 <!--
 ### Addendum
