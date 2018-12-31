@@ -95,6 +95,16 @@ title: Temporal Difference Learning
 >=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-V_{T}(S))$  
 >=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-(V_{T-1}(S)$+$\alpha_{T}\cdot(R_{T}(S)-V_{T-1}(S))))$  
 >=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-(V_{T-1}(S)$+$\alpha_{T}\cdot(R_{T}(S)-(V_{T-2}(S)$+$\alpha_{T}\cdot(R_{T-1}(S)-V_{T-2}(S))))))$  
+>The expand could be continued, but we stop over here for our proof...  
+>=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-V_{T-1}(S))$  
+>$\;\;$+$\alpha_{T}^{2}\cdot(R_{T}(S)-V_{T-2}(S))$  
+>$\;\;$+$\alpha_{T}^{3}\cdot(R_{T-1}(S)-V_{T-2}(S))$  
+>To make it perfect, expand the term $V_{T-2}(S)$, we can get it down the way to $T=0$:  
+>=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-V_{T-1}(S))$  
+>$\;\;$+$\alpha_{T}^{2}\cdot(R_{T}(S)-V_{T-2}(S))$  
+>$\;\;$+$\alpha_{T}^{3}\cdot(R_{T-1}(S)-V_{T-3}(S))$  
+>$\;\;$+$\alpha_{T}^{4}\cdot(R_{T-2}(S)-V_{T-4}(S))$  
+>$\;\;$+$\alpha_{T}^{5}\cdot(R_{T-3}(S)-V_{T-5}(S))$+...  
 
 <!--
 ### Addendum
