@@ -88,7 +88,13 @@ title: Temporal Difference Learning
 >&#10112;$\sum_{T\rightarrow\infty}\alpha_{T}\rightarrow\infty$  
 >&#10113;$\sum_{T\rightarrow\infty}(\alpha_{T})^{2}<\infty$  
 ><font color="Brown">proof::mjtsai1974</font>  
->next to proof the learning rate property by using geometric series copnvergence/divergence by Gilbert Strange in Calculus,... 
+>I'd like to prove the learning rate property by using geometric series copnvergence/divergence by Gilbert Strange in Calculus.  
+>&#10112;begin from $T$=$0$, initially $V_{0}(S)$=$C$, some constant, might be zero.  And $V_{T}(S)$=$V_{T-1}(S)$=$V_{0}(S)$ at this moment.  
+>&#10113;suppose the equality holds, then expand from $T+1$:  
+>$V_{T+1}(S)$  
+>=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-V_{T}(S))$  
+>=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-(V_{T-1}(S)$+$\alpha_{T}\cdot(R_{T}(S)-V_{T-1}(S))))$  
+>=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-(V_{T-1}(S)$+$\alpha_{T}\cdot(R_{T}(S)-(V_{T-2}(S)$+$\alpha_{T}\cdot(R_{T-1}(S)-V_{T-2}(S))))))$  
 
 <!--
 ### Addendum
