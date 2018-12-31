@@ -85,8 +85,8 @@ title: Temporal Difference Learning
 
 ### The Property Of <font color="DeepSkyBlue">Learning Rate</font>
 >By given $V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(R_{T}(S)-V_{T-1}(S))$, then, $\lim_{T\rightarrow\infty}V_{T}(S)$=$V(S)$, with below 2 properties guarantee the convergence:  
->&#10112;$\sum_{i}^{\infty}(\alpha_{T})_{i}\rightarrow\infty$  
->&#10113;$\sum_{i}^{\infty}(\alpha_{T})_{i}^{2}<\infty$  
+>&#10112;$\sum_{T=0}^{\infty}\alpha_{T}\rightarrow\infty$  
+>&#10113;$\sum_{T=0}^{\infty}(\alpha_{T})^{2}<\infty$  
 ><font color="Brown">proof::mjtsai1974</font>  
 >I'd like to prove the learning rate property by using geometric series copnvergence/divergence by Gilbert Strange in Calculus.  
 >&#10112;begin from $T$=$0$, initially $V_{0}(S)$=$C$, some constant, might be zero.  And $V_{T}(S)$=$V_{T-1}(S)$=$V_{0}(S)$ at this moment.  
@@ -114,7 +114,7 @@ title: Temporal Difference Learning
 >$\alpha_{T}\cdot E$+$\alpha_{T}^{2}\cdot E$+$\alpha_{T}^{3}\cdot E$+$\alpha_{T}^{4}\cdot E$+...  
 >=$(\alpha_{T}+\alpha_{T}^{2}+\alpha_{T}^{3}+\alpha_{T}^{4}+...)\cdot E$  
 >=$(\lim_{k\rightarrow\infty}\sum_{i=1}^{k}\alpha_{T}^{i})\cdot E$, then,  
->$(\lim_{k\rightarrow\infty}\sum_{i=1}^{k}\alpha_{T}^{i})$=$\frac {\alpha_{T}}{1-\alpha_{T}}$, for $\left|\alpha_{T}\right|$<$1$, and it holds to have these 2 properties.  
+>$\lim_{k\rightarrow\infty}\sum_{i=1}^{k}\alpha_{T}^{i}$=$\frac {\alpha_{T}}{1-\alpha_{T}}$, for $\left|\alpha_{T}\right|$<$1$, and it holds to have these 2 properties.  
 
 <!--
 ### Addendum
