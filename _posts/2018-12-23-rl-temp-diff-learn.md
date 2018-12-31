@@ -85,8 +85,8 @@ title: Temporal Difference Learning
 
 ### The Property Of <font color="DeepSkyBlue">Learning Rate</font>
 >By given $V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(R_{T}(S)-V_{T-1}(S))$, then, $\lim_{T\rightarrow\infty}V_{T}(S)$=$V(S)$, with below 2 properties guarantee the convergence:  
->&#10112;$\sum_{T\rightarrow\infty}\alpha_{T}\rightarrow\infty$  
->&#10113;$\sum_{T\rightarrow\infty}(\alpha_{T})^{2}<\infty$  
+>&#10112;$\sum_{i}^{\infty}(\alpha_{T})_{i}\rightarrow\infty$  
+>&#10113;$\sum_{i}^{\infty}(\alpha_{T})_{i}^{2}<\infty$  
 ><font color="Brown">proof::mjtsai1974</font>  
 >I'd like to prove the learning rate property by using geometric series copnvergence/divergence by Gilbert Strange in Calculus.  
 >&#10112;begin from $T$=$0$, initially $V_{0}(S)$=$C$, some constant, might be zero.  And $V_{T}(S)$=$V_{T-1}(S)$=$V_{0}(S)$ at this moment.  
@@ -95,16 +95,26 @@ title: Temporal Difference Learning
 >=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-V_{T}(S))$  
 >=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-(V_{T-1}(S)$+$\alpha_{T}\cdot(R_{T}(S)-V_{T-1}(S))))$  
 >=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-(V_{T-1}(S)$+$\alpha_{T}\cdot(R_{T}(S)-(V_{T-2}(S)$+$\alpha_{T}\cdot(R_{T-1}(S)-V_{T-2}(S))))))$  
->The expand could be continued, but we stop over here for our proof...  
+>&#10114;the expand could be continued, but we stop over here for our proof...  
 >=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-V_{T-1}(S))$  
 >$\;\;$+$\alpha_{T}^{2}\cdot(R_{T}(S)-V_{T-2}(S))$  
 >$\;\;$+$\alpha_{T}^{3}\cdot(R_{T-1}(S)-V_{T-2}(S))$  
->To make it perfect, expand the term $V_{T-2}(S)$, we can get it down the way to $T=0$:  
+>&#10115;to make it perfect, expand the term $V_{T-2}(S)$, we can get it down the way to $T=0$:  
 >=$V_{T}(S)$+$\alpha_{T}\cdot(R_{T+1}(S)-V_{T-1}(S))$  
 >$\;\;$+$\alpha_{T}^{2}\cdot(R_{T}(S)-V_{T-2}(S))$  
 >$\;\;$+$\alpha_{T}^{3}\cdot(R_{T-1}(S)-V_{T-3}(S))$  
 >$\;\;$+$\alpha_{T}^{4}\cdot(R_{T-2}(S)-V_{T-4}(S))$  
 >$\;\;$+$\alpha_{T}^{5}\cdot(R_{T-3}(S)-V_{T-5}(S))$+...  
+>&#10116;we take $E_{1}$=$R_{T+1}(S)-V_{T-1}(S)$  
+>$\;\;\;\;E_{2}$=$R_{T}(S)-V_{T-2}(S)$  
+>$\;\;\;\;E_{3}$=$R_{T-1}(S)-V_{T-3}(S)$  
+>...
+>, where each $E_{i}$ is a constant, assume they are rather stable, non-variant, then we take these error terms as $E$.  
+>&#10116;then, the whole terms after the first + operator could be expressed as:  
+>$\alpha_{T}\cdot E$+$\alpha_{T}^{2}\cdot E$+$\alpha_{T}^{3}\cdot E$+$\alpha_{T}^{4}\cdot E$+...  
+>=$(\alpha_{T}+\alpha_{T}^{2}+\alpha_{T}^{3}+\alpha_{T}^{4}+...)\cdot E$  
+>=$(\lim_{k\rightarrow\infty}\sum_{i=1}^{k}\alpha_{T}^{i})\cdot E$, then,  
+>$(\lim_{k\rightarrow\infty}\sum_{i=1}^{k}\alpha_{T}^{i})$=$\frac {\alpha_{T}}{1-\alpha_{T}}$, for $\left|\alpha_{T}\right|$<$1$, and it holds to have these 2 properties.  
 
 <!--
 ### Addendum
@@ -134,6 +144,7 @@ title: Temporal Difference Learning
 <!-- \varnothing -->
 <!-- \perp -->
 <!-- \overset\triangle= -->
+<!-- \left|X\right|-->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus, mathematic expression</font> -->
