@@ -110,7 +110,7 @@ title: Temporal Difference Learning
 >$\;\;\;\;E_{3}$=$R_{T-1}(S)-V_{T-3}(S)$  
 >...
 >, where each $E_{i}$ is a constant, assume they are rather stable, non-variant, then we take these error terms as $E$.  
->&#10116;then, the whole terms after the first + operator could be expressed as:  
+>&#10117;then, the whole terms after the first + operator could be expressed as:  
 >$\alpha_{T}\cdot E$+$\alpha_{T}^{2}\cdot E$+$\alpha_{T}^{3}\cdot E$+$\alpha_{T}^{4}\cdot E$+...  
 >=$(\alpha_{T}+\alpha_{T}^{2}+\alpha_{T}^{3}+\alpha_{T}^{4}+...)\cdot E$  
 >=$(\lim_{k\rightarrow\infty}\sum_{i=1}^{k}\alpha_{T}^{i})\cdot E$, then,  
