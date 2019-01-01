@@ -114,12 +114,10 @@ title: Temporal Difference Learning
 >$\alpha_{T}\cdot E$+$\alpha_{T}^{2}\cdot E$+$\alpha_{T}^{3}\cdot E$+$\alpha_{T}^{4}\cdot E$+...  
 >=$(\alpha_{T}+\alpha_{T}^{2}+\alpha_{T}^{3}+\alpha_{T}^{4}+...)\cdot E$  
 >=$(\lim_{k\rightarrow\infty}\sum_{i=1}^{k}\alpha_{T}^{i})\cdot E$, then,  
->$\lim_{k\rightarrow\infty}\sum_{i=1}^{k}\alpha_{T}^{i}$=$\frac {\alpha_{T}}{1-\alpha_{T}}$, for $\left|\alpha_{T}\right|$<$1$, and it holds to have these 2 properties.  
+>$\lim_{k\rightarrow\infty}\sum_{i=1}^{k}\alpha_{T}^{i}$=$\frac {\alpha_{T}}{1-\alpha_{T}}$, for $\left|\alpha_{T}\right|$<$1$, and it holds to have these 2 properties, it is the convergent series, you can see in my prior post [Series Convergence]({{ site.github.repo }}{{ site.baseurl }}/2018/01/26/series-cnvg/).  
 
-<!--
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
--->
 
 <!-- Γ -->
 <!-- \Omega -->
