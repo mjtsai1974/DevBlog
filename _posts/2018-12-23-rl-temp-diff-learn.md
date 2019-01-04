@@ -117,7 +117,7 @@ title: Temporal Difference Learning
 >$\lim_{k\rightarrow\infty}\sum_{i=1}^{k}\alpha_{T}^{i}$=$\frac {\alpha_{T}}{1-\alpha_{T}}$, for $\left|\alpha_{T}\right|$<$1$, and it holds to have these 2 properties, it is the convergent series, you can see in my prior post [Series Convergence]({{ site.github.repo }}{{ site.baseurl }}/2018/01/26/series-cnvg/).  
 
 ### The <font color="Red">$TD(\lambda)$</font> Algorithm
-><font color="DeepSkyBlue">The rule</font>
+><font color="DeepSkyBlue">[The rule]</font>
 >Eposide $T$:  
 >$\;\;$For all $S$, $e(S)$=$0$ at start of eposide, $V_{T}(S)$=$V_{T-1}(S)$  
 >$\;\;$After $S_{t-1}\xrightarrow{r_{t}}S_{t}$:(from step $t-1$ to $t$ with <font color="#9300FF">reward</font> $r_{t}$)  
