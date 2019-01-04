@@ -117,6 +117,7 @@ title: Temporal Difference Learning
 >$\lim_{k\rightarrow\infty}\sum_{i=1}^{k}\alpha_{T}^{i}$=$\frac {\alpha_{T}}{1-\alpha_{T}}$, for $\left|\alpha_{T}\right|$<$1$, and it holds to have these 2 properties, it is the convergent series, you can see in my prior post [Series Convergence]({{ site.github.repo }}{{ site.baseurl }}/2018/01/26/series-cnvg/).  
 
 ### The <font color="Red">$TD(\lambda)$</font> Algorithm
+><font color="DeepSkyBlue">The rule</font>
 >Eposide $T$:  
 >$\;\;$For all $S$, $e(S)$=$0$ at start of eposide, $V_{T}(S)$=$V_{T-1}(S)$  
 >$\;\;$After $S_{t-1}\xrightarrow{r_{t}}S_{t}$:(from step $t-1$ to $t$ with <font color="#9300FF">reward</font> $r_{t}$)  
@@ -124,7 +125,9 @@ title: Temporal Difference Learning
 >$\;\;$For all $S$,  
 >$\;\;V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$  
 >$\;\;\;e(S_{t-1})$=$\lambda\cdot\gamma\cdot e(S_{t-1})$:(<font color="Red">before</font> transite from $S_{t-1}$ to $S_{t}$ in <font color="Red">next</font> iteration)  
->, where the $T$ stands for the specific eposide, $t$ is the index for <font color="Red">state transition</font>, and $e(S_{t})$ is for the <font color="DeepSkyBlue">eligibility</font>.  
+>
+><font color="DeepSkyBlue">[Notes]</font>
+>Where the $T$ stands for the specific eposide, $t$ is the index for <font color="Red">state transition</font>, and $e(S_{t})$ is for the <font color="DeepSkyBlue">eligibility</font>.  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
