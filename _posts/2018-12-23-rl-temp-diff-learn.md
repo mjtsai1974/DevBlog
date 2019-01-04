@@ -124,6 +124,7 @@ title: Temporal Difference Learning
 >$\;\;$For all $S$,  
 >$\;\;V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S))$  
 >$\;\;\;e(S_{t-1})$=$\lambda\cdot\gamma\cdot e(S_{t-1})$  
+>, where the $T$ stands for the specific eposide, $t$ is for State index, and $e(S_{t})$ is for the eligibility.  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
