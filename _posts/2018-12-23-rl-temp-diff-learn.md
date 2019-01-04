@@ -129,6 +129,12 @@ title: Temporal Difference Learning
 ><font color="DeepSkyBlue">[Notes]</font>
 >Where the $T$ stands for the specific eposide, $t$ is the index for <font color="Red">state transition</font>, and $e(S_{t})$ is for the <font color="DeepSkyBlue">eligibility</font>.  
 
+<!-- 
+### <font color="Red">$TD(1)$</font> Illustration: $\lambda$=$1$
+### <font color="Red">$TD(0)$</font> Illustration: $\lambda$=$0$
+### <font color="Red">$TD(0)$</font> Illustration: $0\ge\lambda\le 1$
+-->
+
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
 
