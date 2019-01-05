@@ -134,7 +134,7 @@ title: Temporal Difference Learning
 ### <font color="Red">$TD(1)$</font> Illustration: $\lambda$=$1$
 >This is by taking $\lambda$=$1$ in <font color="Red">$TD(\lambda)$</font> algorithm.  
 ><font color="DeepSkyBlue">[The rule]</font>
->Eposide $T$:
+>Eposide $T$:  
 >$\;\;$For all $S$, $e(S)$=$0$ at start of eposide, $V_{T}(S)$=$V_{T-1}(S)$  
 >$\;\;$After $S_{t-1}\xrightarrow{r_{t}}S_{t}$:(from step $t-1$ to $t$ with <font color="#9300FF">reward</font> $r_{t}$)  
 >$\;\;\;e(S_{t-1})$=$e(S_{t-1})$+$1$:  
