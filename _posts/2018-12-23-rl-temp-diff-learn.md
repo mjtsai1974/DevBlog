@@ -140,12 +140,12 @@ title: Temporal Difference Learning
 >$\;\;\;e(S_{t-1})$=$e(S_{t-1})$+$1$:  
 >$\;\;\;\;$Update <font color="DeepSkyBlue">eligibility</font> of $S_{t-1}$ after arriving to $S_{t}$  
 >$\;\;$For all $S$,  
->$\;\;V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$  
+>$\;\;V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$...(A)  
 >$\;\;\;e(S_{t-1})$=$\gamma\cdot e(S_{t-1})$:  
 >$\;\;\;\;$<font color="Red">before</font> transite from $S_{t-1}$ to $S_{t}$ in <font color="Red">next</font> iteration 
 >
 ><font color="DeepSkyBlue">[Notes]</font>
->
+>&#10112;(A) is sum of the reward plus the the discounted value of the state we just arrived, minus the state we just left.  
 
 <!--
 ### <font color="Red">$TD(0)$</font> Illustration: $\lambda$=$0$
