@@ -131,22 +131,23 @@ title: Temporal Difference Learning
 ><font color="DeepSkyBlue">[Notes]</font>
 >Where the $T$ stands for the specific eposide, $t$ is the index for <font color="Red">state transition</font>, and $e(S_{t})$ is for the <font color="DeepSkyBlue">eligibility</font>.  
 
-<!--
 ### <font color="Red">$TD(1)$</font> Illustration: $\lambda$=$1$
 >This is by taking $\lambda$=$1$ in <font color="Red">$TD(\lambda)$</font> algorithm.  
 ><font color="DeepSkyBlue">[The rule]</font>
->Eposide $T$:  
+>Eposide $T$:
 >$\;\;$For all $S$, $e(S)$=$0$ at start of eposide, $V_{T}(S)$=$V_{T-1}(S)$  
 >$\;\;$After $S_{t-1}\xrightarrow{r_{t}}S_{t}$:(from step $t-1$ to $t$ with <font color="#9300FF">reward</font> $r_{t}$)  
->$\;\;\;e(S_{t-1})$=$e(S_{t-1})$+$1$  
+>$\;\;\;e(S_{t-1})$=$e(S_{t-1})$+$1$:  
+>$\;\;\;\;$Update <font color="DeepSkyBlue">eligibility</font> of $S_{t-1}$ after arriving to $S_{t}$  
 >$\;\;$For all $S$,  
 >$\;\;V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$  
->$\;\;\;e(S_{t-1})$=$\gamma\cdot e(S_{t-1})$:  
->$\;\;\;\;$(<font color="Red">before</font> transite from $S_{t-1}$ to $S_{t}$ in <font color="Red">next</font> iteration)  
+>$\;\;\;e(S_{t-1})$=$\lambda\cdot\gamma\cdot e(S_{t-1})$:  
+>$\;\;\;\;$<font color="Red">before</font> transite from $S_{t-1}$ to $S_{t}$ in <font color="Red">next</font> iteration 
 >
 ><font color="DeepSkyBlue">[Notes]</font>
 >
 
+<!--
 ### <font color="Red">$TD(0)$</font> Illustration: $\lambda$=$0$
 ### <font color="Red">$TD(0)$</font> Illustration: $0\ge\lambda\le 1$
 -->
