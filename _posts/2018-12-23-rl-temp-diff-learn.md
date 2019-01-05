@@ -121,7 +121,7 @@ title: Temporal Difference Learning
 >Eposide $T$:  
 >$\;\;$For all $S$, $e(S)$=$0$ at start of eposide, $V_{T}(S)$=$V_{T-1}(S)$  
 >$\;\;$After $S_{t-1}\xrightarrow{r_{t}}S_{t}$:(from step $t-1$ to $t$ with <font color="#9300FF">reward</font> $r_{t}$)  
->$\;\;\;e(S_{t-1})$=$e(S_{t-1})$+$1$:
+>$\;\;\;e(S_{t-1})$=$e(S_{t-1})$+$1$:  
 >$\;\;\;\;$Update <font color="DeepSkyBlue">eligibility</font> of $S_{t-1}$ after arriving to $S_{t}$  
 >$\;\;$For all $S$,  
 >$\;\;V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$  
