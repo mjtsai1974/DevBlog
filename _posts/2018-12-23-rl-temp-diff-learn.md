@@ -152,7 +152,7 @@ title: Temporal Difference Learning
 >
 ><font color="Red">[Caution]</font>
 >&#10112;<font color="Red">all the $S$ are all being done in parallel</font>.  
->&#10113;the value at state $S$ is going to be updated on this quantity, $r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1})$, which is the same for everybody, <font color="RosyBrown">doesn't</font> depend on which $S$ we are updating, and $e(S)$ is specific to the state $S$ we are evaluating(looking at).  
+>&#10113;the value at state $S$(the $S$ in (A)) is going to be updated on this quantity, $r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1})$, which is the same for everybody, <font color="RosyBrown">doesn't</font> depend on which $S$ we are updating, and $e(S)$ is specific to the state $S$ we are evaluating(looking at).  
 
 <!--
 ### <font color="Red">$TD(0)$</font> Illustration: $\lambda$=$0$
