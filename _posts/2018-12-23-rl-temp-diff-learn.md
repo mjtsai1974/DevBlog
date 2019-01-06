@@ -149,6 +149,10 @@ title: Temporal Difference Learning
 >&#10113;we are going to apply the <font color="Red">temporal difference</font> onto all states, <font color="Red">proportional to the eligibility of each distinct state</font>, and the <font color="Red">learning rate</font> would be specified for we don't want it to move too much.  
 >&#10114;<font color="Red">after</font> the state has been iterated, <font color="DeepSkyBlue">decay or decrease its eligibility</font> with $\lambda\cdot\gamma$, in their given value, in <font color="Red">$TD(1)$</font>, $\lambda$=$1$.  
 >&#10115;and we are backing up to next stae.  
+>
+><font color="Red">[Caution]</font>
+>&#10112;<font color="Red">all the $S$ are all being done in parallel</font>.  
+>&#10113;the value at state $S$ is going to be updated on this quantity, $r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1})$, which is the same for everybody, <font color="RosyBrown">doesn't</font> depend on which $S$ we are updating, and $e(S)$ is specific to the state $S$ we are evaluating(looking at).  
 
 <!--
 ### <font color="Red">$TD(0)$</font> Illustration: $\lambda$=$0$
