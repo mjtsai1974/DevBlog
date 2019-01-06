@@ -62,7 +62,7 @@ title: Temporal Difference Learning
 
 ### Computing Estimates Incrementally
 ><font color="RoyalBlue">[Question]</font>
->From prior example, we have the value of $S_{1}$=$5$, say $V_{3}(S_{1})$ after 3 episodes, then we ran an eposide, and the return of the episode, the total discounted reward of $S_{1}$ in this distinct 4-th sequence was $2$, say $R_{4}(S_{1})$.  
+>From prior example, we have the value of $S_{1}$=$5$, say $V_{3}(S_{1})$ after 3 episodes, then we ran an eposide, and the return of the episode, the total <font color="#D600D6">discounted reward</font> of $S_{1}$ in this distinct 4-th sequence was $2$, say $R_{4}(S_{1})$.  
 >
 ><font color="RoyalBlue">Could we figure out what the new estimate of value of $S_{1}$, say $V_{4}(S_{1})$, just from this information?</font>  
 >
@@ -145,7 +145,10 @@ title: Temporal Difference Learning
 >$\;\;\;\;$<font color="Red">before</font> transite from $S_{t-1}$ to $S_{t}$ in <font color="Red">next</font> iteration 
 >
 ><font color="DeepSkyBlue">[Notes]</font>
->&#10112;(A) is sum of the reward plus the the discounted value of the state we just arrived, minus the state we just left.  
+>&#10112;the 2nd part of (A) is sum of the <font color="#9300FF">reward</font> plus the the <font color="#D600D6">discounted</font> value of the state we just arrived, minus the state value we just left; where these state values are all evaluated in <font color="Red">last</font> iteration.  It could just be the <font color="Red">temporal difference</font>.  
+>&#10113;we are going to apply the <font color="Red">temporal difference</font> onto all states, proportional to the eligibility of each distinct state, and the learning rate would be specified for we don't want it to move too much.  
+>&#10114;<font color="Red">after</font> the state has been iterated, <font color="DeepSkyBlue">decay or decrease its eligibility</font> with $\lambda\cdot\gamma$, in their given value, in <font color="Red">$TD(1)$</font>, $\lambda$=$1$.  
+>&#10115;and we are backing up to next stae.  
 
 <!--
 ### <font color="Red">$TD(0)$</font> Illustration: $\lambda$=$0$
