@@ -154,6 +154,20 @@ title: Temporal Difference Learning
 >&#10112;<font color="Red">all the $S$ are all being done in parallel</font>.  
 >&#10113;the value at state $S$(the $S$ in (A)) is going to be updated on this quantity, $r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1})$, which is the same for everybody, <font color="RosyBrown">doesn't</font> depend on which $S$ we are updating, and $e(S)$ is specific to the state $S$ we are evaluating(looking at).  
 
+### Example: <font color="Red">$TD(1)$</font> Illustration
+<font color="DeepSkyBlue">[1]</font>
+<font color="OrangeRed">Keeping track of changes ultimately</font>  
+>Let's walk through the pseudo code in this given example, just to see how value update works.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1.png "TD(1)")
+>&#10112;we are starting off at the beginning of an eposide.  Now, <font color="DeepSkyBlue">the eligibility for all states are all zero</font>.  
+>&#10113;we'd like to keep track of changes ultimately, it's all going to get added to whatever the <font color="Red">previous</font> value.  
+>&#10114;the 1st transition is from $S_{1}$ to $S_{2}$ with <font color="#9300FF">reward</font> $r_{1}$, and sets the <font color="DeepSkyBlue">eligibility $e(S_{1})$ to 1 for $S_{1}$</font>.  
+>&#10115;we'd like to loop through all the states, all of them, and apply the same little update to all of the states.  
+>
+<font color="DeepSkyBlue">[2]</font>
+<font color="OrangeRed">The expression of the update</font>  
+>The update has the form, whatever the current <font color="DeepSkyBlue">learning rate</font> is, times the <font color="#9300FF">reward</font> which we just experienced, say $r_{1}$, plus the <font color="#D600D6">discount factor gamma $\gamma$</font> times the previous value of the state we newly arrived, minus the the previous value of the state we just left.  
+
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
 ### <font color="Red">$TD(0)$</font> Illustration: $\lambda$=$0$
