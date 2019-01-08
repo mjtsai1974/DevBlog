@@ -190,7 +190,7 @@ title: Temporal Difference Learning
 >&#10112;$\triangle V_{T}(S_{1})$  
 >=$\alpha\cdot(r_{1}+\gamma\cdot V_{T-1}(S_{2})-V_{T-1}(S_{1}))$  
 >$\;\;\gamma\cdot\alpha\cdot(r_{2}+\gamma\cdot V_{T-1}(S_{3})-V_{T-1}(S_{2}))$  
->=$\alpha\cdot(r_{1}+\gamma\cdor r_{2}+\gamma^{2}\cdot V_{T-1}(S_{3})-V_{T-1}(S_{1}))$  
+>=$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot V_{T-1}(S_{3})-V_{T-1}(S_{1}))$  
 >&#10113;$\triangle V_{T}(S_{2})$=$\alpha\cdot(r_{2}+\gamma\cdot V_{T-1}(S_{3})-V_{T-1}(S_{2}))$  
 >&#10114;$\triangle V_{T}(S_{3})$=$0$  
 >
