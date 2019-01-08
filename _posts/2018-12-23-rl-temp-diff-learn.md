@@ -181,6 +181,22 @@ title: Temporal Difference Learning
 ><font color="OrangeRed">Before next step from $S_{2}$ to $S_{3}$, be sure to <font color="Red">decay</font> current evaluated state $S_{1}$'s <font color="DeepSkyBlue">eligibility</font> by $\gamma$.</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-1-1.png "e(S1)")
 >This is the <font color="DeepSkyBlue">eligibility</font> after $S_{1}$ to $S_{2}$.  
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">The update from $S_{2}$ to $S_{3}$</font>  
+>We take next step from $S_{2}$ to $S_{3}$ with <font color="#9300FF">reward</font> $r_{2}$.  <font color="DeepSkyBlue">It bumps $S_{2}$'s eligibility from $0$ to $1$</font>.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-2.png "S2->S3")
+>Current <font color="DeepSkyBlue">eligibility</font> at this moment are $\gamma$,$1$,$0$ for $S_{1}$,$S_{2}$,$S_{3}$.  The update term $\alpha\cdot(r_{2}+\gamma\cdot V_{T-1}(S_{3})-V_{T-1}(S_{2}))$, is <font color="OrangeRed">independent</font> of which state we are actually changing, we are going to <font color="DeepSkyBlue">apply it with respect to each state's eligibility, proportionally</font>.  
+>&#10112;$\triangle V_{T}(S_{1})$  
+>=$\alpha\cdot(r_{1}+\gamma\cdot V_{T-1}(S_{2})-V_{T-1}(S_{1}))$  
+>$\;\;\gamma\cdot\alpha\cdot(r_{2}+\gamma\cdot V_{T-1}(S_{3})-V_{T-1}(S_{2}))$  
+>=$\alpha\cdot(r_{1}+\gamma\cdor r_{2}+\gamma^{2}\cdot V_{T-1}(S_{3})-V_{T-1}(S_{1}))$  
+>&#10113;$\triangle V_{T}(S_{2})$=$\alpha\cdot(r_{2}+\gamma\cdot V_{T-1}(S_{3})-V_{T-1}(S_{2}))$  
+>&#10114;$\triangle V_{T}(S_{3})$=$0$  
+>
+><font color="OrangeRed">Before next step from $S_{3}$ to $S_{F}$, be sure to <font color="Red">decay current already evaluated states</font> $S_{1}$ and $S_{2}$'s <font color="DeepSkyBlue">eligibility</font> by $\gamma$.</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-2-1.png "e(S2)")
+>This is the <font color="DeepSkyBlue">eligibility</font> after $S_{2}$ to $S_{3}$.  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
