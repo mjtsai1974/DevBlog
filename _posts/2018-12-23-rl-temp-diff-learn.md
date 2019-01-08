@@ -178,9 +178,9 @@ title: Temporal Difference Learning
 >&#10113;$\triangle V_{T}(S_{2})$=$0$  
 >&#10114;$\triangle V_{T}(S_{3})$=$0$  
 >
-><font color="Red">Before next step from $S_{2}$ to $S_{3}$, be sure to decay current evaluated state $S_{1}$'s eligibility by $\gamma$.</font>  
+><font color="OrangeRed">Before next step from $S_{2}$ to $S_{3}$, be sure to <font color="Red">decay</font> current evaluated state $S_{1}$'s <font color="DeepSkyBlue">eligibility</font> by $\gamma$.</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-1-1.png "e(S1)")
->This is the eligibility after $S_{1}$ to $S_{2}$.  
+>This is the <font color="DeepSkyBlue">eligibility</font> after $S_{1}$ to $S_{2}$.  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
