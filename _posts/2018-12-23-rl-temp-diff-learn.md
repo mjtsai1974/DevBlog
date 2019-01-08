@@ -169,6 +169,18 @@ title: Temporal Difference Learning
 >The update has the form:  
 >&#10112;whatever the current <font color="DeepSkyBlue">learning rate</font> is, times the <font color="#9300FF">reward</font> which we just experienced, say $r_{1}$, plus the <font color="#D600D6">discount factor gamma $\gamma$</font> times the previous value of the state we newly arrived, minus the the previous value of the state we just left.  
 >&#10113;$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$, it is going to get added to <font color="OrangeRed">all</font> states, such quantity <font color="DeepSkyBlue">is proportional to the eligibility of that state</font>.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">The update from $S_{1}$ to $S_{2}$</font>  
+>After transiting from $S_{1}$ to $S_{2}$, at this moment, the <font color="DeepSkyBlue">eligibility of $S_{2}$ and $S_{3}$ are $0$</font>, we are <font color="DeepSkyBlue">only</font> making updating with respect to $S_{1}$.    
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-1.png "S1->S2")
+>&#10112;$\triangle V_{T}(S_{1})$=$\alpha\cdot(r_{1}+\gamma\cdot V_{T-1}(S_{2})-V_{T-1}(S_{1}))$, where $\alpha_{T}$=$\alpha$ wichi is a constant all the way.   
+>&#10113;$\triangle V_{T}(S_{2})$=$0$  
+>&#10114;$\triangle V_{T}(S_{3})$=$0$  
+>
+>Before next step from $S_{2}$ to $S_{3}$, be sure to decay current evaluated state $S_{1}$'s eligibility by $\gamma$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-1-1.png "e(S1)")
+>This is the eligibility after $S_{1}$ to $S_{2}$.  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
