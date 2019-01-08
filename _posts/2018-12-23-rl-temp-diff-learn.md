@@ -166,7 +166,9 @@ title: Temporal Difference Learning
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">The expression of the update</font>  
->The update has the form, whatever the current <font color="DeepSkyBlue">learning rate</font> is, times the <font color="#9300FF">reward</font> which we just experienced, say $r_{1}$, plus the <font color="#D600D6">discount factor gamma $\gamma$</font> times the previous value of the state we newly arrived, minus the the previous value of the state we just left.  
+>The update has the form:  
+>&#10112;whatever the current <font color="DeepSkyBlue">learning rate</font> is, times the <font color="#9300FF">reward</font> which we just experienced, say $r_{1}$, plus the <font color="#D600D6">discount factor gamma $\gamma$</font> times the previous value of the state we newly arrived, minus the the previous value of the state we just left.  
+>&#10113;$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$, it is going to get added to <font color="OrangeRed">all</font> states, such quantity <font color="DeepSkyBlue">is proportional to the eligibility of that state</font>.  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
