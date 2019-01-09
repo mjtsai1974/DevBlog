@@ -213,6 +213,10 @@ title: Temporal Difference Learning
 >$\;\;+\gamma\cdot\alpha\cdot(r_{3}+\gamma\cdot V_{T-1}(S_{F})-V_{T-1}(S_{3}))$  
 >=$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot V_{T-1}(S_{F})-V_{T-1}(S_{2}))$  
 >&#10114;$\triangle V_{T}(S_{3})$=$\alpha\cdot(r_{3}+\gamma\cdot V_{T-1}(S_{F})-V_{T-1}(S_{3}))$  
+>
+>Where we have the value of the state $S_{F}$ as $0$, at this ending, even no next state to jump to, we should also decay or decrease each state's eligibility by $\gamma$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-3-1.png "e(S3)")
+
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
