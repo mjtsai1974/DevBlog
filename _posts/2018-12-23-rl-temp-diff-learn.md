@@ -186,10 +186,10 @@ title: Temporal Difference Learning
 ><font color="OrangeRed">The update from $S_{2}$ to $S_{3}$</font>  
 >We take next step from $S_{2}$ to $S_{3}$ with <font color="#9300FF">reward</font> $r_{2}$.  <font color="DeepSkyBlue">It bumps $S_{2}$'s eligibility from $0$ to $1$</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-2.png "S2->S3")
->Current <font color="DeepSkyBlue">eligibility</font> at this moment are $\gamma$,$1$,$0$ for $S_{1}$,$S_{2}$,$S_{3}$.  The update term $\alpha\cdot(r_{2}+\gamma\cdot V_{T-1}(S_{3})-V_{T-1}(S_{2}))$, is <font color="OrangeRed">independent</font> of which state we are actually changing, we are going to <font color="DeepSkyBlue">apply it with respect to each state's eligibility, proportionally</font>.  
+>Current <font color="DeepSkyBlue">eligibility</font> at this moment are $\gamma$,$1$,$0$ for $S_{1}$,$S_{2}$,$S_{3}$.  The update term $\alpha\cdot(r_{2}+\gamma\cdot V_{T-1}(S_{3})-V_{T-1}(S_{2}))$, is <font color="OrangeRed">independent</font> of which state we are actually changing, we are going to <font color="DeepSkyBlue">apply it with respect to each state's($S_{1}$,$S_{2}$) eligibility, proportionally</font>.  
 >&#10112;$\triangle V_{T}(S_{1})$  
 >=$\alpha\cdot(r_{1}+\gamma\cdot V_{T-1}(S_{2})-V_{T-1}(S_{1}))$  
->$\;\;\gamma\cdot\alpha\cdot(r_{2}+\gamma\cdot V_{T-1}(S_{3})-V_{T-1}(S_{2}))$  
+>$\;\;+\gamma\cdot\alpha\cdot(r_{2}+\gamma\cdot V_{T-1}(S_{3})-V_{T-1}(S_{2}))$  
 >=$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot V_{T-1}(S_{3})-V_{T-1}(S_{1}))$  
 >&#10113;$\triangle V_{T}(S_{2})$=$\alpha\cdot(r_{2}+\gamma\cdot V_{T-1}(S_{3})-V_{T-1}(S_{2}))$  
 >&#10114;$\triangle V_{T}(S_{3})$=$0$  
@@ -202,7 +202,16 @@ title: Temporal Difference Learning
 ><font color="OrangeRed">The update from $S_{3}$ to $S_{F}$</font>  
 >Finally, we take next step from $S_{3}$ to $S_{F}$ with <font color="#9300FF">reward</font> $r_{3}$.  <font color="DeepSkyBlue">It bumps $S_{3}$'s eligibility from $0$ to $1$</font>.  Current <font color="DeepSkyBlue">eligibility</font> at this moment are $\gamma$,$1$,$0$ for $S_{1}$,$S_{2}$,$S_{3}$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-3.png "S3->SF")
->The update term $\alpha\cdot(r_{3}+\gamma\cdot V_{T-1}(S_{F})-V_{T-1}(S_{3}))$, is <font color="OrangeRed">independent</font> of which state we are actually changing, we are going to <font color="DeepSkyBlue">apply it with respect to each state's($S_{1}$,$S_{2}$) eligibility, proportionally</font>.  
+>The update term $\alpha\cdot(r_{3}+\gamma\cdot V_{T-1}(S_{F})-V_{T-1}(S_{3}))$, is <font color="OrangeRed">independent</font> of which state we are actually changing, we are going to <font color="DeepSkyBlue">apply it with respect to each state's($S_{1}$,$S_{2}$,$S_{3}$) eligibility, proportionally</font>.  
+>&#10112;$\triangle V_{T}(S_{1})$  
+>=$\alpha\cdot(r_{1}+\gamma\cdot V_{T-1}(S_{2})-V_{T-1}(S_{1}))$  
+>$\;\;+\gamma\cdot\alpha\cdot(r_{2}+\gamma\cdot V_{T-1}(S_{3})-V_{T-1}(S_{2}))$  
+>$\;\;+\gamma^{2}\cdot\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot V_{T-1}(S_{F})-V_{T-1}(S_{2}))$    
+>&#10113;$\triangle V_{T}(S_{2})$  
+>=$\alpha\cdot(r_{2}+\gamma\cdot V_{T-1}(S_{3})-V_{T-1}(S_{2}))$  
+>$\;\;+\gamma\cdot\alpha\cdot(r_{3}+\gamma\cdot V_{T-1}(S_{F})-V_{T-1}(S_{3}))$  
+>=$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot V_{T-1}(S_{F})-V_{T-1}(S_{2}))$  
+>&#10114;$\triangle V_{T}(S_{3})$=$\alpha\cdot(r_{3}+\gamma\cdot V_{T-1}(S_{F})-V_{T-1}(S_{3}))$  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
