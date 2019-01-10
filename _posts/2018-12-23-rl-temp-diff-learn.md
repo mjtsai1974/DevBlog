@@ -216,7 +216,10 @@ title: Temporal Difference Learning
 >
 >Where we have the value of the state $S_{F}$ as $0$, at this ending, <font color="OrangeRed">even no next state to jump to, we should also <font color="Red">decrease</font> each state's eligibility by $\gamma$</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-3-1.png "e(S3)")
-
+>
+><font color="DeepSkyBlue">[Notes]</font>
+>&#10112;<font color="Red">$TD(1)$</font> is the same as the <font color="Red">outcome-base</font> update, that is to say we want to see all the <font color="#D600D6">discounted rewards</font> on the entire trajectory, and we just update our prediction of the state that they started from with those <font color="#9300FF">rewards</font>.  
+>&#10113;in this article, we are talking about <font color="OrangeRed">the discounted sum of rewards minus the old prediction(evaluated in the last episode $T-1$)</font>.  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
