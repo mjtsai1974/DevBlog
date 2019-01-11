@@ -230,8 +230,8 @@ title: Temporal Difference Learning
 >&#10113;the <font color="Red">$TD(1)$</font> rule lets you do is, when you see $S_{1}$ again, and sort of <font color="Red">backup</font> its value, you're actually capturing the fact the last time you were in $S_{1}$, you actually went to $S_{2}$ and saw $r_{1}$.  
 >&#10114;it's just like <font color="Red">outcome-base</font> on updates, now with <font color="OrangeRed">extra laerning or inside the eposide learning from head of the trajectory</font>.  
 >
-><font color="DeepSkyBlue">[But, mjtsai think]</font>
->Suppose you make complete the 1st run and reach $S_{F}$, now you are transiting to $S_{1}$ again, the eligibility of all states and state transition diagram are given in below:  
+><font color="Brown">[But, mjtsai think]</font>
+>Suppose you have just complete the 1st run and reach $S_{F}$, now you are transiting to $S_{1}$ again, the eligibility of all states and state transition diagram are given in below:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-repeated-f.png "S1 repeated")
 >Such <font color="DeepSkyBlue">eligibility</font> is <font color="RosyBrown">not</font> yet in the <font color="RosyBrown">ending</font> of this transition, it is in the <font color="Red">beginning</font>.  <font color="DeepPink">If you complete the transition and would like to start to transit from $S_{1}$ to $S_{2}$, be sure to remember to decay all the eligibility by $\gamma$, guess what, it should be $\gamma^{4}$,$\gamma^{3}$,$\gamma^{2}$,$\gamma$ for $S_{1}$,$S_{2}$,$S_{3}$,$S_{F}$.</font>  
 
