@@ -221,6 +221,15 @@ title: Temporal Difference Learning
 >&#10112;<font color="Red">$TD(1)$</font> is the same as the <font color="Red">outcome-base</font> update, that is to say we want to see all the <font color="#D600D6">discounted rewards</font> on the entire trajectory, and we just update our prediction of the state that they started from with those <font color="#9300FF">rewards</font>.  
 >&#10113;in this article, we are talking about <font color="OrangeRed">the discounted sum of rewards minus the old prediction(evaluated in the last episode $T-1$)</font>.  
 
+### Example: <font color="Red">$TD(1)$</font> Illustration In <font color="Red">Repeated</font> States
+><font color="DeepSkyBlue">[The case of repeated states]</font>
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-repeated.png "repeated TD(1)")
+>If we follow up <font color="Red">$TD(1)$</font> rule, you might get:  
+>$\triangle V_{T}(S_{F})$=$\alpha\cdot(r_{1}^{'}$+$\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
+>&#10112;the [online course](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923) said that it a <font color="RosyBrown">mistake</font>, for <font color="#EB00EB">you go to $S_{1}$, you saw $S_{1}$ transite to $S_{2}$ with $r_{1}$, therefore you just ignore anything you learned along the way</font>.  
+>&#10113;the <font color="Red">$TD(1)$</font> rule lets you do is, when you see $S_{1}$ again, and sort of <font color="Red">backup</font> its value, you're actually capturing the fact the last time you were in $S_{1}$, you actually went to $S_{2}$ and saw $r_{1}$.  
+>&#10114;it's just like <font color="Red">outcome-base</font> on updates, now with <font color="OrangeRed">extra laerning or inside the eposide learning from head of the trajectory</font>.  
+
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
 ### <font color="Red">$TD(0)$</font> Illustration: $\lambda$=$0$
