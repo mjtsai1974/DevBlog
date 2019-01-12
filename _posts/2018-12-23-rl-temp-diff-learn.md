@@ -225,7 +225,7 @@ title: Temporal Difference Learning
 ><font color="DeepSkyBlue">[The case of repeated states]</font>
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-repeated.png "repeated TD(1)")
 >If we follow up <font color="Red">$TD(1)$</font> rule, you might get:  
->$\triangle V_{T}(S_{F})$=$\alpha\cdot(r_{1}^{'}$+$\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
+>$\triangle V_{T}(S_{F})$=$\alpha\cdot(r_{1}^{'}$+$\gamma\cdot V_{T-1}(S_{F})-V_{T-1}(S_{1}))$  
 >&#10112;the [online course](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923) said that it a <font color="RosyBrown">mistake</font>, for <font color="#EB00EB">you go to $S_{1}$, you saw $S_{1}$ transite to $S_{2}$ with $r_{1}$, therefore you just ignore anything you learned along the way</font>.  
 >&#10113;the <font color="Red">$TD(1)$</font> rule lets you do is, when you see $S_{1}$ again, and sort of <font color="Red">backup</font> its value, you're actually capturing the fact the last time you were in $S_{1}$, you actually went to $S_{2}$ and saw $r_{1}$.  
 >&#10114;it's just like <font color="Red">outcome-base</font> on updates, now with <font color="OrangeRed">extra laerning or inside the eposide learning from head of the trajectory</font>.  
@@ -234,6 +234,14 @@ title: Temporal Difference Learning
 >Suppose you have just completed the 1st run and reach $S_{F}$, now you are transiting to $S_{1}$ again, the <font color="DeepSkyBlue">eligibility</font> of all states and state transition diagram are given in below:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-repeated-f.png "S1 repeated")
 >Such <font color="DeepSkyBlue">eligibility</font> is <font color="RosyBrown">not</font> yet in the <font color="RosyBrown">ending</font> of this transition, it is in the <font color="Red">beginning</font>.  <font color="DeepPink">If you complete the transition and would like to start to transit from $S_{1}$ to $S_{2}$, be sure to remember to decay all the eligibility by $\gamma$, guess what, it should be $\gamma^{4}$,$\gamma^{3}$,$\gamma^{2}$,$\gamma$ for $S_{1}$,$S_{2}$,$S_{3}$,$S_{F}$.</font>  
+>
+>&#10112;the update term of $S_{F}$ in eposide $T$:  
+>$\triangle V_{T}(S_{F})$=$\alpha\cdot(r_{1}^{'}$+$\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
+>&#10113;the update term of $S_{1}$ when transiting from $S_{F}$ to $S_{1}$:  
+>$\triangle V_{T+1}(S_{1})$  
+>=$\triangle V_{T}(S_{1})$+$laerning rate\cdot\e(S_{F})\cdot\triangle V_{T}(S_{F})$  
+>=$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot V_{T-1}(S_{F})-V_{T-1}(S_{1}))$  
+>$\;\;+\alpha\cdot\gamma^{3}\cdot(r_{1}^{'}$+$\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
