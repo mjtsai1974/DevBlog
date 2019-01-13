@@ -225,7 +225,7 @@ title: Temporal Difference Learning
 ><font color="DeepSkyBlue">[The case of repeated states]</font>
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-repeated.png "repeated TD(1)")
 >If we follow up <font color="Red">$TD(1)$</font> rule, you might get:  
->$\triangle V_{T}(S_{F})$=$\alpha\cdot(r_{1}^{'}$+$\gamma\cdot V_{T-1}(S_{F})-V_{T-1}(S_{1}))$  
+>$\triangle V_{T}(S_{F})$=$\alpha\cdot(r_{1}'$+$\gamma\cdot V_{T-1}(S_{F})-V_{T-1}(S_{1}))$  
 >&#10112;the [online course](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923) said that it a <font color="RosyBrown">mistake</font>, for <font color="#EB00EB">you go to $S_{1}$, you saw $S_{1}$ transite to $S_{2}$ with $r_{1}$, therefore you just ignore anything you learned along the way</font>.  
 >&#10113;the <font color="Red">$TD(1)$</font> rule lets you do is, when you see $S_{1}$ again, and sort of <font color="Red">backup</font> its value, you're actually capturing the fact the last time you were in $S_{1}$, you actually went to $S_{2}$ and saw $r_{1}$.  
 >&#10114;it's just like <font color="Red">outcome-base</font> on updates, now with <font color="OrangeRed">extra laerning or inside the eposide learning from head of the trajectory</font>.  
@@ -236,20 +236,22 @@ title: Temporal Difference Learning
 >Such <font color="DeepSkyBlue">eligibility</font> is <font color="RosyBrown">not</font> yet in the <font color="RosyBrown">ending</font> of this transition, it is in the <font color="Red">beginning</font>.  <font color="DeepPink">If you complete the transition and would like to start to transit from $S_{1}$ to $S_{2}$, be sure to remember to decay all the eligibility by $\gamma$, guess what, it should be $\gamma^{4}$,$\gamma^{3}$,$\gamma^{2}$,$\gamma$ for $S_{1}$,$S_{2}$,$S_{3}$,$S_{F}$.</font>  
 >
 >&#10112;the update term of $S_{F}$ in eposide $T$:  
->$\triangle V_{T}(S_{F})$=$\alpha\cdot(r_{1}^{'}$+$\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
+>$\triangle V_{T}(S_{F})$=$\alpha\cdot(r_{1}'$+$\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
 >&#10113;the update term of $S_{1}$ when transiting from $S_{F}$ to $S_{1}$:  
 >$\triangle V_{T+1}(S_{1})$  
 >=$\triangle V_{T}(S_{1})$+$laerning\;rate\cdot e(S_{1})\cdot\triangle V_{T}(S_{F})$  
 >=$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot V_{T-1}(S_{F})-V_{T-1}(S_{1}))$  
->$\;\;+\alpha\cdot\gamma^{3}\cdot(r_{1}^{'}$+$\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
+>$\;\;+\alpha\cdot\gamma^{3}\cdot(r_{1}'$+$\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
 >
 >; where the $\triangle V_{T+1}(S_{1})$ term is the <font color="OrangeRed">initial temporal difference of $S_{1}$ in the beginning of eposide $T+1$</font>, while $\triangle V_{T}(S_{1})$=$0$ is the <font color="OrangeRed">initial update term in the beginning of eposide $T$</font>, if we treat eposide $T$ the very first eposide in this case of repeated states.  
 >&#10114;the update term of $S_{1}$ when transiting from $S_{F}$ to $S_{1}$, in the eposide $T$ to $T+1$ could be:  
->$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}^{'}-V_{T-1}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{0}$  
+>$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}'-V_{T-1}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{0}$  
 >, then in the eposide $T+n-1$ to $T+n$ could becomes:  
->$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}^{'}-V_{T-1}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{n-1}$  
->, thus the n-th update term of $S_{1}$ in this example should be:  
->$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}^{'}-V_{T-1}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{n}$  
+>$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}'-V_{T+n-2}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{n-1}$  
+>, thus in the n-th repeat, the update term of $S_{1}$ in this example should be:  
+>$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}'-V_{T+n-1}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{n}$  
+>
+>From above deduction, we can say that <font color="DeepPink">the repeated state influence on temporal difference depends on how far it is to be repeated, that is how many state changes in between the repeated state, the longer the smaller the impact it is!!</font>  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
