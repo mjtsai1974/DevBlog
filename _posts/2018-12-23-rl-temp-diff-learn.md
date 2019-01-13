@@ -239,9 +239,10 @@ title: Temporal Difference Learning
 >$\triangle V_{T}(S_{F})$=$\alpha\cdot(r_{1}^{'}$+$\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
 >&#10113;the update term of $S_{1}$ when transiting from $S_{F}$ to $S_{1}$:  
 >$\triangle V_{T+1}(S_{1})$  
->=$\triangle V_{T}(S_{1})$+$laerning\;rate\cdot e(S_{F})\cdot\triangle V_{T}(S_{F})$  
+>=$\triangle V_{T}(S_{1})$+$laerning\;rate\cdot e(S_{1})\cdot\triangle V_{T}(S_{F})$  
 >=$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot V_{T-1}(S_{F})-V_{T-1}(S_{1}))$  
 >$\;\;+\alpha\cdot\gamma^{3}\cdot(r_{1}^{'}$+$\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
+>
 >; where the $\triangle V_{T+1}(S_{1})$ term is the <font color="OrangeRed">initial temporal difference of $S_{1}$ in the beginning of eposide $T+1$</font>, while $\triangle V_{T}(S_{1})$=$0$ is the <font color="OrangeRed">initial update term in the beginning of eposide $T$</font>, if we treat eposide $T$ the very first eposide in this case of repeated states.  
 >&#10114;the update term of $S_{1}$ when transiting from $S_{F}$ to $S_{1}$, in the eposide $T+n-1$ to $T+n$ could becomes:  
 >$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}^{'}-V_{T-1}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{n}$  
