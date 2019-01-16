@@ -259,7 +259,7 @@ title: Temporal Difference Learning
 >Next to investigate the update term of $S_{2}$, the initial temporal difference of $S_{2}$ in eposide $T+1$ consists of below 3 parts:  
 >&#10112;$\alpha\cdot(r_{2}$+$\gamma\cdot r_{3}$+$\gamma^{2}\cdot V_{T-1}(S_{F})-V_{T-1}(S_2))$  
 >This is the part of update term of $S_{2}$ after transiting to $S_{F}$, in eposide <font color="OrangeRed">$T$</font>.  
->&#10113;$\alpha\cdot\gamma^{2}\cdot(r_{1}'+\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{f}))$  
+>&#10113;$\alpha\cdot\gamma^{2}\cdot(r_{1}'+\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
 >This is the part of update term of $S_{2}$ contributed from $S_{F}$ to $S_{1}$, be noted that <font color="OrangeRed">the eligibility of $S_{2}$ is $\gamma^{2}$ at this moment</font> in eposide $T$.  
 >&#10114;$\alpha\cdot\gamma^{3}\cdot(r_{1}+\gamma\cdot V_{T}(S_{2})-V_{T}(S_{1}))$  
 >This is the part of update term of $S_{2}$ contributed when transiting from $S_{1}$ to $S_{2}$ in eposide, watch out, it's <font color="OrangeRed">$T+1$</font> now, thus, we use $V_{T}(S_{1})$, V_{T}(S_{2}).  <font color="OrangeRed">The eligibility of $S_{2}$ at this moment is $\gamma^{3}$</font>.  
