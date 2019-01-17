@@ -265,6 +265,7 @@ title: Temporal Difference Learning
 >This is the part of update term of $S_{2}$ contributed when transiting from $S_{1}$ to $S_{2}$ in eposide, watch out, it's <font color="OrangeRed">$T+1$</font> now, thus, we use $V_{T}(S_{1})$, $V_{T}(S_{2})$.  <font color="OrangeRed">The eligibility of $S_{2}$ at this moment is $\gamma^{3}$</font>.  
 >
 >Next to add up &#10112;,&#10113;,&#10114;, we get this expression:  
+>$\triangle V_{T+1}(S_{2})$  
 >$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot r_{1}'+\gamma^{3}\cdot r_{1}$  
 >$\;\;$+$\gamma^{4}\cdot V_{T}(S_{2})-V_{T-1}(S_{2})$  
 >$\;\;$+$\gamma^{3}\cdot V_{T-1}(S_{1})-\gamma^{3}\cdot V_{T}(S_{1}))$...[A]  
