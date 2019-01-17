@@ -244,12 +244,12 @@ title: Temporal Difference Learning
 >$\;\;+\alpha\cdot\gamma^{3}\cdot(r_{1}'$+$\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
 >
 >; where the $\triangle V_{T+1}(S_{1})$ term is the <font color="OrangeRed">initial temporal difference of $S_{1}$ in the beginning of eposide $T+1$</font>, while $\triangle V_{T}(S_{1})$=$0$ is the <font color="OrangeRed">initial update term in the beginning of eposide $T$</font>, if we treat eposide $T$ the very first eposide in this case of repeated states.  
->&#10114;the update term of $S_{1}$ when transiting from $S_{F}$ to $S_{1}$, in the eposide $T$ to $T+1$ could be:  
+>&#10114;the update term of $S_{1}$ when transiting from $S_{F}$ to $S_{1}$, in the eposide $T$ to $T+1$(the very 1st repeat) could be:  
 >$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}'-V_{T-1}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{0}$  
->, then in the eposide $T+n-1$ to $T+n$ could becomes:  
+>, then in the eposide $T+n-1$ to $T+n$(the n-th repeat) could becomes:  
 >$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}'-V_{T+n-2}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{n-1}$  
->, thus in the n-th repeat, the update term of $S_{1}$ in this example should be:  
->$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}'-V_{T+n-1}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{n}$  
+>, this says in the n-th repeat, the update term of $S_{1}$ in this example should be:  
+>$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}'-V_{T+n-1}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{n-1}$  
 >
 >From above deduction, we can say that <font color="DeepPink">the repeated state influence on temporal difference depends on how far it is to be repeated, that is how many state changes in between the repeated state, the longer the smaller the impact it is!!</font>  
 >
@@ -262,7 +262,8 @@ title: Temporal Difference Learning
 >&#10113;$\alpha\cdot\gamma^{2}\cdot(r_{1}'+\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
 >This is the part of update term of $S_{2}$ contributed from $S_{F}$ to $S_{1}$, be noted that <font color="OrangeRed">the eligibility of $S_{2}$ is $\gamma^{2}$ at this moment</font> in eposide $T$.  
 >&#10114;$\alpha\cdot\gamma^{3}\cdot(r_{1}+\gamma\cdot V_{T}(S_{2})-V_{T}(S_{1}))$  
->This is the part of update term of $S_{2}$ contributed when transiting from $S_{1}$ to $S_{2}$ in eposide, watch out, it's <font color="OrangeRed">$T+1$</font> now, thus, we use $V_{T}(S_{1})$, V_{T}(S_{2}).  <font color="OrangeRed">The eligibility of $S_{2}$ at this moment is $\gamma^{3}$</font>.  
+>This is the part of update term of $S_{2}$ contributed when transiting from $S_{1}$ to $S_{2}$ in eposide, watch out, it's <font color="OrangeRed">$T+1$</font> now, thus, we use $V_{T}(S_{1})$, $V_{T}(S_{2})$.  <font color="OrangeRed">The eligibility of $S_{2}$ at this moment is $\gamma^{3}$</font>.  
+>
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
