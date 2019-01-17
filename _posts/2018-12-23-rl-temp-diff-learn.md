@@ -267,12 +267,18 @@ title: Temporal Difference Learning
 >Next to add up &#10112;,&#10113;,&#10114;, we get this expression:  
 >$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot r_{1}'+\gamma^{3}\cdot r_{1}$  
 >$\;\;$+$\gamma^{4}\cdot V_{T}(S_{2})-V_{T-1}(S_{2})$  
->$\;\;$+$\gamma^{3}\cdot V_{T-1}(S_{1})-\gamma^{3}\cdot V_{T}(S_{1}))$  
+>$\;\;$+$\gamma^{3}\cdot V_{T-1}(S_{1})-\gamma^{3}\cdot V_{T}(S_{1}))$...[A]  
 >
 >Can we treat $\gamma\cdot V_{T}(S_{2})\approx V_{T-1}(S_{2})$?  <font color="OrangeRed">Suppose we'd like to decay in a linear, gentle fashion, and $\gamma\rightarrow 1$, after a period of some horizon, the value of a state would just converge</font>, therefore, above expression becomes:  
 >$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot r_{1}'+\gamma^{3}\cdot r_{1}$  
 >$\;\;$-$V_{T-1}(S_{2})(1-\gamma^{3})$  
 >$\;\;$+$\gamma^{3}\cdot (V_{T-1}(S_{1})-V_{T}(S_{1})))$  
+>, where $V_{T-1}(S_{1})\rightarrow V_{T}(S_{1})$ after some period of time, $V_{T-1}(S_{1})-V_{T}(S_{1})\approx 0$ is reasonable, this term could be safely tossed out.  
+>
+>Because we are talking about the <font color="OrangeRed">initial temporal difference of $S_2$ in eposide $T+1$</font>, we should evaluate on the <font color="OrangeRed">value of $S_{2}$ in eposide $T$</font>.  Therefore, back to [A], this time, we choose $V_{T}(S_{2})\approx V_{T-1}(S_{2})$, this holds for convergence.  The whole equation becomes:  
+>$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot r_{1}'+\gamma^{3}\cdot r_{1}$  
+>$\;\;$-$V_{T}(S_{2})(1-\gamma^{4})$  
+>It is just the update term of $S_{2}$ after its 1st repeat, the same manner as it is in $S_{1}$!!  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
