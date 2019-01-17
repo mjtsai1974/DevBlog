@@ -266,7 +266,7 @@ title: Temporal Difference Learning
 >
 >Next to add up &#10112;,&#10113;,&#10114;, we get this expression:  
 >$\triangle V_{T+1}(S_{2})$  
->$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot r_{1}'+\gamma^{3}\cdot r_{1}$  
+>=$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot r_{1}'+\gamma^{3}\cdot r_{1}$  
 >$\;\;$+$\gamma^{4}\cdot V_{T}(S_{2})-V_{T-1}(S_{2})$  
 >$\;\;$+$\gamma^{3}\cdot V_{T-1}(S_{1})-\gamma^{3}\cdot V_{T}(S_{1}))$...[A]  
 >
