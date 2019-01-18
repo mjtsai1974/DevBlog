@@ -286,7 +286,7 @@ title: Temporal Difference Learning
 >
 >This says in <font color="OrangeRed">the n-th repeat</font>, the update term of $S_{2}$ in this example should be:  
 >$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot r_{1}'+\gamma^{3}\cdot r_{1}$  
->$\;\;$-$V_{T}(S_{2})(1-\gamma^{4}))\cdot\gamma^{n-1}$  
+>$\;\;$-$V_{T+n-1}(S_{2})(1-\gamma^{4}))\cdot\gamma^{n-1}$  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
