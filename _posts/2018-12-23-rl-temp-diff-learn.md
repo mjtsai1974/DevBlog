@@ -253,10 +253,12 @@ title: Temporal Difference Learning
 >
 >From above deduction, we can say that <font color="DeepPink">the repeated state influence on temporal difference depends on how far it is to be repeated, that is how many state changes in between the repeated state, the longer the smaller the impact it is!!</font>  
 >
+>Also, <font color="OrangeRed">the number of times the trajectory has been repeated is a factor expressed in term of $\gamma$ with the exponent of this number minus 1.</font>  
+>
 ><font color="Brown">[The repeated update term of $S_{2}$ by mjtsai1974]</font>
 >I'd like to generalize the expression of update term of $S_{2}$ in the repeated case.  Below exhibits the <font color="DeepSkyBlue">eligibility</font> upgrade in the 1st repeation of $S_{2}$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-repeated-eligibility.png "repeated e(S2)")
->Next to investigate the update term of $S_{2}$, the initial temporal difference of $S_{2}$ in eposide $T+1$ consists of below 3 parts:  
+>Next to investigate the update term of $S_{2}$, the <font color="OrangeRed">initial temporal difference of $S_{2}$ in eposide $T+1$</font> consists of below 3 parts:  
 >&#10112;$\alpha\cdot(r_{2}$+$\gamma\cdot r_{3}$+$\gamma^{2}\cdot V_{T-1}(S_{F})-V_{T-1}(S_2))$  
 >This is the part of update term of $S_{2}$ after transiting to $S_{F}$, in eposide <font color="OrangeRed">$T$</font>.  
 >&#10113;$\alpha\cdot\gamma^{2}\cdot(r_{1}'+\gamma\cdot V_{T-1}(S_{1})-V_{T-1}(S_{F}))$  
@@ -274,12 +276,12 @@ title: Temporal Difference Learning
 >$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot r_{1}'+\gamma^{3}\cdot r_{1}$  
 >$\;\;$-$V_{T-1}(S_{2})(1-\gamma^{3})$  
 >$\;\;$+$\gamma^{3}\cdot (V_{T-1}(S_{1})-V_{T}(S_{1})))$  
->, where $V_{T-1}(S_{1})\rightarrow V_{T}(S_{1})$ after some period of time, $V_{T-1}(S_{1})-V_{T}(S_{1})\approx 0$ is reasonable, this term could be safely tossed out.  
+>, where <font color="OrangeRed">$V_{T-1}(S_{1})\rightarrow V_{T}(S_{1})$</font> after some period of time, <font color="OrangeRed">$V_{T-1}(S_{1})-V_{T}(S_{1})\approx 0$</font> is reasonable, this term could be safely <font color="OrangeRed">tossed out</font>.  
 >
->Because we are talking about the <font color="OrangeRed">initial temporal difference of $S_2$ in eposide $T+1$</font>, we should evaluate on the <font color="OrangeRed">value of $S_{2}$ in eposide $T$</font>.  Therefore, back to [A], this time, we choose $V_{T}(S_{2})\approx V_{T-1}(S_{2})$, this holds for convergence.  The whole equation becomes:  
+>However, we are talking about the <font color="OrangeRed">initial temporal difference of $S_2$ in eposide $T+1$</font>, we should evaluate on the <font color="OrangeRed">value of $S_{2}$ in eposide $T$</font>.  Therefore, back to [A], this time, we choose $V_{T}(S_{2})\approx V_{T-1}(S_{2})$, this holds for convergence.  The whole equation becomes:  
 >$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot r_{1}'+\gamma^{3}\cdot r_{1}$  
->$\;\;$-$V_{T}(S_{2})(1-\gamma^{4})$  
->It is just the update term of $S_{2}$, $\triangle V_{T+1}(S_{2})$ after its 1st repeat, the same manner as it is in $S_{1}$!!  
+>$\;\;$-$V_{T}(S_{2})(1-\gamma^{4}))$  
+>It is just <font color="DeepPink">the update term of $S_{2}$, $\triangle V_{T+1}(S_{2})$ after its 1st repeat, the same manner as it is in $S_{1}$!!</font>  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
