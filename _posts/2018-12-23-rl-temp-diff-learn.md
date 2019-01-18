@@ -281,7 +281,12 @@ title: Temporal Difference Learning
 >However, we are talking about the <font color="OrangeRed">initial temporal difference of $S_2$ in eposide $T+1$</font>, we should evaluate on the <font color="OrangeRed">value of $S_{2}$ in eposide $T$</font>.  Therefore, back to [A], this time, we choose $V_{T}(S_{2})\approx V_{T-1}(S_{2})$, this holds for convergence.  The whole equation becomes:  
 >$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot r_{1}'+\gamma^{3}\cdot r_{1}$  
 >$\;\;$-$V_{T}(S_{2})(1-\gamma^{4}))$  
+>
 >It is just <font color="DeepPink">the update term of $S_{2}$, $\triangle V_{T+1}(S_{2})$ after its 1st repeat, the same manner as it is in $S_{1}$!!</font>  
+>
+>This says in <font color="OrangeRed">the n-th repeat</font>, the update term of $S_{1}$ in this example should be:  
+>$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot r_{1}'+\gamma^{3}\cdot r_{1}$  
+>$\;\;$-$V_{T}(S_{2})(1-\gamma^{4}))\cdot\gamma^{n-1}$  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
