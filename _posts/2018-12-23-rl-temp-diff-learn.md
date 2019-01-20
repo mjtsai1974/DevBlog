@@ -255,7 +255,7 @@ title: Temporal Difference Learning
 >
 >Also, <font color="OrangeRed">the number of times the trajectory has been repeated is a factor expressed in term of $\gamma$ with the exponent of this number minus 1.</font>  
 >
-><font color="Brown">[The repeated update term of $S_{2}$ by mjtsai1974]</font>
+><font color="Brown">[The repeated update term of $S_{2}$::mjtsai1974]</font>
 >I'd like to generalize the expression of update term of $S_{2}$ in the repeated case.  Below exhibits the <font color="DeepSkyBlue">eligibility</font> upgrade in the 1st repeation of $S_{2}$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2018-12-23-rl-temp-diff-learn-example-td1-repeated-eligibility.png "repeated e(S2)")
 >Next to investigate the update term of $S_{2}$, the <font color="OrangeRed">initial temporal difference of $S_{2}$ in eposide $T+1$</font> consists of below 3 parts:  
@@ -287,6 +287,17 @@ title: Temporal Difference Learning
 >This says in <font color="OrangeRed">the n-th repeat</font>, the update term of $S_{2}$ in this example should be:  
 >$\alpha\cdot(r_{2}+\gamma\cdot r_{3}+\gamma^{2}\cdot r_{1}'+\gamma^{3}\cdot r_{1}$  
 >$\;\;$-$V_{T+n-1}(S_{2})(1-\gamma^{4}))\cdot\gamma^{n-1}$  
+>
+><font color="Brown">[The formal expression of the update term in repeated case::mjtsai1974]</font>
+>Here, I'd like to make this <font color="#C20000">claim</font>, for the trajectory containing states $\\{S_{i1}$,$S_{i2}$,...,$S_{ik}\\}$ with the repeated path from $S_{ik}$ to $S_{i1}$, the update term in the n-th repeat could be generalized in below expression:  
+>$\alpha\cdot(r_{i1}+\gamma\cdot r_{i2}+\gamma^{2}\cdot r_{i3}$  
+>+$...\gamma^{k-1}\cdot r_{ik}-V_{T+n-1}(S_{i1}))\cdot \gamma^{n-1}$, where  
+>$(i1,i2,...,ik)$  
+>=$\\{(1,2,3,...,k)$  
+>$\;(2,3,...,k-1,k,1)$  
+>$\;(3,4,...,k,1,2)$  
+>...  
+>$(k,1,2,...,k-2,k-1)\\}$  
 
 <!--
 ### Example: <font color="Red">$TD(1)$</font> Illustration
