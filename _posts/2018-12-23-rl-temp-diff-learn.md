@@ -289,7 +289,7 @@ title: Temporal Difference Learning
 >$\;\;$-$V_{T+n-1}(S_{2})(1-\gamma^{4}))\cdot\gamma^{n-1}$  
 >
 ><font color="Brown">[The formal expression of the update term in repeated case::mjtsai1974]</font>
->Here, I'd like to make this <font color="#C20000">claim</font>, for the trajectory containing states $\\{S_{i1}$,$S_{i2}$,...,$S_{ik}\\}$ with the repeated path from $S_{ik}$ to $S_{i1}$, the update term in the n-th repeat could be generalized in below expression:  
+>Here, I'd like to make this <font color="#C20000">claim</font>, for the trajectory containing states $\\{S_{1}$,$S_{2}$,...,$S_{k}\\}$ with the repeated path from $S_{k}$ to $S_{1}$, the update term of $S_{i1}$ in the n-th repeat could be generalized in below expression:  
 >$\alpha\cdot(r_{i1}+\gamma\cdot r_{i2}+\gamma^{2}\cdot r_{i3}$  
 >+$...\gamma^{k-1}\cdot r_{ik}-V_{T+n-1}(S_{i1}))\cdot \gamma^{n-1}$, where  
 >$(i1,i2,...,ik)$  
