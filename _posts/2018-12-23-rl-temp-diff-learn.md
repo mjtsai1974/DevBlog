@@ -293,9 +293,9 @@ title: Temporal Difference Learning
 >$\alpha\cdot(r_{i1}+\gamma\cdot r_{i2}+\gamma^{2}\cdot r_{i3}$  
 >+$...\gamma^{k-1}\cdot r_{ik}-V_{T+n-1}(S_{i1}))\cdot \gamma^{n-1}$, where  
 >$(i1,i2,...,ik)$  
->=$\\{(1,2,3,...,k)$  
->$\;(2,3,...,k-1,k,1)$  
->$\;(3,4,...,k,1,2)$  
+>=$\\{(1,2,3,...,k),$  
+>$\;(2,3,...,k-1,k,1),$  
+>$\;(3,4,...,k,1,2),$  
 >...  
 >$(k,1,2,...,k-2,k-1)\\}$  
 
