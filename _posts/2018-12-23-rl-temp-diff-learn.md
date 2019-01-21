@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Temporal Difference Learning
+title: Temporal Difference Learning - Part 1
 ---
 
 ## Prologue To The <font color="Red">Temporal Difference Learning</font>
