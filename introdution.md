@@ -211,7 +211,7 @@ It is an extension of MDP.  Under construction...
 
 ### Reinforcement Learning
 
-* Markov Chain
+* [Temporal Difference Learning - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2018/12/23/rl-temp-diff-learn-part1/)
 * Markov Decision Process
 * Partial Observable Markov Decision Process
 * Q Learning Algorithm
