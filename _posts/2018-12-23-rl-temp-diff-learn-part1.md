@@ -140,12 +140,12 @@ title: Temporal Difference Learning - Part 1
 >$\;\;\;e(S_{t-1})$=$e(S_{t-1})$+$1$:  
 >$\;\;\;\;$Update <font color="DeepSkyBlue">eligibility</font> of $S_{t-1}$ after arriving to $S_{t}$  
 >$\;\;$For all $S$,  
->$\;\;V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$...(A)  
+>$\;\;V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$...[A]  
 >$\;\;\;e(S_{t-1})$=$\gamma\cdot e(S_{t-1})$:  
 >$\;\;\;\;$<font color="Red">before</font> transite from $S_{t-1}$ to $S_{t}$ in <font color="Red">next</font> iteration 
 >
 ><font color="DeepSkyBlue">[Notes]</font>
->&#10112;the 2nd part of (A) is sum of the <font color="#9300FF">reward</font> plus the the <font color="#D600D6">discounted</font> value of the state we just arrived, minus the state value we just left; where these state values are all evaluated in <font color="Red">last</font> iteration.  It could just be the <font color="Red">temporal difference</font>.  
+>&#10112;the 2nd part of [A] is sum of the <font color="#9300FF">reward</font> plus the the <font color="#D600D6">discounted</font> value of the state we just arrived, minus the state value we just left; where these state values are all evaluated in <font color="Red">last</font> iteration.  It could just be the <font color="Red">temporal difference</font>.  
 >&#10113;we are going to apply the <font color="Red">temporal difference</font> onto all states, <font color="Red">proportional to the eligibility of each distinct state</font>, and the <font color="Red">learning rate</font> would be specified for we don't want it to move too much.  
 >&#10114;<font color="Red">after</font> the state has been iterated, <font color="DeepSkyBlue">decay or decrease its eligibility</font> with $\lambda\cdot\gamma$, in their given value, in <font color="Red">$TD(1)$</font>, $\lambda$=$1$.  
 >&#10115;and we are backing up to next stae.  
