@@ -17,19 +17,19 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >$\;\;\;e(S_{t-1})$=$e(S_{t-1})$+$1$:  
 >$\;\;\;\;$Update <font color="DeepSkyBlue">eligibility</font> of $S_{t-1}$ after arriving to $S_{t}$  
 >$\;\;$For all $S$,  
->$\;\;V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$...(A)  
+>$\;\;V_{T}(S)$=$V_{T-1}(S)$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$...[A]  
 >$\;\;\;e(S_{t-1})$=$0\cdot\gamma\cdot e(S_{t-1})$=<font color="Red">$0$</font>:  
 >$\;\;\;\;$<font color="Red">before</font> transite from $S_{t-1}$ to $S_{t}$ in <font color="Red">next</font> iteration, we can easily tell that <font color="DeepSkyBlue">the eligibility of state $S$ is always zero</font>.  
 >
 ><font color="DeepSkyBlue">[Notes]</font>
 >&#10112;the 2nd part of (A) is sum of the <font color="#9300FF">reward</font> plus the the <font color="#D600D6">discounted</font> value of the state we just arrived, minus the state value we just left; where these state values are all evaluated in <font color="Red">last</font> iteration.  It could just be the <font color="Red">temporal difference</font>.  
->&#10113;we are going to apply the <font color="Red">temporal difference</font> onto all states, <font color="Red">proportional to the eligibility of each distinct state</font>, and the <font color="Red">learning rate</font> would be specified for we don't want it to move too much.  
->&#10114;<font color="Red">after</font> the state has been iterated, <font color="DeepSkyBlue">decay or decrease its eligibility</font> with $\lambda\cdot\gamma$, in their given value, in <font color="Red">$TD(1)$</font>, $\lambda$=$1$.  
+>&#10113;we are going to apply the <font color="Red">temporal difference</font> onto <font color="Red">$S$ itself only</font>, with <font color="RosyBrown">no proportion to the eligibility of any other states</font>, and the <font color="Red">learning rate</font> would be specified for we don't want it to move too much.  
+>&#10114;<font color="Red">after</font> the state has been iterated, <font color="DeepSkyBlue">decay or decrease its eligibility</font> with $\lambda\cdot\gamma$, in their given value, in <font color="Red">$TD(0)$</font>, $\lambda$=$0$.  
 >&#10115;and we are backing up to next stae.  
 >
 ><font color="Red">[Caution]</font>
 >&#10112;<font color="Red">all the $S$ are all being done in parallel</font>.  
->&#10113;the value at state $S$(the $S$ in (A)) is going to be updated on this quantity, $r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1})$, which is the same for everybody, <font color="RosyBrown">doesn't</font> depend on which $S$ we are updating, and $e(S)$ is specific to the state $S$ we are evaluating(looking at).  
+>&#10113;the value at state $S$(the $S$ in [A]) is going to be updated on this quantity, $r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1})$, which is the same for everybody, <font color="RosyBrown">doesn't</font> depend on which $S$ we are updating, and $e(S)$ is specific to the state $S$ we are evaluating(looking at).  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
