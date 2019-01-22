@@ -3,7 +3,7 @@ layout: post
 title: Temporal Difference Learning - Part 1
 ---
 
-## Prologue To The <font color="Red">Temporal Difference Learning</font>
+## Prologue To The <font color="Red">Temporal Difference Learning</font> - Part 1
 <p class="message">
 <font color="Red">Temporal difference learning</font>, called <font color="Red">TD Lambda</font>, <font color="Red">TD($\lambda$)</font>, it is about <font color="DeepPink">to learn to make prediction that takes place over time</font>.  
 </p>
