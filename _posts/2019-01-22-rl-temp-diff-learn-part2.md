@@ -31,12 +31,20 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >&#10112;<font color="Red">all the $S$ are all being done in parallel</font>.  
 >&#10113;the value at state $S$(the $S$ in [A]) is going to be updated on this quantity, $r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1})$, which is the same for everybody, <font color="RosyBrown">doesn't</font> depend on which $S$ we are updating, and <font color="DeepSkyBlue">$e(S)$=$1$ is specific to the state $S$ at the moment we are evaluating(looking at)</font>.  
 
-### MLE(Maximum Likelihood Estimate) And <font color="Red">$TD(0)$</font> Algorithm
->Given the condition that we are in $S_{t-1}$, and we don't know what state we are going to <font color="OrangeRed">end up</font> in.  But, there exists some <font color="OrangeRed">probability</font> of $r_{t}$+$\gamma\cdot V_{T-1}(S_{t})$-$V_{T-1}(S_{t-1})$.  
+### <font color="Red">MLE</font>(<font color="Red">Maximum Likelihood Estimate</font>) And <font color="Red">$TD(0)$</font> Algorithm
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">MLE</font>  
+>Given data of a lot trajectories and we are under the condition that we are in $S_{t-1}$, and we don't know what state we are going to <font color="OrangeRed">end up</font> in.  But, there exists some <font color="OrangeRed">probability</font> of $r_{t}$+$\gamma\cdot V_{T-1}(S_{t})$-$V_{T-1}(S_{t-1})$.  
 >
 >If we take <font color="Red">expectation</font> of [A], then:  
 >$V_{T}(S_{t-1})$=$E_{S_{t}}[r_{t}+\gamma\cdot V_{T-1}(S_{t})]$...[B]  
->We could treat it as <font color="Red">the MLE of $V_{T}(S_{t-1})$ over all possible $V_{T-1}(S_{t})$</font>.  
+>We could treat it as <font color="Red">the MLE of $V_{T}(S_{t-1})$ over all possible $V_{T-1}(S_{t})$</font>.  What we are doing is just sampling different possible $S_{t}$ values, that is $V_{T-1}(S_{t})$, and is crossing over different trajectories for we have a lot data of trajectories.  
+>
+>We are just taking an expectation over what we get as the next state of the <font color="#9300FF">reward</font> plus the <font color="#D600D6">discounted</font> estimated value(evaluated in last eposide) of that next state.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Why [B] is supposed to be the MLE?</font>
+><font color="Brown">proof::mjtsai1974</font>  
 >
 
 ### Addendum
