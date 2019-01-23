@@ -12,7 +12,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >This is by taking $\lambda$=$0$ in <font color="Red">$TD(\lambda)$</font> algorithm.  
 ><font color="DeepSkyBlue">[The rule]</font>
 >Eposide $T$:  
->$\;\;$For all $S$, $e(S)$=$0$ at start of eposide, $V_{T}(S)$=$V_{T-1}(S)$  
+>$\;\;$For all $S$, $e(S)$=<font color="Red">$0$</font> at <font color="DeepSkyBlue">start</font> of eposide, $V_{T}(S)$=$V_{T-1}(S)$  
 >$\;\;$After $S_{t-1}\xrightarrow{r_{t}}S_{t}$:(from step $t-1$ to $t$ with <font color="#9300FF">reward</font> $r_{t}$)  
 >$\;\;\;e(S_{t-1})$=$e(S_{t-1})$+$1$:  
 >$\;\;\;\;$Update <font color="DeepSkyBlue">eligibility</font> of $S_{t-1}$ after arriving to $S_{t}$  
