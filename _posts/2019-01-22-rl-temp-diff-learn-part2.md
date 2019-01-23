@@ -31,6 +31,13 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >&#10112;<font color="Red">all the $S$ are all being done in parallel</font>.  
 >&#10113;the value at state $S$(the $S$ in [A]) is going to be updated on this quantity, $r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1})$, which is the same for everybody, <font color="RosyBrown">doesn't</font> depend on which $S$ we are updating, and <font color="DeepSkyBlue">$e(S)$=$1$ is specific to the state $S$ at the moment we are evaluating(looking at)</font>.  
 
+### MLE(Maximum Likelihood Estimate) And <font color="Red">$TD(0)$</font> Algorithm
+>Given the condition that we are in $S_{t-1}$, and we don't know what state we are going to <font color="OrangeRed">end up</font> in.  But, there exists some probability of $r_{t}$+$\gamma\cdot V_{T-1}(S_{t})$-$V_{T-1}(S_{t-1})$.  
+>
+>If we take expectation of [A], then:  
+>$V_{T}(S_{t-1})$=$\underset S_{t}E[r_{t}+\gamma\cdot V_{T-1}(S_{t})]$, we could treat it as the MLE of $V_{T}(S_{t-1})$  
+
+
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
 
