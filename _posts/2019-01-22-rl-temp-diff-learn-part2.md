@@ -35,7 +35,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >Given the condition that we are in $S_{t-1}$, and we don't know what state we are going to <font color="OrangeRed">end up</font> in.  But, there exists some probability of $r_{t}$+$\gamma\cdot V_{T-1}(S_{t})$-$V_{T-1}(S_{t-1})$.  
 >
 >If we take expectation of [A], then:  
->$V_{T}(S_{t-1})$=$\underset S_{t}E[r_{t}+\gamma\cdot V_{T-1}(S_{t})]$, we could treat it as the MLE of $V_{T}(S_{t-1})$  
+>$V_{T}(S_{t-1})$=$E_{S_{t}}[r_{t}+\gamma\cdot V_{T-1}(S_{t})]$, we could treat it as the MLE of $V_{T}(S_{t-1})$ over all possible $V_{T-1}(S_{t})$.  
 
 
 ### Addendum
