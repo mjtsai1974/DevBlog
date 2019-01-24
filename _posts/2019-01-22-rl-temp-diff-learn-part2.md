@@ -44,6 +44,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Why [B] is supposed to be the MLE?</font>  
+>$\;\;$<font color="DeepPink">[B] is the MLE</font>  
 ><font color="Brown">proof::mjtsai1974</font>  
 >&#10112;$V_{T}(S_{t-1})$  
 >=$V_{T-1}(S_{t-1})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$  
