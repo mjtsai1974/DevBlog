@@ -38,18 +38,18 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 >If we take <font color="Red">expectation</font> of [A], then:  
 >$V_{T}(S_{t-1})$=$E_{S_{t}}[r_{t}+\gamma\cdot V_{T-1}(S_{t})]$...[B]  
->We could treat it as <font color="Red">the MLE of $V_{T}(S_{t-1})$ over all possible $V_{T-1}(S_{t})$</font>.  What we are doing is just sampling different possible $S_{t}$ values, that is $V_{T-1}(S_{t})$, and is crossing over different trajectories for we have a lot data of trajectories.  
+>We could treat it as <font color="Red">the MLE of $V_{T}(S_{t-1})$ over all possible $V_{T-1}(S_{t})$</font>.  What we are doing is just sampling different possible $S_{t}$ values, that is $V_{T-1}(S_{t})$, and is crossing over different trajectories for we have dataset of trajectories.  
 >
 >We are just taking an expectation over what we get as the next state of the <font color="#9300FF">reward</font> plus the <font color="#D600D6">discounted</font> estimated value(evaluated in last eposide) of that next state.  
 >
 ><font color="DeepSkyBlue">[2]</font>
-><font color="OrangeRed">Why [B] is supposed to be the MLE?</font>
+><font color="OrangeRed">Why [B] is supposed to be the MLE?</font>  
 ><font color="Brown">proof::mjtsai1974</font>  
 >&#10112;$V_{T}(S_{t-1})$  
 >=$V_{T-1}(S_{t-1})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$  
 >=$V_{T-1}(S_{t-1})\cdot(1-\alpha_{T})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t}))$...[B.1]  
 >This is the value of $S_{t-1}$ in eposide $T$, when transiting from $S_{t-1}$ to $S_{t}$, and remind that we are given data of a lot trajectories with each containing state transition in it.  
->&#10113;suppose we are in $S_{t-1}$ in one trajectory, and the next $S_{t}$ does exist, there exists $k$ such $S_{t}$ and $n-k$ different states of $S_{t}$, and totally $n$ trajectories in the given data.  Therefore, <font color="Red">there exists some probability $P(S_{t}\vert S_{t-1})$</font>.  
+>&#10113;suppose we are in $S_{t-1}$ in one trajectory, and the next $S_{t}$ does exist, there exists $k$ such $S_{t}$ and $n-k$ different states of $S_{t}$, and totally $n$ trajectories in the given data.  Therefore, <font color="Red">there exists some probability $P(S_{t}\vert S_{t-1})$=$\frac {k}{n}$</font>.  
 >&#10114;$V_{T}(S_{t-1})$  
 >=$\sum_{S{t}}P(S_{t}\vert S_{t-1})\cdot([B.1])$  
 >=$E_{S_{t}}[r_{t}+\gamma\cdot V_{T-1}(S_{t})]$ just holds.  
