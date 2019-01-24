@@ -44,7 +44,8 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Why [B] is supposed to be the MLE?</font>  
->$\;\;$[B] is the MLE  
+>$\;\;<font color="DeepPink">$[B] is the MLE</font>  
+>
 ><font color="Brown">proof::mjtsai1974</font>  
 >&#10112;$V_{T}(S_{t-1})$  
 >=$V_{T-1}(S_{t-1})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$  
@@ -55,6 +56,16 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >=$\sum_{S{t}}P(S_{t}\vert S_{t-1})\cdot([B.1])$  
 >=$E_{S_{t}}[r_{t}+\gamma\cdot V_{T-1}(S_{t})]$ just holds.  
 >, where $V_{T-1}(S_{t-1})\cdot(1-\alpha_{T})$ and $\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t}))$ are some values varying in each trajectory, the former is the departuring state, the later is the ending state, $\alpha_{T}$ is the learning rate, depends on how you would like the learning process to be.  I just use the term $r_{t}+\gamma\cdot V_{T-1}(S_{t})$ to be the <font color="OrangeRed">random variable</font> to be taken expectation.  
+
+### Illustration: The Idea Of TD(0) After TD(1)
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The given example</font>  
+>Succeeding to the same example as part 1 article, this time we are given data of 5 trajectories, the red quantity is the value of the state after <font color="DeepSkyBlue">backup propagation</font> with $\gamma$=$1$.  Recall that each distinct state's initial value is $0$.  We'd like to ask for <font color="RoyalBlue">the value of $S_{2}$ in the 5-th eposide</font>.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2019-01-22-rl-temp-diff-learn-part2-ex.png "M.C")
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">By using TD(1)</font>  
+>to be conti...  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
