@@ -65,7 +65,13 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">By using TD(1)</font>  
->to be conti...  
+>&#10112;we can deduce it out the <font color="Red">temporal difference</font> term:  
+>$\triangle V_{T}(S_{2})$  
+>=$r_{2}$+$\gamma\cdot r_{3}$+$\gamma^{2}\cdot r_{5}$+$\gamma^{3}\cdot V_{T-1}(S_{F})-V_{T-1}(S_{2})$  
+>=$12$  
+>&#10113;$V_{T}(S_{2})$  
+>=$V_{T-1}(S_{2})$+$\triangle V_{T}(S_{2})$  
+>=$0$+$12$  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
