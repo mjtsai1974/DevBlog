@@ -78,9 +78,8 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 ><font color="OrangeRed">By using MLE</font>  
 >$V_{T}(S_{2})$  
 >=$r_{2}$+$\gamma\cdot P(S_{3}\vert S_{2})\cdot (r_{3}$  
->$\;\;$+$\gamma\cdot ((P(S_{4}\vert S_{3})\cdot(r_{4}$  
->$\;\;\;\;$+$\gamma\cdot P(S_{F}\vert S_{4})\cdot S_{F}))$  
->$\;\;\;\;$+$(P(S_{5}\vert S_{3})\cdot (r_{5}+\gamma\cdot\P(S_{F}\vert S_{5})\cdot S_{F}))))$  
+>$\;\;$+$\gamma\cdot ((P(S_{4}\vert S_{3})\cdot(r_{4}+\gamma\cdot P(S_{F}\vert S_{4})\cdot S_{F}))$  
+>$\;\;\;\;$+$(P(S_{5}\vert S_{3})\cdot (r_{5}+\gamma\cdot P(S_{F}\vert S_{5})\cdot S_{F}))))$  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
