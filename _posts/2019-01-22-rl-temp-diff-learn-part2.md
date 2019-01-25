@@ -77,9 +77,26 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">By using MLE</font>  
 >$V_{T}(S_{2})$  
->=$r_{2}$+$\gamma\cdot P(S_{3}\vert S_{2})\cdot (r_{3}$  
+>=$r_{2}$+$\gamma\cdot P(S_{3}\vert S_{2})\cdot [r_{3}$  
 >$\;\;$+$\gamma\cdot (P(S_{4}\vert S_{3})\cdot(r_{4}+\gamma\cdot P(S_{F}\vert S_{4})\cdot S_{F})$  
->$\;\;\;\;$+$P(S_{5}\vert S_{3})\cdot (r_{5}+\gamma\cdot P(S_{F}\vert S_{5})\cdot S_{F})))$  
+>$\;\;\;\;$+$P(S_{5}\vert S_{3})\cdot (r_{5}+\gamma\cdot P(S_{F}\vert S_{5})\cdot S_{F}))]$  
+>
+>, and from data, we have it that  
+>&#10112;$\gamma$=$1$  
+>&#10113;$P(S_{3}\vert S_{2})$=$1$  
+>&#10114;$P(S_{4}\vert S_{3})$=$0.6$  
+>&#10115;$P(S_{5}\vert S_{3})$=$0.4$  
+>&#10116;$P(S_{F}\vert S_{4})$=$1$  
+>&#10117;$P(S_{F}\vert S_{5})$=$1$  
+>
+>Therefore,  
+>$V_{T}(S_{2})$  
+>=$2$+$1\cdot 1\cdot [0$  
+>$\;\;$+$1\cdot (0.6\cdot(1+1\cdot 1\cdot 0)$  
+>$\;\;\;\;$+$0.4\cdot (10+1\cdot 1\cdot 0))]$  
+>=$6.6$  
+>
+>By the same approach, $V_{T}(S_{1})$=$5.6$  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
