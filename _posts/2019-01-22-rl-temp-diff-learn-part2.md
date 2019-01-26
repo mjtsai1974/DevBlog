@@ -104,7 +104,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >This is all due to <font color="DeepPink">we are doing the estimiation by using data</font>.  
 >
 ><font color="DeepSkyBlue">[4]</font>
-><font color="OrangeRed">The findings</font>  
+><font color="OrangeRed">The breakdown</font>  
 >Please recall in [Temporal Difference Learning - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2018/12/23/rl-temp-diff-learn-part1/), I have figured out that $V_{T}(S_{1})$=$2.9$, $V_{T}(S_{2})$=$3.9$, $V_{T}(S_{3})$=$1.9$, by using both <font color="DeepSkyBlue">backup propagation</font> in the section of ReCap The Backup In Markov Chain.  
 >
 >The <font color="RosyBrown">MLE of $V_{T}(S_{2})$</font>=$6.6$, which is more, whereas the <font color="RosyBrown">$TD(1)$</font> estimate is $12$, a lot more, <font color="RosyBrown">all wrong</font>, <font color="DeepPink">except for $V_{T}(S_{2})$=$3.9$ by using backup based on the whole model</font>.  <font color="RoyalBlue">Why MLE is less wrong?  Why $TD(1)$ estimate is so far off?</font>  
@@ -112,6 +112,12 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >&#10113;when we use <font color="OrangeRed">MLE</font> for the estimation, we <font color="OrangeRed">use all data</font>, more information, more accurate.  The more might not be the better, but, we can resort the inaccuracy of <font color="RosyBrown">MLE of $V_{T}(S_{2})$</font>=$6.6$ to that <font color="RosyBrown">we don't have the complete data set</font> to build this whole MC model.  
 >
 >Specifically be noted that <font color="Red">$TD(1)$ is alos be treated as outcome-based estimate for it uses the immedaite reward and ignores the intermediate encountered states' value</font>.  
+>
+><font color="DeepSkyBlue">[5]</font>
+><font color="OrangeRed">A tiny finding</font>  
+>We have a tiny finding that <font color="DeepPink">$TD(0)$ relates current state's value to next most closed state's value, is more like MLE estimate</font>, even if we are using it in one trajectory, the 5-th in this illustration.  The temporal difference is about to learn to make prediction of states value for these states transit over time in the unit of one distinct trajectory, whereas the MLE tends to estimate states' value accrossing all trajectories in given sample.  
+>
+>The argument in between $TD(0), $TD(1)$ and MLE is in that we don't have the full image of the Markov chain model, with only a little sampling data.  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
