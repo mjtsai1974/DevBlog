@@ -119,14 +119,21 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 ><font color="DeepSkyBlue">The argument in between $TD(0)$, $TD(1)$ and MLE is in that we don't have the full image of the Markov chain model, with only a little sampling data.</font>  
 
-### The <font color="Red">Outcome Based</font> v.s. The <font color="Red">Intermediate Estimate Based$</font>
+### The <font color="Red">Outcome Based</font> v.s. The <font color="Red">Intermediate Estimate Based</font>
 >I'd like to step further to deeper inside in the concept with $TD(0)$ and $TD(1)$.  Given below 3 expression:  
->&#10112;$V_{T}(S_{t-1})$=$V_{T-1}(S_{t-1})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$...[A]  
->&#10113;$V_{T}(S_{t-1})$=$E_{S_{t}}[r_{t}+\gamma\cdot V_{T-1}(S_{t})]$...[B]  
->&#10114;$V_{T}(S_{t-1})$=$E[r_{t}+\gamma\cdot r_{t+1}+\gamma^{2}\cdot r_{t+2}+\gamma^{3}\cdot r_{t+3}+...]$...[C]  
->, where [A] is the regular expression in temporal difference, works for both $TD(0)$ and $TD(1)$, the difference is in <font color="DeepSkyBlue">$TD(0)$ rule the eligibility of the evaluated state would be reset to $0$</font>; the equation [B] is by taking expect of [A], more description is in $TD(0)$ related section; whereas [C] is the idea by taking only the reward sequence that we saw, ignoring the estimate we might have gotten in some other states.  
+>&#10112;$V_{T}(S_{t-1})$  
+>=$V_{T-1}(S_{t-1})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$...[A]  
+>&#10113;$V_{T}(S_{t-1})$  
+>=$E_{S_{t}}[r_{t}+\gamma\cdot V_{T-1}(S_{t})]$...[B]  
+>&#10114;$V_{T}(S_{t-1})$  
+>=$E[r_{t}+\gamma\cdot r_{t+1}+\gamma^{2}\cdot r_{t+2}+\gamma^{3}\cdot r_{t+3}+...]$...[C]  
+>, where [A] is the regular expression in temporal difference, works for both $TD(0)$ and $TD(1)$, the difference is in <font color="DeepSkyBlue">$TD(0)$ rule the eligibility of the evaluated state would be reset to $0$</font>; the equation [B] is by taking expect of [A], more description is in $TD(0)$ related section; whereas <font color="OrangeRed">[C] is the idea by taking only the reward sequence that we saw, ignoring the estimate we might have gotten in some other states</font>, which is the spiritual $TD(1)$.  
 >
->
+>Moreover, the full [C] expression should be refined as:  
+>$V_{T}(S_{t-1})$  
+>=$E[r_{t}+\gamma\cdot r_{t+1}+\gamma^{2}\cdot r_{t+2}$  
+>$\;\;+...+\gamma^{k-1}\cdot r_{t+k-1}+\gamma^{k}\cdot V_{T-1}(S_{t+k})-V_{T-1}(S_{t-1})]$  
+>The reason we <font color="OrangeRed">ignore</font> these 2 terms <font color="OrangeRed">$\gamma^{k}\cdot V_{T-1}(S_{t+k})-V_{T-1}(S_{t-1})$</font> is that <font color="OrangeRed">when $k$ is quiet large, the $\gamma^{k}$ would then approach $0$</font>, and <font color="OrangeRed">$V_{T-1}(S_{t-1})$'s initial value is $0$ in one eposide, if $S_{t-1}$ is the target state to be evaluated</font>, especially the <font color="OrangeRed">very first time</font> it is evaluated.  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
