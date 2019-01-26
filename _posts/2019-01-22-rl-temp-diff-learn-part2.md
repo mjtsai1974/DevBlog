@@ -136,7 +136,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 >The reason we <font color="OrangeRed">ignore</font> these 2 terms <font color="OrangeRed">$\gamma^{k}\cdot V_{T-1}(S_{t+k})-V_{T-1}(S_{t-1})$</font> is that <font color="OrangeRed">when $k$ is quiet large, the $\gamma^{k}$ would then approach $0$</font>, and <font color="OrangeRed">$V_{T-1}(S_{t-1})$'s initial value is $0$ in one eposide, if $S_{t-1}$ is the target state to be evaluated</font>, especially the <font color="OrangeRed">very first time</font> it is evaluated.  
 >
->By using [C], is just like the $S_{2}$ in the 5-th trajectory in above illustrated example, however, <font color="DeepPink">when the trajectory is an infinite series, the $TD(1)$ also does the right thing</font>, repeating that update over and over again won't change anything, because the expectation is the expectation expressed in terms of the <font color="#9300FF">saw rewards</font>.  
+>By using [C], is just like the $S_{2}$ in the 5-th trajectory in above illustrated example, however, <font color="DeepPink">when the trajectory is an infinite series, the $TD(1)$ also does the right thing</font>, repeating that update over and over again <font color="RosyBrown">won't</font> change anything, because <font color="OrangeRed">the expectation is the expectation</font> expressed in terms of the <font color="#9300FF">saw rewards</font>.  
 >
 <!--
 >By using [B], to be  conti...
