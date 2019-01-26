@@ -79,10 +79,13 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >$V_{T}(S_{2})$  
 >=$r_{2}$+$\gamma\cdot P(S_{3}\vert S_{2})\cdot V_{T}(S_{3})$  
 >=$r_{2}$+$\gamma\cdot P(S_{3}\vert S_{2})\cdot [r_{3}$  
+>$\;\;$+$\gamma\cdot (P(S_{4}\vert S_{3})\cdot(V_{T}(S_{4}))$  
+>$\;\;\;\;$+$P(S_{5}\vert S_{3})\cdot (V_{T}(S_{5}))]$  
+>=$r_{2}$+$\gamma\cdot P(S_{3}\vert S_{2})\cdot [r_{3}$  
 >$\;\;$+$\gamma\cdot (P(S_{4}\vert S_{3})\cdot(r_{4}+\gamma\cdot P(S_{F}\vert S_{4})\cdot V_{T}(S_{F}))$  
 >$\;\;\;\;$+$P(S_{5}\vert S_{3})\cdot (r_{5}+\gamma\cdot P(S_{F}\vert S_{5})\cdot V_{T}(S_{F})))]$  
 >
->, and from data, we have probability of transition that  
+>, and from data, we have <font color="OrangeRed">probability of transition</font> that  
 >&#10112;$\gamma$=$1$  
 >&#10113;$P(S_{3}\vert S_{2})$=$1$  
 >&#10114;$P(S_{4}\vert S_{3})$=$0.6$  
