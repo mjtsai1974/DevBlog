@@ -119,7 +119,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 ><font color="DeepSkyBlue">The argument in between $TD(0)$, $TD(1)$ and MLE is in that we don't have the full image of the Markov chain model, with only a little sampling data.</font>  
 
-### The <font color="Red">Outcome Based$</font> v.s. The <font color="Red">Intermediate Estimate Based$</font>
+### The <font color="Red">Outcome Based</font> v.s. The <font color="Red">Intermediate Estimate Based$</font>
 >I'd like to step further to deeper inside in the concept with $TD(0)$ and $TD(1)$.  Given below 3 expression:  
 >&#10112;$V_{T}(S_{t-1})$=$V_{T-1}(S_{t-1})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$...[A]  
 >&#10113;$V_{T}(S_{t-1})$=$E_{S_{t}}[r_{t}+\gamma\cdot V_{T-1}(S_{t})]$...[B]  
