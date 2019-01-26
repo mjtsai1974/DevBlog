@@ -93,16 +93,19 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >&#10116;$P(S_{F}\vert S_{4})$=$1$  
 >&#10117;$P(S_{F}\vert S_{5})$=$1$  
 >
->Furthermore, 
->
 >Therefore,  
 >$V_{T}(S_{2})$  
 >=$2$+$1\cdot 1\cdot [0$  
 >$\;\;$+$1\cdot (0.6\cdot(1+1\cdot 1\cdot 0)$  
 >$\;\;\;\;$+$0.4\cdot (10+1\cdot 1\cdot 0))]$  
->=$6.6$  
+>=$6.6$, by the same approach, $V_{T}(S_{1})$=$5.6$.  
 >
->By the same approach, $V_{T}(S_{1})$=$5.6$  
+>Cautions must be made that <font color="DeepPink">by using MLE for $V_{T}(S_{2})$, we choose to refer to the same eposide $T$</font>, <font color="RosyBrown">not $T-1$</font>, why?  
+>This is all due to <font color="DeepPink">we are doing the estimiation by using data</font>.  
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">The findings</font>  
+>Please recall in [Temporal Difference Learning - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2018/12/23/rl-temp-diff-learn-part1/), I have figured out that $V_{T}(S_{1})$=$2.9$, $V_{T}(S_{2})$=$3.9$, $V_{T}(S_{3})$=$1.9$, by using both <font color="DeepSkyBlue">backup propagation</font> and <font color="DeepSkyBlue">expect discounted reward</font>.  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
