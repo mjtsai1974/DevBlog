@@ -117,7 +117,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 ><font color="OrangeRed">A tiny finding</font>  
 >We have a tiny finding that <font color="DeepPink">$TD(0)$ relates current state's value to next most closed state's value, is more like MLE estimate</font>, even if we are using it in one trajectory, the 5-th in this illustration.  The temporal difference is about to learn to make prediction of states value for these states transit over time in the unit of one distinct trajectory, whereas the MLE tends to estimate states' value accrossing all trajectories in given sample.  
 >
->The argument in between $TD(0), $TD(1)$ and MLE is in that we don't have the full image of the Markov chain model, with only a little sampling data.  
+><font color="DeepSkyBlue">The argument in between $TD(0)$, $TD(1)$ and MLE is in that we don't have the full image of the Markov chain model, with only a little sampling data.</font>  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
