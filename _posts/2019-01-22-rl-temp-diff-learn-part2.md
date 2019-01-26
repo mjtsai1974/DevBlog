@@ -119,6 +119,15 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 ><font color="DeepSkyBlue">The argument in between $TD(0)$, $TD(1)$ and MLE is in that we don't have the full image of the Markov chain model, with only a little sampling data.</font>  
 
+### The <font color="Red">Outcome Based$</font> v.s. The <font color="Red">Intermediate Estimate Based$</font>
+>I'd like to step further to deeper inside in the concept with $TD(0)$ and $TD(1)$.  Given below 3 expression:  
+>&#10112;$V_{T}(S_{t-1})$=$V_{T-1}(S_{t-1})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$...[A]  
+>&#10113;$V_{T}(S_{t-1})$=$E_{S_{t}}[r_{t}+\gamma\cdot V_{T-1}(S_{t})]$...[B]  
+>&#10114;$V_{T}(S_{t-1})$=$E[r_{t}+\gamma\cdot r_{t+1}+\gamma^{2}\cdot r_{t+2}+\gamma^{3}\cdot r_{t+3}+...]$...[C]  
+>, where [A] is the regular expression in temporal difference, works for both $TD(0)$ and $TD(1)$, the difference is in <font color="DeepSkyBlue">$TD(0)$ rule the eligibility of the evaluated state would be reset to $0$</font>; the equation [B] is by taking expect of [A], more description is in $TD(0)$ related section; whereas [C] is the idea by taking only the reward sequence that we saw, ignoring the estimate we might have gotten in some other states.  
+>
+>
+
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
 
