@@ -119,7 +119,9 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 ><font color="DeepSkyBlue">The argument in between $TD(0)$, $TD(1)$ and MLE is in that we don't have the full image of the Markov chain model, with only a little sampling data.</font>  
 
-### The <font color="Red">Outcome Based</font> v.s. The <font color="Red">Intermediate Estimate Based</font>
+### The <font color="Red">Outcome Based</font> v.s. The <font color="Red">Intermediate Estimate Based</font>::<font color="Brown">mjtsai1974</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Summary of these equations</font>  
 >I'd like to step further to deeper inside in the concept with $TD(0)$ and $TD(1)$.  Given below 3 expression:  
 >&#10112;$V_{T}(S_{t-1})$  
 >=$V_{T-1}(S_{t-1})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$...[A]  
@@ -129,20 +131,41 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >=$E[r_{t}+\gamma\cdot r_{t+1}+\gamma^{2}\cdot r_{t+2}+\gamma^{3}\cdot r_{t+3}+...]$...[C]  
 >, where [A] is the regular expression in temporal difference, works for both $TD(0)$ and $TD(1)$, the difference is in <font color="DeepSkyBlue">$TD(0)$ rule the eligibility of the evaluated state would be reset to $0$</font>; the equation [B] is by taking expect of [A], more description is in $TD(0)$ related section; whereas <font color="OrangeRed">[C] is the idea by taking only the reward sequence that we saw, ignoring the estimate we might have gotten in some other states</font>, which is the spiritual $TD(1)$.  
 >
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Why toss out $\gamma^{k}\cdot V_{T-1}(S_{t+k})-V_{T-1}(S_{t-1})$?</font>  
 >Moreover, the full [C] expression should be refined as:  
 >$V_{T}(S_{t-1})$  
 >=$E[r_{t}+\gamma\cdot r_{t+1}+\gamma^{2}\cdot r_{t+2}$  
->$\;\;+...+\gamma^{k-1}\cdot r_{t+k-1}+\gamma^{k}\cdot V_{T-1}(S_{t+k})-V_{T-1}(S_{t-1})]$  
+>$\;\;+...+\gamma^{k-1}\cdot r_{t+k-1}+\gamma^{k}\cdot V_{T-1}(S_{t+k})-V_{T-1}(S_{t-1})]$...[D]  
 >
 >The reason we <font color="OrangeRed">ignore</font> these 2 terms <font color="OrangeRed">$\gamma^{k}\cdot V_{T-1}(S_{t+k})-V_{T-1}(S_{t-1})$</font> is that <font color="OrangeRed">when $k$ is quiet large, the $\gamma^{k}$ would then approach $0$</font>, and <font color="OrangeRed">$V_{T-1}(S_{t-1})$'s initial value is $0$ in one eposide, if $S_{t-1}$ is the target state to be evaluated</font>, especially the <font color="OrangeRed">very first time</font> it is evaluated.  
 >
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Evaluation on [B] and [C]</font>  
 >By using [C], is just like the $S_{2}$ in the 5-th trajectory in above illustrated example, however, <font color="DeepPink">when the trajectory is an infinite series, the $TD(1)$ also does the right thing</font>, repeating that update over and over again <font color="RosyBrown">won't</font> change anything, because <font color="OrangeRed">the expectation is the expectation</font> expressed in terms of the <font color="#9300FF">saw rewards</font>.  
 >
 >By using [B], it takes the <font color="OrangeRed">intermediate estimates</font> that we have computed and refined on all the <font color="OrangeRed">intermediate nodes</font>, that is taking all the states we encountered along the way into concern to improve our estimate of the value of every other state.  
 >
 >Therefore, [B] is more self-consistent of connecting the value of states to the value of the other states you want(or encountered), and [C] is just using the experience that it saws and ignores the existence of the intermediate states.  
 >
+><font color="DeepSkyBlue">[4]</font>
+><font color="Red">Cautions</font>  
 >All above are under the condition that we have been given partial, incomplete data before we know the full model of state transition, or we are given the complete data of a target model to be predicted, we still believe that we don't have it yet!!  
+>
+><font color="DeepSkyBlue">[5]</font>
+><font color="OrangeRed">The appropriate apply::mjtsai1974</font>  
+>Trivially, [D] relates the final state value of $V_{T-1}(S_{t+k})$ to the target evaluated state $S_{t-1}$ in eposide $T$, whose value is expressed in terms of $V_{T-1}(S_{t-1})$.  
+>$V_{T}(S_{t-1})$  
+>=$E[r_{t}+\gamma\cdot r_{t+1}+\gamma^{2}\cdot r_{t+2}$  
+>$\;\;+...+\gamma^{k-1}\cdot r_{t+k-1}+\gamma^{k}\cdot V_{T-1}(S_{t+k})-V_{T-1}(S_{t-1})]$  
+>
+>The point is:  
+>&#10112;<font color="#C20000">how large $k$ should be safe for we to toss out these 2 terms?</font>  
+>&#10113;<font color="DeepSkyBlue">before $k$ is large enough</font>, we should be able to <font color="DeepSkyBlue">calculate new arrivaed state's value</font>, which is reasonable <font color="DeepSkyBlue">to related current arrived state to the target evaluated state</font>, <font color="OrangeRed">repeat</font> this behavior <font color="OrangeRed">until $k$ is large enough</font>.  
+>
+>Evenmore, after $k$ is large enough to ignore these 2 terms, the algorithm should have a design to go back to re-calculate the target state's value, the transition must range from $S_{t-1}$ to $S_{t+k-1}$, thus to move toward closed to have a much mature condition to make a toggle of decision according to the new evaluated target state's value.  
+>
+>When $k$ is large enough, it means that we have state transition over a rather long horizon, we are safe to just use the experience of saw rewards, since the update term of intermediate nodes would just be cancel out by the temporal difference equation(like [A] with $\lambda\neq 0$), thought by mjtsai1974, and might be evaluated by program in the future(to be conti).  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
