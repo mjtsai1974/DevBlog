@@ -167,7 +167,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 ><font color="OrangeRed">After $k$ is large enough::mjtsai1974</font>  
 >Evenmore, <font color="Red">after $k$ is large enough</font> to ignore these 2 terms, the algorithm should have a design to go back to <font color="OrangeRed">re-calculate</font> the target state's value, <font color="OrangeRed">the transition must range from $S_{t-1}$ to $S_{t+k-1}$</font>, thus to move toward a bit more closed to have a much maturer condition <font color="OrangeRed">to make a toggle of decision according to the new evaluated target state's value</font>.  
 >
-><font color="Red">When $k$ is large enough</font>, it means that we have state transition over a rather long horizon, we are <font color="9300FF">safe to just use the experience of saw rewards</font>, since the update term of intermediate nodes would just be cancel out by the temporal difference equation(like [A] with $\lambda\neq 0$), thought by mjtsai1974, and might be evaluated by program in the future(to be conti).  
+>Finally, <font color="Red">when $k$ is large enough</font>, it means that we have state transition over a rather long horizon, we are <font color="9300FF">safe to just use the experience of saw rewards</font>, since the update term of intermediate nodes would just be cancel out by the temporal difference equation(like [A] with $\lambda\neq 0$), thought by mjtsai1974, and might be evaluated by program in the future(to be conti).  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
