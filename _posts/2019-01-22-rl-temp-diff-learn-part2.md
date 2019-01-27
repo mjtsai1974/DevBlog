@@ -117,7 +117,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 ><font color="OrangeRed">A tiny finding</font>  
 >We have a tiny finding that <font color="DeepPink">$TD(0)$ relates current state's value to next most closed state's value, is more like MLE estimate</font>, even if we are using it in one trajectory, the 5-th in this illustration.  The temporal difference is about to learn to make prediction of states value for these states transit over time in the unit of one distinct trajectory, whereas the MLE tends to estimate states' value accrossing all trajectories in given sample.  
 >
-><font color="DeepSkyBlue">The argument in between $TD(0)$, $TD(1)$ and MLE is in that we don't have the full image of the Markov chain model, with only a little sampling data.</font>  
+><font color="OrangeRed">The argument in between $TD(0)$, $TD(1)$ and MLE is in that we don't have the full image of the Markov chain model, with only a little sampling data.</font>  
 
 ### The <font color="Red">Outcome Based</font> v.s. The <font color="Red">Intermediate Estimate Based</font>::<font color="Brown">mjtsai1974</font>
 ><font color="DeepSkyBlue">[1]</font>
@@ -150,7 +150,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 ><font color="DeepSkyBlue">[4]</font>
 ><font color="Red">Cautions</font>  
->All above are under the condition that we have been given partial, incomplete data before we know the full model of state transition, or we are given the complete data of a target model to be predicted, we still believe that we don't have it yet!!  
+>All above are under the condition that we have been given <font color="RosyBrown">partial</font>, <font color="RosyBrown">incomplete</font> data <font color="RosyBrown">before</font> we know the full model of state transition, or we are given the complete data of a target model to be predicted, we still believe that we don't have it yet!!  
 >
 ><font color="DeepSkyBlue">[5]</font>
 ><font color="OrangeRed">The appropriate apply::mjtsai1974</font>  
@@ -160,12 +160,14 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >$\;\;+...+\gamma^{k-1}\cdot r_{t+k-1}+\gamma^{k}\cdot V_{T-1}(S_{t+k})-V_{T-1}(S_{t-1})]$  
 >
 >The point is:  
->&#10112;<font color="#C20000">how large $k$ should be safe for we to toss out these 2 terms?</font>  
+>&#10112;<font color="#C20000">how large $k$ should be for we to safely toss out these 2 terms?</font>  
 >&#10113;<font color="DeepSkyBlue">before $k$ is large enough</font>, we should be able to <font color="DeepSkyBlue">calculate new arrivaed state's value</font>, which is reasonable <font color="DeepSkyBlue">to related current arrived state to the target evaluated state</font>, <font color="OrangeRed">repeat</font> this behavior <font color="OrangeRed">until $k$ is large enough</font>.  
 >
->Evenmore, after $k$ is large enough to ignore these 2 terms, the algorithm should have a design to go back to re-calculate the target state's value, the transition must range from $S_{t-1}$ to $S_{t+k-1}$, thus to move toward closed to have a much mature condition to make a toggle of decision according to the new evaluated target state's value.  
+><font color="DeepSkyBlue">[6]</font>
+><font color="OrangeRed">After $k$ is large enough::mjtsai1974</font>  
+>Evenmore, <font color="Red">after $k$ is large enough</font> to ignore these 2 terms, the algorithm should have a design to go back to <font color="OrangeRed">re-calculate</font> the target state's value, <font color="OrangeRed">the transition must range from $S_{t-1}$ to $S_{t+k-1}$</font>, thus to move toward a bit more closed to have a much maturer condition <font color="OrangeRed">to make a toggle of decision according to the new evaluated target state's value</font>.  
 >
->When $k$ is large enough, it means that we have state transition over a rather long horizon, we are safe to just use the experience of saw rewards, since the update term of intermediate nodes would just be cancel out by the temporal difference equation(like [A] with $\lambda\neq 0$), thought by mjtsai1974, and might be evaluated by program in the future(to be conti).  
+><font color="Red">When $k$ is large enough</font>, it means that we have state transition over a rather long horizon, we are <font color="9300FF">safe to just use the experience of saw rewards</font>, since the update term of intermediate nodes would just be cancel out by the temporal difference equation(like [A] with $\lambda\neq 0$), thought by mjtsai1974, and might be evaluated by program in the future(to be conti).  
 
 ### Addendum
 >&#10112;[Temporal Difference Learning, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923)  
