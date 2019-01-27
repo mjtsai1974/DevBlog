@@ -138,7 +138,9 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 >By using [C], is just like the $S_{2}$ in the 5-th trajectory in above illustrated example, however, <font color="DeepPink">when the trajectory is an infinite series, the $TD(1)$ also does the right thing</font>, repeating that update over and over again <font color="RosyBrown">won't</font> change anything, because <font color="OrangeRed">the expectation is the expectation</font> expressed in terms of the <font color="#9300FF">saw rewards</font>.  
 >
->By using [B], it takes the <font color="OrangeRed">intermediate estimates</font> that we have computed and refined on all the <font color="OrangeRed">intermediate nodes</font>, that is taking all the states we encountered along the way into concern to improve our estimate of the value of every other state.  Therefore, [B] is more self-consistent of connecting the value of states to the value of the other states you want(or encountered).  
+>By using [B], it takes the <font color="OrangeRed">intermediate estimates</font> that we have computed and refined on all the <font color="OrangeRed">intermediate nodes</font>, that is taking all the states we encountered along the way into concern to improve our estimate of the value of every other state.  
+>
+>Therefore, [B] is more self-consistent of connecting the value of states to the value of the other states you want(or encountered), and [C] is just using the experience that it saws and ignores the existence of the intermediate states.  
 >
 >All above are under the condition that we have been given partial, incomplete data before we know the full model of state transition, or we are given the complete data of a target model to be predicted, we still believe that we don't have it yet!!  
 
