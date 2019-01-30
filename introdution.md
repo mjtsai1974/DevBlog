@@ -212,6 +212,7 @@ It is an extension of MDP.  Under construction...
 ### Reinforcement Learning
 
 * [Temporal Difference Learning - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2018/12/23/rl-temp-diff-learn-part1/)
+* [Temporal Difference Learning - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2019/01/22/rl-temp-diff-learn-part2/)
 * Markov Decision Process
 * Partial Observable Markov Decision Process
 * Q Learning Algorithm
