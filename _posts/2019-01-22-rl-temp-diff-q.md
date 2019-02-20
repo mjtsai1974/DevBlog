@@ -9,6 +9,23 @@ title: Temporal Difference In Q Form
 <font color="DeepPink">By given enough data, enough time, TD with action control would just do the right thing and eventually converge.</font>
 </p>
 
+### Glance At The <font color="Red">Q</font>-Learning
+>Here I am just to have a simplistic overview of <font color="Red">Q</font>-learning:  
+>&#10112;<font color="Red">Q</font>-learning is a <font color="OrangeRed">value-based reinforcement learning algorithm</font>, which is used to find the most optimal(best) <font color="#00ADAD">policy</font> to choose <font color="OrangeRed">the action that can maximize the value of each state</font> by using a <font color="Red">Q</font> function.  
+>&#10113;the <font color="Red">Q</font> function takes state and action as input parameters.  
+>$Q^{\pi}(S_{t},A_{t})$=$E\lbrack R_{t+1}+\gamma\cdot R_{t+2}+\gamma^{2}\cdot R_{t+3}+...\vert S_{t},A_{t}\rbrack$  
+>The $\pi$ indicates the <font color="Red">$Q$</font> function asks for <font color="#00ADAD">policy</font> could be expressed in the form of <font color="#D600D6">expected discounted cumulative reward</font>, given $S_{t}$ and $A_{t}$.  
+
+<!--
+The Q form of Bellman equation is much more useful in the context of reinforcement learning.  
+Because we are going to take expectation of $Q(S,A)$=$R(S,A)+\gamma\cdot \sum_{S'}P(S,A,S')\cdot max_{A'}Q(S',A')$ by just using experienced data.  You don't need to access the reward function of the probabilistic transition function to do that.  
+
+$V(S)$=$max_{A}(R(S,A)+\gamma\cdot \sum_{S'}P(S,A,S')\codt V(S'))$
+If we try to learn the $V(S)$ values, the only one way to connect current $S$ to next $S'$ must have been done by knowing $R(S,A)$ and $P(S,A,S')$.
+
+So the Q form is very useful in reinforcement learning when we don't know the reward and the probabilistic transition in advance.  
+-->
+
 ### Addendum
 >&#10112;[Temporal Difference Convergence, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4436560172/concepts/44332503090923)  
 >&#10113;[An introduction to Q-Learning: reinforcement learning, ADL](https://medium.freecodecamp.org/an-introduction-to-q-learning-reinforcement-learning-14ac0b4493cc)  
