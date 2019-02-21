@@ -17,7 +17,7 @@ title: Temporal Difference In Q Form
 >The $\pi$ indicates the <font color="Red">$Q$</font> function asks for <font color="#00ADAD">policy</font> could be expressed in the form of <font color="#D600D6">expected discounted cumulative reward</font>, given $S_{t}$ and $A_{t}$.  
 >&#10114;take action $A$ to transite from state $S$ to $S'$  
 >$Q_{T}(S,A)$  
->=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)+\gamma\cdot \sum_{S'}P(S,A,S')\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))$  
+>=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)$+$\gamma\cdot max_{A'}Q_{T-1}(S',A')$-$Q_{T-1}(S,A))$  
 
 
 <!--
@@ -28,6 +28,8 @@ $V(S)$=$max_{A}(R(S,A)+\gamma\cdot \sum_{S'}P(S,A,S')\codt V(S'))$
 If we try to learn the $V(S)$ values, the only one way to connect current $S$ to next $S'$ must have been done by knowing $R(S,A)$ and $P(S,A,S')$.
 
 So the Q form is very useful in reinforcement learning when we don't know the reward and the probabilistic transition in advance.  
+
+$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)+\gamma\cdot \sum_{S'}P(S,A,S')\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))$  
 -->
 
 ### Addendum
