@@ -14,11 +14,15 @@ title: Temporal Difference In Q Form
 >&#10112;<font color="Red">Q</font>-learning is a <font color="OrangeRed">value-based reinforcement learning algorithm</font>, which is used to find the most optimal(best) <font color="#00ADAD">policy</font> to choose <font color="OrangeRed">the action that can maximize the value of each state</font> by using a <font color="Red">Q</font> function.  
 >&#10113;the <font color="Red">Q</font> function takes state and action as input parameters.  
 >$Q^{\pi}(S_{t},A_{t})$=$E\lbrack R_{t+1}+\gamma\cdot R_{t+2}+\gamma^{2}\cdot R_{t+3}+...\vert S_{t},A_{t}\rbrack$  
+>  
 >The $\pi$ indicates the <font color="Red">$Q$</font> function asks for <font color="#00ADAD">policy</font> could be expressed in the form of <font color="#D600D6">expected discounted cumulative reward</font>, given $S_{t}$ and $A_{t}$.  
 >&#10114;take action $A$ to transite from state $S$ to $S'$  
 >$Q_{T}(S,A)$  
->=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)$+$\gamma\cdot max_{A'}Q_{T-1}(S',A')$-$Q_{T-1}(S,A))$  
-
+>=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)$+$\gamma\cdot max_{A'}Q_{T-1}(S',A')$-$Q_{T-1}(S,A))$...[A]  
+>
+>By repeating above <font color="Red">Bellman equation</font> in <font color="Red">Q</font> form, the <font color="Red">Q</font> value will finally get converged, usually denoted as <font color="#00ADAD">$Q^{*}(S,A)$</font>, and it's the <font color="#00ADAD">policy</font> for you to take action $A$ when you are in state $S$ to get the <font color="OrangeRed">maximum value</font>.  
+>
+><font color="DeepPink">The Q form is quiet usefule in the reinforcement learning, when we are under the condition that we know nothing about the immediate reward and the probability distribution from current state to next state is uncertain, it is converinet to use this Q value as the experience.</font>  
 
 <!--
 The Q form of Bellman equation is much more useful in the context of reinforcement learning.  
