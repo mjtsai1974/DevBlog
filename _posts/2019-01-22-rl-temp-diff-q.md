@@ -15,6 +15,10 @@ title: Temporal Difference In Q Form
 >&#10113;the <font color="Red">Q</font> function takes state and action as input parameters.  
 >$Q^{\pi}(S_{t},A_{t})$=$E\lbrack R_{t+1}+\gamma\cdot R_{t+2}+\gamma^{2}\cdot R_{t+3}+...\vert S_{t},A_{t}\rbrack$  
 >The $\pi$ indicates the <font color="Red">$Q$</font> function asks for <font color="#00ADAD">policy</font> could be expressed in the form of <font color="#D600D6">expected discounted cumulative reward</font>, given $S_{t}$ and $A_{t}$.  
+>&#10114;take action $A$ to transite from state $S$ to $S'$  
+>$Q_{T}(S,A)$  
+>=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)+\gamma\cdot \sum_{S'}}P(S,A,S')\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))$  
+
 
 <!--
 The Q form of Bellman equation is much more useful in the context of reinforcement learning.  
