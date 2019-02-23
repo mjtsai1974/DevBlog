@@ -10,6 +10,8 @@ title: Temporal Difference In Q Form
 </p>
 
 ### Glance At The <font color="Red">Q</font>-Learning
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Overview</font>  
 >Here I am just to have a simplistic overview of <font color="Red">Q</font>-learning:  
 >&#10112;<font color="Red">Q</font>-learning is a <font color="OrangeRed">value-based reinforcement learning algorithm</font>, which is used to find the most optimal(best) <font color="#00ADAD">policy</font> to choose <font color="OrangeRed">the action that can maximize the value of each state</font> by using a <font color="Red">Q</font> function.  
 >&#10113;the <font color="Red">Q</font> function takes state and action as input parameters.  
@@ -23,6 +25,17 @@ title: Temporal Difference In Q Form
 >By repeating above <font color="Red">Bellman equation</font> in <font color="Red">Q</font> form, the <font color="Red">Q</font> value will finally get converged, usually denoted as <font color="#00ADAD">$Q^{*}(S,A)$</font>, and it's the <font color="#00ADAD">policy</font> for you to take action $A$ when you are in state $S$ to get the <font color="OrangeRed">maximum value</font>.  
 >
 ><font color="DeepPink">The Q form is quiet usefule in the reinforcement learning, when we are under the condition that we know nothing about the immediate reward and the probability distribution from current state to next state is uncertain, it is converinet to use this Q value as the experience.</font>  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Notes</font>  
+>As to equation [A], it could be further expanded:  
+>$Q_{T}(S,A)$  
+>=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)$+$\gamma\cdot max_{A'}Q_{T-1}(S',A')$-$Q_{T-1}(S,A))$...[A]  
+>=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)$+$\gamma\cdot (\sum_{S'}P(S,A,S')\cdot max_{A'}Q_{T-1}(S',A'))$-$Q_{T-1}(S,A))$...[B]  
+>Say it [B], where the term $(\sum_{S'}P(S,A,S')\cdot max_{A'}Q_{T-1}(S',A'))$ in [B] could be treated as $max_{A'}Q_{T-1}(S',A')$ in [A].  
+>
+>&#10112;if we know the probability transition from $S$ to $S'$, its associated immediate reward, we can take advantage of [B].  
+>&#10113;if we <font color="RosyBrown">neither</font> know probability distribution of state $S$, nor the immediate reward, we can just use [A], take <font color="OrangeRed">only</font> the <font color="Red">Q</font> value learned in last eposide.  
 
 <!--
 The Q form of Bellman equation is much more useful in the context of reinforcement learning.  
