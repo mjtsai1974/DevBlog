@@ -41,6 +41,17 @@ title: Temporal Difference In Q Form
 ><font color="DeepPink">The Q form is quiet usefule in the reinforcement learning, when we are under the condition that we know nothing about the immediate reward and the probability distribution from current state to next state is uncertain, it is converinet to use this Q value as the experience.</font>  
 
 <!--
+### Bellman Equation With Action Control
+>Next to do..
+
+### Maximum Is Non-Expansion
+>Next to do ..
+
+### Convergence Theorem: The Bellman Operator
+>Next to do..the 3 properties
+-->
+
+<!--
 The Q form of Bellman equation is much more useful in the context of reinforcement learning.  
 Because we are going to take expectation of $Q(S,A)$=$R(S,A)+\gamma\cdot \sum_{S'}P(S,A,S')\cdot max_{A'}Q(S',A')$ by just using experienced data.  You don't need to access the reward function of the probabilistic transition function to do that.  
 
