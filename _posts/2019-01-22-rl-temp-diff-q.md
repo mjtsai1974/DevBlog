@@ -25,7 +25,7 @@ title: Temporal Difference In Q Form
 >By repeating above <font color="Red">Bellman equation</font> in <font color="Red">Q</font> form, the <font color="Red">Q</font> value will finally get converged, usually denoted as <font color="#00ADAD">$Q^{*}(S,A)$</font>, and it's the <font color="#00ADAD">policy</font> for you to take action $A$ when you are in state $S$ to get the <font color="OrangeRed">maximum value</font>.  
 >
 ><font color="DeepPink">The Q form is quiet usefule in the reinforcement learning, when we are under the condition that we know nothing about the immediate reward and the probability distribution from current state to next state is uncertain, it is converinet to use this Q value as the experience.</font>  
->
+>  
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Notes</font>  
 >As to equation [A], it could be further expanded:  
