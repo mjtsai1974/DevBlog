@@ -36,6 +36,8 @@ title: Temporal Difference In Q Form
 >&#10112;if we know the probability transition from $S$ to $S'$, its associated immediate reward, we can take advantage of [B].  
 >&#10113;if we <font color="RosyBrown">neither</font> know probability distribution of state $S$, nor the immediate reward, we can just use [A], take <font color="OrangeRed">only</font> the <font color="Red">Q</font> value learned in last eposide.  
 >
+>See, the <font color="Red">Q</font> form is just expressed in terms of <font color="Red">temporal difference</font>.  
+>
 ><font color="DeepPink">The Q form is quiet usefule in the reinforcement learning, when we are under the condition that we know nothing about the immediate reward and the probability distribution from current state to next state is uncertain, it is converinet to use this Q value as the experience.</font>  
 
 <!--
