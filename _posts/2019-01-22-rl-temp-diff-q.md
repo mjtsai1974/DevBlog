@@ -25,7 +25,7 @@ title: Temporal Difference In Q Form
 >By repeating above <font color="Red">Bellman equation</font> in <font color="Red">Q</font> form, the <font color="Red">Q</font> value will finally get converged, usually denoted as <font color="#00ADAD">$Q^{*}(S,A)$</font>, and it's the <font color="#00ADAD">policy</font> for you to take action $A$ when you are in state $S$ to get the <font color="OrangeRed">maximum value</font>.  
 >
 ><font color="DeepSkyBlue">[2]</font>
-><font color="OrangeRed">Notes</font>  
+><font color="OrangeRed">Notes::mjtsai1974</font>  
 >As to equation [A], it could be further expanded:  
 >$Q_{T}(S,A)$  
 >=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)$+$\gamma\cdot max_{A'}Q_{T-1}(S',A')$-$Q_{T-1}(S,A))$...[A]  
