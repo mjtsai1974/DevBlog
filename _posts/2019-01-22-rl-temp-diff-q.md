@@ -29,9 +29,9 @@ title: Temporal Difference In Q Form
 >As to equation [A], it could be further expanded:  
 >$Q_{T}(S,A)$  
 >=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)$+$\gamma\cdot max_{A'}Q_{T-1}(S',A')$-$Q_{T-1}(S,A))$...[A]  
->=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)$+$\gamma\cdot (\sum_{S'}P(S,A,S')\cdot max_{A'}Q_{T-1}(S',A'))$-$Q_{T-1}(S,A))$...[B]  
+>=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)$+$\gamma\cdot (\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A'))$-$Q_{T-1}(S,A))$...[B]  
 >
->Say it [B], where the term $(\sum_{S'}P(S,A,S')\cdot max_{A'}Q_{T-1}(S',A'))$ in [B] could be treated as $max_{A'}Q_{T-1}(S',A')$ in [A].  
+>Say it [B], where the term $(\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A'))$ in [B] could be treated as $max_{A'}Q_{T-1}(S',A')$ in [A].  
 >
 >&#10112;if we know the probability transition from $S$ to $S'$, its associated immediate reward, we can take advantage of [B].  
 >&#10113;if we <font color="RosyBrown">neither</font> know probability distribution of state $S$, nor the immediate reward, we can just use [A], take <font color="OrangeRed">only</font> the <font color="Red">Q</font> value learned in last eposide.  
@@ -42,18 +42,21 @@ title: Temporal Difference In Q Form
 
 ### <font color="Red">Bellman Equation</font>: <font color="DeepSkyBlue">With</font> versus <font color="DeepSkyBlue">Without</font> Actions
 ><font color="DeepSkyBlue">[1]</font>
-><font color="OrangeRed">Without Actions</font>  
+><font color="OrangeRed">Without actions</font>  
 >&#10112;<font color="RosyBrown">no action</font> in value function  
 >$V(S)$=$R(S)$+$\gamma\cdot\sum_{S'}P(S'\vert S, A)\cdot V(S')$  
->The value function $V(S)$ of state $S$ take <font color="RosyBrown">no</font> action control into consideration, the term $P(S'\vert S, A)$ indicates the we are <font color="OrangeRed">in stochastic MDP model, the outcome of action execution is uncertain</font>.  
+>The value function $V(S)$ of state $S$ takes <font color="RosyBrown">no</font> action control into consideration, the term $P(S'\vert S, A)$ indicates the we are <font color="OrangeRed">in stochastic MDP model, the outcome of action execution is uncertain</font>.  
 >&#10113;$TD(0)$ isomorphism  
 >$V_{T}(S_{t-1})$=$V_{T}(S_{t-1})$+$\alpha\cdot (r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$  
 >By using $TD(0)$ to update the value of $S_{t-1}$ when transiting from $S_{t-1}$ to $S_{t}$.  
-
-<!--
+>
 ><font color="DeepSkyBlue">[2]</font>
-><font color="OrangeRed">Overview</font>  
--->
+><font color="OrangeRed">With actions</font>  
+>&#10112;the <font color="Red">Q</font> form value function  
+>$Q(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S, A)\cdot max_{A'}Q(S',A')$  
+>The value function now <font color="OrangeRed">takes</font> action into concern, after transiting from $S$ to $S'$, targeting at the action $A'$ chose by $S'$ to maximize value of $S'$.  
+>&#10113;$TD(0)$ isomorphism  
+>
 
 <!--
 ### Maximum Is Non-Expansion
