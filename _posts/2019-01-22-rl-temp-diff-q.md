@@ -47,16 +47,16 @@ title: Temporal Difference In Q Form
 >$V(S)$=$R(S)$+$\gamma\cdot\sum_{S'}P(S'\vert S, A)\cdot V(S')$  
 >The value function $V(S)$ of state $S$ takes <font color="RosyBrown">no</font> action control into consideration, the term $P(S'\vert S, A)$ indicates the we are <font color="OrangeRed">in stochastic MDP model, the outcome of action execution is uncertain</font>.  
 >&#10113;$TD(0)$ isomorphism  
->$V_{T}(S_{t-1})$=$V_{T}(S_{t-1})$+$\alpha\cdot (r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$  
+>$V_{T}(S_{t-1})$=$V_{T}(S_{t-1})$+$\alpha_{T}\cdot (r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$  
 >By using $TD(0)$ to update the value of $S_{t-1}$ when transiting from $S_{t-1}$ to $S_{t}$.  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">With actions</font>  
 >&#10112;the <font color="Red">Q</font> form value function  
 >$Q(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S, A)\cdot max_{A'}Q(S',A')$  
->The value function now <font color="OrangeRed">takes</font> action into concern, after transiting from $S$ to $S'$, targeting at the action $A'$ chose by $S'$ to maximize value of $S'$.  
+>The value function now <font color="OrangeRed">takes</font> action into concern, after transiting from $S$ to $S'$, targeting at the action $A'$ chose by $S'$ to <font color="OrangeRed">maximize</font> value of $S'$.  
 >&#10113;$TD(0)$ isomorphism  
->
+>$Q_{T}(S_{t-1},A_{t-1})$=$Q_{T-1}(S_{t-1},A_{t-1})$+$\alpha_{T}\cdot (r_{t}+\gamma\cdot max_{A}Q_{T-1}(S_{t},A)-Q_{T-1}(S_{t-1},A_{t-1}))$  
 
 <!--
 ### Maximum Is Non-Expansion
