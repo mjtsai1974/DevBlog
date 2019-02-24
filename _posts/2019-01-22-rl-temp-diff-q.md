@@ -46,13 +46,16 @@ title: Temporal Difference In Q Form
 >&#10112;<font color="RosyBrown">no action</font> in value function  
 >$V(S)$=$R(S)$+$\gamma\cdot\sum_{S'}P(S'\vert S, A)\cdot V(S')$  
 >The value function $V(S)$ of state $S$ take <font color="RosyBrown">no</font> action control into consideration, the term $P(S'\vert S, A)$ indicates the we are <font color="OrangeRed">in stochastic MDP model, the outcome of action execution is uncertain</font>.  
->&#10113;  
+>&#10113;$TD(0)$ isomorphism  
+>$V_{T}(S_{t-1})$=$V_{T}(S_{t-1})$+$\alpha\cdot (r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1}))$  
+>By using $TD(0)$ to update the value of $S_{t-1}$ when transiting from $S_{t-1}$ to $S_{t}$.  
 
 <!--
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Overview</font>  
 -->
 
+<!--
 ### Maximum Is Non-Expansion
 >Next to do ..
 
