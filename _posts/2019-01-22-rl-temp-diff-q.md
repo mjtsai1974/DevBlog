@@ -40,9 +40,18 @@ title: Temporal Difference In Q Form
 >
 ><font color="DeepPink">The Q form is quiet usefule in the reinforcement learning, when we are under the condition that we know nothing about the immediate reward and the probability distribution from current state to next state is uncertain, it is converinet to use this Q value as the experience.</font>  
 
+### <font color="Red">Bellman Equation</font>: <font color="DeepSkyBlue">With</font> versus <font color="DeepSkyBlue">Without</font> Actions
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Without Actions</font>  
+>&#10112;<font color="RosyBrown">no action</font> in value function  
+>$V(S)$=$R(S)$+$\gamma\cdot\sum_{S'}P(S'\vert S, A)\cdot V(S')$  
+>The value function $V(S)$ of state $S$ take <font color="RosyBrown">no</font> action control into consideration, the term $P(S'\vert S, A)$ indicates the we are <font color="OrangeRed">in stochastic MDP model, the outcome of action execution is uncertain</font>.  
+>&#10113;  
+
 <!--
-### Bellman Equation With Action Control
->Next to do..
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Overview</font>  
+-->
 
 ### Maximum Is Non-Expansion
 >Next to do ..
