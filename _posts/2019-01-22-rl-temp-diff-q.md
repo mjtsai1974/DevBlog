@@ -20,7 +20,7 @@ title: Temporal Difference In Q Form
 >The $\pi$ indicates the <font color="Red">$Q$</font> function asks for <font color="#00ADAD">policy</font> could be expressed in the form of <font color="#D600D6">expected discounted cumulative reward</font>, given $S_{t}$ and $A_{t}$.  
 >&#10114;take action $A$ to transite from state $S$ to $S'$  
 >$Q_{T}(S,A)$  
->=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)$+$\gamma\cdot max_{A'}Q_{T-1}(S',A')$-$Q_{T-1}(S,A))$...[A]  
+>=$Q_{T-1}(S,A)$+$\alpha_{T}\cdot(R(S,A)$+$\gamma\cdot max_{A'}Q_{T-1}(S',A')$-$Q_{T-1}(S,A))$...[A]  
 >
 >By repeating above <font color="Red">Bellman equation</font> in <font color="Red">Q</font> form, the <font color="Red">Q</font> value will finally get converged, usually denoted as <font color="#00ADAD">$Q^{*}(S,A)$</font>, and it's the <font color="#00ADAD">policy</font> for you to take action $A$ when you are in state $S$ to get the <font color="OrangeRed">maximum value</font>.  
 >
@@ -28,8 +28,8 @@ title: Temporal Difference In Q Form
 ><font color="OrangeRed">Notes::mjtsai1974</font>  
 >As to equation [A], it could be further expanded:  
 >$Q_{T}(S,A)$  
->=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)$+$\gamma\cdot max_{A'}Q_{T-1}(S',A')$-$Q_{T-1}(S,A))$...[A]  
->=$Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)$+$\gamma\cdot (\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A'))$-$Q_{T-1}(S,A))$...[B]  
+>=$Q_{T-1}(S,A)$+$\alpha_{T}\cdot(R(S,A)$+$\gamma\cdot max_{A'}Q_{T-1}(S',A')$-$Q_{T-1}(S,A))$...[A]  
+>=$Q_{T-1}(S,A)$+$\alpha_{T}\cdot(R(S,A)$+$\gamma\cdot (\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A'))$-$Q_{T-1}(S,A))$...[B]  
 >
 >Say it [B], where the term $(\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A'))$ in [B] could be treated as $max_{A'}Q_{T-1}(S',A')$ in [A].  
 >
@@ -67,6 +67,12 @@ title: Temporal Difference In Q Form
 >&#10112;as to the term $R(S,A)$, this is the <font color="#9300FF">immediate reward</font>, $A$ is just the best action taken by state $S$ to transite to $S'$.  <font color="OrangeRed">Because the whole MDP model is known, we know this $R(S,A)$.</font>  
 >&#10113;the <font color="Red">synchronuous</font> update is by suming over all probabilistic transitions from $S$ to $S'$, given action $A$.  
 >&#10114;we take the old $Q_{T-1}(S',A')$ value estimated in eposide $T-1$ and do the <font color="Red">Bellman update</font> in specific state, action pair or particular state connection pair.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">the whole MDP model is not clear, but $Q^{*}(S,A)$ is known</font>  
+>We don't know the exact MDL model it is, if we know $Q^{*}(S_{t-1},A_{t-1})$, we could use it to learn $Q^{*}(S_{t},A_{t})$ by sampling <font color="Red">asynchronuously</font> update.  
+>$Q_{T}(S_{t-1},A_{t-1})$=$Q_{T-1}(S_{t-1},A_{t-1})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot max_{A_{t}}Q_{T-1}^{*}(S_{t},A_{t})-Q_{T-1}(S_{t-1},A_{t-1}))$  
+>Where we can take $Q^{*}(S_{t-1},A_{t-1})$=$Q_{T}(S_{t-1},A_{t-1})$.  
 
 <!--
 ><font color="DeepSkyBlue">[2]</font>
