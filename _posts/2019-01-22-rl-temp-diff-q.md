@@ -69,7 +69,7 @@ title: Temporal Difference In Q Form
 >&#10114;we take the old $Q_{T-1}(S',A')$ value estimated in eposide $T-1$ and do the <font color="Red">Bellman update</font> in specific state, action pair or particular state connection pair.  
 >
 ><font color="DeepSkyBlue">[2]</font>
-><font color="OrangeRed">the whole MDP model is not clear, but $Q_{T-1}^{*}(S_{t-1},A_{t-1})$ is known</font>  
+><font color="OrangeRed">the whole MDP model is not clear</font>  
 >$Q_{T-1}^{*}(S_{t-1},A_{t-1})$
 <!--
 >If we know $Q_{T-1}^{*}(S_{t-1},A_{t-1})$,  
