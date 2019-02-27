@@ -70,7 +70,10 @@ title: Temporal Difference In Q Form
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">the whole MDP model is not clear</font>  
->$Q_{T-1}^\ast(S_{t-1},A_{t-1})$
+>If we know $Q_{T-1}^{\ast}(S_{t-1},A_{t-1})$, we could use it to learn $Q_{T}^{*}(S_{t},A_{t})$ by sampling <font color="Red">asynchronuously</font> update.  
+>$Q_{T}(S_{t-1},A_{t-1})$=$Q_{T-1}(S_{t-1},A_{t-1})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot max_{A_{t}}Q_{T-1}^{\ast}(S_{t},A_{t})-Q_{T-1}(S_{t-1},A_{t-1}))$  
+>Where we can take $Q^{\ast}(S_{t-1},A_{t-1})$=$Q_{T}(S_{t-1},A_{t-1})$.  
+
 <!--
 >If we know $Q_{T-1}^{*}(S_{t-1},A_{t-1})$,  
 >we could use it to learn $Q_{T}^{*}(S_{t},A_{t})$ by sampling <font color="Red">asynchronuously</font> update.  
