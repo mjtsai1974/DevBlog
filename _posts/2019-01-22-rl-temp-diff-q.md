@@ -86,6 +86,8 @@ title: Temporal Difference In Q Form
 >By this scenario, we assume the current given data is the complete data set for the complete MDP model we know, so far; and the very next time, something unobservable in last session has been observed in this session, just triggers the whole learning process again in the very next session!!!  
 
 <!--
+to do: tag each Q(S,A) by eposide T and t if possible
+
 >If we know $Q_{T-1}^{*}(S_{t-1},A_{t-1})$,  
 >we could use it to learn $Q_{T}^{*}(S_{t},A_{t})$ by sampling <font color="Red">asynchronuously</font> update.  
 >
