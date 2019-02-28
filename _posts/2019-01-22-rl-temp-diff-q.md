@@ -70,9 +70,17 @@ title: Temporal Difference In Q Form
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">the whole MDP model is not clear, but $Q_{T-1}^{\ast}(S_{t-1},A_{t-1})$ is known</font>  
->If we know $Q_{T-1}^{\ast}(S_{t},A_{t})$, we could use it to learn $Q_{T}^{*}(S_{t-1},A_{t-1})$ by sampling <font color="Red">asynchronuously</font> update.  
+>When we transite from $S_{t-1}$ by action $A_{t-1}$ to $S_{t}$, if we know $Q_{T-1}^{\ast}(S_{t},A_{t})$, we could use it to learn $Q_{T}^{*}(S_{t-1},A_{t-1})$ by sampling <font color="Red">asynchronuously</font> update.  
 >$Q_{T}(S_{t-1},A_{t-1})$=$Q_{T-1}(S_{t-1},A_{t-1})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot max_{A_{t}}Q_{T-1}^{\ast}(S_{t},A_{t})-Q_{T-1}(S_{t-1},A_{t-1}))$  
 >Where we can take $Q^{\ast}(S_{t-1},A_{t-1})$=$Q_{T}(S_{t-1},A_{t-1})$, the $Q_{T}(S_{t-1},A_{t-1})$ learned would eventually converge to $Q^{\ast}(S_{t-1},A_{t-1})$.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="Brown">Inspiration::mjtsai1974</font>  
+>The <font color="Red">$Q^{\ast}$</font> value of $(S,A)$could be estimated from given data, but, here are the point and concern:  
+>&#10112;should we estimate $Q^{\ast}(S,A)$ base on the <font color="OrangeRed">whole given data</font>? Or, 
+>&#10113;should we estimate $Q_{T-1}^{\ast}(S,A)$ for we are now evaluating in eposide $T$, the $T$-th eposide?  
+>&#10114;if we choose &#10112;, would we just ignore the partial observe mechanism in this learning process? Or,  
+>&#10115;first learn by &#10112;, then we just learn by &#10113;, after the end is reached, we do the estimate for each distinct $Q(S,A)$ pair, repeat each iteration of learning in &#10113; with respect to each $Q(S,A)$ in each eposide of transition, finally do the adjustment in each learning eposide in &#10113;, by adjust learning rate or discount rate!!!
 
 <!--
 >If we know $Q_{T-1}^{*}(S_{t-1},A_{t-1})$,  
@@ -80,11 +88,6 @@ title: Temporal Difference In Q Form
 >
 >$Q_{T}(S_{t-1},A_{t-1})$=$Q_{T-1}(S_{t-1},A_{t-1})$+$\alpha_{T}\cdot(r_{t}+\gamma\cdot max_{A_{t}}Q_{T-1}^{*}(S_{t},A_{t})-Q_{T-1}(S_{t-1},A_{t-1}))$  
 >Where we can take $Q^{*}(S_{t-1},A_{t-1})$=$Q_{T}(S_{t-1},A_{t-1})$.  
--->
-
-<!--
-><font color="DeepSkyBlue">[2]</font>
-><font color="OrangeRed">Without actions</font>  
 -->
 
 <!--
