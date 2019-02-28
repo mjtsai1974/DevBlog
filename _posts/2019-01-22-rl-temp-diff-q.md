@@ -80,7 +80,10 @@ title: Temporal Difference In Q Form
 >&#10112;should we estimate $Q^{\ast}(S,A)$ base on the <font color="OrangeRed">whole given data</font>? Or, 
 >&#10113;should we estimate $Q_{T-1}^{\ast}(S,A)$ for we are now evaluating in eposide $T$, the $T$-th eposide?  
 >&#10114;if we choose &#10112;, would we just ignore the partial observe mechanism in this learning process? Or,  
->&#10115;first learn by &#10112;, then we just learn by &#10113;, after the end is reached, we do the estimate for each distinct $Q(S,A)$ pair, repeat each iteration of learning in &#10113; with respect to each $Q(S,A)$ in each eposide of transition, finally do the adjustment in each learning eposide in &#10113;, by adjust learning rate or discount rate!!!
+>&#10115;first learn by &#10112;, then we just learn by &#10113;, after the end is reached, we do the estimate for each distinct $Q(S,A)$ pair, repeat each iteration of learning in &#10113; with respect to each $Q(S,A)$ in each eposide of transition from $S_{t-1}$ to $S_{t}$, finally do the adjustment in each learning eposide in &#10113;, by adjust learning rate or discount rate!!!  
+>&#10116;succeed to &#10115;, compare with the learning result in &#10112;, until the norm of the difference has been brought to the minimum, if we treat the learning result in &#10112; and &#10113; as vectors.  
+>
+>By this scenario, we assume the current given data is the complete data set for the complete MDP model we know, so far; and the very next time, something unobservable in last session has been observed in this session, just triggers the whole learning process again in the very next session!!!  
 
 <!--
 >If we know $Q_{T-1}^{*}(S_{t-1},A_{t-1})$,  
