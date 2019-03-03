@@ -83,7 +83,7 @@ title: Temporal Difference In Q Form
 >&#10115;first learn by &#10112;, then we just learn by &#10113;, after the <font color="OrangeRed">end</font> is reached, we do the estimate for <font color="OrangeRed">each distinct $Q(S,A)$ pair</font>, repeat each iteration of learning in &#10113; with respect to each $Q(S,A)$ in each eposide of transition from $S_{t-1}$ to $S_{t}$, finally do the <font color="OrangeRed">adjustment</font> in each learning eposide in &#10113;, by adjust <font color="OrangeRed">learning rate</font> or <font color="#D600D6">discount factor</font>!!!  
 >&#10116;succeed to &#10115;, compare with the learning result in &#10112;, <font color="OrangeRed">until the norm of the difference has been brought to the minimum</font>, if we treat the learning result in &#10112; and &#10113; as <font color="OrangeRed">vectors</font>.  
 >
->By this scenario of &#10112;learning by &#10112; then by &#10113; to get the learning rate and discounted factor converged</font>, we assume the current given data is the complete data set for the complete MDP model we know, so far; and the very next time, something unobservable in last session has been observed in this session, just triggers the whole learning process again in the very next session!!!  
+>By this scenario of <font color="OrangeRed">learning by &#10112; then by &#10113; to get the learning rate and discounted factor converged</font>, we assume the current given data is the complete data set for the complete MDP model we know, so far; and the very next time, something unobservable in last session has been observed in this session, just triggers the whole learning process again in the very next session!!!  
 
 <!--
 to do: tag each Q(S,A) by eposide T and t if possible
