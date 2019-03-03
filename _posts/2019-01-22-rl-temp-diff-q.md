@@ -77,11 +77,11 @@ title: Temporal Difference In Q Form
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="Brown">Inspiration::mjtsai1974</font>  
 >The <font color="Red">$Q^{\ast}$</font> value of $(S,A)$could be estimated from given data, suppose we are evaluating $Q^{\ast}(S_{t-1},A_{t-1})$, here are the point and concern:  
->&#10112;should we estimate $Q^{\ast}(S_{t-1},A_{t-1})$ base on the <font color="OrangeRed">whole given data</font> and use it for $Q_{t}^{\ast}(S_{t-1},A_{t-1})$, where $t\in all T$?  Or, 
->&#10113;should we estimate $Q_{T-1}^{\ast}(S_{t-1},A_{t-1})$ on sample from eposide $1$ to $T-1$, for we are now evaluating in eposide $T$, the $T$-th eposide?  
+>&#10112;should we estimate $Q^{\ast}(S_{t-1},A_{t-1})$ base on the <font color="OrangeRed">whole given data</font> and use it for $Q_{t}^{\ast}(S_{t-1},A_{t-1})$, where $t\in all\;T$?  Or,  
+>&#10113;should we estimate $Q_{T-1}^{\ast}(S_{t-1},A_{t-1})$ on sample from eposide $1$ to $T-1$, when we are now evaluating in eposide $T$, the $T$-th eposide?  
 >&#10114;if we choose &#10112;, would we just ignore the <font color="#FFAC12">partial observe mechanism</font> in this learning process? Or,  
->&#10115;first learn by &#10112;, then we just learn by &#10113;, after the end is reached, we do the estimate for each distinct $Q(S,A)$ pair, repeat each iteration of learning in &#10113; with respect to each $Q(S,A)$ in each eposide of transition from $S_{t-1}$ to $S_{t}$, finally do the adjustment in each learning eposide in &#10113;, by adjust learning rate or discount rate!!!  
->&#10116;succeed to &#10115;, compare with the learning result in &#10112;, until the norm of the difference has been brought to the minimum, if we treat the learning result in &#10112; and &#10113; as vectors.  
+>&#10115;first learn by &#10112;, then we just learn by &#10113;, after the end is reached, we do the estimate for each distinct $Q(S,A)$ pair, repeat each iteration of learning in &#10113; with respect to each $Q(S,A)$ in each eposide of transition from $S_{t-1}$ to $S_{t}$, finally do the <font color="OrangeRed">adjustment</font> in each learning eposide in &#10113;, by adjust <font color="OrangeRed">learning rate</font> or <font color="#D600D6">discount factor</font>!!!  
+>&#10116;succeed to &#10115;, compare with the learning result in &#10112;, <font color="OrangeRed">until the norm of the difference has been brought to the minimum</font>, if we treat the learning result in &#10112; and &#10113; as <font color="OrangeRed">vectors</font>.  
 >
 >By this scenario, we assume the current given data is the complete data set for the complete MDP model we know, so far; and the very next time, something unobservable in last session has been observed in this session, just triggers the whole learning process again in the very next session!!!  
 
