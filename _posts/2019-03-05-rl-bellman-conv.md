@@ -5,11 +5,23 @@ title: Bellman Operator Makes Convergence
 
 ## Prologue To The <font color="Red">Bellman Operator</font> Makes <font color="Red">Convergence</font>
 <p class="message">
-to be conti...
+<font color="#C20000">By contiguous Bellman update, the value of each state eventually get converged, this happens a lot in reinforcement learning.</font>
 </p>
 
+### Begin By <font color="Red">Bellman Operator</font> - <font color="Red">B</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Beginning</font>  
+>Let <font color="Red">B</font> be an operator, or mapping from value function to value function.  You give a <font color="Red">Q</font> function, the <font color="Red">Bellman operator</font> will give you back, possibly, a different <font color="Red">Q</font> function.  You can treat <font color="Red">B</font> a function from <font color="Red">Q</font> functions to <font color="Red">Q</font> functions.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Definition of Bellman operator</font>  
+>$[BQ](S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$...definition  
+>
+>Give <font color="Red">B</font> a <font color="Red">Q</font> function, the new thing we get out when we apply <font color="Red">B</font> onto <font color="Red">Q</font>, has the property that at the state action pair $(S,A)$, it is equal to the <font color="#9300FF">immediate reward</font> plus the <font color="#D600D6">discounted expected value</font> of the <font color="OrangeRed">next state, $S'$</font>.  
+>
+>So, <font color="Red">Q</font> goes in, <font color="Red">BQ</font> goes out, treat <font color="Red">BQ</font> a <font color="DeepSkyBlue">new</font> function.  
+
 <!--
-Bellman Operator
 Contraction Mapping
 -->
 
