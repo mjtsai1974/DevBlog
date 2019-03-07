@@ -20,6 +20,12 @@ title: Bellman Operator Makes Convergence
 >Give <font color="Red">B</font> a <font color="Red">Q</font> function, the new thing we get out when we apply <font color="Red">B</font> onto <font color="Red">Q</font>, has the property that at the state action pair $(S,A)$, it is equal to the <font color="#9300FF">immediate reward</font> plus the <font color="#D600D6">discounted expected value</font> of the <font color="OrangeRed">next state, $S'$</font>.  
 >
 >So, <font color="Red">Q</font> goes in, <font color="Red">BQ</font> goes out, treat <font color="Red">BQ</font> a <font color="DeepSkyBlue">new</font> function.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Another way of writing</font>  
+>With <font color="Red">Bellman operator</font> - <font color="Red">B</font>, we can have below alternatives:  
+>&#10112;$Q^{\ast}$=$BQ^{\ast}$ is another way of writing <font color="Red">Bellman equation</font>.  
+>&#10113;$Q_{t}$=$BQ_{t-1}$ is another way of writing <font color="Red">value iteration</font>.  
 
 <!--
 Contraction Mapping
