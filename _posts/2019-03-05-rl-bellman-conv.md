@@ -27,9 +27,11 @@ title: Bellman Operator Makes Convergence
 >&#10112;$Q^{\ast}$=$BQ^{\ast}$ is another way of writing <font color="Red">Bellman equation</font>.  
 >&#10113;$Q_{t}$=$BQ_{t-1}$ is another way of writing <font color="Red">value iteration</font>.  
 
-<!--
-Contraction Mapping
--->
+### <font color="Red">Contraction Mapping</font>
+>It happens a lot in reinforcement learning.  Take <font color="Red">B</font> to be an operator:  
+>$\;\;$if for all $F$,$G$ and some $0\leq\gamma<1$,  
+>$\;\;\left\|BF-BG\right\|_{\infty}\leg\gamma\cdot\left\|F-G\right\|_{infty}$,  
+>then <font color="Red">B</font> is <font color="Red">contraction mapping</font>, where $F$ and $G$ are value functions of <font color="Red">Q</font> form.  
 
 <!--
 ### Maximum Is Non-Expansion
@@ -80,6 +82,8 @@ $Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)+\gamma\cdot \sum_{S'}P(S,A,S')\cdot max_{A'}Q
 <!-- \overset\triangle= -->
 <!-- \left|X\right| -->
 <!-- \xrightarrow{r_t} -->
+<!-- \left\|?\right\| => ||?||-->
+<!-- \left|?\right| => |?|-->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus, mathematic expression</font> -->
