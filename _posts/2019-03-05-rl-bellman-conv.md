@@ -28,10 +28,13 @@ title: Bellman Operator Makes Convergence
 >&#10113;$Q_{t}$=$BQ_{t-1}$ is another way of writing <font color="Red">value iteration</font>.  
 
 ### <font color="Red">Contraction Mapping</font>
->It happens a lot in reinforcement learning.  Take <font color="Red">B</font> to be an operator:  
+>It happens a lot in reinforcement learning.  Take <font color="Red">B</font> to be an operator,  
 >$\;\;$if for all $F$,$G$ and some $0\leq\gamma<1$,  
 >$\;\;\left\|BF-BG\right\|_{\infty}\leg\gamma\cdot\left\|F-G\right\|_{infty}$,  
->then <font color="Red">B</font> is <font color="Red">contraction mapping</font>, where $F$ and $G$ are value functions of <font color="Red">Q</font> form.  
+>then <font color="Red">B</font> is <font color="Red">contraction mapping</font>, where  
+>&#10112;$F$ and $G$ are value functions of <font color="Red">Q</font> form.  
+>&#10113;$\left\|Q\right\|_{\infty}$=$max_{S,A}\left|Q(S,A)\right|$, this notation sometimes called the infinity form, the max norm.  
+>&#10114;$\left\|F-G\right\|_{infty}$ this means the biggest difference between $F$ and $G$.  
 
 <!--
 ### Maximum Is Non-Expansion
