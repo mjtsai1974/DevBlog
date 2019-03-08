@@ -29,8 +29,8 @@ title: Bellman Operator Makes Convergence
 
 ### <font color="Red">Contraction Mapping</font>
 >It happens a lot in reinforcement learning.  Take <font color="Red">B</font> to be an operator,  
->$\;\;$if for all $F$,$G$ and some $0\leq\gamma<1$, $||BF-BG||\infty$,   
->$\;\;infinity(||BF-BG||)\leg\gamma\cdot infinity(||F-G||)$,  
+>$\;\;$if for all $F$,$G$ and some $0\leq\gamma<1$,   
+>$\;\;||BF-BG||\infty\leg\gamma\cdot ||F-G||\infty$,  
 >then <font color="Red">B</font> is <font color="Red">contraction mapping</font>, where  
 >&#10112;$F$ and $G$ are value functions of <font color="Red">Q</font> form.  
 >&#10113;$infinity(Q)$=$max_{S,A}\left|Q(S,A)\right|$, this notation sometimes called the infinity form, the max norm.  
@@ -87,6 +87,7 @@ $Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)+\gamma\cdot \sum_{S'}P(S,A,S')\cdot max_{A'}Q
 <!-- \xrightarrow{r_t} -->
 <!-- \left\|?\right\| => ||?||-->
 <!-- \left|?\right| => |?|-->
+<!-- ||BF-BG||\infty -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus, mathematic expression</font> -->
