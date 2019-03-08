@@ -30,11 +30,11 @@ title: Bellman Operator Makes Convergence
 ### <font color="Red">Contraction Mapping</font>
 >It happens a lot in reinforcement learning.  Take <font color="Red">B</font> to be an operator,  
 >$\;\;$if for all $F$,$G$ and some $0\leq\gamma<1$,   
->$\;\;||BF-BG||\infty\leg\gamma\cdot ||F-G||\infty$,  
+>$\;\;||BF-BG||\infty\leq\gamma\cdot ||F-G||\infty$,  
 >then <font color="Red">B</font> is <font color="Red">contraction mapping</font>, where  
 >&#10112;$F$ and $G$ are value functions of <font color="Red">Q</font> form.  
->&#10113;$infinity(Q)$=$max_{S,A}\left|Q(S,A)\right|$, this notation sometimes called the infinity form, the max norm.  
->&#10114;$infinity(||F-G||)$ this means the biggest difference between $F$ and $G$.  
+>&#10113;$||Q||\infty$=$max_{S,A}\left|Q(S,A)\right|$, this notation sometimes called the infinity form, the max norm.  
+>&#10114;$||F-G||\infty$ this means the biggest difference between $F$ and $G$.  
 
 <!--
 ### Maximum Is Non-Expansion
