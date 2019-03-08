@@ -36,7 +36,7 @@ title: Bellman Operator Makes Convergence
 >&#10113;$||Q||\infty$=$max_{S,A}\left|Q(S,A)\right|$, this notation sometimes called the infinity form, the max norm.  
 >&#10114;$||F-G||\infty$ this means the biggest difference between $F$ and $G$.  
 >
-><font color="Red">Contraction mapping</font> means whatever largest difference is, we are going to multiply it by something that makes it even <font color="OrangeRed">smaller</font>.  If you apply <font color="Red">B</font> onto $F$ and $G$, the distance between the resulting function is even <font color="OrangeRed">closer together</font> than they <font color="OrangeRed">started</font>.  
+>The <font color="Red">contraction mapping</font> means whatever largest difference is, we are going to multiply it by something that makes it even <font color="OrangeRed">smaller</font>.  If you apply <font color="Red">B</font> onto $F$ and $G$, the distance between the resulting function is even <font color="OrangeRed">closer together</font> than they <font color="OrangeRed">started</font>.  
 
 <!--
 ### Maximum Is Non-Expansion
