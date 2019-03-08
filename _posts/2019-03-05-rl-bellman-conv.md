@@ -29,7 +29,7 @@ title: Bellman Operator Makes Convergence
 
 ### <font color="Red">Contraction Mapping</font>
 >It happens a lot in reinforcement learning.  Take <font color="Red">B</font> to be an operator,  
->$\;\;$if for all $F$,$G$ and some $0\leq\gamma<1$, $\left\|\|BF-BG\right\|\|$,   
+>$\;\;$if for all $F$,$G$ and some $0\leq\gamma<1$, $||BF-BG||$,   
 >$\;\;{\left\|BF-BG\right\|}_\infty\leg\gamma\cdot{\left\|F-G\right\|}_\infty$,  
 >then <font color="Red">B</font> is <font color="Red">contraction mapping</font>, where  
 >&#10112;$F$ and $G$ are value functions of <font color="Red">Q</font> form.  
