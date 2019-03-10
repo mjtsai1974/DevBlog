@@ -53,7 +53,7 @@ title: Bellman Operator Makes Convergence
 >proof:  
 >Suppose we have $G^{\ast}$=$BF^{\ast}$ and $H^{\ast}$=$BF^{\ast}$, then $F^{\ast}$=$G^{\ast}$=$H^{\ast}$ just holds to hvave the unique $F^{\ast}$.  
 >
->If $G^{\ast}\neq G^{\ast}$, we could <font color="RosyBrown">not</font> get $||BG^{\ast}-BH^{\ast}||\infty$ smaller or converge, <font color="RosyBrown">no</font> way to get $G^{\ast}$ and $H^{\ast}$ closer.  
+>If $G^{\ast}\neq H^{\ast}$, we could <font color="RosyBrown">not</font> get $||BG-BH||\infty$ smaller or converge, <font color="RosyBrown">no</font> way to get $G^{\ast}$ and $H^{\ast}$ closer.  
 >
 >&#10113;$F_{t}$=$BF_{t-1}$, this leads to $F_{t}\rightarrow F^{\ast}$, value iteration converges.  
 ><font color="Brown">proof::mjtsai1974</font> 
