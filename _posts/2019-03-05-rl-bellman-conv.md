@@ -45,6 +45,19 @@ title: Bellman Operator Makes Convergence
 >It's the case that over time as we apply the <font color="Red">Bellman operator</font> - <font color="Red">B</font> over and over again, the state action pair where their maximum is, might change every time.  
 >&#10112;$||F-G||\infty$, this maximum norm is computing for the specific value function of $F$ and $G$, where their <font color="OrangeRed">absolute difference</font> is given the <font color="OrangeRed">biggest</font>.   
 >&#10113;$||BF-BG||\infty$ is different from $||F-G||\infty$ in that there is <font color="RosyBrown">no reason that $||BF-BG||\infty$ needs to the the same over and over again</font>.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Properties</font>  
+>If <font color="Red">B</font> is an operaton leads to <font color="Red">contraction mapping</font>:  
+>&#10112;$F^{\ast}$=$BF^{\ast}$ has a <font color="DeepPink">unique</font> solution.  
+>proof:  
+>Suppose we have $F_{1}^{\ast}$=$BF^{\ast}$ and $F_{2}^{\ast}$=$BF^{\ast}$, then $F^{\ast}$=$F_{1}^{\ast}$=$F_{2}^{\ast}$ just holds to hvave the unique $F^{\ast}$.  
+>
+>If $F_{1}^{\ast}\neq F_{2}^{\ast}$, we could <font color="RosyBrown">not</font> get $||BF_{1}^{\ast}-BF_{2}^{\ast}||\infty$ smaller or converge, <font color="RosyBrown">no</font> way to get $F_{1}^{\ast}$ and $F_{2}^{\ast}$ closer.  
+>
+>&#10113;$F_{t}$=$BF_{t-1}$, this leads to $F_{t}\rightarrow F^{\ast}$, value iteration converges.  
+><font color="Brown">proof::mjtsai1974</font> 
+>to be conti...  
 
 <!--
 ### Maximum Is Non-Expansion
