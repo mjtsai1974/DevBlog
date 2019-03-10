@@ -28,6 +28,8 @@ title: Bellman Operator Makes Convergence
 >&#10113;$Q_{t}$=$BQ_{t-1}$ is another way of writing <font color="Red">value iteration</font>.  
 
 ### <font color="Red">Contraction Mapping</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Definition</font>  
 >It happens a lot in reinforcement learning.  Take <font color="Red">B</font> to be an operator,  
 >$\;\;$if for all $F$,$G$ and some $0\leq\gamma<1$,   
 >$\;\;||BF-BG||\infty\leq\gamma\cdot ||F-G||\infty$,  
@@ -37,6 +39,12 @@ title: Bellman Operator Makes Convergence
 >&#10114;$||F-G||\infty$ this means the biggest difference between $F$ and $G$.  
 >
 >The <font color="Red">contraction mapping</font> means whatever largest difference is, we are going to multiply it by something that makes it even <font color="OrangeRed">smaller</font>.  If you apply <font color="Red">B</font> onto $F$ and $G$, the distance between the resulting function is even <font color="OrangeRed">closer together</font> than they <font color="OrangeRed">started</font>.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Hints</font>  
+>It's the case that over time as we apply the <font color="Red">Bellman operator</font> - <font color="Red">B</font> over and over again, the state action pair where their maximum is, might change every time.  
+>&#10112;$||F-G||\infty$, this maximum norm is computing for the specific value function of $F$ and $G$, where their <font color="OrangeRed">absolute difference</font> is given the <font color="OrangeRed">biggest</font>.   
+>&#10113;$||BF-BG||\infty$ is different from $||F-G||\infty$ in that there is <font color="RosyBrown">no reason that $||BF-BG||\infty$ needs to the the same over and over again</font>.  
 
 <!--
 ### Maximum Is Non-Expansion
