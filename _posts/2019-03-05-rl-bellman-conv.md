@@ -51,9 +51,9 @@ title: Bellman Operator Makes Convergence
 >If <font color="Red">B</font> is an operaton leads to <font color="Red">contraction mapping</font>:  
 >&#10112;$F^{\ast}$=$BF^{\ast}$ has a <font color="DeepPink">unique</font> solution.  
 >proof:  
->Suppose we have $G^{\ast}$=$BF^{\ast}$ and $H^{\ast}$=$BF^{\ast}$, then $F^{\ast}$=$G^{\ast}$=$H^{\ast}$ just holds to hvave the unique $F^{\ast}$.  
+>Suppose we have $G^{\ast}$=$BF^{\ast}$ and $H^{\ast}$=$BF^{\ast}$, then $F^{\ast}$=$F_{1}^{\ast}$=$F_{2}^{\ast}$ just holds to hvave the unique $F^{\ast}$.  
 >
->If $G^{\ast}\neq H^{\ast}$, we could <font color="RosyBrown">not</font> get $||BG-BH||\infty$ smaller or converge, <font color="RosyBrown">no</font> way to get $G^{\ast}$ and $H^{\ast}$ closer.  
+>If $F_{1}^{\ast}\neq F_{2}^{\ast}$, we could <font color="RosyBrown">not</font> get $||BF-BG||\infty$ smaller or converge, <font color="RosyBrown">no</font> way to get $F_{1}^{\ast}$ and $F_{2}^{\ast}$ closer.  
 >
 >&#10113;$F_{t}$=$BF_{t-1}$, this leads to $F_{t}\rightarrow F^{\ast}$, value iteration converges.  
 ><font color="Brown">proof::mjtsai1974</font> 
