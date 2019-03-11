@@ -61,6 +61,10 @@ title: Bellman Operator Makes Convergence
 >
 >By <font color="DeepSkyBlue">mathematics induction</font>, below deduction holds:  
 >$||BF_{t}-BF^{\ast}||\infty\leq\gamma\cdot ||F_{t}-F^{\ast}||\infty\leq\gamma^{2}\cdot ||F_{t-1}-F^{\ast}||\infty$...[B]  
+>
+>Next, substract [B] from [A], we get:  
+>$||BF_{t-1}-BF_{t}||\infty\leq\gamma\cdot(1-\gamma)\cdot||F_{t-1}-F^{\ast}||\infty$  
+>As we can tell that the difference term $||BF_{t-1}-BF_{t}||\infty$ will become smaller with respect to each transition in $t$, $t+1$,..., the vaule of $F$ just converges to $F^{\ast}$.  
 
 <!--
 >If $F_{1}^{\ast}\neq F_{2}^{\ast}$, we could <font color="RosyBrown">not</font> get $||BF-BG||\infty$ smaller or converge, <font color="RosyBrown">no</font> way to get $F_{1}^{\ast}$ and $F_{2}^{\ast}$ closer.  
