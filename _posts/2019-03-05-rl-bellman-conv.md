@@ -55,7 +55,8 @@ title: Bellman Operator Makes Convergence
 >
 >&#10113;$F_{t}$=$BF_{t-1}$, this leads to $F_{t}\rightarrow F^{\ast}$, value iteration converges.  
 ><font color="Brown">proof::mjtsai1974</font> 
->By definition, $||BF_{t-1}-BF^{\ast}||\infty\leq\gamma\cdot ||F_{t-1}-F^{\ast}||\infty$  
+>By definition, $||BF_{t-1}-BF^{\ast}||\infty\leq\gamma\cdot ||F_{t-1}-F^{\ast}||\infty$...[A]  
+>$\Rightarrow ||F_{t}-F^{\ast}||\infty\leq\gamma\cdot ||F_{t-1}-F^{\ast}||\infty$  
 
 <!--
 >If $F_{1}^{\ast}\neq F_{2}^{\ast}$, we could <font color="RosyBrown">not</font> get $||BF-BG||\infty$ smaller or converge, <font color="RosyBrown">no</font> way to get $F_{1}^{\ast}$ and $F_{2}^{\ast}$ closer.  
