@@ -69,9 +69,9 @@ title: Bellman Operator Makes Convergence
 >...  
 >$\Rightarrow||BF_{t-1}-BF_{t+n}||\infty\leq\gamma\cdot(1-\gamma^{n+1})\cdot||F_{t-1}-F^{\ast}||\infty$  
 >
->We can tell that the <font color="OrangeRed">first</font> difference term will become <font color="OrangeRed">stable</font> with respect to each transition in $t$, $t+1$,..., the vaule of $F$ just converges to $F^{\ast}$.  As $n\rightarrow\infty$, $\gamma\cdot(1-\gamma^{n})\rightarrow \gamma$ for $\gamma<1$just holds.  
+>We can tell that the <font color="OrangeRed">first</font> difference term will become <font color="OrangeRed">stable</font> with respect to each transition in $t$, $t+1$,..., the vaule of $F$ just converges to $F^{\ast}$.  As $n\rightarrow\infty$, we have $\gamma\cdot(1-\gamma^{n})\rightarrow \gamma$, for $\gamma<1$just holds.  
 >
->If $F$ is evaluated from $t-1$, after $n\rightarrow\infty$, it will just converge to $F^{\ast}$ with the acceptable difference no more than $\gamma$ times the difference between the original departuring $F_{t-1}$ and the final expected $F^{\ast}$.  
+>If $F$ is evaluated from $t-1$, after $n\rightarrow\infty$, it will just converge to $F^{\ast}$ with the acceptable difference <font color="RosyBrown">no</font> more than $\gamma$ times the difference between the original departuring $F_{t-1}$ and the final expected $F^{\ast}$.  
 
 <!--
 >As we can tell that the first difference term $||BF_{t-1}-BF_{t}||\infty$ will become smaller with respect to each transition in $t$, $t+1$,..., the vaule of $F$ just converges to $F^{\ast}$.  
