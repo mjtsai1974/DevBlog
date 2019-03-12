@@ -214,6 +214,7 @@ It is an extension of MDP.  Under construction...
 * [Temporal Difference Learning - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2018/12/23/rl-temp-diff-learn-part1/)
 * [Temporal Difference Learning - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2019/01/22/rl-temp-diff-learn-part2/)
 * [Temporal Difference In Q Form]({{ site.github.repo }}{{ site.baseurl }}/2019/02/19/rl-temp-diff-q/)
+* [Bellman Operator Makes Convergence]({{ site.github.repo }}{{ site.baseurl }}/2019/03/05/rl-bellman-conv/)
 * Markov Decision Process
 * Partial Observable Markov Decision Process
 * Q Learning Algorithm
