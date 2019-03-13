@@ -17,6 +17,7 @@ title: Bellman Operator Makes Convergence
 ><font color="OrangeRed">Definition of Bellman operator</font>  
 >$BQ$=$R(S,A)$+$\gamma\cdot{\textstyle\sum_{S'}}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$
 <!--
+not working!!!!
 >$[BQ](S,A)$  
 >=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$...definition  
 -->
@@ -78,7 +79,7 @@ title: Bellman Operator Makes Convergence
 >If $F$ is evaluated from $t-1$, after $n\rightarrow\infty$, it will just converge to $F^{\ast}$ with the acceptable difference <font color="RosyBrown">no</font> more than $\gamma$ times the difference between the original departuring $F_{t-1}$ and the final expected $F^{\ast}$.  
 
 ### <font color="DeepPink">The Bellman Operator Contracts</font>
->Given $Q_{1}$ and $Q_{2}$, then $||{BQ}_{1}-{BQ}_{2}||\infty\leq\gamma\cdot ||Q_{1}-Q_{2}||\infty$, this says that after we apply <font color="Red">B</font> onto $Q_{1}$ and $Q_{2}$, the distance between them is less than or equal to $\gamma$ times the original difference betwen them before we apply it.  
+>Given $Q_{1}$ and $Q_{2}$, then $\vert\vert BQ_1-BQ_2\vert\vert_\infty\leq\gamma\cdot\vert\vert Q_1-Q_2\vert\vert_\infty$, this says that after we apply <font color="Red">B</font> onto $Q_{1}$ and $Q_{2}$, the distance between them is less than or equal to $\gamma$ times the original difference betwen them before we apply it.  
 
 <!--
 >As we can tell that the first difference term $||BF_{t-1}-BF_{t}||\infty$ will become smaller with respect to each transition in $t$, $t+1$,..., the vaule of $F$ just converges to $F^{\ast}$.  
