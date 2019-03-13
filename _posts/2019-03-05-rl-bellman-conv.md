@@ -15,7 +15,7 @@ title: Bellman Operator Makes Convergence
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Definition of Bellman operator</font>  
->$BQ=R(S,A)+\gamma\cdot{\textstyle\sum_{S'}}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$
+>$BQ$=$R(S,A)$+$\gamma\cdot{\textstyle\sum_{S'}}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$
 <!--
 >$[BQ](S,A)$  
 >=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$...definition  
