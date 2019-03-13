@@ -15,8 +15,11 @@ title: Bellman Operator Makes Convergence
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Definition of Bellman operator</font>  
+>$BQ=R(S,A)+\gamma\cdot{\textstyle\sum_{S'}}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$
+<!--
 >$[BQ](S,A)$  
 >=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$...definition  
+-->
 >
 >Give <font color="Red">B</font> a <font color="Red">Q</font> function, the new thing we get out when we apply <font color="Red">B</font> onto <font color="Red">Q</font>, has the property that at the state action pair $(S,A)$, it is equal to the <font color="#9300FF">immediate reward</font> plus the <font color="#D600D6">discounted expected value</font> of the <font color="OrangeRed">next state, $S'$</font>.  
 >
