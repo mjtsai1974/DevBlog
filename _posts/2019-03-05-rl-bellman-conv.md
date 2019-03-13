@@ -37,10 +37,10 @@ not working!!!!
 ><font color="OrangeRed">Definition</font>  
 >It happens a lot in reinforcement learning.  Take <font color="Red">B</font> to be an operator,  
 >$\;\;$if for all $F$,$G$ and some $0\leq\gamma<1$,   
->$\;\;\vert\vert BF-BG\vert\vert_{\infty}\leq\gamma\cdot \vert\vertF-G\vert\vert_{\infty}$,  
+>$\;\;\vert\vert BF-BG\vert\vert_{\infty}\leq\gamma\cdot \vert\vert F-G\vert\vert_{\infty}$,  
 >then <font color="Red">B</font> is <font color="Red">contraction mapping</font>, where  
 >&#10112;$F$ and $G$ are value functions of <font color="Red">Q</font> form.  
->&#10113;$\vert\vert Q\vert\vert_{\infty}$=$max_{S,A}\left|Q(S,A)\right|$, this notation sometimes called the infinity form, the max norm.  
+>&#10113;$\vert\vert Q\vert\vert_{\infty}$=$max_{S,A}\vert Q(S,A)\vert$, this notation sometimes called the infinity form, the max norm.  
 >&#10114;$\vert\vert F-G\vert\vert_{\infty}$ this means the biggest difference between $F$ and $G$.  
 >
 >The <font color="Red">contraction mapping</font> means whatever largest difference is, we are going to multiply it by something that makes it even <font color="OrangeRed">smaller</font>.  If you apply <font color="Red">B</font> onto $F$ and $G$, the distance between the resulting function is even <font color="OrangeRed">closer together</font> than they <font color="OrangeRed">started</font>.  
@@ -61,18 +61,18 @@ not working!!!!
 >&#10113;$F_{t}$=$BF_{t-1}$, this leads to $F_{t}\rightarrow F^{\ast}$, value iteration converges.  
 ><font color="Brown">proof::mjtsai1974</font> 
 >Start from definition, we have:  
->$||BF_{t-1}-BF^{\ast}||\infty\leq\gamma\cdot ||F_{t-1}-F^{\ast}||\infty$...[A]  
->$\Rightarrow ||F_{t}-F^{\ast}||\infty\leq\gamma\cdot ||F_{t-1}-F^{\ast}||\infty$  
+>$\vert\vert BF_{t-1}-BF^{\ast}\vert\vert_{\infty}\leq\gamma\cdot \vert\vert F_{t-1}-F^{\ast}\vert\vert_{\infty}$...[A]  
+>$\Rightarrow \vert\vert F_{t}-F^{\ast}\vert\vert_{\infty}\leq\gamma\cdot \vert\vert F_{t-1}-F^{\ast}\vert\vert_{\infty}$  
 >
 >By <font color="DeepSkyBlue">mathematics induction</font>, below deduction holds:  
->$||BF_{t}-BF^{\ast}||\infty\leq\gamma\cdot ||F_{t}-F^{\ast}||\infty\leq\gamma^{2}\cdot ||F_{t-1}-F^{\ast}||\infty$...[B]  
+>$\vert\vert BF_{t}-BF^{\ast}\vert\vert_{\infty}\leq\gamma\cdot \vert\vert F_{t}-F^{\ast}\vert\vert_{\infty}\leq\gamma^{2}\cdot \vert\vert F_{t-1}-F^{\ast}\vert\vert_{\infty}$...[B]  
 >
 >Next, substract [B] from [A], we get:  
->$||BF_{t-1}-BF_{t}||\infty\leq\gamma\cdot(1-\gamma)\cdot||F_{t-1}-F^{\ast}||\infty$  
->$\Rightarrow||BF_{t-1}-BF_{t+1}||\infty\leq\gamma\cdot(1-\gamma^{2})\cdot||F_{t-1}-F^{\ast}||\infty$  
->$\Rightarrow||BF_{t-1}-BF_{t+2}||\infty\leq\gamma\cdot(1-\gamma^{3})\cdot||F_{t-1}-F^{\ast}||\infty$  
+>$\vert\vert BF_{t-1}-BF_{t}\vert\vert_{\infty}\leq\gamma\cdot(1-\gamma)\cdot\vert\vert F_{t-1}-F^{\ast}\vert\vert_{\infty}$  
+>$\Rightarrow\vert\vert BF_{t-1}-BF_{t+1}\vert\vert_{\infty}\leq\gamma\cdot(1-\gamma^{2})\cdot\vert\vert F_{t-1}-F^{\ast}\vert\vert_{\infty}$  
+>$\Rightarrow\vert\vert BF_{t-1}-BF_{t+2}\vert\vert_{\infty}\leq\gamma\cdot(1-\gamma^{3})\cdot\vert\vert F_{t-1}-F^{\ast}\vert\vert_{\infty}$  
 >...  
->$\Rightarrow||BF_{t-1}-BF_{t+n}||\infty\leq\gamma\cdot(1-\gamma^{n+1})\cdot||F_{t-1}-F^{\ast}||\infty$  
+>$\Rightarrow\vert\vert BF_{t-1}-BF_{t+n}\vert\vert_{\infty}\leq\gamma\cdot(1-\gamma^{n+1})\cdot\vert\vert F_{t-1}-F^{\ast}\vert\vert_{\infty}$  
 >
 >We can tell that the <font color="OrangeRed">first</font> difference term will become <font color="OrangeRed">stable</font> with respect to each transition in $t$, $t+1$,..., the vaule of $F$ just converges to $F^{\ast}$.  As $n\rightarrow\infty$, we have $\gamma\cdot(1-\gamma^{n})\rightarrow \gamma$, for $\gamma<1$just holds.  
 >
