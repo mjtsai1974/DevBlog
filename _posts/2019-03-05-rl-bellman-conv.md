@@ -48,7 +48,7 @@ not working!!!!
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Hints</font>  
 >It's the case that over time as we apply the <font color="Red">Bellman operator</font> - <font color="Red">B</font> over and over again, the state action pair where their maximum is, might change every time.  
->&#10112;$\vert\vert F-G\vert\vert_{\infty}$, this maximum norm is computing for the specific value function of $F$ and $G$, where their <font color="OrangeRed">absolute difference</font> is given the <font color="OrangeRed">biggest</font>.   
+>&#10112;$\vert\vert F-G\vert\vert_{\infty}$, this <font color="DeepSkyBlue">maximum norm</font> is computing for the specific value function of $F$ and $G$, where their <font color="OrangeRed">absolute difference</font> is given the <font color="OrangeRed">biggest</font>.   
 >&#10113;$\vert\vert BF-BG\vert\vert_{\infty}$ is different from $\vert\vert F-G\vert\vert_{\infty}$ in that there is <font color="RosyBrown">no reason that $\vert\vert BF-BG\vert\vert_{\infty}$ needs to the the same over and over again</font>.  
 >
 ><font color="DeepSkyBlue">[3]</font>
@@ -80,6 +80,8 @@ not working!!!!
 
 ### <font color="DeepPink">The Bellman Operator Contracts</font>
 >Given $Q_{1}$ and $Q_{2}$, then $\vert\vert BQ_1-BQ_2\vert\vert_\infty\leq\gamma\cdot\vert\vert Q_1-Q_2\vert\vert_\infty$, this says that after we apply <font color="Red">B</font> onto $Q_{1}$ and $Q_{2}$, the distance between them is less than or equal to $\gamma$ times the original difference betwen them before we apply it.  
+>
+>So, by applying the <font color="Red">Bellman operator</font>, we move these 2 $Q$ functions <font color="Red">closer</font> together.  
 
 <!--
 >As we can tell that the first difference term $||BF_{t-1}-BF_{t}||\infty$ will become smaller with respect to each transition in $t$, $t+1$,..., the vaule of $F$ just converges to $F^{\ast}$.  
