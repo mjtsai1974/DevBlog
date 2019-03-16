@@ -131,7 +131,7 @@ not working!!!!
 >$\leq f(a_{1})-g(a_{1})$  
 >=$max_{a}\vert f(a)-g(a)\vert$  
 
->!--
+<!--
 ### Convergence Theorem: The Bellman Operator
 >Next to do..the 3 properties
 -->
