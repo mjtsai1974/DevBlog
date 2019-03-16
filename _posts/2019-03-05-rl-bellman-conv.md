@@ -98,7 +98,8 @@ not working!!!!
 >$\;\;$-$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A_{Q_{2}}'}Q_{2}(S',A_{Q_{2}}')\vert$  
 >=$max_{S,A}\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot\vert max_{A_{Q_{1}}'}Q_{1}(S',A_{Q_{1}}')$  
 >$\;\;$-$max_{A_{Q_{2}}'}Q_{2}(S',A_{Q_{2}}')\vert$  
->=  
+>$\leq \gamma\cdot max_{S'}\vert max_{A_{Q_{1}}'}Q_{1}(S',A_{Q_{1}}')$  
+>$\;\;$-$max_{A_{Q_{2}}'}Q_{2}(S',A_{Q_{2}}')\vert$  
 
 <!--
 >As we can tell that the first difference term $||BF_{t-1}-BF_{t}||\infty$ will become smaller with respect to each transition in $t$, $t+1$,..., the vaule of $F$ just converges to $F^{\ast}$.  
