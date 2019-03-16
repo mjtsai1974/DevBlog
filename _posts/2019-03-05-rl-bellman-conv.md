@@ -114,10 +114,24 @@ not working!!!!
 >If $F_{1}^{\ast}\neq F_{2}^{\ast}$, we could <font color="RosyBrown">not</font> get $||BF-BG||\infty$ smaller or converge, <font color="RosyBrown">no</font> way to get $F_{1}^{\ast}$ and $F_{2}^{\ast}$ closer.  
 -->
 
-<!--
-### Maximum Is Non-Expansion
->Next to do ..
+### <font color="DeepPink">Maximum Is Non-Expansion</font>
+>For all $f$ and $g$, we have:  
+>$\vert max_{a}f(a)-max_{a}g(a)\vert\leq max_{a}\vert f(a)-g(a)\vert$  
+>
+>proof:  
+>$\Rightarrow$Suppose we have below maximum argument holds:  
+>&#10112;$maxarg_{a}f(a)$=$a_{1}$  
+>&#10113;$maxarg_{a}g(a)$=$a_{2}$    
+>And, we assume $f(a_{1})\geq g(a_{2})$, this assumption owuld not lose generality in this proof, we can also prove with the assumption $f(a_{1})\leq g(a_{2})$.  
+>
+>$\Rightarrow$since $maxarg_{a}g(a)$=$a_{2}$, we have $g(a_{2})\geq g(a_{1})$  
+>
+>$\Rightarrow\vert max_{a}f(a)-max_{a}g(a)\vert$  
+>=$f(a_{1})-g(a_{2})$  
+>$\leq f(a_{1})-g(a_{1})$  
+>=$max_{a}\vert f(a)-g(a)\vert$  
 
+>!--
 ### Convergence Theorem: The Bellman Operator
 >Next to do..the 3 properties
 -->
