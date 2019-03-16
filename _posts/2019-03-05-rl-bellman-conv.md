@@ -103,6 +103,8 @@ not working!!!!
 >=$\gamma\cdot max_{S',A_{Q_{1}}',A_{Q_{2}}'}\vert Q_{1}(S',A_{Q_{1}}')$-$Q_{2}(S',A_{Q_{2}}')\vert$  
 >
 >By tossing out the <font color="OrangeRed">weight combination</font>, the term <font color="OrangeRed">$\sum_{S'}P(S'\vert S,A)$</font> of $Q$ values, <font color="DeepSkyBlue">we just worry about the $S'$, where the difference is the largest</font>, <font color="DeepPink">the weighted average or the convex combination could not be larger than the biggest difference at any $S'$</font>, therefore, <font color="RosyBrown">no</font> need to keep $max_{S,A}$.  
+>
+>&#10114;$\vert\vert BQ_1-BQ_2\vert\vert_\infty\leq\gamma\cdot\vert\vert Q_1-Q_2\vert\vert_\infty$ is thus proved.  
 
 <!--
 >As we can tell that the first difference term $||BF_{t-1}-BF_{t}||\infty$ will become smaller with respect to each transition in $t$, $t+1$,..., the vaule of $F$ just converges to $F^{\ast}$.  
