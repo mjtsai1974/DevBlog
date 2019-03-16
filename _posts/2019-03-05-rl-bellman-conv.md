@@ -86,11 +86,13 @@ not working!!!!
 >In this section, we are going to prove the definition of <font color="Red">contraction mapping</font> by <font color="Red">B</font>.  
 >
 >proof:  
->&#10112;restate the definition of <font color="Red">B</font>:  
+>&#10112;when we apply <font color="Red">B</font> onto $Q$:  
 >$\lbrack BQ\rbrack(S,A)$=$R(SA)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
 >&#10113;the next thing is to unpack the definition of the <font color="Orange">max norm</font>.  
->  
-  
+>$\vert\vert BQ_{1}-BQ_{2}\vert\vert_{\infty}$  
+>=$max_{S,A}\vert BQ_{1}(S,A)-BQ_{2}(S,A)\vert$  
+>...we are going to maximize over all state action pair  
+>=
 
 <!--
 >As we can tell that the first difference term $||BF_{t-1}-BF_{t}||\infty$ will become smaller with respect to each transition in $t$, $t+1$,..., the vaule of $F$ just converges to $F^{\ast}$.  
