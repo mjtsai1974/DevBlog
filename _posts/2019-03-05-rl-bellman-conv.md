@@ -40,7 +40,7 @@ not working!!!!
 >$\;\;\vert\vert BF-BG\vert\vert_{\infty}\leq\gamma\cdot \vert\vert F-G\vert\vert_{\infty}$,  
 >then <font color="Red">B</font> is <font color="Red">contraction mapping</font>, where  
 >&#10112;$F$ and $G$ are value functions of <font color="Red">Q</font> form.  
->&#10113;$\vert\vert Q\vert\vert_{\infty}$=$max_{S,A}\vert Q(S,A)\vert$, this notation sometimes called the infinity form, the max norm.  
+>&#10113;$\vert\vert Q\vert\vert_{\infty}$=$max_{S,A}\vert Q(S,A)\vert$, this notation sometimes called the <font color="Orange">infinity form</font>, the <font color="Orange">max norm</font>.  
 >&#10114;$\vert\vert F-G\vert\vert_{\infty}$ this means the biggest difference between $F$ and $G$.  
 >
 >The <font color="Red">contraction mapping</font> means whatever largest difference is, we are going to multiply it by something that makes it even <font color="OrangeRed">smaller</font>.  If you apply <font color="Red">B</font> onto $F$ and $G$, the distance between the resulting function is even <font color="OrangeRed">closer together</font> than they <font color="OrangeRed">started</font>.  
@@ -78,10 +78,19 @@ not working!!!!
 >
 >If $F$ is evaluated from $t-1$, after $n\rightarrow\infty$, it will just converge to $F^{\ast}$ with the acceptable difference <font color="RosyBrown">no</font> more than $\gamma$ times the difference between the original departuring $F_{t-1}$ and the final expected $F^{\ast}$.  
 
-### <font color="DeepPink">The Bellman Operator Contracts</font>
+### <font color="DeepPink">The Bellman Operator Contracts</font>: The Proof
 >Given $Q_{1}$ and $Q_{2}$, then $\vert\vert BQ_1-BQ_2\vert\vert_\infty\leq\gamma\cdot\vert\vert Q_1-Q_2\vert\vert_\infty$, this says that after we apply <font color="Red">B</font> onto $Q_{1}$ and $Q_{2}$, the distance between them is less than or equal to $\gamma$ times the original difference betwen them before we apply it.  
 >
 >So, by applying the <font color="Red">Bellman operator</font>, we move these 2 $Q$ functions <font color="Red">closer</font> together.  
+>
+>In this section, we are going to prove the definition of <font color="Red">contraction mapping</font> by <font color="Red">B</font>.  
+>
+>proof:  
+>&#10112;restate the definition of <font color="Red">B</font>:  
+>$\lbrack BQ\rbrack(S,A)$=$R(SA)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
+>&#10113;the next thing is to unpack the definition of the <font color="Orange">max norm</font>.  
+>  
+  
 
 <!--
 >As we can tell that the first difference term $||BF_{t-1}-BF_{t}||\infty$ will become smaller with respect to each transition in $t$, $t+1$,..., the vaule of $F$ just converges to $F^{\ast}$.  
@@ -142,7 +151,7 @@ $Q_{T-1}(S,A)$+$\alpha\cdot(R(S,A)+\gamma\cdot \sum_{S'}P(S,A,S')\cdot max_{A'}Q
 <!-- \xrightarrow{r_t} -->
 <!-- \left\|?\right\| => ||?||-->
 <!-- \left|?\right| => |?|-->
-<!-- ||BF-BG||\infty -->
+<!-- \lbrack BQ\rbrack => [BQ] -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus, mathematic expression</font> -->
