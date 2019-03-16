@@ -92,10 +92,12 @@ not working!!!!
 >$\vert\vert BQ_{1}-BQ_{2}\vert\vert_{\infty}$  
 >=$max_{S,A}\vert BQ_{1}(S,A)-BQ_{2}(S,A)\vert$  
 >...we are going to maximize over all state action pair  
->=$max_{S,A}\vert R(S,A)+\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A_{Q_{1}}'}Q(S',A_{Q_{1}}')$  
->$\;\;$-$R(S,A)-\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A_{Q_{2}}'}Q(S',A_{Q_{2}}')\vert$  
->=$max_{S,A}\vert \gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A_{Q_{1}}'}Q(S',A_{Q_{1}}')$  
->$\;\;$-$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A_{Q_{2}}'}Q(S',A_{Q_{2}}')\vert$  
+>=$max_{S,A}\vert R(S,A)+\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A_{Q_{1}}'}Q_{1}(S',A_{Q_{1}}')$  
+>$\;\;$-$R(S,A)-\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A_{Q_{2}}'}Q_{2}(S',A_{Q_{2}}')\vert$  
+>=$max_{S,A}\vert \gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A_{Q_{1}}'}Q_{1}(S',A_{Q_{1}}')$  
+>$\;\;$-$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A_{Q_{2}}'}Q_{2}(S',A_{Q_{2}}')\vert$  
+>=$max_{S,A}\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot\vert max_{A_{Q_{1}}'}Q_{1}(S',A_{Q_{1}}')$  
+>$\;\;$-$max_{A_{Q_{2}}'}Q_{2}(S',A_{Q_{2}}')\vert$  
 >=  
 
 <!--
