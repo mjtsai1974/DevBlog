@@ -8,15 +8,15 @@ title: Bellman Operator And Convergence Properties
 The <font color="Red">Bellman operator</font> of <font color="Red">contraction mapping</font> makes the <font color="OrangeRed">statement</font> of convergence concrete and come out the major properties.
 </p>
 
-<!--
 ### The Statement of Convergence
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">The statement</font>  
->to be conti...
+>&#10112;let <font color="Red">B</font> be an operator of <font color="Red">contraction mapping</font>, and $Q^{\ast}$=$BQ^{\ast}$ be it's fixed point.  
+>&#10113;let $Q_{0}$ be a $Q$ function, and define $Q_{t+1}$=$\lbrack BQ_{t}\rbrack Q_{t}$, then $Q_{t}\rightarrow Q^{\ast}$.  
+>
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Special notes</font>  
 >to be conti...
--->
 
 ### Addendum
 >&#10112;[Convergence-1, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4436560172/concepts/44332503000923)  
