@@ -14,11 +14,13 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >&#10112;let <font color="Red">B</font> be an operator of <font color="Red">contraction mapping</font>, and $Q^{\ast}$=$BQ^{\ast}$ be it's fixed point.  
 >&#10113;let $Q_{0}$ be a $Q$ function, and define $Q_{t+1}$=$\lbrack B_{t}Q_{t}\rbrack Q_{t}$, then $Q_{t}\rightarrow Q^{\ast}$.  
 >
->$\Rightarrow$Suppose we have been given some sequence of $Q$ functions.  
+>Suppose we have been given some sequence of $Q$ functions.  
 >&#10112;it starts off with $Q_{0}$ and the way we're going <font color="DeepSkyBlue">to generate the next step from the previous step</font>, is that we are going to have a <font color="Green">new</font> kind of operator, $B_{t}$.  
 >&#10113;$B_{t}$ is going to be applied to $Q_{t}$, producing an operator $\lbrack B_{t}Q_{t}\rbrack$ that we then apply to $Q_{t}$, and that's what we assign $Q_{t+1}$ to be.  
 >
->$\Rightarrow$
+>So, in the context of $Q$ learning, this is essential the <font color="Red">$Q$ learning update</font>, there exists <font color="DeepSkyBlue">2 different $Q$ functions</font> that are used in the <font color="Red">$Q$ learning update</font>:  
+>&#10112;  
+>&#10113;  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Special notes</font>  
