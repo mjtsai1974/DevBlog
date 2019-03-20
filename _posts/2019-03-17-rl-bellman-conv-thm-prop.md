@@ -19,8 +19,8 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >&#10113;$B_{t}$ is going to be applied to $Q_{t}$, producing an operator $\lbrack B_{t}Q_{t}\rbrack$ that we then apply to $Q_{t}$, and that's what we assign $Q_{t+1}$ to be.  
 >
 >So, in the context of $Q$ learning, this is essential the <font color="Red">$Q$ learning update</font>, there exists <font color="DeepSkyBlue">2 different $Q$ functions</font> that are used in the <font color="Red">$Q$ learning update</font>:  
->&#10112;  
->&#10113;  
+>&#10112;one is the $Q_{t}$ function in $\lbrack B_{t}Q_{t}\rbrack$ that is used to <font color="DeepSkyBlue">average</font> together, to take care of the fact there is <font color="OrangeRed">noise</font> in the <font color="#8400E6">probabilistic transitions</font> of <font color="#EB00EB">stochasticity</font>.  
+>&#10113;the other one is the $Q_{t}$ that we are using in the <font color="DeepSkyBlue">one step look ahead</font> as part of the <font color="Red">Bellman operation</font>.   
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Special notes</font>  
