@@ -35,6 +35,7 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >For all $U_{1}$,$U_{2}$, $S$, $A$:  
 >$\;\;\vert(\lbrack B_{t}U_{1}\rbrack)Q^{\ast}(S,A)-(\lbrack B_{t}U_{2}\rbrack)Q^{\ast}(S,A)\vert$  
 >$\;\;\leq(1-\alpha_{t}(S,A))\cdot\vert U_{1}(S,A)-U_{2}(S,A)\vert$  
+>, where the littlecase <font color="OrangeRed">$t$</font> says that <font color="Red">$B$</font> is applied onto the <font color="OrangeRed">$t$-th</font> state's <font color="OrangeRed">current transition</font> to <font color="OrangeRed">next $t+1$ state</font>.  
 >
 ><font color="Brown">proof::mjtsai1974</font>  
 >$\Rightarrow$Recall that in [Bellman Operator Makes Convergence]({{ site.github.repo }}{{ site.baseurl }}/2019/03/05/rl-bellman-conv/):  
@@ -51,9 +52,11 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >=$Q_{T}(S,A)$  
 >=$Q_{T-1}(S,A)$+$\alpha_{T}\cdot(R(S,A)$  
 >$\;\;$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))$  
+>, where uppercase <font color="OrangeRed">$T$</font> stands for the <font color="OrangeRed">$T$-th eposide from state $S$ to state $S'$</font>.  
 >
->$\Rightarrow$Take $Q_{T-1}$ as $U_{1}$ and $U_{2}$, and have $Q_{T-1}$ replaced by $Q^{\ast}$, then:  
->
+>$\Rightarrow$Take $\lbrack BQ_{T-1}\rbrack$'s $Q_{T-1}$ term as $U_{1}$ and $U_{2}$, and have the second $Q_{T-1}$ term replaced by $Q^{\ast}$, then:  
+>$\vert(\lbrack BU_{1}\rbrack)Q^{\ast}(S,A)-(\lbrack BU_{2}\rbrack)Q^{\ast}(S,A)\vert$  
+>=  
 
 <!--
 ><font color="OrangeRed">[Property 2]</font>  
