@@ -72,7 +72,11 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >
 >$\Rightarrow$Why it holds?  
 >Because $(D_{U_{1}}-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}\cdot D_{U_{2}})\leq(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot (D_{U_{1}}-D_{U_{2}})$  
->, it is the maximum non-expansion.  
+>$\Leftrightarrow$  
+>$maxarg(D_{U_{1}})$=$1$  
+>$maxarg(D_{U_{2}})$=$\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}$  
+>$maxarg(D_{U_{1}-D_{U_{2}})$=$1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}$  
+>, it is the <font color="OrangeRed">maximum non-expansion</font>.  
 >
 >&#10112;take $1-\alpha$=$(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot\alpha_{U_{1}}$  
 >&#10113;  
