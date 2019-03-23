@@ -28,6 +28,9 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >&#10113;<font color="OrangeRed">$t$ plus plus</font> means that we starts from $t$, with some effort of plus plus to gain some reward maybe.  If we are from $t+1$, then we say $\lbrack B_{t+1}Q_{t+1}\rbrack$=$B_{(t+1)++}$.  
 >&#10114;in the final fixed point of $Q^{\ast}$=$BQ^{\ast}$, the $B$ term is actually $B_{\ast}$.  
 
+### The Convergence Properties
+>
+
 ### Addendum
 >&#10112;[Convergence-1, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4436560172/concepts/44332503000923)  
 >&#10113;[Convergence-2, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4436560172/concepts/44332503010923)  
