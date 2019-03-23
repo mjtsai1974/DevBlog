@@ -68,8 +68,7 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$\Rightarrow$Continue above deduction:  
 >$\vert\alpha_{U_{1}}\cdot D_{U_{1}}-\alpha_{U_{2}}\cdot D_{U_{2}}\vert$  
 >$\approx\vert(D_{U_{1}}-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}\cdot D_{U_{2}})\vert\cdot\alpha_{U_{1}}$  
->$\leq\vert(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot (D_{U_{1}}-D_{U_{2}})\vert\cdot\alpha_{U_{1}}$  
->...[A]
+>$\leq\vert(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot (D_{U_{1}}-D_{U_{2}})\vert\cdot\alpha_{U_{1}}$...[A]
 >
 >$\Rightarrow$Why it holds?  
 >Because $(D_{U_{1}}-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}\cdot D_{U_{2}})\leq(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot (D_{U_{1}}-D_{U_{2}})$...[B]  
@@ -79,9 +78,23 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$maxarg(D_{U_{1}}-D_{U_{2}})$=$1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}$  
 >, it is the <font color="OrangeRed">maximum non-expansion</font>.  
 >
->$\Rightarrow$Finally, multiplying both side of [B] with $\alpha_{U_{1}}$ would we get [A], then:  
->&#10112;take $1-\alpha$=$(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot\alpha_{U_{1}}$, we just get the inequality proved.    
->&#10113;  
+>$\Rightarrow$Multiplying both side of [B] with $\alpha_{U_{1}}$ would we get [A], then:  
+>&#10112;take $1-\alpha_{T}$=$(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot\alpha_{U_{1}}$, we just get the inequality proved.    
+>&#10113;take $T$=$t$, for we are evaluating the $t$-th transition by $T$-th eposide, then we get  
+>$(1-\alpha_{t})\cdot (D_{U_{1}}-D_{U_{2}})$...[C]  
+>&#10114;next, add the term $Q_{T-1}(S,A)$  
+>$(1-\alpha_{t})\cdot (Q_{T-1}(S,A)+D_{U_{1}}-(Q_{T-1}(S,A)+D_{U_{2}}))$...[D]  
+>, which is identical to [C].  
+>
+>$\Rightarrow$Finally, we establish this property:   
+>$\;\;\vert(\lbrack B_{t}U_{1}\rbrack)Q^{\ast}(S,A)-(\lbrack B_{t}U_{2}\rbrack)Q^{\ast}(S,A)\vert$  
+>$\;\;\leq(1-\alpha_{t}(S,A))\cdot\vert U_{1}(S,A)-U_{2}(S,A)\vert$  
+>, in this proof we're expressing the distinct $U_{1}$ and $U_{2}$ in terms of <font color="OrangeRed">temporal difference</font> form:  
+>$Q_{T}(S,A)$  
+>=$Q_{T-1}(S,A)$+$\alpha_{T}\cdot(R(S,A)$  
+>$\;\;$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))$  
+>&#10112;<font color="OrangeRed">$T$ means the $U_{1}$, $U_{2}$ is evaluating in the $T$-th eposide for their state transition</font>.  
+>&#10113;take $T$=$\\{T_{U_{1}}, T_{U_{2}}\\}$, <font color="DeepPink">if $T_{U_{1}}$=$T_{U_{2}}$, the proof just makes it right</font>; however, <font color="#C20000">the difference won't become larger even if $T_{U_{1}}\neq T_{U_{2}}$, and we keep on applying this Bellman operator oevr and oevr again!!!</font>  
 
 <!--
 ><font color="OrangeRed">[Property 2]</font>  
