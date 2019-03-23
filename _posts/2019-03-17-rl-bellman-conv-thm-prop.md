@@ -69,16 +69,18 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$\vert\alpha_{U_{1}}\cdot D_{U_{1}}-\alpha_{U_{2}}\cdot D_{U_{2}}\vert$  
 >$\approx\vert(D_{U_{1}}-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}\cdot D_{U_{2}})\vert\cdot\alpha_{U_{1}}$  
 >$\leq\vert(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot (D_{U_{1}}-D_{U_{2}})\vert\cdot\alpha_{U_{1}}$  
+>...[A]
 >
 >$\Rightarrow$Why it holds?  
->Because $(D_{U_{1}}-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}\cdot D_{U_{2}})\leq(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot (D_{U_{1}}-D_{U_{2}})$  
+>Because $(D_{U_{1}}-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}\cdot D_{U_{2}})\leq(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot (D_{U_{1}}-D_{U_{2}})$...[B]  
 >$\Leftrightarrow$  
 >$maxarg(D_{U_{1}})$=$1$  
 >$maxarg(D_{U_{2}})$=$\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}$  
->$maxarg(D_{U_{1}-D_{U_{2}})$=$1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}$  
+>$maxarg(D_{U_{1}}-D_{U_{2}})$=$1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}$  
 >, it is the <font color="OrangeRed">maximum non-expansion</font>.  
 >
->&#10112;take $1-\alpha$=$(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot\alpha_{U_{1}}$  
+>$\Rightarrow$Finally, multiplying both side of [B] with $\alpha_{U_{1}}$ would we get [A], then:  
+>&#10112;take $1-\alpha$=$(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot\alpha_{U_{1}}$, we just get the inequality proved.    
 >&#10113;  
 
 <!--
