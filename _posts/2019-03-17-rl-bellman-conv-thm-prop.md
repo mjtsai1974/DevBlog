@@ -37,7 +37,8 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$\;\;\leq(1-\alpha_{t}(S,A))\cdot\vert U_{1}(S,A)-U_{2}(S,A)\vert$  
 >
 ><font color="Brown">proof::mjtsai1974</font>  
->$\Rightarrow$Recall that $\lbrack BQ\rbrack(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$ in [Bellman Operator Makes Convergence]({{ site.github.repo }}{{ site.baseurl }}/2019/03/05/rl-bellman-conv/).  
+>$\Rightarrow$Recall that in [Bellman Operator Makes Convergence]({{ site.github.repo }}{{ site.baseurl }}/2019/03/05/rl-bellman-conv/):  
+>$\;\;\lbrack BQ\rbrack(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
 >&#10112;if we take $Q^{\ast}$=$BQ^{\ast}$, this indicates that  
 >$Q^{\ast}(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{any}(S',A')$  
 >, we can transite from any $Q$, the $Q_{any}$ to $Q^{\ast}$  
