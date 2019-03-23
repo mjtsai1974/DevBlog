@@ -43,8 +43,14 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$Q^{\ast}(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{any}(S',A')$  
 >, we can transite from any $Q$, the $Q_{any}$ to $Q^{\ast}$  
 >, where $Q_{any}$=$\\{Q_{t},Q_{t+1},Q_{t+2},...Q^{\ast}\\}$  
->&#10113;  
->&#10114;  
+>&#10113;therefore, we have it holds:  
+>$Q_{t+1}(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{t}(S',A')$  
+>
+>$\Rightarrow\lbrack BQ\rbrack$ is a kind of operator, could be used to apply on $Q$.  By $TD(0)$, we can establish it:  
+>$(\lbrack BQ_{T-1}\rbrack)Q_{T-1}(S,A)$  
+>=$Q_{T}(S,A)$  
+>=$Q_{T-1}(S,A)$+$\alpha_{T}\cdot(R(S,A)$  
+>$\;\;$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))$  
 >
 <!--
 ><font color="OrangeRed">[Property 2]</font>  
