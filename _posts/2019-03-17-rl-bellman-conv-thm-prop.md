@@ -29,6 +29,7 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >&#10114;in the final fixed point of $Q^{\ast}$=$BQ^{\ast}$, the $B$ term is actually $B_{\ast}$.  
 
 ### The Convergence Properties
+>The cool thing is that this aequence of $Q$ functions, starting from any $Q_{0}$, by keeping applying this($Q_{t+1}$=$\lbrack B_{t}Q_{t}\rbrack Q_{t}$), we're going to approach $Q^{\ast}$, as long as we have certain properties holding on how we define this $B_{t}$.  
 >
 
 ### Addendum
