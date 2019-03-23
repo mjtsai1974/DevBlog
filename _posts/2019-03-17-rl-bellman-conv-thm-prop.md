@@ -57,9 +57,9 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$\Rightarrow$Take $\lbrack BQ_{T-1}\rbrack$'s $Q_{T-1}$ term as $U_{1}$ and $U_{2}$, and have the second $Q_{T-1}$ term replaced by $Q^{\ast}$, then:  
 >$\vert(\lbrack BU_{1}\rbrack)Q^{\ast}(S,A)-(\lbrack BU_{2}\rbrack)Q^{\ast}(S,A)\vert$  
 >=$\vert\alpha_{U_{1}}\cdot(R(S,A)$  
->$\;\;$+$\gamma\cdot\sum_{S'}P_{U_{1}}(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))$  
+>$\;\;$+$\gamma\cdot\sum_{S'}P_{U_{1}}(S'\vert S,A)\cdot max_{A'}Q^{\ast}(S',A')-Q^{\ast}(S,A))$  
 >-$\alpha_{U_{2}}\cdot(R(S,A)$  
->$\;\;$+$\gamma\cdot\sum_{S'}P_{U_{2}}(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))\vert$  
+>$\;\;$+$\gamma\cdot\sum_{S'}P_{U_{2}}(S'\vert S,A)\cdot max_{A'}Q^{\ast}(S',A')-Q^{\ast}(S,A))\vert$  
 >
 
 <!--
