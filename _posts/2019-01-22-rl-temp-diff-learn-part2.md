@@ -153,7 +153,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >All above are under the condition that we have been given <font color="RosyBrown">partial</font>, <font color="RosyBrown">incomplete</font> data <font color="RosyBrown">before</font> we know the full model of state transition, or we are given the complete data of a target model to be predicted, we still believe that we don't have it yet!!  
 >
 ><font color="DeepSkyBlue">[5]</font>
-><font color="OrangeRed">The appropriate apply::mjtsai1974</font>  
+><font color="Brown">The appropriate apply::mjtsai1974</font>  
 >Trivially, [D] relates the final state value of $V_{T-1}(S_{t+k})$ to the target evaluated state $S_{t-1}$ in eposide $T$, whose value is expressed in terms of $V_{T-1}(S_{t-1})$.  
 >$V_{T}(S_{t-1})$  
 >=$E[r_{t}+\gamma\cdot r_{t+1}+\gamma^{2}\cdot r_{t+2}$  
@@ -164,7 +164,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >&#10113;<font color="DeepSkyBlue">before $k$ is large enough</font>, we should be able to <font color="DeepSkyBlue">calculate new arrivaed state's value</font>, which is reasonable <font color="DeepSkyBlue">to related current arrived state to the target evaluated state</font>, <font color="OrangeRed">repeat</font> this behavior <font color="OrangeRed">until $k$ is large enough</font>.  
 >
 ><font color="DeepSkyBlue">[6]</font>
-><font color="OrangeRed">After $k$ is large enough::mjtsai1974</font>  
+><font color="Brown">After $k$ is large enough::mjtsai1974</font>  
 >Evenmore, <font color="Red">after $k$ is large enough</font> to ignore these 2 terms, the algorithm should have a design to go back to <font color="OrangeRed">re-calculate</font> the target state's value, <font color="OrangeRed">the transition must range from $S_{t-1}$ to $S_{t+k-1}$</font>, thus to move toward a bit more closed to have a much maturer condition <font color="OrangeRed">to make a toggle of decision according to the new evaluated target state's value</font>.  
 >
 >Finally, <font color="Red">when $k$ is large enough</font>, it means that we have <font color="OrangeRed">state transition over a rather long horizon</font>, we are <font color="9300FF">safe to just use the experience of saw rewards</font>, since the update term of intermediate nodes would just be cancel out by the temporal difference equation(like [A] with $\lambda\neq 0$), thought by mjtsai1974, and might be evaluated by program in the future(to be conti).  
