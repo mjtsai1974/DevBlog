@@ -54,12 +54,15 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$\;\;$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))$  
 >, where uppercase <font color="OrangeRed">$T$</font> stands for the <font color="OrangeRed">$T$-th eposide from state $S$ to state $S'$</font>.  
 >
->$\Rightarrow$Take $\lbrack BQ_{T-1}\rbrack$'s $Q_{T-1}$ term as $U_{1}$ and $U_{2}$, and have the second $Q_{T-1}$ term replaced by $Q^{\ast}$, then:  
+>$\Rightarrow$Take $(\lbrack BQ_{T-1}\rbrack)Q_{T-1}(S,A)$'s first $Q_{T-1}$ term as $U_{1}$ and $U_{2}$, and have the second $Q_{T-1}$ term replaced by $Q^{\ast}$, then:  
 >$\vert(\lbrack BU_{1}\rbrack)Q^{\ast}(S,A)-(\lbrack BU_{2}\rbrack)Q^{\ast}(S,A)\vert$  
 >=$\vert\alpha_{U_{1}}\cdot(R(S,A)$  
 >$\;\;$+$\gamma\cdot\sum_{S'}P_{U_{1}}(S'\vert S,A)\cdot max_{A'}Q^{\ast}(S',A')-Q^{\ast}(S,A))$  
 >-$\alpha_{U_{2}}\cdot(R(S,A)$  
 >$\;\;$+$\gamma\cdot\sum_{S'}P_{U_{2}}(S'\vert S,A)\cdot max_{A'}Q^{\ast}(S',A')-Q^{\ast}(S,A))\vert$  
+>=$\vert\alpha_{U_{1}}\cdot Upd_{U_{1}}-\alpha_{U_{2}}\cdot Upd_{U_{2}}\vert$  
+>, where we have $Upd_{U_{i}}$, $i$=$1,2$ expressed as:  
+>$R(S,A)$+$\gamma\cdot\sum_{S'}P_{U_{i}}(S'\vert S,A)\cdot max_{A'}Q^{\ast}(S',A')$-$Q^{\ast}(S,A))$  
 >
 
 <!--
