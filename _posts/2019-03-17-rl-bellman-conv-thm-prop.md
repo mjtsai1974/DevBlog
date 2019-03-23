@@ -23,8 +23,10 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >&#10113;the other one is the $Q_{t}$ that we are using in the <font color="DeepSkyBlue">one step look ahead</font> as part of the <font color="Red">Bellman operation</font>.   
 >
 ><font color="DeepSkyBlue">[2]</font>
-><font color="OrangeRed">Special notes</font>  
->to be conti...
+><font color="Brown">Notes::mjtsai1974</font>  
+>&#10112;we can treat the term $\lbrack B_{t}Q_{t}\rbrack$=$B_{t++}$, be noted that it is <font color="OrangeRed">$t$ plus plus</font>, <font color="RosyBrown">not $t+1$</font>.  
+>&#10113;<font color="OrangeRed">$t$ plus plus</font> means that we starts from $t$, with some effort of plus plus to gain some reward maybe.  If we are from $t+1$, then we say $\lbrack B_{t+1}Q_{t+1}\rbrack$=$B_{(t+1)++}$.  
+>&#10114;in the final fixed point of $Q^{\ast}$=$BQ^{\ast}$, the $B$ term is actually $B_{\ast}$.  
 
 ### Addendum
 >&#10112;[Convergence-1, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4436560172/concepts/44332503000923)  
@@ -87,6 +89,8 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 <!-- ### <font color="RoyalBlue">Example</font>: Illustration By Rainy And Sunny Days In One Week -->
 <!-- <font color="RoyalBlue">[Question]</font> -->
 <!-- <font color="DeepSkyBlue">[Answer]</font> -->
+
+<!-- <font color="Brown">Notes::mjtsai1974</font> -->
 
 <!-- 
 [1]Given the vehicles pass through a highway toll station is $6$ per minute, what is the probability that no cars within $30$ seconds?
