@@ -67,8 +67,15 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >
 >$\Rightarrow$Continue above deduction:  
 >$\vert\alpha_{U_{1}}\cdot D_{U_{1}}-\alpha_{U_{2}}\cdot D_{U_{2}}\vert$  
->$\approx\vert(D_{U_{1}}-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}\cdot D_{U_{2}})\vert$  
->$\leq\vert(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot (D_{U_{1}}-D_{U_{2}})\vert$  
+>$\approx\vert(D_{U_{1}}-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}\cdot D_{U_{2}})\vert\cdot\alpha_{U_{1}}$  
+>$\leq\vert(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot (D_{U_{1}}-D_{U_{2}})\vert\cdot\alpha_{U_{1}}$  
+>
+>$\Rightarrow$Why it holds?  
+>Because $(D_{U_{1}}-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}\cdot D_{U_{2}})\leq(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot (D_{U_{1}}-D_{U_{2}})$  
+>, it is the maximum non-expansion.  
+>
+>&#10112;take $1-\alpha$=$(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot\alpha_{U_{1}}$  
+>&#10113;  
 
 <!--
 ><font color="OrangeRed">[Property 2]</font>  
