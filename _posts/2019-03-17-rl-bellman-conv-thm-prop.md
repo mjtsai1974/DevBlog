@@ -64,6 +64,11 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >, where the update term $D_{U_{i}}$, could be expressed as:  
 >$R(S,A)$+$\gamma\cdot\sum_{S'}P_{U_{i}}(S'\vert S,A)\cdot max_{A'}Q^{\ast}(S',A')$-$Q^{\ast}(S,A))$  
 >, and $i$=$1,2$ in this proof.  
+>
+>$\Rightarrow$Continue above deduction:  
+>$\vert\alpha_{U_{1}}\cdot D_{U_{1}}-\alpha_{U_{2}}\cdot D_{U_{2}}\vert$  
+>$\approx(D_{U_{1}-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}}\cdot D_{U_{2}})$  
+>$\leq(1-\frac {\alpha_{U_{2}}}{\alpha_{U_{1}}})\cdot (D_{U_{1}-D_{U_{2}})$  
 
 <!--
 ><font color="OrangeRed">[Property 2]</font>  
