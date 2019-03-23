@@ -28,10 +28,9 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >&#10113;<font color="OrangeRed">$t$ plus plus</font> means that we starts from $t$, with some effort of plus plus to gain some reward maybe.  If we are from $t+1$, then we say $\lbrack B_{t+1}Q_{t+1}\rbrack$=$B_{(t+1)++}$.  
 >&#10114;in the final fixed point of $Q^{\ast}$=$BQ^{\ast}$, the $B$ term is actually $B_{\ast}$.  
 
-### The Convergence Properties
+### The <font color="Red">Convergence Property 1</font>
 >The cool thing is that this sequence of $Q$ functions, starting from any $Q_{0}$, by keeping applying $Q_{t+1}$=$\lbrack B_{t}Q_{t}\rbrack Q_{t}$, we're going to approach $Q^{\ast}$, as long as we have certain properties holding on how we define this $B_{t}$.  
 >
-><font color="OrangeRed">[Property 1]</font>  
 >For all $U_{1}$,$U_{2}$, $S$, $A$:  
 >$\;\;\vert(\lbrack B_{t}U_{1}\rbrack)Q^{\ast}(S,A)-(\lbrack B_{t}U_{2}\rbrack)Q^{\ast}(S,A)\vert$  
 >$\;\;\leq(1-\alpha_{t}(S,A))\cdot\vert U_{1}(S,A)-U_{2}(S,A)\vert$  
