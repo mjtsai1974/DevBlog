@@ -52,6 +52,9 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >=$Q_{T-1}(S,A)$+$\alpha_{T}\cdot(R(S,A)$  
 >$\;\;$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))$  
 >
+>$\Rightarrow$Take $Q_{T-1}$ as $U_{1}$ and $U_{2}$, and have $Q_{T-1}$ replaced by $Q^{\ast}$, then:  
+>
+
 <!--
 ><font color="OrangeRed">[Property 2]</font>  
 >
