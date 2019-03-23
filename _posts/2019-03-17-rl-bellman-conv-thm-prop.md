@@ -31,17 +31,26 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 ### The Convergence Properties
 >The cool thing is that this sequence of $Q$ functions, starting from any $Q_{0}$, by keeping applying $Q_{t+1}$=$\lbrack B_{t}Q_{t}\rbrack Q_{t}$, we're going to approach $Q^{\ast}$, as long as we have certain properties holding on how we define this $B_{t}$.  
 >
-><font color="OrangeRed">Property 1</font>  
+><font color="OrangeRed">[Property 1]</font>  
 >For all $U_{1}$,$U_{2}$, $S$, $A$:  
 >$\;\;\vert(\lbrack B_{t}U_{1}\rbrack)Q^{\ast}(S,A)-(\lbrack B_{t}U_{2}\rbrack)Q^{\ast}(S,A)\vert$  
 >$\;\;\leq(1-\alpha_{t}(S,A))\cdot\vert U_{1}(S,A)-U_{2}(S,A)\vert$  
 >
 ><font color="Brown">proof::mjtsai1974</font>  
+>$\Rightarrow$Recall that $\lbrack BQ\rbrack(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$ in [Bellman Operator Makes Convergence]({{ site.github.repo }}{{ site.baseurl }}/2019/03/05/rl-bellman-conv/).  
+>&#10112;if we take $Q^{\ast}$=$BQ^{\ast}$, this indicates that  
+>$Q^{\ast}(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{any}(S',A')$  
+>, we can transite from any $Q$, the $Q_{any}$ to $Q^{\ast}$  
+>, where $Q_{any}$=$\\{Q_{t},Q_{t+1},Q_{t+2},...Q^{\ast}\\}$  
+>&#10113;  
+>&#10114;  
 >
-><font color="OrangeRed">Property 2</font>  
+<!--
+><font color="OrangeRed">[Property 2]</font>  
 >
-><font color="OrangeRed">Property 3</font>  
+><font color="OrangeRed">[Property 3]</font>  
 >
+-->
 
 ### Addendum
 >&#10112;[Convergence-1, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4436560172/concepts/44332503000923)  
