@@ -117,7 +117,8 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >=$(1-\alpha_{t})(Q^{\ast}(S,A)-Q(S,A))$  
 >+$\alpha_{t}\cdot\lbrack\gamma\cdot\sum_{S'}P(S'\vert S,A)$  
 >$\;\;\cdot(max_{A'}Q^{\ast}(S',A)-max_{A'}Q(S',A))\rbrack$  
->
+>$\leq(1-\alpha_{t})(Q^{\ast}(S,A)-Q(S,A))$  
+>$\;\;\alpha_{t}\cdot\gamma\cdot(max_{A'}Q^{\ast}(S',A)-max_{A'}Q(S',A))$  
 
 <!--
 ><font color="OrangeRed">[Property 3]</font>  
