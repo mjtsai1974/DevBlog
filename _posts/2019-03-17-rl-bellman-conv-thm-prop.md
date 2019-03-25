@@ -32,7 +32,7 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >The cool thing is that this sequence of $Q$ functions, starting from any $Q_{0}$, by keeping applying $Q_{t+1}$=$\lbrack B_{t}Q_{t}\rbrack Q_{t}$, we're going to approach $Q^{\ast}$, as long as we have certain properties holding on how we define this $B_{t}$.  
 >
 >For all $U_{1}$,$U_{2}$, $S$, $A$:  
->$\;\;\vert(\lbrack B_{t}U_{1}\rbrack)Q^{\ast}(S,A)-(\lbrack B_{t}U_{2}\rbrack)Q^{\ast}(S,A)\vert$  
+>$\;\;\vert(\lbrack B_{t}U_{1}\rbrack Q^{\ast})(S,A)-(\lbrack B_{t}U_{2}\rbrack Q^{\ast})(S,A)\vert$  
 >$\;\;\leq(1-\alpha_{t}(S,A))\cdot\vert U_{1}(S,A)-U_{2}(S,A)\vert$  
 >, where the littlecase <font color="OrangeRed">$t$</font> says that <font color="Red">$B$</font> is applied onto the <font color="OrangeRed">$t$-th</font> state's <font color="OrangeRed">current transition</font> to <font color="OrangeRed">next $t+1$ state</font>.  
 >
@@ -47,14 +47,14 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$Q_{t+1}(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{t}(S',A')$  
 >
 >$\Rightarrow\lbrack BQ\rbrack$ is a kind of operator, could be used to apply on $Q$.  By $TD(0)$, we can establish it:  
->$(\lbrack BQ_{T-1}\rbrack)Q_{T-1}(S,A)$  
+>$(\lbrack BQ_{T-1}\rbrack Q_{T-1})(S,A)$  
 >=$Q_{T}(S,A)$  
 >=$Q_{T-1}(S,A)$+$\alpha_{T}\cdot(R(S,A)$  
 >$\;\;$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))$  
 >, where uppercase <font color="OrangeRed">$T$</font> stands for the <font color="OrangeRed">$T$-th eposide from state $S$ to state $S'$</font>.  
 >
->$\Rightarrow$Take $(\lbrack BQ_{T-1}\rbrack)Q_{T-1}(S,A)$'s first $Q_{T-1}$ term as $U_{1}$ and $U_{2}$, and have the second $Q_{T-1}$ term replaced by $Q^{\ast}$, then:  
->$\vert(\lbrack BU_{1}\rbrack)Q^{\ast}(S,A)-(\lbrack BU_{2}\rbrack)Q^{\ast}(S,A)\vert$  
+>$\Rightarrow$Take $(\lbrack BQ_{T-1}\rbrack Q_{T-1})(S,A)$'s first $Q_{T-1}$ term as $U_{1}$ and $U_{2}$, and have the second $Q_{T-1}$ term replaced by $Q^{\ast}$, then:  
+>$\vert(\lbrack BU_{1}\rbrack Q^{\ast})(S,A)-(\lbrack BU_{2}\rbrack Q^{\ast})(S,A)\vert$  
 >=$\vert\alpha_{U_{1}}\cdot(R(S,A)$  
 >$\;\;$+$\gamma\cdot\sum_{S'}P_{U_{1}}(S'\vert S,A)\cdot max_{A'}Q^{\ast}(S',A')-Q^{\ast}(S,A))$  
 >-$\alpha_{U_{2}}\cdot(R(S,A)$  
@@ -86,7 +86,7 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >, which is identical to [C].  
 >
 >$\Rightarrow$Finally, we establish this property:   
->$\;\;\vert(\lbrack B_{t}U_{1}\rbrack)Q^{\ast}(S,A)-(\lbrack B_{t}U_{2}\rbrack)Q^{\ast}(S,A)\vert$  
+>$\;\;\vert(\lbrack B_{t}U_{1}\rbrack Q^{\ast})(S,A)-(\lbrack B_{t}U_{2}\rbrack Q^{\ast})(S,A)\vert$  
 >$\;\;\leq(1-\alpha_{t}(S,A))\cdot\vert U_{1}(S,A)-U_{2}(S,A)\vert$  
 >, in this proof we're expressing the distinct $U_{1}$ and $U_{2}$ in terms of <font color="OrangeRed">temporal difference</font> form:  
 >$Q_{T}(S,A)$  
@@ -94,6 +94,15 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$\;\;$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))$  
 >&#10112;<font color="OrangeRed">$T$ means the $U_{1}$, $U_{2}$ is evaluating in the $T$-th eposide for their state transition</font>.  
 >&#10113;take $T$=$\\{T_{U_{1}}, T_{U_{2}}\\}$, <font color="DeepPink">if $T_{U_{1}}$=$T_{U_{2}}$, the proof just makes it right</font>; however, <font color="#C20000">the difference won't become larger even if $T_{U_{1}}\neq T_{U_{2}}$, and we keep on applying this Bellman operator oevr and oevr again!!!</font>  
+
+### The <font color="Red">Convergence Property 2</font>
+>For all $Q$,$U$,$S$,$A$:  
+>$\;\;\vert(\lbrack B_{t}U\rbrack Q^{\ast})(S,A)-(\lbrack B_{t}U\rbrack Q)(S,A)\vert$  
+>$\;\;\leq(\gamma\cdot\alpha_{t}(S,A))\cdot\vert Q^{\ast}(S,A)-Q(S,A)\vert$  
+>, if we hold $U$ fixed, then we get the contraction of $Q$ toward $Q^{\ast}$, by applying $\lbrack B_{t}U\rbrack$ onto $Q^{\ast}$ and $Q$.  
+>
+><font color="Brown">proof::mjtsai1974</font>  
+>
 
 <!--
 ><font color="OrangeRed">[Property 2]</font>  
