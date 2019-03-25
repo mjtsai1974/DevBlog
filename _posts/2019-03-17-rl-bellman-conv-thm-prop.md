@@ -105,9 +105,11 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$\Rightarrow$By taking $U_{1}$=$U_{2}$=$U$, then:  
 >$\vert(\lbrack B_{t}U\rbrack Q^{\ast})(S,A)-(\lbrack B_{t}U\rbrack Q)(S,A)\vert$  
 >=$Q^{\ast}(S,A)$  
->$\;\;$+$\alpha_{t}\cdot(R(S,A)+\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q^{\ast}(S',A)-Q^{\ast}(S,A))$  
+>$\;\;$+$\alpha_{t}\cdot(R(S,A)+\gamma\cdot\sum_{S'}P(S'\vert S,A)$  
+>$\;\;\;\;\cdot max_{A'}Q^{\ast}(S',A)-Q^{\ast}(S,A))$  
 >-$\lbrack Q(S,A)$  
->$\;\;$+$\alpha_{t}\cdot(R(S,A)+\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A)-Q(S,A))\rbrack$  
+>$\;\;$+$\alpha_{t}\cdot(R(S,A)+\gamma\cdot\sum_{S'}P(S'\vert S,A)$  
+>$\;\;\;\;\cdot max_{A'}Q(S',A)-Q(S,A))\rbrack$  
 >=$Q^{\ast}(S,A)-Q(S,A)$  
 >+$\alpha_{t}\cdot\lbrack\gamma\cdot\sum_{S'}P(S'\vert S,A)$  
 >$\;\;\cdot(max_{A'}Q^{\ast}(S',A)-max_{A'}Q(S',A))$  
