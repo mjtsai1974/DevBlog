@@ -121,8 +121,8 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$\;\;\alpha_{t}\cdot\gamma\cdot(max_{A'}Q^{\ast}(S',A)-max_{A'}Q(S',A))$...[D]  
 >
 >$\Rightarrow$Suppose we are under the definition $Q^{\ast}$=$BQ^{\ast}$ and $Q_{t+1}$=$\lbrack B_{t}Q_{t}\rbrack Q_{t}$, <font color="DeepSkyBlue">after contiguous running over some horizon</font>:  
->&#10112;the $Q$-learning just converges to have $Q\rightarrow Q^{\ast}$.  The 1st part in [D] is becoming $0$, could be safely tossed out.  
->&#10113;the second part in [D] is saved, since it focuses on the $Q^{\ast}(S',A')$ and $Q(S',A')$ with $A'$ that can maximize the $Q$ value, by tossinig out averaging probabilistic transition from $S$ to $S'$ in [C].  
+>&#10112;the $Q$-learning just converges to have <font color="DeepSkyBlue">$Q\rightarrow Q^{\ast}$</font>.  The 1st part in [D] could be safely <font color="DeepSkyBlue">tossed out</font>,it is becoming $0$.  
+>&#10113;the second part in [D] is <font color="DeepSkyBlue">saved</font>, since it focuses on the $Q^{\ast}(S',A')$ and $Q(S',A')$ with $A'$ that can maximize the $Q$ value, by tossinig out averaging probabilistic transition from $S$ to $S'$ in [C].  
 
 <!--
 ><font color="OrangeRed">[Property 3]</font>  
