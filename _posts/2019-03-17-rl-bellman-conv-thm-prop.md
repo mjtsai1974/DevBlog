@@ -120,9 +120,9 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$\leq(1-\alpha_{t})(Q^{\ast}(S,A)-Q(S,A))$  
 >$\;\;\alpha_{t}\cdot\gamma\cdot(max_{A'}Q^{\ast}(S',A)-max_{A'}Q(S',A))$...[D]  
 >
->$\Rightarrow$Suppose we are under the definition $Q^{\ast}$=$B$Q^{\ast} and $Q_{t+1}$=$\lbrack B_{t}Q_{t}\rbrack Q_{t}$, <font color="DeepSkyBlue">after contiguous running over some horizon</font>:  
+>$\Rightarrow$Suppose we are under the definition $Q^{\ast}$=$BQ^{\ast}$ and $Q_{t+1}$=$\lbrack B_{t}Q_{t}\rbrack Q_{t}$, <font color="DeepSkyBlue">after contiguous running over some horizon</font>:  
 >&#10112;the $Q$-learning just converges to have $Q\rightarrow Q^{\ast}$.  The 1st part in [D] is becoming $0$, could be safely tossed out.  
->&#10113;however, the second part in [D] focus on the $Q^{\ast}(S',A')$ and $Q(S',A')$ with $A'$ that can maximize the $Q$ value, by tossinig out averaging probabilistic transition from $S$ to $S'$ in [C].  
+>&#10113;the second part in [D] is saved, since it focuses on the $Q^{\ast}(S',A')$ and $Q(S',A')$ with $A'$ that can maximize the $Q$ value, by tossinig out averaging probabilistic transition from $S$ to $S'$ in [C].  
 
 <!--
 ><font color="OrangeRed">[Property 3]</font>  
