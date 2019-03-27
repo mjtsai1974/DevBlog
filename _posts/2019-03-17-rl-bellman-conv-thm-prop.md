@@ -118,11 +118,16 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >+$\alpha_{t}\cdot\lbrack\gamma\cdot\sum_{S'}P(S'\vert S,A)$  
 >$\;\;\cdot(max_{A'}Q^{\ast}(S',A)-max_{A'}Q(S',A))\rbrack$...[C]  
 >$\leq(1-\alpha_{t})(Q^{\ast}(S,A)-Q(S,A))$  
->$\;\;\alpha_{t}\cdot\gamma\cdot(max_{A'}Q^{\ast}(S',A)-max_{A'}Q(S',A))$...[D]  
+>$\;\;+\alpha_{t}\cdot\gamma\cdot(max_{A'}Q^{\ast}(S',A)-max_{A'}Q(S',A))$...[D]  
 >
 >$\Rightarrow$Suppose we are under the definition $Q^{\ast}$=$BQ^{\ast}$ and $Q_{t+1}$=$\lbrack B_{t}Q_{t}\rbrack Q_{t}$, <font color="DeepSkyBlue">after contiguous running over some horizon</font>:  
 >&#10112;the $Q$-learning just converges to have <font color="DeepSkyBlue">$Q\rightarrow Q^{\ast}$</font>.  The 1st part in [D] could be safely <font color="DeepSkyBlue">tossed out</font>,it is becoming $0$.  
 >&#10113;the second part in [D] is <font color="DeepSkyBlue">saved</font>, since it focuses on the $Q^{\ast}(S',A')$ and $Q(S',A')$ with $A'$ that can maximize the $Q$ value, by tossinig out averaging probabilistic transition from $S$ to $S'$ in [C].  
+>
+>$\Rightarrow$We now have the inequality below:  
+>$\leq\alpha_{t}\cdot\gamma\cdot(max_{A'}Q^{\ast}(S',A')-max_{A'}Q(S',A'))$  
+>=$\alpha_{t}\cdot\gamma\cdot max_{A'}(Q^{\ast}(S',A')-Q(S',A'))$...[E]  
+>$\leq\vert Q^{\ast}(S,A)-Q(S,A)\vert$...for $S'$ is next state of $S$, we have $Q(S',A')\subseteq Q(S,A)$, this inequality just holds.  
 
 <!--
 ><font color="OrangeRed">[Property 3]</font>  
@@ -163,6 +168,8 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 <!-- \left\|?\right\| => ||?||-->
 <!-- \left|?\right| => |?|-->
 <!-- \lbrack BQ\rbrack => [BQ] -->
+<!-- \subset -->
+<!-- \subseteq -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus, mathematic expression</font> -->
