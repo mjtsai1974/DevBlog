@@ -135,7 +135,7 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >This 3rd property guarantees it converges.  
 >&#10112;$\sum\alpha_{t}\rightarrow\infty$  
 >&#10113;$\sum\alpha_{t}^{2}<\infty$  
->Could be found in my prior post.  
+>Could be found in [Temporal Difference Learning - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2018/12/23/rl-temp-diff-learn-part1/).  
 
 ### Addendum
 >&#10112;[Convergence-1, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4436560172/concepts/44332503000923)  
