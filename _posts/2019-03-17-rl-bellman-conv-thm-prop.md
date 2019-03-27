@@ -94,6 +94,8 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$\;\;$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q_{T-1}(S',A')-Q_{T-1}(S,A))$  
 >&#10112;<font color="OrangeRed">$T$ means the $U_{1}$, $U_{2}$ is evaluating in the $T$-th eposide for their state transition</font>.  
 >&#10113;take $T$=$\\{T_{U_{1}}, T_{U_{2}}\\}$, <font color="DeepPink">if $T_{U_{1}}$=$T_{U_{2}}$, the proof just makes it right</font>; however, <font color="#C20000">the difference won't become larger even if $T_{U_{1}}\neq T_{U_{2}}$, and we keep on applying this Bellman operator oevr and oevr again!!!</font>  
+>
+>This proof says <font color="DeepPink">we do the Bellman update on $U_{1}$ and $U_{2}$, finally learned the $Q^{\ast}(S,A)$-value</font>.  
 
 ### The <font color="Red">Convergence Property 2</font>
 >For all $Q$,$U$,$S$,$A$:  
@@ -129,10 +131,11 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >=$\alpha_{t}\cdot\gamma\cdot max_{A'}(Q^{\ast}(S',A')-Q(S',A'))$...[E]  
 >$\leq\alpha_{t}\cdot\gamma\cdot\vert Q^{\ast}(S,A)-Q(S,A)\vert$...for $S'$ is next state of $S$, we have $Q(S',A')\subseteq Q(S,A)$, this inequality just holds.  
 
-<!--
-><font color="OrangeRed">[Property 3]</font>  
->
--->
+### The <font color="Red">Convergence Property 3</font>
+>This 3rd property guarantees it converges.  
+>&#10112;$\sum\alpha_{t}\rightarrow\infty$  
+>&#10113;$\sum\alpha_{t}^{2}<\infty$  
+>Could be found in my prior post.  
 
 ### Addendum
 >&#10112;[Convergence-1, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4436560172/concepts/44332503000923)  
