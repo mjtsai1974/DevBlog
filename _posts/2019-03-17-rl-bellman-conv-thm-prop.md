@@ -127,7 +127,7 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >$\Rightarrow$We now have the inequality below:  
 >$\leq\alpha_{t}\cdot\gamma\cdot(max_{A'}Q^{\ast}(S',A')-max_{A'}Q(S',A'))$  
 >=$\alpha_{t}\cdot\gamma\cdot max_{A'}(Q^{\ast}(S',A')-Q(S',A'))$...[E]  
->$\leq\vert Q^{\ast}(S,A)-Q(S,A)\vert$...for $S'$ is next state of $S$, we have $Q(S',A')\subseteq Q(S,A)$, this inequality just holds.  
+>$\leq\alpha_{t}\cdot\gamma\cdot\vert Q^{\ast}(S,A)-Q(S,A)\vert$...for $S'$ is next state of $S$, we have $Q(S',A')\subseteq Q(S,A)$, this inequality just holds.  
 
 <!--
 ><font color="OrangeRed">[Property 3]</font>  
