@@ -101,7 +101,7 @@ The <font color="Red">Bellman operator</font> of <font color="Red">contraction m
 >For all $Q$,$U$,$S$,$A$:  
 >$\;\;\vert(\lbrack B_{t}U\rbrack Q^{\ast})(S,A)-(\lbrack B_{t}U\rbrack Q)(S,A)\vert$  
 >$\;\;\leq(\gamma\cdot\alpha_{t}(S,A))\cdot\vert Q^{\ast}(S,A)-Q(S,A)\vert$  
->, if we hold $U$ fixed, then we get the contraction of $Q$ toward $Q^{\ast}$, by applying $\lbrack B_{t}U\rbrack$ onto $Q^{\ast}$ and $Q$.  
+>, if we <font color="DeepPink">hold $U$ fixed</font>, then <font color="DeepPink">we get the contraction of $Q$ toward $Q^{\ast}$, by applying $\lbrack B_{t}U\rbrack$ onto $Q^{\ast}$ and $Q$</font>.  
 >
 ><font color="Brown">proof::mjtsai1974</font>  
 >$\Rightarrow$By taking $U_{1}$=$U_{2}$=$U$, then:  
