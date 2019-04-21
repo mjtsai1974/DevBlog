@@ -9,7 +9,15 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 </p>
 
 ### $\frac {1}{1-\gamma}$ Bits Of Precision
->Denote the <font color="OrangeRed">dimensionality</font> of states and actions as $\vert S\vert$ and $\vert A \vert$, also with $R_{max}$=$max_{S,A}\vert R(S,A)\vert$, $\frac {1}{1-\gamma}$ as bits of precision, for some $t^{*}$ polynomila in $\vert S\vert$ and $vert A \vert$, we'd like to dive a little bit to relate the <font color="DeepSkyBlue">horizontal length</font> to the <font color="OrangeRed">convergence</font>:  
+>We'd like to dive a little bit to relate the <font color="DeepSkyBlue">horizontal length</font> to the <font color="OrangeRed">convergence</font>, by below given:  
+>&#10112;denote the <font color="OrangeRed">dimensionality</font> of states and actions as $\vert S\vert$ and $\vert A \vert$.  
+>&#10113;also with $R_{max}$=$max_{S,A}\vert R(S,A)\vert$.  
+>&#10114;$\frac {1}{1-\gamma}$ as bits of precision.  
+>&#10115;for some $t^{*}$ polynomial in $\vert S\vert$ and $vert A \vert$.  
+>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">There is some time before infinity</font>  
+>&#10112;$\pi(S)$=$argmax_{A}Q_{t^{*}}(S,A)$ is optimal.    
 >
 
 ### Addendum
