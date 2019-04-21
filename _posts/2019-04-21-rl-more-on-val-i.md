@@ -8,6 +8,10 @@ title: More On Value Iteration
 Prior post details the way <font color="Red">contraction mapping</font> makes <font color="Red">value iteration</font> converges.  This post would dive a little bit on the <font color="DeepSkyBlue">horizontal length</font> for convergence.
 </p>
 
+### $\frac {1}{1-\gamma}$ Bits Of Precision
+>Denote the <font color="OrangeRed">dimensionality</font> of states and actions as $\vert S\vert$ and $vert A \vert$, also with $R_{max}$=$max_{S,A}\vert R(S,A)\vert$, $\frac {1}{1-\gamma}$ as bits of precision, for some $t^{*}$ polynomila in $\vert S\vert$ and $vert A \vert$, we'd like to dive a little bit to relate the <font color="DeepSkyBlue">horizontal length</font> to the <font color="OrangeRed">convergence</font>:  
+>
+
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
 
