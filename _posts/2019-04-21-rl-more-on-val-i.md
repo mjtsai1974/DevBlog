@@ -13,11 +13,19 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >&#10112;denote the <font color="OrangeRed">dimensionality</font> of states and actions as $\vert S\vert$ and $\vert A \vert$.  
 >&#10113;also with $R_{max}$=$max_{S,A}\vert R(S,A)\vert$.  
 >&#10114;$\frac {1}{1-\gamma}$ as bits of precision.  
->&#10115;for some $t^{*}$ polynomial in $\vert S\vert$ and $vert A \vert$.  
+>&#10115;for some $t^{\ast}$ polynomial in $\vert S\vert$ and $vert A \vert$.  
 >
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">There is some time before infinity</font>  
->&#10112;$\pi(S)$=$argmax_{A}Q_{t^{*}}(S,A)$ is optimal.    
+>&#10112;$\pi(S)$=$argmax_{A}Q_{t^{\ast}}(S,A)$ is optimal.    
+>&#10113;we treat the $Q^{\ast}$ to be the $Q$ function after we iterate over $t^{\ast}$ times, we know that it converges in the limit, $Q_{t}$ eventually goes to $Q^{\ast}$.  
+>
+>$\Rightarrow$Here is the <font color="OrangeRed">hint</font> that we found there is some $t^{\ast}$ of <font color="OrangeRed">finite horizon</font>, <font color="Red">less than infinity</font>, that's <font color="DeepSkyBlue">polynomial</font> in:  
+>&#10112;the <font color="OrangeRed">number of states</font>  
+>&#10113;the <font color="OrangeRed">number of actions</font>  
+>&#10114;the <font color="OrangeRed">magnitude of the rewards</font> in the reward function  
+>&#10115;the <font color="OrangeRed">number of bits of precision</font> that are used to specified the <font color="Red">transition probability</font>  
+>&#10116;$\frac {1}{1-\gamma}$  
 >
 
 ### Addendum
