@@ -27,6 +27,7 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >&#10115;the <font color="OrangeRed">number of bits of precision</font> that are used to specified the <font color="Red">transition probability</font>  
 >&#10116;$\frac {1}{1-\gamma}$  
 >
+>$\Rightarrow$So, that, if we run value iteration for that many steps, the $Q$ function that we get out is $Q_{t^{\ast}}$ of $(S,A)$.  If we define a <font color="#00ADAD">policy $\pi(S,A)$</font>, which is just the <font color="#00ADAD">greedy policy</font> with respect to that $Q$ function, then that <font color="#00ADAD">policy</font> is <font color="Red">optimal</font>.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
