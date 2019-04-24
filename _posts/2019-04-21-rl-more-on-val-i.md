@@ -25,7 +25,7 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >&#10113;the <font color="OrangeRed">number of actions</font>  
 >&#10114;the <font color="OrangeRed">magnitude of the rewards</font> in the reward function  
 >&#10115;the <font color="OrangeRed">number of bits of precision</font> that are used to specified the <font color="Red">transition probability</font>  
->&#10116;$\frac {1}{1-\gamma}$  
+>&#10116;<font color="OrangeRed">number of bits</font> of $\gamma$ in $\frac {1}{1-\gamma}$  
 >
 >$\Rightarrow$So, that, if we run value iteration for that <font color="DeepSkyBlue">many steps</font>, the $Q$ function that we get out is $Q_{t^{\ast}}$ of $(S,A)$.  If we define a <font color="#00ADAD">policy $\pi(S,A)$</font>, which is just the <font color="#00ADAD">greedy policy</font> with respect to that $Q$ function, then that <font color="#00ADAD">policy</font> is <font color="Red">optimal</font>.  
 >
@@ -35,6 +35,11 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >
 >$\Rightarrow$What that really means is that <font color="#C20000">it's polynomial(all the way $100\%$ optimal)</font> and <font color="DeepPink">you can actually solve this in a reasonable amount of time</font>.  
 >
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">$\frac {1}{1-\gamma}$ is not so just polynomial</font>  
+><font color="DeepSkyBlue">The whole convergence might not be so just polynomial</font>, why?  The $\gamma$ in $\frac {1}{1-\gamma}$ is the key factor, <font color="RosyBrown">as $\gamma\rightarrow 1$, this blows up and that's not polynomial bounded</font>, say the number of bits it takes to write down $\gamma$.  
+>
+>$\Rightarrow$So, it's <font color="DeepPink">exponential</font> in terms of <font color="DeepPink">the number of bits</font> it takes to write down the whole problem.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
