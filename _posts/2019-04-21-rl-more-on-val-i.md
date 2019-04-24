@@ -37,7 +37,7 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">$\frac {1}{1-\gamma}$ is not so just polynomial</font>  
-><font color="DeepSkyBlue">The whole convergence might not be so just polynomial</font>, why?  The $\gamma$ in $\frac {1}{1-\gamma}$ is the key factor, <font color="RosyBrown">as $\gamma\rightarrow 1$, this blows up and that's not polynomial bounded</font>, say the number of bits it takes to write down $\gamma$.  
+>The whole convergence <font color="RosyBrown">might not be so just polynomial</font>, why?  The $\gamma$ in $\frac {1}{1-\gamma}$ is the key factor, <font color="RosyBrown">as $\gamma\rightarrow 1$, this blows up and that's not polynomial bounded</font>, say the number of bits it takes to write down $\gamma$.  
 >
 >$\Rightarrow$So, it's <font color="DeepPink">exponential</font> in terms of <font color="DeepPink">the number of bits</font> it takes to write down the whole problem.  
 
