@@ -30,6 +30,11 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >$\Rightarrow$So, that, if we run value iteration for that <font color="DeepSkyBlue">many steps</font>, the $Q$ function that we get out is $Q_{t^{\ast}}$ of $(S,A)$.  If we define a <font color="#00ADAD">policy $\pi(S,A)$</font>, which is just the <font color="#00ADAD">greedy policy</font> with respect to that $Q$ function, then that <font color="#00ADAD">policy</font> is <font color="Red">optimal</font>.  
 >
 >$\Rightarrow$We know that <font color="OrangeRed">in the limit</font>, if we run value iteration for an <font color="OrangeRed">infinite</font> number of steps, then the $Q$ function that we get at that point, the <font color="#00ADAD">greedy policy</font> with respect to the $Q$ function, is just <font color="Red">optimal</font>.  
+>
+>$\Rightarrow$This leads to a finding that <font color="DeepPink">there is sometime before infinity where we get a $Q$ function that's close enough, so that if you do the greedy policy with respect to it(the $Q$ function), it really is optimal</font>.  Like all the way $100\%$ optimal.  
+>
+>$\Rightarrow$What that really means is that <font color="#C20000">it's polynomial(all the way $100\%$ optimal)</font> and <font color="DeepPink">you can actually solve this in a reasonable amount of time</font>.  
+>
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
