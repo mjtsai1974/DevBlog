@@ -43,7 +43,9 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >
 >$\Rightarrow$But even so, if you take <font color="OrangeRed">$\gamma$</font> to be some <font color="OrangeRed">fixed constant</font>, the <font color="DeepSkyBlue">$\frac {1}{1-\gamma}$</font> might be really big, but, it's some <font color="DeepSkyBlue">fixed constant</font> and we are polynomial in all the rest of $\vert S\vert$,$\vert A\vert$, $R_{max}=max_{S,A}R(S,A)$.  
 >
->$\Rightarrow$This leads to an idea that once you fix an MDP model and the number of bits of precision $\gamma$, there is going to be some optimal action and there might be other actions that are tied for optimal in any given state.  
+>$\Rightarrow$This leads to an idea that <font color="DeepPink">once you fix an MDP model and the number of bits of precision $\gamma$, there is going to be some optimal action and there might be other actions that are tied for optimal in any given state</font>.  
+>
+>$\Rightarrow$One thing to be noted about <font color="OrangeRed">the second best action is going to be some bounded amount away from optimal</font>.  <font color="RosyBrown">It can't get any arbitrary close to optimal.</font>  It's going to be some distance away.  This says when we run value iteration <font color="OrangeRed">enough</font>, eventually, the <font color="OrangeRed">final</font> distance between the best action and the second best action gets bigger than this <font color="OrangeRed">oroginal</font> gap.  
 >
 
 ### Addendum
