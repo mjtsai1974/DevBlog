@@ -40,6 +40,11 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >The whole convergence <font color="RosyBrown">might not be so just polynomial</font>, why?  The $\gamma$ in $\frac {1}{1-\gamma}$ is the key factor, <font color="RosyBrown">as $\gamma\rightarrow 1$, this blows up and that's not polynomial bounded</font>, say the number of bits it takes to write down $\gamma$.  
 >
 >$\Rightarrow$So, it's <font color="DeepPink">exponential</font> in terms of <font color="DeepPink">the number of bits</font> it takes to write down the whole problem.  
+>
+>$\Rightarrow$But even so, if you take <font color="OrangeRed">$\gamma$</font> to be some <font color="OrangeRed">fixed constant</font>, the <font color="DeepSkyBlue">$\frac {1}{1-\gamma}$</font> might be really big, but, it's some <font color="DeepSkyBlue">fixed constant</font> and we are polynomial in all the rest of $\vert S\vert$,$\vert A\vert$, $R_{max}=max_{S,A}R(S,A)$.  
+>
+>$\Rightarrow$This leads to an idea that once you fix an MDP model and the number of bits of precision $\gamma$, there is going to be some optimal action and there might be other actions that are tied for optimal in any given state.  
+>
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
