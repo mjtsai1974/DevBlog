@@ -62,6 +62,13 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >&#10113;the amount of changes of $V_{t}$, from $t$ to $t+1$, is less than $\varepsilon$ for all states $S$ in this MDP model.  
 >
 >Then, the <font color="OrangeRed">largest difference</font> between the <font color="DeepPink">optimal value function</font> $V^{\ast}(S)$ and the value function we get by taking the <font color="00ADAD">greedy policy</font> with respect to the value function at time $t$ is small, say $\frac {2\cdot\varepsilon\cdot\gamma}{1-\gamma}$.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Why end up being $\frac {2\cdot\varepsilon\cdot\gamma}{1-\gamma}$?</font>  
+>&#10112;<font color="DeepSkyBlue">because this($\frac {1}{1-\gamma}$) little bit of $\varepsilon$</font> that we could be <font color="OrangeRed">off</font>, could be <font color="OrangeRed">magnified</font>, even every single step as we think about this into future.  That's why we get a $1-\gamma$ in the denominator.  
+>&#10113;<font color="DeepSkyBlue">there exists $2$ sides of $\varepsilon$, positive and negative for each</font>, that's why we have $2$ times $\varepsilon$.  
+>&#10114;suppose we are at $t$, <font color="RosyBrown">such change doesn't take place right now at $t$</font>, <font color="DeepSkyBlue">it takes one step further into $t+1$</font>, then we need to times $\gamme$.  
+>
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
