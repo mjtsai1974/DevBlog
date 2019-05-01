@@ -67,7 +67,7 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 ><font color="OrangeRed">Why end up being $\frac {2\cdot\varepsilon\cdot\gamma}{1-\gamma}$?</font>  
 >&#10112;<font color="DeepSkyBlue">because this($\frac {1}{1-\gamma}$) little bit of $\varepsilon$</font> that we could be <font color="OrangeRed">off</font>, could be <font color="OrangeRed">magnified</font>, even every single step as we think about this into future.  That's why we get a $1-\gamma$ in the denominator.  
 >&#10113;<font color="DeepSkyBlue">there exists $2$ sides of $\varepsilon$, positive and negative for each</font>, that's why we have $2$ times $\varepsilon$.  
->&#10114;suppose we are at $t$, <font color="RosyBrown">such change doesn't take place right now at $t$</font>, <font color="DeepSkyBlue">it takes one step further into $t+1$</font>, then we need to times $\gamme$.  
+>&#10114;suppose we are at $t$, <font color="RosyBrown">such change doesn't take place right now at $t$</font>, <font color="DeepSkyBlue">it takes one step further into $t+1$</font>, then we need to times $\gamma$.  
 >
 
 ### Addendum
