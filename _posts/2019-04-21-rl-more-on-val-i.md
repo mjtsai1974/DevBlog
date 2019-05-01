@@ -51,6 +51,18 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >
 >$\Rightarrow$<font color="#C20000">The greedy policy with respect to value iteration converges in a reasonable amount of time.</font>  
 
+### The Largest Difference Between The <font color="Red">Optimal Policy</font> And The <font color="OrangeRed">Greedy Policy</font>: $max_{S}\vert V^{\pi_{V_{t}}}(S)-V^{\ast}(S)\vert$<$\frac {2\cdot\varepsilon\cdot\gamma}{1-\gamma}$
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The background</font>  
+>if $\vert V_{t}(S)-V_{t+1}(S)\vert<\varepsilon$,  
+>$\;\;\forall S$, then, $max_{S}\vert V^{\pi_{V_{t}}}(S)-V^{\ast}(S)\vert$<$\frac {2\cdot\varepsilon\cdot\gamma}{1-\gamma}$  
+>
+>Here is the assumption that    
+>&#10112;we run value iteration and get a series of value functions, say $V_{t}$.  
+>&#10113;the amount of changes of $V_{t}$, from $f$ to $t+1$, is less than $\varepsilon$ for all states $S$ in this MDP model.  
+>
+>Then, the <font color="OrangeRed">largest difference</font> between the optimal value function $V^{\ast}(S)$ and the value function we get by taking the greedy policy with respect to the value function at time $t$ is small, say $\frac {2\cdot\varepsilon\cdot\gamma}{1-\gamma}$.  
+
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
 
