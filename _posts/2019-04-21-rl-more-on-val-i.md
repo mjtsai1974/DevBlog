@@ -69,6 +69,12 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >&#10113;<font color="DeepSkyBlue">there exists $2$ sides of $\varepsilon$, positive and negative for each</font>, that's why we have $2$ times $\varepsilon$.  
 >&#10114;suppose we are at $t$, <font color="RosyBrown">such change doesn't take place right now at $t$</font>, <font color="DeepSkyBlue">it takes one step further into $t+1$</font>, then we need to times $\gamma$.  
 >
+>If you have a good enough approximation of the value function, then you can at least put a bound on how far off you are in terms of following the resulting greedy policy value function $V^{\pi_{V_{t}}}(S)$ from how far that is following the optimal policy value function $V^{\ast}(S)$.  
+
+<!--
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed"></font>  
+-->
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
