@@ -72,7 +72,7 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >If you have a good enough approximation of the value function, then you can at least put a <font color="OrangeRed">bound</font> on &#10112;how far off you are in terms of following the resulting <font color="00ADAD">greedy policy</font> value function $V^{\pi_{V_{t}}}(S)$ <font color="OrangeRed">from</font> &#10113;how far that is following the <font color="DeepPink">optimal policy</font> value function $V^{\ast}(S)$.  
 >
 ><font color="DeepSkyBlue">[3]</font>
-><font color="OrangeRed">Should we need to know how closed we are to V^{\ast}?</font>  
+><font color="OrangeRed">Should we need to know how closed we are to $V^{\ast}$?</font>  
 >
 
 ### Addendum
