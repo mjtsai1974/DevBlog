@@ -78,6 +78,13 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >&#10113;<font color="RosyBrown">knowning that value iteration eventually converges in the limit of $\varepsilon$</font> is <font color="RosyBrown">not</font> so helpful, because <font color="RosyBrown">you don't know when the converges takes place</font>.  
 >&#10114;<font color="#C20000">$max_{S}\vert V^{\pi_{V_{t}}}(S)-V^{\ast}(S)\vert$<$\frac {2\cdot\varepsilon\cdot\gamma}{1-\gamma}$ is telling us when is the decent time(right moment) to stop.</font>  
 >
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Pick up smaller $\gamma$</font>  
+>If <font color="DeepPink">$\gamma$</font> is <font color="DeepPink">tiny</font>, then, <font color="DeepPink">$\frac {1}{1-\gamma}$</font> stays <font color="DeepPink">small</font>, <font color="DeepPink">$\frac {2\cdot\varepsilon\cdot\gamma}{1-\gamma}$</font> also stays <font color="DeepPink">small</font>.  It's all good.  
+>&#10112;<font color="OrangeRed">the more closer $\gamma$ gets to $1$</font>, the <font color="OrangeRed">more problematic</font> your learning convergence would be.  
+>&#10113;$\gamma$ tells you what your horizon is.  
+>&#10114;<font color="#C20000">the smaller $\gamma$ puts small weight on the relation of next state to the current state, then the state convergence would not over too long a horizon.</font>  
+>
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
