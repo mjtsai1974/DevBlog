@@ -45,7 +45,7 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >
 >$\Rightarrow$This leads to an idea that <font color="DeepPink">once you fix an MDP model and the number of bits of precision $\gamma$, there is going to be some optimal action and there might be other actions that are tied for optimal in any given state</font>.  
 >
->$\Rightarrow$One thing to be noted about <font color="OrangeRed">the second best action is going to be some bounded amount away from optimal</font>.  <font color="RosyBrown">It can't get any arbitrary close to optimal.</font>  It's going to be some distance away.  This says when we run value iteration <font color="OrangeRed">enough</font>, eventually, the <font color="OrangeRed">final</font> distance between the best action and the second best action gets bigger than this <font color="OrangeRed">oroginal</font> gap.  
+>$\Rightarrow$One thing to be noted about <font color="OrangeRed">the second best action is going to be some bounded amount away from optimal</font>.  <font color="RosyBrown">It can't get any arbitrary close to optimal.</font>  It's going to be some distance away.  This says when we run value iteration <font color="OrangeRed">enough</font>, eventually, the <font color="OrangeRed">final</font> distance between the best action and the second best action gets bigger than this <font color="OrangeRed">original</font> gap.  
 >&#10112;once it's bigger than this gap, then the greedy policy is going to be functioning work as <font color="DeepPink">optimal policy</font>.  
 >&#10113;<font color="OrangeRed">it's going to start to choose the best action by optimal policy in all states</font>, maybe at this moment.  
 >
