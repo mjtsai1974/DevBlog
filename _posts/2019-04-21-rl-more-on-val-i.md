@@ -84,7 +84,9 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >&#10112;<font color="OrangeRed">the more closer $\gamma$ gets to $1$</font>, the <font color="OrangeRed">more problematic</font> your learning convergence would be.  
 >&#10113;$\gamma$ tells you what your horizon is.  
 >&#10114;<font color="#C20000">the smaller $\gamma$ puts small weight on the relation of next state to the current state, then the state convergence would not over too long a horizon.</font>  
+>&#10115;<font color="OrangeRed">as $\gamma$ gets closer to $1$, $\frac {1}{1-\gamma}$ would just explodes</font>, it takes you to look ahead a lot further, it's a <font color="OrangeRed">harder</font> problem, since <font color="OrangeRed">it is over a longer horizon</font>.  
 >
+><font color="DeepPink">The smaller and larger $\gamma$ leads to a trade off between the horizon and the feasibility of solving a problem in a rreasonable amount of time.</font>  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
