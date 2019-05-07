@@ -73,6 +73,10 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Should we need to know how closed we are to $V^{\ast}$?</font>  
+>We <font color="RosyBrown">don't</font> even need to know how closed we are to $V^{\ast}$, <font color="OrangeRed">all we need is $\vert V_{t}(S)-V_{t+1}(S)\vert$<$\varepsilon$</font> for all $S$, that is <font color="OrangeRed">any two consecutive iteration</font> of value iteration:  
+>&#10112;that just gives us a <font color="OrangeRed">bound</font> on what if we stops now and follow that policy $\pi_{V_{t}}$.  
+>&#10113;<font color="RosyBrown">knowning that value iteration eventually converges in the limit of $\varepsilon$</font> is <font color="RosyBrown">not</font> so helpful, because <font color="RosyBrown">you don't know when the converges takes place</font>.  
+>&#10114;<font color="#C20000">$max_{S}\vert V^{\pi_{V_{t}}}(S)-V^{\ast}(S)\vert$<$\frac {2\cdot\varepsilon\cdot\gamma}{1-\gamma}$ is telling us when is the decent time(right moment) to stop.</font>  
 >
 
 ### Addendum
