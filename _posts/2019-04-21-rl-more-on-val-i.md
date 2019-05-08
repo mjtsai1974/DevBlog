@@ -88,7 +88,7 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 >
 ><font color="DeepPink">The smaller and larger $\gamma$ leads to a trade off between the horizon and the feasibility of solving a problem in a rreasonable amount of time.</font>  
 
-### ${\vert\vert B^{k}Q_{1}-B^{k}Q_{2}\vert\vert}_{\infty}\leq{\gamma^{k}\vert\vert Q_{1}-Q_{2}\vert\vert}_{\infty}$
+### $\vert\vert B^{k}Q_{1}-B^{k}Q_{2}\vert\vert_{\infty}\leq\gamma^{k}\vert\vert Q_{1}-Q_{2}\vert\vert_{\infty}$
 >if you start from with $Q_{1}$ and we run $k$ steps of value iteration, in other words, we apply the <font color="Red">Bellman operator</font> $k$ times, that is to say the $k$ step <font color="Red">Bellman operator</font> is a <font color="Red">contraction mapping</font>.  
 >
 >The <font color="OrangeRed">index of contraction</font> is just like $\gamme$ raised to the $k$, which is a <font color="OrangeRed">much much smaller</font> number.  
