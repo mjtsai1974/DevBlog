@@ -91,7 +91,7 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 ### $\vert\vert B^{k}Q_{1}-B^{k}Q_{2}\vert\vert_{\infty}\leq\gamma^{k}\vert\vert Q_{1}-Q_{2}\vert\vert_{\infty}$
 >if you start from with $Q_{1}$ and we run $k$ steps of value iteration, in other words, we apply the <font color="Red">Bellman operator</font> $k$ times, that is to say the $k$ step <font color="Red">Bellman operator</font> is a <font color="Red">contraction mapping</font>.  
 >
->The <font color="OrangeRed">index of contraction</font> is just like $\gamme$ raised to the $k$, which is a <font color="OrangeRed">much much smaller</font> number.  
+>The <font color="OrangeRed">index of contraction</font> is just like $\gamma$ raised to the $k$, which is a <font color="OrangeRed">much much smaller</font> number.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
