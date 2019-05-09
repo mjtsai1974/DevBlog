@@ -91,7 +91,13 @@ Prior post details the way <font color="Red">contraction mapping</font> makes <f
 ### $\vert\vert B^{k}Q_{1}-B^{k}Q_{2}\vert\vert_{\infty}\leq\gamma^{k}\vert\vert Q_{1}-Q_{2}\vert\vert_{\infty}$
 >if you start from with $Q_{1}$ and we run $k$ steps of value iteration, in other words, we apply the <font color="Red">Bellman operator</font> $k$ times, that is to say the $k$ step <font color="Red">Bellman operator</font> is a <font color="Red">contraction mapping</font>.  
 >
->The <font color="OrangeRed">index of contraction</font> is just like $\gamma$ raised to the $k$, which is a <font color="OrangeRed">much much smaller</font> number.  
+>The <font color="OrangeRed">index of contraction</font> is just like <font color="OrangeRed">$\gamma$ raised to the $k$</font>, which is a <font color="OrangeRed">much much smaller</font> number.  
+>  
+>So running $k$ steps of value iterations actually makes your value functions much closer together than one single step value iteration.  
+>
+>Cautions must be made that <font color="OrangeRed">$\gamma$ raised to the $k$</font> is <font color="RosyBrown">not linear</font>, it's like gamma squared, gamma cubed, gamma to the $k$, that's the index of contraction.  So, if we run $10$ steps of value iteration, that's like running $1$ step in $10$ steps of value iteration, because the difference $<\frac {2\cdot\varepsilon\cdot\gamma}{1-\gamma}$ always holds.  
+>
+><font color="DeepPink">$\vert\vert B^{k}Q_{1}-B^{k}Q_{2}\vert\vert_{\infty}\leq\gamma^{k}\vert\vert Q_{1}-Q_{2}\vert\vert_{\infty}$</font> gives us a way of quantifying <font color="OrangeRed">how long we run value iteration</font> and connecting it with <font color="OrangeRed">how close you are to optimal</font> after you run <font color="OrangeRed">$k$ steps of value iteration</font>.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
