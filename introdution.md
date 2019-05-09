@@ -216,6 +216,7 @@ It is an extension of MDP.  Under construction...
 * [Temporal Difference In Q Form]({{ site.github.repo }}{{ site.baseurl }}/2019/02/19/rl-temp-diff-q/)
 * [Bellman Operator Makes Convergence]({{ site.github.repo }}{{ site.baseurl }}/2019/03/05/rl-bellman-conv/)
 * [Bellman Operator And Convergence Properties]({{ site.github.repo }}{{ site.baseurl }}/2019/03/17/rl-bellman-conv-thm-prop/)
+* [More On Value Iteration]({{ site.github.repo }}{{ site.baseurl }}/2019/04/21/rl-more-on-val-i/)
 * Markov Decision Process
 * Partial Observable Markov Decision Process
 * Q Learning Algorithm
