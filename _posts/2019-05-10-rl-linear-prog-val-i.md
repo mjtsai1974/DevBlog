@@ -9,7 +9,7 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 </p>
 
 ### $\frac {1}{1-\gamma}$ <font color="RosyBrown">Isn't Polynomial</font> $\approx$ <font color="RosyBrown">Isn't Proportional</font>
->The <font color="Red">value iteration</font> identifies an <font color="#00ADAD">optimal policy</font> and <font color="OrangeRed">polinomial time</font> in $\frac {1}{1-\gamma}$, where $\lim_{\gamma\rightarrow\1}\frac {1}{1-\gamma}$=$\infty$, just explodes.  That's why we need the <font color="Red">linear programming</font> to solve MDPs in a reasonable amount of time.  
+>The <font color="Red">value iteration</font> identifies an <font color="#00ADAD">optimal policy</font> and <font color="OrangeRed">polinomial time</font> in $\frac {1}{1-\gamma}$, where $\lim_{\gamma\rightarrow 1}\frac {1}{1-\gamma}$=$\infty$, just explodes.  That's why we need the <font color="Red">linear programming</font> to solve MDPs in a reasonable amount of time.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
