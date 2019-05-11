@@ -11,6 +11,10 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 ### $\frac {1}{1-\gamma}$ <font color="RosyBrown">Isn't Polynomial</font> $\approx$ <font color="RosyBrown">Isn't Proportional</font>
 >The <font color="Red">value iteration</font> identifies an <font color="#00ADAD">optimal policy</font> and <font color="OrangeRed">polinomial time</font> in $\frac {1}{1-\gamma}$, where $\lim_{\gamma\rightarrow 1}\frac {1}{1-\gamma}$=$\infty$, just explodes.  That's why we need the <font color="Red">linear programming</font> to solve MDPs in a reasonable amount of time.  
 
+### What's <font color="Red">Linear Programming</font>?
+>It's an <font color="DeepSkyBlue">optimization framework</font>, in which <font color="DeepSkyBlue">you can give linear constraint in a linear objective function</font>, in my prior post [Lagrange Multiplier]({{ site.github.repo }}{{ site.baseurl }}/2017/10/27/prereq-lagrange-multiplier/), you can find some similarity.  In this post, we'd like to dive into deep level to solve MDPs by means of <font color="Red">linear programming</font>.  
+>
+
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
 
