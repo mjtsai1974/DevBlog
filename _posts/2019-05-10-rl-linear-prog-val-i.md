@@ -25,6 +25,13 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >$\forall S, V(S)$=$max_{A}(R(S,A)+\gamma\sum_{S'}P(S'\vert S,A)\cdot V(S'))$...[A]  
 >&#10112;for each state $S$, we have a variable $V(S)$ and relate each distinct $V(S)$ to its next $V(S')$.  
 >&#10113;we thus have &#10112; to be a set of <font color="OrangeRed">constraints</font>.  If we could solve this set of constraints, it is suggested to be a good departure point.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Do we have a way to solve [A]?</font>  
+><font color="DeepPink">Unless the $max_{A}$ has become linear</font>, the answer is <font color="RosyBrown">no</font>.  
+>
+>The max over action is <font color="RosyBrown">not</font> linear, it isn't translatable directly to a set of linear equations and a linear objective function.  In the very beginning, we are given a set of non-linear equations.  
+>
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
