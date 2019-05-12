@@ -28,7 +28,7 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Do we have a way to solve [A]?</font>  
-><font color="DeepPink">Unless the $max_{A}$ has become linear</font>, the answer is <font color="RosyBrown">no</font>.  
+>Unless<font color="DeepPink">the $max_{A}$ has become linear</font>, the answer is <font color="RosyBrown">no</font>.  
 >
 >The max over action is <font color="RosyBrown">not</font> linear, it isn't translatable directly to a set of linear equations and a linear objective function.  In the very beginning, we are given a set of non-linear equations.  
 >
