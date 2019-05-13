@@ -30,7 +30,9 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 ><font color="OrangeRed">Do we have a way to solve [A]?</font>  
 >Unless<font color="DeepPink">the $max_{A}$ has become linear</font>, the answer is <font color="RosyBrown">no</font>.  
 >
->The max over action is <font color="RosyBrown">not</font> linear, it isn't translatable directly to a set of linear equations and a linear objective function.  In the very beginning, we are given a set of non-linear equations.  
+>The <font color="OrangeRed">max over action</font> is <font color="RosyBrown">not</font> linear, it <font color="RosyBrown">isn't</font> translatable directly to a set of linear equations and a linear objective function.  In the very beginning, we are given a set of non-linear equations.  
+>
+>We should express the <font color="OrangeRed">max over action</font> in terms of <font color="OrangeRed">a set of linear constraints</font> and <font color="OrangeRed">a linear objective function</font>.  
 >
 
 ### Addendum
