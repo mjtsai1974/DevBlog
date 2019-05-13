@@ -34,6 +34,16 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >
 >We should express the <font color="OrangeRed">max over action</font> in terms of <font color="OrangeRed">a set of linear constraints</font> and <font color="OrangeRed">a linear objective function</font>.  
 >
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Example of $max(-3,7,2,5)=X$</font>  
+>Given this example of max, below is <font color="OrangeRed">a set of inequality constraints</font>:  
+>&#10112;$X\geq -3$  
+>&#10113;$X\geq 7$  
+>&#10114;$X\geq 2$  
+>&#10115;$X\geq 5$  
+>
+>Here is the question that the solution $7$ to this set of <font color="OrangeRed">inequality constraints</font>?  The answer is <font color="RosyBrown">no</font>, and why?  Because $9$, $10$, these numbers are also greater than or equal to all of these things(<font color="OrangeRed">the set of constraints</font>).  
+>
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
