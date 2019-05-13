@@ -42,7 +42,7 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >&#10114;$X\geq 2$  
 >&#10115;$X\geq 5$  
 >
->Here is the question that the solution $7$ to this set of <font color="OrangeRed">inequality constraints</font>?  The answer is <font color="RosyBrown">no</font>, and why?  Because $9$, $10$, these numbers are also greater than or equal to all of these things(<font color="OrangeRed">the set of constraints</font>).  
+>Here is the question that the solution $7$ to this set of <font color="OrangeRed">inequality constraints</font> is exactly the max?  The answer is <font color="RosyBrown">no</font>, and why?  Because $9$, $10$, these numbers are also greater than or equal to all of these things(<font color="OrangeRed">the set of constraints</font>).  
 >
 
 ### Addendum
