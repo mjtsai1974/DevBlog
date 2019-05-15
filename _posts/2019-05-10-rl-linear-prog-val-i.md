@@ -42,8 +42,11 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >&#10114;$X\geq 2$  
 >&#10115;$X\geq 5$  
 >
->Here is the question that the solution $7$ to this set of <font color="OrangeRed">inequality constraints</font> is exactly the max?  The answer is <font color="RosyBrown">no</font>, and why?  Because $9$, $10$, these numbers are also greater than or equal to all of these things(<font color="OrangeRed">the set of constraints</font>).  
+>Here we ponder if the solution $7$ to this set of <font color="OrangeRed">inequality constraints</font> is exactly the max?  The answer is <font color="RosyBrown">no</font>, and why?  Because $9$, $10$, these numbers are also greater than or equal to all of these things(<font color="OrangeRed">the set of constraints</font>).  
 >
+>What we want is <font color="DeepSkyBlue">to pick up the smallest one</font> within those number greater than and equal to above set of inequalities, in this example, you can't get any number that is smaller than $7$, thta is $min X$=$7$.  
+>
+>Is <font color="DeepPink">$min X$</font> a linear operator?  No, it is just a <font color="DeepPink">linear objective function</font>!!!  Next, we are going to use this idea to generalize a <font color="DeepPink">linear objective function</font> of the <font color="Red">Bellman equation</font> in a very similar way.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
