@@ -48,6 +48,15 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >
 >Is <font color="DeepPink">$min X$</font> a linear operator?  No, it is just a <font color="DeepPink">linear objective function</font>!!!  Next, we are going to use this idea to generalize a <font color="DeepPink">linear objective function</font> of the <font color="Red">Bellman equation</font> in a very similar way.  
 
+### The <font color="Red">Linear Programming</font>: <font color="Red">Primal</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Refine the Bellman equation</font>  
+>Succeeding to above idea that we'd like to pick up the smallest one from within all possible value functions of maximum, we should refine our <font color="Red">Bellman equation</font> in [A] as below:  
+>$\forall S,A V(S)\geq R(S,A)+\gamma\sum_{S'}P(S'\vert S,A)\cdot V(S')$...[B]  
+>&#10112;for all state and action, the value of a state is greater than or equal to the right part of the original expression, and we say the new expression of inequality [B].  
+>&#10113;the whole right part of [B] is just the <font color="Red">Q</font>-value.  
+>
+
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
 
