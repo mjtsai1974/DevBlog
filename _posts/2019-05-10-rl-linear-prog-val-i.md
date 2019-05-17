@@ -64,8 +64,12 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >&#10114;<font color="OrangeRed">a single $V(S)$ is unbounded</font>, we should <font color="OrangeRed">as a whole</font> evaluate <font color="OrangeRed">all states</font> in one minimize operation.  
 >
 >Due to above concerns in &#10112;,&#10113;,&#10114;, it turns out <font color="DeepPink">to minimize the sum of all states</font> to make it work:  
->$\sum_{S}V(S)$...[C]  
+>$min\;\sum_{S}V(S)$...[C]  
 >
+>So, <font color="OrangeRed">$min\;\sum_{S}V(S)$</font> is going to operate on all the individual $V(S)$ and make each of them to be <font color="OrangeRed">as small as they can be</font>, so that <font color="OrangeRed">it actually equals the $max\;V(S)$ for all $S$</font>.  
+>
+>Besides, <font color="RosyBrown">$min\;\sum_{S}V(S)$ isn't an upper bound on the max</font>, if any distinct $V(S)$ is an upper bound, then you <font color="RosyBrown">won't</font> have the minimum sum.  You can always move it down a little bit.  
+
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
