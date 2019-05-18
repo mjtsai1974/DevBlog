@@ -71,7 +71,7 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >Besides, <font color="RosyBrown">$min\;\sum_{S}V(S)$ isn't an upper bound on the max</font>, if any distinct $V(S)$ is an upper bound, then you <font color="RosyBrown">won't</font> have the minimum sum.  You can always move it down a little bit.  
 >
 ><font color="DeepSkyBlue">[3]</font>
-><font color="Red">The prial</font>  
+><font color="Red">The primal</font>  
 >This is atually a linear program by putting [B] and [C] together, some textbook name it the <font color="Red">primal</font>:  
 >$\;\;\forall S,A\;V(S)\geq R(S,A)+\gamma\sum_{S'}P(S'\vert S,A)\cdot V(S')$  
 >$\;\;\;\;min\;\sum_{S}V(S)$  
