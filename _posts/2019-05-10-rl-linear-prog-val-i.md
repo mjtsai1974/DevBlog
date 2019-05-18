@@ -77,6 +77,8 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >$\;\;\;\;min\;\sum_{S}V(S)$  
 >
 >You can regard <font color="OrangeRed">[C]</font> as the <font color="OrangeRed">linear objective function</font>.  To be believed that <font color="DeepSkyBlue">it is the solution equivalent to the solution to the MDP</font>.  We can just write down this linear program and give it to a linear program <font color="Red">solver</font> that runs in <font color="Red">polynomial time</font> and finally gets $V(S)$ for all state $S$.  
+>
+>How do we get our policy from that?  We just <font color="#00ADAD">choose the action that always returns the best(maximum) value</font>, choose this <font color="#00ADAD">greedy policy</font> with respect to that optimal value function, and we are doing it <font color="OrangeRed">in the unit of each distinct state</font>.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
