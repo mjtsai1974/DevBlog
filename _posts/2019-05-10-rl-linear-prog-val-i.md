@@ -76,7 +76,7 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >$\;\;\forall S,A\;V(S)\geq R(S,A)+\gamma\sum_{S'}P(S'\vert S,A)\cdot V(S')$  
 >$\;\;\;\;min\;\sum_{S}V(S)$  
 >
->To be believed that <font color="DeepSkyBlue">it is the solution equivalent to the solution to the MDP</font>.  We can just write down this linear program and give it to a linear program <font color="Red">solver</font> that runs in <font color="Red">polynomial time</font> and finally gets $V(S)$ for all state $S$.  
+>You can regard <font color="OrangeRed">[C]</font> as the <font color="OrangeRed">linear objective function</font>.  To be believed that <font color="DeepSkyBlue">it is the solution equivalent to the solution to the MDP</font>.  We can just write down this linear program and give it to a linear program <font color="Red">solver</font> that runs in <font color="Red">polynomial time</font> and finally gets $V(S)$ for all state $S$.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
