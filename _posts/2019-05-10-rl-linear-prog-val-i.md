@@ -90,6 +90,16 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >You can get a <font color="OrangeRed">new</font> linear programming that is equivalent to the original old one, this is called the <font color="Red">linear programming duality</font>.  Sometimes, it would be useful to solve a MDP by putting bounds and constraints on the solutions.  
 >
 >We treat <font color="DeepPink">the process of producing the dual of linear programming</font> to be just <font color="DeepPink">a mechanical process</font>.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="Red">The dual</font>  
+>$max_{q_{S,A}}\sum_{S}\sum_{A}q_{S,A}\cdot R(S,A)$...[D]  
+>$\;\;$such that $1$+$\gamma\cdot\sum_{S}\sum_{A}q_{S,A}\cdot P(S'\vert S,A)$=$\sum_{A'}q_{S',A'}$...[E]  
+>$\;\;\;\forall S,A\;q_{S,A}\geq 0$...[F]  
+>
+>We perform a series of steps to turn <font color="OrangeRed">each constraint from the primal becomes variable in the dual</font>, <font color="OrangeRed">each variable in the primal becomes constraint in the dual</font>, and <font color="OrangeRed">maximum becomes minimum</font>, <font color="OrangeRed">bound becomes objective function</font> where:  
+>&#10112;[D] is the <font color="Red">linear objective function</font>.  
+>&#10113;[E] and [F] are the <font color="OrangeRed">constraints</font>.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
