@@ -81,11 +81,15 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >How do we get our policy from that?  We just <font color="#00ADAD">choose the action that always returns the best(maximum) value</font>, choose this <font color="#00ADAD">greedy policy</font> with respect to that optimal value function, and we are doing it <font color="OrangeRed">in the unit of each distinct state</font>.  
 
 ### <font color="Red">Linear Programming Duality</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">A mechanical process</font>  
 >One more thing about <font color="Red">linear programming</font> is by switching from the <font color="Red">primal</font> to what's called the <font color="Red">dual</font>.  It has such nice property that by:  
 >&#10112;<font color="OrangeRed">changing constraints into variables</font>  
 >&#10113;<font color="OrangeRed">changing variables into constraints</font>  
 >
->You can get a <font color="OrangeRed">new</font> linear programming that is equivalent to the original old one, this is called the <font color="Red">linear programming duality</font>.  
+>You can get a <font color="OrangeRed">new</font> linear programming that is equivalent to the original old one, this is called the <font color="Red">linear programming duality</font>.  Sometimes, it would be useful to solve a MDP by putting bounds and constraints on the solutions.  
+>
+>We treat <font color="DeepPink">the process of producing the dual of linear programming</font> to be just <font color="DeepPink">a mechanical process</font>.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
