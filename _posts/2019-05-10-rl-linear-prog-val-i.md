@@ -109,6 +109,8 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >In this <font color="Red">dual</font>, the <font color="OrangeRed">optimization is to maximize the sum over all state-action pairs of the reward</font> for that <font color="OrangeRed">state-action pair</font> times <font color="OrangeRed">the value of $q_{S,A}$</font>, which is the new introduced <font color="OrangeRed">policy flow</font>; it's <font color="RosyBrown">not</font> the same <font color="Red">Q</font>-value.  
 >
 >The <font color="OrangeRed">policy flow, $q_{S,A}$</font> could be regarded as <font color="OrangeRed">how much agentness is flowing through each state-action pair</font>.  If it follows the <font color="#00ADAD">policy</font>, it is going to spend some time running in that environment of MDP, passing through <font color="Red">each</font> state-action pair.  When it is transiting from <font color="#D600D6">current</font> state-action pair to its <font color="#D600D6">next</font> state-action pair, it is <font color="#D600D6">discounted by $\gamma$</font>.  
+>
+>Here is the <font color="OrangeRed">concept</font> that each time the <font color="OrangeRed">policy flow</font> passes through a state-action pair, we're going to get the reward associated with that state-action pair.  What we'd like to do is <font color="OrangeRed">to maximize the reward according base on this concept by means of $max_{q_{S,A}}\sum_{S}\sum_{A}q_{S,A}\cdot R(S,A)$</font>.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
