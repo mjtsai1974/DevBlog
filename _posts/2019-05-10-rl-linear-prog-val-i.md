@@ -103,6 +103,12 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >We perform a series of steps to turn <font color="OrangeRed">each constraint from the primal becomes variable in the dual</font>, <font color="OrangeRed">each variable in the primal becomes constraint in the dual</font>, and <font color="OrangeRed">maximum becomes minimum</font>, <font color="OrangeRed">bound becomes objective function</font>.  
 >
 >In more detail, <font color="OrangeRed">the $V(S)$ and $R(S,A)$ term in [B], the constraint of primal, has been turned into the variables in the linear objective function expressed by [D] in dual</font>, with <font color="OrangeRed">$V(S)$ be replaced with $q_{S,A}$</font>, which is the next new introduced concept, the <font color="OrangeRed">aganet flow</font>.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">New introduced policy flow</font>  
+>In this <font color="Red">dual</font>, the <font color="OrangeRed">optimization is to maximize the sum over all state-action pairs of the reward</font> for that <font color="OrangeRed">state-action pair</font> times <font color="OrangeRed">the value of $q_{S,A}$</font>, which is the new introduced <font color="OrangeRed">policy flow</font>; it's <font color="RosyBrown">not</font> the same <font color="Red">Q</font>-value.  
+>
+>The <font color="OrangeRed">policy flow, $q_{S,A}$</font> could be regarded as <font color="OrangeRed">how much agentness is flowing through each state-action pair</font>.  If it follows the <font color="#00ADAD">policy</font>, it is going to spend some time running in that environment of MDP, passing through <font color="Red">each</font> state-action pair.  When it is transiting from <font color="#D600D6">current</font> state-action pair to its <font color="#D600D6">next</font> state-action pair, it is <font color="#D600D6">discounted by $\gamma$</font>.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
