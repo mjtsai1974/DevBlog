@@ -110,7 +110,21 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >
 >The <font color="OrangeRed">policy flow, $q_{S,A}$</font> could be regarded as <font color="OrangeRed">how much agentness is flowing through each state-action pair</font>.  If it follows the <font color="#00ADAD">policy</font>, it is going to spend some time running in that environment of MDP, passing through <font color="Red">each</font> state-action pair.  When it is transiting from <font color="#D600D6">current</font> state-action pair to its <font color="#D600D6">next</font> state-action pair, it is <font color="#D600D6">discounted by $\gamma$</font>.  
 >
->Here is the <font color="OrangeRed">concept</font> that each time the <font color="OrangeRed">policy flow</font> passes through a state-action pair, we're going to get the reward associated with that state-action pair.  What we'd like to do is <font color="OrangeRed">to maximize the reward according base on this concept by means of $max_{q_{S,A}}\sum_{S}\sum_{A}q_{S,A}\cdot R(S,A)$</font>.  
+>Here is the <font color="OrangeRed">concept</font> that each time the <font color="OrangeRed">policy flow</font> passes through a state-action pair, we're going to get the reward associated with that state-action pair.  What we'd like to do is <font color="OrangeRed">to maximize the reward according to this concept by means of $max_{q_{S,A}}\sum_{S}\sum_{A}q_{S,A}\cdot R(S,A)$</font>.  
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Min in primal vs max in dual</font>  
+>It's more intuitive for <font color="OrangeRed">we do the maximizing job in the dual</font>, comparing with <font color="DeepSkyBlue">the minimum we do in the primal</font>.  What we <font color="RosyBrown">don't</font> want is <font color="RosyBrown">to have an upper bound in the primal</font>, that's why we choose to minimize the sum of all states' value.  
+>
+>We choose $max_{q_{S,A}}\sum_{S}\sum_{A}q_{S,A}\cdot R(S,A)$, [C] <font color="OrangeRed">in the dual to maximize our reward each time the agent flow passing through each state-action pair</font>, <font color="Red">how to guarantee that we won't have an upper bound of each or some state-action pair?</font>  This is a good question.  
+>
+>It's going to be subject to the following idea, or just the constraint.  
+>
+><font color="DeepSkyBlue">[5]</font>
+><font color="OrangeRed">$1$+$\gamma\cdot\sum_{S}\sum_{A}q_{S,A}\cdot P(S'\vert S,A)$=$\sum_{A'}q_{S',A'}, \forall A'$</font>  
+>The answer is that we are constrainting this maximum to [D], that's a constraint, and for each state, in this case, would be better if we think oif them as <font color="OrangeRed">next state</font>.  
+>
+
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
