@@ -124,7 +124,8 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 ><font color="OrangeRed">$1$+$\gamma\cdot\sum_{S}\sum_{A}q_{S,A}\cdot P(S'\vert S,A)$=$\sum_{A'}q_{S',A'}, \forall A'$</font>  
 >The answer is that we are constrainting this maximum to [D], that's a constraint, and for each state, in this case, would be better if we think oif them as <font color="OrangeRed">next state</font>.  
 >
-
+>For each possible <font color="DeepSkyBlue">next state $S'$</font>, our design expects it to be true that the amount of policy flow through that next state $S'$, summed up over the actions $A'$ that are going through it, should be equal to the number of times that the next state $S'$ is visited, which we can get by summing over all states(represented by $S$) we might have started out, and actions $A$ we might have taken from $S$.  
+>
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
