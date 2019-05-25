@@ -130,6 +130,12 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >&#10113;we include $1$ in it, because we can also start <font color="OrangeRed">any</font> given state-action pair.  
 >
 >So, there is some <font color="OrangeRed">policy flow</font> we're injecting into <font color="OrangeRed">each</font> state-action pair of the system.  And we are going to add to <font color="OrangeRed">this same</font> state-action pair <font color="OrangeRed">any other policy flow</font> that would be coming through it, after that, in turns through <font color="OrangeRed">other parts of the system</font>.  
+>
+><font color="DeepSkyBlue">[6]</font>
+><font color="OrangeRed">It is discounted by $\gamma$</font>  
+>It's like we are <font color="OrangeRed">dumping policy flow</font> over MDP, then let the MDP pump around what's left.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2019-05-10-rl-linear-prog-val-i-dump.png "dump over MDP")
+>It is <font color="#D600D6">discounted</font> by <font color="#D600D6">$\gamma$</font>.  We ultimately get the maximum possible reward by $max_{q_{S,A}}\sum_{S}\sum_{A}q_{S,A}\cdot R(S,A)$, if we just follow the <font color="#00ADAD">greedy policy</font> at <font color="OrangeREd">each state we have visited</font>.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
