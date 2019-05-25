@@ -126,6 +126,10 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >
 >For each possible <font color="OrangeRed">next state $S'$</font>, our design expects it to be <font color="Red">true</font> that <font color="OrangeRed">the amount of policy flow through that next state $S'$, summed up over the actions $A'$ that are going out through it</font>, should be <font color="DeepPink">equal to</font> <font color="OrangeRed">the number of times that the next state $S'$ is visited</font>, which <font color="DeepSkyBlue">we can get by summing over all states(represented by $S$) we might have started out, and actions $A$ we might have taken from $S$</font>.  
 >
+>&#10112;the policy flow through that state-action pair times the <font color="#8400E6">transition probability</font> that would send us from $S$ to $S'$ by action $A$.  
+>&#10113;we include $1$ in it, because we can also start <font color="OrangeRed">any</font> given state-action pair.  
+>
+>So, there is some <font color="OrangeRed">policy flow</font> we're injecting into <font color="OrangeRed">each</font> state-action pair of the system.  And we are going to add to <font color="OrangeRed">this same</font> state-action pair <font color="OrangeRed">any other policy flow</font> that would be coming through it, after that, in turns through <font color="OrangeRed">other parts of the system</font>.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
