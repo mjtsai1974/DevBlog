@@ -116,13 +116,13 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 ><font color="OrangeRed">Min in primal vs max in dual</font>  
 >It's more intuitive for <font color="OrangeRed">we do the maximizing job in the dual</font>, comparing with <font color="DeepSkyBlue">the minimum we do in the primal</font>.  What we <font color="RosyBrown">don't</font> want is <font color="RosyBrown">to have an upper bound in the primal</font>, that's why we choose to minimize the sum of all states' value.  
 >
->We choose $max_{q_{S,A}}\sum_{S}\sum_{A}q_{S,A}\cdot R(S,A)$, [C] <font color="OrangeRed">in the dual to maximize our reward each time the agent flow passing through each state-action pair</font>, <font color="Red">how to guarantee that we won't have an upper bound of each or some state-action pair?</font>  This is a good question.  
+>We choose $max_{q_{S,A}}\sum_{S}\sum_{A}q_{S,A}\cdot R(S,A)$, [D] <font color="OrangeRed">in the dual to maximize our reward each time the agent flow passing through each state-action pair</font>, <font color="Red">how to guarantee that we won't have an upper bound of each or some state-action pair?</font>  This is a good question.  
 >
 >It's going to be subject to the following idea, or just the constraint.  
 >
 ><font color="DeepSkyBlue">[5]</font>
 ><font color="OrangeRed">$1$+$\gamma\cdot\sum_{S}\sum_{A}q_{S,A}\cdot P(S'\vert S,A)$=$\sum_{A'}q_{S',A'}, \forall A'$</font>  
->The answer is that we are constrainting this maximum to [D], that's a constraint, and for each state, in this case, would be better if we think oif them as <font color="OrangeRed">next state</font>.  
+>The answer is that we are constrainting this maximum to [D], that's a <font color="OrangeRed">constraint</font>, and for each state, in this case, would be better if we think oif them as <font color="OrangeRed">next state</font>.  
 >
 >For each possible <font color="OrangeRed">next state $S'$</font>, our design expects it to be <font color="Red">true</font> that <font color="OrangeRed">the amount of policy flow through that next state $S'$, summed up over the actions $A'$ that are going out through it</font>, should be <font color="DeepPink">equal to</font> <font color="OrangeRed">the number of times that the next state $S'$ is visited</font>, which <font color="DeepSkyBlue">we can get by summing over all states(represented by $S$) we might have started out, and actions $A$ we might have taken from $S$</font>.  
 >
@@ -136,6 +136,16 @@ Prior post reveals that <font color="Red">value iteration</font> <font color="Ro
 >It's like we are <font color="OrangeRed">dumping policy flow</font> over MDP, then let the MDP pump around what's left.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2019-05-10-rl-linear-prog-val-i-dump.png "dump over MDP")
 >It is <font color="#D600D6">discounted</font> by <font color="#D600D6">$\gamma$</font>.  We ultimately get the maximum possible reward by $max_{q_{S,A}}\sum_{S}\sum_{A}q_{S,A}\cdot R(S,A)$, if we just follow the <font color="#00ADAD">greedy policy</font> at <font color="OrangeREd">each state we have visited</font>.  
+>
+><font color="DeepSkyBlue">[7]</font>
+><font color="OrangeRed">The additional constraint: $\forall S,A\;q_{S,A}\geq 0$</font>  
+>This additional constraint just to guarantee 2 things:  
+>&#10112;there is <font color="RosyBrown">no negative</font> policy flow.  
+>&#10113;the policy flow in one place <font color="RosyBrown">wouldn't be overestimated</font>, so that it <font color="RosyBrown">wouldn't</font> then <font color="RosyBrown">be drained out</font> in some other place to <font color="OrangeRed">blance</font> it.  
+>
+>It is a meaning flow of balance, so <font color="DeepPink">the amount of stuff going into $S'$ has to be equal to the amount of stuff coming out of it</font>.  
+>
+>Subject to this constraint of $1$+$\gamma\cdot\sum_{S}\sum_{A}q_{S,A}\cdot P(S'\vert S,A)$=$\sum_{A'}q_{S',A'}, \forall A'$, would we maximize the reward by $max_{q_{S,A}}\sum_{S}\sum_{A}q_{S,A}\cdot R(S,A)$.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
