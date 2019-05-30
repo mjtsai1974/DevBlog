@@ -14,8 +14,12 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 ><font color="OrangeRed">The beginning in MDP</font>  
 >Suppoose we are departuring from a beginning state in <font color="OrangeRed">one MDP model</font>, each time we do make a decision to choose the best action that can transit us to next state with the maximum value(or reward), and we are doing this over and over again, until we believe that we have build the <font color="DeepPink">optimal policy</font> for each state, and it brings the whole MDP problem to a convergence.  
 >
->This means that <font color="RosyBrown">we are not facing the problem to choose the action of uncertainty in one single state</font>, and the same state would then be re-visited, since we are repeating this over and over again.  <font color="OrangeRed">There is no doubts that different or similar policies in one same state often interleave one over the others</font>, that's the <font color="Red">policy iteration</font> process.  
+>This means that <font color="RosyBrown">we are not facing the problem to choose the action of uncertainty in one single state</font>, and the same state would then be re-visited, since we are repeating this over and over again.  
 >
+><font color="OrangeRed">There is no doubts that different or similar policies in one same state often interleave one over the others</font>, that's the <font color="Red">policy iteration</font> process.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">The concept of policy iteration</font>  
 >We have actually involved below 3 phases on the way to solve a MDP issue:  
 >&#10112;initially, $\forall S, Q_{0}(S)=0$...[A]  
 >&#10113;proceeds with <font color="OrangeRed">policy improvement</font>  
@@ -23,6 +27,11 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >&#10114;do the <font color="OrangeRed">policy evaluation</font> task  
 >$\forall S, Q_{t+1}(S)$=$Q^{\pi_{t}}(S)$...[C]  
 >
+>We are starting by picking any <font color="OrangeRed">arbitrary</font> $Q$ function, denote it the initialization step, that's [A].  
+>
+>After that, we just iterate by taking the $t$-th, $Q_{t}$ function, computing its <font color="#00ADAD">greedy policy</font>, $\pi_{t}(S)$, that's [B], then use that <font color="#00ADAD">greedy policy</font> to get a new $Q$ function, say $Q_{t+1}$, that's [C].  
+>
+>And we are repeating and iterating this over and over again.  So each time we go around in this loop, we rae taking our <font color="OrangeRed">previous $Q$ function</font>, finding its <font color="#00ADAD">policy</font>, taking that <font color="#00ADAD">policy</font> to find its <font color="OrangeRed">next value function</font>, such repeating would actually get convergence in finite time.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
