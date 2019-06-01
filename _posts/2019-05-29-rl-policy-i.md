@@ -32,6 +32,14 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >After that, we just iterate by taking the $t$-th, $Q_{t}$ function, computing its <font color="#00ADAD">greedy policy</font>, $\pi_{t}(S)$, that's [B], then use that <font color="#00ADAD">greedy policy</font> to get a new $Q$ function, say $Q_{t+1}$, that's [C].  
 >
 >And we are repeating and iterating this over and over again.  So each time we go around in this loop, we rae taking our <font color="OrangeRed">previous $Q$ function</font>, finding its <font color="#00ADAD">policy</font>, taking that <font color="#00ADAD">policy</font> to find its <font color="OrangeRed">next value function</font>, such repeating would actually get convergence in finite time.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Policy iteration is a better way</font>  
+>The sequence of $Q$ functions we get convergence to $Q^{\ast}$ after we are experienced <font color="OrangeRed">a series of value iteration</font> in <font color="OrangeRed">finite time</font>, in particular, it illustrates how <font color="Red">policy iteration</font> works implicitely in my prior post.  
+>
+>The <font color="OrangeRed">convergence of policy iteration is at least as fast as value iteration</font> in that <font color="OrangeRed">if at any point we sync up the $Q$ functions, we start value iteration and policy iteration from the same $Q$ function</font>.  Then, <font color="DeepPink">each step this policy iteration takes is moving us towards the optimal $Q$ function, no more slowly than value iteration</font>.  
+>
+>So, <font color="OrangeRed">policy iteration is a better way</font>.
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
