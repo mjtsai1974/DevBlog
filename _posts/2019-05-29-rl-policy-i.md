@@ -53,7 +53,7 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >
 >The scenario might be constructed <font color="OrangeRed">by putting value iteration inside the inner loop wrapper by the outside loop of policy iteration</font>, since <font color="OrangeRed">the value iteration operates in accordance to the policy</font>, exactly, <font color="OrangeRed">the action mapped from current state by current greedy policy at this moment</font>.  So, <font color="#C20000">the value iteration should be in the inner loop of policy iteration</font>.  
 >
->
+>Trivially, the <font color="Red">policy iteration</font> is doing much works than value iteration, if the greedy policy seldomly changes on its way to convergence, it <font color="OrangeRed">should be at least as fast as value iteration</font>.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
