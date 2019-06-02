@@ -42,7 +42,7 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >So, <font color="OrangeRed">policy iteration is a better way</font>.
 >
 ><font color="DeepSkyBlue">[4]</font>
-><font color="OrangeRed">Concerns pertaining to policy iteration</font>  
+><font color="Brown">Concerns pertaining to policy iteration::mjtsai1974</font>  
 >One thing needs to be taken into consideration when we are doing the <font color="OrangeRed">policy improvement</font> task, that is <font color="OrangeRed">faster convergence would be at the cost of greater computational expense</font>.  
 >
 >In particular, when transiting from $S_{i}$ to $S_{i+1}$ in stage $t$, we'd like to make <font color="OrangeRed">policy evaluation</font>, $\forall S, Q_{t+1}(S)$=$Q^{\pi_{t}}(S)$, by taking the policy and working out $Q_{t+1}$ function to be used by $S_{i}$ as its value obtained, after transiting to $S_{i+1}$.  
@@ -50,6 +50,10 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >When in stage $t+1$, it does the <font color="OrangeRed">policy improvement</font> again, with the <font color="DeepSkyBlue">new updated(or even the same) policy</font> come out, then $Q_{t+2}$ function would laterly be generated out, this cycle repeats, untile it converges.  
 >
 >Yes, it is solving a system of linaer equations.  
+>
+>The scenario might be constructed <font color="OrangeRed">by putting value iteration inside the inner loop wrapper by the outside loop of policy iteration</font>, since <font color="OrangeRed">the value iteration operates in accordance to the policy</font>, exactly, <font color="OrangeRed">the action mapped from current state by current greedy policy at this moment</font>.  So, <font color="#C20000">the value iteration should be in the inner loop of policy iteration</font>.  
+>
+>
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
