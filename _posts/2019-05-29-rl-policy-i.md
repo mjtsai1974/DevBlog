@@ -69,9 +69,14 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >$\pi_{1}\geq\pi_{2}$ iff $\forall s\in S, V^{\pi_{1}}(s)\geq V^{\pi_{2}}(s)$  
 >&#10113;the <font color="OrangeRed">strict domination</font>:  
 >$\pi_{1}>\pi_{2}$ iff $\forall s\in S, V^{\pi_{1}}(s)\geq V^{\pi_{2}}(s)$  
->there exists some $s\in S, V^{\pi_{1}}(s)\geq V^{\pi_{2}}(s)$  
+>there exists some $s\in S, V^{\pi_{1}}(s)> V^{\pi_{2}}(s)$  
 >&#10114;$\pi$ is <font color="OrangeRed">$\varepsilon$ optimal</font> iff <font color="OrangeRed">$\vert V^{\pi}(s)-V^{\pi^{\ast}}(s)\vert\leq\varepsilon$</font>  
 >
+>Expand further that a policy is <font color="OrangeRed">$\varepsilon$ optimal</font> if the value function for that <font color="#00ADAD">(greedy) policy</font> is $\varepsilon$ close to the value function for the <font color="DeepPink">optimal policy</font> at <font color="Red">all</font> states.  It gives us a concept of <font color="DeepSkyBlue">bounding loss</font> or <font color="DeepSkyBlue">bounding regret</font>.  
+>
+>We can treat a policy to be <font color="OrangeRed">nearly optimal</font> if <font color="OrangeRed">per step loss in each state transition is very very small</font>.  
+>
+>From above we can tell that if policy 1 dominates policy 2, but, <font color="RosyBrown">not strictly</font> dominates it, then they <font color="RosyBrown">must have the same value everywhere</font>.  Since it would never be greater than or equal to, it's always equal to.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
