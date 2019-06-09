@@ -102,6 +102,14 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >Then, we take a convex combination of a bunch of non-negative values by summing them up, there is no way it would be negative.  
 >
 >We thus proved that $V_{1}$ dominates $V_{2}$ leads to $B_{2}V_{1}$ dominates $B_{2}V_{2}$.  
+>
+><font color="DeepSkyBlue">[5]</font>
+><font color="Brown">Cautions::mjtsai1974</font>  
+>The same Bellman operator with the same greedy policy, might <font color="RosyBrown">not</font> guarantee $S_{1}$ and $S_{2}$ could get closer after this transition.  
+>
+>Because <font color="RosyBrown">the same policy</font> working on <font color="RosyBrown">different states</font> might <font color="RosyBrown">not</font> come out with <font color="RosyBrown">the same action</font>, even <font color="RosyBrown">the same action might leads to different one step transition</font>.  
+>
+>In <font color="DeepSkyBlue">above proof, we are applying on the same state, but different value functions</font>.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
