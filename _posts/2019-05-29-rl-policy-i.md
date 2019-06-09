@@ -85,6 +85,11 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >&#10113;$\lbrack B_{2}V\rbrack$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,\pi_{2})\cdot V(S')$  
 >
 >So, if we use $B_{1}$ over value function, it just returns the immediate reward, plus the discounted expected value following $\pi_{1}$, the same idea for $B_{2}$, and it is using $\pi_{2}$.  
+>
+>We already know a bunch of things about such updates.  If we apply <font color="OrangeRed">the same Bellman operator</font> on <font color="OrangeRed">distinct value functions</font>, then they are <font color="RosyBrown">not</font> moving further apart, by a factor of at least gamma, unless these 2 value functions are the same.  
+>
+>If ther are already perfectly together, staying at the same fixed point, then they <font color="RosyBrown">won't</font> move any close together.  
+>
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
