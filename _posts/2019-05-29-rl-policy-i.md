@@ -62,6 +62,16 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >&#10113;the worse case is that <font color="RosyBrown">it can't be larger than the number of actions raised to the number of states</font>.  
 >
 >$\;\;l$inear $\vert S\vert\leq$ convergence time $\leq \vert A\vert^{\vert S \vert}$  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Domination</font>  
+>&#10112;the <font color="OrangeRed">domination</font>:  
+>$\pi_{1}\geq\pi_{2}$ iff $\forall s\in S, V^{\pi_{1}}(s)\geq V^{\pi_{2}}(s)$  
+>&#10113;the <font color="OrangeRed">strict domination</font>:  
+>$\pi_{1}>\pi_{2}$ iff $\forall s\in S, V^{\pi_{1}}(s)\geq V^{\pi_{2}}(s)$  
+>there exists some $s\in S, V^{\pi_{1}}(s)\geq V^{\pi_{2}}(s)$  
+>&#10114;$\pi$ is <font color="OrangeRed">$\varepsilon$ optimal</font> iff <font color="OrangeRed">$\vert V^{\pi}(s)-V^{\pi^{\ast}}(s)\vert\leq\varepsilon$</font>  
+>
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
