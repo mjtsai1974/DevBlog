@@ -90,6 +90,18 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >
 >If ther are already perfectly together, staying at the same fixed point, then they <font color="RosyBrown">won't</font> move any close together.  
 >
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Policy iteration behaves itself</font>  
+>$\;\;$ if $V_{1}\geq V_{2}$, then $B_{2}V_{1}\geq B_{2}V_{2}$.  
+>
+><font color="Brown">proof::mjtsai1974</font>  
+>$\lbrack B_{2}V_{1}-B_{2}V_{2}\rbrack(S)$  
+>=$\gamma\cdot\sum_{S'}P(S'\vert S, \pi_{2})\cdot (V_{1}(S')-V_{2}(S'))$  
+>, where the term $(V_{1}(S')-V_{2}(S'))\geq 0$ by given.  
+>
+>Then, we take a convex combination of a bunch of non-negative values by summing them up, there is no way it would be negative.  
+>
+>We thus proved that $V_{1}$ dominates $V_{2}$ leads to $B_{2}V_{1}$ dominates $B_{2}V_{2}$.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
