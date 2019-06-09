@@ -55,7 +55,7 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >
 >Trivially, the <font color="Red">policy iteration</font> is doing much works than value iteration, if the greedy policy seldomly changes on its way to convergence, it <font color="OrangeRed">should be at least as fast as value iteration</font>.  
 
-### <font color="Red">Policy Iteration</font> Behaves Itself
+### Why Does <font color="Red">Policy Iteration</font> Works?
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">What is the convergence time?</font>  
 >&#10112;we know there exists some MDPs, <font color="DeepPink">the number of iterations the policy iteration takes is linear</font>, it is <font color="DeepPink">at lease as large as the number of states in the MDP</font>.  
@@ -77,6 +77,14 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >We can treat a policy to be <font color="OrangeRed">nearly optimal</font> if <font color="OrangeRed">per step loss in each state transition is very very small</font>.  
 >
 >From above we can tell that if policy 1 dominates policy 2, but, <font color="RosyBrown">not strictly</font> dominates it, then they <font color="RosyBrown">must have the same value everywhere</font>.  Since it would never be greater than or equal to, it's always equal to.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Bellman operator is monotonic</font>  
+>We define 2 <font color="Red">Bellman operator</font> on 2 policies, they are $B_{1}$, $B_{2}$ on $\pi_{1}$, $\pi_{2}$:  
+>&#10112;$\lbrack B_{1}V\rbrack$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,\pi_{1})\cdot V(S')$  
+>&#10113;$\lbrack B_{2}V\rbrack$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,\pi_{2})\cdot V(S')$  
+>
+>So, if we use $B_{1}$ over value function, it just returns the immediate reward, plus the discounted expected value following $\pi_{1}$, the same idea for $B_{2}$, and it is using $\pi_{2}$.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
