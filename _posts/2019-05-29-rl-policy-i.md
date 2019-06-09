@@ -55,6 +55,14 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >
 >Trivially, the <font color="Red">policy iteration</font> is doing much works than value iteration, if the greedy policy seldomly changes on its way to convergence, it <font color="OrangeRed">should be at least as fast as value iteration</font>.  
 
+### <font color="Red">Policy Iteration</font> Behaves Itself
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">What is the convergence time?</font>  
+>&#10112;we know there exists some MDPs, <font color="DeepPink">the number of iterations the policy iteration takes is linear</font>, it is <font color="DeepPink">at lease as large as the number of states in the MDP</font>.  
+>&#10113;the worse case is that <font color="RosyBrown">it can't be larger than the number of actions raised to the number of states</font>.  
+>
+>$$\;\;linear $\vert S\vert\leq$ convergence time $\geq \vert A\vert^{\vert S \vert}$  
+
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
 
