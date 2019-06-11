@@ -111,6 +111,18 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >
 >In <font color="DeepSkyBlue">above proof, we are applying on the same state, but different value functions</font>.  
 
+### <font color="Red">Value Improvement</font> In <font color="Red">Policy Iteration</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The background</font>  
+>Suppose in the beginning, we are given <font color="Red">Bellman operator</font> $B_{1}$ applied on <font color="DeepSkyBlue">some</font> policy $\pi_{1}$ with respect to value function $Q_{1}$, such that <font color="DeepSkyBlue">$Q_{1}$=$B_{1}Q_{1}$</font> holds.  
+>
+>Still more, there exists another <font color="Red">Bellman operator</font> $B_{2}$ applied on a <font color="OrangeRed">greedy</font> policy $\pi_{2}$ with respect to value function $Q_{1}$, such that <font color="OrangeRed">$Q_{1}\leq B_{1}Q_{1}$</font> holds.  
+>
+>Above construction holds by <font color="Red">contraction property</font>.  We have this inequality:  
+>$Q_{1}(S,A)$  
+>=$R(S,A)$+$\gammar\cdot\sum_{S'}P(S'\vert S, \pi_{1}(S'))\cdot Q_{1}(S',\pi_{1}(S'))$  
+>$\;\;\leq R(S,A)$+$\gammar\cdot\sum_{S'}P(S'\vert S, \pi_{2}(S'))\cdot Q_{1}(S',\pi_{2}(S'))$  
+
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
 
