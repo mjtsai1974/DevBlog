@@ -120,8 +120,14 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >
 >Above construction holds by <font color="Red">contraction property</font>.  We have this inequality:  
 >$Q_{1}(S,A)$  
->=$R(S,A)$+$\gammar\cdot\sum_{S'}P(S'\vert S, \pi_{1}(S'))\cdot Q_{1}(S',\pi_{1}(S'))$  
->$\;\;\leq R(S,A)$+$\gammar\cdot\sum_{S'}P(S'\vert S, \pi_{2}(S'))\cdot Q_{1}(S',\pi_{2}(S'))$  
+>=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S, \pi_{1}(S'))\cdot Q_{1}(S',\pi_{1}(S'))$  
+>$\;\;\leq R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S, \pi_{2}(S'))\cdot Q_{1}(S',\pi_{2}(S'))$  
+>
+>Image we are beginning from state $S$ by using $B_{1}$ on $\pi_{1}$ to reach $Q_{1}$, as it is the <font color="OrangeRed">fixed point</font> of $B_{1}$, that is to say you start off with the policy, and you get the value function of that policy.  
+>
+>Then, we might back to the same state $S$, since we are repeating the value iteration over and over again, thus back to the original departuring point, under the case we are in the MDP model already known; or we are just evaluating over the sampling data, trying to complete the contour of this MDP model, eventhough, we still have the chance to re-visit the state we have ever arrived, say the initial state $S$.  
+>
+>This time, intuitively, we take $B_{2}$ following up $\pi_{2}$, this <font color="RosyBrown">greedy policy</font> would turn our value function $Q_{1}$ <font color="RosyBrown">no worse, possibly better</font>, that is $Q_{1}\leq B_{2}Q_{1}$.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
