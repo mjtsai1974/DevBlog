@@ -143,6 +143,15 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >&#10114;$lim_{k\rightarrow\infty}B_{2}^{k}Q_{1}\geq Q_{1}$...<font color="OrangeRed">transitinity</font>  
 >&#10115;$Q_{2}\geq Q_{1}$...<font color="OrangeRed">fixed point</font>  
 
+### <font color="Red">Policy Iteration Won't Get Stuck In Local Optimal</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The important thing</font>  
+>If there is any way to impriove, it will actually improve, <font color="Red">it won't get stuck in local optimal</font>.  This is really the very important thing.  
+>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Value non deprovement or value improvement</font>  
+>
+
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
 
