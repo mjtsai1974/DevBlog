@@ -135,6 +135,13 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >&#10112;the <font color="OrangeRed">Bellman operator monotonicity</font>  
 >&#10113;the <font color="Red">value improvement</font> property  
 >&#10114;the definition of $\pi_{1}$,$\pi_{2}$,$B_{1}$,$B_{2}$,$Q_{1}$,$Q_{2}$  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">The policy iteration in a summary</font>  
+>&#10112;$B_{2}Q_{1}\geq Q_{1}$...<font color="Red">value improvement</font>  
+>&#10113;$k\geq 0, B_{2}^{k+1}Q_{1}\geq B_{2}^{k}Q_{1}$...<font color="OrangeRed">monotonicity</font>  
+>&#10114;$lim_{k\rightarrow\infty}B_{2}^{k}Q_{1}\geq Q_{1}$...<font color="OrangeRed">transitinity</font>  
+>&#10115;$Q_{2}\geq Q_{1}$...<font color="OrangeRed">fixed point</font>  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
