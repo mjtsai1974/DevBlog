@@ -148,9 +148,16 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 ><font color="OrangeRed">The important thing</font>  
 >If there is any way to impriove, it will actually improve, <font color="Red">it won't get stuck in local optimal</font>.  This is really the very important thing.  
 >
-><font color="DeepSkyBlue">[1]</font>
+><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Value non deprovement or value improvement</font>  
+>If it's the case that <font color="DeepPink">$\pi_{1}$ is optimal</font>, then <font color="DeepPink">the greedy policy $\pi_{2}$ would just lead the value function to the the same fixed point</font>.  We are just <font color="DeepPink">stuck at the same fixed point</font>.  Because we have already reached the fixed point, that's the whole thing.  
 >
+>If it's the case that <font color="RosyBrown">$\pi_{1}$ is not optimal</font>, there has some space that makes <font color="RosyBrown">value non deprovement equivalent to value improvement</font> and it holds for this inequality:  
+>$Q_{1}(S,A)$  
+>=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S, \pi_{1}(S'))\cdot Q_{1}(S',\pi_{1}(S'))$  
+>$\;\;\leq R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S, \pi_{2}(S'))\cdot Q_{1}(S',\pi_{2}(S'))$  
+>
+>The important thing is that it might like <font color="OrangeRed">strict value improvement</font> for some states, replacing $\geq$ by $>$.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
