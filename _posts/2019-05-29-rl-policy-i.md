@@ -159,6 +159,19 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >
 >The important thing is that it might like <font color="OrangeRed">strict value improvement</font> for some states, replacing $\geq$ by $>$.  
 
+### Illustration: <font color="Red">More On Value Non-deprovement And Value Improvement</font>
+><font color="RoyalBlue">[Question]</font>  
+>Suppose I have 2 states, and keep on swapping back and forth in between $S_{1}$ and $S_{2}$ per iteration, to evaluate which one is betterthan the other.  The question is that <font color="RoyalBlue">after swapping, do you still have domination in both cases?</font>  The MDP model is exhibitted below:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2019-05-29-rl-policy-i-non-deprovement.png "val imp")
+>Trivially, in $S_{1}$, $V_{1}$ is more value than $S_{1}$, $V_{2}$.  
+>
+><font color="DeepSkyBlue">[Answer]</font>  
+><font color="RosyBrown">No, because domination is point wise, state wise.</font>  
+>
+>If you don't consider <font color="Red">value non-deprovement</font>, you can swap in between $S_{1}$ and $S_{2}$.  Suppose you are in $S_{1}$ initially, with $V_{1}> V_{2}$, after you transite to $S_{2}$, you have value functions $V_{1}\geq V_{2}$, which is a violation.  <font color="Red">Value non-deprovement</font> and <font color="Red">value Improvement</font> <font color="RosyBrown">don't allow value function go down</font>, it should at least keep the same!!!  
+>
+>The point is that <font color="OrangeRed">the statement is for all the states, for their value functions, once $V_{1}$ is strictly dominating $V_{2}$ in $S_{1}$, after transiting to $S_{2}$, should keep it that way.</font>  
+
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
 
