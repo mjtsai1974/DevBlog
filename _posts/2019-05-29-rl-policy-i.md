@@ -168,7 +168,7 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 ><font color="DeepSkyBlue">[Answer]</font>  
 ><font color="RosyBrown">No, because domination is point wise, state wise.</font>  
 >
->If you don't consider <font color="Red">value non-deprovement</font>, you can swap in between $S_{1}$ and $S_{2}$.  Suppose you are in $S_{1}$ initially, with $V_{1}> V_{2}$, after you transite to $S_{2}$, you have value functions $V_{1}\geq V_{2}$, which is a violation.  <font color="Red">Value non-deprovement</font> and <font color="Red">value Improvement</font> <font color="RosyBrown">don't allow value function go down</font>, it should at least keep the same!!!  
+>If you don't consider <font color="Red">value non-deprovement</font>, you can swap in between $S_{1}$ and $S_{2}$.  <font color="OrangeRed">Suppose you are looping over and over again in this MDP, time to converge</font>, at this moment in $S_{1}$, with $V_{1}> V_{2}$, after you transite to $S_{2}$, you have value functions $V_{1}\geq V_{2}$, which is a violation.  <font color="Red">Value non-deprovement</font> and <font color="Red">value Improvement</font> <font color="RosyBrown">don't allow value function go down</font>, it should at least keep the same!!!  
 >
 >The point is that <font color="OrangeRed">the statement is for all the states, for their value functions, once $V_{1}$ is strictly dominating $V_{2}$ in $S_{1}$, after transiting to $S_{2}$, should keep it that way.</font>  
 >
