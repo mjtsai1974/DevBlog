@@ -174,7 +174,7 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >
 >So, <font color="DeepPink">local stuck doesn't happen</font> if we are already in the unique fixed point with strict domination, in this example $S_{1}$; however, if we are beginning from $S_{2}$, if should transite to $S_{1}$ for no worse, even better.  
 >
-><font color="Brown">[Notes::mjtsai1974]</font>
+><font color="Brown">[Notes::mjtsai1974]</font>  
 ><font color="DeepPink">By policy iteration, we'll always get a better policy.</font>  
 >
 >Since if we are starting from $S_{1}$ by $\pi_{1}$, the initial policy of something, by picking up $A_{1}$ to transite to $S_{2}$.  We are at least one step toward the final optimal in $S_{2}$ at this moment, or it is not worse, might be the same, even better than it is in $S_{1}$.  
