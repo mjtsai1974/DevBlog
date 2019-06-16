@@ -171,6 +171,11 @@ Departuring from <font color="OrangeRed">multiple states</font> in <font color="
 >If you don't consider <font color="Red">value non-deprovement</font>, you can swap in between $S_{1}$ and $S_{2}$.  Suppose you are in $S_{1}$ initially, with $V_{1}> V_{2}$, after you transite to $S_{2}$, you have value functions $V_{1}\geq V_{2}$, which is a violation.  <font color="Red">Value non-deprovement</font> and <font color="Red">value Improvement</font> <font color="RosyBrown">don't allow value function go down</font>, it should at least keep the same!!!  
 >
 >The point is that <font color="OrangeRed">the statement is for all the states, for their value functions, once $V_{1}$ is strictly dominating $V_{2}$ in $S_{1}$, after transiting to $S_{2}$, should keep it that way.</font>  
+>
+>So, <font color="DeepPink">local stuck doesn't happen</font> if we are already in the unique fixed point with strict domination, in this example $S_{1}$; however, if we are beginning from $S_{2}$, if should transite to $S_{1}$ for no worse, even better.  
+>
+><font color="Brown">[Notes::mjtsai1974]</font>
+><font color="DeepPink">By policy iteration, we'll always get a better policy</font>. Since if we are starting from $S_{1}$ by $\pi_{1}$, the initial policy of something, by picking up $A_{1}$ to transite to $S_{2}$.  We are at least one step toward the final optimal in $S_{2}$ at this moment, or it is not worse, might be the same, even better than it is in $S_{1}$.  
 
 ### Addendum
 >&#10112;[Advanced, algorithmic, analysis, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4602578895/concepts/45888989130923)  
