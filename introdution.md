@@ -218,6 +218,7 @@ It is an extension of MDP.  Under construction...
 * [Bellman Operator And Convergence Properties]({{ site.github.repo }}{{ site.baseurl }}/2019/03/17/rl-bellman-conv-thm-prop/)
 * [More On Value Iteration]({{ site.github.repo }}{{ site.baseurl }}/2019/04/21/rl-more-on-val-i/)
 * [Linear Programming In Value Iteration]({{ site.github.repo }}{{ site.baseurl }}/2019/05/10/rl-linear-prog-val-i/)
+* [Policy Iteration]({{ site.github.repo }}{{ site.baseurl }}/2019/05/29/rl-policy-i/)
 * Partial Observable Markov Decision Process
 * Q Learning Algorithm
 * Policy Iteration v.s. Value Iteration
