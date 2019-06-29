@@ -8,6 +8,20 @@ title: Meshing The Rewards
 In order to avoid the <font color="Red">local suboptimal</font> endless looping, the suggestive approach is <font color="DeepPink">to mesh the reward funtion without impact on the original optimal policy</font>.  The reward function should contain <font color="RosyBrown">not only the fixed return of constant</font>, as we are losing benifit of value obtained in current state, when transiting from current state to next state.  
 </p>
 
+### Why To Change The Reward Function In MDP?
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">A brief summary</font>  
+>As we have a lot study in MDP, we know that state value chnages(or has been accumulated), which is enclosed with every occurrence of state transition:  
+>&#10112;it begins with initial configuration.  
+>&#10113;makes value iteration by Bellman equation(or operation), coming out some policy, maybe non-optimal, suboptimal, or even the final optimal.  
+>&#10114;then value improvement after policy iteration and leads to the very next policy improvement.  
+>&#10115;oever and over again, finally to the convergence.  
+>
+<!--
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Because of the state transition</font>  
+--<
+
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
 
