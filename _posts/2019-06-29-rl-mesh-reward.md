@@ -17,10 +17,9 @@ In order to avoid the <font color="Red">local suboptimal</font> endless looping,
 >&#10114;then value improvement after policy iteration and leads to the very next policy improvement.  
 >&#10115;oever and over again, finally to the convergence.  
 >
-<!--
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Because of the state transition</font>  
--->
+>We have learned the fact that the state value changes as transiting from current to next state.  <font color="DeepSkyBlue">Should the reward function returns only the fixed constant values?</font>  We think it mandatory to <font color="OrangeRed">reshape</font> the reward function.  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
