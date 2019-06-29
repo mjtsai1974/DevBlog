@@ -20,7 +20,7 @@ In order to avoid the <font color="Red">local suboptimal</font> endless looping,
 <!--
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Because of the state transition</font>  
---<
+-->
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
