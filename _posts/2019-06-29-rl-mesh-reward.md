@@ -45,6 +45,10 @@ In order to avoid the <font color="Red">local suboptimal</font> endless looping,
 ><font color="DeepSkyBlue">[Answer]</font>  
 >We have defined MDP with states, actions, rewards, probability transition and gamma, denoted as $<S,A,R,P,\gamma>$.  
 >
+>By messing with $R$ only, and leaving all the rest uncganged:  
+>&#10112;<font color="OrangeRed">multiply</font> the reward function by any <font color="DeepPink">positive</font> constant  
+>&#10113;<font color="OrangeRed">shift</font> the reward function by constant  
+>&#10114;<font color="Red">non-linear potential-bsed rewards</font>  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
