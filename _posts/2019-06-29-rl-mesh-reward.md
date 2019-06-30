@@ -35,6 +35,8 @@ In order to avoid the <font color="Red">local suboptimal</font> endless looping,
 >&#10112;<font color="OrangeRed">speed of computation and experience</font> that the agent needs to learn.  
 >&#10113;<font color="OrangeRed">space of memory</font> the learning algorithm requires.  
 >&#10114;<font color="OrangeRed">solvability</font>, infinity versus <font color="RosyBrown">not</font>-infinity.  
+>
+>We want <font color="DeepPink">to change the reward function without changing what it's originally optimizing</font>.  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
