@@ -38,6 +38,14 @@ In order to avoid the <font color="Red">local suboptimal</font> endless looping,
 >
 >We want <font color="DeepPink">to change the reward function without changing what it's originally optimizing</font>.  
 
+### Change The Reward Function
+><font color="RoyalBlue">[Question]</font>  
+>How to <font color="DeepPink">change the reward function without changing the optimal policy</font>?  
+>
+><font color="DeepSkyBlue">[Answer]</font>  
+>We have defined MDP with states, actions, rewards, probability transition and gamma, denoted as $<S,A,R,P,\gamma>$.  
+>
+
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
 
