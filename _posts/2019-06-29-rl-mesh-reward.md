@@ -20,6 +20,21 @@ In order to avoid the <font color="Red">local suboptimal</font> endless looping,
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Because of the state transition</font>  
 >We have learned the fact that the state value changes as transiting from current to next state.  <font color="DeepSkyBlue">Should the reward function returns only the fixed constant values?</font>  We think it mandatory to <font color="OrangeRed">reshape</font> the reward function.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="RosyBrown">The common issue in AI</font>  
+>It would be easy to just <font color="RosyBrown">turn the reward function into all zeros</font>, then, <font color="RosyBrown">all policies maximize that reward function</font>, in which case, <font color="RosyBrown">learning is done</font>.  But, this is <font color="RosyBrown">not the problem we are trying to solve</font>.  
+>
+>This is a <font color="RosyBrown">common issue in AI</font>.
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">The target</font>  
+>The reward function is a way to specify the behavior that is going to get compiled by the learning algorithminto actual behavior.  
+>
+>The semantics we'd like the agent to do by changing the reward function is for the efficiency:  
+>&#10112;<font color="OrangeRed">speed of computation and experience</font> that the agent needs to learn.  
+>&#10113;<font color="OrangeRed">space of memory</font> the learning algorithm requires.  
+>&#10114;<font color="OrangeRed">solvability</font>, infinity versus <font color="RosyBrown">not</font>-infinity.  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
