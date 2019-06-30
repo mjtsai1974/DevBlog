@@ -50,6 +50,19 @@ In order to avoid the <font color="Red">local suboptimal</font> endless looping,
 >&#10113;<font color="OrangeRed">shift</font> the reward function by constant  
 >&#10114;<font color="Red">non-linear potential-bsed rewards</font>  
 
+### <font color="OrangeRed">Multiply</font> $R$ By <font color="DeepPink">Positive</font> Constant: Illustration
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Begin from Bellman equation</font>  
+>$Q(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
+>This is the <font color="Red">Bellman equation</font> we already familar with, and multiply $R(S,A)$ by constant $c$ to get the new reward function, that is $R'(S,A)$=$c\cdot R(S,A)$, where $c>0$, then what is $Q'(S,A)$=?  
+>
+><font color="DeepSkyBlue">[Answer]</font>  
+>We are asking $Q'(S,A)$ in terms of $Q(S,A)$, let's do the illustration:  
+>$Q'(S,A)$  
+>=$R'(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q'(S',A')$  
+>=$c\cdot R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}($  
+>$\;\;c\cdot R(S',A')$+$\gamma\cdot\sum_{S"}P(S"\vert S',A')\cdot max_{A''}Q'(S",A"))$  
+
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
 
