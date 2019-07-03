@@ -95,6 +95,13 @@ In order to avoid the <font color="Red">local suboptimal</font> endless looping,
 >$Q(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
 >This is the <font color="Red">Bellman equation</font> we already familar with, and add a scalar $c$ to $R(S,A)$ to get the new reward function, that is $R'(S,A)$=$R(S,A)+c$, then what is $Q'(S,A)$=?  
 >
+><font color="DeepSkyBlue">[Answer]</font>  
+>We are asking $Q'(S,A)$ in terms of $Q(S,A)$, let's do the illustration:  
+>$Q'(S,A)$  
+>=$R'(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q'(S',A')$  
+>=$R(S,A)+c$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}($  
+>$\;\;R(S',A')+c$+$\gamma\cdot\sum_{S^{\"}}P(S^{\"}\vert S',A')\cdot max_{A^{\"}}Q'(S^{\"},A^{\"}))$  
+>
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
