@@ -90,6 +90,12 @@ In order to avoid the <font color="Red">local suboptimal</font> endless looping,
 ><font color="OrangeRed">$R$ negative multiply maximize the pain</font>  
 >If you multiply the reward function by <font color="OrangeRed">negative value</font>, then the convergence would end up in <font color="OrangeRed">maximizing the pain</font>, or <font color="OrangeRed">by special design in policy iteration to converge in least pain</font>.  
 
+### <font color="OrangeRed">Add</font> Scalar To $R$: Illustration
+><font color="RoyalBlue">[Question]</font>  
+>$Q(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
+>This is the <font color="Red">Bellman equation</font> we already familar with, and add a scalar $c$ to $R(S,A)$ to get the new reward function, that is $R'(S,A)$=$R(S,A)+c$, then what is $Q'(S,A)$=?  
+>
+
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
 
