@@ -104,8 +104,12 @@ In order to avoid the <font color="Red">local suboptimal</font> endless looping,
 >
 >where we have  
 >$Q'(S^{\"},A^{\"})$  
->=$R(S^{\"},A^{\"})+c$+$\gamma\cdot\sum_{S^{\"\'}}P(S^{\"\'}\vert S^{\"},A^{\"})\cdot max_{A^{\"\'}}Q'(S^{\"\'},A^{\"\'}))$  
+>=$R(S^{\"},A^{\"})+c$+$\gamma\cdot\sum_{S^{\'\'\'}}P(S^{\'\'\'}\vert S^{\'\'\'},A^{\"})\cdot max_{A^{\'\'\'}}Q'(S^{\'\'\'},A^{\'\'\'}))$  
 >
+>therefore,  
+>$Q'(S,A)$  
+>=$R(S,A)+c$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}($  
+>$\;\;R(S',A')+c$+$\gamma\cdot\sum_{S^{\"}}P(S^{\"}\vert S',A')\cdot max_{A^{\"}}(R(S^{\"},A^{\"})+c+...))$  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
