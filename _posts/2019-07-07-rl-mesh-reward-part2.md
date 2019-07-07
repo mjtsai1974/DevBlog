@@ -12,7 +12,29 @@ title: Meshing The Rewards - Part 2
 >Instead of giving static( or fixed) bonus at the moment the state transition has been done, we change to put a little bonus with regards to the <font color="Red">states of the world</font>.  When you <font color="DeepPink">achieve a certain state of the world</font>, you <font color="DeepPink">get the bonus</font>, when you <font color="RosyBrown">unachieve that state of the world</font>, you <font color="RosyBrown">lose that bonus</font>.  Everything balances out nicely.  
 >
 ><font color="Brown">[mjtsai think]</font>  
->Step further, such intuition should be aligned with <font color="Brown">Calculus fashion</font>, when it is in some fixed point and approaching to the target, the value(bonus) should be returned in certain proportion at that fixed point, and this return value varies with respect to per changing from one distincet fixed point to its next, might be in the time unit, or quantity in some scale.  Such returned value could be the accumulation in either increasing or descreasing fashion.  
+>Step further, such intuition should be aligned with <font color="Brown">Calculus fashion</font>, when it is <font color="Brown">in some fixed point</font> and <font color="Brown">approaching to the target</font>, the value(bonus) should be returned in <font color="Brown">certain proportion in that fixed point</font>, and <font color="Brown">this return value varies with respect to per changing from one distincet fixed point to its next</font>, might be in the time unit, or quantity in some scale.  Such returned value could be the accumulation in either increasing or descreasing fashion.  
+>
+><font color="DeepSkyBlue">[Notes::1]</font>  
+><font color="OrangeRed">We want to give hints</font>  
+>Suppose we are design a system of learning agent to make the socker robot to kick the ball into the door.  
+>
+>If we follow up the prior post, the existing official reward function would give us $+100$ for scoring the goal.  Now, we might want to <font color="OrangeRed">give hints</font> to the system about:  
+>&#10112;how close the robot is to the ball  
+>&#10113;the robot is hitting the ball  
+>&#10114;the ball enters the goal
+>  
+>It depends how detail you'd like your design to simulate a physical socker game, maybe  
+>&#10115;how close the ball is to the goal  
+>
+>We need to express &#10112;,&#10113;,&#10114;,&#10115; in terms of the <font color="Red">states of the world</font>.  
+>
+><font color="DeepSkyBlue">[Notes::2]</font>  
+><font color="Red">The potential</font>  
+>As to the MDP states we already know, you can regard it as the <font color="OrangeRed">fixed</font> state, the value function returns the value(bonus) that is binding in the state, <font color="RosyBrown">not</font> the state of the world mentioned above.  
+>
+>So, how close the robot is to the ball is the item we'd like to keep track of, we denote it as the <font color="Red">potential</font>.  
+>
+>The already know bonus(the reward) obtained after per state transition is left as it is, we'd like to illustrate the way to mesh the reward function by incorporating the factor of <font color="Red">potential</font>.  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
