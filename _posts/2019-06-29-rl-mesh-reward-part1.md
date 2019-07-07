@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Meshing The Rewards
+title: Meshing The Rewards - Part 1
 ---
 
-## Prologue To <font color="Red">Meshing The Rewards</font>
+## Prologue To <font color="Red">Meshing The Rewards</font> - Part 1
 <p class="message">
 In order to avoid the <font color="Red">local suboptimal</font> endless looping, the suggestive approach is <font color="DeepPink">to mesh the reward funtion without impact on the original optimal policy</font>.  The reward function should contain <font color="RosyBrown">not only the fixed return of constant</font>, as we are losing benifit of value obtained in current state, when transiting from current state to next state.  
 </p>
@@ -115,7 +115,9 @@ In order to avoid the <font color="Red">local suboptimal</font> endless looping,
 >=$Q(S,A)$+$\frac {c}{1-\gamma}$  
 >
 ><font color="DeepSkyBlue">[Notes]</font>  
-><font color="OrangeRed">$Q(S,A)$+$\frac {c}{1-\gamma}$=$R(S,A)$+$c$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}(Q(S',A')+\frac {c}{1-\gamma})$</font>  
+><font color="OrangeRed">Adding scalar makes no impact on original policy</font>  
+>$Q(S,A)$+$\frac {c}{1-\gamma}$  
+>=$R(S,A)$+$c$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}(Q(S',A')+\frac {c}{1-\gamma})$  
 >
 >proof:  
 >$R(S,A)$+$c$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}(Q(S',A')+\frac {c}{1-\gamma})$  
