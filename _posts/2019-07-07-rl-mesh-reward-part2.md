@@ -8,6 +8,12 @@ title: Meshing The Rewards - Part 2
 <font color="DeepPink">Meshing the reward funtion without impact on the original optimal policy</font> by taking <font color="Red">potential</font>(or <font color="Red">states of the world</font>) into consideration is the suggestive approach <font color="RosyBrown">not</font> to struggle over the <font color="Red">local suboptimal</font> endless looping.  
 </p>
 
+### The Concept Of <font color="Red">Potential</font>
+>Instead of giving static( or fixed) bonus at the moment the state transition has been done, we change to put a little bonus with regards to the <font color="Red">states of the world</font>.  When you <font color="DeepPink">achieve a certain state of the world</font>, you <font color="DeepPink">get the bonus</font>, when you <font color="RosyBrown">unachieve that state of the world</font>, you <font color="RosyBrown">lose that bonus</font>.  Everything balances out nicely.  
+>
+><font color="Brown">mjtsai think</font>  
+>Step further, such intuition should be aligned with <font color="Brown">Calculus fashion</font>, when it is in some fixed point and approaching to the target, the value(bonus) should be returned in certain proportion at that fixed point, and this return value varies with respect to per changing from one distincet fixed point to its next, might be in the time unit, or quantity in some scale.  Such returned value could be the accumulation in either increasing or descreasing fashion.  
+
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
 
