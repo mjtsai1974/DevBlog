@@ -113,6 +113,33 @@ In order to avoid the <font color="Red">local suboptimal</font> endless looping,
 >$\;\;\gamma\cdot\sum_{S^{\"}}P(S^{\"}\vert S',A')\cdot max_{A^{\"}}(R(S^{\"},A^{\"})+c+...))$  
 >=$Q(S,A)$+$c$+$\gamma\cdot c$+$\gamma^{2}\cdot c$++$\gamma^{3}\cdot c$+...  
 >=$Q(S,A)$+$\frac {c}{1-\gamma}$  
+>
+><font color="DeepSkyBlue">[Notes]</font>  
+><font color="OrangeRed">$Q(S,A)$+$\frac {c}{1-\gamma}$=$R(S,A)$+$c$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}(Q(S',A')+\frac {c}{1-\gamma})$</font>  
+>
+>proof:  
+>$R(S,A)$+$c$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}(Q(S',A')+\frac {c}{1-\gamma})$  
+>=$R(S,A)$+$c$  
+>$\;\;$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
+>$\;\;$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}\frac {c}{1-\gamma}$...&#10112;  
+>
+>where the term &#10112; could be further expanded:  
+>$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}\frac {c}{1-\gamma}$  
+>=$\gamma\cdot max_{A'}\frac {c}{1-\gamma}$  
+>=$\gamma\cdot \frac {c}{1-\gamma}$  
+>since <font color="RosyBrown">$max_{A'}$ doesn't depend on this constant $\frac {c}{1-\gamma}$</font>  
+>
+>therefore, we have  
+>=$R(S,A)$+$c$  
+>$\;\;$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
+>$\;\;$+$\gamma\cdot \frac {c}{1-\gamma}$  
+>
+>in turn, $c$+$\gamma\cdot \frac {c}{1-\gamma}$=$\frac {1}{1-\gamma}$  
+>
+>finally,  
+>=$R(S,A)$+$\frac {c}{1-\gamma}$  
+>$\;\;$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
+>=$Q(S,A)$+$\frac {c}{1-\gamma}$ is thus proved  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
