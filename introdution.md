@@ -219,6 +219,7 @@ It is an extension of MDP.  Under construction...
 * [More On Value Iteration]({{ site.github.repo }}{{ site.baseurl }}/2019/04/21/rl-more-on-val-i/)
 * [Linear Programming In Value Iteration]({{ site.github.repo }}{{ site.baseurl }}/2019/05/10/rl-linear-prog-val-i/)
 * [Policy Iteration]({{ site.github.repo }}{{ site.baseurl }}/2019/05/29/rl-policy-i/)
+* [Meshing The Rewards - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2019/06/29/rl-mesh-reward-part1/)
 * Partial Observable Markov Decision Process
 * Q Learning Algorithm
 * Policy Iteration v.s. Value Iteration
