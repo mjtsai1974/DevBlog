@@ -36,6 +36,11 @@ title: Meshing The Rewards - Part 2
 >
 >The already know bonus(the reward) obtained after per state transition is left as it is, we'd like to illustrate the way to mesh the reward function by incorporating the factor of <font color="Red">potential</font>.  
 
+### <font color="Red">Change-In-State-Based Bonus</font>
+>Suppose we are designing the learning agent of socker robot, instead of just giving little bonus as a return every time the robot does a certain thing, we are going to track of what the state of the world is.  
+>
+>As we are more close to the state of the world we desire, we are going to obtain reward for it, in contrary to the case we are far away from the state of the world, we are going to lose the reward gained when we are close to this state of the world.  Therefore, we should substract the reward off when we move away from those states of the world.  
+
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
 
