@@ -37,11 +37,22 @@ title: Meshing The Rewards - Part 2
 >The already know bonus(the reward) obtained after per state transition is left as it is, we'd like to illustrate the way to mesh the reward function by incorporating the factor of <font color="Red">potential</font>.  
 
 ### <font color="Red">Change-In-State-Based Bonus</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Basic idea</font>  
 >Suppose we are designing the learning agent of socker robot, instead of just giving little bonus as a return every time the robot does a certain thing, we are going to <font color="Red">keep track of what the state of the world is</font>.  
 >
 >As we are more close to the state of the world we desire, we are going to obtain reward for it, in contrary to the case we are far away from the state of the world, we are going to lose the reward gained when we are close to this state of the world.  Therefore, we should substract the reward off when we move away from those states of the world.  
 >
 >The point is that the <font color="Red">change-in-state-based bonus</font> thus obtained would be an <font color="Red">increment</font> or <font color="Red">decrement</font> in accordance to <font color="Red">how close or how far you are subscribed by the state of the world</font>, <font color="RosyBrown">not the fixed constant</font>.  
+>
+>If the robot is 5 pixels away from the ball to 10 pixels away from the ball, then we might obtain $-5$ of decrement, it depends on how you design, we can also define the bonus as the inverse of distance by $\frac {1}{distance}$, that is to say, if we change from 10 pixels away from the ball to 5 pixels away from the ball, we get $\frac {1}{5}-\frac {1}{10}$=$0.1$; in reverse direction, we lose bonus of $-0.1$.  
+>
+>Such kind of design <font color="OrangeRed">keeps the account balance in a good shape</font>, it gives <font color="DeepPink">positive return</font> as you are <font color="DeepPink">approaching the state of world</font>, as you <font color="RosyBrown">leaves the same state of world</font>, you just <font color="RosyBrown">lose prior bonus by negating it</font>,  you are <font color="RosyBrown">not</font> just coninue to <font color="RosyBrown">loop over and over again</font> to get that positive return.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="Brown">Change-in-state-based v.s. state-based::mjtsai1974</font>  
+>Here we are about this question how to tell the difference in between <font color="Red">change-in-state-based</font> and <font color="Red">state-based</font> bonus.  If it is a <font color="Red">state-based</font>, it returns bonus of fixed value.  To reach this <font color="Red">state-based</font> point, a sequence of actions might be taken, then we involve <font color="Red">change-in-state-based</font> concern, it could also be a state in MDP.  
+>
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
