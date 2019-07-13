@@ -53,6 +53,18 @@ title: Meshing The Rewards - Part 2
 ><font color="Brown">Change-in-state-based v.s. state-based::mjtsai1974</font>  
 >Here we are about this question how to tell the difference in between <font color="Red">change-in-state-based</font> and <font color="Red">state-based</font> bonus.  If it is a <font color="Red">state-based</font>, it returns bonus of fixed value.  To reach this <font color="Red">state-based</font> point, a sequence of actions might be taken, then we involve <font color="Red">change-in-state-based</font> concern, it could also be a state in MDP.  
 >
+>Given that we are developing a robot socker learning agent, the major purpose of the robot is <font color="OrangeRed">to hit the ball into the target</font>, there must exist a sequence of actions that could be break down:  
+>&#10112;the ball <font color="OrangeRed">enter into the target</font>, which is the goal of this system  
+>&#10113;the robot should be able to <font color="OrangeRed">hit the ball</font>  
+>&#10114;the robot should go <font color="OrangeRed">near the ball</font>  
+>&#10115;the learning agent should evaluate <font color="OrangeRed">if the ball near the target</font>  
+>
+>I think you can have even more break down items, for the simplicity in this illustration, I come out above 4 items, they are all the already known MDP states.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2019-07-07-rl-mesh-reward-part2-chg-in-state.png "chg-in-state")
+>
+>The point is that we can <font color="Red">mesh the reward function</font> by incorporating the <font color="Red">potential</font>(the <font color="Red">states of world</font>), when the robot is <font color="DeepPink">approaching</font> or <font color="RosyBrown">far away from</font> the ball, the return bonus gets <font color="DeepPink">increment</font> or <font color="RosyBrown">decrement(by negating previous increment)</font>.  When <font color="DeepPink">the ball is near the target</font>, the robot is encouraged by some <font color="DeepPink">positive incentive</font>, at the moment <font color="RosyBrown">the ball is away from the target</font>, the <font color="RosyBrown">previous returned bonus would be negated and lost</font>.  
+>
+>Above exhibition shows nothing different from already known MDP model.  It depends on how you design the learning system.  mjtsai think that <font color="Brown">we should also keep bonus in previous visited states, if we just lose everything learned in current state, at the moment transiting from current to next state, we could not reason for this transition</font>, therefore we should have an <font color="DeepSkyBlue">appropriate value</font> return as the reward <font color="DeepSkyBlue">when transiting from current to next state</font>, or such appropriate value might be figured out in accordance to <font color="DeepSkyBlue">the distance you are away from the ball and that momenmt which you start to speed up to hit the ball</font>.  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
