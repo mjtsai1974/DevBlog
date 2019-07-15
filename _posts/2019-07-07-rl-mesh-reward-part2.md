@@ -84,13 +84,13 @@ title: Meshing The Rewards - Part 2
 >&#10112;$Q(S,A)$  
 >=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
 >=$\sum_{S'}P(S'\vert S,A)\cdot R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
->=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A)$+$\gamma\cdotmax_{A'}Q(S',A'))$  
+>=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A)$+$\gamma\cdot max_{A'}Q(S',A'))$  
 >, where we departure from $S$ to $S'$, would definitely obtain $R(S,A)$, and <font color="DeepPink">the summation over all weighting averaged by the transition probability would finally leads to $1$</font>.  
 >
 >&#10113;$Q'(S,A)$  
->=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A,S')$+$\gamma\cdotmax_{A'}Q(S',A'))$  
+>=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A,S')$+$\gamma\cdot max_{A'}Q(S',A'))$  
 >=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A)$-$\psi(S)$+$\gamma\cdot\psi(S')$  
->$\;\;$+$\gamma\cdotmax_{A'}Q'(S',A'))$  
+>$\;\;$+$\gamma\cdot max_{A'}Q'(S',A'))$  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
