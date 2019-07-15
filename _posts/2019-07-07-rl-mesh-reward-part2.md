@@ -85,6 +85,7 @@ title: Meshing The Rewards - Part 2
 >=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
 >=$\sum_{S'}P(S'\vert S,A)\cdot R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
 >=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A)$+$\gamma\cdot max_{A'}Q(S',A'))$  
+>
 >, where we departure from $S$ to $S'$, would definitely obtain $R(S,A)$, and <font color="DeepPink">the summation over all weighting averaged by the transition probability would finally leads to $1$</font>.  
 >
 >&#10113;$Q'(S,A)$  
@@ -93,6 +94,14 @@ title: Meshing The Rewards - Part 2
 >$\;\;$+$\gamma\cdot max_{A'}Q'(S',A'))$  
 >=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A)$-$\psi(S)$+$\gamma\cdot\psi(S')$  
 >$\;\;$+$\gamma\cdot (R(S',A')$-$\psi(S')$+$\gamma\cdot\psi(S^{\'\'})$+$max_{A^{\'\'}}Q'(S^{\'\'},A^{\'\'})))$  
+>
+>&#10114;<font color="OrangeRed">the term $\gamma\cdot\psi(S')$ would be eliminated by the $\gamma\cdot\psi(S')$ contained in $R(S',A',S^{\'\'})$ after $Q'(S',A')$ is further expanded</font>, continue to follow this fashion, we will get <font color="OrangeRed">all the incoming potential erased</font>.   
+>
+>&#10115;$Q'(S,A)$  
+>=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A)$-$\psi(S)$+  
+>$\;\;$+$\gamma\cdot max_{A'}Q(S',A'))$  
+=$R(S,A)$-$\psi(S)$+$\gamma\cdot max_{A'}Q(S',A'))$  
+=$Q(S,A)$-$\psi(S)$  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
