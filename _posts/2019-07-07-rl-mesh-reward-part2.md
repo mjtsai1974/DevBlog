@@ -95,7 +95,7 @@ title: Meshing The Rewards - Part 2
 >=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A)$-$\psi(S)$+$\gamma\cdot\psi(S')$  
 >$\;\;$+$\gamma\cdot (R(S',A')$-$\psi(S')$+$\gamma\cdot\psi(S^{\'\'})$+$max_{A^{\'\'}}Q'(S^{\'\'},A^{\'\'})))$  
 >
->&#10114;<font color="OrangeRed">the term $\gamma\cdot\psi(S')$ would be eliminated by the $\gamma\cdot\psi(S')$ contained in $R(S',A',S^{\'\'})$ after $Q'(S',A')$ is further expanded</font>, continue to follow this fashion, we will get <font color="OrangeRed">all the incoming potential erased</font>.   
+>&#10114;<font color="OrangeRed">the term $\gamma\cdot\psi(S')$ would be eliminated by the $\gamma\cdot\psi(S')$ contained in $Q'(S',A')$ after it has been further expanded</font>, continue to follow this fashion, we will get <font color="OrangeRed">all the incoming potential erased</font>.   
 >
 >&#10115;$Q'(S,A)$  
 >=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A)$-$\psi(S)$+  
