@@ -91,6 +91,8 @@ title: Meshing The Rewards - Part 2
 >=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A,S')$+$\gamma\cdot max_{A'}Q(S',A'))$  
 >=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A)$-$\psi(S)$+$\gamma\cdot\psi(S')$  
 >$\;\;$+$\gamma\cdot max_{A'}Q'(S',A'))$  
+>=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A)$-$\psi(S)$+$\gamma\cdot\psi(S')$  
+>$\;\;$+$\gamma\cdot (R(S',A')$-$\psi(S')$+$\gamma\cdot\psi(S^{\'\'})+max_{A^{\'\'}}Q'(S^{\'\'},A^{\'\'})$))$  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
