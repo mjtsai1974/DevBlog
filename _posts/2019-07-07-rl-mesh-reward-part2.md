@@ -66,6 +66,20 @@ title: Meshing The Rewards - Part 2
 >
 >Above exhibition shows nothing different from already known MDP model.  It depends on how you design the learning system.  mjtsai think that <font color="Brown">we should also keep bonus in previous visited states, if we just lose everything learned in current state, at the moment transiting from current to next state, we could not reason for this transition</font>, therefore we should have an <font color="DeepSkyBlue">appropriate value</font> return as the reward <font color="DeepSkyBlue">when transiting from current to next state</font>, or such appropriate value might be figured out in accordance to <font color="DeepSkyBlue">the distance you are away from the ball and that momenmt which you start to speed up to hit the ball</font>.  
 
+### <font color="Red">Potential</font>-Based Shapping: Illustration
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Something we already know</font>  
+>We start from the $Q$ value function already know  
+>$Q(S,A)$=$R(S,A)$+$\gamma\cdot\sum_{S'}P(S'\vert S,A)\cdot max_{A'}Q(S',A')$  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="Red">add the factor of potential in $R(S,A)$</font>  
+>We take  
+>$R'(S,A,S')$=$R(S,A)$-$\psi(S)$+$\gamma\cdot\psi(S')$  
+>, and would like to integrate into the existing Q value function  
+>, next would be the illustration of what the resulting $Q'(S,A)$ in terms of $Q(S,A)$ supposed to be.  
+>
+
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
 
