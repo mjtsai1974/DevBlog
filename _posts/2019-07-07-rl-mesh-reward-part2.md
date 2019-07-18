@@ -100,8 +100,16 @@ title: Meshing The Rewards - Part 2
 >&#10115;$Q'(S,A)$  
 >=$\sum_{S'}P(S'\vert S,A)\cdot (R(S,A)$-$\psi(S)$+  
 >$\;\;$+$\gamma\cdot max_{A'}Q(S',A'))$  
-=$R(S,A)$-$\psi(S)$+$\gamma\cdot max_{A'}Q(S',A'))$  
-=$Q(S,A)$-$\psi(S)$  
+>=$R(S,A)$-$\psi(S)$+$\gamma\cdot max_{A'}Q(S',A'))$  
+>=$Q(S,A)$-$\psi(S)$  
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="DeepPink">We still have the same optimal policy</font>  
+>We do still have the same optimal policy after meshing the reward function by means of <font color="Red">potential</font>, since $\psi(S')$ doesn't depend on $A'$, the term $max_{A'}Q(S',A')$ would not be impacted, and we could safely cancel all the incoming $\psi(S)$ term, for all $S$.  Even if we reach the convergent point, only one term $\gamma^{n}\cdot \psi(S^{n})$ would be left, and it might be ignored for $n\rightarrow\infty$.  
+>
+>We have shown up that meshing reward function makes no impact on original optimal policy, a lot reference claim that it might do the little help, where mjtsai think that <font color="Brown">the final term $\gamma^{n}\cdot \psi(S^{n})$ might be the key factor providing small value of very very tiny quantity</font>.  
+>
+>Why such small value could do the help?  The answer might be that <font color="Brown">after such a long term period convergence, equation of <font color="Red">potential</font>-based shapping comes out future information(or knowledge) far far away from current time tick, which could be helpful to evaluate if we should take this action</font>!  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
