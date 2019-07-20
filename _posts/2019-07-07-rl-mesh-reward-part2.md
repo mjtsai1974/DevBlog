@@ -74,7 +74,7 @@ title: Meshing The Rewards - Part 2
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="Red">add the factor of potential in $R(S,A)$</font>  
->We take  
+>We take $\psi(S)$ for all $S$ to be the <font color="Red">potential</font>:  
 >$R'(S,A,S')$=$R(S,A)$-$\psi(S)$+$\gamma\cdot\psi(S')$  
 >, and would like to integrate into the existing Q value function  
 >, next would be the illustration of what the resulting $Q'(S,A)$ in terms of $Q(S,A)$ supposed to be.  
@@ -110,6 +110,13 @@ title: Meshing The Rewards - Part 2
 >We have shown up that meshing reward function makes no impact on original optimal policy, a lot reference claim that it might do the little help, where mjtsai think that <font color="Brown">the final term $\gamma^{n}\cdot \psi(S^{n})$ might be the key factor providing small value of very very tiny quantity</font>.  
 >
 >Why such small value could do the help?  The answer might be that <font color="Brown">after such a long term period convergence, equation of <font color="Red">potential</font>-based shapping comes out future information(or knowledge) far far away from current time tick, which could be helpful to evaluate if we should take this action</font>!  
+>
+><font color="DeepSkyBlue">[5]</font>
+><font color="DeepPink">A brief review</font>  
+>We have explored 3 total different ways of messaingaround with rewards to give us new $Q$ functions that <font color="RosyBrown">don't actually change the policy</font>:  
+>&#10112;multiply by $c$, where $c>0$  
+>&#10113;add a constant  
+>&#10114;add this potential function $\psi(S)$ for all $S$  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
