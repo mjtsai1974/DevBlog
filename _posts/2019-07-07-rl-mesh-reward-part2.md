@@ -118,6 +118,20 @@ title: Meshing The Rewards - Part 2
 >&#10113;add a constant  
 >&#10114;add this potential function $\psi(S)$ for all $S$  
 
+### <font color="Red">$Q$</font>-Learning With <font color="Red">Potentials</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Mesh reward function in $Q$-learning</font>  
+>Above section illustrates meshing the reward functionn by means of <font color="Red">potential</font> in the <font color="Red">Bellman equation</font>, in this section, we'd like to carry out this <font color="Red">potential function</font> idea in the context of <font color="Red">$Q$</font>-learning.  
+>
+>$Q_{t+1}(S,A)$  
+>=$Q_{t}(S,A)$+$\alpha_{t}\cdot (R-\psi(S)+\gamma\cdot\psi(S)$  
+>$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$  
+>
+>Suppose you understand this expression that the state action pair is updated for the state action pair we just left and move a little bit in the direction of the reward plus the discounted value of the state we arrive, minus the value of the state we just left.  
+>
+>This time, we'd like to <font color="OrangeRed">shift the real reward R around</font>, mesh it with the potential function.  So, we take the real reward $R$, <font color="OrangeRed">substrate the potential</font> we are <font color="OrangeRed">leaving</font>, and <font color="#D600D6">add the discounted potential</font> for the state we <font color="#D600D6">end up in</font>.  
+>
+
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
 
