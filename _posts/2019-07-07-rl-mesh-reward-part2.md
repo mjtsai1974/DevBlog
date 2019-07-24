@@ -127,10 +127,25 @@ title: Meshing The Rewards - Part 2
 >=$Q_{t}(S,A)$+$\alpha_{t}\cdot (R-\psi(S)+\gamma\cdot\psi(S)$  
 >$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$  
 >
->Suppose you understand this expression that the state action pair is updated for the state action pair we just left and move a little bit in the direction of the reward plus the discounted value of the state we arrive, minus the value of the state we just left.  
+>Suppose you understand this expression of [Temporal Difference In Q Form]({{ site.github.repo }}{{ site.baseurl }}/2019/02/19/rl-temp-diff-q/) that the state action pair is updated for the state action pair we just left and move a little bit in the direction of the reward plus the discounted value of the state we arrive, minus the value of the state we just left.  
 >
 >This time, we'd like to <font color="OrangeRed">shift the real reward R around</font>, mesh it with the potential function.  So, we take the real reward $R$, <font color="OrangeRed">substrate the potential</font> we are <font color="OrangeRed">leaving</font>, and <font color="#D600D6">add the discounted potential</font> for the state we <font color="#D600D6">end up in</font>.  
 >
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">What will happen?</font>  
+>If we run above version of <font color="Red">$Q$</font>-learning, it should actually solve the <font color="DeepSkyBlue">original</font> MDP, which is <font color="DeepSkyBlue">$(R+\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$</font>, since $\psi(S)$ doesn't depend on action.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">What, if $\psi(S)$=$max_{A}Q^{\ast}(S,A)$?</font>  
+>If $\psi(S)$=$max_{A}Q^{\ast}(S,A)$, then it already done, and it's under the condition that we have solved the MDP problem.  
+>
+>Obviously, the equation becomes 
+>$Q(S,A)$  
+>=$Q^{\ast}(S,A)$-$\psi(S)$  
+>=$Q^{\ast}(S,A)$-$max_{A}^{\ast}(S,A)$  
+>
+>We have 2 results:  
+>to be conti...
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
