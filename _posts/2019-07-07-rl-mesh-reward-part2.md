@@ -148,10 +148,20 @@ title: Meshing The Rewards - Part 2
 >&#10112;<font color="DeepPing">$Q(S,A)=0$</font> for the <font color="DeepPing">optimal</font> action.  
 >&#10113;<font color="RosyBrown">$Q(S,A)<0$</font> for some special usage for each action, or by <font color="RosyBrown">the amount of local sub-optimal</font>.  
 >
->Above results strike on our head that most often we initialize the $Q$ function to all zeros, because we believe zero is where everything starts, or we just know nothing about it.  Such initialization might start to head for the right direction, or it might take some non-optimal action with negative reward, after that just take another better one.  
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Potential function might be helpful</font>  
+>Above results strike on our head that most often we initialize the $Q$ function to all zeros, because we believe zero is where everything starts, or we just know nothing about it.  
+>
+>Such initialization might start to head for the right direction, or it might take some non-optimal action with negative reward, after that just take another better one.  This says that <font color="OrangeRed">Potential function might be helpful in speeding up learning</font>.  
+>
+><font color="DeepSkyBlue">[5]</font>
+><font color="OrangeRed">$Q$-learning with or without potential function are the same</font>  
+>Eric Wiewiora has proved [potential-based shaping and Q-value initialization are equivalent](https://www.aaai.org/Papers/JAIR/Vol19/JAIR-1907.pdf).  This paper says that the series of updates that you get by running $Q$-learning <font color="#C20000">with some potential function</font> is actually <font color="#C20000">the same as</font> what you get by $Q$-learning <font color="#C20000">without</font> a potential function, on conditions that <font color="#C20000">you should initialize the $Q$ function to what the potential function would have been</font>.  
+>
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
+>&#10113;[Potential-Based Shaping and Q-Value Initialization are Equivalent, Eric Wiewiora, Department of Computer Science and Engineering University of California, San Diego](https://www.aaai.org/Papers/JAIR/Vol19/JAIR-1907.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
