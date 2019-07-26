@@ -142,10 +142,13 @@ title: Meshing The Rewards - Part 2
 >Obviously, the equation becomes 
 >$Q(S,A)$  
 >=$Q^{\ast}(S,A)$-$\psi(S)$  
->=$Q^{\ast}(S,A)$-$max_{A}^{\ast}(S,A)$  
+>=$Q^{\ast}(S,A)$-$max_{A}Q^{\ast}(S,A)$  
 >
 >We have 2 results:  
->to be conti...
+>&#10112;<font color="DeepPing">$Q(S,A)=0$</font> for the <font color="DeepPing">optimal</font> action.  
+>&#10113;<font color="RosyBrown">$Q(S,A)<0$</font> for some special usage for each action, or by <font color="RosyBrown">the amount of local sub-optimal</font>.  
+>
+>Above results strike on our head that most often we initialize the $Q$ function to all zeros, because we believe zero is where everything starts, or we just know nothing about it.  Such initialization might start to head for the right direction, or it might take some non-optimal action with negative reward, after that just take another better one.  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
