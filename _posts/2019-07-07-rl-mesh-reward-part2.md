@@ -174,14 +174,14 @@ title: Meshing The Rewards - Part 2
 >$Q_{t+1}(S,A)$  
 >=$Q_{t}(S,A)$+$\alpha\cdot(R(S,A)+\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$  
 >
->First express the <font color="DeepPink">$Q$-learning with potential add-in</font>:  
+>First express the <font color="DeepPink">$Q$-learning with potential in all state transitions</font>:  
 $Q_{t+1}(S,A)$  
 >=$Q_{t}(S,A)$+$\alpha\cdot(R(S,A)-\psi(S)+\gamma\cdot\psi(S')$  
 >$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$...[A]  
 >
->Next to express the <font color="RosyBrown">$Q$-learning without potential add-in</font> and <font color="OrangeRed">initialize the $Q$ value to the potential</font>:  
+>Next to express the <font color="RosyBrown">$Q$-learning without potential add-in</font> and <font color="OrangeRed">initialize the $Q$ value to the potential $\psi(S)$</font>:  
 $Q_{t+1}^{\'}(S,A)$  
->=$Q_{t}(S,A)$+$\psi(S)$+$\alpha\cdot(R(S,A)$  
+>=$Q_{t}(S,A)$+<font color="OrangeRed">$\psi(S)$</font>+$\alpha\cdot(R(S,A)$  
 >$\;\;$+$\gamma\cdot max_{A^{\'}}Q_{t}^{\'}(S^{\'},A^{\'})-Q_{t}^{\'}(S,A))$...[B]  
 >
 >We'd like to prove <font color="DeepPink">[A]=[B]</font>  
