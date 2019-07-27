@@ -156,7 +156,9 @@ title: Meshing The Rewards - Part 2
 >
 ><font color="DeepSkyBlue">[5]</font>
 ><font color="OrangeRed">$Q$-learning with or without potential function are the same</font>  
->Eric Wiewiora has proved [potential-based shaping and Q-value initialization are equivalent](https://www.aaai.org/Papers/JAIR/Vol19/JAIR-1907.pdf).  This paper says that the series of updates that you get by running $Q$-learning <font color="#C20000">with some potential function</font> is actually <font color="#C20000">the same as</font> what you get by $Q$-learning <font color="#C20000">without</font> a potential function, on conditions that <font color="#C20000">you should initialize the $Q$ function to what the potential function would have been</font>.  
+>Eric Wiewiora has proved [potential-based shaping and Q-value initialization are equivalent](https://www.aaai.org/Papers/JAIR/Vol19/JAIR-1907.pdf).  
+>
+>This paper says that the series of updates that you get by running $Q$-learning <font color="#C20000">with some potential function</font> is actually <font color="#C20000">the same as</font> what you get by $Q$-learning <font color="#C20000">without</font> a potential function, on conditions that <font color="#C20000">you should initialize the $Q$ function(without a potential) to what the potential function would have been</font>.  
 >
 
 ### Addendum
