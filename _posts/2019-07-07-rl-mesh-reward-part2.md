@@ -201,7 +201,7 @@ $\alpha\cdot(R(S,A)$
 >=$\alpha\cdot(R(S,A)+\gamma\cdot\psi(S')-\psi(S)$  
 >$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$
 >
->We found <font color="OrangeRed">they two are the same in the delta part</font>.  
+>We found <font color="OrangeRed">[A] and [B] they two are the same in the delta part</font>.  
 >&#10114;
 
 ### Addendum
