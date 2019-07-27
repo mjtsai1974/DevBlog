@@ -180,9 +180,9 @@ $Q_{t+1}(S,A)$
 >$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$...[A]  
 >
 >Next to express the <font color="RosyBrown">$Q$-learning without potential add-in</font> and <font color="OrangeRed">initialize the $Q$ value to the potential</font>:  
-$Q'_{t+1}(S,A)$  
+$Q^{\'}_{t+1}(S,A)$  
 >=$Q_{t}(S,A)$+$\psi(S)$+$\alpha\cdot(R(S,A)$  
->$\;\;$+$\gamma\cdot max_{A'}Q'_{t}(S',A')-Q'_{t}(S,A))$...[B]  
+>$\;\;$+$\gamma\cdot max_{A^{\'}}Q^{\'}_{t}(S^{\'},A^{\'})-Q^{\'}_{t}(S,A))$...[B]  
 >
 >We'd like to prove <font color="DeepPink">[A]=[B]</font>  
 >
