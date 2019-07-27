@@ -192,17 +192,18 @@ $\alpha\cdot(R(S,A)$
 >$\;\;$+$\gamma\cdot max_{A^{\'}}Q_{t}^{\'}(S^{\'},A^{\'})-Q_{t}^{\'}(S,A))$  
 =$\alpha\cdot(R(S,A)$  
 >$\;\;$+$\gamma\cdot max_{A^{\'}}(Q_{t}(S^{\'},A^{\'})+\psi(S^{\'}))-(Q_{t}(S,A)+\psi(S)))$  
->=$\alpha\cdot(R(S,A)$  
->$\;\;$+$\gamma\cdot\psi(S^{\'})$-$\psi(S)$  
+>=$\alpha\cdot(R(S,A)$+$\gamma\cdot\psi(S^{\'})$-$\psi(S)$  
 >$\;\;$+$\gamma\cdot max_{A^{\'}}Q_{t}(S^{\'},A^{\'})-Q_{t}(S,A))$  
 >&#10113;expand from [A]'s delta part  
->$\alpha\cdot(R(S,A)-\psi(S)+\gamma\cdot\psi(S')$  
->$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$
->=$\alpha\cdot(R(S,A)+\gamma\cdot\psi(S')-\psi(S)$  
->$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$
+>$\alpha\cdot(R(S,A)-\psi(S)+\gamma\cdot\psi(S^{\'})$  
+>$\;\;$+$\gamma\cdot max_{A^{\'}}Q_{t}(S^{\'},A^{\'})-Q_{t}(S,A))$  
+>=$\alpha\cdot(R(S,A)+\gamma\cdot\psi(S^{\'})-\psi(S)$  
+>$\;\;$+$\gamma\cdot max_{A^{\'}}Q_{t}(S^{\'},A^{\'})-Q_{t}(S,A))$
 >
 >We found <font color="OrangeRed">[A] and [B] they two are the same in the delta part</font>.  
->&#10114;
+>&#10114;now only the $Q_{t}(S,A)$ in [A] versus <font color="RosyBrown">$Q_{t}(S,A)$+$\psi(S)$ in [B]</font>, where the <font color="RosyBrown">$\psi(S)$</font> is <font color="RosyBrown">the shift</font> added to <font color="RosyBrown">all the states $S$ in each transition</font>, and it depends on <font color="RosyBrown">no</font> action, thus <font color="RosyBrown">no impact on the original optimal policy</font>.  
+>
+>We finally prove that <font color="DeepPink">under a broad category of policies, the behavior of these two learners [A] and [B] are indistinguishable</font>.  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
