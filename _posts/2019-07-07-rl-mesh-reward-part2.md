@@ -158,8 +158,13 @@ title: Meshing The Rewards - Part 2
 ><font color="OrangeRed">$Q$-learning with or without potential function are the same</font>  
 >Eric Wiewiora has proved [potential-based shaping and Q-value initialization are equivalent](https://www.aaai.org/Papers/JAIR/Vol19/JAIR-1907.pdf).  
 >
->This paper says that the series of updates that you get by running $Q$-learning <font color="#C20000">with some potential function</font> is actually <font color="#C20000">the same as</font> what you get by $Q$-learning <font color="#C20000">without</font> a potential function, on conditions that <font color="#C20000">you should initialize the $Q$ function(without a potential) to what the potential function would have been</font>.  
+>This paper says that the series of updates that you get by running $Q$-learning <font color="#C20000">with some potential function</font> is actually <font color="#C20000">the same as</font> what you get by $Q$-learning <font color="#C20000">without</font> a potential function, on conditions that <font color="#C20000">you should initialize the $Q$ function(without a potential) to what the potential function would have been, that is $Q(S,A)$+$\psi(S)$</font>.  
 >
+>The $Q$ function <font color="RosyBrown">without</font> potential is initialized as <font color="OrangeRed">$Q(S,A)$+$\psi(S)$</font> is <font color="RosyBrown">different</font> from the $Q$ function <font color="RosyBrown">with</font> potential in the learning process.  
+>
+>Not only does $Q(S,A)$+$\psi(S)$ converges to the same policy, but also going to have the same policy at every state transition in learning.  
+>
+>$\psi(S)$ is just a constant, it <font color="RosyBrown">doesn't</font> depend on any action, has <font color="RosyBrown">no impact</font> on original policy, its shift<font color="RosyBrown">($Q(S,A)$+$\psi(S)$) has an impact on what the $Q$ values are converging toward</font>.  
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
