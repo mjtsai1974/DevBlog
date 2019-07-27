@@ -155,7 +155,7 @@ title: Meshing The Rewards - Part 2
 >Such initialization might start to head for the right direction, or it might take some non-optimal action with negative reward, after that just take another better one.  This says that <font color="OrangeRed">Potential function might be helpful in speeding up learning</font>.  
 >
 ><font color="DeepSkyBlue">[5]</font>
-><font color="OrangeRed">$Q$-learning with or without potential function are the same</font>  
+><font color="#C20000">$Q$-learning with or without potential function are the same</font>  
 >Eric Wiewiora has proved [potential-based shaping and Q-value initialization are equivalent](https://www.aaai.org/Papers/JAIR/Vol19/JAIR-1907.pdf).  
 >
 >This paper says that the series of updates that you get by running $Q$-learning <font color="#C20000">with some potential function</font> is actually <font color="#C20000">the same as</font> what you get by $Q$-learning <font color="#C20000">without</font> a potential function, on conditions that <font color="#C20000">you should initialize the $Q$ function(without a potential) to what the potential function would have been, that is $Q(S,A)$+$\psi(S)$</font>.  
@@ -165,6 +165,44 @@ title: Meshing The Rewards - Part 2
 >Not only does $Q(S,A)$+$\psi(S)$ converges to the same policy, but also going to have the same policy at every state transition in learning.  
 >
 >$\psi(S)$ is just a constant, it <font color="RosyBrown">doesn't</font> depend on any action, has <font color="RosyBrown">no impact</font> on original policy, its shift<font color="RosyBrown">($Q(S,A)$+$\psi(S)$) has an impact on what the $Q$ values are converging toward</font>.  
+>
+><font color="DeepSkyBlue">[6]</font>
+><font color="Brown">$Q$-learning with or without potential function are the same::proof::mjtsai1974</font>  
+>We mesh the reward function by $R(S,A)$-$\psi(S)$+$\gamma\cdot \psi(S')$, and the potential add-in is refered as $\gamma\cdot \psi(S')$-$\psi(S)$.  
+>
+>The given $Q$ value function in TD format:  
+>$Q_{t+1}(S,A)$  
+>=$Q_{t}(S,A)$+$\alpha\cdot(R(S,A)+\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$  
+>
+>First express the <font color="DeepPink">$Q$-learning with potential add-in</font>:  
+$Q_{t+1}(S,A)$  
+>=$Q_{t}(S,A)$+$\alpha\cdot(R(S,A)-\psi(S)+\gamma\cdot\psi(S')$  
+>$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$...[A]  
+>
+>Next to express the <font color="RosyBrown">$Q$-learning without potential add-in</font> and <font color="OrangeRed">initialize the $Q$ value to the potential</font>:  
+$Q'_{t+1}(S,A)$  
+>=$Q_{t}(S,A)$+$\psi(S)$+$\alpha\cdot(R(S,A)$  
+>$\;\;$+$\gamma\cdot max_{A'}Q'_{t}(S',A')-Q'_{t}(S,A))$...[B]  
+>
+>We'd like to prove <font color="DeepPink">[A]=[B]</font>  
+>
+><font color="Brown">proof::mjtsai1974</font>  
+>&#10112;expand from [B]'s delta part  
+$\alpha\cdot(R(S,A)$  
+>$\;\;$+$\gamma\cdot max_{A'}Q'_{t}(S',A')-Q'_{t}(S,A))$  
+=$\alpha\cdot(R(S,A)$  
+>$\;\;$+$\gamma\cdot max_{A'}(Q_{t}(S',A')+\psi(S'))-(Q_{t}(S,A)+\psi(S)))$  
+>=$\alpha\cdot(R(S,A)$  
+>$\;\;$+$\gamma\cdot\psi(S')$-$\psi(S)$  
+>$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$  
+>&#10113;expand from [A]'s delta part  
+>$\alpha\cdot(R(S,A)-\psi(S)+\gamma\cdot\psi(S')$  
+>$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$
+>=$\alpha\cdot(R(S,A)+\gamma\cdot\psi(S')-\psi(S)$  
+>$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$
+>
+>We found <font color="OrangeRed">they two are the same in the delta part</font>.  
+>&#10114;
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
