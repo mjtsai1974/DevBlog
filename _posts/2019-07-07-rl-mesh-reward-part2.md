@@ -189,12 +189,12 @@ $Q_{t+1}^{\'}(S,A)$
 ><font color="Brown">proof::mjtsai1974</font>  
 >&#10112;expand from [B]'s delta part  
 $\alpha\cdot(R(S,A)$  
->$\;\;$+$\gamma\cdot max_{A'}Q'_{t}(S',A')-Q'_{t}(S,A))$  
+>$\;\;$+$\gamma\cdot max_{A^{\'}}Q_{t}^{\'}(S^{\'},A^{\'})-Q_{t}^{\'}(S,A))$  
 =$\alpha\cdot(R(S,A)$  
->$\;\;$+$\gamma\cdot max_{A'}(Q_{t}(S',A')+\psi(S'))-(Q_{t}(S,A)+\psi(S)))$  
+>$\;\;$+$\gamma\cdot max_{A^{\'}}(Q_{t}(S^{\'},A^{\'})+\psi(S^{\'}))-(Q_{t}(S,A)+\psi(S)))$  
 >=$\alpha\cdot(R(S,A)$  
->$\;\;$+$\gamma\cdot\psi(S')$-$\psi(S)$  
->$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$  
+>$\;\;$+$\gamma\cdot\psi(S^{\'})$-$\psi(S)$  
+>$\;\;$+$\gamma\cdot max_{A^{\'}}Q_{t}(S^{\'},A^{\'})-Q_{t}(S,A))$  
 >&#10113;expand from [A]'s delta part  
 >$\alpha\cdot(R(S,A)-\psi(S)+\gamma\cdot\psi(S')$  
 >$\;\;$+$\gamma\cdot max_{A'}Q_{t}(S',A')-Q_{t}(S,A))$
