@@ -205,6 +205,25 @@ $\alpha\cdot(R(S,A)$
 >
 >We finally prove that <font color="DeepPink">under a broad category of policies, the behavior of these two learners [A] and [B] are indistinguishable</font>.  
 
+### <font color="Red">Potentials</font> Are Just Like Initialization
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The interpretation of potential</font>  
+>We can treat the potential to be $Q$ values initialization.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Random initialization is debatable</font>  
+>We can make the achievement of potential function by means of $Q$ values initialization, we already encountered, guess what?  
+>&#10112;initialize with all zeros.  
+>&#10113;<font color="OrangeRed">random</font> initialization.  
+>
+>When you make initialization with all zeros, this might due to the fact that you don't know anything about it.  <font color="RosyBrown">All zeros initialization</font> might be useful for the scenario that everything begins from zero, but this might <font color="RosyBrown">not</font> be the true thing in real world.  
+>
+>As to <font color="OrangeRed">random initialization</font>, you are asserting that these particular(random) values could not be the correct departuring point, <font color="OrangeRed">you expect these random values to be the right configuration</font>.  Then, <font color="RoyalBlue">why not just beginning with the correct initializaton?</font>  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="RoyalBlue">Why not initializedd with the correct value?</font>  
+>to be conti...  
+
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
 >&#10113;[Potential-Based Shaping and Q-Value Initialization are Equivalent, Eric Wiewiora, Department of Computer Science and Engineering University of California, San Diego](https://www.aaai.org/Papers/JAIR/Vol19/JAIR-1907.pdf)  
