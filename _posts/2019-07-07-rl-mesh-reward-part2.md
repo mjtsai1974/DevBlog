@@ -226,6 +226,11 @@ $\alpha\cdot(R(S,A)$
 >
 >You <font color="RosyBrown">shouldn't be randomly initializing $Q$ functions</font>, basically, <font color="DeepPink">you are injecting knowledge!!!</font> But, <font color="RosyBrown">not noise!!!</font>
 >
+>Knowledge and noise don't both start within, only noise does.  We could regard <font color="DeepPink">noise</font> as <font color="DeepPink">the beginning of knowledge</font>.  
+>
+>The punchline is that <font color="RosyBrown">you shouldn't randomly initialize your $Q$ functions, you can actually inject various kinds of knowledge by $Q$ learning with $\psi(S)$ to be all state $S$'s initialization value</font>.  
+>
+>Cautions must be made that <font color="OrangeRed">potential function might hurts.</font>
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
