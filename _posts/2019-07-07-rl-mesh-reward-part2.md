@@ -222,7 +222,10 @@ $\alpha\cdot(R(S,A)$
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="RoyalBlue">Why not initializedd with the correct value?</font>  
->to be conti...  
+>One reason for random values might be due to that you don't know, if you always give it all zeros, or some high values versus low values, you are just <font color="RosyBrown">biasing</font> it.  
+>
+>You <font color="RosyBrown">shouldn't be randomly initializing $Q$ functions</font>, basically, <font color="DeepPink">you are injecting knowledge!!!</font> But, <font color="RosyBrown">not noise!!!</font>
+>
 
 ### Addendum
 >&#10112;[Meshing with rewards, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4388428967/concepts/43556087730923)  
