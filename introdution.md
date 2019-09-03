@@ -221,6 +221,7 @@ It is an extension of MDP.  Under construction...
 * [Policy Iteration]({{ site.github.repo }}{{ site.baseurl }}/2019/05/29/rl-policy-i/)
 * [Meshing The Rewards - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2019/06/29/rl-mesh-reward-part1/)
 * [Meshing The Rewards - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2019/07/07/rl-mesh-reward-part2/)
+* [Explore versus Exploit - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2019/08/11/rl-explore-exploit-part1/)
 * Partial Observable Markov Decision Process
 * Q Learning Algorithm
 * Policy Iteration v.s. Value Iteration
