@@ -29,7 +29,7 @@ Hoeffding inequality claims &nu; = &mu; is probably approximate correct.
 ## Chebyshev&#39;s Inequality
 
 <p class="message">
-Chebyshev&#39;s inequality claims that P(|Y − E(Y)| &gt; a) &le; (1 ∕ a) × Var(Y);  
+Chebyshev&#39;s inequality claims that P(|Y − E(Y)| &gt; a) &le; (1 ∕ a<sup>2</sup>) × Var(Y);  
 where Y is any arbitrary random variable Y and any a &gt; 0.  
 </p>
 
