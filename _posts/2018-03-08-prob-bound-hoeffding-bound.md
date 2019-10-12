@@ -112,7 +112,7 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >
 >By symmetry, we have it that  
 >$P(\vert\sum_{i=1}^{n}(Z_i)\vert\ge n\cdot\varepsilon)\le 2\cdot exp(\frac {-2\cdot n\cdot\varepsilon^2}{(b-a)^2})$  
->$\RightarrowP(\vert\sum_{i=1}^{n}(X_i-E\lbrack X_i\rbrack)\vert\ge n\cdot\varepsilon)\le 2\cdot exp(\frac {-2\cdot n\cdot\varepsilon^2}{(b-a)^2})$
+>$\Rightarrow P(\vert\sum_{i=1}^{n}(X_i-E\lbrack X_i\rbrack)\vert\ge n\cdot\varepsilon)\le 2\cdot exp(\frac {-2\cdot n\cdot\varepsilon^2}{(b-a)^2})$
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
