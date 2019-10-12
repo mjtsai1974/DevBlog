@@ -110,9 +110,9 @@ belonging to the same distribution</font>, to facilitate <font color="DeepSkyBlu
 >If we are given all <font color="OrangeRed">$Z_i\in\lbrack a,b\rbrack$</font>, then the inequality would become  
 >$P(\sum_{i=1}^{n}(Z_i)\ge n\cdot\varepsilon)\le exp(\frac {-2\cdot n\cdot\varepsilon^2}{(b-a)^2})$  
 >
->By symmetry, we have it that  
->$P(\vert\sum_{i=1}^{n}(Z_i)\vert\ge n\cdot\varepsilon)\le 2\cdot exp(\frac {-2\cdot n\cdot\varepsilon^2}{(b-a)^2})$  
->$\Rightarrow P(\vert\sum_{i=1}^{n}(X_i-E\lbrack X_i\rbrack)\vert\ge n\cdot\varepsilon)\le 2\cdot exp(\frac {-2\cdot n\cdot\varepsilon^2}{(b-a)^2})$
+>By <font color="Red">symmetry</font>, we have it that  
+>$P(\vert\sum_{i=1}^{n}(Z_i)\vert\ge n\cdot\varepsilon)\le {\color[rgb]{1.0, 0.0, 0.0}2}\cdot exp(\frac {-2\cdot n\cdot\varepsilon^2}{(b-a)^2})$  
+>$\Rightarrow P(\vert\sum_{i=1}^{n}(X_i-E\lbrack X_i\rbrack)\vert\ge n\cdot\varepsilon)\le {\color[rgb]{1.0, 0.0, 0.0}2}\cdot exp(\frac {-2\cdot n\cdot\varepsilon^2}{(b-a)^2})$
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
