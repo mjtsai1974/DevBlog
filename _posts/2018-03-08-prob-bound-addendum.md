@@ -12,3 +12,4 @@ The context is all my hand written with the inspiration from many of the on-line
 ### Useful Link
 >&#10112;[Extra notes in CS229 by J Douch](http://cs229.stanford.edu/extra-notes/hoeffding.pdf)  
 >&#10113;[J Douch in probability bounds project](https://stanford.edu/~jduchi/projects/probability_bounds.pdf)  
+>&#10114;[Lecture Notes 2 1 Probability Inequalities - CMU Statistics](http://www.stat.cmu.edu/~larry/=stat705/Lecture2.pdf)  
