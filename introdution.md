@@ -223,6 +223,7 @@ It is an extension of MDP.  Under construction...
 * [Meshing The Rewards - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2019/07/07/rl-mesh-reward-part2/)
 * [Explore versus Exploit - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2019/08/11/rl-explore-exploit-part1/)
 * [Explore versus Exploit - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2019/09/04/rl-explore-exploit-part2/)
+* [Exploit Evaluation By Hoeffding Bounds]({{ site.github.repo }}{{ site.baseurl }}/2019/10/09/rl-exploit-evaluate-by-hoeffding/)
 * Partial Observable Markov Decision Process
 * Q Learning Algorithm
 * Policy Iteration v.s. Value Iteration
