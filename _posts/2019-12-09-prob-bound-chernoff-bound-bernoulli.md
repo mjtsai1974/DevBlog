@@ -14,8 +14,17 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >&#10113;$X_{i}$=$0$ with probability $1$-$p_{1}$  
 >, where all $X_{i}$s are I.I.D and suppose at least one of the $p_{i}$ is non-zero.  
 >
->We are testing with a hope that we can make our target of mean value over some quantity of expectation after some amount of trials.  Hence, we let $X$=$\sum_{i=1}^{n}X_{i}$, $E\lbrack X\rbrack$=$\mu$=$\sum_{i=1}^{n}p_{i}$.  
+>We are testing with a hope that we can <font color="OrangeRed">make our target value over expectation level after some amount of trials</font>.  To express the target value we want in terms of expect value, we let $X$=$\sum_{i=1}^{n}X_{i}$, $E\lbrack X\rbrack$=$\mu$=$\sum_{i=1}^{n}p_{i}$.  
 >
+><font color="RoyalBlue">[Question]</font>  
+>How confident we are in the final outcome by the random variable $X$?  It is asking you 2 kinds of questions:  
+>&#10112;the range of the confidence interval  
+>&#10113;the error probability for the target value $X$ above or below the expect value $\mu$  
+>The follwing section would guide you through the process to build the upper and lower bound of such error probability in <font color="Red">Chernoff</font> exponential decreasing form.  
+>
+><font color="DeepSkyBlue">[Notes]</font>
+><font color="OrangeRed">Even if our proof of &#10113; holds, the range of confidence interval must be guaranteed by the native design in your experiment.</font>  
+>I will emphasize this at the end of this post.  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
