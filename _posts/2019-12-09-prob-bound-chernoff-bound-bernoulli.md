@@ -31,8 +31,12 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >
 >$P(X>(1+\delta)\cdot\mu)$, for $\delta>0$  
 >=$P(e^{t\cdot X}>e^{t\cdot (1+\delta)\cdot\mu)}$, for all $t>0$  
->$\leq \frag{E\lbrack e^{t\cdot X}\rbrack}{e^{t\cdot (1+\delta)\cdot\mu)}}$...Markov inequality  
+>$\leq \frac{E\lbrack e^{t\cdot X}\rbrack}{e^{t\cdot (1+\delta)\cdot\mu)}}$...<font color="Red">Markov inequality</font>  
 >
+>Since each $X_{i}$ is independent, we have  
+>$E\lbrack e^{t\cdot X}\rbrack$  
+>=$E\lbrack e^{t\cdot \sum_{i=1}^{n}X_{i}}\rbrack$  
+>=$E\lbrack e^{t\cdot (X_{1}+X_{2}+...+{X_{n}})}\rbrack$  
 
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
