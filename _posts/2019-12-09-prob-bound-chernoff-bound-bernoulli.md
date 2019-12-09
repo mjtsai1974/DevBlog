@@ -49,6 +49,12 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >$<\prod_{i=1}^{n} e^{(e^{t}-1)\cdot p_{i}}$  
 >=$e^{(e^{t}-1)\cdot (p_{1}+...+p_{n})}$  
 >=$e^{(e^{t}-1)\cdot\mu}$  
+>
+>Therefore, we have  
+>$P(X>(1+\delta)\cdot\mu)$  
+>$\leq \frac{E\lbrack e^{t\cdot X}\rbrack}{e^{t\cdot (1+\delta)\cdot\mu)}}$  
+>$<\frac {e^{(e^{t}-1)\cdot\mu}}{e^{t\cdot (1+\delta)\cdot\mu)}$  
+>=$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
 
 <!-- Γ -->
 <!-- \Omega -->
