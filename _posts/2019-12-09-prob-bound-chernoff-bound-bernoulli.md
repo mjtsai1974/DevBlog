@@ -39,6 +39,7 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >=$E\lbrack e^{t\cdot (X_{1}+X_{2}+...+{X_{n}})}\rbrack$  
 >=$E\lbrack \prod_{i=1}^{n} e^{t\cdot X_{i}}\rbrack$  
 >=$\prod_{i=1}^{n} E\lbrack e^{t\cdot X_{i}}\rbrack$  
+>=$\prod_{i=1}^{n} e^{t\cdot 1}\cdot p_{i}+e^{t\cdot 0}\cdot (1-p_{i})$  
 
 <!-- Γ -->
 <!-- \Omega -->
