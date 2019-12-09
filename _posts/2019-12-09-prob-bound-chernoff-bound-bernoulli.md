@@ -37,22 +37,40 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >$E\lbrack e^{t\cdot X}\rbrack$  
 >=$E\lbrack e^{t\cdot \sum_{i=1}^{n}X_{i}}\rbrack$  
 >=$E\lbrack e^{t\cdot (X_{1}+X_{2}+...+{X_{n}})}\rbrack$  
+>=$E\lbrack \prod_{i=1}^{n} e^{t\cdot X_{i}}\rbrack$  
+>=$\prod_{i=1}^{n} E\lbrack e^{t\cdot X_{i}}\rbrack$  
 
 <!-- Γ -->
+<!-- \Omega -->
+<!-- \cap intersection -->
+<!-- \cup union -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
 <!-- \vert_0^\infty -->
+<!-- \vert_{0.5}^{\infty} -->
 <!-- &prime; ′ -->
 <!-- &Prime; ″ -->
+<!-- $E\lbrack X\rbrack$ -->
 <!-- \overline{X_n} -->
+<!-- \underset{Succss}P -->
 <!-- \frac{{\overline {X_n}}-\mu}{S/\sqrt n} -->
 <!-- \lim_{t\rightarrow\infty} -->
-<!-- \begin{array}{l}f'(x)\\f''(x)\\f'''(x)\\f''''(x)\end{array} -->
-<!-- \\{Z\vert Z\ge t\\} -->
-<!-- E\lbrack Z\rbrack -->
-<!-- Var\lbrack Z\rbrack -->
-<!-- \left|X\right| absolute value of X-->
+<!-- \int_{0}^{a}\lambda\cdot e^{-\lambda\cdot t}\operatorname dt -->
 <!-- \Leftrightarrow -->
+<!-- \prod_{v\in V} -->
+<!-- \subset -->
+<!-- \subseteq -->
+<!-- \varnothing -->
+<!-- \perp -->
+<!-- \overset\triangle= -->
+<!-- \left|X\right| -->
+<!-- \xrightarrow{r_t} -->
+<!-- \left\|?\right\| => ||?||-->
+<!-- \left|?\right| => |?|-->
+<!-- \lbrack BQ\rbrack => [BQ] -->
+<!-- \subset -->
+<!-- \subseteq -->
+<!-- \widehat -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
