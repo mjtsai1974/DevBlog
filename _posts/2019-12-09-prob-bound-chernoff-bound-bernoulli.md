@@ -26,6 +26,14 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 ><font color="OrangeRed">Even if our proof of &#10113; holds, the range of confidence interval must be guaranteed by the native design in your experiment.</font>  
 >I will emphasize this at the end of this post.  
 
+### The Upper Bound On Error Probability
+>It is asking the error probability when target value $X$ is greater than the expect value $\mu$, and we'd like to bound it on the upper side.  
+>
+>$P(X>(1+\delta)\cdot\mu)$, for $\delta>0$  
+>=$P(e^{t\cdot X}>e^{t\cdot (1+\delta)\cdot\mu)}$, for all $t>0$  
+>$\leq \frag{E\lbrack e^{t\cdot X}\rbrack}{e^{t\cdot (1+\delta)\cdot\mu)}}$...Markov inequality  
+>
+
 <!-- Γ -->
 <!-- \frac{\Gamma(k + n)}{\Gamma(n)} \frac{1}{r^k}  -->
 <!-- \mbox{\large$\vert$}\nolimits_0^\infty -->
