@@ -66,7 +66,7 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >$\Leftrightarrow t$=$ln(1+\delta)$ could we have the minimum value  
 >
 >Take $t$=$ln(1+\delta)$ into &#10112;, we get:  
->$P(X>(1+\delta)\cdot\mu)$<${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \brack}^{\mu}$  
+>$P(X>(1+\delta)\cdot\mu)$<${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \rbrack}^{\mu}$  
 >As a result, $(e^{ln(1+\delta)})^{(1+\delta)\cdot\mu}$=$(1+\delta)^{(1+\delta)\cdot\mu}$  
 >
 
