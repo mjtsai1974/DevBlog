@@ -55,6 +55,10 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >$\leq \frac{E\lbrack e^{t\cdot X}\rbrack}{e^{t\cdot (1+\delta)\cdot\mu)}}$  
 >$<\frac {e^{(e^{t}-1)\cdot\mu}}{e^{t\cdot (1+\delta)\cdot\mu)}}$  
 >=$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
+>
+>Next would be to figure out the maximum of $e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ by taking its first derivative with respect to $t$, set it to zero, get such value of $t$ to make it zero:  
+>$\frac{\operatorname d{e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}}}{\operatorname d{t}}$  
+>=
 
 <!-- Γ -->
 <!-- \Omega -->
