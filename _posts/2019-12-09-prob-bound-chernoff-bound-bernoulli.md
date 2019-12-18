@@ -54,11 +54,20 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >$P(X>(1+\delta)\cdot\mu)$  
 >$\leq \frac{E\lbrack e^{t\cdot X}\rbrack}{e^{t\cdot (1+\delta)\cdot\mu)}}$  
 >$<\frac {e^{(e^{t}-1)\cdot\mu}}{e^{t\cdot (1+\delta)\cdot\mu)}}$  
->=$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
+>=$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$...&#10112;  
 >
->Next would be to figure out the maximum of $e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ by taking its first derivative with respect to $t$, set it to zero, get such value of $t$ to make it zero:  
+>Next would be to figure out the minimum of $e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ by taking its first derivative with respect to $t$, set it to zero, get such value of $t$ to make it zero:  
 >$\frac{\operatorname d{e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}}}{\operatorname d{t}}$  
->=
+>=$\lbrack e^{t}-(1+\delta)\rbrack\cdot\mu\cdot e^{\lbrack (e^{t}-1)-(1+\delta)\cdot t\rbrack\cdot\mu}$  
+>
+>The right side of exponential part won't be zero, then  
+>$\lbrack e^{t}-(1+\delta)\rbrack\cdot\mu$=$0$  
+>$\Leftrightarrow e^{t}-(1+\delta)$=$0$  
+>$\Leftrightarrow t$=$ln(1+\delta)$ could we have the minimum value  
+>
+>Take $t$=$ln(1+\delta)$ into &#10112;, we get:  
+>$P(X>(1+\delta)\cdot\mu)$<$\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \brack^{\mu}$  
+>
 
 <!-- Γ -->
 <!-- \Omega -->
