@@ -66,8 +66,17 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >$\Rightarrow t$=$ln(1+\delta)$ could we have the minimum value  
 >
 >Take $t$=$ln(1+\delta)$ into &#10112;, we get:  
->$P(X>(1+\delta)\cdot\mu)$<${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \rbrack}^{\mu}$  
+>$P(X>(1+\delta)\cdot\mu)$<${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \rbrack}^{\mu}$...[A]  
 >As a result, $(e^{ln(1+\delta)})^{(1+\delta)\cdot\mu}$=$(1+\delta)^{(1+\delta)\cdot\mu}$  
+>
+
+### The Lower Bound On Error Probability
+>It is asking the error probability when target value $X$ is less than the expect value $\mu$, and we'd like to bound it on the lower side.  
+>
+>$P(X<(1-\delta)\cdot\mu)$, for $\delta>0$  
+>$P(-X>-(1-\delta)\cdot\mu)$  
+>=$P(e^{t\cdot (-X)}<e^{t\cdot (-(1-\delta))\cdot\mu)}$, for all $t>0$  
+>$\geq \frac{E\lbrack e^{t\cdot (-X)}\rbrack}{e^{t\cdot (-(1-\delta))\cdot\mu)}}$...<font color="Red">Markov inequality</font>  
 >
 
 <!-- Γ -->
