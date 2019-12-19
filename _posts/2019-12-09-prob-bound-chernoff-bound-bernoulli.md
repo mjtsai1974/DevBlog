@@ -97,8 +97,12 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >
 >This $\delta$ is quiet small, temporarily forget about it after the power of 3, then we have  
 >$(1+\delta)^{(1+\delta)}$>$(e^{\delta-\frac {\delta^{2}}{2!}+\frac {\delta^{3}}{3!}})^{(1+\delta)}$  
->$\;\;\;\;\approx e^{\delta+\frac {\delta^{2}}{2}-\frac {\delta^{3}}{6}}$  
->$\;\;\;\;\approx e^{\delta+\frac {\delta^{2}}{2+\varepsilon}}$  
+>$\;\;\;\;\;\;\;\;\approx e^{\delta+\frac {\delta^{2}}{2}-\frac {\delta^{3}}{6}}$  
+>$\;\;\;\;\;\;\;\;\approx e^{\delta+\frac {\delta^{2}}{2+\varepsilon}}$  
+>
+>Therefore, the upper bound in [A] becomes:  
+>$P(X>(1+\delta)\cdot\mu)$<${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \rbrack}^{\mu}$  
+>$\;\;\;\;\;\;\;\;$<${\lbrack \frac {e^{\delta}}{e^{\delta+\frac {\delta^{2}}{2+\varepsilon}}}\rbrack}^{\mu}$  
 
 <!-- Γ -->
 <!-- \Omega -->
