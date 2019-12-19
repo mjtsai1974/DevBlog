@@ -91,7 +91,7 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >Since $\frac{\operatorname d{ln(1+\delta)}}{\operatorname d{\delta}}$=$\frac {1}{1+\delta}$, the $ln(1+\delta)$ begins from integration:  
 >$ln(1+\delta)$  
 >=$\int_{0}^{1}{\frac {1}{1+\delta}}\operatorname d{\delta}$  
->=$\int_{0}^{1}{1-\delta+\delta^{2]-\delta^{3}+\delta^{4}-...}\operatorname d{\delta}$  
+>=$\int_{0}^{1}{1-\delta+\delta^{2}-\delta^{3}+\delta^{4}-...}\operatorname d{\delta}$  
 >=$\delta$-$\frac {\delta^{2}}{2!}$+$\frac {\delta^{3}}{3!}$-$\frac {\delta^{4}}{4!}$+...  
 >=$\sum_{1}^{\infty}(-1)^{k-1}\cdot\frac {\delta^{k}}{k!}$  
 
