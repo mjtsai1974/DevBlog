@@ -84,6 +84,10 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 ### Bounding The Bounds
 >We now have 2 bounds in [A] and [B], such bounds ${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \rbrack}^{\mu}$ and ${\lbrack\frac {e^{-\delta}}{(1-\delta)^{(1-\delta)}} \rbrack}^{\mu}$ are difficult to use, we should turn it into human readable format.  
 >
+>The nominator is the exponential raised to the power of $\delta$, take upper bound ${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \rbrack}^{\mu}$ for illustration, we'd like to turn $(1+\delta)^{(1+\delta)}$ into exponential powered base expression, to be believed the most efficient way.  
+>
+>Begin from the the natural logarithm of $1+\delta$, that is $ln(1+\delta)$=$y$, then $e^{y}$=$1+\delta$, we can just express $(1+\delta)^{(1+\delta)}$ as $(e^{y})^{(1+\delta)}$, the very next thing would be to figure out $ln(1+\delta)$ in the expression of approximation.  
+>
 
 <!-- Γ -->
 <!-- \Omega -->
