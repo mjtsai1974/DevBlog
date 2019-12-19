@@ -75,8 +75,8 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >
 >$P(X<(1-\delta)\cdot\mu)$, for $\delta>0$  
 >$P(-X>-(1-\delta)\cdot\mu)$  
->=$P(e^{t\cdot (-X)}<e^{t\cdot (-(1-\delta))\cdot\mu)}$, for all $t>0$  
->$\geq \frac{E\lbrack e^{t\cdot (-X)}\rbrack}{e^{t\cdot (-(1-\delta))\cdot\mu)}}$...<font color="Red">Markov inequality</font>  
+>=$P(e^{t\cdot (-X)}>e^{t\cdot (-(1-\delta))\cdot\mu)}$, for all $t>0$  
+>$\leq \frac{E\lbrack e^{t\cdot (-X)}\rbrack}{e^{t\cdot (-(1-\delta))\cdot\mu)}}$...<font color="Red">Markov inequality</font>  
 >
 
 <!-- Γ -->
