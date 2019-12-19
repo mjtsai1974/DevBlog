@@ -62,8 +62,8 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >
 >The right side of exponential part won't be zero, then  
 >$\lbrack e^{t}-(1+\delta)\rbrack\cdot\mu$=$0$  
->$\Leftrightarrow e^{t}-(1+\delta)$=$0$  
->$\Leftrightarrow t$=$ln(1+\delta)$ could we have the minimum value  
+>$\Rightarrow e^{t}-(1+\delta)$=$0$  
+>$\Rightarrow t$=$ln(1+\delta)$ could we have the minimum value  
 >
 >Take $t$=$ln(1+\delta)$ into &#10112;, we get:  
 >$P(X>(1+\delta)\cdot\mu)$<${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \rbrack}^{\mu}$  
