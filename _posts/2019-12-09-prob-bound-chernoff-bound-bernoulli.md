@@ -94,6 +94,11 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >=$\int_{0}^{1}{(1-\delta+\delta^{2}-\delta^{3}+\delta^{4}-...)}\operatorname d{\delta}$  
 >=$\delta$-$\frac {\delta^{2}}{2!}$+$\frac {\delta^{3}}{3!}$-$\frac {\delta^{4}}{4!}$+...  
 >=$\sum_{1}^{\infty}(-1)^{k-1}\cdot\frac {\delta^{k}}{k!}$  
+>
+>This $\delta$ is quiet small, temporarily forget about it after the power of 3, then we have  
+>$(1+\delta)^{(1+\delta)}$>$(e^{\delta-\frac {\delta^{2}}{2!}+\frac {\delta^{3}}{3!}})^{(1+\delta)}$  
+>$\;\;\;\;\approx e^{\delta+\frac {\delta^{2}}{2}-\frac {\delta^{3}}{6}}$  
+>$\;\;\;\;\approx e^{\delta+\frac {\delta^{2}}{2+\varepsilon}}$  
 
 <!-- Γ -->
 <!-- \Omega -->
