@@ -88,6 +88,10 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >
 >Begin from the the natural logarithm of $1+\delta$, that is $ln(1+\delta)$=$y$, then $e^{y}$=$1+\delta$, we can just express $(1+\delta)^{(1+\delta)}$ as $(e^{y})^{(1+\delta)}$, the very next thing would be to figure out $ln(1+\delta)$ in the expression of approximation.  
 >
+>Since $\frac{\operatorname d{ln(1+\delta)}}{\operatorname d{\delta}}$=$\frac {1}{1+\delta}$, the $ln(1+\delta)$ begins from integration:  
+>$ln(1+\delta)$  
+>=$\int_{0}^{1}{\frac {1}{1+\delta}}\operatorname d{\delta}$  
+>=$\int_{0}^{1}{1-\delta+\delta^{2]-\delta^{3}+\delta^{4}-...}\operatorname d{\delta}$  
 
 <!-- Γ -->
 <!-- \Omega -->
@@ -120,6 +124,7 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 <!-- \subset -->
 <!-- \subseteq -->
 <!-- \widehat -->
+<!-- \int_{}^{}{}\operatorname d{} -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus</font> -->
