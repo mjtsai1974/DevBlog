@@ -81,6 +81,10 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >Via similar approach, we could have  
 >$P(X<(1-\delta)\cdot\mu)$<${\lbrack\frac {e^{-\delta}}{(1-\delta)^{(1-\delta)}} \rbrack}^{\mu}$...[B]  
 
+### Bounding The Bounds
+>We now have 2 bounds in [A] and [B], such bounds ${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \rbrack}^{\mu}$ and ${\lbrack\frac {e^{-\delta}}{(1-\delta)^{(1-\delta)}} \rbrack}^{\mu}$ are difficult to use, we should turn it into human readable format.  
+>
+
 <!-- Γ -->
 <!-- \Omega -->
 <!-- \cap intersection -->
