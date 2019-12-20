@@ -112,6 +112,12 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >$ln(1-\delta)$  
 >=$ln(1+(-\delta))$  
 >=$\sum_{1}^{\infty}(-1)^{k-1}\cdot\frac {(-\delta)^{k}}{k!}$  
+>
+>Thus, we have it that  
+>$ln(1-\delta)$=$-\delta-\frac {\delta^{2}}{2!}-\frac {\delta^{3}}{3!}-\frac {\delta^{4}}{4!}-...$  
+>$\Rightarrow ln(1-\delta)$>$-\delta-\frac {\delta^{2}}{2!}$  
+>$\Rightarrow (1-\delta)>e^{-\delta-\frac {\delta^{2}}{2!}}$  
+>$\Rightarrow (1-\delta)^{(1-\delta)}>(e^{-\delta-\frac {\delta^{2}}{2!}})^{(1-\delta)}$  
 
 <!-- Γ -->
 <!-- \Omega -->
