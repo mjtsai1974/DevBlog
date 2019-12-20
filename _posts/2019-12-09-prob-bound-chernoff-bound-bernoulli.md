@@ -118,6 +118,13 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >$\Rightarrow ln(1-\delta)$>$-\delta-\frac {\delta^{2}}{2!}$  
 >$\Rightarrow (1-\delta)>e^{-\delta-\frac {\delta^{2}}{2!}}$  
 >$\Rightarrow (1-\delta)^{(1-\delta)}>(e^{-\delta-\frac {\delta^{2}}{2!}})^{(1-\delta)}$  
+>$\Rightarrow (1-\delta)^{(1-\delta)}>e^{-\delta+\frac {\delta^{2}}{2}+\frac {\delta^{3}}{2}}$  
+>$\Rightarrow (1-\delta)^{(1-\delta)}>e^{-\delta+\frac {\delta^{2}}{2}}$, where we ignore the term $\frac {\delta^{3}}{2}$  
+>
+>Therefore, we have the lower bound  
+>$P(X<(1-\delta)\cdot\mu)$<${\lbrack\frac {e^{-\delta}}{(1-\delta)^{(1-\delta)}} \rbrack}^{\mu}$  
+>$\Rightarrow P(X<(1-\delta)\cdot\mu)$<${\lbrack\frac {e^{-\delta}}{e^{-\delta+\frac {\delta^{2}}{2}}} \rbrack}^{\mu}$  
+>$\Rightarrow P(X<(1-\delta)\cdot\mu)$<$e^{-\frac {\delta^{2}}{2}\cdot\mu}$  
 
 <!-- Γ -->
 <!-- \Omega -->
