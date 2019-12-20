@@ -10,8 +10,8 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 
 ### The <font color="Red">Error Probability</font> After Test
 >Let $X_{i}$ to be a <font color="Red">Bernoulli</font> random variable for $i$=$\\{1,2,...,n\\}$  
->&#10112;$X_{i}$=$1$ with probability $p_{1}$  
->&#10113;$X_{i}$=$0$ with probability $1$-$p_{1}$  
+>&#10112;$X_{i}$=$1$ with probability $p_{i}$  
+>&#10113;$X_{i}$=$0$ with probability $1$-$p_{i}$  
 >, where all $X_{i}$s are I.I.D and suppose at least one of the $p_{i}$ is non-zero.  
 >
 >We are testing with a hope that we can <font color="OrangeRed">make our target value over expectation level after some amount of trials</font>.  To express the target value we want in terms of expect value, we let $X$=$\sum_{i=1}^{n}X_{i}$, $E\lbrack X\rbrack$=$\mu$=$\sum_{i=1}^{n}p_{i}$.  
@@ -86,6 +86,8 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >
 >The nominator is the exponential raised to the power of $\delta$, take upper bound ${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \rbrack}^{\mu}$ for illustration, we'd like to turn $(1+\delta)^{(1+\delta)}$ into exponential powered base expression, to be believed the most efficient way.  
 >
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The upper bound</font>
 >Begin from the the natural logarithm of $1+\delta$, that is $ln(1+\delta)$=$y$, then $e^{y}$=$1+\delta$, we can just express $(1+\delta)^{(1+\delta)}$ as $(e^{y})^{(1+\delta)}$, the very next thing would be to figure out $ln(1+\delta)$ in the expression of approximation.  
 >
 >Since $\frac{\operatorname d{ln(1+\delta)}}{\operatorname d{\delta}}$=$\frac {1}{1+\delta}$, the $ln(1+\delta)$ begins from integration:  
@@ -104,6 +106,12 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >$P(X>(1+\delta)\cdot\mu)$<${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \rbrack}^{\mu}$  
 >$\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$<${\lbrack \frac {e^{\delta}}{e^{\delta+\frac {\delta^{2}}{2+\varepsilon}}}\rbrack}^{\mu}$  
 >$\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\approx e^{-\frac {\delta^{2}}{2+\varepsilon}\cdot\mu}$  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">The lower bound</font>
+>$ln(1-\delta)$  
+>=$ln(1+(-\delta))$  
+>=$\sum_{1}^{\infty}(-1)^{k-1}\cdot\frac {(-\delta)^{k}}{k!}$  
 
 <!-- Γ -->
 <!-- \Omega -->
