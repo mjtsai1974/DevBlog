@@ -14,29 +14,29 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >&#10113;$X_{i}$=$0$ with probability $1$-$p_{i}$  
 >, where all $X_{i}$s are I.I.D and suppose at least one of the $p_{i}$ is non-zero.  
 >
->We are testing with a hope that we can <font color="OrangeRed">make our target value over expectation level after some amount of trials</font>.  To express the target value we want in terms of expect value, we let $X$=$\sum_{i=1}^{n}X_{i}$, $E\lbrack X\rbrack$=$\mu$=$\sum_{i=1}^{n}p_{i}$.  
+>We are testing with a hope that we can <font color="OrangeRed">make our target value meet the expectation level after some amount of trials</font>.  To express the target value we want in terms of expect value, we let $X$=$\sum_{i=1}^{n}X_{i}$, $E\lbrack X\rbrack$=$\mu$=$\sum_{i=1}^{n}p_{i}$.  
 >
 ><font color="RoyalBlue">[Question]</font>  
 >How confident we are in the final outcome by the random variable $X$?  It is asking you 2 kinds of questions:  
 >&#10112;the range of the confidence interval  
 >&#10113;the error probability for the target value $X$ above or below the expect value $\mu$  
+>
 >The follwing section would guide you through the process to build the upper and lower bound of such error probability in <font color="Red">Chernoff</font> exponential decreasing form.  
 >
 ><font color="DeepSkyBlue">[Notes]</font>
 ><font color="OrangeRed">Even if our proof of &#10113; holds, the range of confidence interval must be guaranteed by the native design in your experiment.</font>  
->I will emphasize this at the end of this post.  
 
 ### The Upper Bound On Error Probability
 >It is asking the error probability when target value $X$ is greater than the expect value $\mu$, and we'd like to bound it on the upper side.  
 >
 >$P(X>(1+\delta)\cdot\mu)$, for $\delta>0$  
->=$P(e^{t\cdot X}>e^{t\cdot (1+\delta)\cdot\mu)}$, for all $t>0$  
->$\leq \frac{E\lbrack e^{t\cdot X}\rbrack}{e^{t\cdot (1+\delta)\cdot\mu)}}$...<font color="Red">Markov inequality</font>  
+>=$P(e^{t\cdot X}>e^{t\cdot (1+\delta)\cdot\mu}$, for all $t>0$  
+>$\leq \frac{E\lbrack e^{t\cdot X}\rbrack}{e^{t\cdot (1+\delta)\cdot\mu}}$...<font color="Red">Markov inequality</font>  
 >
 >Since each $X_{i}$ is independent, we have  
 >$E\lbrack e^{t\cdot X}\rbrack$  
 >=$E\lbrack e^{t\cdot \sum_{i=1}^{n}X_{i}}\rbrack$  
->=$E\lbrack e^{t\cdot (X_{1}+X_{2}+...+{X_{n}})}\rbrack$  
+>=$E\lbrack e^{t\cdot (X_{1}+X_{2}+...+X_{n})}\rbrack$  
 >=$E\lbrack \prod_{i=1}^{n} e^{t\cdot X_{i}}\rbrack$  
 >=$\prod_{i=1}^{n} E\lbrack e^{t\cdot X_{i}}\rbrack$  
 >=$\prod_{i=1}^{n} e^{t\cdot 1}\cdot p_{i}+e^{t\cdot 0}\cdot (1-p_{i})$  
@@ -53,10 +53,10 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >Therefore, we have  
 >$P(X>(1+\delta)\cdot\mu)$  
 >$\leq \frac{E\lbrack e^{t\cdot X}\rbrack}{e^{t\cdot (1+\delta)\cdot\mu)}}$  
->$<\frac {e^{(e^{t}-1)\cdot\mu}}{e^{t\cdot (1+\delta)\cdot\mu)}}$  
+>$<\frac {e^{(e^{t}-1)\cdot\mu}}{e^{t\cdot (1+\delta)\cdot\mu}}$  
 >=$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$...&#10112;  
 >
->Next would be to figure out the minimum of $e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ by taking its first derivative with respect to $t$, set it to zero, get such value of $t$ to make it zero:  
+>Next would be to <font color="OrangeRed">figure out the minimum</font> of $e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ <font color="OrangeRed">by taking its first derivative with respect to $t$</font>, set it to zero, get such value of $t$ to make it zero:  
 >$\frac{\operatorname d{e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}}}{\operatorname d{t}}$  
 >=$\lbrack e^{t}-(1+\delta)\rbrack\cdot\mu\cdot e^{\lbrack (e^{t}-1)-(1+\delta)\cdot t\rbrack\cdot\mu}$  
 >
@@ -68,7 +68,6 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >Take $t$=$ln(1+\delta)$ into &#10112;, we get:  
 >$P(X>(1+\delta)\cdot\mu)$<${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \rbrack}^{\mu}$...[A]  
 >As a result, $(e^{ln(1+\delta)})^{(1+\delta)\cdot\mu}$=$(1+\delta)^{(1+\delta)\cdot\mu}$  
->
 
 ### The Lower Bound On Error Probability
 >It is asking the error probability when target value $X$ is less than the expect value $\mu$, and we'd like to bound it on the lower side.  
