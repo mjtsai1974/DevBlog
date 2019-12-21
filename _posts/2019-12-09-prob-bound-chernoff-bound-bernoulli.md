@@ -30,7 +30,7 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >It is asking the error probability when target value $X$ is greater than the expect value $\mu$, and we'd like to bound it on the upper side.  
 >
 >$P(X>(1+\delta)\cdot\mu)$, for $\delta>0$  
->=$P(e^{t\cdot X}>e^{t\cdot (1+\delta)\cdot\mu}$, for all $t>0$  
+>=$P(e^{t\cdot X}>e^{t\cdot (1+\delta)\cdot\mu})$, for all $t>0$  
 >$\leq \frac{E\lbrack e^{t\cdot X}\rbrack}{e^{t\cdot (1+\delta)\cdot\mu}}$...<font color="Red">Markov inequality</font>  
 >
 >Since each $X_{i}$ is independent, we have  
@@ -52,7 +52,7 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >
 >Therefore, we have  
 >$P(X>(1+\delta)\cdot\mu)$  
->$\leq \frac{E\lbrack e^{t\cdot X}\rbrack}{e^{t\cdot (1+\delta)\cdot\mu)}}$  
+>$\leq \frac{E\lbrack e^{t\cdot X}\rbrack}{e^{t\cdot (1+\delta)\cdot\mu}}$  
 >$<\frac {e^{(e^{t}-1)\cdot\mu}}{e^{t\cdot (1+\delta)\cdot\mu}}$  
 >=$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$...&#10112;  
 >
