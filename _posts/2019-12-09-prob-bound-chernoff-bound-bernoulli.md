@@ -103,8 +103,8 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >
 >Therefore, the upper bound in [A] becomes:  
 >$P(X>(1+\delta)\cdot\mu)$<${\lbrack\frac {e^{\delta}}{(1+\delta)^{(1+\delta)}} \rbrack}^{\mu}$  
->$\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$<${\lbrack \frac {e^{\delta}}{e^{\delta+\frac {\delta^{2}}{2+\varepsilon}}}\rbrack}^{\mu}$  
->$\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\approx e^{-\frac {\delta^{2}}{2+\varepsilon}\cdot\mu}$  
+>$\Rightarrow P(X>(1+\delta)\cdot\mu)$<${\lbrack \frac {e^{\delta}}{e^{\delta+\frac {\delta^{2}}{2+\varepsilon}}}\rbrack}^{\mu}$  
+>$\Rightarrow P(X>(1+\delta)\cdot\mu)$<$e^{-\frac {\delta^{2}}{2+\varepsilon}\cdot\mu}$  
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">The lower bound</font>
