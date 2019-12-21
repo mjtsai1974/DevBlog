@@ -106,6 +106,10 @@ The <font color="Red">Chernoff bounds</font> is a technique to build the <font c
 >$\Rightarrow P(X>(1+\delta)\cdot\mu)$<${\lbrack \frac {e^{\delta}}{e^{\delta+\frac {\delta^{2}}{2+\varepsilon}}}\rbrack}^{\mu}$  
 >$\Rightarrow P(X>(1+\delta)\cdot\mu)$<$e^{-\frac {\delta^{2}}{2+\varepsilon}\cdot\mu}$  
 >
+>To be more narrow down, the choice of $e^{-\frac {\delta^{2}}{3}\cdot\mu}$ won't violect, for $\varepsilon\rightarrow 0$:  
+>$\Rightarrow P(X>(1+\delta)\cdot\mu)$<$e^{-\frac {\delta^{2}}{3}\cdot\mu}$  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2019-12-09-prob-bound-chernoff-bound-bernoulli-upper.png "upper bound")
+>
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">The lower bound</font>
 >$ln(1-\delta)$  
