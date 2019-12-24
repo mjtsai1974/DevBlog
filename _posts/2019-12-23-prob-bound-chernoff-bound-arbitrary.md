@@ -13,7 +13,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >Suppose we are given  
 >&#10112;$X_{1}$,$X_{2}$,...,$X_{n}$ to be independent random variables with values in $\lbrack 0,1\rbrack$.  
 >&#10113;$X$=$X_{1}$+$X_{2}$+...+$X_{n}$  
->&#10114;$\lbrack X rbrack$=$\mu$  
+>&#10114;$E\lbrack X rbrack$=$\mu$  
 >
 >These $X_{1}$,...,$X_{n}$ needs <font color="RosyBrown">not</font> to be Bernoulli ranodm variables, but they must be <font color="OrangeRed">independent</font>.  
 >
@@ -26,7 +26,13 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 ### The Upper Bound On Error Probability
 >Still, it is asking the upper bound on error probability, when target value $X$ is greater than the expect value $\mu$, and we'd like to bound it on the upper side.  
 >
->
+>The major difference is that these random variables fall within $\lbrack 0,1\rbrack$, <font color="RosyBrown">not</font> the Bernoulli values $0$ or $1$.  here is the idea:  
+>&#10112;take $Y_{i}$=$X_{i}$-$E\lbrack X_{i} rbrack$  
+>&#10113;take $Y$=$\sum_{1}^{n}Y_{i}$  
+>&#10114;$P(X\geq\mu+\varepsilon)$  
+>=$P(X-\mu\geq\varepsilon)$  
+>=$P(\sum_{1}^{n}(X_{i}-E\lbrack X_{i} rbrack)\geq\varepsilon)$  
+>=$P(Y\geq\varepsilon)$  
 
 <!-- Γ -->
 <!-- \Omega -->
