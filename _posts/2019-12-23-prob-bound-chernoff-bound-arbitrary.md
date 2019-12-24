@@ -19,9 +19,14 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >
 ><font color="RoyalBlue">[Question]</font>
 >Then, for every $\varepsilon$>$0$, what is the upper and lower bound for  
->&#10112;$P(X\geq (1+\delta)\cdot\mu)$=$P(X\geq \mu+\varepsilon$)$  
->&#10113;$P(X\leq (1-\delta)\cdot\mu)$=$P(X\leq \mu-\varepsilon$)$  
+>&#10112;$P(X\geq (1+\delta)\cdot\mu)$=$P(X\geq \mu+\varepsilon)$  
+>&#10113;$P(X\leq (1-\delta)\cdot\mu)$=$P(X\leq \mu-\varepsilon)$  
 >, where $\varepsilon$=$\delta\cdot\mu$  
+
+### The Upper Bound On Error Probability
+>Still, it is asking the upper bound on error probability, when target value $X$ is greater than the expect value $\mu$, and we'd like to bound it on the upper side.  
+>
+>
 
 <!-- Γ -->
 <!-- \Omega -->
