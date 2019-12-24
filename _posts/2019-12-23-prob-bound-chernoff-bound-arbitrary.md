@@ -8,6 +8,23 @@ title: Chernoff Bounds For Arbitrary Random Variable
 There are many <font color="Red">Chernoff bounds</font> as a result.  This article develops the tail bound on the <font color="OrangeRed">independent arbitrary</font> random variable with outcome ranging from 0 to 1, that is $\lbrack 0,1\rbrack$.  
 </p>
 
+### The <font color="Red">Error Probability</font> After Test
+<font color="OrangeRed">[The given condition]</font>
+>Suppose we are given  
+>&#10112;$X_{1}$,$X_{2}$,...,$X_{n}$ to be independent random variables with values in $\lbrack 0,1\rbrack$.  
+>&#10113;$X$=$X_{1}$+$X_{2}$+...+$X_{n}$  
+>&#10114;$\lbrack X rbrack$=$\mu$  
+>
+>These $X_{1}$,...,$X_{n}$ needs <font color="RosyBrown">not</font> to be Bernoulli ranodm variables, but they must be <font color="OrangeRed">independent</font>.  
+>
+><font color="RoyalBlue">[Question]</font>
+>Then, for every $\varepsilon$>$0$, what is the upper and lower bound for  
+>&#10112;$P(X\geq (1+\delta)\cdot\mu)$
+>=$P(X\geq \mu+\varepsilon$)$  
+>&#10113;$P(X\leq (1-\delta)\cdot\mu)$  
+>=$P(X\leq \mu-\varepsilon$)$  
+>, where $\varepsilon$=$\delta\cdot\mu$  
+
 <!-- Γ -->
 <!-- \Omega -->
 <!-- \cap intersection -->
