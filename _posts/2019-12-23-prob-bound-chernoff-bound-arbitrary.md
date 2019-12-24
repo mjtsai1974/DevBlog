@@ -26,12 +26,12 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 ### The Upper Bound On Error Probability
 >Still, it is asking the upper bound on error probability, when target value $X$ is greater than the expect value $\mu$, and we'd like to bound it on the upper side.  
 >
->The major difference is that these random variables fall within $\lbrack 0,1\rbrack$, <font color="RosyBrown">not</font> the Bernoulli values $0$ or $1$.  here is the idea:  
->&#10112;take $Y_{i}$=$X_{i}$-$E\lbrack X_{i} rbrack$  
+>The major difference is that these random variables fall within $\lbrack 0,1\rbrack$, <font color="RosyBrown">not</font> the Bernoulli values $0$ or $1$.  Here is the idea:  
+>&#10112;take $Y_{i}$=$X_{i}$-$E\lbrack X_{i} \rbrack$  
 >&#10113;take $Y$=$\sum_{1}^{n}Y_{i}$  
 >&#10114;$P(X\geq\mu+\varepsilon)$  
 >=$P(X-\mu\geq\varepsilon)$  
->=$P(\sum_{1}^{n}(X_{i}-E\lbrack X_{i} rbrack)\geq\varepsilon)$  
+>=$P(\sum_{1}^{n}(X_{i}-E\lbrack X_{i} \rbrack)\geq\varepsilon)$  
 >=$P(Y\geq\varepsilon)$  
 
 <!-- Γ -->
