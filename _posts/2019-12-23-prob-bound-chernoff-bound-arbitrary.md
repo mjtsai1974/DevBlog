@@ -35,6 +35,12 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >=$P(Y\geq\varepsilon)$  
 >=$P(e^{t\cdot Y}\geq e^{t\cdot\varepsilon})$...for any $t>0$  
 >$\leq\frac {E\lbrack e^{t\cdot Y}\rbrack}{e^{t\cdot\varepsilon}}$  
+>
+>Further expand  
+>$E\lbrack e^{t\cdot Y}\rbrack$  
+>=$E\lbrack e^{\sum_{1}^{n} t\cdot\Y_{i}}\rbrack$  
+>=$E\lbrack \prod_{1}^{n} e^{t\cdot\Y_{i}}\rbrack$  
+>
 
 <!-- Γ -->
 <!-- \Omega -->
