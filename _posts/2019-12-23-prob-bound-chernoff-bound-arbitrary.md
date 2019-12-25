@@ -53,7 +53,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$\Rightarrow$solve above equation, could we obtain $a$=$\frac {e^{t}+e^{-t}}{2}$, $b$=$\frac {e^{t}-e^{-t}}{2}$  
 >
 >We can claim that within $\lbrack -1,1\rbrack$   
->$e^{t\cdot Y_{i}}\leq a+b\cdot y$  
+>$e^{t\cdot Y_{i}}\leq a+b\cdot Y_{i}$  
 >$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq E\lbrack a+b\cdot Y_{i}\rbrack$  
 >$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq a + b\cdot E\lbrack Y_{i}\rbrack$  
 >$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq a + b\cdot 0$, where $E\lbrack Y_{i}\rbrack$=$0$  
