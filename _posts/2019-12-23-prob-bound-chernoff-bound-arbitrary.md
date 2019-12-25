@@ -57,6 +57,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq E\lbrack a+b\cdot Y_{i}\rbrack$  
 >$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq a + b\cdot E\lbrack Y_{i}\rbrack$  
 >$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq a + b\cdot 0$, where $E\lbrack Y_{i}\rbrack$=$0$  
+>$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq a$  
 
 <!-- Γ -->
 <!-- \Omega -->
