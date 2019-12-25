@@ -42,7 +42,15 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >=$E\lbrack \prod_{1}^{n} e^{t\cdot Y_{i}}\rbrack$  
 >=$\prod_{1}^{n}E\lbrack e^{t\cdot Y_{i}}\rbrack$  
 >
->Thus, $P(X\geq \mu+\varepsilon)\leq\frac {\prod_{1}^{n}E\lbrack e^{t\cdot Y_{i}}\rbrack}{e^{t\cdot\varepsilon}}$ is left to bound the term $E\lbrack e^{t\cdot Y_{i}}$.  
+>Thus, $P(X\geq \mu+\varepsilon)\leq\frac {\prod_{1}^{n}E\lbrack e^{t\cdot Y_{i}}\rbrack}{e^{t\cdot\varepsilon}}$ is left to bound the term $E\lbrack e^{t\cdot Y_{i}}\rbrack$.  
+>&#10112;$D_{y}e^{t\cdot Y_{i}}$=$t\cdot e^{t\cdot Y_{i}}>0$  
+>&#10113;$D_{y}t\cdot e^{t\cdot Y_{i}}$=$t^{2}\cdot e^{t\cdot Y_{i}}>0$  
+>$e^{t\cdot Y_{i}}$ is a <font color="OrangeRed">convex</font> function, it <font color="OrangeRed">concaves up</font>, by the 2nd derivative greater than 0.  
+>
+>Suppose there exists a line $a+b\cdot t$ passing through the curve of $e^{t\cdot Y_{i}}$ at the points $(1,e^{t})$ and $(1,e^{-t})$, that is  
+>$a$+$b$=$e^{t}$  
+>$a$-$b$=$e^{-t}$  
+>$\Rightarrow$solve above equation, could we obtain $a$=$\frac {e^{t}+e^{-t}}{2}$, $b$=$\frac {e^{t}-e^{-t}}{2}$.  
 
 <!-- Γ -->
 <!-- \Omega -->
