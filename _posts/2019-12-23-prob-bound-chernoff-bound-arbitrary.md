@@ -34,7 +34,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >=$P(\sum_{1}^{n}(X_{i}-E\lbrack X_{i} \rbrack)\geq\varepsilon)$  
 >=$P(Y\geq\varepsilon)$  
 >=$P(e^{t\cdot Y}\geq e^{t\cdot\varepsilon})$...for any $t>0$  
->$\leq\frac {E\lbrack e^{t\cdot Y}\rbrack}{e^{t\cdot\varepsilon}}$  
+>$\leq\frac {E\lbrack e^{t\cdot Y}\rbrack}{e^{t\cdot\varepsilon}}$, and $E\lbrack Y_{i}\rbrack$=$0$  
 >
 >Further expand  
 >$E\lbrack e^{t\cdot Y}\rbrack$  
@@ -47,10 +47,16 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >&#10113;$D_{y}t\cdot e^{t\cdot Y_{i}}$=$t^{2}\cdot e^{t\cdot Y_{i}}>0$  
 >$e^{t\cdot Y_{i}}$ is a <font color="OrangeRed">convex</font> function, it <font color="OrangeRed">concaves up</font>, by the 2nd derivative greater than 0.  
 >
->Suppose there exists a line $a+b\cdot t$ passing through the curve of $e^{t\cdot Y_{i}}$ at the points $(1,e^{t})$ and $(1,e^{-t})$, that is  
+>Suppose there exists a line $a+b\cdot y$ passing through the curve of $e^{t\cdot Y_{i}}$ at the points $(1,e^{t})$ and $(-1,e^{-t})$, that is  
 >$a$+$b$=$e^{t}$  
 >$a$-$b$=$e^{-t}$  
->$\Rightarrow$solve above equation, could we obtain $a$=$\frac {e^{t}+e^{-t}}{2}$, $b$=$\frac {e^{t}-e^{-t}}{2}$.  
+>$\Rightarrow$solve above equation, could we obtain $a$=$\frac {e^{t}+e^{-t}}{2}$, $b$=$\frac {e^{t}-e^{-t}}{2}$  
+>
+>We can claim that within $\lbrack -1,1\rbrack$   
+>$e^{t\cdot Y_{i}}\leq a+b\cdot y$  
+>$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq E\lbrack a+b\cdot Y_{i}\rbrack$  
+>$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq a + b\cdot E\lbrack Y_{i}\rbrack$  
+>$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq a + b\cdot 0$, where $E\lbrack Y_{i}\rbrack$=$0$  
 
 <!-- Γ -->
 <!-- \Omega -->
