@@ -33,6 +33,8 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >=$P(X-\mu\geq\varepsilon)$  
 >=$P(\sum_{1}^{n}(X_{i}-E\lbrack X_{i} \rbrack)\geq\varepsilon)$  
 >=$P(Y\geq\varepsilon)$  
+>=$P(e^{t\cdot Y}\geq e^{t\cdot\varepsilon})$...for any $t>0$  
+>$\leq\frac {E\lbrack e^{t\cdot Y}\rbrack}{e^{t\cdot\varepsilon}}$  
 
 <!-- Γ -->
 <!-- \Omega -->
