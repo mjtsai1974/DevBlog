@@ -38,9 +38,11 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >
 >Further expand  
 >$E\lbrack e^{t\cdot Y}\rbrack$  
->=$E\lbrack e^{\sum_{1}^{n} t\cdot\Y_{i}}\rbrack$  
->=$E\lbrack \prod_{1}^{n} e^{t\cdot\Y_{i}}\rbrack$  
+>=$E\lbrack e^{\sum_{1}^{n} t\cdot Y_{i}}\rbrack$  
+>=$E\lbrack \prod_{1}^{n} e^{t\cdot Y_{i}}\rbrack$  
+>=$\prod_{1}^{n}E\lbrack e^{t\cdot Y_{i}}\rbrack$  
 >
+>Thus, $P(X\geq \mu+\varepsilon)\leq\frac {\prod_{1}^{n}E\lbrack e^{t\cdot Y_{i}}\rbrack}{e^{t\cdot\varepsilon}}$ is left to bound the term $E\lbrack e^{t\cdot Y_{i}}$.  
 
 <!-- Γ -->
 <!-- \Omega -->
