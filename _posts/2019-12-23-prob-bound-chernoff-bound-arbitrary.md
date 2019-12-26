@@ -75,6 +75,13 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >=$E\lbrack e^{t\cdot (Y_{1}+Y_{2}+...+Y_{n})}\rbrack$  
 >=$E\lbrack e^{n\cdot t\cdot Y_{i}}\rbrack$  
 >$\leq E\lbrack e^{\frac {t^{2}}{2}}\rbrack$  
+>
+>Back to the inequality:  
+>$P(X\geq \mu+\varepsilon)$  
+>$\leq\frac {\prod_{1}^{n}E\lbrack e^{t\cdot Y_{i}}\rbrack}{e^{t\cdot\varepsilon}}$  
+>$\leq\frac {E\lbrack e^{\frac {t^{2}}{2}}\rbrack}{e^{t\cdot\varepsilon}}$  
+>$\leq e^{\frac {t^{2}}{2}-t\cdot\varepsilon}$  
+>
 
 <!-- Γ -->
 <!-- \Omega -->
