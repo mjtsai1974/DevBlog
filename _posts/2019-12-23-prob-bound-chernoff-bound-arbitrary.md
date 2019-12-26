@@ -67,7 +67,13 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >+$1$+$\frac {(-t)^{1}}{1!}$+$\frac {(-t)^{2}}{2!}$+$\frac {(-t)^{3}}{3!}$+$\frac {(-t)^{4}}{4!}$+...+$\rbrack$  
 >=$1$+$\frac {t^{2}}{2!}$+$\frac {t^{4}}{4!}$+$\frac {t^{6}}{6!}$+...  
 >$\leq 1$+$\frac {t^{2}}{2\cdot 1!}$+$\frac {t^{4}}{2^{2}\cdot 2!}$+$\frac {t^{6}}{2^{3}\cdot 3!}$+...  
->$\leq 1$+$\frac {\frac {t^{2}}{2}}{1!}$+$\frac {(\frac {t^{2}}{2})^{2}}{2!}$+$\frac {(\frac {t^{2}}{2})^{3}}{3!}$+...
+>$\leq 1$+$\frac {\frac {t^{2}}{2}}{1!}$+$\frac {(\frac {t^{2}}{2})^{2}}{2!}$+$\frac {(\frac {t^{2}}{2})^{3}}{3!}$+...  
+>$\leq e^{\frac {t^{2}}{2}}$  
+>
+>Therefore, $e^{t\cdot Y_{i}}\leq e^{\frac {t^{2}}{2}}$,  
+>$\prod_{1}^{n}E\lbrack e^{t\cdot Y_{i}$  
+>=$E\lbrack e^{t\cdot (Y_{1}+Y_{2}+...+Y_{n})$  
+>=$E\lbrack e^{n\cdot t\cdot Y_{i)$  
 >$\leq e^{\frac {t^{2}}{2}}$  
 
 <!-- Γ -->
