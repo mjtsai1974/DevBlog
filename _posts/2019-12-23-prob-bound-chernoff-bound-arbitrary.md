@@ -58,6 +58,17 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq a + b\cdot E\lbrack Y_{i}\rbrack$  
 >$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq a + b\cdot 0$, where $E\lbrack Y_{i}\rbrack$=$0$  
 >$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq a$  
+>$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq \frac {e^{t}+e^{-t}}{2}$  
+>
+>By using Taylor expansion of $e^{t}$, we can simplify the bounding:  
+>$e^{x}$=$1$+$\frac {x^{1}}{1!}$+$\frac {x^{2}}{2!}$+$\frac {x^{3}}{3!}$+..., then  
+>$\frac {e^{t}+e^{-t}}{2}$  
+>=$\frac {1}{2}\cdot\lbrack$+$1$+$\frac {t^{1}}{1!}$+$\frac {t^{2}}{2!}$+$\frac {t^{3}}{3!}$+$\frac {t^{4}}{4!}$+...
+>+$1$+$\frac {(-t)^{1}}{1!}$+$\frac {(-t)^{2}}{2!}$+$\frac {(-t)^{3}}{3!}$+$\frac {(-t)^{4}}{4!}$+...+$\rbrack$
+>=$1$+$\frac {t^{2}}{2!}$+$\frac {t^{4}}{4!}$+$\frac {t^{6}}{6!}$+...  
+>$\leq 1$+$\frac {t^{2}}{2\cdot 1!}+$\frac {t^{4}}{2^{2}\cdot 2!}$+$\frac {t^{6}}{2^{3}\cdot 3!}$+...  
+>$\leq 1$+$\frac {\frac {t^{2}}{2}}{1!}$+$\frac {(\frac {t^{2}}{2})^{2}}{2!}$+$\frac {(\frac {t^{2}}{2})^{3}}{3!}$+...
+>$\leq e^{\frac {t^{2}}{2}}$  
 
 <!-- Γ -->
 <!-- \Omega -->
