@@ -116,7 +116,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >With similar deduction in upper bound would we obtain the same expression for lower bound:  
 >$P(X\leq \mu-\varepsilon)\leq e^{-\frac {\varepsilon^{2}}{2n}}$  
 >
->By symmetrical distribution, $P(X-\mu\leq -\varepsilon)$ is the opposite direction to $P(X-\mu\geq \varepsilon)$, its lower bound of error probability would be no more than $e^{\frac {t^{2}}{2}-t\cdot\varepsilon$  
+>By <font color="OrangeRed">symmetrical</font> distribution, $P(X-\mu\leq -\varepsilon)$ is the opposite direction to $P(X-\mu\geq \varepsilon)$, its lower bound of error probability would be <font color="RosyBrown">no more</font> than $e^{\frac {t^{2}}{2}-t\cdot\varepsilon}$  
 >$P(X\leq \mu-\varepsilon)$  
 >=$P(X-\mu\leq -\varepsilon)$  
 
