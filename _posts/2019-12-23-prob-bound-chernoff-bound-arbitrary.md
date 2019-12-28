@@ -13,7 +13,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >Suppose we are given  
 >&#10112;$X_{1}$,$X_{2}$,...,$X_{n}$ to be independent random variables with values in $\lbrack 0,1\rbrack$.  
 >&#10113;$X$=$X_{1}$+$X_{2}$+...+$X_{n}$  
->&#10114;$E\lbrack X rbrack$=$\mu$  
+>&#10114;$E\lbrack X \rbrack$=$\mu$  
 >
 >These $X_{1}$,...,$X_{n}$ needs <font color="RosyBrown">not</font> to be Bernoulli ranodm variables, but they must be <font color="OrangeRed">independent</font>.  
 >
