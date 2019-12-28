@@ -82,6 +82,18 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$\leq\frac {E\lbrack e^{\frac {t^{2}}{2}}\rbrack}{e^{t\cdot\varepsilon}}$  
 >$\leq e^{\frac {t^{2}}{2}-t\cdot\varepsilon}$  
 >
+>Next would be:  
+>&#10112;ask for the maximum value of $\frac {t^{2}}{2}-t\cdot\varepsilon$, take its 1st differentiation, set it to 0, figure out such $t$:  
+>$D_{t}(\frac {t^{2}}{2}-t\cdot\varepsilon)$=$0$  
+>$\Rightarrow n\cdot t-\varepsilon$=$0$  
+>$\Rightarrow t$=$\frac {\varepsilon}{n}$  
+>
+>&#10112;take $t$=$\frac {\varepsilon}{n}$ in $e^{\frac {t^{2}}{2}-t\cdot\varepsilon}$, then  
+>$e^{\frac {n\cdot \frac {\varepsilon^{2}}{n^{2}}}{2}-\frac {\varepsilon}{n}\cdot\varepsilon}$  
+>=$e^{\frac {\varepsilon^{2}}{2n}-\frac {\varepsilon^{2}}{n}}$  
+>=$e^{-\frac {\varepsilon^{2}}{2n}}$  
+>
+>Finally, we prove $P(X\geq \mu+\varepsilon)\leq e^{-\frac {\varepsilon^{2}}{2n}}$ in this upper bound for error probability.  
 
 <!-- Γ -->
 <!-- \Omega -->
