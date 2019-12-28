@@ -28,7 +28,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >
 >The major difference is that these random variables fall within $\lbrack 0,1\rbrack$, <font color="RosyBrown">not</font> the Bernoulli values $0$ or $1$.  Here is the idea:  
 >&#10112;take $Y_{i}$=$X_{i}$-$E\lbrack X_{i} \rbrack$  
->&#10113;take $X$=$\sum_{1}^{n}X_{i}$,$\mu$=$\sum_{1}^{n}E\lbrack X_{i} \rbrack$  
+>&#10113;take $X$=$\sum_{1}^{n}X_{i}$,$E\lbrack X \rbrack$=$\mu$=$\sum_{1}^{n}E\lbrack X_{i} \rbrack$  
 >&#10114;take $Y$=$\sum_{1}^{n}Y_{i}$  
 >&#10115;$P(X\geq\mu+\varepsilon)$  
 >=$P(X-\mu\geq\varepsilon)$  
@@ -105,13 +105,16 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >
 >It is much similar to the upper bound expression, here is the idea again:  
 >&#10112;take $Y_{i}^{\'}$=$E\lbrack X_{i} \rbrack$-$X_{i}$  
->&#10113;take $X$=$\sum_{1}^{n}X_{i}$,$\mu$=$\sum_{1}^{n}E\lbrack X_{i} \rbrack$  
+>&#10113;take $X$=$\sum_{1}^{n}X_{i}$,$E\lbrack X \rbrack$=$\mu$=$\sum_{1}^{n}E\lbrack X_{i} \rbrack$  
 >&#10114;take $Y^{\'}$=$\sum_{1}^{n}Y_{i}^{\'}$  
 >&#10115;$P(X\leq \mu-\varepsilon)$  
 >=$P(-X\geq -\mu+\varepsilon)$  
 >=$P(Y^{\'}\geq \varepsilon)$  
 >=$P(e^{t\cdot Y^{\'}}\geq e^{t\cdot\varepsilon})$...for any $t>0$  
 >$\leq\frac {E\lbrack e^{t\cdot Y^{\'}}\rbrack}{e^{t\cdot\varepsilon}}$  
+>
+>By similar deduction in upper bound would we obtain the same expression for lower bound:  
+>$P(X\leq \mu-\varepsilon)\leq e^{-\frac {\varepsilon^{2}}{2n}}$  
 
 <!-- Γ -->
 <!-- \Omega -->
