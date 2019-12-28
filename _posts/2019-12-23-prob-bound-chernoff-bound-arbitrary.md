@@ -89,7 +89,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$\Rightarrow n\cdot t-\varepsilon$=$0$  
 >$\Rightarrow t$=$\frac {\varepsilon}{n}$  
 >
->&#10112;take $t$=$\frac {\varepsilon}{n}$ in $e^{\frac {t^{2}}{2}-t\cdot\varepsilon}$, then  
+>&#10113;take $t$=$\frac {\varepsilon}{n}$ in $e^{\frac {t^{2}}{2}-t\cdot\varepsilon}$, then  
 >$e^{\frac {n\cdot \frac {\varepsilon^{2}}{n^{2}}}{2}-\frac {\varepsilon}{n}\cdot\varepsilon}$  
 >=$e^{\frac {\varepsilon^{2}}{2n}-\frac {\varepsilon^{2}}{n}}$  
 >=$e^{-\frac {\varepsilon^{2}}{2n}}$  
@@ -99,7 +99,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 ### The Lower Bound On Error Probability
 >It is asking the error probability when target value $X$ is less than the expect value $\mu$, and we'd like to bound it on the lower side.  
 >$P(X\leq \mu-\varepsilon)$  
->=$P(X-\mu\leq -\varepsilon)$...&#10112;  
+>=$P(X-\mu\leq -\varepsilon)$  
 >=$P(-X+\mu\geq \varepsilon)$  
 >=$P(-X\geq -\mu+\varepsilon)$  
 >
@@ -113,8 +113,12 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >=$P(e^{t\cdot Y^{\'}}\geq e^{t\cdot\varepsilon})$...for any $t>0$  
 >$\leq\frac {E\lbrack e^{t\cdot Y^{\'}}\rbrack}{e^{t\cdot\varepsilon}}$  
 >
->By similar deduction in upper bound would we obtain the same expression for lower bound:  
+>With similar deduction in upper bound would we obtain the same expression for lower bound:  
 >$P(X\leq \mu-\varepsilon)\leq e^{-\frac {\varepsilon^{2}}{2n}}$  
+>
+>By symmetrical distribution, $P(X-\mu\leq -\varepsilon)$ is the opposite direction to $P(X-\mu\geq \varepsilon)$, its lower bound of error probability would be no more than $e^{\frac {t^{2}}{2}-t\cdot\varepsilon$  
+>$P(X\leq \mu-\varepsilon)$  
+>=$P(X-\mu\leq -\varepsilon)$  
 
 <!-- Γ -->
 <!-- \Omega -->
