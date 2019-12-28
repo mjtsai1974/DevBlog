@@ -95,6 +95,22 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >
 >Finally, we prove $P(X\geq \mu+\varepsilon)\leq e^{-\frac {\varepsilon^{2}}{2n}}$ in this upper bound for error probability.  
 
+### The Lower Bound On Error Probability
+>It is asking the error probability when target value $X$ is less than the expect value $\mu$, and we'd like to bound it on the lower side.  
+>$P(X\leq \mu-\varepsilon)$  
+>=$P(X-\mu\leq -\varepsilon)$...&#10112;  
+>=$P(-X+\mu\geq \varepsilon)$  
+>=$P(-X\geq -\mu+\varepsilon)$  
+>
+>It is much similar to the upper bound expression, here is the idea again:  
+>&#10112;take $Y_{i}^{\'}$=$E\lbrack X_{i} \rbrack$-$X_{i}$  
+>&#10113;take $Y^{\'}$=$\sum_{1}^{n}Y_{i}^{\'}$  
+>&#10114;$P(X\leq \mu-\varepsilon)$  
+>=$P(-X\geq -\mu+\varepsilon)$  
+>=$P(Y^{\'}\geq \varepsilon)$  
+>=$P(e^{t\cdot Y^{\'}}\geq e^{t\cdot\varepsilon})$...for any $t>0$  
+>$\leq\frac {E\lbrack e^{t\cdot Y^{\'}}\rbrack}{e^{t\cdot\varepsilon}}$  
+
 <!-- Γ -->
 <!-- \Omega -->
 <!-- \cap intersection -->
