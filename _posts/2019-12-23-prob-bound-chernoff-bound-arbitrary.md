@@ -9,7 +9,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 </p>
 
 ### The <font color="Red">Error Probability</font> After Test
-<font color="OrangeRed">[The given condition]</font>
+><font color="OrangeRed">[The given condition]</font>
 >Suppose we are given  
 >&#10112;$X_{1}$,$X_{2}$,...,$X_{n}$ to be independent random variables with values in $\lbrack 0,1\rbrack$.  
 >&#10113;$X$=$X_{1}$+$X_{2}$+...+$X_{n}$  
@@ -60,7 +60,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq a$  
 >$\Rightarrow E\lbrack e^{t\cdot Y_{i}}\rbrack\leq \frac {e^{t}+e^{-t}}{2}$  
 >
->By using Taylor expansion of $e^{t}$, we can simplify the bounding:  
+>By using <font color="Red">Taylor expansion</font> of $e^{t}$, we can simplify the bounding:  
 >$e^{x}$=$1$+$\frac {x^{1}}{1!}$+$\frac {x^{2}}{2!}$+$\frac {x^{3}}{3!}$+..., then  
 >$\frac {e^{t}+e^{-t}}{2}$  
 >=$\frac {1}{2}\cdot\lbrack$+$1$+$\frac {t^{1}}{1!}$+$\frac {t^{2}}{2!}$+$\frac {t^{3}}{3!}$+$\frac {t^{4}}{4!}$+...
@@ -83,7 +83,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$\leq e^{\frac {t^{2}}{2}-t\cdot\varepsilon}$  
 >
 >Next would be:  
->&#10112;ask for the maximum value of $\frac {t^{2}}{2}-t\cdot\varepsilon$, take its 1st differentiation, set it to 0, figure out such $t$:  
+>&#10112;ask for the maximum value of $\frac {t^{2}}{2}-t\cdot\varepsilon$, <font color="OrangeRed">take its 1st order differentiation, set it to 0, figure out such $t$</font>:  
 >$D_{t}(\frac {t^{2}}{2}-t\cdot\varepsilon)$=$0$  
 >$\Rightarrow n\cdot t-\varepsilon$=$0$  
 >$\Rightarrow t$=$\frac {\varepsilon}{n}$  
