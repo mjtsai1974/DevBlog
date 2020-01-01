@@ -143,6 +143,21 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >=$(e^{t}\cdot\mu+(e^{t}-(1+\delta))^{2})\cdot e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
 >
 >Since <font color="OrangeRed">$D_{t}^{2}e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}\geq 0$ alswys holds</font>, this upper bound of $e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ in <font color="Red">Chernoff</font> bounds for <font color="Red">Bernoulli</font> random variable is a <font color="Red">convex</font> function, which concaves up.  
+>
+>&#10114;suppose $c$+$d\cdot t$ pass through $e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ at $(0, 1)$ and $(1, e^{e-2-\delta})$...for $t$>$0$  
+>$c$+$d$=$1$...$t$=$0$  
+>$c$-$d$=$e^{e-2-\delta}$...$t$=$1$  
+>$\Rightarrow c=1$ and $d$=$e^{e-2-\delta}$-$1$, thus it is  
+>$1$+$(e^{e-2-\delta}-1)\cdot t$  
+>
+>&#10115;$D_{t}1+(e^{e-2-\delta}-1)\cdot t$=$0$  
+>$\Rightarrow e^{e-2-\delta}-1$=$0$  
+>$\Rightarrow e^{e-2-\delta}$=$1$  
+>$\Rightarrow e-2-\delta$=$0$  
+>$\Rightarrow \delta$=$e-2$...$e$=$2.71828182...$  
+>$\Rightarrow \delta$=$0.71828182...$  
+>
+>For whatever $0<t\leq 1$ we are using, the fault tolerance expressed by $\delta$ could be probabilistically up to almost $0.718$, might not be a good choice.  
 
 <!-- Γ -->
 <!-- \Omega -->
