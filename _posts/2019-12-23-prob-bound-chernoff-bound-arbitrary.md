@@ -195,7 +195,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$c$=$\frac {e^{(e^{t}-1-2\cdot t)\cdot\mu}+e^{(e^{t}-1)\cdot\mu}}{2}$  
 >$d$=$\frac {e^{(e^{t}-1-2\cdot t)\cdot\mu}-e^{(e^{t}-1)\cdot\mu}}{2}$  
 >
->&#10114;$D_{\delta}c+d\cdot\delta$=$0$  
+>&#10114;$D_{\delta}(c+d\cdot\delta)$=$0$  
 >$\Rightarrow d$=$0$  
 >$\Rightarrow \frac {e^{(e^{t}-1-2\cdot t)\cdot\mu}-e^{(e^{t}-1)\cdot\mu}}{2}$=$0$  
 >$\Rightarrow e^{(e^{t}-1-2\cdot t)\cdot\mu}$=$e^{(e^{t}-1)\cdot\mu}$  
@@ -212,13 +212,19 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$c$=$\frac {e^{(-1-t)\cdot\mu}+e^{(-1+t)\cdot\mu}}{2}$  
 >$d$=$\frac {e^{(-1-t)\cdot\mu}-e^{(-1+t)\cdot\mu}}{2}$  
 >
->&#10114;$D_{\delta}c+d\cdot\delta$=$0$  
+>&#10114;$D_{\delta}(c+d\cdot\delta)$=$0$  
 >$\Rightarrow d$=$0$  
 >$\Rightarrow e^{(-1-t)\cdot\mu}$=$e^{(-1+t)\cdot\mu}$  
 >$\Rightarrow -1-t$=$-1+t$  
 >$\Rightarrow t$=$0$, which is a <font color="RosyBrown">contradiction</font>, for <font color="RosyBrown">$t>0$ is the must be condition</font> in proof.  
 >
 >We have the generalized $t$=$0$ for both upper and lower bound in <font color="Red">Chernoff</font> bounds for <font color="Red">Bernoulli</font> random variable by using the <font color="Red">convex property</font> in the proof of <font color="Red">Chernoff</font> bounds for <font color="OrangeRed">arbitrary</font> random variable, and found it an inappropriate value, because $t$ should be any positive value, at least greater than zero.  
+>
+><font color="Brown">Notes::mjtsai1974</font>
+>As a result of above indication, we can claim that <font color="RosyBrown">the inequality in <font color="Red">Chernoff</font> bounds for <font color="Red">Bernoulli</font> random variable:  
+>&#10112;$P(X>(1+\delta)\cdot\mu)$<$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
+>&#10113;$P(X<(1-\delta)\cdot\mu)$<$e^{(-1-t\cdot\delta)\cdot\mu}$  
+>is inappropriate in <font color="Red">Chernoff</font> bounds for <font color="OrangeRed">arbitrary</font> random variable.</font>  
 
 <!-- Γ -->
 <!-- \Omega -->
