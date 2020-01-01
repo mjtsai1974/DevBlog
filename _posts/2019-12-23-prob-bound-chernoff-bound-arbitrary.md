@@ -141,6 +141,8 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >=$(e^{t}-(1+\delta))\cdot\mu\cdot e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
 >&#10113;$D_{t}^{2}e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
 >=$(e^{t}\cdot\mu+(e^{t}-(1+\delta))^{2})\cdot e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
+>
+>Since <font color="OrangeRed">$D_{t}^{2}e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}\geq 0$ alswys holds</font>, this upper bound of $e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ in <font color="Red">Chernoff</font> bounds for <font color="Red">Bernoulli</font> random variable is a <font color="Red">convex</font> function, which concaves up.  
 
 <!-- Γ -->
 <!-- \Omega -->
