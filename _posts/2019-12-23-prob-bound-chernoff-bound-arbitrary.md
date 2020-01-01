@@ -127,11 +127,19 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >
 >The Bernoulli random variable has only two values, $0$ and $1$, while arbitrary random variable has values falling withing $\lbrack 0,1\rbrack$.  It seems that <font color="OrangeRed">probabilistic error tolerance</font> in arbitrary random variables requires much more precision concern in approximation, which would be shown in my next proof.  
 >
-><font color="DeepSkyBlue">[Viewpoint of fault tolerance]</font>
-><font color="OrangeRed">The fault tolerance of upper and lower bound</font>  
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The fault tolerance $\delta$ of upper and lower bound</font>  
 >From the proof in [Chernoff Bounds For Bernoulli Random Variable]({{ site.baseurl }}/2019/12/09/prob-bound-chernoff-bound-bernoulli/), we see that  
 >&#10112;$P(X>(1+\delta)\cdot\mu)$<$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
 >&#10113;$P(X<(1-\delta)\cdot\mu)$<$e^{(-1-t\cdot\delta)\cdot\mu}$  
+>
+>Next would be to inspect the fault tolerance $\delta$ in Chernoff bounds for Bernoulli random variable for any given $t$>$0$, based on <font color="DeepSkyBlue">the convex property used in the proof of Chernoff bounds for arbitrary random variable</font>.  
+>
+><font color="DeepSkyBlue">[1.1]</font>
+><font color="OrangeRed">The fault tolerance $\delta$ of upper bound</font>  
+>&#10112;$D_{t}e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
+>=$(e^{t}-(1+\delta))\cdot\mu\e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
+>&#10113;  
 
 <!-- Γ -->
 <!-- \Omega -->
