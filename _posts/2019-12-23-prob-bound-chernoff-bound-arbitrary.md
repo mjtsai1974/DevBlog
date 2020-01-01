@@ -139,7 +139,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 ><font color="OrangeRed">The fault tolerance $\delta$ of upper bound</font>  
 >&#10112;$D_{t}e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
 >=$(e^{t}-(1+\delta))\cdot\mu\cdot e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
->&#10113;$D_{t}^{\'\'}e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
+>&#10113;$D_{t}^{2}e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
 >=$(e^{t}\cdot\mu+(e^{t}-(1+\delta))^{2})\cdot e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
 
 <!-- Γ -->
