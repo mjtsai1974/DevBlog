@@ -150,7 +150,8 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$\Rightarrow c=1$ and $d$=$e^{e-2-\delta}$-$1$, thus it is  
 >$1$+$(e^{e-2-\delta}-1)\cdot t$  
 >
->&#10115;$D_{t}(1+(e^{e-2-\delta}-1)\cdot t)$=$0$  
+>&#10115;we'd like to figure out fault tolerance of $\delta$ for any $t$>$0$, that is to express $t$ in terms of $\delta$:  
+>$D_{t}(1+(e^{e-2-\delta}-1)\cdot t)$=$0$  
 >$\Rightarrow e^{e-2-\delta}-1$=$0$  
 >$\Rightarrow e^{e-2-\delta}$=$1$  
 >$\Rightarrow e-2-\delta$=$0$  
@@ -172,7 +173,8 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$\Rightarrow c$=$e^{-\mu}$ and $d$=$e^{(-1-\delta)\cdot\mu}$-$e^{-\mu}$, thus it is  
 >$e^{-\mu}$+$(e^{(-1-\delta)\cdot\mu}-e^{-\mu})\cdot t$  
 >
->&#10115;$D_{t}(e^{-\mu}+(e^{(-1-\delta)\cdot\mu}-e^{-\mu})\cdot t)$=$0$  
+>&#10115;we'd like to figure out fault tolerance of $\delta$ for any $t$>$0$, that is to express $t$ in terms of $\delta$:  
+>$D_{t}(e^{-\mu}+(e^{(-1-\delta)\cdot\mu}-e^{-\mu})\cdot t)$=$0$  
 >$\Rightarrow e^{(-1-\delta)\cdot\mu}-e^{-\mu}$=$0$  
 >$\Rightarrow e^{(-1-\delta)\cdot\mu}$=$e^{-\mu}$  
 >$\Rightarrow (-1-\delta)\cdot\mu$=$-\mu$  
@@ -195,7 +197,8 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$c$=$\frac {e^{(e^{t}-1-2\cdot t)\cdot\mu}+e^{(e^{t}-1)\cdot\mu}}{2}$  
 >$d$=$\frac {e^{(e^{t}-1-2\cdot t)\cdot\mu}-e^{(e^{t}-1)\cdot\mu}}{2}$  
 >
->&#10114;$D_{\delta}(c+d\cdot\delta)$=$0$  
+>&#10114;we'd like to deduct out <font color="DeepSkyBlue">the expression of $t$</font> for any $-1\leq\delta\leq 1$, that is to express $\delta$ in terms of $t$:  
+>$D_{\delta}(c+d\cdot\delta)$=$0$  
 >$\Rightarrow d$=$0$  
 >$\Rightarrow \frac {e^{(e^{t}-1-2\cdot t)\cdot\mu}-e^{(e^{t}-1)\cdot\mu}}{2}$=$0$  
 >$\Rightarrow e^{(e^{t}-1-2\cdot t)\cdot\mu}$=$e^{(e^{t}-1)\cdot\mu}$  
@@ -212,7 +215,8 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$c$=$\frac {e^{(-1-t)\cdot\mu}+e^{(-1+t)\cdot\mu}}{2}$  
 >$d$=$\frac {e^{(-1-t)\cdot\mu}-e^{(-1+t)\cdot\mu}}{2}$  
 >
->&#10114;$D_{\delta}(c+d\cdot\delta)$=$0$  
+>&#10114;we'd like to deduct out <font color="DeepSkyBlue">the expression of $t$</font> for any $-1\leq\delta\leq 1$, that is to express $\delta$ in terms of $t$:  
+>$D_{\delta}(c+d\cdot\delta)$=$0$  
 >$\Rightarrow d$=$0$  
 >$\Rightarrow e^{(-1-t)\cdot\mu}$=$e^{(-1+t)\cdot\mu}$  
 >$\Rightarrow -1-t$=$-1+t$  
