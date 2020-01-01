@@ -179,6 +179,33 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$\Rightarrow \delta$=$0$  
 >
 >For whatever $0<t\leq 1$ we are using, the fault tolerance expressed by $\delta$ could only be to $0$, <font color="RosyBrown">might be an inappropriate choice</font> in error probability evaluation.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">The existence of $t$ in upper and lower bound</font>  
+>Succeeding to above section, this article would like to ask for $t$, such that we can have an ideal upper/lower bound, for $\delta$ in $\lbrack -1,1\rbrack$:  
+>&#10112;$P(X>(1+\delta)\cdot\mu)$<$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
+>&#10113;$P(X<(1-\delta)\cdot\mu)$<$e^{(-1-t\cdot\delta)\cdot\mu}$  
+>
+><font color="DeepSkyBlue">[2.1]</font>
+><font color="OrangeRed">The validity of $t$ in upper bound</font>  
+>&#10112;$D_{\delta}^{2}e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}\geq 0$  
+>$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ is a <font color="Red">convex</font> function.  
+>
+>&#10113;suppose $c$+$d\cdot\delta$ pass through $e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ at $(-1,e^{(e^{t}-1)\cdot\mu})$ and $(1,e^{(e^{t}-1-2\cdot t)\cdot\mu})$, then:  
+>$c$=$\frac {e^{(e^{t}-1-2\cdot t)\cdot\mu}+e^{(e^{t}-1)\cdot\mu}}{2}$  
+>$d$=$\frac {e^{(e^{t}-1-2\cdot t)\cdot\mu}-e^{(e^{t}-1)\cdot\mu}}{2}$  
+>
+>&#10114;$D_{\delta}c+d\cdot\delta$=$0$  
+>$\Rightarrow d$=$0$  
+>$\Rightarrow \frac {e^{(e^{t}-1-2\cdot t)\cdot\mu}-e^{(e^{t}-1)\cdot\mu}}{2}$=$0$  
+>$\Rightarrow e^{(e^{t}-1-2\cdot t)\cdot\mu}$=$e^{(e^{t}-1)\cdot\mu}$  
+>$\Rightarrow (e^{t}-1-2\cdot t)\cdot\mu$=$(e^{t}-1)\cdot\mu$  
+>$\Rightarrow e^{t}-1-2\cdot t=$(e^{t}-1)$  
+>$\Rightarrow t$=$0$, which is a <font color="RosyBrown">contradiction</font>, for <font color="RosyBrown">$t>0$ is the must be condition</font> in proof.  
+>
+><font color="DeepSkyBlue">[2.2]</font>
+><font color="OrangeRed">The validity of $t$ in lower bound</font>  
+>
 
 <!-- Γ -->
 <!-- \Omega -->
