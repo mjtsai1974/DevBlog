@@ -133,7 +133,7 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >&#10112;$P(X>(1+\delta)\cdot\mu)$<$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
 >&#10113;$P(X<(1-\delta)\cdot\mu)$<$e^{(-1-t\cdot\delta)\cdot\mu}$  
 >
->Next would be to inspect the fault tolerance $\delta$ in Chernoff bounds for Bernoulli random variable for any given $t$>$0$, based on <font color="DeepSkyBlue">the convex property used in the proof of Chernoff bounds for arbitrary random variable</font>.  
+>Next would be to inspect the fault tolerance $\delta$ in <font color="Red">Chernoff</font> bounds for <font color="Red">Bernoulli</font> random variable for any given $t$>$0$, based on <font color="DeepSkyBlue">the convex property used in the proof of Chernoff bounds for arbitrary random variable</font>.  
 >
 ><font color="DeepSkyBlue">[1.1]</font>
 ><font color="OrangeRed">The fault tolerance $\delta$ of upper bound</font>  
@@ -200,12 +200,25 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$\Rightarrow \frac {e^{(e^{t}-1-2\cdot t)\cdot\mu}-e^{(e^{t}-1)\cdot\mu}}{2}$=$0$  
 >$\Rightarrow e^{(e^{t}-1-2\cdot t)\cdot\mu}$=$e^{(e^{t}-1)\cdot\mu}$  
 >$\Rightarrow (e^{t}-1-2\cdot t)\cdot\mu$=$(e^{t}-1)\cdot\mu$  
->$\Rightarrow e^{t}-1-2\cdot t=$(e^{t}-1)$  
+>$\Rightarrow e^{t}-1-2\cdot t$=$(e^{t}-1)$  
 >$\Rightarrow t$=$0$, which is a <font color="RosyBrown">contradiction</font>, for <font color="RosyBrown">$t>0$ is the must be condition</font> in proof.  
 >
 ><font color="DeepSkyBlue">[2.2]</font>
 ><font color="OrangeRed">The validity of $t$ in lower bound</font>  
+>&#10112;$D_{\delta}^{2}e^{(-1-t\cdot\delta)\cdot\mu}\geq 0$  
+>$e^{(-1-t\cdot\delta)\cdot\mu}$ is a <font color="Red">convex</font> function.  
 >
+>&#10113;suppose $c$+$d\cdot\delta$ pass through $e^{(-1-t\cdot\delta)\cdot\mu}$ at $(-1,e^{(-1+t)\cdot\mu})$ and $(1,e^{(-1-t)\cdot\mu})$, then:  
+>$c$=$\frac {e^{(-1-t)\cdot\mu}+e^{(-1+t)\cdot\mu}}{2}$  
+>$d$=$\frac {e^{(-1-t)\cdot\mu}-e^{(-1+t)\cdot\mu}}{2}$  
+>
+>&#10114;$D_{\delta}c+d\cdot\delta$=$0$  
+>$\Rightarrow d$=$0$  
+>$\Rightarrow e^{(-1-t)\cdot\mu}$=$e^{(-1+t)\cdot\mu}$  
+>$\Rightarrow -1-t$=$-1+t$  
+>$\Rightarrow t$=$0$, which is a <font color="RosyBrown">contradiction</font>, for <font color="RosyBrown">$t>0$ is the must be condition</font> in proof.  
+>
+>We have the generalized $t$=$0$ for both upper and lower bound in <font color="Red">Chernoff</font> bounds for <font color="Red">Bernoulli</font> random variable by using the <font color="Red">convex property</font> in the proof of <font color="Red">Chernoff</font> bounds for <font color="OrangeRed">arbitrary</font> random variable, and found it an inappropriate value, because $t$ should be any positive value, at least greater than zero.  
 
 <!-- Γ -->
 <!-- \Omega -->
