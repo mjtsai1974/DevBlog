@@ -221,10 +221,10 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >We have the generalized $t$=$0$ for both upper and lower bound in <font color="Red">Chernoff</font> bounds for <font color="Red">Bernoulli</font> random variable by using the <font color="Red">convex property</font> in the proof of <font color="Red">Chernoff</font> bounds for <font color="OrangeRed">arbitrary</font> random variable, and found it an inappropriate value, because $t$ should be any positive value, at least greater than zero.  
 >
 ><font color="Brown">Notes::mjtsai1974</font>
->As a result of above indication, we can claim that <font color="RosyBrown">the inequality in <font color="Red">Chernoff</font> bounds for <font color="Red">Bernoulli</font> random variable:  
+>As a result of above indication, we can claim that <font color="RosyBrown">the inequality in <font color="Red">Chernoff</font> bounds for <font color="Red">Bernoulli</font> random variable:</font>  
 >&#10112;$P(X>(1+\delta)\cdot\mu)$<$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
 >&#10113;$P(X<(1-\delta)\cdot\mu)$<$e^{(-1-t\cdot\delta)\cdot\mu}$  
->is inappropriate in <font color="Red">Chernoff</font> bounds for <font color="OrangeRed">arbitrary</font> random variable.</font>  
+><font color="RosyBrown">is inappropriate in <font color="Red">Chernoff</font> bounds for <font color="OrangeRed">arbitrary</font> random variable.</font>  
 
 <!-- Γ -->
 <!-- \Omega -->
