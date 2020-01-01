@@ -144,20 +144,32 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >
 >Since <font color="OrangeRed">$D_{t}^{2}e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}\geq 0$ alswys holds</font>, this upper bound of $e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ in <font color="Red">Chernoff</font> bounds for <font color="Red">Bernoulli</font> random variable is a <font color="Red">convex</font> function, which concaves up.  
 >
->&#10114;suppose $c$+$d\cdot t$ pass through $e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ at $(0, 1)$ and $(1, e^{e-2-\delta})$...for $t$>$0$  
->$c$+$d$=$1$...$t$=$0$  
->$c$-$d$=$e^{e-2-\delta}$...$t$=$1$  
+>&#10114;suppose $c$+$d\cdot t$ pass through $e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$ at $(0,1)$ and $(1,e^{e-2-\delta})$...for $t$>$0$  
+>$c$+$d\cdot 0$=$1$...$t$=$0$  
+>$c$+$d$=$e^{e-2-\delta}$...$t$=$1$  
 >$\Rightarrow c=1$ and $d$=$e^{e-2-\delta}$-$1$, thus it is  
 >$1$+$(e^{e-2-\delta}-1)\cdot t$  
 >
->&#10115;$D_{t}1+(e^{e-2-\delta}-1)\cdot t$=$0$  
+>&#10115;$D_{t}(1+(e^{e-2-\delta}-1)\cdot t)$=$0$  
 >$\Rightarrow e^{e-2-\delta}-1$=$0$  
 >$\Rightarrow e^{e-2-\delta}$=$1$  
 >$\Rightarrow e-2-\delta$=$0$  
 >$\Rightarrow \delta$=$e-2$...$e$=$2.71828182...$  
 >$\Rightarrow \delta$=$0.71828182...$  
 >
->For whatever $0<t\leq 1$ we are using, the fault tolerance expressed by $\delta$ could be probabilistically up to almost $0.718$, might not be a good choice.  
+>For whatever $0<t\leq 1$ we are using, the fault tolerance expressed by $\delta$ could be probabilistically up to almost $0.718$, might not be an inappropriate choice.  
+>
+><font color="DeepSkyBlue">[1.2]</font>
+><font color="OrangeRed">The fault tolerance $\delta$ of lower bound</font>  
+>&#10112;$D_{t}e^{(-1-t\cdot\delta)\cdot\mu}$=$-\deltas\cdot\mu\cdot e^{(-1-t\cdot\delta)\cdot\mu}$  
+>&#10113;$D_{t}^{2}e^{(-1-t\cdot\delta)\cdot\mu}$=$(-\deltas\cdot\mu)^{2}\cdot e^{(-1-t\cdot\delta)\cdot\mu}$  
+>
+>Since <font color="OrangeRed">$(-\deltas\cdot\mu)^{2}\cdot e^{(-1-t\cdot\delta)\cdot\mu}\geq 0$ always holds</font>, this lower bound of $e^{(-1-t\cdot\delta)\cdot\mu}$ in <font color="Red">Chernoff</font> bounds for <font color="Red">Bernoulli</font> random variable is a <font color="Red">convex</font> function, which concaves up.  
+>
+>&#10114;suppose $c$+$d\cdot t$ pass through $e^{(-1-t\cdot\delta)\cdot\mu}$ at $(0,e^{-\mu})$ and $(1,e^{(-1-\delta)\cdot\mu})$, then  
+>$c$+$d\cdot 0$=$e^{-\mu}$...$t$=$0$  
+>$c$+$d$=$e^{(-1-\delta)\cdot\mu}$  
+>$\Rightarrow c$=$e^{-\mu}$ and $d$=$e^{(-1-\delta)\cdot\mu}$-$e^{-\mu}$  
 
 <!-- Γ -->
 <!-- \Omega -->
