@@ -120,6 +120,19 @@ There are many <font color="Red">Chernoff bounds</font> as a result.  This artic
 >$P(X\leq \mu-\varepsilon)$  
 >=$P(X-\mu\leq -\varepsilon)$  
 
+### Illustration: <font color="Red">Chernoff bound</font> For <font color="Red">Bernoulli</font> versus <font color="OrangeRed">arbitrary</font> Random Variables::mjtsai1974
+><font color="DeepSkyBlue">[The major point]</font>
+><font color="OrangeRed">Why the proof in Chernoff bound for Bernoulli is inadequate in arbitrary random variables?</font>  
+><font color="RoyalBlue">Can we use the proof in Chernoff bound for Bernoulli in arbitrary random variable?</font>  If not, why?  
+>
+>The Bernoulli random variable has only two values, $0$ and $1$, while arbitrary random variable has values falling withing $\lbrack 0,1\rbrack$.  It seems that <font color="OrangeRed">probabilistic error tolerance</font> in arbitrary random variables requires much more precision concern in approximation, which would be shown in my next proof.  
+>
+><font color="DeepSkyBlue">[Viewpoint of fault tolerance]</font>
+><font color="OrangeRed">The fault tolerance of upper and lower bound</font>  
+>From the proof in [Chernoff Bounds For Bernoulli Random Variable]({{ site.baseurl }}/2019/12/09/prob-bound-chernoff-bound-bernoulli/), we see that  
+>&#10112;$P(X>(1+\delta)\cdot\mu)$<$e^{((e^{t}-1)-t\cdot (1+\delta))\cdot\mu}$  
+>&#10113;$P(X<(1-\delta)\cdot\mu)$<$e^{(-1-t\cdot\delta)\cdot\mu}$  
+
 <!-- Γ -->
 <!-- \Omega -->
 <!-- \cap intersection -->
