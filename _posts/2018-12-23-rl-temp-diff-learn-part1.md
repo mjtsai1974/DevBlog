@@ -38,10 +38,10 @@ title: Temporal Difference Learning - Part 1
 ><font color="RoyalBlue">We'd like to estimate the value of $S_{1}$ after 3 and 4 episodes</font>, since nothing related to $S_{2}$, just ignore it.   
 >
 ><font color="DeepSkyBlue">[Hints]::by mjtsai1974</font>
->The red marked numbers are the value of $S_{1}$ in each episode.  <font color="DeepPink">By using backup or expect discounted reward could we obtain the same value function of states, even for $\gamma$=$0.9$.</font>  Let me do the illustrtation of the 1st episode.  
+>The red marked numbers are the value of $S_{1}$ in each episode.  <font color="DeepPink">By using backup or expect discounted reward could we obtain the same value function of states, even for $\gamma$=$0.9$.</font>  Let me do the illustrtation of the <font color="DeepSkyBlue">1st</font> episode.  
 >[1]by using <font color="DeepSkyBlue">backup</font>:  
->&#10112;$V(S_{4})$=$1+\gamma\cdot 1\cdot 1$  
->$V(S_{4})$=1 for $\gamma$=$1$ and $0.9$  
+>&#10112;$V(S_{4})$=$1+\gamma\cdot 1\cdot 0$  
+>$V(S_{4})$=1 for $\gamma$=$1$ and $0.9$, where <font color="DeepSkyBlue">$\gamma\cdot 1$, this 1 is the probabilistic transition, since it's the only one path, the probability is $1$.</font>  
 >&#10113;$V(S_{3})$=$0+\gamma\cdot V(S_{4})$  
 >$V(S_{3})$=$1$ for $\gamma$=$1$ and $0.9$ for $\gamma$=$0.9$  
 >&#10114;$V(S_{1})$=$1+\gamma\cdot V(S_{3})$  
