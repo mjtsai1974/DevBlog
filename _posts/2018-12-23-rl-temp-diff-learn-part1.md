@@ -64,7 +64,7 @@ title: Temporal Difference Learning - Part 1
 ><font color="RoyalBlue">[Question]</font>
 >From prior example, we have the value of $S_{1}$=$5$, say $V_{3}(S_{1})$ after 3 episodes, then we ran an eposide, and the return of the episode, the total <font color="#D600D6">discounted reward</font> of $S_{1}$ in this distinct 4-th sequence was $2$, say $R_{4}(S_{1})$.  
 >
-><font color="RoyalBlue">Could we figure out what the new estimate of value of $S_{1}$, say $V_{4}(S_{1})$, just from this information?</font>  
+><font color="RoyalBlue">Could we figure out what the new estimate of value of $S_{1}$, say $V_{4}(S_{1})$</font>, just from this information?  
 >
 ><font color="DeepSkyBlue">[Answer]</font>
 >By <font color="DeepSkyBlue">weighting</font>, $\frac {3\cdot 5 + 1\cdot 2}{4}$=$4.25$, we could get the same estimate identical to the way of <font color="DeepSkyBlue">expectation</font>.  
@@ -88,7 +88,7 @@ title: Temporal Difference Learning - Part 1
 >&#10112;$\sum_{T=0}^{\infty}\alpha_{T}\rightarrow\infty$  
 >&#10113;$\sum_{T=0}^{\infty}(\alpha_{T})^{2}<\infty$  
 ><font color="Brown">proof::mjtsai1974</font>  
->I'd like to prove the learning rate property by using geometric series copnvergence/divergence by Gilbert Strange in Calculus.  
+>I'd like to prove the learning rate property by using geometric series convergence/divergence by Gilbert Strange in Calculus.  
 >&#10112;begin from $T$=$0$, initially $V_{0}(S)$=$C$, some constant, might be zero.  And $V_{T}(S)$=$V_{T-1}(S)$=$V_{0}(S)$ at this moment.  
 >&#10113;suppose the equality holds, then expand from $T+1$:  
 >$V_{T+1}(S)$  
