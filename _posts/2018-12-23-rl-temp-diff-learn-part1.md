@@ -145,10 +145,10 @@ title: Temporal Difference Learning - Part 1
 >$\;\;\;\;$<font color="Red">before</font> transite from $S_{t-1}$ to $S_{t}$ in <font color="Red">next</font> iteration 
 >
 ><font color="DeepSkyBlue">[Notes]</font>
->&#10112;the 2nd part of [A] is sum of the <font color="#9300FF">reward</font> plus the the <font color="#D600D6">discounted</font> value of the state we just arrived, minus the state value we just left; where these state values are all evaluated in <font color="Red">last</font> iteration.  It could just be the <font color="Red">temporal difference</font>.  
+>&#10112;the 2nd part of [A] is sum of the <font color="#9300FF">reward</font> <font color="DeepSkyBlue">plus</font> the the <font color="#D600D6">discounted</font> value of the state we just arrived, <font color="DeepSkyBlue">minus</font> the state value we just left; where these state values are all evaluated in <font color="Red">last</font> iteration.  It could just be the <font color="Red">temporal difference</font>.  
 >&#10113;we are going to apply the <font color="Red">temporal difference</font> onto all states, <font color="Red">proportional to the eligibility of each distinct state</font>, and the <font color="Red">learning rate</font> would be specified for we don't want it to move too much.  
 >&#10114;<font color="Red">after</font> the state has been iterated, <font color="DeepSkyBlue">decay or decrease its eligibility</font> with $\lambda\cdot\gamma$, in their given value, in <font color="Red">$TD(1)$</font>, $\lambda$=$1$.  
->&#10115;and we are backing up to next stae.  
+>&#10115;and we are backing up to next state.  
 >
 ><font color="Red">[Caution]</font>
 >&#10112;<font color="Red">all the $S$ are all being done in parallel</font>.  
@@ -228,7 +228,7 @@ title: Temporal Difference Learning - Part 1
 >$\triangle V_{T}(S_{F})$=$\alpha\cdot(r_{1}'$+$\gamma\cdot V_{T-1}(S_{F})-V_{T-1}(S_{1}))$  
 >&#10112;the [online course](https://classroom.udacity.com/courses/ud600/lessons/4178018883/concepts/41512300800923) said that it a <font color="RosyBrown">mistake</font>, for <font color="#EB00EB">you go to $S_{1}$, you saw $S_{1}$ transite to $S_{2}$ with $r_{1}$, therefore you just ignore anything you learned along the way</font>.  
 >&#10113;the <font color="Red">$TD(1)$</font> rule lets you do is, when you see $S_{1}$ again, and sort of <font color="Red">backup</font> its value, you're actually capturing the fact the last time you were in $S_{1}$, you actually went to $S_{2}$ and saw $r_{1}$.  
->&#10114;it's just like <font color="Red">outcome-base</font> on updates, now with <font color="OrangeRed">extra laerning or inside the eposide learning from head of the trajectory</font>.  
+>&#10114;it's just like <font color="Red">outcome-base</font> on updates, now with <font color="OrangeRed">extra learning or inside the eposide learning from head of the trajectory</font>.  
 >
 ><font color="Brown">[But, mjtsai's viewpoint]</font>
 >Suppose you have just completed the 1st run and reach $S_{F}$, now you are transiting to $S_{1}$ again, the <font color="DeepSkyBlue">eligibility</font> of all states and state transition diagram are given in below:  
@@ -249,7 +249,7 @@ title: Temporal Difference Learning - Part 1
 >, then in the eposide $T+n-1$ to $T+n$(<font color="OrangeRed">the n-th repeat</font>) could becomes:  
 >$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}'-V_{T+n-2}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{n-1}$  
 >, this says in <font color="OrangeRed">the n-th repeat</font>, the update term of $S_{1}$ in this example should be:  
->$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}'-V_{T+n-1}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{n-1}$  
+>$\alpha\cdot(r_{1}+\gamma\cdot r_{2}+\gamma^{2}\cdot r_{3}+\gamma^{3}\cdot r_{1}'-V_{T+n-2}(S_{1})\cdot(1-\gamma^{4}))\cdot\gamma^{n-1}$  
 >
 >From above deduction, we can say that <font color="DeepPink">the repeated state influence on temporal difference depends on how far it is to be repeated, that is how many state changes in between the repeated state, the longer the smaller the impact it is!!</font>  
 >
