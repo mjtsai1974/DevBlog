@@ -105,7 +105,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 ><font color="DeepSkyBlue">[4]</font>
 ><font color="OrangeRed">The breakdown</font>  
->Please recall in [Temporal Difference Learning - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2018/12/23/rl-temp-diff-learn-part1/), I have figured out that $V_{T}(S_{1})$=$2.9$, $V_{T}(S_{2})$=$3.9$, $V_{T}(S_{3})$=$1.9$, by using both <font color="DeepSkyBlue">backup propagation</font> in the section of ReCap The Backup In Markov Chain.  
+>Please recall in [Temporal Difference Learning - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2018/12/23/rl-temp-diff-learn-part1/), I have figured out that $V_{T}(S_{1})$=$2.9$, $V_{T}(S_{2})$=$3.9$, $V_{T}(S_{3})$=$1.9$, by using both <font color="DeepSkyBlue">backup propagation</font> and <font color="DeepSkyBlue">expect discounted reward</font> in the section of ReCap The Backup In Markov Chain.  
 >
 >The <font color="RosyBrown">MLE of $V_{T}(S_{2})$</font>=$6.6$, which is more, whereas the <font color="RosyBrown">$TD(1)$</font> estimate is $12$, a lot more, <font color="RosyBrown">all wrong</font>, <font color="DeepPink">except for $V_{T}(S_{2})$=$3.9$ by using backup based on the whole model</font>.  <font color="RoyalBlue">Why MLE is less wrong?  Why $TD(1)$ estimate is so far off?</font>  
 >&#10112;when we compute the <font color="RosyBrown">$TD(1)$</font> estimate, we <font color="RosyBrown">use only the 5-th trajectory, one of the five trajectories</font> to propagate the information back.  
