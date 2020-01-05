@@ -163,7 +163,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 >The point is:  
 >&#10112;<font color="#C20000">how large $k$ should be for we to safely toss out these 2 terms?</font>  
->&#10113;<font color="DeepSkyBlue">before $k$ is large enough</font>, we should be able to <font color="DeepSkyBlue">calculate new arrivaed state's value</font>, which is reasonable <font color="DeepSkyBlue">to related current arrived state to the target evaluated state</font>, <font color="OrangeRed">repeat</font> this behavior <font color="OrangeRed">until $k$ is large enough</font>.  
+>&#10113;<font color="DeepSkyBlue">before $k$ is large enough</font>, we should be able to <font color="DeepSkyBlue">calculate new arrivaed state's value</font>, which is reasonable <font color="DeepSkyBlue">to relate current arrived state to the target evaluated state</font>, <font color="OrangeRed">repeat</font> this behavior <font color="OrangeRed">until $k$ is large enough</font>.  
 >
 ><font color="DeepSkyBlue">[6]</font>
 ><font color="Brown">After $k$ is large enough::mjtsai1974</font>  
