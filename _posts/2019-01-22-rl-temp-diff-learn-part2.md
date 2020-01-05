@@ -152,7 +152,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 ><font color="DeepSkyBlue">[4]</font>
 ><font color="Red">Cautions</font>  
->All above are under the condition that we have been given <font color="RosyBrown">partial</font>, <font color="RosyBrown">incomplete</font> data <font color="RosyBrown">before</font> we know the full model of state transition, or we are given the complete data of a target model to be predicted, we still believe that we don't have it yet!!  
+>All above are under the condition that we have been given <font color="RosyBrown">partial</font>, <font color="RosyBrown">incomplete</font> data <font color="RosyBrown">before</font> we know the full model of state transition, or <font color="OrangeRed">even if</font> we are given the complete data of a target model to be predicted, we still believe that we don't have it yet!!  
 >
 ><font color="DeepSkyBlue">[5]</font>
 ><font color="Brown">The appropriate apply::mjtsai1974</font>  
