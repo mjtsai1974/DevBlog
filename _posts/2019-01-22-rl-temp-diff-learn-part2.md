@@ -28,7 +28,7 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >&#10115;and we are backing up to next stae.  
 >
 ><font color="Red">[Caution]</font>
->&#10112;<font color="Red">all the $S$ are all being done in parallel</font>.  
+>&#10112;<font color="Red">all the $S$ are all being done in similar approach</font>.  
 >&#10113;the value at state $S$(the $S$ in [A]) is going to be updated on this quantity, $r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1})$, which is the same for everybody, <font color="RosyBrown">doesn't</font> depend on which $S$ we are updating, and <font color="DeepSkyBlue">$e(S)$=$1$ is specific to the state $S$ at the moment we are evaluating(looking at)</font>.  
 
 ### <font color="Red">MLE</font>(<font color="Red">Maximum Likelihood Estimate</font>) And <font color="Red">$TD(0)$</font> Algorithm

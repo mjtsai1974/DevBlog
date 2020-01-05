@@ -151,7 +151,7 @@ title: Temporal Difference Learning - Part 1
 >&#10115;and we are backing up to next state.  
 >
 ><font color="Red">[Caution]</font>
->&#10112;<font color="Red">all the $S$ are all being done in parallel</font>.  
+>&#10112;<font color="Red">all the $S$ are all being done in similar approach</font>.  
 >&#10113;the value at state $S$(the $S$ in (A)) is going to be updated on this quantity, $r_{t}+\gamma\cdot V_{T-1}(S_{t})-V_{T-1}(S_{t-1})$, which is the same for everybody, <font color="RosyBrown">doesn't</font> depend on which $S$ we are updating, and $e(S)$ is specific to the state $S$ we are evaluating(looking at).  
 
 ### Example: <font color="Red">$TD(1)$</font> Illustration
