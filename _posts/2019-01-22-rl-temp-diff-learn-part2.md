@@ -115,7 +115,9 @@ This is the part 2, new introduce $TD(0)$, continue with advantages and cons of 
 >
 ><font color="DeepSkyBlue">[5]</font>
 ><font color="OrangeRed">A tiny finding</font>  
->We have a tiny finding that <font color="DeepPink">$TD(0)$ relates current state's value to next most closed state's value, is more like MLE estimate</font>, even if we are using it in one trajectory, the 5-th in this illustration.  The temporal difference is about to learn to make prediction of states value for these states transit over time in the unit of one distinct trajectory, whereas the MLE tends to estimate states' value accrossing all trajectories in given sample.  
+>We have a tiny finding that <font color="DeepPink">$TD(0)$ relates current state's value to next most closed state's value, is more like MLE estimate</font>, even if we are using it in one trajectory, the 5-th in this illustration.  
+>
+>The <font color="DeepPink">temporal difference</font> is about to learn to make prediction of states value for these states transit over time <font color="DeepPink">in the unit of one distinct trajectory</font>, whereas the <font color="DeepPink">MLE</font> tends to estimate states' value <font color="DeepPink">accrossing all trajectories</font> in given sample.  
 >
 ><font color="OrangeRed">The argument in between $TD(0)$, $TD(1)$ and MLE is in that we don't have the full image of the Markov chain model, with only a little sampling data.</font>  
 
