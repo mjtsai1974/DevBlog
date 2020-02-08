@@ -26,11 +26,21 @@ title: Model-Based RL Algorithm RMAX - Part 1
 ### The <font color="Red">RMAX</font> Algorithm
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Brief description</font>  
->The approach used by <font color="Red">RMAX</font> has been refered to as <font color="DeepPink">the optimism in the face of uncertainty heuristic</font>.  It propose a specific approach in which <font color="DeepPink">the choice in between exploration and exploitation is implicit</font>.  The major insight behind this algorithm is the optimal policy with respect to the agent's fictitious model has a very interesting and useful property that <font color="DeepPink">it is always optimal or it leads to efficient learning</font>.  
+>The approach used by <font color="Red">RMAX</font> has been refered to as <font color="DeepPink">the optimism in the face of uncertainty heuristic</font>.  It propose a specific approach in which <font color="DeepPink">the choice in between exploration and exploitation is implicit</font>.  
 >
+>The major insight behind this algorithm is the optimal policy with respect to the agent's fictitious model has a very interesting and useful property that <font color="DeepPink">it is always optimal or it leads to efficient learning</font>.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Preliminaries</font>  
+>The <font color="Red">RMAX</font> algorithm was presented in the context of a model called <font color="OrangeRed">stochastic game</font> in [R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf).  <font color="OrangeRed">stochastic game</font> is more general than MDP, because <font color="RosyBrown">it doesn't necessarily assume that the environment is stochastic</font>.  Please recall <font color="OrangeRed">in MDP, the execution of the action might not go as well as it has been expected</font>, it is a <font color="OrangeRed">stochastic environment</font>.  
+>
+>A <font color="OrangeRed">stochastic game</font> is a model of <font color="OrangeRed">multi-agent</font> interaction.  It has a set of players, each of whom chooses some action to perform from within a given set of actions.  As a result of the combinatory choices, some outcome is obtained and is described numerically in the form of a <font color="OrangeRed">payoff vector</font>, vector of values, one for each of the players.  
+>
+>The <font color="Red">RMAX</font> was developed on <font color="OrangeRed">2 palyers, fixed-sum games</font>, in which <font color="OrangeRed">the sum of values in the payoff vector is constant</font>.  The <font color="DeepSkyBlue">player under our control</font> is called the <font color="DeepSkyBlue">agent</font>, whereas the other one is the <font color="RoyalBlue">adversary</font>.  
 
 ### Addendum
 >&#10112;[Exploring Deterministics MDP, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4402978778/concepts/44303424040923)  
+>&#10113;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
