@@ -8,6 +8,21 @@ title: Model-Based RL Algorithm RMAX - Part 1
 <font color="Red">RMAX</font> is a <font color="DeepPink">simple model-based reinforcement learning algorithm that can attain near-optimal average reward in polynomial time</font>.  
 </p>
 
+### MDP Model Construct From Given Data
+><font color="RoyalBlue">[Question]</font>
+>Here is the condition, suppose you are given:  
+>&#10112;a sample of probabilistic transitions and immediate rewards pertaining to a MDP model  
+>&#10113;the <font color="DeepSkyBlue">full set of states is known</font> in advance   
+>&#10114;<font color="OrangeRed">but</font>, only the contour, <font color="OrangeRed">exclusive of the path in between states</font>  
+>&#10115;<font color="OrangeRed">all states are initialized as unknown</font>  
+>
+>We don't have the whole MDP yet, <font color="RoyalBlue">what would you do to construct a complete MDP model?</font>  What do we do along the way?  
+>
+><font color="DeepSkyBlue">[Answer]</font>
+>We would be able to refer to the [Temporal Difference Learning - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2018/12/23/rl-temp-diff-learn-part1/), [Temporal Difference Learning - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2019/01/22/rl-temp-diff-learn-part2/), [Temporal Difference In Q Form]({{ site.github.repo }}{{ site.baseurl }}/2019/02/19/rl-temp-diff-q/) in my prior post, which is a <font color="DeepSkyBlue">model-free</font> algorithm.  
+>
+>However, we are given the <font color="DeepSkyBlue">full set of states</font>, the suggestion would be made to use the <font color="Red">RMAX</font>, which is a <font color="Red">model-based algorithm</font>.  
+
 ### Addendum
 >&#10112;[Exploring Deterministics MDP, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4402978778/concepts/44303424040923)  
 
