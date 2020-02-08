@@ -23,6 +23,12 @@ title: Model-Based RL Algorithm RMAX - Part 1
 >
 >However, we are given the <font color="DeepSkyBlue">full set of states</font>, the suggestion would be made to use the <font color="Red">RMAX</font>, which is a <font color="Red">model-based algorithm</font>.  
 
+### The <font color="Red">RMAX</font> Algorithm
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Brief description</font>  
+>The approach used by <font color="Red">RMAX</font> has been refered to as <font color="DeepPink">the optimism in the face of uncertainty heuristic</font>.  It propose a specific approach in which <font color="DeepPink">the choice in between exploration and exploitation is implicit</font>.  The major insight behind this algorithm is the optimal policy with respect to the agent's fictitious model has a very interesting and useful property that <font color="DeepPink">it is always optimal or it leads to efficient learning</font>.  
+>
+
 ### Addendum
 >&#10112;[Exploring Deterministics MDP, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4402978778/concepts/44303424040923)  
 
