@@ -32,11 +32,20 @@ title: Model-Based RL Algorithm RMAX - Part 1
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Preliminaries</font>  
->The <font color="Red">RMAX</font> algorithm was presented in the context of a model called <font color="OrangeRed">stochastic game</font> in [R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf).  <font color="OrangeRed">stochastic game</font> is more general than MDP, because <font color="RosyBrown">it doesn't necessarily assume that the environment is stochastic</font>.  Please recall <font color="OrangeRed">in MDP, the execution of the action might not go as well as it has been expected</font>, it is a <font color="OrangeRed">stochastic environment</font>.  
+>The <font color="Red">RMAX</font> algorithm was presented in the context of a model called <font color="OrangeRed">stochastic game</font> in [R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf).  <font color="OrangeRed">Stochastic game</font> is more general than MDP, because <font color="RosyBrown">it doesn't necessarily assume that the environment is stochastic</font>.  
+>
+>Please recall <font color="OrangeRed">in MDP, the execution of the action might not go as well as it has been expected</font>, it is a <font color="OrangeRed">stochastic environment</font>.  
 >
 >A <font color="OrangeRed">stochastic game</font> is a model of <font color="OrangeRed">multi-agent</font> interaction.  It has a set of players, each of whom chooses some action to perform from within a given set of actions.  As a result of the combinatory choices, some outcome is obtained and is described numerically in the form of a <font color="OrangeRed">payoff vector</font>, vector of values, one for each of the players.  
 >
 >The <font color="Red">RMAX</font> was developed on <font color="OrangeRed">2 palyers, fixed-sum games</font>, in which <font color="OrangeRed">the sum of values in the payoff vector is constant</font>.  The <font color="DeepSkyBlue">player under our control</font> is called the <font color="DeepSkyBlue">agent</font>, whereas the other one is the <font color="RoyalBlue">adversary</font>.  
+>
+>The game is commonly described in strategic form of matrix, the rows of a matrix correspond to the agent't actions and the columns correspond to the adversary's actions.  The entry of row i and column j contains the rewards obtained for the agent chooses i-th and the adversary chooses the j-th action.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-strategic-form.png "S.G matrix")
+>
+>In <font color="OrangeRed">stochastic game</font>, the player plays a sequence of standard games, which represents the states in normal MDP.  After playing a game, it obtains rewards and transits to a new game(or maybe stay in the same place), in both models, actions lead to transitions between states, such similarity could be found.  
+>
+>You could <font color="DeepPink">treat MDP as an stochastic game in which the adversary has only a single action at each state</font>.  
 
 ### Addendum
 >&#10112;[Exploring Deterministics MDP, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4402978778/concepts/44303424040923)  
