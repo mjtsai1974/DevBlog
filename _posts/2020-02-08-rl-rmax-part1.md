@@ -23,7 +23,7 @@ title: Model-Based RL Algorithm RMAX - Part 1
 >
 >However, we are given the <font color="DeepSkyBlue">full set of states</font>, the suggestion would be made to use the <font color="Red">RMAX</font>, which is a <font color="Red">model-based algorithm</font>.  
 
-### The <font color="Red">RMAX</font> Algorithm
+### Before We Enter <font color="Red">RMAX</font> Algorithm
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Brief description</font>  
 >The approach used by <font color="Red">RMAX</font> has been refered to as <font color="DeepPink">the optimism in the face of uncertainty heuristic</font>.  It propose a specific approach in which <font color="DeepPink">the choice in between exploration and exploitation is implicit</font>.  
@@ -46,6 +46,17 @@ title: Model-Based RL Algorithm RMAX - Part 1
 >In <font color="OrangeRed">stochastic game</font>, the player plays a sequence of standard games, which represents the states in normal MDP.  After playing a game, it obtains rewards and transits to a new game(or maybe stay in the same place), in both models, actions lead to transitions between states, such similarity could be found.  
 >
 >You could <font color="DeepPink">treat MDP as an stochastic game in which the adversary has only a single action at each state</font>.  
+
+### <font color="Red">RMAX</font> Algorithm
+><font color="Brown">[Input]</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-input.png "RMAX input")
+>
+><font color="Brown">[Inintialize]</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-init.png "RMAX init")
+>
+><font color="Brown">[Repeat]</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-repeat.png "RMAX repeat")
+>
 
 ### Addendum
 >&#10112;[Exploring Deterministics MDP, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4402978778/concepts/44303424040923)  
