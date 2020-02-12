@@ -49,13 +49,23 @@ title: Model-Based RL Algorithm RMAX - Part 1
 
 ### <font color="Red">RMAX</font> Algorithm
 ><font color="Brown">[Input]</font>  
+>Below are the basic defines:  
+>&#10112;$N$: the number of stage games(or states).  
+>&#10113;$k$: the number of actions for each state.  
+>&#10114;$\varepsilon$: the error bound.  
+>&#10115;$\delta$: the algorithm's failure probability.  
+>&#10116;$R_{max}$: the upper bound on the reward function.  
+>&#10117;$T$: <font color="OrangeRed">the maximum number of steps</font> for the optimal policy of the algorithm to get $\varepsilon$ close to the <font color="DeepSkyBlue">average expected(undiscounted) reward</font>.  
+<!--
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-input.png "RMAX input")
+-->
 >
 ><font color="Brown">[Inintialize]</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-init.png "RMAX init")
 >
 ><font color="Brown">[Repeat]</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-repeat.png "RMAX repeat")
+>
 >
 
 ### Addendum
