@@ -47,7 +47,7 @@ title: Model-Based RL Algorithm RMAX - Part 1
 >
 >You could <font color="DeepPink">treat MDP as an stochastic game in which the adversary has only a single action at each state</font>.  
 
-### <font color="Red">RMAX</font> Algorithm
+### The <font color="Red">RMAX</font> Algorithm
 ><font color="Brown">[Input]</font>  
 >Below are the basic defines:  
 >&#10112;$N$: the number of stage games(or states).  
@@ -64,9 +64,11 @@ title: Model-Based RL Algorithm RMAX - Part 1
 >Initialize by constructing a model $M^{\'}$ consisting of  
 >&#10112;$N+1$ stage games, $\{G_{0},G_{1},...,G_{N+1}\}$, corresponding to the real states.  
 >&#10113;$k$ actions, $\{a_{1},...,a_{k}\}$, which would then be played by the <font color="RoyalBlue">agent</font> and the <font color="RoyalBlue">adversary</font>.  
+>&#10114;set each $G_{i}$ in <font color="OrangeRed">unknown</font> status.  
 >
->Where the $G_{0}$ is an additional fictitious game, of which we are in need to initialize the probability for each $G_{i}$ to transite to $G_{0}$ by the <font color="RoyalBlue">agent</font> choosing action $a$ and the <font color="RoyalBlue">adversary</font> choosing $a^{\'}$ to be $1$, that is $P_{M^{\'}}(G_{i},G_{0},a,a^{\'})$=$1$, $i$=$\{0,1,...,N\}$.  
+>Where the $G_{0}$ is an additional fictitious game, of which we are in need to initialize the probability for each $G_{i}$ to transite to $G_{0}$ by the <font color="RoyalBlue">agent</font> choosing action $a$ and the <font color="RoyalBlue">adversary</font> choosing $a^{\'}$ to be $1$, that is $P_{M}(G_{i},G_{0},a,a^{\'})$=$1$, $i$=$\{0,1,...,N\}$.  
 >
+>Cautions must be made that the <font color="Red">RMAX</font> Algorithm is <font color="OrangeRed">using model the constructed model $M^{\'}$ to approximate the model $M$ of real</font>, that's why it is $P_{M}(G_{i},G_{0},a,a^{\'})$, <font color="RosyBrown">not</font> $P_{M^{\'}}(G_{i},G_{0},a,a^{\'})$.  
 <!--
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-init.png "RMAX init")
 -->
