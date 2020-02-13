@@ -61,11 +61,11 @@ title: Model-Based RL Algorithm RMAX - Part 1
 -->
 >
 ><font color="Brown">[Inintialize]</font>  
->Initialize by constructing a model $M'$ consisting of  
+>Initialize by constructing a model $M^{\'}$ consisting of  
 >&#10112;$N+1$ stage games, $\{G_{0},G_{1},...,G_{N+1}\}$, corresponding to the real states.  
 >&#10113;$k$ actions, $\{a_{1},...,a_{k}\}$, which would then be played by the <font color="RoyalBlue">agent</font> and the <font color="RoyalBlue">adversary</font>.  
 >
->Where the $G_{0}$ is an additional fictitious game, of which we are in need to initialize the probability for each $G_{i}$ to transite to $G_{0}$ by the <font color="RoyalBlue">agent</font> choosing action $a$ and the <font color="RoyalBlue">adversary</font> choosing $a^{'}$ to be $1$, that is $P_{M^{'}}(G_{i},G_{0},a,a^{'})$=$1$.  
+>Where the $G_{0}$ is an additional fictitious game, of which we are in need to initialize the probability for each $G_{i}$ to transite to $G_{0}$ by the <font color="RoyalBlue">agent</font> choosing action $a$ and the <font color="RoyalBlue">adversary</font> choosing $a^{\'}$ to be $1$, that is $P_{M^{\'}}(G_{i},G_{0},a,a^{\'})$=$1$, $i$=$\{0,1,...,N\}$.  
 >
 <!--
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-init.png "RMAX init")
