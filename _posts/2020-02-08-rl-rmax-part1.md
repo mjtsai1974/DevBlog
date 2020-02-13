@@ -68,7 +68,7 @@ title: Model-Based RL Algorithm RMAX - Part 1
 >
 >Where the $G_{0}$ is an additional fictitious game, of which we are in need to initialize the probability for each $G_{i}$ to transite to $G_{0}$ by the <font color="RoyalBlue">agent</font> choosing action $a$ and the <font color="RoyalBlue">adversary</font> choosing $a^{\'}$ to be $1$, that is $P_{M}(G_{i},G_{0},a,a^{\'})$=$1$, $i$=$\{0,1,...,N\}$.  
 >
->Cautions must be made that the <font color="Red">RMAX</font> Algorithm is <font color="OrangeRed">using model the constructed model $M^{\'}$ to approximate the model $M$ of real</font>, that's why it is $P_{M}(G_{i},G_{0},a,a^{\'})$, <font color="RosyBrown">not</font> $P_{M^{\'}}(G_{i},G_{0},a,a^{\'})$.  
+>Cautions must be made that the <font color="Red">RMAX</font> Algorithm is using the <font color="OrangeRed">constructed</font> model $M^{\'}$ to approximate the <font color="OrangeRed">real</font> model $M$, that's why it is $P_{M}(G_{i},G_{0},a,a^{\'})$, <font color="RosyBrown">not</font> $P_{M^{\'}}(G_{i},G_{0},a,a^{\'})$.  
 <!--
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-init.png "RMAX init")
 -->
