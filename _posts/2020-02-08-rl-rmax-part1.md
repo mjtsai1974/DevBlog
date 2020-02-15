@@ -74,7 +74,20 @@ title: Model-Based RL Algorithm RMAX - Part 1
 -->
 >
 ><font color="Brown">[Repeat]</font>  
+>* Compute an <font color="#00ADAD">optimal $T$-step policy</font> and take action:  
+>&#10112;execute this policy for $T$-steps.  
+>&#10113;<font color="OrangeRed">or until a new entry of $G_{i}$ becomes known</font>.  
+>
+>* Keep track of action execution results:
+>&#10112;update the <font color="#9300FF">reward</font> thus obtained upon state transition from $G_{i}$ to $G_{j}$ after the execution of joint action of actions $a$ and $a^{\'}$ for its <font color="OrangeRed">very first time</font>.  
+>&#10113;update the set of states thus reached in accordance to each action pair $(a,a^{\'})$ in $G_{i}$.  
+>&#10114;if <font color="OrangeRed">this entry of $G_{i}$ has been explored over $K_{1}$ times</font>, in other words, <font color="OrangeRed">the set of states reached from this $G_{i}$ contains $K_{1}$ elements</font>, <font color="OrangeRed">mark this $G_{i}$ as known</font>, and update the transition probabilities in the unit of distinct transition from $G_{i}$ to $G_{j}$.  
+>
+>Where $K_{1}$=$max((\frac {4\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3},-6\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}}))+1$, which would then be proved in the following secction.  
+
+<!--
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-repeat.png "RMAX repeat")
+-->
 >
 >
 
