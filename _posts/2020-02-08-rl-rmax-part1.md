@@ -78,7 +78,7 @@ title: Model-Based RL Algorithm RMAX - Part 1
 >&#10112;execute this policy for $T$-steps.  
 >&#10113;<font color="OrangeRed">or until a new entry of $G_{i}$ becomes known</font>.  
 >
->* Keep track of action execution results:
+>* Keep track of action execution results:  
 >&#10112;update the <font color="#9300FF">reward</font> thus obtained upon state transition from $G_{i}$ to $G_{j}$ after the execution of joint action of actions $a$ and $a^{\'}$ for its <font color="OrangeRed">very first time</font>.  
 >&#10113;update the set of states thus reached in accordance to each action pair $(a,a^{\'})$ in $G_{i}$.  
 >&#10114;if <font color="OrangeRed">this entry of $G_{i}$ has been explored over $K_{1}$ times</font>, in other words, <font color="OrangeRed">the set of states reached from this $G_{i}$ contains $K_{1}$ elements</font>, <font color="OrangeRed">mark this $G_{i}$ as known</font>, and update the transition probabilities in the unit of distinct transition from $G_{i}$ to $G_{j}$.  
