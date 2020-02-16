@@ -67,9 +67,9 @@ title: Model-Based RL Algorithm RMAX - Part 1
 >&#10114;set each $G_{i}$ in <font color="OrangeRed">unknown</font> status.  
 >
 >Where the $G_{0}$ is an additional fictitious game, of which we are in need to initialize the probability for each $G_{i}$ to transite to $G_{0}$ by the <font color="RoyalBlue">agent</font> choosing action $a$ and the <font color="RoyalBlue">adversary</font> choosing $a^{\'}$ to be $1$, that is $P_{M}(G_{i},G_{0},a,a^{\'})$=$1$, $i$=$\{0,1,...,N\}$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-init.png "RMAX init")
 >
 >Cautions must be made that the <font color="Red">RMAX</font> Algorithm is using the <font color="OrangeRed">constructed</font> model $M^{\'}$ to approximate the <font color="OrangeRed">real</font> model $M$, that's why it is $P_{M}(G_{i},G_{0},a,a^{\'})$, <font color="RosyBrown">not</font> $P_{M^{\'}}(G_{i},G_{0},a,a^{\'})$.  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-init.png "RMAX init")
 >
 ><font color="Brown">[Repeat]</font>  
 >* Compute an <font color="#00ADAD">optimal $T$-step policy</font> and take action:  
@@ -83,10 +83,7 @@ title: Model-Based RL Algorithm RMAX - Part 1
 >
 >Where $K_{1}$=$max((\frac {4\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3},-6\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}}))+1$, which would then be proved in the following secction.  
 >
-<!--
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-repeat.png "RMAX repeat")
--->
-><font color="Brown">[Brief summary]</font>
 >
 
 ### Addendum
