@@ -90,7 +90,7 @@ title: Model-Based RL Algorithm RMAX - Part 1
 >
 >Based on model $M^{\'}$, compute an optimal $T$-step policy, follow from the departuring state in each eposide, say $G_{i}$, keep record of all states reached in accordance to the execution of action pairs $(a, a^{\'})$.
 >
->At the moment <font color="Brown">$T$ steps has been reached</font> or <font color="Brown">the departuring $G_{i}$ turns into known</font>, update the probabilistic transition from this state to its next states.  <font color="OrangeRed">After each such $G_{i}$ has been updated</font>, <font color="OrangeRed">recompute</font> an optimal $T$-step policy and <font color="OrangeRed">repeat</font>.  
+>At the moment <font color="Brown">$T$ steps has been reached</font> or <font color="Brown">the departuring $G_{i}$ turns into known</font>, update the probabilistic transition from this state to its next states.  <font color="OrangeRed">Each time, after such $G_{i}$ has been updated</font>, <font color="OrangeRed">recompute</font> an optimal $T$-step policy and <font color="OrangeRed">repeat</font>.  
 
 ### Addendum
 >&#10112;[Exploring Deterministics MDP, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4402978778/concepts/44303424040923)  
