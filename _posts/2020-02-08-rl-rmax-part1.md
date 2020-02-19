@@ -92,6 +92,21 @@ title: Model-Based RL Algorithm RMAX - Part 1
 >
 >At the moment <font color="Brown">$T$ steps has been reached</font> or <font color="Brown">the departuring $G_{i}$ turns into known</font>, update the probabilistic transition from this state to its next states.  <font color="OrangeRed">Each time, after such $G_{i}$ has been updated</font>, <font color="OrangeRed">recompute</font> an optimal $T$-step policy and <font color="OrangeRed">repeat</font>.  
 
+### The <font color="Red">RMAX</font> Algorithm Theorem
+><font color="Brown">[Theorem of optimality and convergence]</font>  
+>Given below condition:  
+>&#10112;let $M$ be the <font color="OrangeRed">stochastic game</font> with $N$ states and $k$ actions.  
+>&#10113;let $0 < \delta < 1$ and $\varepsilon > 0$ be constants, where <font color="OrangeRed">$\delta$</font> is the <font color="OrangeRed">error probability</font> and <font color="OrangeRed">$\varepsilon$</font> is the <font color="OrangeRed">error term</font>.  
+>&#10114;denote the policy for $M$ whose <font color="OrangeRed">$\varepsilon$-return mixing time</font> is $T$ by $\prod_{M}(\varepsilon,T)$.  
+>&#10115;denote the <font color="#00ADAD">optimal</font> expected return by such policy by $Opt(\prod_{M}(\varepsilon,T))$.  
+>
+>Then, with probability of no less than $1-\delta$ the <font color="Red">RMAX</font> algorithm will attain an expected return of $Opt(\prod_{M}(\varepsilon,T))-2\cdot\varepsilon$, within a number of steps polynomial in $N$,$k$,$T$,$\frac {1}{\varepsilon}$ and $\frac {1}{\delta}$.  
+>
+><font color="Brown">Notes::mjtsai1974</font>
+>Why the execution of the <font color="Red">RMAX</font> algorithm will attain an expected return of $Opt(\prod_{M}(\varepsilon,T))-2\cdot\varepsilon$?  
+>
+>As a result of the fact that the optimal policy is defined on <font color="OrangeRed">$\varepsilon$-return mixing time</font> of $T$, the real return of the execution of the <font color="Red">RMAX</font> algorithm must be smaller than it, thus we choose it to be $-2\cdot\varepsilon$.  
+
 ### Addendum
 >&#10112;[Exploring Deterministics MDP, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4402978778/concepts/44303424040923)  
 >&#10113;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
