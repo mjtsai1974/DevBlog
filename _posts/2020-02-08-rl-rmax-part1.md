@@ -86,7 +86,7 @@ title: Model-Based RL Algorithm RMAX - Part 1
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-08-rl-rmax-part1-repeat.png "RMAX repeat")
 >
 ><font color="Brown">[Brief summary]</font>  
->The <font color="Red">RMAX</font> algorithm constructs a model $M^{\'}$ to approximate the real model $M$, by initializing all states as unknown and the probability for each $G_{i}$ of all action pairs $(a,a^{'})$ to $G_{0}$ be $1$.  
+>The <font color="Red">RMAX</font> algorithm constructs a model $M^{\'}$ to approximate the real model $M$, by initializing all states as unknown and the probability for each $G_{i}$ of all action pairs $(a,a^{\'})$ to $G_{0}$ be $1$.  
 >
 >Based on model $M^{\'}$, compute an optimal $T$-step policy, follow from the departuring state in each eposide, say $G_{i}$, keep record of all states reached in accordance to the execution of action pairs $(a, a^{\'})$.
 >
