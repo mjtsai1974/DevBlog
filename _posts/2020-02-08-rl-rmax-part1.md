@@ -105,7 +105,7 @@ title: Model-Based RL Algorithm RMAX - Part 1
 ><font color="Brown">Notes::mjtsai1974</font>
 >Why the execution of the <font color="Red">RMAX</font> algorithm will attain an expected return of $Opt(\prod_{M}(\varepsilon,T))-2\cdot\varepsilon$?  
 >
->As a result of the fact that the optimal policy is defined on <font color="OrangeRed">$\varepsilon$-return mixing time</font> of $T$, the real return of the execution of the <font color="Red">RMAX</font> algorithm must be smaller than it, thus we choose it to be $-2\cdot\varepsilon$.  
+>As a result of the fact that the <font color="#00ADAD">optimal policy</font> is defined on <font color="OrangeRed">$\varepsilon$-return mixing time</font> of $T$, the <font color="#D600D6">real return</font> of the execution of the <font color="Red">RMAX</font> algorithm must be smaller than it, thus we choose it to be $-2\cdot\varepsilon$.  
 
 ### Addendum
 >&#10112;[Exploring Deterministics MDP, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4402978778/concepts/44303424040923)  
