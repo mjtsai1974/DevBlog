@@ -9,7 +9,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 </p>
 
 ### $\alpha$ Approximation
->Given that $M$ and $M^{\'}$ are 2 distinct stage games over the same set of states and actions, then <font color="Red">$M^{\'}$ is $\alpha$ approximation of $M$</font> if below holds for every state $s$:  
+>Given that $M$ and $M^{\'}$ are 2 distinct stage games over the same set of states and actions, then $M^{\'}$ is <font color="Red">$\alpha$ approximation</font> of $M$ if below holds for every state $s$:  
 >&#10112;$P_{M}(s,s^{\'},a,a^{'})-\alpha\leq P_{M^{\'}}(s,s^{\'},a,a^{'})\leq P_{M}(s,s^{\'},a,a^{'})+\alpha$  
 >, where $P_{M}(s,s^{\'},a,a^{'})$ is the probabilistic transition for the agent from state $s$ to $s^{\'}$ by choosing action $a$, and the adversary chooses action $a^{\'}$ in model $M$, the same for $P_{M^{\'}}(s,s^{\'},a,a^{'})$ is the same.  
 >&#10113;for every state $s$, <font color="OrangeRed">the same</font> stage game is associated with $s$ in $M$ and $M^{\'}$, <font color="DeepPink">the rewards would be identical</font>.  
