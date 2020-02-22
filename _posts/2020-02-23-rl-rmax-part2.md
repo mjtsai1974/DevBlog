@@ -5,8 +5,14 @@ title: Model-Based RL Algorithm RMAX - Part 2
 
 ## Prologue To Model-Based RL Algorithm <font color="Red">RMAX</font> - Part 2
 <p class="message">
-The <font color="Red">RMAX</font> theorem guarantees that the execution of algorithm will attain $-2\cdot\varepsilon$ close to optimal expected return <font color="DeepPink">in polynomial time</font>, whereas the algorithm is developed by constructing a simulated model plugging with an extra fictitious $G_{0}$ state to approximate the target model.  To validate the algorithm, this article would like to prove that the difference of the expected returns in between the simulated and the target model is infinitesimal.  
+The <font color="Red">RMAX</font> theorem guarantees that the execution of algorithm will attain $-2\cdot\varepsilon$ close to optimal expected return <font color="DeepPink">in polynomial time</font>, whereas the algorithm <font color="Red">is developed by constructing a simulated model plugging with an extra fictitious $G_{0}$ state to approximate the target model</font>.  To validate the algorithm, this article would like to prove that <font color="DeepPink">the difference of the expected returns in between the simulated and the target model is infinitesimal</font>.  
 </p>
+
+### $\alpha$ Approximation
+>Given that $M$ and $M^{\'}$ are 2 distinct stage games over the same set of states and actions, then <font color="Red">$M^{\'}$ is $\alpha$ approximation of $M$</font> if below holds for every state $s$:  
+>&#10112;$P_{M}(s,s^{\'},a,a^{'})-\alpha\leq P_{M^{\'}}(s,s^{\'},a,a^{'})\leq P_{M}(s,s^{\'},a,a^{'})+\alpha$  
+>, where $P_{M}(s,s^{\'},a,a^{'})$ is the probabilistic transition for the agent from state $s$ to $s^{\'}$ by choosing action $a$, and the adversary chooses action $a^{\'}$ in model $M$, the same for $P_{M^{\'}}(s,s^{\'},a,a^{'})$ is the same.  
+>&#10113;for every state $s$, <font color="OrangeRed">the same</font> stage game is associated with $s$ in $M$ and $M^{\'}$, <font color="DeepPink">the rewards would be identical</font>.  
 
 ### Addendum
 >&#10112;[Exploring Deterministics MDP, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4402978778/concepts/44303424040923)  
