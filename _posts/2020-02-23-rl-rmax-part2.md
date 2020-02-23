@@ -9,14 +9,21 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 </p>
 
 ### $\alpha$ Approximation
->Given that $M$ and $M^{\'}$ are 2 distinct stage games over the same set of states and actions, then $M^{\'}$ is <font color="Red">$\alpha$ approximation</font> of $M$ if below holds for every state $s$:  
+>Given that $M$ and $M^{\'}$ are 2 distinct <font color="OrangeRed">stochastic games</font> over the same set of states and actions, then $M^{\'}$ is <font color="Red">$\alpha$ approximation</font> of $M$ if below holds for every state $s$:  
 >&#10112;$P_{M}(s,s^{\'},a,a^{'})-\alpha\leq P_{M^{\'}}(s,s^{\'},a,a^{'})\leq P_{M}(s,s^{\'},a,a^{'})+\alpha$  
 >, where $P_{M}(s,s^{\'},a,a^{'})$ is the probabilistic transition for the agent from state $s$ to $s^{\'}$ by choosing action $a$, and the adversary chooses action $a^{\'}$ in model $M$, the same for $P_{M^{\'}}(s,s^{\'},a,a^{'})$ is the same.  
 >&#10113;for every state $s$, <font color="OrangeRed">the same</font> stage game is associated with $s$ in $M$ and $M^{\'}$, <font color="DeepPink">the rewards would be identical</font>.  
 
+### Approximation Makes Small Difference
+>Let $M$ and $M^{\'}$ be <font color="OrangeRed">stochastic games</font> over $N$ states, where $M^{\'}$ is an $\frac {\varepsilon$}{N\cdot T\cdot R_{max}}$ approximation of $M$, then for every state $s$, agent policy $\pi$, adversary policy $\rho$, we have that  
+>* $\left|U_{M^{\'}(s,\pi,\zho,T)-U_{M}(s,\pi,\zho,T)\right|\leq\varepsilon$  
+>, where $U_{M}(s,\pi,\zho,T)$ is the optimal expected reward with regards to agent policy $\pi$, adversary policy $\zho$, given that they are from state $s$, make state transitions over $T$ steps.  
+>
+><font color="Brown">Notes::mjtsai1974</font>  
+>&#10112;begin from  
+
 ### Addendum
->&#10112;[Exploring Deterministics MDP, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4402978778/concepts/44303424040923)  
->&#10113;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
+>&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
