@@ -16,7 +16,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 
 ### Approximation Makes Small Difference
 >Let $M$ and $M^{\'}$ be <font color="OrangeRed">stochastic games</font> over $N$ states, where $M^{\'}$ is an $\frac {\varepsilon}{N\cdot T\cdot R_{max}}$ approximation of $M$, then for every state $s$, agent policy $\pi$, adversary policy $\rho$, we have that  
->* $\left|U_{M^{\'}(s,\pi,\zho,T)-U_{M}(s,\pi,\zho,T)\right|\leq\varepsilon$  
+>* $\left|U_{M^{\'}}(s,\pi,\zho,T)-U_{M}(s,\pi,\zho,T)\right|\leq\varepsilon$  
 >, where $U_{M}(s,\pi,\zho,T)$ is the optimal expected reward with regards to agent policy $\pi$, adversary policy $\zho$, given that they are from state $s$, make state transitions over $T$ steps.  
 >
 ><font color="Brown">Notes::mjtsai1974</font>  
