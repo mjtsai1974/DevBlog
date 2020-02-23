@@ -42,7 +42,13 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 >&#10116;$\left|U_{M^{\'}}(s,\pi,\rho,T)-U_{M}(s,\pi,\rho,T)\right|$  
 >=$\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})\cdot U_{M^{\'}}(s^{\'})$-$P_{M}(s,a,a^{\'},s^{\'})\cdot U_{M}(s^{\'}))$  
 >$\leq\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})\cdot\sum_{i=1}^{T}V_{M^{\'}}(S^{\'})$-$P_{M}(s,a,a^{\'},s^{\'})\cdot\sum_{i=1}^{T}V_{M}(S^{\'}))$  
->=$\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})$-$P_{M}(s,a,a^{\'},s^{\'}))\cdot\sum_{i=1}^{T}(V_{M^{\'}}(S^{\'})-V_{M}(S^{\'}))$  
+>=$\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})$-$P_{M}(s,a,a^{\'},s^{\'})\cdot T\cdot(V_{M^{\'}}(S^{\'})-V_{M}(S^{\'})))$  
+>$\leq\sum_{s}\sum_{s'}(\frac {\varepsilon}{N\cdot T\cdot R_{max}}\cdot T\cdot(V_{M^{\'}}(S^{\'})-V_{M}(S^{\'})))$  
+>...by given $M^{\'}$ is an $\frac {\varepsilon}{N\cdot T\cdot R_{max}}$ approximation of $M$  
+>$\leq\sum_{s}\sum_{s'}(\frac {\varepsilon}{N\cdot T\cdot R_{max}}\cdot T\cdot R_{max})$  
+>...all optimal expected rewards are bounded by $R_{max}$ in this algorithm  
+>$\leq N\cdot\frac {\varepsilon}{N\cdot T\cdot R_{max}}\cdot T\cdot R_{max}$=$\varepsilon$  
+>...totally $N$ such states, each distinct $s$ has lots of $S^{\'}$ as its next state, which could then be sum up as $1$, thus $\sum_{s}\sum_{s^{\'}}$=$N$  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
