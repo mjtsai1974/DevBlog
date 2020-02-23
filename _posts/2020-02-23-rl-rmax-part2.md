@@ -15,7 +15,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 >&#10113;for every state $s$, <font color="OrangeRed">the same</font> stage game is associated with $s$ in $M$ and $M^{\'}$, <font color="DeepPink">the rewards would be identical</font>.  
 
 ### Approximation Makes Small Difference
->Let $M$ and $M^{\'}$ be <font color="OrangeRed">stochastic games</font> over $N$ states, where $M^{\'}$ is an $\frac {\varepsilon$}{N\cdot T\cdot R_{max}}$ approximation of $M$, then for every state $s$, agent policy $\pi$, adversary policy $\rho$, we have that  
+>Let $M$ and $M^{\'}$ be <font color="OrangeRed">stochastic games</font> over $N$ states, where $M^{\'}$ is an $\frac {\varepsilon}{N\cdot T\cdot R_{max}}$ approximation of $M$, then for every state $s$, agent policy $\pi$, adversary policy $\rho$, we have that  
 >* $\left|U_{M^{\'}(s,\pi,\zho,T)-U_{M}(s,\pi,\zho,T)\right|\leq\varepsilon$  
 >, where $U_{M}(s,\pi,\zho,T)$ is the optimal expected reward with regards to agent policy $\pi$, adversary policy $\zho$, given that they are from state $s$, make state transitions over $T$ steps.  
 >
