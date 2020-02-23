@@ -25,7 +25,12 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 >=$\sum_{p}\left|P_{M^{\'}}(p)\cdot U_{M^{\'}}(p) - P_{M}(p)\cdot U_{M}(p)\right|$  
 >
 >where $p$ is the path starting from each state $s$, totally $N$ states, after ranging from $s$, make state transition of $T$ steps.  
-
+>
+>&#10113;each such optimal expexted reward of path $p$ could be expressed as:  
+>$\sum_{s}\sum_{s'}P_{M^{\'}}(s,a,a^{\'},s^{\'})\cdot U_{M^{\'}}(s^{\'})$  
+>$\;\;-P_{M}(s,a,a^{\'},s^{\'})\cdot U_{M}(s^{\'})$  
+>
+>where $U_{M}(s^{\'})$=$\sum_{i=1}^{T}$  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
