@@ -16,11 +16,16 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 
 ### Approximation Makes Small Difference
 >Let $M$ and $M^{\'}$ be <font color="OrangeRed">stochastic games</font> over $N$ states, where $M^{\'}$ is an $\frac {\varepsilon}{N\cdot T\cdot R_{max}}$ approximation of $M$, then for every state $s$, agent policy $\pi$, adversary policy $\rho$, we have that  
->* $\left|U_{M^{\'}}(s,\pi,\zho,T)-U_{M}(s,\pi,\zho,T)\right|\leq\varepsilon$  
->, where $U_{M}(s,\pi,\zho,T)$ is the optimal expected reward with regards to agent policy $\pi$, adversary policy $\zho$, given that they are from state $s$, make state transitions over $T$ steps.  
+>* $\left|U_{M^{\'}}(s,\pi,\rho,T)-U_{M}(s,\pi,\rho,T)\right|\leq\varepsilon$  
+>, where $U_{M}(s,\pi,\rho,T)$ is the optimal expected reward with regards to agent policy $\pi$, adversary policy $\rho$, given that they are from state $s$, make state transitions over $T$ steps.  
 >
 ><font color="Brown">Notes::mjtsai1974</font>  
 >&#10112;begin from  
+>$\left|U_{M^{\'}}(s,\pi,\rho,T)-U_{M}(s,\pi,\rho,T)\right|$  
+>=$\sum_{p}\left|P_{M^{\'}}(p)\cdot U_{M^{\'}}(p) - P_{M}(p)\cdot U_{M}(p)\right|$  
+>
+>where $p$ is the path starting from each state $s$, totally $N$ states, after ranging from $s$, make state transition of $T$ steps.  
+
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
