@@ -24,13 +24,20 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 >$\left|U_{M^{\'}}(s,\pi,\rho,T)-U_{M}(s,\pi,\rho,T)\right|$  
 >=$\sum_{p}\left|P_{M^{\'}}(p)\cdot U_{M^{\'}}(p) - P_{M}(p)\cdot U_{M}(p)\right|$  
 >
->where $p$ is the path starting from each state $s$, totally $N$ states, after ranging from $s$, make state transition of $T$ steps.  
+>, where $p$ is the path starting from each state $s$, totally $N$ states, after ranging from $s$, make state transition of $T$ steps.  
 >
->&#10113;each such optimal expexted reward of path $p$ could be expressed as:  
+>&#10113;each such optimal expexted reward of path $p$ in $M^{\'}$ could be expressed as:  
 >$\sum_{s}\sum_{s'}P_{M^{\'}}(s,a,a^{\'},s^{\'})\cdot U_{M^{\'}}(s^{\'})$  
->$\;\;-P_{M}(s,a,a^{\'},s^{\'})\cdot U_{M}(s^{\'})$  
 >
->where $U_{M}(s^{\'})$=$\sum_{i=1}^{T}$  
+>, where $U_{M^{\'}}(s^{\'})$=$\sum_{i=1}^{T}\gamma^{i-1}\cdot V_{M^{\'}}(S_{i}^{\'})$  
+>
+>&#10114;origin formula in &#10112; becomes:  
+>$\sum_{s}\sum_{s'}P_{M^{\'}}(s,a,a^{\'},s^{\'})\cdot U_{M^{\'}}(s^{\'})$-$P_{M}(s,a,a^{\'},s^{\'})\cdot U_{M}(s^{\'})$  
+>
+>, where $s$=$\s_{1},s_{2},...,s_{N}{\}$  
+>
+>&#10115;we are given $M^{\'}$ is an $\alpha$ approximation of $M$, and  
+>$U_{M^{\'}}(s^{\'})$=$\sum_{i=1}^{T}\gamma^{i-1}\cdot V_{M^{\'}}(S_{i}^{\'})\leq\sum_{i=1}^{T}V_{M^{\'}}(S_{i}^{\'})$ must hold  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
