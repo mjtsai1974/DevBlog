@@ -34,7 +34,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 >&#10114;origin formula in &#10112; becomes:  
 >$\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})\cdot U_{M^{\'}}(s^{\'})$-$P_{M}(s,a,a^{\'},s^{\'})\cdot U_{M}(s^{\'}))$  
 >
->, where $s$=$\{s_{1},s_{2},...,s_{N}\}$  
+>, where $s$=$\\{s_{1},s_{2},...,s_{N}\\}$  
 >
 >&#10115;we are given $M^{\'}$ is an $\alpha$ approximation of $M$, and  
 >$U_{M^{\'}}(s^{\'})$=$\sum_{i=1}^{T}\gamma^{i-1}\cdot V_{M^{\'}}(S_{i}^{\'})\leq\sum_{i=1}^{T}V_{M^{\'}}(S^{\'})$ must hold  
@@ -42,6 +42,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 >&#10116;$\left|U_{M^{\'}}(s,\pi,\rho,T)-U_{M}(s,\pi,\rho,T)\right|$  
 >=$\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})\cdot U_{M^{\'}}(s^{\'})$-$P_{M}(s,a,a^{\'},s^{\'})\cdot U_{M}(s^{\'}))$  
 >$\leq\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})\cdot\sum_{i=1}^{T}V_{M^{\'}}(S^{\'})$-$P_{M}(s,a,a^{\'},s^{\'})\cdot\sum_{i=1}^{T}V_{M}(S^{\'}))$  
+>=$\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})$-$P_{M}(s,a,a^{\'},s^{\'}))\cdot\sum_{i=1}^{T}(V_{M^{\'}}(S^{\'})-V_{M}(S^{\'}))$  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
