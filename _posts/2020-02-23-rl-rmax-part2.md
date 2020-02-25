@@ -46,9 +46,9 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 >$\leq\sum_{s}\sum_{s'}(\frac {\varepsilon}{N\cdot T\cdot R_{max}}\cdot T\cdot(V_{M^{\'}}(s^{\'})-V_{M}(s^{\'})))$  
 >$\;\;$...by given $M^{\'}$ is an $\frac {\varepsilon}{N\cdot T\cdot R_{max}}$ approximation of $M$  
 >$\leq\sum_{s}\sum_{s'}(\frac {\varepsilon}{N\cdot T\cdot R_{max}}\cdot T\cdot R_{max})$  
->$\;\;$...<font color="DeepPink">all optimal expected rewards are bounded by $R_{max}$ in this algorithm, hence their difference</font>  
+>$\;\;$...<font color="DeepPink">all optimal expected rewards are bounded by $R_{max}$ in this algorithm, so is the difference</font>  
 >$\leq N\cdot\frac {\varepsilon}{N\cdot T\cdot R_{max}}\cdot T\cdot R_{max}$=$\varepsilon$  
->$\;\;$...totally $N$ such states, each distinct $s$ has lots of $s^{\'}$ as its next state, which could then be sum up as $1$, thus $\sum_{s}\sum_{s^{\'}}$=$N$  
+>$\;\;$...totally $N$ such states, each distinct $s$ has lots of $s^{\'}$ as its next state, <font color="OrangeRed">the transitive probability of the same $s$ could then be summed up to $1$</font>, thus $\sum_{s}\sum_{s^{\'}}$=$N$  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
