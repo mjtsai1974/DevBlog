@@ -10,8 +10,8 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 
 ### $\alpha$ Approximation
 >Given that $M$ and $M^{\'}$ are 2 distinct <font color="OrangeRed">stochastic games</font> over the same set of states and actions, then $M^{\'}$ is <font color="Red">$\alpha$ approximation</font> of $M$ if below holds for every state $s$:  
->&#10112;$P_{M}(s,s^{\'},a,a^{'})-\alpha\leq P_{M^{\'}}(s,s^{\'},a,a^{'})\leq P_{M}(s,s^{\'},a,a^{'})+\alpha$  
->, where $P_{M}(s,s^{\'},a,a^{'})$ is the probabilistic transition for the agent from state $s$ to $s^{\'}$ by choosing action $a$, and the adversary chooses action $a^{\'}$ in model $M$, the same for $P_{M^{\'}}(s,s^{\'},a,a^{'})$ is the same.  
+>&#10112;$P_{M}(s,a,a^{\'},s^{\'})-\alpha\leq P_{M^{\'}}(s,a,a^{\'},s^{\'})\leq P_{M}(s,a,a^{\'},s^{\'})+\alpha$  
+>, where $P_{M}(s,a,a^{\'},s^{\'})$ is the probabilistic transition for the agent from state $s$ to $s^{\'}$ by choosing action $a$, and the adversary chooses action $a^{\'}$ in model $M$, the same for $P_{M^{\'}}(s,s^{\'},a,a^{\'})$ is the same.  
 >&#10113;for every state $s$, <font color="OrangeRed">the same</font> stage game is associated with $s$ in $M$ and $M^{\'}$, <font color="DeepPink">the rewards would be identical</font>.  
 
 ### Approximation Makes Small Difference
@@ -37,18 +37,18 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 >, where $s$=$\\{s_{1},s_{2},...,s_{N}\\}$  
 >
 >&#10115;we are given $M^{\'}$ is an $\alpha$ approximation of $M$, and  
->$U_{M^{\'}}(s^{\'})$=$\sum_{i=1}^{T}\gamma^{i-1}\cdot V_{M^{\'}}(S_{i}^{\'})\leq\sum_{i=1}^{T}V_{M^{\'}}(S^{\'})$ must hold  
+>$U_{M^{\'}}(s^{\'})$=$\sum_{i=1}^{T}\gamma^{i-1}\cdot V_{M^{\'}}(s_{i}^{\'})\leq\sum_{i=1}^{T}V_{M^{\'}}(s^{\'})$ must hold  
 >
 >&#10116;$\left|U_{M^{\'}}(s,\pi,\rho,T)-U_{M}(s,\pi,\rho,T)\right|$  
 >=$\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})\cdot U_{M^{\'}}(s^{\'})$-$P_{M}(s,a,a^{\'},s^{\'})\cdot U_{M}(s^{\'}))$  
->$\leq\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})\cdot\sum_{i=1}^{T}V_{M^{\'}}(S^{\'})$-$P_{M}(s,a,a^{\'},s^{\'})\cdot\sum_{i=1}^{T}V_{M}(S^{\'}))$  
->=$\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})$-$P_{M}(s,a,a^{\'},s^{\'})\cdot T\cdot(V_{M^{\'}}(S^{\'})-V_{M}(S^{\'})))$  
->$\leq\sum_{s}\sum_{s'}(\frac {\varepsilon}{N\cdot T\cdot R_{max}}\cdot T\cdot(V_{M^{\'}}(S^{\'})-V_{M}(S^{\'})))$  
+>=$\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})\cdot\sum_{i=1}^{T}V_{M^{\'}}(s^{\'})$-$P_{M}(s,a,a^{\'},s^{\'})\cdot\sum_{i=1}^{T}V_{M}(s^{\'}))$  
+>=$\sum_{s}\sum_{s'}(P_{M^{\'}}(s,a,a^{\'},s^{\'})$-$P_{M}(s,a,a^{\'},s^{\'})\cdot T\cdot(V_{M^{\'}}(s^{\'})-V_{M}(s^{\'})))$  
+>$\leq\sum_{s}\sum_{s'}(\frac {\varepsilon}{N\cdot T\cdot R_{max}}\cdot T\cdot(V_{M^{\'}}(s^{\'})-V_{M}(s^{\'})))$  
 >$\;\;$...by given $M^{\'}$ is an $\frac {\varepsilon}{N\cdot T\cdot R_{max}}$ approximation of $M$  
 >$\leq\sum_{s}\sum_{s'}(\frac {\varepsilon}{N\cdot T\cdot R_{max}}\cdot T\cdot R_{max})$  
->$\;\;$...all optimal expected rewards are bounded by $R_{max}$ in this algorithm  
+>$\;\;$...<font color="DeepPink">all optimal expected rewards are bounded by $R_{max}$ in this algorithm, hence their difference</font>  
 >$\leq N\cdot\frac {\varepsilon}{N\cdot T\cdot R_{max}}\cdot T\cdot R_{max}$=$\varepsilon$  
->$\;\;$...totally $N$ such states, each distinct $s$ has lots of $S^{\'}$ as its next state, which could then be sum up as $1$, thus $\sum_{s}\sum_{s^{\'}}$=$N$  
+>$\;\;$...totally $N$ such states, each distinct $s$ has lots of $s^{\'}$ as its next state, which could then be sum up as $1$, thus $\sum_{s}\sum_{s^{\'}}$=$N$  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
