@@ -19,7 +19,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the execution of algor
 >* $\left|U_{M^{\'}}(s,\pi,\rho,T)-U_{M}(s,\pi,\rho,T)\right|\leq\varepsilon$  
 >, where $U_{M}(s,\pi,\rho,T)$ is the optimal expected reward with regards to agent policy $\pi$, adversary policy $\rho$, given that they are from state $s$, make state transitions over $T$ steps.  
 >
-><font color="Brown">Notes::mjtsai1974</font>  
+><font color="Brown">proof::mjtsai1974</font>  
 >&#10112;begin from  
 >$\left|U_{M^{\'}}(s,\pi,\rho,T)-U_{M}(s,\pi,\rho,T)\right|$  
 >=$\sum_{p}\left|P_{M^{\'}}(p)\cdot U_{M^{\'}}(p) - P_{M}(p)\cdot U_{M}(p)\right|$  
