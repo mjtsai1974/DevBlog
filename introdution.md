@@ -226,6 +226,8 @@ It is an extension of MDP.  Under construction...
 * [Explore versus Exploit - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2019/08/11/rl-explore-exploit-part1/)
 * [Explore versus Exploit - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2019/09/04/rl-explore-exploit-part2/)
 * [Exploit Evaluation By Hoeffding Bounds]({{ site.github.repo }}{{ site.baseurl }}/2019/10/09/rl-exploit-evaluate-by-hoeffding/)
+* [Model-Based RL Algorithm RMAX - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2020/02/08/rl-rmax-part1/)
+* [Model-Based RL Algorithm RMAX - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2020/02/23/rl-rmax-part2/)
 * Partial Observable Markov Decision Process
 * Q Learning Algorithm
 * Policy Iteration v.s. Value Iteration
