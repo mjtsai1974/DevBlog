@@ -15,7 +15,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 >If the agent follows an optimal policy with respect to the model it maintains for $T$ steps, it will either attain near-optimal average reward or it will update the statistics for one of the <font color="OrangeRed">unknown</font> states with sufficient high probability.
 >
-><font color="DeepPink">The choice in betwqeen exploration and exploitation is implicit</font>, and implicit explore is just exploit viewpoint.  
+><font color="DeepPink">The choice in betwqeen exploration and exploitation is implicit.</font>  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
