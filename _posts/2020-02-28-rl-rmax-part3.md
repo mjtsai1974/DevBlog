@@ -17,6 +17,14 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 ><font color="DeepPink">The choice in betwqeen exploration and exploitation is implicit.</font>  
 
+### Prerequisites For <font color="#C20000">Implicit Explore Or Exploit</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Basic definition</font>  
+>Before we proof <font color="DeepPink">The choice in betwqeen exploration and exploitation is implicit</font>, there shall exist prerequisites of definition to make this theorem of property more concrete:  
+>&#10112;define $M$ to be a <font color="OrangeRed">stochastic game</font>.  
+>&#10113;define $L$ to be a set of unknown states in the form of $(G_{i},a,a^{\'})$, that is to say $G_{i}$ is an unknown state.  
+>&#10114;define $M_{L}$ to be a <font color="OrangeRed">stochastic game</font> identical to $M$, except that $M_{L}$ contains an extra $G_{0}$ state with $P(G_{i},a,a^{\'},G_{0})$=$1$ for any $G_{i}\in L$, and the reward is $R_{max}$ for the agent, and $0$ for the adversary.  
+
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
 
