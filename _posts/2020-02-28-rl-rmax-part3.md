@@ -20,10 +20,24 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 ### Prerequisites For <font color="#C20000">Implicit Explore Or Exploit</font>
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Basic definition</font>  
->Before we proof <font color="DeepPink">The choice in betwqeen exploration and exploitation is implicit</font>, there shall exist prerequisites of definition to make this theorem of property more concrete:  
+>Before we proof <font color="DeepPink">The choice in betwqeen exploration and exploitation is implicit</font>, there shall exist definition of prerequisites to make this theorem of property more concrete:  
 >&#10112;define $M$ to be a <font color="OrangeRed">stochastic game</font>.  
 >&#10113;define $L$ to be a set of unknown states in the form of $(G_{i},a,a^{\'})$, that is to say $G_{i}$ is an unknown state.  
 >&#10114;define $M_{L}$ to be a <font color="OrangeRed">stochastic game</font> identical to $M$, except that $M_{L}$ contains an extra $G_{0}$ state with $P(G_{i},a,a^{\'},G_{0})$=$1$ for any $G_{i}\in L$, and the reward is $R_{max}$ for the agent, and $0$ for the adversary.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">More detail</font>  
+>Take a more close look in above definition:  
+>* <font color="OrangeRed">$M_{L}$ is the deduced model of $M$</font>  
+>&#10112;in the beginning of <font color="Red">RMAX</font> algorithm, <font color="OrangeRed">we treat all states as unknown</font>.  
+>
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-28-rl-rmax-part3-implicit-explicit-exp-1.png "RMAX init")
+>
+>* After explore or exploit over some horizon in the given sampling of data  
+>&#10112;the reward of known states in $M_{L}$ is at least as large as in $M$, in the instance of $G_{K}$.  
+>&#10113;the optimal policy deduced out in $M_{L}$ is also optimal with respect to $M$.  Because $M_{L}$ is almost the same as $M$, except that $M_{L}$ has an extra $G_{0}$ with transitive probability to $1$ from all other states to $G_{0}$.  
+>
+>Base on all above, we'd like to prove the nature of implicit or explicit explore will either attains optimal reward or leads to efficient learning.  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
