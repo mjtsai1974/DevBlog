@@ -36,7 +36,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >* After explore or exploit over some horizon in the given sampling of data:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-28-rl-rmax-part3-implicit-explicit-exp-2.png "unknown to known")
 >&#10112;<font color="DeepSkyBlue">the reward of known states in $M_{L}$ is at least as large as in $M$, in the instance of $G_{K}$.</font>  
->&#10113;<font color="DeepSkyBlue">the optimal policy deduced out in $M_{L}$ is also optimal with respect to $M$.  Because $M_{L}$ is almost the same as $M$</font>, except that $M_{L}$ has an extra $G_{0}$ with transitive probability to $1$ from all other states to $G_{0}$.  
+>&#10113;<font color="DeepSkyBlue">the optimal policy deduced out in $M_{L}$ is also optimal with respect to $M$, could be applied onto $M$.  Because $M_{L}$ is almost the same as $M$</font>, except that $M_{L}$ has an extra $G_{0}$ with transitive probability to $1$ from all other states to $G_{0}$.  
 >
 >Base on all above, we'd like to prove <font color="DeepPink">the nature of implicit or explicit explore will either attains optimal reward or leads to efficient learning.</font>  
 
