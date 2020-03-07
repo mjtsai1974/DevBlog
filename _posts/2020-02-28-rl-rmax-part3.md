@@ -40,6 +40,19 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 >Base on all above, we'd like to prove <font color="DeepPink">the nature of implicit or explicit explore will either attains optimal reward or leads to efficient learning.</font>  
 
+### <font color="#C20000">Implicit Explore Or Exploit</font> Lemma
+>Construct the scenario by below list conditions:  
+>&#10112;let $M$ and $M_{L}$ be the same models described above  
+>&#10113;let $\rho$ be any arbitrary policy of the adversary  
+>&#10114;let $0<\alpha<1$  
+>&#10115;let $s$ be any state  
+>
+>When you deduce out an optimal policy $R_{-max}^{ML}$ on the <font color="OrangeRed">simulated</font> model $M_{L}$ and apply it on the <font color="OrangeRed">target</font> model $M$, you will <font color="OrangeRed">either</font> have one of below holds:  
+>&#10112;$V_{R_{max}}>Opt(\prod_{M}(\varepsilon,T))-\alpha$, where $V_{R_{max}}$ is just the expected $T$-step average reward for $R_{-max}^{ML}$ applied on $M$  
+>&#10113;an <font color="OrangeRed">unknown</font> entry will be played in the course of running $R_{-max}^{ML}$ on $M$ for $T$ steps with the probability of at least $\frac {\alpha}{R_{max}}$
+>
+>Such deduced out policy $R_{-max}^{ML}$ on $M_{L}$ is the $RMAX$ policy!!
+
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
 
