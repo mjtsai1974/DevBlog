@@ -56,10 +56,11 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 ><font color="Brown">Notes::mjtsai1974</font>
 >Begin from the difference in between $V_{R_{max}}$ and $Opt(\prod_{M}(\varepsilon,T))$  
 >&#10112;by artificial design we'd like to have our expected average reward after the execution of <font color="Red">RMAX</font> to be greater than the optimal reward of the optimal policy minus $\alpha$, because that would be a little more close to the optimal policy's reward.  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-28-rl-rmax-part3-implicit-explicit-exp-lemma-1.png "")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-28-rl-rmax-part3-implicit-explicit-exp-lemma-1.png "lemma-1")
+>
 >&#10113;$\left|U_{M}(\varepsilon,R_{-max}^{ML},s,T)-U_{M}(\varepsilon,R_{-max}^{ML},s,T)\right|$  
->=$\left|\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)+\sum_{q}P(r)\cdot V_{M}(R_{-max}^{ML},r)$  
->-$(\sum_{q}P(q)\cdot V_{M}(\pi,q)+\sum_{q}P(r)\cdot V_{M}(\pi,r))\right|$  
+>=$\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)+\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)$  
+>-$\sum_{q}P(q)\cdot V_{M}(\pi,q)-\sum_{r}P(r)\cdot V_{M}(\pi,r)$  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
