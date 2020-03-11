@@ -65,6 +65,16 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >$\leq\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)-\sum_{q}P(q)\cdot V_{M}(\pi,q)\vert$  
 >$\;\;$+$\vert\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
 >$\;\;\Rightarrow\vert a+b-c-d\vert\leq\vert a-c\vert+\vert b-d\vert$, since $a-c$ might be negative!!
+>
+>&#10114;due to $q$ is the path to all known states, we have it holds
+>$\leq\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)-\sum_{q}P(q)\cdot V_{M}(\pi,q)\vert$=$0$  
+>
+&#10115;the inequality becomes  
+>$\vert U_{M}(\varepsilon,R_{-max}^{ML},s,T)-U_{M}(\varepsilon,R_{-max}^{ML},s,T)\vert$  
+>$\leq\vert\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert\neq 0$  
+>$\;\;\Rightarrow\neq 0$ must holds  
+>$\leq\alpha$  
+>$\;\;\Rightarrow$for some $\alpha$ under the condition that $M_{L}\rightarrow_{\alpha}M$  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
