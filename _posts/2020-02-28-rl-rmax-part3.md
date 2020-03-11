@@ -61,7 +61,8 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >&#10113;$\vert U_{M}(\varepsilon,R_{-max}^{ML},s,T)-U_{M}(\varepsilon,R_{-max}^{ML},s,T)\vert$  
 >=$\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)+\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)$  
 >$-\sum_{q}P(q)\cdot V_{M}(\pi,q)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
-
+>$\Rightarrow$where we have $p$=$\\q,r{\\}$, $q$ is the path containing all known states, whereas $r$ is the path leads to unknown target/next state.  
+>
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
 
