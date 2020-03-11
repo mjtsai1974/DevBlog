@@ -59,7 +59,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-28-rl-rmax-part3-implicit-explicit-exp-lemma-1.png "")
 >&#10113;$\left|U_{M}(\varepsilon,R_{-max}^{ML},s,T)-U_{M}(\varepsilon,R_{-max}^{ML},s,T)\right|$  
 >=$\left|\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)+\sum_{q}P(r)\cdot V_{M}(R_{-max}^{ML},r)$  
->$-(\sum_{q}P(q)\cdot V_{M}(\pi,q)+\sum_{q}P(r)\cdot V_{M}(\pi,r))\right|$  
+>-$(\sum_{q}P(q)\cdot V_{M}(\pi,q)+\sum_{q}P(r)\cdot V_{M}(\pi,r))\right|$  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
