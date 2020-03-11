@@ -61,7 +61,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >&#10113;$\vert U_{M}(\varepsilon,R_{-max}^{ML},s,T)-U_{M}(\varepsilon,R_{-max}^{ML},s,T)\vert$  
 >=$\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)+\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)$  
 >$-\sum_{q}P(q)\cdot V_{M}(\pi,q)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
->$\;\;\Rightarrow$where we have $p$=$\\{q,r\\}$, $q$ is the path containing all known states, whereas $r$ is the path leads to unknown target/next state.  
+>$\;\;\Rightarrow$where we have $p$=$\\{q,r\\}$, <font color="DeepSkyBlue">$q$</font> is the <font color="DeepSkyBlue">path</font> containing all <font color="DeepSkyBlue">known states</font>, whereas <font color="OrangeRed">$r$</font> is the <font color="OrangeRed">path</font> leads to <font color="OrangeRed">unknown target/next state</font>.  
 >$\leq\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)-\sum_{q}P(q)\cdot V_{M}(\pi,q)\vert$  
 >$\;\;$+$\vert\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
 >$\;\;\Rightarrow\vert a+b-c-d\vert\leq\vert a-c\vert+\vert b-d\vert$, since $a-c$ might be negative!!
