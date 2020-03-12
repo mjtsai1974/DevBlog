@@ -61,10 +61,12 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >&#10113;$\vert U_{M}(\varepsilon,R_{-max}^{ML},s,T)-U_{M}(\varepsilon,R_{-max}^{ML},s,T)\vert$  
 >=$\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)+\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)$  
 >$-\sum_{q}P(q)\cdot V_{M}(\pi,q)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
->$\;\;\Rightarrow$where we have $p$=$\\{q,r\\}$, <font color="DeepSkyBlue">$q$</font> is the <font color="DeepSkyBlue">path</font> containing all <font color="DeepSkyBlue">known states</font>, whereas <font color="OrangeRed">$r$</font> is the <font color="OrangeRed">path</font> leads to <font color="OrangeRed">unknown target/next state</font>.  
 >$\leq\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)-\sum_{q}P(q)\cdot V_{M}(\pi,q)\vert$  
 >$\;\;$+$\vert\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
->$\;\;\Rightarrow\vert a+b-c-d\vert\leq\vert a-c\vert+\vert b-d\vert$, since $a-c$ might be negative!!
+>
+>where we have $p$=$\\{q,r\\}$, <font color="DeepSkyBlue">$q$</font> is the <font color="DeepSkyBlue">path</font> containing all <font color="DeepSkyBlue">known states</font>, whereas <font color="OrangeRed">$r$</font> is the <font color="OrangeRed">path</font> leads to <font color="OrangeRed">unknown target/next state</font>.  
+>
+>And $\vert a+b-c-d\vert\leq\vert a-c\vert+\vert b-d\vert$, since $a-c$ might be negative!!
 >
 >&#10114;due to $q$ is the path to all known states, we have it holds
 >$\leq\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)-\sum_{q}P(q)\cdot V_{M}(\pi,q)\vert$=$0$  
@@ -72,11 +74,12 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >&#10115;the inequality becomes  
 >$\vert U_{M}(\varepsilon,R_{-max}^{ML},s,T)-U_{M}(\varepsilon,R_{-max}^{ML},s,T)\vert$  
 >$\leq\vert\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
->$\leq\alpha$, and $\alpha\neq 0$  
->$\;\;\Rightarrow$for some $\alpha$ under the condition that $M_{L}\rightarrow_{\alpha}M$  
+>$\leq\alpha$, and $\alpha\neq 0$, for some $\alpha$ under the condition that $M_{L}\rightarrow_{\alpha}M$  
 >$\leq\sum_{r}P(r)\cdot R_{max}$, just holds for $R_{max}$ is just the upper bound for unknown state in <font color="Red">RMAX</font> algorithm.  
 >
 >&#10116;then, we have $P(r)\geq\frac {\alpha}{R_{max}}$ just holds  
+>
+>We next to go back to prove the artificial target that the real reward of <font color="Red">RMAX</font> is within optimal reward minus something, say $\alpha$.   
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
