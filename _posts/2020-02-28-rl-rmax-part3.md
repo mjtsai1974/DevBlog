@@ -8,7 +8,7 @@ title: Model-Based RL Algorithm RMAX - Part 3
 The major insight behind the <font color="Red">RMAX</font> algorithm is the property that <font color="#C20000">it is always either optimal or it leads to efficient learning</font>.   
 </p>
 
-### The <font color="Red">RMAX</font> Property: <font color="#C20000">Implicit Explore Or Exploit</font>
+### The <font color="Red">RMAX</font> Property: <font color="#C20000">Implicit Or Exploit Explore</font>
 >At each point during the learning process, the agent can either choose <font color="OrangeRed">one</font> of below:  
 >&#10112;to exoplore to other states, <font color="OrangeRed">or</font>  
 >&#10113;to exploit over the same state.
@@ -40,7 +40,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 >Base on all above, we'd like to prove <font color="DeepPink">the nature of implicit or explicit explore will either attains optimal reward or leads to efficient learning.</font>  
 
-### <font color="#C20000">Implicit Explore Or Exploit</font> Lemma
+### <font color="#C20000">Implicit Or Exploit Explore</font> Lemma
 >Construct the scenario by below list conditions:  
 >&#10112;let $M$ and $M_{L}$ be the same models described above  
 >&#10113;let $\rho$ be any arbitrary policy of the adversary  
@@ -53,7 +53,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 >Such deduced out policy $R_{-max}^{ML}$ on $M_{L}$ is the RMAX policy!!  
 >
-><font color="Brown">Notes::mjtsai1974</font>
+><font color="Brown">proof::mjtsai1974</font>
 >Begin from the difference in between $V_{R_{max}}$ and $Opt(\prod_{M}(\varepsilon,T))$  
 >&#10112;by artificial design we'd like to have our expected average reward after the execution of <font color="Red">RMAX</font> to be greater than the optimal reward of the optimal policy minus $\alpha$, because that would be a little more close to the optimal policy's reward.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-28-rl-rmax-part3-implicit-explicit-exp-lemma-1.png "lemma-1")
@@ -69,12 +69,14 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >&#10114;due to $q$ is the path to all known states, we have it holds
 >$\leq\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)-\sum_{q}P(q)\cdot V_{M}(\pi,q)\vert$=$0$  
 >
-&#10115;the inequality becomes  
+>&#10115;the inequality becomes  
 >$\vert U_{M}(\varepsilon,R_{-max}^{ML},s,T)-U_{M}(\varepsilon,R_{-max}^{ML},s,T)\vert$  
->$\leq\vert\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert\neq 0$  
->$\;\;\Rightarrow\neq 0$ must holds  
->$\leq\alpha$  
+>$\leq\vert\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
+>$\leq\alpha$, and $\alpha\neq 0$  
 >$\;\;\Rightarrow$for some $\alpha$ under the condition that $M_{L}\rightarrow_{\alpha}M$  
+>$\leq\sum_{r}P(r)\cdot R_{max}$, just holds for $R_{max}$ is just the upper bound for unknown state in <font color="Red">RMAX</font> algorithm.  
+>
+>&#10116;then, we have $P(r)\geq\frac {\alpha}{R_{max}}$ just holds  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
