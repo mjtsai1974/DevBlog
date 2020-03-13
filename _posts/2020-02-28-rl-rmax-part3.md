@@ -53,34 +53,65 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 >Such deduced out policy $R_{-max}^{ML}$ on $M_{L}$ is the RMAX policy!!  
 >
-><font color="Brown">proof::mjtsai1974</font>
+><font color="Brown">proof::mjtsai1974</font>  
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Begin from the difference in between $V_{R_{max}}$ and $Opt(\prod_{M}(\varepsilon,T))$</font>  
 >&#10112;by artificial design we'd like to have our expected average reward after the execution of <font color="Red">RMAX</font> to be greater than the optimal reward of the optimal policy minus $\alpha$, because that would be a little more close to the optimal policy's reward.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-28-rl-rmax-part3-implicit-explicit-exp-lemma-1.png "lemma-1")
 >
->&#10113;$\vert U_{M}(\varepsilon,R_{-max}^{ML},s,T)-U_{M}(\varepsilon,R_{-max}^{ML},s,T)\vert$  
->=$\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)+\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)$  
+>&#10113;$\vert U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)-U_{M}(\varepsilon,\pi,s,T)\vert$  
+>=$\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{M_{L}},q)+\sum_{r}P(r)\cdot V_{M}(R_{-max}^{M_{L}},r)$  
 >$-\sum_{q}P(q)\cdot V_{M}(\pi,q)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
->$\leq\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)-\sum_{q}P(q)\cdot V_{M}(\pi,q)\vert$  
->$\;\;$+$\vert\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
+>$\leq\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{M_{L}},q)-\sum_{q}P(q)\cdot V_{M}(\pi,q)\vert$  
+>$\;\;$+$\vert\sum_{r}P(r)\cdot V_{M}(R_{-max}^{M_{L}},r)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
 >
 >where we have $p$=$\\{q,r\\}$, <font color="DeepSkyBlue">$q$</font> is the <font color="DeepSkyBlue">path</font> containing all <font color="DeepSkyBlue">known states</font>, whereas <font color="OrangeRed">$r$</font> is the <font color="OrangeRed">path</font> leads to <font color="OrangeRed">unknown target/next state</font>.  
 >
->And $\vert a+b-c-d\vert\leq\vert a-c\vert+\vert b-d\vert$, since $a-c$ might be negative!!
+>and $\vert a+b-c-d\vert\leq\vert a-c\vert+\vert b-d\vert$, since $a-c$ might be negative!!
 >
 >&#10114;due to $q$ is the path to all known states, we have it holds
->$\leq\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{ML},q)-\sum_{q}P(q)\cdot V_{M}(\pi,q)\vert$=$0$  
+>$\vert\sum_{q}P(q)\cdot V_{M}(R_{-max}^{M_{L}},q)-\sum_{q}P(q)\cdot V_{M}(\pi,q)\vert$=$0$  
 >
 >&#10115;the inequality becomes  
->$\vert U_{M}(\varepsilon,R_{-max}^{ML},s,T)-U_{M}(\varepsilon,R_{-max}^{ML},s,T)\vert$  
->$\leq\vert\sum_{r}P(r)\cdot V_{M}(R_{-max}^{ML},r)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
->$\leq\alpha$, and $\alpha\neq 0$, for some $\alpha$ under the condition that $M_{L}\rightarrow_{\alpha}M$  
->$\leq\sum_{r}P(r)\cdot R_{max}$, just holds for $R_{max}$ is just the upper bound for unknown state in <font color="Red">RMAX</font> algorithm.  
+>$\vert U_{M}(\varepsilon,R_{-max}^{ML},s,T)-U_{M}(\varepsilon,\pi,s,T)\vert$  
+>$\leq\vert\sum_{r}P(r)\cdot V_{M}(R_{-max}^{M_{L}},r)-\sum_{r}P(r)\cdot V_{M}(\pi,r)\vert$  
+>$\leq\alpha$  
+>$\leq\sum_{r}P(r)\cdot R_{max}$  
+>
+>and $\alpha\neq 0$, for some $\alpha$ under the condition that $M_{L}\rightarrow_{\alpha}M$, this just holds for $R_{max}$ is just the upper bound for unknown state in <font color="Red">RMAX</font> algorithm.  
 >
 >&#10116;then, we have $P(r)\geq\frac {\alpha}{R_{max}}$ just holds  
 >
 >We next to go back to prove the artificial target that the real reward of <font color="Red">RMAX</font> is within optimal reward minus something, say $\alpha$.   
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">The real reward of <font color="Red">RMAX</font> is within optimal reward minus $\alpha$</font>  
+>&#10112;from above deduction, we already have  
+>$\vert U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)-U_{M}(\varepsilon,\pi,s,T)\vert\leq\alpha$  
+>
+>&#10113;take off the absolute function, we have below inequality  
+>$U_{M}(\varepsilon,\pi,s,T)-\alpha\leq U_{M}(\varepsilon,R_{-max}^{ML},s,T)\leq U_{M}(\varepsilon,\pi,s,T)+\alpha$  
+>
+>For the left part, it just proves, and we need to step over to the right side.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Step over to the right side</font>  
+>&#10112;since $U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$ is at least as large as U_{M}(\varepsilon,\pi,s,T), see above prerequisites section for detail, therefore  
+>$U_{M}(\varepsilon,\pi,s,T)\leq U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$  
+>
+>&#10113;we have it that  
+>$U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)\leq U_{M}(\varepsilon,\pi,s,T)+\alpha\leq U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)+\alpha$  
+>
+>For $R_{-max}^{ML}$ deduced on $M_{L}$, its reward would be at least as large as the optimal policy in $M$, therefore,  
+>$U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)-\alpha\leq U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$  
+>
+>Well, we have the deduced out $R_{-max}^{M_{L}}$ on $M_{L}$ is also the optimal policy with respect to $M$, then  
+>$U_{M}(\varepsilon,\pi,s,T)-\alpha\leq U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$  
+>
+>As a result that the reward obtained after the execution of $R_{-max}^{M_{L}}$ on $M$ is no less than the reward btained by $R_{-max}^{M_{L}}$ on $M_{L}$, hence  
+>$U_{M}(\varepsilon,\pi,s,T)-\alpha\leq U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)\leq U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)$  
+>
+>We finally go back to $U_{M}(\varepsilon,\pi,s,T)-\alpha\leq U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)$  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
