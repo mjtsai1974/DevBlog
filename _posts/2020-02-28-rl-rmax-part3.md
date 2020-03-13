@@ -96,7 +96,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Step over to the right side</font>  
->&#10112;since $U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$ is at least as large as U_{M}(\varepsilon,\pi,s,T), see above prerequisites section for detail, therefore  
+>&#10112;since $U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$ is at least as large as $U_{M}(\varepsilon,\pi,s,T)$, see above prerequisites section for detail, therefore  
 >$U_{M}(\varepsilon,\pi,s,T)\leq U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$  
 >
 >&#10113;we have it that  
