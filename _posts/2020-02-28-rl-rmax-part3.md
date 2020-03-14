@@ -13,11 +13,11 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >&#10112;to exoplore to other states, <font color="OrangeRed">or</font>  
 >&#10113;to exploit over the same state.
 >
->If the agent follows an optimal policy with respect to the model it maintains for $T$ steps, it will either attain near-optimal average reward or it will update the statistics for one of the <font color="OrangeRed">unknown</font> states with sufficient high probability.
+>If the agent follows an optimal policy with respect to the model it maintains for $T$ steps, it will either attain near-optimal average reward or it will update the statistics for one of the <font color="OrangeRed">unknown</font> states with <font color="OrangeRed">sufficient high probability</font>.  
 >
 ><font color="DeepPink">The choice in betwqeen exploration and exploitation is implicit.</font>  
 
-### Prerequisites For <font color="#C20000">Implicit Or Exploit Explore</font>
+### Prerequisites For <font color="#C20000">Implicit Or Explicit Explore</font>
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Basic definition</font>  
 >Before we prove <font color="DeepPink">the choice in between exploration and exploitation is implicit</font>, there shall exist definition of prerequisites to make this theorem of property more concrete:  
@@ -40,7 +40,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 >Base on all above, we'd like to prove <font color="DeepPink">the nature of implicit or explicit explore will either attains optimal reward or leads to efficient learning.</font>  
 
-### <font color="#C20000">Implicit Or Exploit Explore</font> Lemma
+### <font color="#C20000">Implicit Or Explicit Explore</font> Lemma
 >Construct the scenario by below list conditions:  
 >&#10112;let $M$ and $M_{L}$ be the same models described above  
 >&#10113;let $\rho$ be any arbitrary policy of the adversary  
@@ -54,7 +54,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >Such deduced out policy $R_{-max}^{ML}$ on $M_{L}$ is the RMAX policy!!  
 >
 ><font color="Brown">proof::mjtsai1974</font>  
-><font color="DeepSkyBlue">[1]</font>
+>* <font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Begin from the difference in between $V_{R_{max}}$ and $Opt(\prod_{M}(\varepsilon,T))$</font>  
 >&#10112;by artificial design we'd like to have our expected average reward after the execution of <font color="Red">RMAX</font> to be greater than the optimal reward of the optimal policy minus $\alpha$, because that would be a little more close to the optimal policy's reward.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-28-rl-rmax-part3-implicit-explicit-exp-lemma-1.png "lemma-1")
@@ -78,13 +78,13 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >$\leq\alpha$  
 >$\leq\sum_{r}P(r)\cdot R_{max}$  
 >
->and $\alpha\neq 0$, for some $\alpha$ under the condition that $M_{L}\rightarrow_{\alpha}M$, this just holds for $R_{max}$ is just the upper bound for unknown state in <font color="Red">RMAX</font> algorithm.  
+>and $\alpha\neq 0$, for some $\alpha$ under the condition that $M_{L}\rightarrow_{\alpha}M$, this just holds for <font color="OrangeRed">$R_{max}$ is just the upper bound for unknown state</font> in <font color="Red">RMAX</font> algorithm.  
 >
 >&#10116;then, we have $P(r)\geq\frac {\alpha}{R_{max}}$ just holds  
 >
 >We next to go back to prove the artificial target that the real reward of <font color="Red">RMAX</font> is within optimal reward minus something, say $\alpha$.   
 >
-><font color="DeepSkyBlue">[2]</font>
+>* <font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">The real reward of <font color="Red">RMAX</font> is within optimal reward minus $\alpha$</font>  
 >&#10112;from above deduction, we already have  
 >$\vert U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)-U_{M}(\varepsilon,\pi,s,T)\vert\leq\alpha$  
@@ -94,7 +94,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 >For the left part, it just proves, and we need to step over to the right side.  
 >
-><font color="DeepSkyBlue">[3]</font>
+>* <font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Step over to the right side</font>  
 >&#10112;since $U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$ is at least as large as $U_{M}(\varepsilon,\pi,s,T)$, see above prerequisites section for detail, therefore  
 >$U_{M}(\varepsilon,\pi,s,T)\leq U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$  
@@ -102,16 +102,16 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >&#10113;we have it that  
 >$U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)\leq U_{M}(\varepsilon,\pi,s,T)+\alpha\leq U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)+\alpha$  
 >
->For $R_{-max}^{ML}$ deduced on $M_{L}$, its reward would be at least as large as the optimal policy in $M$, therefore,  
+>&#10114;<font color="DeepSkyBlue">for $R_{-max}^{ML}$ deduced on $M_{L}$, its reward would be at least as large as the optimal policy in $M$</font>, therefore,  
 >$U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)-\alpha\leq U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$  
 >
->Well, we have the deduced out $R_{-max}^{M_{L}}$ on $M_{L}$ is also the optimal policy with respect to $M$, then  
+>&#10115;well, we have <font color="DeepPink">the deduced out $R_{-max}^{M_{L}}$ on $M_{L}$ is also the optimal policy with respect to $M$</font>, then  
 >$U_{M}(\varepsilon,\pi,s,T)-\alpha\leq U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$  
 >
->As a result that the reward obtained after the execution of $R_{-max}^{M_{L}}$ on $M$ is no less than the reward btained by $R_{-max}^{M_{L}}$ on $M_{L}$, hence  
+>&#10116;as a result that <font color="#C20000">the reward obtained after the execution of $R_{-max}^{M_{L}}$ on $M$ is no less than the reward btained by $R_{-max}^{M_{L}}$ on $M_{L}$</font>, hence  
 >$U_{M}(\varepsilon,\pi,s,T)-\alpha\leq U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)\leq U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)$  
 >
->We finally go back to $U_{M}(\varepsilon,\pi,s,T)-\alpha\leq U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)$  
+>We finally go back to the left side of $U_{M}(\varepsilon,\pi,s,T)-\alpha\leq U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)$ from the righ side.  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
