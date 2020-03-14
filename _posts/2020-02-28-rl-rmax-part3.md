@@ -54,8 +54,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >Such deduced out policy $R_{-max}^{ML}$ on $M_{L}$ is the RMAX policy!!  
 >
 ><font color="Brown">proof::mjtsai1974</font>  
->* <font color="DeepSkyBlue">[1]</font>
-><font color="OrangeRed">Begin from the difference in between $V_{R_{max}}$ and $Opt(\prod_{M}(\varepsilon,T))$</font>  
+>* <font color="OrangeRed">Begin from the difference in between $V_{R_{max}}$ and $Opt(\prod_{M}(\varepsilon,T))$</font>  
 >&#10112;by artificial design we'd like to have our expected average reward after the execution of <font color="Red">RMAX</font> to be greater than the optimal reward of the optimal policy minus $\alpha$, because that would be a little more close to the optimal policy's reward.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-02-28-rl-rmax-part3-implicit-explicit-exp-lemma-1.png "lemma-1")
 >
@@ -84,8 +83,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 >We next to go back to prove the artificial target that the real reward of <font color="Red">RMAX</font> is within optimal reward minus something, say $\alpha$.   
 >
->* <font color="DeepSkyBlue">[2]</font>
-><font color="OrangeRed">The real reward of <font color="Red">RMAX</font> is within optimal reward minus $\alpha$</font>  
+>* <font color="OrangeRed">The real reward of <font color="Red">RMAX</font> is within optimal reward minus $\alpha$</font>  
 >&#10112;from above deduction, we already have  
 >$\vert U_{M}(\varepsilon,R_{-max}^{M_{L}},s,T)-U_{M}(\varepsilon,\pi,s,T)\vert\leq\alpha$  
 >
@@ -94,8 +92,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 >For the left part, it just proves, and we need to step over to the right side.  
 >
->* <font color="DeepSkyBlue">[3]</font>
-><font color="OrangeRed">Step over to the right side</font>  
+>* <font color="OrangeRed">Step over to the right side</font>  
 >&#10112;since $U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$ is at least as large as $U_{M}(\varepsilon,\pi,s,T)$, see above prerequisites section for detail, therefore  
 >$U_{M}(\varepsilon,\pi,s,T)\leq U_{M_{L}}(\varepsilon,R_{-max}^{M_{L}},s,T)$  
 >
