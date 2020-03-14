@@ -228,6 +228,7 @@ It is an extension of MDP.  Under construction...
 * [Exploit Evaluation By Hoeffding Bounds]({{ site.github.repo }}{{ site.baseurl }}/2019/10/09/rl-exploit-evaluate-by-hoeffding/)
 * [Model-Based RL Algorithm RMAX - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2020/02/08/rl-rmax-part1/)
 * [Model-Based RL Algorithm RMAX - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2020/02/23/rl-rmax-part2/)
+* [Model-Based RL Algorithm RMAX - Part 3]({{ site.github.repo }}{{ site.baseurl }}/2020/02/28/rl-rmax-part3/)
 * Partial Observable Markov Decision Process
 * Q Learning Algorithm
 * Policy Iteration v.s. Value Iteration
