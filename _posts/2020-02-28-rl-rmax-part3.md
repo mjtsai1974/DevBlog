@@ -15,7 +15,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 >If the agent follows an optimal policy with respect to the model it maintains for $T$ steps, it will either attain near-optimal average reward or it will update the statistics for one of the <font color="OrangeRed">unknown</font> states with <font color="OrangeRed">sufficient high probability</font>.  
 >
-><font color="DeepPink">The choice in betwqeen exploration and exploitation is implicit.</font>  
+><font color="DeepPink">The choice in between exploration and exploitation is implicit.</font>  
 
 ### Prerequisites For <font color="#C20000">Implicit Or Explicit Explore</font>
 ><font color="DeepSkyBlue">[1]</font>
