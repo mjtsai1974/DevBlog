@@ -8,7 +8,7 @@ title: Model-Based RL Algorithm RMAX - Part 3
 The major insight behind the <font color="Red">RMAX</font> algorithm is the property that <font color="#C20000">it is always either optimal or it leads to efficient learning</font>.   
 </p>
 
-### The <font color="Red">RMAX</font> Property: <font color="#C20000">Implicit Or Exploit Explore</font>
+### The <font color="Red">RMAX</font> Property: <font color="#C20000">Implicit Explore Or Exploit</font>
 >At each point during the learning process, the agent can either choose <font color="OrangeRed">one</font> of below:  
 >&#10112;to exoplore to other states, <font color="OrangeRed">or</font>  
 >&#10113;to exploit over the same state.
@@ -17,7 +17,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 ><font color="DeepPink">The choice in between exploration and exploitation is implicit.</font>  
 
-### Prerequisites For <font color="#C20000">Implicit Or Explicit Explore</font>
+### Prerequisites For <font color="#C20000">Implicit Explore Or Exploit</font>
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">Basic definition</font>  
 >Before we prove <font color="DeepPink">the choice in between exploration and exploitation is implicit</font>, there shall exist definition of prerequisites to make this theorem of property more concrete:  
@@ -40,7 +40,7 @@ The major insight behind the <font color="Red">RMAX</font> algorithm is the prop
 >
 >Base on all above, we'd like to prove <font color="DeepPink">the nature of implicit or explicit explore will either attains optimal reward or leads to efficient learning.</font>  
 
-### <font color="#C20000">Implicit Or Explicit Explore</font> Lemma
+### <font color="#C20000">Implicit Explore Or Exploit</font> Lemma
 >Construct the scenario by below list conditions:  
 >&#10112;let $M$ and $M_{L}$ be the same models described above  
 >&#10113;let $\rho$ be any arbitrary policy of the adversary  
