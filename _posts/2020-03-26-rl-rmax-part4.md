@@ -5,7 +5,7 @@ title: Model-Based RL Algorithm RMAX - Part 4
 
 ## Prologue To Model-Based RL Algorithm <font color="Red">RMAX</font> - Part 4
 <p class="message">
-The <font color="Red">RMAX</font> theorem guarantees that the learning efficiency is polynomila and would be proved in this article.
+The <font color="Red">RMAX</font> theorem guarantees that the learning efficiency is polynomial and would be proved in this article.
 </p>
 
 ### The <font color="Red">RMAX</font> Theorem
@@ -22,6 +22,23 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >Why the execution of the <font color="Red">RMAX</font> algorithm will attain an expected return of $Opt(\prod_{M}(\varepsilon,T))-2\cdot\varepsilon$?  
 >
 >As a result of the fact that the <font color="#00ADAD">optimal policy</font> is defined on <font color="OrangeRed">$\varepsilon$-return mixing time</font> of $T$, the <font color="#D600D6">real return</font> of the execution of the <font color="Red">RMAX</font> algorithm must be smaller than it, thus we choose it to be $-2\cdot\varepsilon$.  
+
+### <font color="RoyalBlue">Why the RMAX algorithm is polynomial?</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Recap on implicit explore or exploit lemma</font>  
+>The implicit explore or exploit lemma guarantees that the policy generated from the simulated model $M_{L}$ onto the target model $M$ could either leads to $\alpha$ close to optimal reward or explore efficiently with hight probability of at least $\frac {\alpha}{R_{max}}$, where $M_{L}\rightarrow_{\alpha}M$ and $\alpha$=$\frac {\varepsilon}{N\cdot T\cdot R_{max}}$.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Due to $\alpha$ approximation</font>  
+>Since $\alpha$=$\frac {\varepsilon}{N\cdot T\cdot R_{max}}$, thus the $T$ step phases in which we are exploring in the execution of the <font color="Red">RMAX</font> algorithm is polynomial in at least $N$,$T$,$\varepsilon$.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Learn over $N$ states and $k^{2}$ actions</font>  
+>There are totally $N$ states(or stage games) in model $M$ with $k$ actions for the agent and the adversary, therefore, we have a polynomial number of parameters to learn, say $N$ and $k$.  
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">The probability to update the unknown information</font>  
+>The probability the <font color="Red">RMAX</font> alrorithm to turn a state from unknown to known or to update statistics information is polynomial in $\varepsilon$,$T$,$N$.  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
