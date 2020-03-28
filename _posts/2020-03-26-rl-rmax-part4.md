@@ -39,6 +39,14 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 ><font color="DeepSkyBlue">[4]</font>
 ><font color="OrangeRed">The probability to update the unknown information</font>  
 >The probability the <font color="Red">RMAX</font> alrorithm to turn a state from unknown to known or to update statistics information is polynomial in $\varepsilon$,$T$,$N$.  
+>
+><font color="DeepSkyBlue">[Notes]</font>
+><font color="OrangeRed">A brief summary</font>  
+>Base on all of above, by sampling in a large number of times, the implicit explore or exploit lemma guarantees the least probabilistic exploration, and we can ensure that the fail rate in attaining the optimal reward is quiet small, say $\delta$.  
+>
+>The <font color="Red">RMAX</font> algorithm claims that we can get near optimal reward with probability $1-\delta$ by sampling a sufficient large number of trials over the same state, which is polynomial in $\frac {1}{\delta}$.  
+>
+>Watch out that each trial contains either exploration or exploitation, next to prove this theorem.  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
