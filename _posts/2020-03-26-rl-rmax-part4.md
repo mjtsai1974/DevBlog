@@ -30,7 +30,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Due to $\alpha$ approximation</font>  
->Since $\alpha$=$\frac {\varepsilon}{N\cdot T\cdot R_{max}}$, thus the $T$ step phases in which we are exploring in the execution of the <font color="Red">RMAX</font> algorithm is polynomial in $N$,$T$,$\varepsilon$.  
+>Since $\alpha$=$\frac {\varepsilon}{N\cdot T\cdot R_{max}}$, the $T$ step phases in which we are exploring in the execution of the <font color="Red">RMAX</font> algorithm is polynomial in $N$,$T$,$\varepsilon$.  
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Learn over $N$ states and $k^{2}$ actions</font>  
