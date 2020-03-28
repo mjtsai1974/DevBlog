@@ -42,7 +42,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >
 ><font color="DeepSkyBlue">[Notes]</font>
 ><font color="OrangeRed">A brief summary</font>  
->Base on all of above, by sampling in a large number of times, the implicit explore or exploit lemma guarantees the least probabilistic exploration, and we can ensure that <font color="OrangeRed">the fail rate in attaining the optimal reward is quiet small</font>, say $\delta$.  
+>Base on all of above, <font color="OrangeRed">by sampling in a large number of times</font>, the implicit explore or exploit lemma guarantees <font color="DeepSkyBlue">the least probabilistic exploration</font>, and we can ensure that <font color="OrangeRed">the fail rate in attaining the optimal reward is quiet small</font>, say $\delta$.  
 >
 >The <font color="Red">RMAX</font> algorithm claims that we can get near optimal reward with probability $1-\delta$ <font color="OrangeRed">by sampling a sufficient large number of trials over the same state</font>, which is polynomial in $\frac {1}{\delta}$.  
 >
