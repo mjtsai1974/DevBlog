@@ -48,6 +48,13 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >
 >Watch out that <font color="OrangeRed">each trial contains either exploration or exploitation</font>, next to prove this theorem.  
 
+### The <font color="Red">RMAX</font> Theorem Proof::The Accuracy In The Transitive Probability Estimate
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The accuracy in the estimate of transitive probability</font>  
+>First, we'd like to prove that the estimate of transitive probability in the implicit explore or exploit is accurate.  
+>
+>The majority focus on <font color="Red">the number of trials in this same state</font>, that is <font color="RoyalBlue">how many times of state transition in this same state for explore or exploit could we believe that the estimated transitive probability is accurate?</font>  
+
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
 
