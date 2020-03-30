@@ -62,7 +62,12 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >&#10112;suppose there exists such transitive probability $p$ on $G_{i}$, it could not be guaranteed with probability $1$, that is $0\leq p\leq 1$.  
 >&#10113;totally, there are $N\cdot k^{2}$ such probabilities, for we have $N$ states, with agent and adversary each having $k$ actions.  
 >&#10114;treat the random variable $X_{i}$ to be the distinct trial on state $G_{i}$, with above denoted transitive probability $p$ to transite from state $G_{i^{\'}}$, that is to say the value of $X_{1}$=$1$, iff it transits from $G_{i}$ to $G_{i^{\'}}$ with probability $p$; otherwise, the value of $X_{1}$=$0$, iff it just revisits over the same state $G_{i}$ with probability $1-p$.  
->&#10115;  
+>&#10115;let $Z_{i}$=$X_{i}-p$, then  
+>$E\lbrack Z_{i}\rbrack$  
+>=$E\lbrack X_{i}-p\rbrack$  
+>=$E\lbrack X_{i}\rbrack$-$p$  
+>=$1\cdot p$-$p$  
+>=$0$, and $\vert Z_{i}\vert\leq 1$  
 >&#10116;  
 
 ### Addendum
