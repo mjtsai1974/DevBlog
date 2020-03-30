@@ -54,6 +54,16 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >First, we'd like to prove that the estimate of transitive probability in the implicit explore or exploit is accurate.  
 >
 >The majority focus on <font color="Red">the number of trials in this same state</font>, that is <font color="RoyalBlue">how many times of state transition in this same state for explore or exploit could we believe that the estimated transitive probability is accurate?</font>  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="Red">By sampling in a large number of trials over the same state</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-03-26-rl-rmax-part4-trials-over-same-state.png "trials over same state")
+>How many number of trials on $G_{i}$(<font color="Red">in this same state</font>) could we update the transitive statistics of $G_{i}$?  
+>&#10112;suppose there exists such transitive probability $p$ on $G_{i}$, it could not be guaranteed with probability $1$, that is $0\leq p\leq 1$.  
+>&#10113;totally, there are $N\cdot k^{2}$ such probabilities, for we have $N$ states, with agent and adversary each having $k$ actions.  
+>&#10114;treat the random variable $X_{i}$ to be the distinct trial on state $G_{i}$, with above denoted transitive probability $p$ to transite from state $G_{i^{\'}}$, that is to say the value of $X_{1}$=$1$, iff it transits from $G_{i}$ to $G_{i^{\'}}$ with probability $p$; otherwise, the value of $X_{1}$=$0$, iff it just revisits over the same state $G_{i}$ with probability $1-p$.  
+>&#10115;  
+>&#10116;  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
