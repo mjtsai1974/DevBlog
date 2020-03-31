@@ -79,10 +79,10 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >$P(\sum_{i=1}^{K_{1}}Z_{i}>K{1}^{\frac {2}{3}})<e^{-\frac {a^{\frac {1}{3}}}{2}}$  
 >The [RMAX paper]((http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)) would like to restrict the total loss(or bias) in the estimate of transitive probability $p$ on $G_{i}$ over $K_{1}$ times to be less than $K_{1}^{\frac {2}{3}}$ and such error probability is upper bounded by $e^{-\frac {a^{\frac {1}{3}}}{2}}$.  
 >* Inequality symmetry and regularization 
->if we take $Z_{i}^{\'}$=$p-X_{i}$, then  
->$P(\sum_{i=1}^{K_{1}}Z_{i}^{\'}>K{1}^{\frac {2}{3}})<e^{-\frac {a^{\frac {1}{3}}}{2}}$,  
+>if we take $Z_{i}^{\'}$=$p-X_{i}$,  
+>then $P(\sum_{i=1}^{K_{1}}Z_{i}^{\'}>K{1}^{\frac {2}{3}})<e^{-\frac {a^{\frac {1}{3}}}{2}}$,  
 >therefore, $P(\vert\sum_{i=1}^{K_{1}}(X_{i}-p)\vert>K{1}^{\frac {2}{3}})<2\cdot e^{-\frac {a^{\frac {1}{3}}}{2}}$ by symmetry,  
->then, $P(\vert\frac {\sum_{i=1}^{K_{1}}X_{i}}{K_{1}}-p\vert>K{1}^{-\frac {1}{3}})<2\cdot e^{-\frac {a^{\frac {1}{3}}}{2}}$.  
+>finally, $P(\vert\frac {\sum_{i=1}^{K_{1}}X_{i}}{K_{1}}-p\vert>K{1}^{-\frac {1}{3}})<2\cdot e^{-\frac {a^{\frac {1}{3}}}{2}}$.  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
