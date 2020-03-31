@@ -64,6 +64,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >&#10114;treat the random variable <font color="DeepSkyBlue">$X_{i}$</font> to be <font color="DeepSkyBlue">the distinct trial on state $G_{i}$</font>, with above denoted transitive probability $p$ to transite from state $G_{i}$ to $G_{i^{\'}}$, that is to say  
 >* the value of $X_{1}$=$1$, iff it transits from $G_{i}$ to $G_{i^{\'}}$ with probability $p$; otherwise, 
 >the value of $X_{1}$=$0$, iff it just revisits over the same state $G_{i}$ with probability $1-p$.  
+>
 >&#10115;let $Z_{i}$=$X_{i}-p$, then  
 >$E\lbrack Z_{i}\rbrack$  
 >=$E\lbrack X_{i}-p\rbrack$  
