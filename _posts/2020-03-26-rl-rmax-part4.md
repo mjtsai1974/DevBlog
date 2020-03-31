@@ -62,7 +62,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >&#10112;suppose there exists such transitive probability $p$ on $G_{i}$, <font color="RosyBrown">it could not be guaranteed with probability $1$</font>, that is $0\leq p\leq 1$.  
 >&#10113;totally, there are $N\cdot k^{2}$ such probabilities, for we have $N$ states, with agent and adversary each having $k$ actions.  
 >&#10114;treat the random variable <font color="DeepSkyBlue">$X_{i}$</font> to be <font color="DeepSkyBlue">the distinct trial on state $G_{i}$</font>, with above denoted transitive probability $p$ to transite from state $G_{i}$ to $G_{i^{\'}}$, that is to say  
->* the value of $X_{1}$=$1$, iff it transits from $G_{i}$ to $G_{i^{\'}}$ with probability $p$; otherwise, 
+>* The value of $X_{1}$=$1$, iff it transits from $G_{i}$ to $G_{i^{\'}}$ with probability $p$; otherwise, 
 >the value of $X_{1}$=$0$, iff it just revisits over the same state $G_{i}$ with probability $1-p$.  
 >
 >&#10115;let $Z_{i}$=$X_{i}-p$, then  
@@ -71,6 +71,10 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >=$E\lbrack X_{i}\rbrack$-$p$  
 >=$1\cdot p$-$p$  
 >=$0$, and $\vert Z_{i}\vert\leq 1$  
+>* By [Chernoff Bounds For Bernoulli Random Variable]({{ site.baseurl }}/2019/12/09/prob-bound-chernoff-bound-bernoulli/), we have  
+>$P(\sum_{i=1}^{n}Z_{i}>a)<e^{-\frac {a^{2}}{2\cdot n}}$,  
+>where $Z_{1}$,$Z_{2}$,...,$Z_{n}$ are the $n$ distinct independent trials on state $G_{i}$, and $a$ is the error term, such inequality is to ask for the error probability that after $n$ independent trials on state $G_{i}$, the total estimate bias is greater than the error term $a$.  This error probability is upper bounded by $e^{-\frac {a^{2}}{2\cdot n}}$.  
+>
 >&#10116;  
 
 ### Addendum
