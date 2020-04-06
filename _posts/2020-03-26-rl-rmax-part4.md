@@ -71,9 +71,8 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >=$E\lbrack X_{i}\rbrack$-$p$  
 >=$1\cdot p$-$p$  
 >=$0$, and $\vert Z_{i}\vert\leq 1$  
->* By [Chernoff Bounds For Bernoulli Random Variable]({{ site.baseurl }}/2019/12/09/prob-bound-chernoff-bound-bernoulli/), we have  
->$P(\sum_{i=1}^{n}Z_{i}>a)<e^{-\frac {a^{2}}{2\cdot n}}$,  
->where $Z_{1}$,$Z_{2}$,...,$Z_{n}$ are the $n$ distinct independent trials on state $G_{i}$, and $a$ is the error term, such inequality is to ask for the error probability that after $n$ independent trials on state $G_{i}$, the total estimate bias is greater than the error term $a$.  This error probability is upper bounded by $e^{-\frac {a^{2}}{2\cdot n}}$.  
+>* By [Chernoff Bounds For Bernoulli Random Variable]({{ site.baseurl }}/2019/12/09/prob-bound-chernoff-bound-bernoulli/)  
+>We have $P(\sum_{i=1}^{n}Z_{i}>a)<e^{-\frac {a^{2}}{2\cdot n}}$, where $Z_{1}$,$Z_{2}$,...,$Z_{n}$ are the $n$ distinct independent trials on state $G_{i}$, and $a$ is the error term, such inequality is to ask for the error probability that after $n$ independent trials on state $G_{i}$, the total estimate bias is greater than the error term $a$.  This error probability is upper bounded by $e^{-\frac {a^{2}}{2\cdot n}}$.  
 >
 >&#10116;if we perform the test on this state $G_{i}$ for $K_{1}$ times, then we have the inequality holds  
 >$P(\sum_{i=1}^{K_{1}}Z_{i}>K_{1}^{\frac {2}{3}})<e^{-\frac {a^{\frac {1}{3}}}{2}}$  
