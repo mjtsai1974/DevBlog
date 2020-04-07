@@ -72,16 +72,16 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >=$1\cdot p$-$p$  
 >=$0$, and $\vert Z_{i}\vert\leq 1$  
 >* By [Chernoff Bounds For Bernoulli Random Variable]({{ site.baseurl }}/2019/12/09/prob-bound-chernoff-bound-bernoulli/)  
->We have $P(\sum_{i=1}^{n}Z_{i}>a)<e^{-\frac {a^{2}}{2\cdot n}}$, where $Z_{1}$,$Z_{2}$,...,$Z_{n}$ are the $n$ distinct independent trials on state $G_{i}$, and $a$ is the error term, such inequality is to ask for the error probability that after $n$ independent trials on state $G_{i}$, the total estimate bias is greater than the error term $a$.  This error probability is upper bounded by $e^{-\frac {a^{2}}{2\cdot n}}$.  
+>We have $P(\sum_{i=1}^{n}Z_{i}>a)<e^{-\frac {K_{1}^{2}}{2\cdot n}}$, where $Z_{1}$,$Z_{2}$,...,$Z_{n}$ are the $n$ distinct independent trials on state $G_{i}$, and $a$ is the error term, such inequality is to ask for the error probability that after $n$ independent trials on state $G_{i}$, the total estimate bias is greater than the error term $a$.  This error probability is upper bounded by $e^{-\frac {a^{2}}{2\cdot n}}$.  
 >
 >&#10116;if we perform the test on this state $G_{i}$ for $K_{1}$ times, then we have the inequality holds  
->$P(\sum_{i=1}^{K_{1}}Z_{i}>K_{1}^{\frac {2}{3}})<e^{-\frac {a^{\frac {1}{3}}}{2}}$  
->The [RMAX paper]((http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)) would like to restrict the total loss(or bias) in the estimate of transitive probability $p$ on $G_{i}$ over $K_{1}$ times to be less than $K_{1}^{\frac {2}{3}}$ and such error probability is upper bounded by $e^{-\frac {a^{\frac {1}{3}}}{2}}$.  
+>$P(\sum_{i=1}^{K_{1}}Z_{i}>K_{1}^{\frac {2}{3}})<e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}$  
+>The [RMAX paper]((http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)) would like to restrict the total loss(or bias) in the estimate of transitive probability $p$ on $G_{i}$ over $K_{1}$ times to be less than $K_{1}^{\frac {2}{3}}$ and such error probability is upper bounded by $e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}$.  
 >* Inequality symmetry and regularization  
 >If we take $Z_{i}^{\'}$=$p-X_{i}$,  
->then $P(\sum_{i=1}^{K_{1}}Z_{i}^{\'}>K_{1}^{\frac {2}{3}})<e^{-\frac {a^{\frac {1}{3}}}{2}}$,  
+>then $P(\sum_{i=1}^{K_{1}}Z_{i}^{\'}>K_{1}^{\frac {2}{3}})<e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}$,  
 >therefore, $P(\vert\sum_{i=1}^{K_{1}}(X_{i}-p)\vert>K_{1}^{\frac {2}{3}})<2\cdot e^{-\frac {a^{\frac {1}{3}}}{2}}$ by symmetry,  
->finally, $P(\vert\frac {\sum_{i=1}^{K_{1}}X_{i}}{K_{1}}-p\vert>K_{1}^{-\frac {1}{3}})<2\cdot e^{-\frac {a^{\frac {1}{3}}}{2}}$.  
+>finally, $P(\vert\frac {\sum_{i=1}^{K_{1}}X_{i}}{K_{1}}-p\vert>K_{1}^{-\frac {1}{3}})<2\cdot e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}$.  
 >
 >&#10117;back to our departuring point that the <font color="Red">RMAX</font> algorithm would like to attain/get close to the optimal reward with probability $1-\delta$, where $\delta$ is the error probability.  
 >* To limit the probabilistic failure of the estimated transitive probability  
