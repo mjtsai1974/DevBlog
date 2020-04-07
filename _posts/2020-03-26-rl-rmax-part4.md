@@ -94,8 +94,8 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >, and we can choose $K_{1}>-6\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}})$ to narrow down the interval of probabilistic estimation failure.  
 >
 >&#10119;expand from $K_{1}^{-\frac {1}{3}}<\frac {\varepsilon}{2\cdot N\cdot T\cdot R_{max}}$  
->$\Rightarrow K_{1}>(\frac {2/cdot N/cdot T/cdot R_{max}}{\varepsilon})^{3}$  
->, and $K_{1}>(\frac {4/cdot N/cdot T/cdot R_{max}}{\varepsilon})^{3}$ holds for it.  
+>$\Rightarrow K_{1}>(\frac {2\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3}$  
+>, and $K_{1}>(\frac {4\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3}$ holds for it.  
 >
 >Finally, $K_{1}$=$max((\frac {4\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3},-6\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}}))+1$, after this $K_{1}$ trials over the same state, we are confident to to turn a state from unknown to known or to update its statistics information, we believe that the estimated transitive probability is accurate.  
 
