@@ -97,7 +97,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >$\Rightarrow K_{1}>(\frac {2/cdot N/cdot T/cdot R_{max}}{\varepsilon})^{3}$  
 >, and $K_{1}>(\frac {4/cdot N/cdot T/cdot R_{max}}{\varepsilon})^{3}$ holds for it.  
 >
->Finally, $K_{1}$=$max((\frac {4\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3},-6\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}}))+1$, after this $K_{1}$ trials over the same state, we are confident to to turn a state from unknown to known or to update its statistics information.  
+>Finally, $K_{1}$=$max((\frac {4\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3},-6\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}}))+1$, after this $K_{1}$ trials over the same state, we are confident to to turn a state from unknown to known or to update its statistics information, we believe that the estimated transitive probability is accurate.  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
