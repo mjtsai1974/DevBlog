@@ -89,7 +89,15 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >* To limit the total estimated loss after $K_{1}$ trials  
 >In the paper proof, we choose the error term to be expressed as $K_{1}^{-\frac {1}{3}}<\frac {\varepsilon}{2\cdot N\cdot T\cdot R_{max}}$, then the total estimated loss must be less than $\varepsilon$.  
 >
->&#10118;
+>&#10118;expand from $2\cdot e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}<\frac {\delta}{3\cdot N\cdot k^{2}}$  
+>$\Rightarrow K_{1}>-8\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}})$  
+>, and we can choose $K_{1}>-6\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}})$ to narrow down the interval of probabilistic estimation failure.  
+>
+>&#10119;expand from $K_{1}^{-\frac {1}{3}}<\frac {\varepsilon}{2\cdot N\cdot T\cdot R_{max}}$  
+>$\Rightarrow K_{1}>(\frac {2/cdot N/cdot T/cdot R_{max}}{\varepsilon})^{3}$  
+>, and $K_{1}>(\frac {4/cdot N/cdot T/cdot R_{max}}{\varepsilon})^{3}$ holds for it.  
+>
+>Finally, $K_{1}$=$max((\frac {4\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3},-6\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}}))+1$, after this $K_{1}$ trials over the same state, we are confident to to turn a state from unknown to known or to update its statistics information.  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
