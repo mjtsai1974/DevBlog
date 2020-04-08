@@ -92,6 +92,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >&#10118;expand from $2\cdot e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}<\frac {\delta}{3\cdot N\cdot k^{2}}$  
 >$\Rightarrow K_{1}>-8\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}})$  
 >, and we can choose $K_{1}>-6\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}})$ to narrow down the interval of probabilistic estimation failure.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-03-26-rl-rmax-part4-trials-over-same-state-num.png "trials over same state")
 >
 >&#10119;expand from $K_{1}^{-\frac {1}{3}}<\frac {\varepsilon}{2\cdot N\cdot T\cdot R_{max}}$  
 >$\Rightarrow K_{1}>(\frac {2\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3}$  
