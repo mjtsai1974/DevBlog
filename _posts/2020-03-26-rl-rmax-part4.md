@@ -86,7 +86,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >&#10117;back to our departuring point that the <font color="Red">RMAX</font> algorithm would like to attain/get close to the optimal reward with probability $1-\delta$, where $\delta$ is the error probability.  
 >* <font color="OrangeRed">To limit the probabilistic failure of the estimated transitive probability</font>  
 >We want this probabilistic failure smaller than $\delta$, in the paper proof, it was upper bounded by $\frac {\delta}{3\cdot N\cdot k^{2}}$, this would be definitely be smaller than $\delta$, by taking $2\cdot e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}<\frac {\delta}{3\cdot N\cdot k^{2}}$.  
->* To limit the total estimated loss after $K_{1}$ trials</font>  
+>* <font color="OrangeRed">To limit the total estimated loss after $K_{1}$ trials</font>  
 >In the paper proof, we choose the error term to be expressed as $K_{1}^{-\frac {1}{3}}<\frac {\varepsilon}{2\cdot N\cdot T\cdot R_{max}}$, then the total estimated loss must be less than $\varepsilon$.  
 >
 >&#10118;expand from $2\cdot e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}<\frac {\delta}{3\cdot N\cdot k^{2}}$  
