@@ -77,16 +77,16 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >&#10116;if we perform the test on this state $G_{i}$ for $K_{1}$ times, then we have the inequality holds  
 >$P(\sum_{i=1}^{K_{1}}Z_{i}>K_{1}^{\frac {2}{3}})<e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}$  
 >The [RMAX paper]((http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)) would like to restrict the total loss(or bias) in the estimate of transitive probability $p$ on $G_{i}$ over $K_{1}$ times to be less than $K_{1}^{\frac {2}{3}}$ and such error probability is upper bounded by $e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}$.  
->* Inequality symmetry and regularization  
+>* <font color="OrangeRed">Inequality symmetry and regularization</font>  
 >If we take $Z_{i}^{\'}$=$p-X_{i}$,  
 >then $P(\sum_{i=1}^{K_{1}}Z_{i}^{\'}>K_{1}^{\frac {2}{3}})<e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}$,  
 >therefore, $P(\vert\sum_{i=1}^{K_{1}}(X_{i}-p)\vert>K_{1}^{\frac {2}{3}})<2\cdot e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}$ by symmetry,  
 >finally, $P(\vert\frac {\sum_{i=1}^{K_{1}}X_{i}}{K_{1}}-p\vert>K_{1}^{-\frac {1}{3}})<2\cdot e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}$.  
 >
 >&#10117;back to our departuring point that the <font color="Red">RMAX</font> algorithm would like to attain/get close to the optimal reward with probability $1-\delta$, where $\delta$ is the error probability.  
->* To limit the probabilistic failure of the estimated transitive probability  
+>* <font color="OrangeRed">To limit the probabilistic failure of the estimated transitive probability</font>  
 >We want this probabilistic failure smaller than $\delta$, in the paper proof, it was upper bounded by $\frac {\delta}{3\cdot N\cdot k^{2}}$, this would be definitely be smaller than $\delta$, by taking $2\cdot e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}<\frac {\delta}{3\cdot N\cdot k^{2}}$.  
->* To limit the total estimated loss after $K_{1}$ trials  
+>* To limit the total estimated loss after $K_{1}$ trials</font>  
 >In the paper proof, we choose the error term to be expressed as $K_{1}^{-\frac {1}{3}}<\frac {\varepsilon}{2\cdot N\cdot T\cdot R_{max}}$, then the total estimated loss must be less than $\varepsilon$.  
 >
 >&#10118;expand from $2\cdot e^{-\frac {K_{1}^{\frac {1}{3}}}{2}}<\frac {\delta}{3\cdot N\cdot k^{2}}$  
@@ -98,7 +98,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >$\Rightarrow K_{1}>(\frac {2\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3}$  
 >, and $K_{1}>(\frac {4\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3}$ holds for it.  
 >
->Finally, $K_{1}$=$max((\frac {4\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3},-6\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}}))+1$, after this $K_{1}$ trials over the same state, we are confident to to turn a state from unknown to known or to update its statistics information, we believe that the estimated transitive probability is accurate.  
+>Finally, $K_{1}$=$max((\frac {4\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3},-6\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}}))+1$, <font color="DeepPink">after this $K_{1}$ trials over the same state, we are confident to to turn a state from unknown to known or to update its statistics information, we believe that the estimated transitive probability is accurate</font>.  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
