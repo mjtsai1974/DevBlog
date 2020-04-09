@@ -107,8 +107,8 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >
 >&#10113;let $Z_{i}$=$X_{i}-\frac {\alpha}{R_{max}}$ and $Z_{i^{\'}}$=$\frac {\alpha}{R_{max}-X_{i}}$, then $E\lbrack Z_{i}\rbrack$=$0$ and $E\lbrack Z_{i^{\'}}\rbrack$=$0$ respectively.  
 >* By [Chernoff Bounds For Bernoulli Random Variable]({{ site.baseurl }}/2019/12/09/prob-bound-chernoff-bound-bernoulli/)  
->$P(\vert\sum_{i=1}^{K_{2}}(X_{i}-\frac {\alpha}{R_{max}})>K_{2}^{\frac {1}{3}})<2\cdot e^{-\frac {K_{2}^{\frac {1}{3}}}{2}}$  
->$\Rightarrow$  
+>$P(\vert\sum_{i=1}^{K_{2}}(X_{i}-\frac {\alpha}{R_{max}})\vert>K_{2}^{\frac {1}{3}})<2\cdot e^{-\frac {K_{2}^{\frac {1}{3}}}{2}}$  
+>$\Rightarrow P(\vert\sum_{i=1}^{K_{2}}X_{i}-\frac {K_{2}\cdot\alpha}{R_{max}}\vert>K_{2}^{\frac {1}{3}})<2\cdot e^{-\frac {K_{2}^{\frac {1}{3}}}{2}}$  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
