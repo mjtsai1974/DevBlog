@@ -48,10 +48,10 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >
 >Watch out that <font color="OrangeRed">each trial contains either exploration or exploitation</font>, next to prove this theorem.  
 
-### The <font color="Red">RMAX</font> Theorem Proof::The Accuracy In The Transitive Probability Estimate
+### The <font color="Red">RMAX</font> Theorem Proof::1
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">The accuracy in the estimate of transitive probability</font>  
->First, we'd like to prove that the estimate of transitive probability in the implicit explore or exploit is accurate.  
+>First, we'd like to prove that <font color="OrangeRed">the estimate of transitive probability in the implicit explore or exploit is accurate</font>.  
 >
 >The majority focus on <font color="Red">the number of trials in this same state</font>, that is <font color="RoyalBlue">how many times of state transition in this same state for explore or exploit could we believe that the estimated transitive probability is accurate?</font>  
 >
@@ -99,6 +99,16 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >, and $K_{1}>(\frac {4\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3}$ holds for it.  
 >
 >Finally, $K_{1}$=$max((\frac {4\cdot N\cdot T\cdot R_{max}}{\varepsilon})^{3},-6\cdot ln^{3}(\frac {\delta}{6\cdot N\cdot k^{2}}))+1$, <font color="DeepPink">after this $K_{1}$ trials over the same state, we are confident to to turn a state from unknown to known or to update its statistics information, we believe that the estimated transitive probability is accurate</font>.  
+
+### The <font color="Red">RMAX</font> Theorem Proof::2
+>The implicit explore or exploit lemma yields a transitive probability of $\frac {\alpha}{R_{max}}$, we next show that <font color="DeepSkyBlue">after pure exploration</font> over $K_{2}$ trials on this same state $G_{i}$, we can obtain $K_{1}$ required visits on $G_{i}$.  
+>
+>&#10112;let $X_i$ be the random variable of indicator for each trial, whose value is $1$ iff it transits from $G_{i}$ to $G_{i^{\'}}$; or $0$ iff it justs exploits in the same $G_{i}$.  
+>
+>&#10113;let $Z_{i}$=$X_{i}-\frac {\alpha}{R_{max}}$ and $Z_{i^{\'}}$=$\frac {\alpha}{R_{max}-X_{i}}$, then $E\lbrack Z_{i}\rbrack$=$0$ and $E\lbrack Z_{i^{\'}}\rbrack$=$0$ respectively.  
+>* By [Chernoff Bounds For Bernoulli Random Variable]({{ site.baseurl }}/2019/12/09/prob-bound-chernoff-bound-bernoulli/)  
+>$P(\vert\sum_{i=1}^{K_{2}}(X_{i}-\frac {\alpha}{R_{max}})>K_{2}^{\frac {1}{3}})<2\cdot e^{-\frac {K_{2}^{\frac {1}{3}}}{2}}$  
+>$\Rightarrow$  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
