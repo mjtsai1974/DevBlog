@@ -109,6 +109,13 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >* By [Chernoff Bounds For Bernoulli Random Variable]({{ site.baseurl }}/2019/12/09/prob-bound-chernoff-bound-bernoulli/)  
 >$P(\vert\sum_{i=1}^{K_{2}}(X_{i}-\frac {\alpha}{R_{max}})\vert>K_{2}^{\frac {1}{3}})<2\cdot e^{-\frac {K_{2}^{-\frac {1}{3}}}{2}}$  
 >$\Rightarrow P(\vert\sum_{i=1}^{K_{2}}X_{i}-\frac {K_{2}\cdot\alpha}{R_{max}}\vert>K_{2}^{\frac {1}{3}})<2\cdot e^{-\frac {K_{2}^{-\frac {1}{3}}}{2}}$  
+>* To limit the error terms  
+>Take $2\cdot e^{-\frac {K_{2}^{-\frac {1}{3}}}{2}}<\frac {\delta}{3\cdot N\cdot k^{2}}$  
+>, and take $\frac {K_{2}\cdot\alpha}{R_max}+K_{2}^{\frac {1}{3}}>K_{1}\cdot N\cdot k^{2}$  
+>, for totally we have $N\cdot k^{2}\cdot K_{1}$ number of visits to unknown slots.  
+>These guarantee that the fail probability less than $\frac {\delta}{3}$, which is much smaller than $\delta$.  
+>* <font color="RoyalBlue">Why $K_{2}^{\frac {1}{3}}$ as the error term instead of $K_{2}^{\frac {2}{3}}$?</font>  
+>The design of this proof is to find the least $K_{2}$ pure exploration trials, thus guarantees that we could have $K_{1}$ visits on this same state.  Since $K_{1}$ contains exploration and exploitation, $K_{2}\leq K_{1}$, therefore, the error term is expressed in terms of $K_{2}^{\frac {1}{3}}$, rather than $K_{2}^{\frac {2}{3}}$!!  We want a smaller $K_{2}<K_{1}$ and $K_{2}^{\frac {1}{3}}<K_{1}^{\frac {2}{3}}$.  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
