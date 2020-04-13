@@ -122,13 +122,21 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >* The actual return may be lower
 >Since the actual reward after execution of the <font color="Red">RMAX</font> algorithm would be some distance from optimal reward, it is at most $Opt(\Prod_{M}(T,\varepsilon))-\varepsilon$, it is lower than $Opt(\Prod_{M}(T,\varepsilon))-\varepsilon$, which is plausible.  If we prevent it from exploring, we are at least staying in some local suboptimal.  
 >* We want it to be more closer
->To align the design in above section, we choose the real return of exploitation after $T$-step iterations to be $Opt(\Prod_{M}(T,\varepsilon))-\frac {3}{2}\varepsilon$, then it is $\frac {1}{2}\varepsilon$ close to the optimal reward $Opt(\Prod_{M}(T,\varepsilon))-\varepsilon$.  The <font color="Red">RMAX</font> paper upper bound the failure probability by $\frac {\delta}{3}$.  
+>To align the design in above section, we choose the real return of exploitation after $T$-step iterations to be $Opt(\prod_{M}(T,\varepsilon))-\frac {3}{2}\varepsilon$, then it is $\frac {1}{2}\varepsilon$ close to the optimal reward $Opt(\Prod_{M}(T,\varepsilon))-\varepsilon$.  The <font color="Red">RMAX</font> paper upper bound the failure probability by $\frac {\delta}{3}$.  
 >
 >&#10112;take $X_{i}$ to be the actual reward obtained in each trial  
 >&#10113;treat $\mu$ as the optimal reward  
 >&#10114;then by $y_{i}$=$\frac {\mu-X_{i}}{R_{max}}$ could we stablize the standard deviation, since it is bounded by $R_{max}$  
->&#10115;suppose $Z$=$M\cdot N\cdot T$, where $M>0$, after $Z$ exploitations, the failure probability that the total loss greater than $Z^{\frac {2}{3}}$  
->
+>&#10115;suppose $Z$=$M\cdot N\cdot T$, where $M>0$, after $Z$ exploitations, the failure probability that the total loss greater than $Z^{\frac {2}{3}}$ is upper bounded by $e^{-\frac {Z^{\frac {1}{3}}}{2}}$  
+>* By [Chernoff Bounds For Bernoulli Random Variable]({{ site.baseurl }}/2019/12/09/prob-bound-chernoff-bound-bernoulli/)  
+>$P(\sum_{i=1}^{Z}Y_{i}>Z^{\frac {2}{3}})<e^{-\frac {Z^{\frac {1}{3}}}{2}}$  
+>$\Rightarrow P(\sum_{i=1}^{Z}\frac {\mu-X_{i}}{R_{max}}>Z^{\frac {2}{3}})<e^{-\frac {Z^{\frac {1}{3}}}{2}}$  
+>$\Rightarrow P(\sum_{i=1}^{Z}\frac {\mu-X_{i}}{Z\cdot R_{max}}>Z^{-\frac {1}{3}})<e^{-\frac {Z^{\frac {1}{3}}}{2}}$  
+>$\Rightarrow P(\sum_{i=1}^{Z}\frac {\mu-X_{i}}{Z}>\frac {R_{max}}{Z^{\frac {1}{3}}})<e^{-\frac {Z^{\frac {1}{3}}}{2}}$  
+>&#10116;by choosing $M$ such that  
+>$\frac {R_{max}}{Z^{\frac {1}{3}}}<\frac {\varepsilon}{2}$ and $e^{-\frac {Z^{\frac {1}{3}}}{2}}<\frac {\delta}{3}$  
+>$\Rightarrow Z>(\frac {2\cdot R_Max}{\varepsilon})^{3}$ and $Z>6\cdot ln^{3}(\frac {\delta}{3})$,  
+>We thus have the failure probability less than $\frac {\delta}{3}$ for the real return obtained is $\frac {\varepsilon}{2}$ far away from the optimal reward.  
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
