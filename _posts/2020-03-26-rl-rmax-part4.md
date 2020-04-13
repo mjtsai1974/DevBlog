@@ -116,6 +116,20 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >* <font color="RoyalBlue">Why $K_{2}^{\frac {1}{3}}$ as the error term instead of $K_{2}^{\frac {2}{3}}$?</font>  
 >The design of this proof is to find the least $K_{2}$ pure exploration trials, thus guarantees that we could have $K_{1}$ visits on this same state.  Since $K_{1}$ contains exploration and exploitation, $K_{2}\leq K_{1}$, therefore, the error term is expressed in terms of $K_{2}^{\frac {1}{3}}$, rather than $K_{2}^{\frac {2}{3}}$!!  We want a smaller $K_{2}<K_{1}$ and $K_{2}^{\frac {1}{3}}<K_{1}^{\frac {2}{3}}$.  
 
+### The <font color="Red">RMAX</font> Theorem Proof::3
+>This section discuss the scenario that we perform $T$-step iterations without learning, that is to say it exploits over $T$ steps, and the optimal expected reward would be $Opt(\Prod_{M}(T,\varepsilon))-\varepsilon$.  
+>
+>* The actual return may be lower
+>Since the actual reward after execution of the <font color="Red">RMAX</font> algorithm would be some distance from optimal reward, it is at most $Opt(\Prod_{M}(T,\varepsilon))-\varepsilon$, it is lower than $Opt(\Prod_{M}(T,\varepsilon))-\varepsilon$, which is plausible.  If we prevent it from exploring, we are at least staying in some local suboptimal.  
+>* We want it to be more closer
+>To align the design in above section, we choose the real return of exploitation after $T$-step iterations to be $Opt(\Prod_{M}(T,\varepsilon))-\frac {3}{2}\varepsilon$, then it is $\frac {1}{2}\varepsilon$ close to the optimal reward $Opt(\Prod_{M}(T,\varepsilon))-\varepsilon$.  The <font color="Red">RMAX</font> paper upper bound the failure probability by $\frac {\delta}{3}$.  
+>
+>&#10112;take $X_{i}$ to be the actual reward obtained in each trial  
+>&#10113;treat $\mu$ as the optimal reward  
+>&#10114;then by $y_{i}$=$\frac {\mu-X_{i}}{R_{max}}$ could we stablize the standard deviation, since it is bounded by $R_{max}$  
+>&#10115;suppose $Z$=$M\cdot N\cdot T$, where $M>0$, after $Z$ exploitations, the failure probability that the total loss greater than $Z^{\frac {2}{3}}$  
+>
+
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
 
