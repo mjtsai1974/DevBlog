@@ -117,12 +117,12 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >The design of this proof is to find the least $K_{2}$ pure exploration trials, thus guarantees that we could have $K_{1}$ visits on this same state.  Since $K_{1}$ contains exploration and exploitation, $K_{2}\leq K_{1}$, therefore, the error term is expressed in terms of $K_{2}^{\frac {1}{3}}$, rather than $K_{2}^{\frac {2}{3}}$!!  We want a smaller $K_{2}<K_{1}$ and $K_{2}^{\frac {1}{3}}<K_{1}^{\frac {2}{3}}$.  
 
 ### The <font color="Red">RMAX</font> Theorem Proof::3
->This section discuss the scenario that we perform $T$-step iterations without learning, that is to say it exploits over $T$ steps, and the optimal expected reward would be $Opt(\Prod_{M}(T,\varepsilon))-\varepsilon$.  
+>This section discuss the scenario that we perform $T$-step iterations without learning, that is to say it exploits over $T$ steps, and the optimal expected reward would be $Opt(\prod_{M}(T,\varepsilon))-\varepsilon$.  
 >
 >* The actual return may be lower
->Since the actual reward after execution of the <font color="Red">RMAX</font> algorithm would be some distance from optimal reward, it is at most $Opt(\Prod_{M}(T,\varepsilon))-\varepsilon$, it is lower than $Opt(\Prod_{M}(T,\varepsilon))-\varepsilon$, which is plausible.  If we prevent it from exploring, we are at least staying in some local suboptimal.  
+>Since the actual reward after execution of the <font color="Red">RMAX</font> algorithm would be some distance from optimal reward, it is at most $Opt(\prod_{M}(T,\varepsilon))-\varepsilon$, it is lower than $Opt(\prod_{M}(T,\varepsilon))-\varepsilon$, which is plausible.  If we prevent it from exploring, we are at least staying in some local suboptimal.  
 >* We want it to be more closer
->To align the design in above section, we choose the real return of exploitation after $T$-step iterations to be $Opt(\prod_{M}(T,\varepsilon))-\frac {3}{2}\varepsilon$, then it is $\frac {1}{2}\varepsilon$ close to the optimal reward $Opt(\Prod_{M}(T,\varepsilon))-\varepsilon$.  The <font color="Red">RMAX</font> paper upper bound the failure probability by $\frac {\delta}{3}$.  
+>To align the design in above section, we choose the real return of exploitation after $T$-step iterations to be $Opt(\prod_{M}(T,\varepsilon))-\frac {3}{2}\varepsilon$, then it is $\frac {1}{2}\varepsilon$ close to the optimal reward $Opt(\prod_{M}(T,\varepsilon))-\varepsilon$.  The <font color="Red">RMAX</font> paper upper bound the failure probability by $\frac {\delta}{3}$.  
 >
 >&#10112;take $X_{i}$ to be the actual reward obtained in each trial  
 >&#10113;treat $\mu$ as the optimal reward  
@@ -133,6 +133,7 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >$\Rightarrow P(\sum_{i=1}^{Z}\frac {\mu-X_{i}}{R_{max}}>Z^{\frac {2}{3}})<e^{-\frac {Z^{\frac {1}{3}}}{2}}$  
 >$\Rightarrow P(\sum_{i=1}^{Z}\frac {\mu-X_{i}}{Z\cdot R_{max}}>Z^{-\frac {1}{3}})<e^{-\frac {Z^{\frac {1}{3}}}{2}}$  
 >$\Rightarrow P(\sum_{i=1}^{Z}\frac {\mu-X_{i}}{Z}>\frac {R_{max}}{Z^{\frac {1}{3}}})<e^{-\frac {Z^{\frac {1}{3}}}{2}}$  
+>
 >&#10116;by choosing $M$ such that  
 >$\frac {R_{max}}{Z^{\frac {1}{3}}}<\frac {\varepsilon}{2}$ and $e^{-\frac {Z^{\frac {1}{3}}}{2}}<\frac {\delta}{3}$  
 >$\Rightarrow Z>(\frac {2\cdot R_Max}{\varepsilon})^{3}$ and $Z>6\cdot ln^{3}(\frac {\delta}{3})$,  
