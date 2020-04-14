@@ -5,7 +5,7 @@ title: Model-Based RL Algorithm RMAX - Part 4
 
 ## Prologue To Model-Based RL Algorithm <font color="Red">RMAX</font> - Part 4
 <p class="message">
-The <font color="Red">RMAX</font> theorem guarantees that the learning efficiency is polynomial and would be proved in this article.
+The <font color="Red">RMAX</font> theorem guarantees that <font color="DeepPink">the learning efficiency is polynomial</font> and would be proved in this article.
 </p>
 
 ### The <font color="Red">RMAX</font> Theorem
@@ -62,8 +62,8 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >&#10112;suppose there exists such transitive probability $p$ on $G_{i}$, <font color="RosyBrown">it could not be guaranteed with probability $1$</font>, that is $0\leq p\leq 1$.  
 >&#10113;totally, there are $N\cdot k^{2}$ such probabilities, for we have $N$ states, with agent and adversary each having $k$ actions.  
 >&#10114;treat the random variable <font color="DeepSkyBlue">$X_{i}$</font> to be <font color="DeepSkyBlue">the distinct trial on state $G_{i}$</font>, with above denoted transitive probability $p$ to transite from state $G_{i}$ to $G_{i^{\'}}$, that is to say  
->* The value of $X_{1}$=$1$, iff it transits from $G_{i}$ to $G_{i^{\'}}$ with probability $p$; otherwise, 
->the value of $X_{1}$=$0$, iff it just revisits over the same state $G_{i}$ with probability $1-p$.  
+>* The value of $X_{i}$=$1$, iff it transits from $G_{i}$ to $G_{i^{\'}}$ with probability $p$; otherwise, 
+>the value of $X_{i}$=$0$, iff it just revisits over the same state $G_{i}$ with probability $1-p$.  
 >
 >&#10115;let $Z_{i}$=$X_{i}-p$, then  
 >$E\lbrack Z_{i}\rbrack$  
@@ -117,11 +117,11 @@ The <font color="Red">RMAX</font> theorem guarantees that the learning efficienc
 >The design of this proof is to find the least $K_{2}$ pure exploration trials, thus guarantees that we could have $K_{1}$ visits on this same state.  Since $K_{1}$ contains exploration and exploitation, $K_{2}\leq K_{1}$, therefore, the error term is expressed in terms of $K_{2}^{\frac {1}{3}}$, rather than $K_{2}^{\frac {2}{3}}$!!  We want a smaller $K_{2}<K_{1}$ and $K_{2}^{\frac {1}{3}}<K_{1}^{\frac {2}{3}}$.  
 
 ### The <font color="Red">RMAX</font> Theorem Proof::3
->This section discuss the scenario that we perform $T$-step iterations without learning, that is to say it exploits over $T$ steps, and the optimal expected reward would be $Opt(\prod_{M}(T,\varepsilon))-\varepsilon$.  
+>This section discuss the scenario that we <font color="RosyBrown">perform $T$-step iterations without learning</font>, that is to say it exploits over $T$ steps, and the optimal expected reward would be $Opt(\prod_{M}(T,\varepsilon))-\varepsilon$.  
 >
->* The actual return may be lower
->Since the actual reward after execution of the <font color="Red">RMAX</font> algorithm would be some distance from optimal reward, it is at most $Opt(\prod_{M}(T,\varepsilon))-\varepsilon$, it is lower than $Opt(\prod_{M}(T,\varepsilon))-\varepsilon$, which is plausible.  If we prevent it from exploring, we are at least staying in some local suboptimal.  
->* We want it to be more closer
+>* <font color="RosyBrown">The actual return may be lower</font>  
+>Since the actual reward after execution of the <font color="Red">RMAX</font> algorithm would be some distance from optimal reward, it is at most $Opt(\prod_{M}(T,\varepsilon))-\varepsilon$, it is <font color="RosyBrown">lower</font> than $Opt(\prod_{M}(T,\varepsilon))-\varepsilon$, which is plausible.  <font color="OrangeRed">If we prevent it from exploring, we are at least staying in some local suboptimal</font>.  
+>* We want it to be more closer  
 >To align the design in above section, we choose the real return of exploitation after $T$-step iterations to be $Opt(\prod_{M}(T,\varepsilon))-\frac {3}{2}\varepsilon$, then it is $\frac {1}{2}\varepsilon$ close to the optimal reward $Opt(\prod_{M}(T,\varepsilon))-\varepsilon$.  The <font color="Red">RMAX</font> paper upper bound the failure probability by $\frac {\delta}{3}$.  
 >
 >&#10112;take $X_{i}$ to be the actual reward obtained in each trial  
