@@ -229,6 +229,7 @@ It is an extension of MDP.  Under construction...
 * [Model-Based RL Algorithm RMAX - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2020/02/08/rl-rmax-part1/)
 * [Model-Based RL Algorithm RMAX - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2020/02/23/rl-rmax-part2/)
 * [Model-Based RL Algorithm RMAX - Part 3]({{ site.github.repo }}{{ site.baseurl }}/2020/02/28/rl-rmax-part3/)
+* [Model-Based RL Algorithm RMAX - Part 4]({{ site.github.repo }}{{ site.baseurl }}/2020/03/26/rl-rmax-part4/)
 * Partial Observable Markov Decision Process
 * Q Learning Algorithm
 * Policy Iteration v.s. Value Iteration
