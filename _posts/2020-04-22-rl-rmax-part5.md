@@ -52,17 +52,32 @@ This article reviews <font color="Red">RMAX</font> in summary of illustration.
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Implicit explore or exploit lemma</font>  
-><font color="DeepSkyBlue">After every $T$ steps</font>, you either:  
+>After every $T$ steps, you either:  
 >&#10112;achieves or attains the near optimal reward for these $T$ steps.  
 >&#10113;explore to certain unknown state in high probability, learns a little about an unknown state.  
 >
-<!--
 ><font color="DeepSkyBlue">[3]</font>
-><font color="OrangeRed"></font>  
+><font color="OrangeRed">The RMAX algorithm</font>  
+>* Initialization  
+>&#10112;add the state $S_{0}$ to the MDP model  
+>&#10113;set <font color="OrangeRed">$P(S_{0},A,S)$=$1$</font> for all state $S$  
+>&#10114;set <font color="OrangeRed">$R(S,A)$=$R_max$</font> for all state $S$ and action $A$  
+>&#10115;set all states to unknown states, excepts for $S_{0}$  
+>
+>* Repeat  
+>&#10112;compute a $T$-step policy for current state $S$ and execute it  
+>&#10113;for any visited state-action pair, keep track of its count and reward with respect to state transition from $S$ to $S^{\'}$  
+>&#10114;if the same state-action pair has been visited over enough times to estimate $P(S,A,S^{\'})$ and $R(S,A)$, <font color="OrangeRed">update the transitive probability</font>, <font color="OrangeRed">turn the state-action pair from unknown to know</font>, and repeat from &#10112; 
+>&#10115;loops through &#10112;,&#10113;,&#10115; until all states has become known  
+>
+<!--
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">How many times are enough?</font>  
+>
+><font color="DeepSkyBlue">[5]</font>
+><font color="OrangeRed">Put it together</font>  
+>
 -->
-
-
-
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
 
