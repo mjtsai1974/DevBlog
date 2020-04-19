@@ -40,8 +40,8 @@ This article reviews <font color="Red">RMAX</font> in summary of illustration.
 ><font color="OrangeRed">Model-base approachs</font>  
 >Given sample of data seen so far:  
 >&#10112;build the explicit model of MDP and compute policy for it in the beginning.  
->&#10113;explore the environment in the given data, learn the transitive probability and reward function in accordance to state-action pair.  
->&#10114;repeat until the transitive probability and reward function is to be believed converged to an acceptable confidence interval, during the convergence period, recompute the policy for that state once the transitive probability and reward function has been updated.  
+>&#10113;explore the environment in the given data, <font color="OrangeRed">learn the transitive probability and reward function in accordance to state-action pair</font>.  
+>&#10114;repeat until the transitive probability and reward function is to be believed converged to an acceptable confidence interval, during the convergence period, recompute the policy for that state <font color="OrangeRed">once the transitive probability and reward function has been updated</font>.  
 >
 >One of such approaches is the <font color="Red">RMAX</font> algorithm.  
 
