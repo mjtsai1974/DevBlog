@@ -92,7 +92,7 @@ This article reviews <font color="Red">RMAX</font> in summary of illustration.
 
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
-
+>&#10113;[Reinforcement Learning: Machine Learning - CSE446, Carlos Guestrin, University of Washington, June 5, 2013](https://courses.cs.washington.edu/courses/cse446/13sp/slides/mdps-rl.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
