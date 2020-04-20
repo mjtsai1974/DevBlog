@@ -40,7 +40,7 @@ This article reviews <font color="Red">RMAX</font> in summary of illustration.
 ><font color="OrangeRed">Model-base approachs</font>  
 >Given sample of data seen so far:  
 >&#10112;build the explicit model of MDP and compute policy for it in the beginning.  
->&#10113;explore the environment in the given data, <font color="OrangeRed">learn the transitive probability $P(S,A,S^{\'})$ and reward function $R(S,A)$ in accordance to state-action pair</font>.  
+>&#10113;explore the environment in the given data, <font color="OrangeRed">learn the transitive probability</font> $P(S,A,S^{\'})$ and <font color="OrangeRed">reward function</font> $R(S,A)$ in accordance to state-action pair.  
 >&#10114;repeat until the transitive probability $P(S,A,S^{\'})$ and reward function $R(S,A)$ is to be believed converged to an acceptable confidence interval, during the convergence period, recompute the policy for that state <font color="OrangeRed">once the transitive probability and reward function has been updated</font>.  
 >
 >One of such approaches is the <font color="Red">RMAX</font> algorithm.  
@@ -61,8 +61,12 @@ This article reviews <font color="Red">RMAX</font> in summary of illustration.
 >* Initialization  
 >&#10112;add the state $S_{0}$ to the MDP model  
 >&#10113;set <font color="OrangeRed">$P(S_{0},A,S)$=$1$</font> for all state $S$  
->&#10114;set <font color="OrangeRed">$R(S,A)$=$R_max$</font> for all state $S$ and action $A$  
+>&#10114;set <font color="OrangeRed">$R(S,A)$=$R_{max}$</font> for all state $S$ and action $A$  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-04-22-rl-rmax-part5-init-1.png "Rmax")
 >&#10115;set all states to unknown states, excepts for $S_{0}$  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-04-22-rl-rmax-part5-init-0.png "unknown")
+>&#10116;set all <font color="DeepSkyBlue">visited counter</font> of state-action pairs to $0$  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-04-22-rl-rmax-part5-init-2.png "visited count")
 >
 >* Repeat  
 >&#10112;compute a $T$-step policy for current state $S$ and execute it  
@@ -70,14 +74,20 @@ This article reviews <font color="Red">RMAX</font> in summary of illustration.
 >&#10114;if the same state-action pair has been visited over enough times to estimate $P(S,A,S^{\'})$ and $R(S,A)$, <font color="OrangeRed">update the transitive probability</font>, <font color="OrangeRed">turn the state-action pair from unknown to know</font>, and repeat from &#10112; 
 >&#10115;loops through &#10112;,&#10113;,&#10115; until all states has become known  
 >
-<!--
 ><font color="DeepSkyBlue">[4]</font>
 ><font color="OrangeRed">How many times are enough?</font>  
+>* By [Chernoff Bounds For Bernoulli Random Variable]({{ site.baseurl }}/2019/12/09/prob-bound-chernoff-bound-bernoulli/)  
+>We have $P(\sum_{i=1}^{n}Z_{i}>a)<e^{-\frac {a^{2}}{2\cdot n}}$, where $Z_{1}$,$Z_{2}$,...,$Z_{n}$ are the $n$ distinct independent trials on state $G_{i}$, and $a$ is the error term, such inequality bounds the error probability by $e^{-\frac {a^{2}}{2\cdot n}}$ that after $n$ independent trials on state $G_{i}$, the total estimate bias is greater than the error term $a$.  
 >
 ><font color="DeepSkyBlue">[5]</font>
-><font color="OrangeRed">Put it together</font>  
+><font color="OrangeRed">Put it all together</font>  
+>With probability at least $1-\delta$, the <font color="Red">RMAX</font> algorithm will reach $\varepsilon$ close to optimal policy, in time polinomial in the number of states, the number of actions, $\frac {1}{\delta}$, $\frac {1}{\verepsilon}$.  
 >
--->
+>* Every $T$ steps  
+>By implicit explore or exploit lemma:  
+>&#10112;achieve <font color="DeepSkyBlue">near</font> optimal reward, or  
+>&#10113;explore to certain unknown state with high probability. Since the number of states and actions are finite, it wouldn't take too long before all states turn into known!  
+
 ### Addendum
 >&#10112;[R-max: A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning, Ronen I. Brafman, CS in Ben-Gurion University, Moshe Tennenholtz, CS in Stanford University](http://www.jmlr.org/papers/volume3/brafman02a/brafman02a.pdf)  
 
