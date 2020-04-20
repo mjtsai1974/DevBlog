@@ -71,7 +71,9 @@ This article reviews <font color="Red">RMAX</font> in summary of illustration.
 >* Repeat  
 >&#10112;compute a $T$-step policy for current state $S$ and execute it  
 >&#10113;for any visited state-action pair, keep track of its count and reward with respect to state transition from $S$ to $S^{\'}$  
->&#10114;if the same state-action pair has been visited over enough times to estimate $P(S,A,S^{\'})$ and $R(S,A)$, <font color="OrangeRed">update the transitive probability</font>, <font color="OrangeRed">turn the state-action pair from unknown to know</font>, and repeat from &#10112; 
+>&#10114;if the same state-action pair has been visited over enough times to estimate $P(S,A,S^{\'})$ and $R(S,A)$, <font color="OrangeRed">update the transitive probability</font>, <font color="OrangeRed">turn the state-action pair from unknown to know</font>, and repeat from &#10112;  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-04-22-rl-rmax-part5-init-3.png "known")
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-04-22-rl-rmax-part5-init-4.png "trans prob")
 >&#10115;loops through &#10112;,&#10113;,&#10115; until all states has become known  
 >
 ><font color="DeepSkyBlue">[4]</font>
@@ -81,7 +83,7 @@ This article reviews <font color="Red">RMAX</font> in summary of illustration.
 >
 ><font color="DeepSkyBlue">[5]</font>
 ><font color="OrangeRed">Put it all together</font>  
->With probability at least $1-\delta$, the <font color="Red">RMAX</font> algorithm will reach $\varepsilon$ close to optimal policy, in time polinomial in the number of states, the number of actions, $\frac {1}{\delta}$, $\frac {1}{\verepsilon}$.  
+>With probability at least $1-\delta$, the <font color="Red">RMAX</font> algorithm will reach $\varepsilon$ close to optimal policy, in time polinomial in the number of states, the number of actions, $\frac {1}{\delta}$, $\frac {1}{\varepsilon}$.  
 >
 >* Every $T$ steps  
 >By implicit explore or exploit lemma:  
