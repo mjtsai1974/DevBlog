@@ -13,6 +13,11 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 ><font color="OrangeRed">Markov chain</font>  
 >&#10112;finite number of <font color="OrangeRed">discrete</font> states with probabilistic transition between states.  
 >&#10113;the <font color="DeepSkyBlue">Makrov property</font> is that <font color="DeepSkyBlue">next state is determined by current state only!!</font>  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Hidden Markov model</font>  
+>&#10112;all the same in Markov chain, except that <font color="OrangeRed">we're unsure which state we are in.</font>  
+>&#10113;the current state emits an observation.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
