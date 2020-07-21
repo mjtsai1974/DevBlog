@@ -5,8 +5,14 @@ title: Partial Observable Markov Decision Process - Part 1
 
 ## Prologue To Partial Observable Markov Decision Process - Part 1
 <p class="message">
-This post is an entry of POMDP(Partial Observable Markov Decision Process), from the most foundamental to the belief update.  
+This post is an entry of <font color="Red">POMDP</font>(Partial Observable Markov Decision Process), from the most foundamental to the belief update.  
 </p>
+
+### Summary Of All Markov Models
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Markov chain</font>  
+>&#10112;finite number of <font color="OrangeRed">discrete</font> states with probabilistic transition between states.  
+>&#10113;the <font color="DeepSkyBlue">Makrov property</font> is that <font color="DeepSkyBlue">next state is determined by current state only!!</font>  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
