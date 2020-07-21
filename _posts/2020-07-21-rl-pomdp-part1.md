@@ -25,6 +25,11 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >&#10113;probabilistic transition between states and executable actions in each state.  
 >&#10114;<font color="DeepSkyBlue">next state is determined by current state and current action.</font>  
 >&#10115;<font color="OrangeRed">the execution of an action might lead to unexpected result due to random stochasticity.</font>  
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Partial observal Markov decision process</font>  
+>&#10112;all the same as Markov decision process, except that <font color="OrangeRed">we're unsure which state we are in.</font>  
+>&#10113;the current state emits an observation.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
