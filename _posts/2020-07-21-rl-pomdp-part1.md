@@ -18,6 +18,13 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 ><font color="OrangeRed">Hidden Markov model</font>  
 >&#10112;all the same in Markov chain, except that <font color="OrangeRed">we're unsure which state we are in.</font>  
 >&#10113;the current state emits an observation.  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Markov decision process</font>  
+>&#10112;finite number of discrete states.  
+>&#10113;probabilistic transition between states and executable actions in each state.  
+>&#10114;<font color="DeepSkyBlue">next state is determined by current state and current action.</font>  
+>&#10115;<font color="OrangeRed">the execution of an action might lead to unexpected result due to random stochasticity.</font>  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
