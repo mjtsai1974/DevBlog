@@ -30,6 +30,9 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 ><font color="OrangeRed">Partial observal Markov decision process</font>  
 >&#10112;all the same as Markov decision process, except that <font color="OrangeRed">we're unsure which state we are in.</font>  
 >&#10113;the current state emits an observation.  
+>
+>Below table exhibits the summary:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-07-21-rl-pomdp-part1-summary.png "Summary")
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
