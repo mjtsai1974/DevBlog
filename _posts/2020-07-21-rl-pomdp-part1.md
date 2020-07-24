@@ -34,6 +34,10 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >Below table exhibits the summary:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-07-21-rl-pomdp-part1-summary.png "Summary")
 
+### Belief States In POMDP
+>Below exhibits the POMDP model, wherein the probability distribution is over the world states with true state is only partially observable.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-07-21-rl-pomdp-part1-model.png "POMDP")
+
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
 
