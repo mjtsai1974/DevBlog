@@ -51,6 +51,16 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >&#10115;the whole POMDP is illustrated/iterated in <font color="Red">the environment of uncertainty</font>.  
 >&#10116;<font color="Red">uncertainty</font> about action outcome, about the world state due to <font color="OrangeRed">imperfect</font>(<font color="OrangeRed">partial</font>) information.  
 
+### POMDP Parameters
+>&#10112;initial belief: $b(S)$=$P(S)$, this means the probability for we are in state $S$.  
+>&#10113;belief state updating:  
+>$b^{\'}(S^{\'})$=$P(S^{\'}|O,A,b)$, this represents the probability for we are in state $S^{\'}$, given that we take action $A$, make observation $O$, from previous <font color="Red">belief state distribution</font>, say $b$.  
+>&#10114;observation function:  
+>$O(S^{\'},A,O)$=$P(O|S^{\'},A)$, it represents the probability for we make observation $O$, given that we are transiting to state $S^{\'}$, by taking action $A$.  
+>&#10115;transitive probability:  
+>$T(S,A,S^{\'})$=$P(S^{\'}|S,A)$, it represents the probability for we transit from $S$ to $S^{\'}$, by taking action $A$.  
+>&#10116;rewards:  
+>$R(A,b)$=$\sum_{S}R(S,A)\cdot b(S)$, where $R(S,A)$ is the same as it is in MDP, and the reward is summing over the reward by taking action $A$ with proportion to the probabilistic distribution for each state $S$ in $b$.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
