@@ -34,12 +34,23 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >Below table exhibits the summary:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-07-21-rl-pomdp-part1-summary.png "Summary")
 
-### <font color="Red">Belief States</font> In POMDP
+### <font color="Red">Belief State</font> In POMDP
 >Below exhibits the POMDP model, wherein the probability distribution is over the world states with <font color="Red">true state is only partially observable</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-07-21-rl-pomdp-part1-model.png "POMDP")
 >
 >&#10112;the agent keeps/maintains an internal <font color="Red">belief state</font>, say <font color="Red">$b$</font>, that summarizes its experience.  
 >&#10113;the agent makes state estimation to update from <font color="Red">belief state</font> $b$ to next <font color="Red">belief state</font> $b^{\'}$, based on the last action it has taken, the current <font color="OrangeRed">observation</font> it has made, and the previous <font color="Red">belief state</font> $b$.  
+
+### <font color="RoyalBlue">[Question]Why Belief State in POMDP?</font>
+><font color="DeepSkyBlue">[Answer]</font>  
+>&#10112;the state of the real world is only <font color="Red">partially observable</font>.  
+>&#10113;the agent needs to learn how the observations might aid its performance.  
+>&#10114;there might exists <font color="RosyBrown">no immediate observation</font> pertaining to the desired state.  
+>$\Rightarrow$This rerveals that <font color="DeepPink">the states are probabilistically distributed over the given observations at any time, such probability distribution varies over time</font>, that's why we have belief state from initial $b$ to $b^{\'}$, or say from $b_{0}$ to $b_{1}$, $b_{2}$,...,$b_{i}$, $b_{i+1}$,...,$b_{\infty}$.  
+>
+>&#10115;the whole POMDP is illustrated/iterated in <font color="Red">the environment of uncertainty</font>.  
+>&#10116;<font color="Red">uncertainty</font> about action outcome, about the world state due to <font color="OrangeRed">imperfect</font>(<font color="OrangeRed">partial</font>) information.  
+
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
