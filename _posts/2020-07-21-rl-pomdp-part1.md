@@ -39,7 +39,7 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-07-21-rl-pomdp-part1-model.png "POMDP")
 >
 >&#10112;the agent keeps/maintains an internal <font color="Red">belief state</font>, say <font color="Red">$b$</font>, that summarizes its experience.  
->&#10113;the agent makes state estimation to update from <font color="Red">belief state</fonmt> $b$ to next <font color="Red">belief state</font> $b^{\'}$, based on the last action it has taken, the current <font color="OrangeRed">observation</font> it has made, and the previous <font color="Red">belief state</font> $b$.  
+>&#10113;the agent makes state estimation to update from <font color="Red">belief state</font> $b$ to next <font color="Red">belief state</font> $b^{\'}$, based on the last action it has taken, the current <font color="OrangeRed">observation</font> it has made, and the previous <font color="Red">belief state</font> $b$.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
