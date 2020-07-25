@@ -52,7 +52,8 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >&#10116;<font color="Red">uncertainty</font> about action outcome, about the world state due to <font color="OrangeRed">imperfect</font>(<font color="OrangeRed">partial</font>) information.  
 
 ### POMDP Parameters
->&#10112;initial belief: $b(S)$=$P(S)$, this means the probability for we are in state $S$.  
+>&#10112;initial belief:  
+>$b(S)$=$P(S)$, this means the probability for we are in state $S$.  
 >&#10113;belief state updating:  
 >$b^{\'}(S^{\'})$=$P(S^{\'}|O,A,b)$, this represents the probability for we are in state $S^{\'}$, given that we take action $A$, make observation $O$, from previous <font color="Red">belief state distribution</font>, say $b$.  
 >&#10114;observation function:  
