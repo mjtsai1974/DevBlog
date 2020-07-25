@@ -21,7 +21,7 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Markov decision process</font>  
->&#10112;finite number of discrete states.  
+>&#10112;finite number of <font color="OrangeRed">discrete</font> states.  
 >&#10113;probabilistic transition between states and executable actions in each state.  
 >&#10114;<font color="DeepSkyBlue">next state is determined by current state and current action.</font>  
 >&#10115;<font color="OrangeRed">the execution of an action might lead to unexpected result due to random stochasticity.</font>  
@@ -34,9 +34,12 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >Below table exhibits the summary:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-07-21-rl-pomdp-part1-summary.png "Summary")
 
-### Belief States In POMDP
->Below exhibits the POMDP model, wherein the probability distribution is over the world states with true state is only partially observable.  
+### <font color="Red">Belief States</font> In POMDP
+>Below exhibits the POMDP model, wherein the probability distribution is over the world states with <font color="Red">true state is only partially observable</font>.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-07-21-rl-pomdp-part1-model.png "POMDP")
+>
+>&#10112;the agent keeps/maintains an internal <font color="Red">belief state</font>, say <font color="Red">$b$</font>, that summarizes its experience.  
+>&#10113;the agent makes state estimation to update from <font color="Red">belief state</fonmt> $b$ to next <font color="Red">belief state</font> $b^{\'}$, based on the last action it has taken, the current <font color="OrangeRed">observation</font> it has made, and the previous <font color="Red">belief state</font> $b$.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
