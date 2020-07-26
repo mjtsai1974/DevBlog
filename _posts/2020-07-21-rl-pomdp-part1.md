@@ -63,6 +63,25 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >&#10116;rewards:  
 >$R(A,b)$=$\sum_{S}R(S,A)\cdot b(S)$, where $R(S,A)$ is the same as it is in MDP, and the reward is summing over the reward by taking action $A$ with proportion to the probabilistic distribution for each state $S$ in $b$.  
 
+### Understand The Belief State <font color="Red">$b$</font>
+>Suppose we are given $n$ underlying states, a <font color="OrangeRed">discrete state space of size $n$</font>, then <font color="DeepPink">the belief state $b$ is a vector of $n$ states</font>.  
+>
+>Partial observable turns discrete problem of $n$ states into continuous problem, a POMDP with $n$ states induces an $n$-dimensional <font color="Red">belief-MDP</font>.  
+>
+>* <font color="RoyalBlue">Why?</font>  
+><font color="DeepSkyBlue">[Answer]</font>  
+>The true state is only partial observable, where $b(S)$=probability of being in state $S$.  
+>At each step, the agent:  
+>&#10112;takes some action, say $A$  
+>&#10113;transites to next state $S^{\'}$ form state $S$  
+>&#10114;makes observation $O$, with probability $P(O|S^{\'},A)$  
+>&#10115;suppose we are given initial belief state $b$, after &#10112;,&#10113;,&#10114;, the probabilistic distribution over the belief state would definitely be changed.  
+>
+>* The <font color="Red">posterior belief</font>  
+>That's why we need to make belief update, say the <font color="Red">posterior belief</font>:  
+>$b^{\'}(S)$=$\alpha\cdot P(O|S^{\'},A)\cdot\sum_{S}P(S^{\'}|S,A)\cdot b(S)$  
+>, where $\alpha$ is certain coefficient, such <font color="DeepPink">belief update is continuous rather than discrete!!!</font>  
+
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
 
