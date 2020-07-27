@@ -81,6 +81,10 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >That's why we need to make belief update, say the <font color="Red">posterior belief</font>:  
 >$b^{\'}(S)$=$\alpha\cdot P(O|S^{\'},A)\cdot\sum_{S}P(S^{\'}|S,A)\cdot b(S)$  
 >, where $\alpha$ is certain coefficient, such <font color="DeepPink">belief update is continuous rather than discrete!!!</font>  
+>
+>* <font color="Red">Continuous belief update</font>  
+>POMDP could be regarded as continuous belief update over underlying MDP states, as the agent's belief is encoded through a continuous belief state.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-07-21-rl-pomdp-part1-conti-upd.png "conti belief upd")
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
