@@ -85,6 +85,17 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >* <font color="Red">Continuous belief update</font>  
 >POMDP could be regarded as continuous belief update over underlying MDP states, as the agent's belief is encoded through a continuous belief state.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-07-21-rl-pomdp-part1-conti-upd.png "conti belief upd")
+>Each MDP state is a probability distribution(<font color="Red">continuous belief state</font>) over the state of the original POMDP.  
+
+<!-- State transitions are products of actions and observations. -->
+
+### POMDP: <font color="Red">Belief Update</font>
+>$b^{\'}(S^{\'})$  
+>=$P(S^{\'}|A,O,b)$, we believe we are in state $S^{\'}$, given observation $O$  
+>=$P(O|S^{\'},A,b)\cdot\frac {P(S^{\'}|A,b)}{P(O|A,b)}$  
+>
+><font color="Brown">mjtsai think we can treat $b^{\'}$ as $P(S^{\'}|O)$ in viewpoint of Bayer theorem.</font>  
+>
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
