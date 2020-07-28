@@ -97,6 +97,9 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 ><font color="Brown">mjtsai think we can treat $b'$ as $P(S'|O)$ in viewpoint of Bayer theorem.</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-07-21-rl-pomdp-part1-belief-upd.png "belief update")
 >
+>* $P(O|S^{\'},A,b)$  
+>&#10112;it is the probability that we make observation $O$, given that we are in state $S^{\'}$, by taking action $A$, probabilistically distributed over belief state $b$(or say from previous belief state $b$).  
+>&#10113;therefore, we can treat $P(O|S^{\'},A,b)$=$P(O|S^{\'})$  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
