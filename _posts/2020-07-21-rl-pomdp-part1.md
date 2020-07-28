@@ -94,7 +94,8 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >=$P(S^{\'}|A,O,b)$, we believe we are in state $S^{\'}$, given observation $O$  
 >=$P(O|S^{\'},A,b)\cdot\frac {P(S^{\'}|A,b)}{P(O|A,b)}$  
 >
-><font color="Brown">mjtsai think we can treat $b^{\'}$ as $P(S^{\'}|O)$ in viewpoint of Bayer theorem.</font>  
+><font color="Brown">mjtsai think we can treat $b'$ as $P(S'|O)$ in viewpoint of Bayer theorem.</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-07-21-rl-pomdp-part1-belief-upd.png "belief update")
 >
 
 ### Addendum
