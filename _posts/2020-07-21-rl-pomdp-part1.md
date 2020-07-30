@@ -100,6 +100,18 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >* $P(O|S^{\'},A,b)$  
 >&#10112;it is the probability that we make observation $O$, given that we are in state $S^{\'}$, by taking action $A$, probabilistically distributed over belief state $b$(or say from previous belief state $b$).  
 >&#10113;therefore, we can treat $P(O|S^{\'},A,b)$=$P(O|S^{\'})$  
+>
+>* $P(S^{\'}|A,b)$  
+>This stands for the probability that we are in $S^{\'}$, given action $A$ has been taken, from belief state $b$  
+>, where $P(S^{\'}|A,b)$=$\sum_{S}P(S^{\'}|A,S)\cdot b(S)$ and this $b$ is to be believed a vector of states, a vector of state space.  
+>
+>* $P(O|A,b)$  
+>This indicates we make observation $O$, given that we has taken action $A$, from belief state $b$  
+>, this is a normalization factor, where  
+>$P(O|A,b)$  
+>=$\sum_{S^{\'}P(O|S^{\'})}\cdot P(S^{\'}|A,b)$  
+>=$\sum_{S^{\'}P(O|S^{\'})}\cdot\sum_{S}P(S^{\'}|A,S)\cdot b(S)$  
+>
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
