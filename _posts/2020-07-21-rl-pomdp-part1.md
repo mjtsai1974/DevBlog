@@ -112,6 +112,10 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >=$\sum_{S^{\'}P(O|S^{\'})}\cdot P(S^{\'}|A,b)$  
 >=$\sum_{S^{\'}P(O|S^{\'})}\cdot\sum_{S}P(S^{\'}|A,S)\cdot b(S)$  
 >
+><font color="Brown">Notes::mjtsai1974</font>  
+>This expression is asking for the probability of the fact that we are in state $S^{\'}$, given that we make observation $O$, by taking action $A$, from somewhat belief state $b$.  
+>
+>It could be further expanded as the qualitative probability that we make observation $O$, given that we are in state $S^{\'}$, by taking action $A$, from belief state $b$.  Such likeli in turn multiplied by the probabilty, which is a prior that we are in $S^{\'}$, by taking action $A$, from belief state $b$.  Finally, over the total/marginal probability probability that we make observation $O$, given that we take action $A$, from somewhat belief state $b$.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
