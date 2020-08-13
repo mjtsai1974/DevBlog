@@ -16,7 +16,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >&#10113;[Markov Decision Process To Seek The Optimal Policy]({{ site.github.repo }}{{ site.baseurl }}/2017/12/04/mdp-markov-decision-process-optimal-policy/)  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-2-states.png "2 states MDP")
 >
->* Partially Observable MDP  
+>* <font color="Red">Partially Observable MDP</font>  
 >If we are <font color="RosyBrown">in the partially observable environment, the agent can't observe the full world state, but the observation gives hint about true state</font>.  
 >&#10112;the agent has no idea about the world state, what's behind the door, where am I.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-intuition.png "world state")
