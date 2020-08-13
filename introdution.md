@@ -207,10 +207,6 @@ That's why we need the Markov Decision process, it provides an algorithm approxi
 * [Markov Decision Process Framework]({{ site.github.repo }}{{ site.baseurl }}/2017/12/05/mdp-markov-decision-process-framework/)
 * [Addendum]({{ site.github.repo }}{{ site.baseurl }}/2017/12/06/mdp-addendum/)
 
-### Partial Observable Markov Decision Process(POMDP)
-
-It is an extension of MDP.  Under construction...
-
 ### Reinforcement Learning
 
 * [Temporal Difference Learning - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2018/12/23/rl-temp-diff-learn-part1/)
@@ -230,7 +226,7 @@ It is an extension of MDP.  Under construction...
 * [Model-Based RL Algorithm RMAX - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2020/02/23/rl-rmax-part2/)
 * [Model-Based RL Algorithm RMAX - Part 3]({{ site.github.repo }}{{ site.baseurl }}/2020/02/28/rl-rmax-part3/)
 * [Model-Based RL Algorithm RMAX - Part 4]({{ site.github.repo }}{{ site.baseurl }}/2020/03/26/rl-rmax-part4/)
-* Partial Observable Markov Decision Process
+* [POMDP - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2020/07/21/rl-pomdp-part1/)
 * Q Learning Algorithm
 * Policy Iteration v.s. Value Iteration
 
