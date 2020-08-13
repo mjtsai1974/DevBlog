@@ -119,6 +119,8 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
+>&#10113;[Partially Observable Markov Decision Process, Geoff Hollinger, 2007 fall](https://www.cs.cmu.edu/~ggordon/780-fall07/lectures/POMDP_lecture.pdf)  
+>&#10114;[Prof. Dr.-Ing. Stefan Kopp, 2010, Bielefed University](https://www.techfak.uni-bielefeld.de/~skopp/Lehre/STdKI_SS10/POMDP_tutorial.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
