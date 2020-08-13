@@ -17,7 +17,11 @@ This post will make a full illustration of belief update in <font color="Red">PO
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2017-12-03-mdp-markov-decision-process-stochastic-env-2-states.png "2 states MDP")
 >
 >* Partially Observable MDP  
->If we are in the partially observable environment, the agent can't observe the full world state, but the observation gives hint about true state.  
+>If we are <font color="RosyBrown">in the partially observable environment, the agent can't observe the full world state, but the observation gives hint about true state</font>.  
+>&#10112;the agent has no idea about the world state, what's behind the door, where am I.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-intuition.png "world state")
+>&#10113;the agent don't know what state he is in if he didn't get reward after taking action.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-2-way-hallway.png "what state")
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
