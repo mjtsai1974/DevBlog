@@ -27,7 +27,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >&#10112;the sensor(some component of the agent) might have measurement fail due to <font color="OrangeRed">noise</font>.  
 >&#10113;multiple states might give the same observation, i.e., what's behind the door, what state the agent is in after taking action without reward.  
 
-### <font color="OrangeRed">Policies Under POMDP?</font>  
+### <font color="OrangeRed">Policies Under POMDP?</font>
 ><font color="RoyalBlue">[Question]</font>  
 >Should we use policy mapping state to action in POMDP?  
 >
@@ -37,6 +37,29 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >&#10113;<font color="RosyBrown">no more Markovian signal(the state) directly available to the agent</font>  
 >
 >We should <font color="DeepPink">use all information obtained, the full history of observations</font>, by doing the <font color="Red">belief update</font>.  
+
+### Hints On <font color="Red">Belief Update</font>
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Calculation</font>  
+>POMDP is often given an initial belief:  
+>&#10112;we are given an initial probability distribution over states in the departure point.  
+>&#10113;we shhould keep track of how this initial probability distribution over states changes from initial point to the next step.  
+>&#10114;by the already known prior belief $b$, the action taken $A$, the observation thus made $O$, to figure out the new next belief $b^{\'}$.  
+>
+>This process is called the <font color="Red">belief update</font>.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Apply the Bayer's rule</font>  
+>&#10112;begin from the <font color="Red">Bayes Theorem</font>:  
+>$P(B\vert A)$=$\frac {P(A\vert B)\cdot P(B)}{P(A)}$  
+>&#10113;substitute the relevant variables:  
+>$P(S^{\'}\vert O)$=$\frac {P(O\vert S^{\'})\cdot P(S^{\'})}{P(O)}$  
+>&#10114;<font color="DeepSkyBlue">add the action $A$ and prior belief $b$ in the given:</font>  
+>$P(S^{\'}\vert O,A,b)$=$\frac {P(O\vert S^{\'},A,b)\cdot P(S^{\'}\vert A,b)}{P(O\vert A,b)}$  
+>&#10115;expand $P(S^{\'}\vert A,b)$ and $P(O\vert A,b)$  
+>$P(S^{\'}\vert O,A,b)$  
+>=$\frac {P(O\vert S^{\'},A,b)\cdot P(S^{\'}\vert A,b)}{P(O\vert A,b)}$  
+>=$\frac {P(O\vert S^{\'},A,b)\cdot \sum_{S}P(S^{\'}\vert A,S)\cdot b(S)}{\sum_{S^{\'\'}}P(O|S^{\'\'})\cdot\sum_{S}P(S^{\'\'}|A,S)\cdot b(S)}$  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
