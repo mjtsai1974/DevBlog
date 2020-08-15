@@ -22,6 +22,10 @@ This post will make a full illustration of belief update in <font color="Red">PO
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-intuition.png "world state")
 >&#10113;the agent don't know what state he is in if he didn't get reward after taking action.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-2-way-hallway.png "what state")
+>
+>* Types of partial observability  
+>&#10112;the sensor(some component of the agent) might have measurement fail due to <font color="OrangeRed">noise</font>.  
+>&#10113;multiple states might give the same observation, i.e., what's behind the door, what state the agent is in after taking action without reward.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
