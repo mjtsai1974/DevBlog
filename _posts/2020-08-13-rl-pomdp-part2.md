@@ -61,6 +61,17 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$\frac {P(O\vert S^{\'},A,b)\cdot P(S^{\'}\vert A,b)}{P(O\vert A,b)}$  
 >=$\frac {P(O\vert S^{\'},A,b)\cdot \sum_{S}P(S^{\'}\vert A,S)\cdot b(S)}{\sum_{S^{\'\'}}P(O|S^{\'\'})\cdot\sum_{S}P(S^{\'\'}|A,S)\cdot b(S)}$  
 
+### Full Illustration Of <font color="Red">Belief Update</font> In Tiger Problem
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The tiger problem</font>  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-problem.png "tiger problem")
+>&#10112;suppose you(the agent) are standing in front of 2 doors, there is a tiger behind one of the 2 doors, that is to say the <font color="OrangeRed">world states</font> are tiger is behind the left or right door.  
+>&#10113;there are 3 actions, listen, open left door and open right door.  
+>&#10114;listen is not free and might get inaccurate information.  
+>&#10115;when you open the wrong door, you will get eaten by tiger, the reward is $-100$.  
+>&#10116;if you open the right door, you will get $+10$ as the reward.  
+>
+
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
 >&#10113;[Decsision Making in Intellingent Systems: POMDP, 14 April 2008, Frans Oliehoek](http://www.fransoliehoek.net/docs/pomdp-lect-b.pdf)  
