@@ -65,12 +65,21 @@ This post will make a full illustration of belief update in <font color="Red">PO
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">The tiger problem</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-problem.png "tiger problem")
+>* The given condition  
 >&#10112;suppose you(the agent) are standing in front of 2 doors, there is a tiger behind one of the 2 doors, that is to say the <font color="OrangeRed">world states</font> are tiger is behind the left or right door.  
 >&#10113;there are 3 actions, listen, open left door and open right door.  
 >&#10114;listen is not free and might get inaccurate information.  
 >&#10115;when you open the wrong door, you will get eaten by tiger, the reward is $-100$.  
 >&#10116;if you open the right door, you will get $+10$ as the reward.  
+>&#10117;you will get $-1$ after each listen.  
 >
+>* Transitive probability  
+>&#10112;by listening, the tiger stays where it is.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-tran-listen.png "listen transitivity")
+>&#10113;when you open the left door, the tiger has $50%$ to stay behind the left door, or $50%$ to stay behind the right door.
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-tran-open-left.png "open left transitivity")  
+>&#10114;when you open the right door, the tiger has $50%$ to stay behind the right door, or $50%$ to stay behind the left door.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-tran-open-right.png "open right transitivity")
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
