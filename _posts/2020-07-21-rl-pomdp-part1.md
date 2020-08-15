@@ -109,8 +109,8 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >This indicates we make observation $O$, given that we has taken action $A$, from belief state $b$  
 >, this is a normalization factor, where  
 >$P(O|A,b)$  
->=$\sum_{S^{\'}P(O|S^{\'})}\cdot P(S^{\'}|A,b)$  
->=$\sum_{S^{\'}P(O|S^{\'})}\cdot\sum_{S}P(S^{\'}|A,S)\cdot b(S)$  
+>=$\sum_{S^{\'\'}}P(O|S^{\'\'})\cdot P(S^{\'\'}|A,b)$  
+>=$\sum_{S^{\'\'}}P(O|S^{\'\'})\cdot\sum_{S}P(S^{\'\'}|A,S)\cdot b(S)$  
 >
 ><font color="Brown">Notes::mjtsai1974</font>  
 >This expression is asking for the probability of the fact that we are in state $S^{\'}$, given that we make observation $O$, by taking action $A$, from somewhat belief state $b$.  
