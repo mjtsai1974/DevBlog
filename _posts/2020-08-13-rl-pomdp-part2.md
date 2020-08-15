@@ -27,6 +27,17 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >&#10112;the sensor(some component of the agent) might have measurement fail due to <font color="OrangeRed">noise</font>.  
 >&#10113;multiple states might give the same observation, i.e., what's behind the door, what state the agent is in after taking action without reward.  
 
+### <font color="OrangeRed">Policies Under POMDP?</font>  
+><font color="RoyalBlue">[Question]</font>  
+>Should we use policy mapping state to action in POMDP?  
+>
+><font color="DeepSkyBlue">[Answer]</font>  
+>Before we step any further, it strikes on our head that:  
+>&#10112;the agent only gets some(partial) observations  
+>&#10113;<font color="RosyBrown">no more Markovian signal(the state) directly available to the agent</font>  
+>
+>We should <font color="DeepPink">use all information obtained, the full history of observations</font>, by doing the <font color="Red">belief update</font>.  
+
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
 >&#10113;[Decsision Making in Intellingent Systems: POMDP, 14 April 2008, Frans Oliehoek](http://www.fransoliehoek.net/docs/pomdp-lect-b.pdf)  
