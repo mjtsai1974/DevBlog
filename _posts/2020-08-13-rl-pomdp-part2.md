@@ -94,7 +94,9 @@ This post will make a full illustration of belief update in <font color="Red">PO
 ><font color="OrangeRed">What decision should we make?</font>  
 >Before we make a decision to open the correct door, we should have gathered sufficient information pertaining to the possible changes of probability distribution of tiger's location, that's to keep track of the belief history.  
 >
-><font color="#C20000">Reinforcement learning is to learn the model and planning.</font>  Suppose the model is of no question in this example of tiger problem, we need to maintain a list of all possibilities of the belief changes, such history is build by listening in each step.  
+><font color="#C20000">Reinforcement learning is to learn the model and planning.</font>  
+>
+>Suppose the model is of no question in this example of tiger problem, we need to maintain a list of all possibilities of the belief changes, such history is build by listening in each step.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
