@@ -82,13 +82,19 @@ This post will make a full illustration of belief update in <font color="Red">PO
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-tran-open-right.png "open right transitivity")
 >
 >* Observation and its probability  
->&#10112;when listening, if the world state is tiger left, by this given, we hear tight left, such probability is $P(HL\vert TL,listen,b)$=$0.85$, while we still have $P(HR\vert TL,listen,b)$=$0.15$ for we hear tight right, given that the world state is tiger left.  
+>&#10112;when listening, if the world state is tiger left, by this given, we hear tiger left, such probability is $P(HL\vert TL,listen,b)$=$0.85$, while we still have $P(HR\vert TL,listen,b)$=$0.15$ for we hear tiger right, given that the world state is tiger left.  
 >The probability $P(HR\vert TR,listen,b)$=$0.85$ for we hear tiger right, given that the world state is tiger right, while there exists probability $P(HL\vert TR,listen,b)$=$0.15$ for we hear tiger left, given that the world state is tiger right.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-obs-listen.png "listen obs")
 >&#10113;when opening the left door, below exhibits the observation probability given the world state is tiger left and right respectively.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-obs-open-left.png "open left obs")
 >&#10114;when opening the right door, below exhibits the observation probability given the world state is tiger left and right respectively.    
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-obs-open-right.png "open right obs")
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">What decision should we make?</font>  
+>Before we make a decision to open the correct door, we should have gathered sufficient information pertaining to the possible changes of probability distribution of tiger's location, that's to keep track of the belief history.  
+>
+><font color="#C20000">Reinforcement learning is to learn the model and planning.</font>  Suppose the model is of no question in this example of tiger problem, we need to maintain a list of all possibilities of the belief changes, such history is build by listening in each step.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
