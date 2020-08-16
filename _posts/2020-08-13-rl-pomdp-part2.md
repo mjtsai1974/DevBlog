@@ -80,6 +80,15 @@ This post will make a full illustration of belief update in <font color="Red">PO
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-tran-open-left.png "open left transitivity")  
 >&#10114;when you open the right door, the tiger has $50%$ to stay behind the right door, or $50%$ to stay behind the left door.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-tran-open-right.png "open right transitivity")
+>
+>* Observation and its probability  
+>&#10112;when listening, if the world state is tiger left, by this given, we hear tight left, such probability is $P(HL\vert TL,listen,b)$=$0.85$, while we still have $P(HR\vert TL,listen,b)$=$0.15$ for we hear tight right, given that the world state is tiger left.  
+>The probability $P(HR\vert TR,listen,b)$=$0.85$ for we hear tiger right, given that the world state is tiger right, while there exists probability $P(HL\vert TR,listen,b)$=$0.15$ for we hear tiger left, given that the world state is tiger right.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-obs-listen.png "listen obs")
+>&#10113;when opening the left door, below exhibits the observation probability given the world state is tiger left and right respectively.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-obs-open-left.png "open left obs")
+>&#10114;when opening the right door, below exhibits the observation probability given the world state is tiger left and right respectively.    
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-obs-open-right.png "open right obs")
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
