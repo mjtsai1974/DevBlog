@@ -100,15 +100,18 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Belief update</font>  
->By listening in each step, we can gather information of tiger location, that's the belief, based on history of such belief, we can then have a plan, i.e, the action to take after HL$\rightarrow$HL$, HL$\rightarrow$HR.  
+>By listening in each step, we can gather information of tiger location, that's the belief, based on history of such belief, we can then have a plan, i.e, the action to take after HL$\rightarrow$HL, HL$\rightarrow$HR.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-b-upd.png "b upd")
 >
 >* Begin from initial point  
 >We are given the tiger is at left and right with each probability $50%$ respectively, that's $b_{0}\lbrack 0.5\;0.5\rbrack$, the first $0.5 is the probability for tiger at left side, the similarity for tiger at the right side.  
 >
 >* From init$\rightarrow$HL  
->Given that you are hearning tiger at left side, we'd like to calculate the belief at this moment.  
->
+>Given that you are hearning tiger left, we'd like to calculate the belief at this moment.  
+>&#10112;$b_{1}(TL)$  
+>=$P(TL\vert HL,listen,b_{0})$  
+>=$\frac {P(HL\vert TL,listen,b_{0})\cdot P(TL\vert listen,b_{0})}{P(HL\vert listen,b_{0})}$  
+>=$\frac {P(HL\vert TL,listen,b_{0})\cdot\sum_{S}P(TL\vert listen,S)\cdot b_{0}(S)}{\sum_{S^{\'\'}}P(HL\vert listen,S^{\'\'})\cdot\sum_{S^{\'}}P(S^{\'\'}\vert listen,S^{\'})\cdot b_{0}(S^{\'})}$  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
