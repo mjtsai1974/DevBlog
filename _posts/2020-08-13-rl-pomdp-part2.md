@@ -100,7 +100,14 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Belief update</font>  
+>By listening in each step, we can gather information of tiger location, that's the belief, based on history of such belief, we can then have a plan, i.e, the action to take after HL$\rightarrow$HL$, HL$\rightarrow$HR.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-b-upd.png "b upd")
+>
+>* Begin from initial point  
+>We are given the tiger is at left and right with each probability $50%$ respectively, that's $b_{0}\lbrack 0.5\;0.5\rbrack$, the first $0.5 is the probability for tiger at left side, the similarity for tiger at the right side.  
+>
+>* From init$\rightarrow$HL  
+>Given that you are hearning tiger at left side, we'd like to calculate the belief at this moment.  
 >
 
 ### Addendum
