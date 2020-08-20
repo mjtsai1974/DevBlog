@@ -82,8 +82,8 @@ This post will make a full illustration of belief update in <font color="Red">PO
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-tran-open-right.png "open right transitivity")
 >
 >* Observation and its probability  
->&#10112;when listening, if the world state is tiger left, by this given, we hear tiger left, such probability is $P(HL\vert TL,listen,b)$=$0.85$, while we still have $P(HR\vert TL,listen,b)$=$0.15$ for we hear tiger right, given that the world state is tiger left.  
->The probability $P(HR\vert TR,listen,b)$=$0.85$ for we hear tiger right, given that the world state is tiger right, while there exists probability $P(HL\vert TR,listen,b)$=$0.15$ for we hear tiger left, given that the world state is tiger right.  
+>&#10112;when listening, if the world state is tiger left, by this given, we hear tiger left, such probability is $P(HL\vert TL,listen,b)$=$0.85$, while we still have $P(HR\vert TR,listen,b)$=$0.15$ for we hear tiger right, given that tiger is right(we think tiger is right) under the world state tiger left.  
+>The probability $P(HR\vert TR,listen,b)$=$0.85$ for we hear tiger right, given that the world state is tiger right, while there exists probability $P(HL\vert TL,listen,b)$=$0.15$ for we hear tiger left, given that tiger is left under the world state tiger right.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-obs-listen.png "listen obs")
 >&#10113;when opening the left door, below exhibits the observation probability given the world state is tiger left and right respectively.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-obs-open-left.png "open left obs")
