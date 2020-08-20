@@ -114,6 +114,10 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$\frac {P(HL\vert TL,listen,b_{0})\cdot\sum_{S}P(TL\vert listen,S)\cdot b_{0}(S)}{\sum_{S^{\'\'}}P(HL\vert listen,S^{\'\'})\cdot\sum_{S^{\'}}P(S^{\'\'}\vert listen,S^{\'})\cdot b_{0}(S^{\'})}$  
 >=$\frac {0.85\cdot(1\cdot 0.5+0\cdot 0.5)}{0.85\cdot(1\cdot 0.5+0\cdot 0.5)+0.15\cdot(1\cdot 0.5+0\cdot 0.5)}$  
 >=$0.85$  
+>
+>We are now asking for belief state of tiger left, given that we are hearing left, thus the likeli should be the probability that we hear tiger left given that tiger is left, multiply by the prior belief state of tiger left, divided by the total probability that we make the observation of hearing tiger left.  
+>
+>The total probability of hearing tiger left is summing over all states($S^{\'\'}$), the probability of hearing tiger left given that the tiger state is $S^{\'\'}$, in turn multiply by summing over the state $S^{\'}$, the transitive probabilities from $S^{\'}$ to $S^{\'\'}$ by listening, finally multiply with the prior belief, the probability that the world state is $S^{\'}$.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
