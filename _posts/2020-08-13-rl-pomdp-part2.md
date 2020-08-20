@@ -112,6 +112,8 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$P(TL\vert HL,listen,b_{0})$  
 >=$\frac {P(HL\vert TL,listen,b_{0})\cdot P(TL\vert listen,b_{0})}{P(HL\vert listen,b_{0})}$  
 >=$\frac {P(HL\vert TL,listen,b_{0})\cdot\sum_{S}P(TL\vert listen,S)\cdot b_{0}(S)}{\sum_{S^{\'\'}}P(HL\vert listen,S^{\'\'})\cdot\sum_{S^{\'}}P(S^{\'\'}\vert listen,S^{\'})\cdot b_{0}(S^{\'})}$  
+>=$\frac {0.85\cdot(1\cdot 0.5+0\cdot 0.5)}{0.85\cdot(1\cdot 0.5+0\cdot 0.5)+0.15\cdot(1\cdot 0.5+0\cdot 0.5)}$  
+>=$0.85$  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
