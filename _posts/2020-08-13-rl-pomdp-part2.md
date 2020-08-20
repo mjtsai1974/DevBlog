@@ -104,7 +104,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-b-upd.png "b upd")
 >
 >* Begin from initial point  
->We are given the tiger is at left and right with each probability $50%$ respectively, that's $b_{0}\lbrack 0.5\;0.5\rbrack$, the first $0.5 is the probability for tiger at left side, the similarity for tiger at the right side.  
+>We are given the tiger is at left and right with each probability $50%$ respectively, that's $b_{0}\lbrack 0.5\;0.5\rbrack$, the first $0.5$ is the probability for tiger at left side, the similarity for tiger at the right side.  
 >
 >* From init$\rightarrow$HL  
 >Given that you are hearning tiger left, we'd like to calculate the belief at this moment.  
@@ -115,7 +115,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$\frac {0.85\cdot(1\cdot 0.5+0\cdot 0.5)}{0.85\cdot(1\cdot 0.5+0\cdot 0.5)+0.15\cdot(1\cdot 0.5+0\cdot 0.5)}$  
 >=$0.85$  
 >
->We are now asking for belief state of tiger left, given that we are hearing left, thus the likeli should be the probability that we hear tiger left given that tiger is left, multiply by the prior belief state of tiger left, divided by the total probability that we make the observation of hearing tiger left.  
+>We are now asking for belief state of tiger left, given that we are hearing left, thus the likeli should be the probability that we hear tiger left given that tiger is left, multiply by probability of tiger left, given from the prior belief state of tiger left(and by listen), divided by the total probability that we make the observation of hearing tiger left.  
 >
 >The total probability of hearing tiger left is summing over all states($S^{\'\'}$), the probability of hearing tiger left given that the tiger state is $S^{\'\'}$, in turn multiply by summing over the state $S^{\'}$, the transitive probabilities from $S^{\'}$ to $S^{\'\'}$ by listening, finally multiply with the prior belief, the probability that the world state is $S^{\'}$.  
 
