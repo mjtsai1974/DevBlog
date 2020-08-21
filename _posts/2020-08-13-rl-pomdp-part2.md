@@ -124,7 +124,19 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$\frac {0.15\cdot(0\cdot 0.5+1\cdot 0.5)}{0.15\cdot(0\cdot 0.5+1\cdot 0.5)+0.85\cdot(0\cdot 0.5+1\cdot 0.5)}$  
 >=$0.15$  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-init-hl-b1tr.png "b-upd")
+>$\Rightarrow$we have belief updated from $b_{0}$ to $b_{1}\lbrack 0.85\;0.15\rbrack$ in this brach.  
 >
+>* From init$\rightarrow$HR  
+>Given that you are hearning tiger right, we'd like to calculate the belief at this moment.  
+>&#10112;$b_{1}(TL)$  
+>=$P(TL\vert HL,listen,b_{0})$  
+>=$\frac {0.15\cdot(1\cdot 0.5+0\cdot 0.5)}{0.15\cdot(1\cdot 0.5+0\cdot 0.5)+0.85\cdot(1\cdot 0.5+0\cdot 0.5)}$  
+>=$0.15$  
+>&#10113;$b_{1}(TR)$  
+>=$P(TR\vert HR,listen,b_{0})$  
+>=$\frac {0.85\cdot(0\cdot 0.5+1\cdot 0.5)}{0.85\cdot(0\cdot 0.5+1\cdot 0.5)+0.1\cdot(0\cdot 0.5+1\cdot 0.5)}$  
+>=$0.85$  
+>$\Rightarrow$we have belief updated from $b_{0}$ to $b_{1}\lbrack 0.15\;0.85\rbrack$ in this brach.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
