@@ -165,6 +165,8 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$\frac {0.85\cdot(0\cdot 0.85+1\cdot 0.15)}{0.85\cdot(0\cdot 0.85+1\cdot 0.15)+0.15\cdot(0\cdot 0.15+1\cdot 0.85)}$  
 >=$0.5$  
 >$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.85\;0.15\rbrack$ to $b_{2}\lbrack 0.5\;0.5\rbrack$ in this brach.  
+><font color="Brown">Notes::mjtsai1974</font>  
+><font color="Brown">The likeli is goint to use the belief distribution at the node which it is branching from as the prior.</font>  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
