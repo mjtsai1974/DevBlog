@@ -153,6 +153,18 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >$\approx 0.03$  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-init-hl-b1tl-b2tr.png "b-upd")
 >$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.85\;0.15\rbrack$ to $b_{2}\lbrack 0.97\;0.03\rbrack$ in this brach.  
+>
+>* From init$\rightarrow$HL$\rightarrow$HR  
+>Suppose that you are hearning tiger left after hearing tiger right, we'd like to calculate the belief at this moment.  
+>&#10112;$b_{2}(TL)$  
+>=$P(TL\vert HL,listen,b_{1})$  
+>=$\frac {0.15\cdot(1\cdot 0.85+0\cdot 0.15)}{0.15\cdot(1\cdot 0.85+0\cdot 0.15)+0.85\cdot(1\cdot 0.15+0\cdot 0.85)}$  
+>=$0.5$  
+>&#10113;$b_{2}(TR)$  
+>=$P(TR\vert HR,listen,b_{1})$  
+>=$\frac {0.85\cdot(0\cdot 0.85+1\cdot 0.15)}{0.85\cdot(0\cdot 0.85+1\cdot 0.15)+0.15\cdot(0\cdot 0.15+1\cdot 0.85)}$  
+>=$0.5$  
+>$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.85\;0.15\rbrack$ to $b_{2}\lbrack 0.5\;0.5\rbrack$ in this brach.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
