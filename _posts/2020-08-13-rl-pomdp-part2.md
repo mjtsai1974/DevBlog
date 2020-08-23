@@ -215,15 +215,15 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >Go from init to hearning tiger left, next to hearing tiger left, next to hearing tiger right, we'd like to make the belief update at this moment.  
 >&#10112;$b_{3}(TL)$  
 >=$P(TL\vert HL,listen,b_{2})$  
->=$\frac {0.15\cdot\lbrack(1\cdot 0.97+0\cdot 0.03)+(1\cdot 0.5+0\cdot 0.5)+(1\cdot 0.03+0\cdot 0.97)\rbrack}{0.15\cdot\lbrack(1\cdot 0.97+0\cdot 0.03)+(1\cdot 0.5+0\cdot 0.5)+(1\cdot 0.03+0\cdot 0.97)\rbrack}+0.85\cdot(1\cdot 0.5+0\cdot 0.5)$  
+>=$\frac {0.15\cdot\lbrack(1\cdot 0.97+0\cdot 0.03)+(1\cdot 0.5+0\cdot 0.5)+(1\cdot 0.03+0\cdot 0.97)\rbrack}{0.15\cdot\lbrack(1\cdot 0.97+0\cdot 0.03)+(1\cdot 0.5+0\cdot 0.5)+(1\cdot 0.03+0\cdot 0.97)\rbrack+0.85\cdot(1\cdot 0.5+0\cdot 0.5)}$  
 >=$0.3463$  
 >&#10113;$b_{3}(TR)$  
 >=$P(TR\vert HR,listen,b_{2})$  
 >=$\frac {0.85\cdot\lbrack(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)+(0\cdot 0.03+1\cdot 0.97)\rbrack}{0.85\cdot\lbrack(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)+(0\cdot 0.03+1\cdot 0.97)\rbrack+0.15\cdot(0\cdot 0.5+1\cdot 0.5)}$  
 >=$0.9444$  
 >$\Rightarrow$The $b_{3}(TL)$+$b_{3}(TR)$ not equal to $1$, we are encounter a big problem, guess what?  <font color="DeepPink">By normalization, we can get the correct answer.</font>  
->&#10114;$b_{3}(TL)_{N}$=$\frac {0.3463}{0.3463+0.9444}$=$0.268217$  
->&#10115;$b_{3}(TR)_{N}$=$\frac {0.9444}{0.3463+0.9444}$=$0.73169$  
+>&#10114;$N(b_{3}(TL))$=$\frac {0.3463}{0.3463+0.9444}$=$0.268217$  
+>&#10115;$N(b_{3}(TR))$=$\frac {0.9444}{0.3463+0.9444}$=$0.73169$  
 >$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.97\;0.03\rbrack$ to $b_{2}\lbrack 0.27\;0.73\rbrack$ in this brach.  
 
 ### Addendum
