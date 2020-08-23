@@ -205,11 +205,13 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$P(TL\vert HL,listen,b_{2})$  
 >=$\frac {0.85\cdot\lbrack(1\cdot 0.97+0\cdot 0.03)+(1\cdot 0.5+0\cdot 0.5)\rbrack}{0.85\cdot\lbrack(1\cdot 0.97+0\cdot 0.03)+(1\cdot 0.5+0\cdot 0.5)\rbrack+0.15\cdot\lbrack(1\cdot 0.5+0\cdot 0.5)+(1\cdot 0.03+0\cdot 0.97)\rbrack}$  
 >$\approx 0.94$  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-init-hl-hl-hl-b3tl.png "b-upd")
 >&#10113;$b_{3}(TR)$  
 >=$P(TR\vert HR,listen,b_{2})$  
 >=$\frac {0.15\cdot\lbrack(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)\rbrack}{0.15\cdot\lbrack(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)\rbrack+0.85\cdot\lbrack(0\cdot 0.5+1\cdot 0.5)+(0\cdot 0.03+1\cdot 0.97)\rbrack}$  
 >$\approx 0.06$  
->$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.97\;0.03\rbrack$ to $b_{2}\lbrack 0.94\;0.06\rbrack$ in this brach.  
+>$\Rightarrow$we have belief updated from $b_{2}\lbrack 0.97\;0.03\rbrack$ to $b_{3}\lbrack 0.94\;0.06\rbrack$ in this brach.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-init-hl-hl-hl-b3tr.png "b-upd")
 >
 >* From init$\rightarrow$HL$\rightarrow$HL$\rightarrow$<font color="OrangeRed">HR</font>  
 >Go from init to hearning tiger left, next to hearing tiger left, next to hearing tiger right, we'd like to make the belief update at this moment.  
@@ -217,6 +219,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$P(TL\vert HL,listen,b_{2})$  
 >=$\frac {0.15\cdot\lbrack(1\cdot 0.97+0\cdot 0.03)+(1\cdot 0.5+0\cdot 0.5)+(1\cdot 0.03+0\cdot 0.97)\rbrack}{0.15\cdot\lbrack(1\cdot 0.97+0\cdot 0.03)+(1\cdot 0.5+0\cdot 0.5)+(1\cdot 0.03+0\cdot 0.97)\rbrack+0.85\cdot(1\cdot 0.5+0\cdot 0.5)}$  
 >=$0.3463$  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-init-hl-hl-hr-b3tl.png "b-upd")
 >&#10113;$b_{3}(TR)$  
 >=$P(TR\vert HR,listen,b_{2})$  
 >=$\frac {0.85\cdot\lbrack(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)+(0\cdot 0.03+1\cdot 0.97)\rbrack}{0.85\cdot\lbrack(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)+(0\cdot 0.03+1\cdot 0.97)\rbrack+0.15\cdot(0\cdot 0.5+1\cdot 0.5)}$  
@@ -224,7 +227,8 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >$\Rightarrow$The $b_{3}(TL)$+$b_{3}(TR)$ not equal to $1$, we are encounter a big problem, guess what?  <font color="DeepPink">By normalization, we can get the correct answer.</font>  
 >&#10114;$N(b_{3}(TL))$=$\frac {0.3463}{0.3463+0.9444}$=$0.268217$  
 >&#10115;$N(b_{3}(TR))$=$\frac {0.9444}{0.3463+0.9444}$=$0.73169$  
->$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.97\;0.03\rbrack$ to $b_{2}\lbrack 0.27\;0.73\rbrack$ in this brach.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-init-hl-hl-hr-b3tr.png "b-upd")
+>$\Rightarrow$we have belief updated from $b_{2}\lbrack 0.97\;0.03\rbrack$ to $b_{3}\lbrack 0.27\;0.73\rbrack$ in this brach.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
