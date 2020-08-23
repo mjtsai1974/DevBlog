@@ -196,7 +196,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >Making <font color="Red">belief update</font> over theses steps, we can do some plan on the belief histroy, <font color="RoyalBlue">if we make continuous 2 observations of hearing tiger left</font>, the belief would be the probability distribution over tiger left and tiger right, which is $b_{2}\lbrack 0.97\;0.03\rbrack$.  <font color="RoyalBlue">Should we open the right door??</font>  
 >
 ><font color="DeepSkyBlue">[Answer]</font>  
->The ideal answer would be discusssed in my next article.  
+>The ideal answer would be discusssed in my next article.  Continue our illustration.  
 >
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-b-upd-2.png "b upd conti")
 >* From init$\rightarrow$HL$\rightarrow$HL$\rightarrow$<font color="OrangeRed">HL</font>  
