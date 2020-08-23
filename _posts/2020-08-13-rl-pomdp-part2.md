@@ -106,7 +106,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >* Begin from initial point  
 >We are given the tiger is at left and right with each probability $50%$ respectively, that's $b_{0}\lbrack 0.5\;0.5\rbrack$, the first $0.5$ is the probability for tiger at left side, the similarity for tiger at the right side.  
 >
->* From init$\rightarrow$HL  
+>* From init$\rightarrow$<font color="OrangeRed">HL</font>  
 >Given that you are hearning tiger left, we'd like to calculate the belief at this moment.  
 >&#10112;$b_{1}(TL)$  
 >=$P(TL\vert HL,listen,b_{0})$  
@@ -126,7 +126,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-init-hl-b1tr.png "b-upd")
 >$\Rightarrow$we have belief updated from $b_{0}$ to $b_{1}\lbrack 0.85\;0.15\rbrack$ in this brach.  
 >
->* From init$\rightarrow$HR  
+>* From init$\rightarrow$<font color="OrangeRed">HR</font>  
 >Given that you are hearning tiger right, we'd like to calculate the belief at this moment.  
 >&#10112;$b_{1}(TL)$  
 >=$P(TL\vert HL,listen,b_{0})$  
@@ -138,7 +138,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$0.85$  
 >$\Rightarrow$we have belief updated from $b_{0}$ to $b_{1}\lbrack 0.15\;0.85\rbrack$ in this brach.  
 >
->* From init$\rightarrow$HL$\rightarrow$HL  
+>* From init$\rightarrow$HL$\rightarrow$<font color="OrangeRed">HL</font>  
 >Suppose that you are hearning tiger left after hearing tiger left, we'd like to calculate the belief at this moment.  
 >&#10112;$b_{2}(TL)$  
 >=$P(TL\vert HL,listen,b_{1})$  
@@ -154,7 +154,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-init-hl-b1tl-b2tr.png "b-upd")
 >$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.85\;0.15\rbrack$ to $b_{2}\lbrack 0.97\;0.03\rbrack$ in this brach.  
 >
->* From init$\rightarrow$HL$\rightarrow$HR  
+>* From init$\rightarrow$HL$\rightarrow$<font color="OrangeRed">HR</font>  
 >Suppose that you are hearning tiger left after hearing tiger right, we'd like to calculate the belief at this moment.  
 >&#10112;$b_{2}(TL)$  
 >=$P(TL\vert HL,listen,b_{1})$  
@@ -167,6 +167,17 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.85\;0.15\rbrack$ to $b_{2}\lbrack 0.5\;0.5\rbrack$ in this brach.  
 ><font color="Brown">Notes::mjtsai1974</font>  
 ><font color="Brown">The likeli is goint to use the belief distribution at the node which it is branching from as the prior.</font>  
+>
+>* From init$\rightarrow$HR$\rightarrow$<font color="OrangeRed">HL</font>  
+>Suppose that you are hearning tiger left after hearing tiger right, we'd like to calculate the belief at this moment.  
+>&#10112;$b_{2}(TL)$  
+>=$P(TL\vert HL,listen,b_{1})$  
+>=$\frac {0.85\cdot(1\cdot 0.15+0\cdot 0.85)}{0.85\cdot(1\cdot 0.15+0\cdot 0.85)+0.15\cdot(1\cdot 0.85+0\cdot 0.15)}$  
+>=$0.5$  
+>&#10113;$b_{2}(TR)$  
+>=$P(TR\vert HR,listen,b_{1})$  
+>=$\frac {0.15\cdot(0\cdot 0.15+1\cdot 0.85)}{0.15\cdot(0\cdot 0.15+1\cdot 0.85)+0.85\cdot(0\cdot 0.85+1\cdot 0.15)}$  
+>$0.5$  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
