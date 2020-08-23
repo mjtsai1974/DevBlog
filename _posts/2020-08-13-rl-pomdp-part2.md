@@ -166,7 +166,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$0.5$  
 >$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.85\;0.15\rbrack$ to $b_{2}\lbrack 0.5\;0.5\rbrack$ in this brach.  
 ><font color="Brown">Notes::mjtsai1974</font>  
-><font color="Brown">The likeli is goint to use the belief distribution at the node which it is branching from as the prior.</font>  
+><font color="Brown">The likeli in the nominator is goint to use the belief distribution at the node which it is branching from as the prior.</font>  
 >
 >* From init$\rightarrow$HR$\rightarrow$<font color="OrangeRed">HL</font>  
 >Suppose that you are hearning tiger left after hearing tiger right, we'd like to calculate the belief at this moment.  
@@ -178,6 +178,17 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$P(TR\vert HR,listen,b_{1})$  
 >=$\frac {0.15\cdot(0\cdot 0.15+1\cdot 0.85)}{0.15\cdot(0\cdot 0.15+1\cdot 0.85)+0.85\cdot(0\cdot 0.85+1\cdot 0.15)}$  
 >$0.5$  
+>
+>* From init$\rightarrow$HR$\rightarrow$<font color="OrangeRed">HR</font>  
+>Suppose that you are hearning tiger right after hearing tiger right, we'd like to calculate the belief at this moment.  
+>&#10112;$b_{2}(TL)$  
+>=$P(TL\vert HL,listen,b_{1})$  
+>=$\frac {0.15\cdot(1\cdot 0.15+0\cdot 0.85)}{0.15\cdot(1\cdot 0.15+0\cdot 0.85)+0.85\cdot(1\cdot 0.85+0\cdot 0.15)}$  
+>$\approx 0.03$  
+>&#10113;$b_{2}(TR)$  
+>=$P(TR\vert HR,listen,b_{1})$  
+>=$\frac {0.85\cdot(0\cdot 0.15+1\cdot 0.85)}{0.85\cdot(0\cdot 0.15+1\cdot 0.85)+0.15\cdot(0\cdot 0.85+1\cdot 0.15)}$  
+>=$\approx 0.97$  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
