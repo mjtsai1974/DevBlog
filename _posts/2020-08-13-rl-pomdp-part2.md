@@ -178,6 +178,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$P(TR\vert HR,listen,b_{1})$  
 >=$\frac {0.15\cdot(0\cdot 0.15+1\cdot 0.85)}{0.15\cdot(0\cdot 0.15+1\cdot 0.85)+0.85\cdot(0\cdot 0.85+1\cdot 0.15)}$  
 >$0.5$  
+>$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.15\;0.85\rbrack$ to $b_{2}\lbrack 0.5\;0.5\rbrack$ in this brach.  
 >
 >* From init$\rightarrow$HR$\rightarrow$<font color="OrangeRed">HR</font>  
 >Suppose that you are hearning tiger right after hearing tiger right, we'd like to calculate the belief at this moment.  
@@ -189,6 +190,10 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$P(TR\vert HR,listen,b_{1})$  
 >=$\frac {0.85\cdot(0\cdot 0.15+1\cdot 0.85)}{0.85\cdot(0\cdot 0.15+1\cdot 0.85)+0.15\cdot(0\cdot 0.85+1\cdot 0.15)}$  
 >=$\approx 0.97$  
+>$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.15\;0.85\rbrack$ to $b_{2}\lbrack 0.03\;0.97\rbrack$ in this brach.  
+>
+><font color="DeepSkyBlue">Have a tea break before opening the door</font>  
+>Making <font color="Red">belief update</font> over theses steps, we can do some plan on the belief histroy, <font color="RoyalBlue">if we make continuous 2 observations of hearing tiger left</font>, the belief would be the probability distribution over tiger left and tiger right, which is $b_{2}\lbrack 0.97\;0.03\rbrack$.  <font color="RoyalBlue">Should we open the right door??</font>  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
