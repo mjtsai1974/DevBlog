@@ -192,12 +192,14 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$\approx 0.97$  
 >$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.15\;0.85\rbrack$ to $b_{2}\lbrack 0.03\;0.97\rbrack$ in this brach.  
 >
-><font color="RoyalBlue">[Question]Have a tea break before opening the door</font>  
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">Have a tea break before opening the door</font>  
 >Making <font color="Red">belief update</font> over theses steps, we can do some plan on the belief histroy, <font color="RoyalBlue">if we make continuous 2 observations of hearing tiger left</font>, the belief would be the probability distribution over tiger left and tiger right, which is $b_{2}\lbrack 0.97\;0.03\rbrack$.  <font color="RoyalBlue">Should we open the right door??</font>  
 >
-><font color="DeepSkyBlue">[Answer]</font>  
->The ideal answer would be discusssed in my next article.  Continue our illustration.  
+>The ideal answer would be discusssed in my next article.  
 >
+><font color="DeepSkyBlue">[5]</font>
+><font color="OrangeRed">Make extra one step</font>  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-b-upd-2.png "b upd conti")
 >* From init$\rightarrow$HL$\rightarrow$HL$\rightarrow$<font color="OrangeRed">HL</font>  
 >Guess what, if we keep on following in this path, from init to hearning tiger left, next to hearing tiger left, next to hearing tiger left, we'd like to make the belief update at this moment.  
@@ -236,10 +238,6 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$P(TL\vert HL,listen,b_{2})$  
 >=$\frac {0.85\cdot\lbrack(1\cdot 0.5+0\cdot 0.5)+(1\cdot 0.97+0\cdot 0.03)+(1\cdot 0.5+0\cdot 0.5)\rbrack}{0.85\cdot\lbrack(1\cdot 0.5+0\cdot 0.5)+(1\cdot 0.97+0\cdot 0.03)+(1\cdot 0.5+0\cdot 0.5)\rbrack+0.15\cdot(1\cdot 0.03+0\cdot 0.97)}$  
 >$\approx 0.997$  
->&#10113;$b_{3}(TR)$  
->=$P(TR\vert HR,listen,b_{2})$  
->=$\frac {0.15\cdot\lbrack(0\cdot 0.5+1\cdot 0.5)+(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)\rbrack}{0.15\cdot\lbrack(0\cdot 0.5+1\cdot 0.5)+(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)\rbrack+0.85\cdot(0\cdot 0.03+1\cdot 0.97)}$  
->=$0.997$  
 >&#10113;$b_{3}(TR)$  
 >=$P(TR\vert HR,listen,b_{2})$  
 >=$\frac {0.15\cdot\lbrack(0\cdot 0.5+1\cdot 0.5)+(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)\rbrack}{0.15\cdot\lbrack(0\cdot 0.5+1\cdot 0.5)+(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)\rbrack+0.85\cdot(0\cdot 0.03+1\cdot 0.97)}$  
@@ -285,6 +283,32 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >&#10114;$N(b_{3}(TL))$=$\frac {0.11}{0.11+0.9913}$=$0.099\approx 0.1$  
 >&#10115;$N(b_{3}(TR))$=$\frac {0.9913}{0.11+0.9913}$=$0.9$  
 >$\Rightarrow$we have belief updated from $b_{2}\lbrack 0.5\;0.5\rbrack$ to $b_{3}\lbrack 0.1\;0.9\rbrack$ in this brach.  
+>
+>* From init$\rightarrow$HR$\rightarrow$HR$\rightarrow$<font color="OrangeRed">HL</font>  
+>&#10112;$b_{3}(TL)$  
+>=$P(TL\vert HL,listen,b_{2})$  
+>=$\frac {0.85\cdot\lbrack(1\cdot 0.03+0\cdot 0.97)+(1\cdot 0.5+0\cdot 0.5)+(1\cdot 0.97+0\cdot 0.03)\rbrack}{0.85\cdot\lbrack(1\cdot 0.03+0\cdot 0.97)+(1\cdot 0.5+0\cdot 0.5)+(1\cdot 0.97+0\cdot 0.03)\rbrack+0.15\cdot(1\cdot 0.5+0\cdot 0.5)}$  
+>$\approx 0.9444$  
+>&#10113;$b_{3}(TR)$  
+>=$P(TR\vert HR,listen,b_{2})$  
+>=$\frac {0.15\cdot\lbrack(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)+(0\cdot 0.03+1\cdot 0.97)\rbrack}{0.15\cdot\lbrack(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)+(0\cdot 0.03+1\cdot 0.97)\rbrack+0.85\cdot(0\cdot 0.5+1\cdot 0.5)}$  
+>$\approx 0.3461538$  
+>&#10114;$N(b_{3}(TL))$=$\frac {0.9444}{0.94444+0.3461538}$=$0.7317\approx 0.73$  
+>&#10115;$N(b_{3}(TR))$=$\frac {0.3461538}{0.94444+0.3461538}$=$0.268221\approx 0.27$  
+>$\Rightarrow$we have belief updated from $b_{2}\lbrack 0.03\;0.97\rbrack$ to $b_{3}\lbrack 0.73\;0.27\rbrack$ in this brach.  
+>
+>* From init$\rightarrow$HR$\rightarrow$HR$\rightarrow$<font color="OrangeRed">HR</font>  
+>&#10112;$b_{3}(TL)$  
+>=$P(TL\vert HL,listen,b_{2})$  
+>=$\frac {0.15\cdot\lbrack(1\cdot 0.03+0\cdot 0.97)+(1\cdot 0.5+0\cdot 0.5)\rbrack}{0.15\cdot\lbrack(1\cdot 0.03+0\cdot 0.97)+(1\cdot 0.5+0\cdot 0.5)\rbrack+0.85\cdot\lbrack(1\cdot 0.97+0\cdot 0.03)+(1\cdot 0.5+0\cdot 0.5)\rbrack}$  
+>=$0.0598$  
+>$\approx 0.06$  
+>&#10113;$b_{3}(TR)$  
+>=$P(TR\vert HR,listen,b_{2})$  
+>=$\frac {0.85\cdot\lbrack(0\cdot 0.03+1\cdot 0.97)+(0\cdot 0.5+1\cdot 0.5)\rbrack}{0.85\cdot\lbrack(0\cdot 0.03+1\cdot 0.97)+(0\cdot 0.5+1\cdot 0.5)\rbrack+0.15\cdot\lbrack(0\cdot 0.97+1\cdot 0.03)+(0\cdot 0.5+1\cdot 0.5)\rbrack}$  
+>=$0.9401$  
+>$\approx 0.94$  
+>$\Rightarrow$we have belief updated from $b_{2}\lbrack 0.03\;0.97\rbrack$ to $b_{3}\lbrack 0.06\;0.94\rbrack$ in this brach.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
