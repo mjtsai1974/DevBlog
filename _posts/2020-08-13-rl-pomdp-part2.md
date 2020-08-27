@@ -310,9 +310,17 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >$\approx 0.94$  
 >$\Rightarrow$we have belief updated from $b_{2}\lbrack 0.03\;0.97\rbrack$ to $b_{3}\lbrack 0.06\;0.94\rbrack$ in this brach.  
 
+### Belief Space
+>Belief is a probability distribution over states.  
+>&#10112;$\sum_{S}b(S)$=$1$  
+>&#10113;for $n$ states, belief has $n-1$ degree of freedom  
+>&#10114;belief lives in a $n-1$ dimensional simplex, i.e, a world of 2 states, $b(S_{0})$ is determined by the value of $b(S_{1})$, it has 1 degree of freedom.  i.e, a world of 3 states, $b(S_{i})$ is determined by the other 2 values, it has 2 degree of freedom.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-b-space.png "b-space")
+
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
 >&#10113;[Decsision Making in Intellingent Systems: POMDP, 14 April 2008, Frans Oliehoek](http://www.fransoliehoek.net/docs/pomdp-lect-b.pdf)  
+>&#10114;[Intro to POMDPs, CompSci 590.2 Reinforcement Learning](http://db.cs.duke.edu/courses/fall17/cps296.2/POMDPs.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
