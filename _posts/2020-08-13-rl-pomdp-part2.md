@@ -99,7 +99,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >Suppose the model is of no question in this example of tiger problem, we need to maintain a list of all possibilities of the belief changes, such history is build by listening in each step.  
 >
 ><font color="DeepSkyBlue">[3]</font>
-><font color="OrangeRed">Belief update</font>  
+><font color="Brown">Belief update::mjtsai1974</font>  
 >By listening in each step, we can gather information of tiger location, that's the belief, based on history of such belief, we can then have a plan, i.e, the action to take after HL$\rightarrow$HL, HL$\rightarrow$HR.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-08-13-rl-pomdp-part2-tiger-b-upd.png "b upd")
 >
@@ -166,7 +166,7 @@ This post will make a full illustration of belief update in <font color="Red">PO
 >=$0.5$  
 >$\Rightarrow$we have belief updated from $b_{1}\lbrack 0.85\;0.15\rbrack$ to $b_{2}\lbrack 0.5\;0.5\rbrack$ in this brach.  
 ><font color="Brown">Notes::mjtsai1974</font>  
-><font color="Brown">The likeli in the nominator is goint to use the belief distribution at the node which it is branching from as the prior.</font>  
+>The likeli in the nominator is goint to use the belief distribution at the node which it is branching from as the prior.  
 >
 >* From init$\rightarrow$HR$\rightarrow$<font color="OrangeRed">HL</font>  
 >Suppose that you are hearning tiger left after hearing tiger right, we'd like to calculate the belief at this moment.  
