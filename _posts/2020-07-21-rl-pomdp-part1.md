@@ -57,7 +57,7 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >&#10113;belief state updating:  
 >$b^{\'}(S^{\'})$=$P(S^{\'}|O,A,b)$, this represents the probability for we are in state $S^{\'}$, given that we take action $A$, make observation $O$, from previous <font color="Red">belief state distribution</font>, say $b$.  
 >&#10114;observation function:  
->$O(S^{\'},A,O)$=$P(O|S^{\'},A)$, it represents the probability for we make observation $O$, given that we are transiting to state $S^{\'}$, by taking action $A$.  
+>$\Omega(S^{\'},A,O)$=$P(O|S^{\'},A)$, it represents the probability for we make observation $O$, given that we are transiting to state $S^{\'}$, by taking action $A$.  
 >&#10115;transitive probability:  
 >$T(S,A,S^{\'})$=$P(S^{\'}|S,A)$, it represents the probability for we transit from $S$ to $S^{\'}$, by taking action $A$.  
 >&#10116;rewards:  
@@ -79,7 +79,7 @@ This post is an entry of <font color="Red">POMDP</font>(Partial Observable Marko
 >
 >* The <font color="Red">posterior belief</font>  
 >That's why we need to make belief update, say the <font color="Red">posterior belief</font>:  
->$b^{\'}(S)$=$\alpha\cdot P(O|S^{\'},A)\cdot\sum_{S}P(S^{\'}|S,A)\cdot b(S)$  
+>$b^{\'}(S^{\'})$=$\alpha\cdot P(O|S^{\'},A)\cdot\sum_{S}P(S^{\'}|S,A)\cdot b(S)$  
 >, where $\alpha$ is certain coefficient, such <font color="DeepPink">belief update is continuous rather than discrete!!!</font>  
 >
 >* <font color="Red">Continuous belief update</font>  
