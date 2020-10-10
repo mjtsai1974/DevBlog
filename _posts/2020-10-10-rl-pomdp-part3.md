@@ -8,6 +8,9 @@ title: Partial Observable Markov Decision Process - Part 3
 This post will begin with the difficulties in solving <font color="Red">POMDP</font>(Partial Observable Markov Decision Process), guide you througth the illustration of value iteration, and lead you to one of the canonical approach of the <font color="Red">PWLC</font>(piecewise linear convex).  
 </p>
 
+### Difficulties In Solving <font color="Red">POMDP</font>
+>A <font color="Red">POMDP</font> is a generalization of MDPs to situations that <font color="RosyBrown">world states are not fully observable</font>.  Recall in my last article [POMDP - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2020/08/13/rl-pomdp-part2/), the tiger example, the full illustration of <font color="Red">belief updating</font> by listening, before the agent opens the correct door, it continues to listen until the resulting belief of probability distribution over world states is to be believed converged in each path of sequence of observations.  
+
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
 
