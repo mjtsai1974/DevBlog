@@ -28,7 +28,9 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >&#10113;$V_{t}(b)$=$max_{a}\\{R(b,a)$+$\gamma\cdot\sum_{o}P(o\vert a,b)\cdot V_{t-1}(b^{\'})\\}$  
 >, where $b^{\'}$=state estimated from $(a,b,o)$ at timestamp $t-1$.  
 >
->$V_{t}(b)$ means that we have $t$ steps to go from $b$, and $V_{t-1}(b^{\'})$ indicates we have $t-1$ steps to go from $b^{\'}$, and $b$ has been belief updated to $b^{\'}$ by action $a$ and observation $o$.  
+>$V_{t}(b)$ means that we have $t$ steps to go from $b$, and $V_{t-1}(b^{\'})$ indicates we have $t-1$ steps to go from $b^{\'}$, where $b$ has been belief updated to $b^{\'}$ by action $a$ and observation $o$.  
+>
+>It is the immediate reward plus the expected discounted value of where we end up, say $b^{\'}$ and make observation $o$.  
 
 ### Difficulties In Solving <font color="Red">POMDP</font>
 ><font color="DeepSkyBlue">[Notes]</font>
