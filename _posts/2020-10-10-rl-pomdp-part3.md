@@ -10,12 +10,12 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 
 ### <font color="Red">POMDP</font> Value Function
 >* <font color="OrangeRed">Bellman equation for POMDP</font>  
->$V^{\ast}(b)$=$max_{a}\{\rho(b,a)$+$\gamma\cdot\int_{b^{\'}}P(b^{\'}\vert a,b)\cdot V^{\ast}(b^{\'})db^{\'}\}$  
->, where $\rho(b,a)$=$\sum_{s}R(s,a)\cdot b(s)$, and <font color="RoyalBlue">why integrate over $b^{\'}$?</font>  
+>$V^{\ast}(b)$=$max_{a}\\{\rho(b,a)$+$\gamma\cdot\int_{b^{\'}}P(b^{\'}\vert a,b)\cdot V^{\ast}(b^{\'})db^{\'}\\}$  
+>, where $\rho(b,a)$=$\sum_{s}R(s,a)\cdot b(s)$, and <font color="RoyalBlue">why</font> integrate over $b^{\'}$?  
 ><font color="DeepSkyBlue">Because the continuous belief update in POMDP.</font>  
->>$\Rightarrow V^{\ast}(b)$=$max_{a}\{\rho(b,a)$+$\gamma\cdot\sum_{b^{\'}}P(b^{\'}\vert a,b)\cdot V^{\ast}(b^{\'})\}$  
->>, where $P(b^{\'}\vert a,b)$=$\sum_{o}\sum_{s^{\'}}P(o\vert s^{\'},a)\cdot\sum_{s}P(s^{\'}|a,b)\cdot b(s)$  
->>, which is the belief transition probability derived from POMDP transition/observation models.  
+>$\Rightarrow V^{\ast}(b)$=$max_{a}\\{\rho(b,a)$+$\gamma\cdot\sum_{b^{\'}}P(b^{\'}\vert a,b)\cdot V^{\ast}(b^{\'})\\}$  
+>, where $P(b^{\'}\vert a,b)$=$\sum_{o}\sum_{s^{\'}}P(o\vert s^{\'},a)\cdot\sum_{s}P(s^{\'}|a,b)\cdot b(s)$  
+>, which is the belief transition probability derived from POMDP transition/observation models.  
 >
 
 ### Difficulties In Solving <font color="Red">POMDP</font>
