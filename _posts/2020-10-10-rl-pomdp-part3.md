@@ -23,14 +23,14 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 ><font color="OrangeRed">Memory(POMDP) v.s. memoryless(DMP)</font>
 >POMDP lacks important state information and must be compensated by memory.  
 >
->Extraneous information in observation needs to learn to avoid/try, where such information should be maintained by a memory-based model of the world in order to predict what will happen accurately!!  
+><font color="OrangeRed">Extraneous information</font> in observation needs to learn to avoid/try, where such information should be maintained by a <font color="OrangeRed">memory-based model</font> of the world in order to predict what will happen accurately!!  
 >
 >If the agent has the complete full states, then it can choose optimal actions without memory.  
 >
 >Take two hallways for example, optimal policy might take right for the first, might take left for the first, a memoryless policy could not distinguish between them.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-2-hallways.png "2 hallways")
 >
->You might ponder why not just use the optimal policy in each state to decide the action that leads to the maximum reward!!  Because in POMDP, to make observation after taking an action, we need further to know what state we are ranging from, to estimate such probabilistic observation, we need memory for these belief state information.  
+>You might ponder why not just use the optimal policy in each state to decide the action that leads to the maximum reward!!  Because in POMDP, to make observation after taking an action, <font color="DeepPink">we need further to know what state we are ranging from, to estimate such probabilistic observation, we need memory for these belief state information</font>.  
 >
 >If we'd like to get reward $R_{1}$, we might take left given that we are in $S_{1}$, then we need to remember that we are in $S_{1}$ already.  
 
