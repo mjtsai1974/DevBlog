@@ -9,7 +9,15 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 </p>
 
 ### Difficulties In Solving <font color="Red">POMDP</font>
->A <font color="Red">POMDP</font> is a generalization of MDPs to situations that <font color="RosyBrown">world states are not fully observable</font>.  Recall in my last article [POMDP - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2020/08/13/rl-pomdp-part2/), the tiger example, the full illustration of <font color="Red">belief updating</font> by listening, before the agent opens the correct door, it continues to listen until the resulting belief of probability distribution over world states is to be believed converged in each path of sequence of observations.  
+><font color="DeepSkyBlue">[Notes]</font>
+><font color="OrangeRed">Findings in the belief update of tiger example</font>
+>A <font color="Red">POMDP</font> is a generalization of MDPs to situations that <font color="RosyBrown">world states are not fully observable</font>.  
+>
+>Recall in my last article [POMDP - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2020/08/13/rl-pomdp-part2/), the tiger example, the full illustration of <font color="Red">belief updating</font> by listening, before the agent opens the correct door, it continues to listen until the resulting belief of probability distribution over world states is to be believed converged in each path of sequence of observations.  
+>
+>We have 2 findings:  
+>&#10112;the agent has to keep track the history of belief update with respect to observation and action taken in each unique path, <font color="#C20000">we need memory in POMDP</font>.  
+>&#10113;after each action, there is a new belief from prior belief.  <font color="#C20000">The belief update process is continuous</font>.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
