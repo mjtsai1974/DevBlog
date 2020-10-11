@@ -18,6 +18,21 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >We have 2 findings:  
 >&#10112;the agent has to keep track the history of belief update with respect to observation and action taken in each unique path, <font color="#C20000">we need memory in POMDP</font>.  
 >&#10113;after each action, there is a new belief from prior belief.  <font color="#C20000">The belief update process is continuous</font>.  
+>
+><font color="DeepSkyBlue">[Difficulties]</font>
+><font color="OrangeRed">Memory(POMDP) v.s. memoryless(DMP)</font>
+>POMDP lacks important state information and must be compensated by memory.  
+>
+>Extraneous information in observation needs to learn to avoid/try, where such information should be maintained by a memory-based model of the world in order to predict what will happen accurately!!  
+>
+>If the agent has the complete full states, then it can choose optimal actions without memory.  
+>
+>Take two hallways for example, optimal policy might take right for the first, might take left for the first, a memoryless policy could not distinguish between them.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-2-hallways.png "2 hallways")
+>
+>You might ponder why not just use the optimal policy in each state to decide the action that leads to the maximum reward!!  Because in POMDP, to make observation after taking an action, we need further to know what state we are ranging from, to estimate such probabilistic observation, we need memory for these belief state information.  
+>
+>If we'd like to get reward $R_{1}$, we might take left given that we are in $S_{1}$, then we need to remember that we are in $S_{1}$ already.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
