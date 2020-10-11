@@ -15,10 +15,20 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >, this expression is in rather intuition, where $\rho(b,a)$=$\sum_{s}R(s,a)\cdot b(s)$, and <font color="RoyalBlue">why</font> integrate over $b^{\'}$?  
 >Because <font color="DeepSkyBlue">the continuous belief update in POMDP.</font>  
 >
->&#10112;$V^{\ast}(b)$=$max_{a}\\{\rho(b,a)$+$\gamma\cdot\sum_{b^{\'}}P(b^{\'}\vert a,b)\cdot V^{\ast}(b^{\'})\\}$  
+>&#10113;$V^{\ast}(b)$=$max_{a}\\{\rho(b,a)$+$\gamma\cdot\sum_{b^{\'}}P(b^{\'}\vert a,b)\cdot V^{\ast}(b^{\'})\\}$  
 >, this is a more realistic format, where $P(b^{\'}\vert a,b)$=$\sum_{o}\sum_{s^{\'}}P(o\vert s^{\'},a)\cdot\sum_{s}P(s^{\'}|a,b)\cdot b(s)$  
 >, which is the belief transition probability derived from POMDP transition/observation models.  
 >
+>Notes must be made that in my article, the uppercase letter stands for the variable, whereas the littlecase letter represents the value in it.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Solving POMDP by value iteration</font>  
+>We take the value iteration in <font color="Red">POMDP</font> as:  
+>&#10112;$V_{0}(b)$=$0$ to be initial value of belief $b$  
+>&#10113;$V_{t}(b)$=$max_{a}\\{R(b,a)$+$\gamma\cdot\sum_{o}P(o\vert a,b)\cdot V_{t-1}(b^{\'})\\}$  
+>, where $b^{\'}$=state estimated from $(a,b,o)$ at timestamp $t-1$.  
+>
+>$V_{t}(b)$ means that we have $t$ steps to go from $b$, and $V_{t-1}(b^{\'})$ indicates we have $t-1$ steps to go from $b^{\'}$, and $b$ has been belief updated to $b^{\'}$ by action $a$ and observation $o$.  
 
 ### Difficulties In Solving <font color="Red">POMDP</font>
 ><font color="DeepSkyBlue">[Notes]</font>
