@@ -28,9 +28,11 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >&#10113;$V_{t}(b)$=$max_{a}\\{R(b,a)$+$\gamma\cdot\sum_{o}P(o\vert a,b)\cdot V_{t-1}(b^{\'})\\}$  
 >, where $b^{\'}$=state estimated from $(a,b,o)$ at timestamp $t-1$.  
 >
+>It is the immediate reward plus the expected discounted value of where we end up, say $b^{\'}$ and make observation $o$.  
+>
 >$V_{t}(b)$ means that we have $t$ steps to go from $b$, and $V_{t-1}(b^{\'})$ indicates we have $t-1$ steps to go from $b^{\'}$, where $b$ has been belief updated to $b^{\'}$ by action $a$ and observation $o$.  
 >
->It is the immediate reward plus the expected discounted value of where we end up, say $b^{\'}$ and make observation $o$.  
+>The scary thing is the value function $V$, defined over <font color="RosyBrown">an infinite set of belief states</font>, $b$, if we make a loop for all belief states to do this update, &#10113;, it is just <font color="RosyBrown">an infinite number of belief states</font>, $b^{\'}s$, that would <font color="RosyBrown">not</font> terminated!!!  
 
 ### Difficulties In Solving <font color="Red">POMDP</font>
 ><font color="DeepSkyBlue">[Notes]</font>
