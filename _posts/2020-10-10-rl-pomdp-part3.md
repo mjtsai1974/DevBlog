@@ -49,7 +49,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 ><font color="OrangeRed">Memory(POMDP) v.s. memoryless(DMP)</font>
 >POMDP lacks important state information and must be compensated by memory.  
 >
-><font color="OrangeRed">Extraneous information</font> in observation needs to learn to avoid/try, where such information should be maintained by a <font color="OrangeRed">memory-based model</font> of the world in order to predict what will happen accurately!!  
+>The agent needs to learn <font color="OrangeRed">extraneous information</font> in observation to avoid/try, where such information should be maintained by a <font color="OrangeRed">memory-based model</font> of the world in order to predict what will happen accurately!!  
 >
 >If the agent has the complete full states, then it can choose optimal actions without memory.  
 >
@@ -59,6 +59,14 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >You might ponder why not just use the optimal policy in each state to decide the action that leads to the maximum reward!!  Because in POMDP, to make observation after taking an action, <font color="DeepPink">we need further to know what state we are ranging from, to estimate such probabilistic observation, we need memory for these belief state information</font>.  
 >
 >If we'd like to get reward $R_{1}$, we might take left given that we are in $S_{1}$, then we need to remember that we are in $S_{1}$ already.  
+>
+><font color="DeepSkyBlue">[Difficulties]</font>
+><font color="OrangeRed">Infinite belief states</font>
+>In the belief update illustration of tiger example in [POMDP - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2020/08/13/rl-pomdp-part2/), you can realize that new belief is generated from prior belief upon action taken, observation made, such process is in a continuous manner.  
+>
+>If we continue to listen in this simple tiger example, over and over, the set of belief states would definitely grow up in its size.  To be believe in other application with high complexity, it will be infinite, uncountable.  
+>
+>Then, we should <font color="Red">jump from infinity to finite</font>.  <font color="RosyBrown">Value iteration updates couldn't be carried out, because uncountable number of belief state</font>.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
