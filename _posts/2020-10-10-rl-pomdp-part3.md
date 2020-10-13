@@ -68,6 +68,17 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >
 >Then, we should <font color="Red">jump from infinity to finite</font>.  <font color="RosyBrown">Value iteration updates couldn't be carried out, because uncountable number of belief state</font>.  
 
+### Policy Tree
+>In general, an agent-step policy can be represented as a policy tree:  
+>&#10112;search over sequences of actions with limited <font color="OrangeRed">look-ahead</font>  
+>&#10113;branching over actions and observations  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree.png "policy tree")
+>Suppose we begin from root node of certain action $A$, with probabilitistic distribution over observations $\\{O_{1},O_{2},...,O_{K}\\}$, and totally $H$ steps to go.  
+>
+>With 2 steps to go, it takes an action, make an observation, and make the final action.  
+>
+>With 1 step remaining, the agent must then just take an action and get the immediate reward.  
+
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
 
