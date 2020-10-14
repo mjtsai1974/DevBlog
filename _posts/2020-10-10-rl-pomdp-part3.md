@@ -45,7 +45,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >&#10112;the agent has to keep track the history of belief update with respect to observation and action taken in each unique path, <font color="#C20000">we need memory in POMDP</font>.  
 >&#10113;after each action, there is a new belief from prior belief.  <font color="#C20000">The belief update process is continuous</font>.  
 >
-><font color="DeepSkyBlue">[Difficulties]</font>
+><font color="DeepSkyBlue">[Difficulty 1]</font>
 ><font color="OrangeRed">Memory(POMDP) v.s. memoryless(DMP)</font>
 >POMDP lacks important state information and must be compensated by memory.  
 >
@@ -60,7 +60,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >
 >If we'd like to get reward $R_{1}$, we might take left given that we are in $S_{1}$, then we need to remember that we are in $S_{1}$ already.  
 >
-><font color="DeepSkyBlue">[Difficulties]</font>
+><font color="DeepSkyBlue">[Difficulty 2]</font>
 ><font color="OrangeRed">Infinite belief states</font>
 >In the belief update illustration of tiger example in [POMDP - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2020/08/13/rl-pomdp-part2/), you can realize that new belief is generated from prior belief upon action taken, observation made, such process is in a continuous manner.  
 >
@@ -69,6 +69,8 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >Then, we should <font color="Red">jump from infinity to finite</font>.  <font color="RosyBrown">Value iteration updates couldn't be carried out, because uncountable number of belief state</font>.  
 
 ### Policy Tree
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">Brief description</font>  
 >In general, an agent-step policy can be represented as a policy tree:  
 >&#10112;search over sequences of actions with limited <font color="OrangeRed">look-ahead</font>  
 >&#10113;branching over actions and observations  
@@ -78,9 +80,23 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >With 2 steps to go, it takes an action, make an observation, and make the final action.  
 >
 >With 1 step remaining, the agent must then just take an action and get the immediate reward.  
+>
+>In above tree, there are totally $\vert A\vert^{\frac {\vert O\vert^{H} - 1}{\vert O\vert - 1}}$ nodes.  
+>
+><font color="DeepSkyBlue">[2]</font>
+><font color="OrangeRed">Relate value function with policy tree</font>  
+>&#10112;if $P_{t}$ is 1-step policy tree, the value of executing that action in state $S$:  
+>$V_{P_{t}}(S)$=$R(s,a(P_{t}))$, $t=1$  
+>&#10113;if $P_{t}$ is t-steps policy tree, then  
+>$V_{P_{t}}(S)$  
+>=$R(s,A(P_{t}))$+$\gamma\cdot\\{Expected future value\\}$  
+>=$R(s,A(P_{t}))$+$\gamma\cdot(\sum_{s^{\'}}P(s^{\'}\vert b,a)\cdot b(s)\cdot\sum_{o}P(o\vert s^{\'},a)\cdot V_{O(A(P_{t}))}(s^{\'}))$  
+>, where $A(P_{t})$=$a$, the action taken in the root node,  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
+>&#10113;[POMDP Value Iteration Example, Tony, Brown University's Computer Science Department](http://cs.brown.edu/research/ai/pomdp/tutorial/pomdp-vi-example.html)  
+>&#10114;[POMDP Tutorial, Stefan Kopp, Bielefeld University](https://www.techfak.uni-bielefeld.de/~skopp/Lehre/STdKI_SS10/POMDP_tutorial.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
