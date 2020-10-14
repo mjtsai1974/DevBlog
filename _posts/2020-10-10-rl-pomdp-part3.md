@@ -90,7 +90,8 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >&#10113;if $P_{t}$ is t-steps policy tree, then  
 >$V_{P_{t}}(S)$  
 >=$R(s,A(P_{t}))$+$\gamma\cdot\\{Expected future value\\}$  
->=$R(s,A(P_{t}))$+$\gamma\cdot(\sum_{s^{\'}}P(s^{\'}\vert b,a)\cdot b(s)\cdot\sum_{o}P(o\vert s^{\'},a)\cdot V_{O(A(P_{t}))}(s^{\'}))$  
+>=$R(s,A(P_{t}))$+$\gamma\cdot(\sum_{s^{\'}}P(s^{\'}\vert b,a)\cdot b(s)$  
+>$\;\;\cdot(\sum_{o}P(o\vert s^{\'},a)\cdot V_{O(A(P_{t}))}(s^{\'})))$  
 >, where $A(P_{t})$=$a$, the action taken in the root node,  
 
 ### Addendum
