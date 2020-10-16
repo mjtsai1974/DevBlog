@@ -105,7 +105,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Optimal t-steps policy</font>  
 >Treat value function of belief state $b$ with regard to the $t$-steps policy tree as:  
->$V_{P_{t}}(b)$=$\sum_{s}V_{P_{t}}(s)\cdot b(s)$  
+>$V_{P_{t}}(b)$=$\sum_{s}V_{P_{t}}(s)\cdot b(s)$, then  
 >
 
 ### Addendum
