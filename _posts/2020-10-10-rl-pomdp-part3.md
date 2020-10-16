@@ -86,7 +86,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Relate value function with policy tree</font>  
 >* Value function of a policy tree  
->&#10112;if $P_{t}$ is 1-step policy tree, the value of executing that action in state $S$:  
+>&#10112;if $P_{t}$ is 1-step policy tree, the value of executing that action in state $s$:  
 >$V_{P_{t}}(s)$=$R(s,a(P_{t}))$, $t=1$  
 >&#10113;if $P_{t}$ is t-steps policy tree, then  
 >$V_{P_{t}}(s)$  
@@ -101,6 +101,11 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >* Value function over belief state  
 >&#10112;we could think $V_{P_{t}}(b)$ as a vector associated with the policy tree of $t$-steps, where $dim(V_{P_{t}}(b))$=$n$, for $b$=$\\{s_{1},s_{2},...,s_{n}\\}$:  
 >&#10113;use the notation $\alpha_{P_{t}}$=$\left\langle V_{P_{t}}(s_{1}),V_{P_{t}}(s_{2}),...,V_{P_{t}}(s_{n})\right\rangle$  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">Optimal t-steps policy</font>  
+>Treat value function of belief state $b$ with regard to the $t$-steps policy tree as:  
+>$V_{P_{t}}(b)$=$\sum_{s}V_{P_{t}}(s)\cdot b(s)$  
 >
 
 ### Addendum
