@@ -85,14 +85,23 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >
 ><font color="DeepSkyBlue">[2]</font>
 ><font color="OrangeRed">Relate value function with policy tree</font>  
+>* Value function of a policy tree  
 >&#10112;if $P_{t}$ is 1-step policy tree, the value of executing that action in state $S$:  
 >$V_{P_{t}}(S)$=$R(s,a(P_{t}))$, $t=1$  
 >&#10113;if $P_{t}$ is t-steps policy tree, then  
->$V_{P_{t}}(S)$  
+>$V_{P_{t}}(s)$  
 >=$R(s,A(P_{t}))$+$\gamma\cdot\\{Expected future value\\}$  
 >=$R(s,A(P_{t}))$+$\gamma\cdot(\sum_{s^{\'}}P(s^{\'}\vert b,a)\cdot b(s)$  
 >$\;\;\cdot(\sum_{o}P(o\vert s^{\'},a)\cdot V_{O(A(P_{t}))}(s^{\'})))$  
->, where $A(P_{t})$=$a$, the action taken in the root node,  
+>, where we have next $b^{\'}$ probabilistically distributed over $s^{\'}$  
+>, and $A(P_{t})$=$a$, the action taken in the root node  
+>, with $\sum_{o}P(o\vert b,a)$=$\sum_{s^{\'}}P(s^{\'}\vert b,a)\cdot b(s)$  
+>$\;\;\;\;\cdot(\sum_{o}P(o\vert s^{\'},a)\cdot V_{O(A(P_{t}))}(s^{\'}))$  
+>
+>* Value function over belief state  
+>&#10112;we could think $V_{P_{t}}(b)$ as a vector associated with the policy tree of $t$-steps, where $dim(V_{P_{t}}(b))$=$n$, for $b$=$\\{s_{1},s_{2},...,s_{n}\\}$:  
+>&#10113;use the notation $\alpha_{P_{t}}$=$\left\langle V_{P_{t}}(s_{1}),V_{P_{t}}(s_{2}),...,V_{P_{t}}(s_{n})\right\rangle$  
+>
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
@@ -130,6 +139,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 <!-- \subset -->
 <!-- \subseteq -->
 <!-- \widehat -->
+<!-- \left\langle1,2,3\right\rangle => <1,2,3> -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus, mathematic expression</font> -->
