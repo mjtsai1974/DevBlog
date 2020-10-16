@@ -87,7 +87,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 ><font color="OrangeRed">Relate value function with policy tree</font>  
 >* Value function of a policy tree  
 >&#10112;if $P_{t}$ is 1-step policy tree, the value of executing that action in state $S$:  
->$V_{P_{t}}(S)$=$R(s,a(P_{t}))$, $t=1$  
+>$V_{P_{t}}(s)$=$R(s,a(P_{t}))$, $t=1$  
 >&#10113;if $P_{t}$ is t-steps policy tree, then  
 >$V_{P_{t}}(s)$  
 >=$R(s,A(P_{t}))$+$\gamma\cdot\\{Expected future value\\}$  
