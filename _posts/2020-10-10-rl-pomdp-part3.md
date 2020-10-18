@@ -101,20 +101,17 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >* Value function over belief state  
 >&#10112;we could think $V_{P_{t}}(b)$ as a vector associated with the policy tree of $t$-steps, where $dim(V_{P_{t}}(b))$=$n$, for $b$=$\\{s_{1},s_{2},...,s_{n}\\}$  
 >&#10113;use the notation $\alpha_{P_{t}}$=$\left\langle V_{P_{t}}(s_{1}),V_{P_{t}}(s_{2}),...,V_{P_{t}}(s_{n})\right\rangle$  
+>&#10114;treat value function of belief state $b$ with regard to the $t$-steps policy tree as $V_{P_{t}}(b)$=$\sum_{s}V_{P_{t}}(s)\cdot b(s)$  
+>&#10115;we have $V_{P_{t}}(b)$=$b\cdot\alpha_{P_{t}}$...dot product  
 >
 ><font color="DeepSkyBlue">[3]</font>
-><font color="OrangeRed">Optimal t-steps policy</font>  
->Treat value function of belief state $b$ with regard to the $t$-steps policy tree as:  
->$V_{P_{t}}(b)$=$\sum_{s}V_{P_{t}}(s)\cdot b(s)$, then  
->, by above notation $\alpha_{P_{t}}$, we have:  
->$V_{P_{t}}(b)$=$b\cdot\alpha_{P_{t}}$...dot product  
->
+><font color="OrangeRed">Optimal $t$-steps policy</font>  
 >To construct an optimal $t$-steps policy, we must maximize over all $t$-steps policy tree $P_{t}$:  
 >$V_{t}^{\ast}(b)$=$max_{p\in P_{t}}\alpha_{p}\cdot b$  
 >
 >As $V_{P_{t}}(b)$ is linear in $b$ for each $p\in P_{t}$, then $V_{t}^{\ast}(b)$ would be the upper surface of these functions.  
 >
->That is to say $V_{t}^{\ast}(b)$ is piecewise linear and convex.  
+>That is to say $V_{t}^{\ast}(b)$ is <font color="Red">piecewise linear and convex</font>.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
