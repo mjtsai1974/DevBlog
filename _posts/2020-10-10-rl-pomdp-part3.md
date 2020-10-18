@@ -109,7 +109,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >To construct an optimal $t$-steps policy, we must maximize over all $t$-steps policy tree $P_{t}$:  
 >$V_{t}^{\ast}(b)$=$max_{p\in P_{t}}\alpha_{p}\cdot b$  
 >
->As $V_{P_{t}}(b)$ is linear in $b$ for each $p\in P_{t}$, then $V_{t}^{\ast}(b)$ would be the upper surface of these functions.  
+>As $V_{P_{t}}(b)$ is linear in $b$ for each $p\in P_{t}$, then $V_{t}^{\ast}(b)$ would be the <font color="DeepPink">upper surface</font> of these functions.  
 >
 >That is to say $V_{t}^{\ast}(b)$ is <font color="Red">piecewise linear and convex</font>.  
 
