@@ -117,6 +117,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
 >&#10113;[POMDP Value Iteration Example, Tony, Brown University's Computer Science Department](http://cs.brown.edu/research/ai/pomdp/tutorial/pomdp-vi-example.html)  
 >&#10114;[POMDP Tutorial, Stefan Kopp, Bielefeld University](https://www.techfak.uni-bielefeld.de/~skopp/Lehre/STdKI_SS10/POMDP_tutorial.pdf)  
+>&#10115;[POMDPOs, Rowan McAllister and Alexandre Navarro, MLG Reading Group, 02 June 2016, Cambridge University](http://cbl.eng.cam.ac.uk/pub/Intranet/MLG/ReadingGroup/pomdp.pdf)  
 
 <!-- Γ -->
 <!-- \Omega -->
