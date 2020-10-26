@@ -90,7 +90,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >$V_{P_{t}}(s)$=$R(s,a(P_{t}))$, $t=1$  
 >&#10113;if $P_{t}$ is t-steps policy tree, then  
 >$V_{P_{t}}(s)$  
->=$R(s,A(P_{t}))$+$\gamma\cdot\\{Expected future value\\}$  
+>=$R(s,A(P_{t}))$+$\gamma\cdot\\{Expected\;future\;value\\}$  
 >=$R(s,A(P_{t}))$+$\gamma\cdot(\sum_{s^{\'}}P(s^{\'}\vert b,a)\cdot b(s)$  
 >$\;\;\cdot(\sum_{o}P(o\vert s^{\'},a)\cdot V_{O(A(P_{t}))}(s^{\'})))$  
 >, where we have next $b^{\'}$ probabilistically distributed over $s^{\'}$  
@@ -107,11 +107,23 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">Optimal $t$-steps policy</font>  
 >To construct an optimal $t$-steps policy, we must maximize over all $t$-steps policy tree $P_{t}$:  
->$V_{t}^{\ast}(b)$=$max_{p\in P_{t}}\alpha_{p}\cdot b$  
+>$V_{t}^{\ast}(b)$=$max_{\alpha_{p}\in\alpha_{\tau}}\alpha_{p}\cdot b$, where $\alpha_{\tau}$ is a collection of $\alpha_{P_{t}}$  
 >
->As $V_{P_{t}}(b)$ is linear in $b$ for each $p\in P_{t}$, then $V_{t}^{\ast}(b)$ would be the <font color="DeepPink">upper surface</font> of these functions.  
+>As $V_{P_{t}}(b)$ is linear in $b$ for each vector in $\alpha_{\tau}$, then $V_{t}^{\ast}(b)$ would be the <font color="DeepPink">upper surface</font> of these functions.  
 >
 >That is to say $V_{t}^{\ast}(b)$ is <font color="Red">piecewise linear and convex</font>.  
+
+### Illustration Of <font color="Red">PWLC</font>(Piecewise Linear Convex)
+><font color="DeepSkyBlue">[1]</font>
+><font color="OrangeRed">The preliminary</font>
+>* The given scenario  
+>Suppose we are given the world of 2 states, 2 actions and each action taken might lead to 3 possible observations in this environment of uncertainty.  
+>
+>* $V_{P_{t}}(a_{i})$  
+>Let $V_{P_{t}}(a_{i})$ to be the value function induced by policy tree $P_{t}(a_{i})$, for $i=\\{1,2,...,n\\}$, where $a_{i}$ is the $i$-th action, and this value function is of the form:  
+>$\;\;V_{P_{t}}(a_{i})(b)$=$b\cdot\alpha_{P_{t}}(a_{i})$  
+>>It is a multi-linear function of $b$, for each value function could be shown as a line, plan, or hyperplan, depends on the number of states.  
+>
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
