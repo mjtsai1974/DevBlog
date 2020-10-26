@@ -120,9 +120,9 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >Suppose we are given the world of 2 states, 2 actions and each action taken might lead to 3 possible observations in this environment of uncertainty.  
 >
 >* $V_{P_{t}(a_{i})}$  
->Let $V_{P_{t}}(a_{i})$ to be the value function induced by policy tree $P_{t}(a_{i})$, for $i=\\{1,2,...,n\\}$, where $a_{i}$ is the $i$-th action, and this value function is of the form:  
+>Let $V_{P_{t}(a_{i})}$ to be the value function induced by policy tree $P_{t}$, for $i=\\{1,2,...,n\\}$, with $a_{i}$ the $i$-th action in the root node, and this value function is of the form:  
 >$\;\;V_{P_{t}(a_{i})}(b)$=$b\cdot\alpha_{P_{t}}(a_{i})$  
->>It is a <font color="DeepSkyBlue">multi-linear function</font> of $b$, for <font color="DeepSkyBlue">each value function</font> could be shown as a <font color="DeepSkyBlue">line</font>, <font color="DeepSkyBlue">plan</font>, or <font color="DeepSkyBlue">hyperplan</font>, depends on the number of states.  
+>>It is a <font color="DeepSkyBlue">multi-linear function</font> of $b$, for <font color="DeepSkyBlue">each value function</font> could be shown as a <font color="DeepSkyBlue">line</font>, <font color="DeepSkyBlue">plan</font>, or <font color="DeepSkyBlue">hyperplan</font>, depends on <font color="OrangeRed">the number of states</font>.  
 >
 
 ### Addendum
