@@ -129,6 +129,8 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >For $1$-step policy tree, we just take one single action and get the <font color="#9300FF">immediate reward</font> to be the value function, such <font color="#9300FF">immediate reward</font> due to action execution is over $s_{0}$ and $s_{1}$, <font color="DeepSkyBlue">weighted by the initial belief distribution</font>, with respect to $a_{1}$ and $a_{2}$ each:  
 >&#10112;$R(a_{1},b)$=$\\{R(s_{0},a_{1}),R(s_{1},a_{1})\\}$  
 >&#10113;$R(a_{2},b)$=$\\{R(s_{0},a_{2}),R(s_{1},a_{2})\\}$
+>The induction of $1$-step POMDP value function would be below exhibition.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-1-step-vf.png "1-step vf")
 >
 
 ### Addendum
