@@ -129,9 +129,10 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >For $1$-step policy tree, we just take one single action and get the <font color="#9300FF">immediate reward</font> to be the value function, such <font color="#9300FF">immediate reward</font> due to action execution is over $s_{0}$ and $s_{1}$, <font color="DeepSkyBlue">weighted by the initial belief distribution</font>, with respect to $a_{1}$ and $a_{2}$ each:  
 >&#10112;$R(a_{1},b)$=$\\{R(s_{0},a_{1}),R(s_{1},a_{1})\\}$  
 >&#10113;$R(a_{2},b)$=$\\{R(s_{0},a_{2}),R(s_{1},a_{2})\\}$  
+>
 >The induction of $1$-step POMDP value function would be below exhibition.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-1-step-vf.png "1-step vf")
->
+>$V_{P_{t}(a_{i})}(b)$=$\sum_{s}R(s,a_{1})\cdot b(s)$, for $s\in\\{s_{0},s_{1}\\}$, given that $b_{0}\lbrack 0.5\;0.5\rbrack$, then  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
