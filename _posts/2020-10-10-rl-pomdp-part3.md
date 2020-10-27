@@ -132,7 +132,15 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >
 >The induction of $1$-step POMDP value function would be below exhibition.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-1-step-vf.png "1-step vf")
->$V_{P_{t}(a_{i})}(b)$=$\sum_{s}R(s,a_{1})\cdot b(s)$, for $s\in\\{s_{0},s_{1}\\}$, given that $b_{0}\lbrack 0.5\;0.5\rbrack$, then  
+>$V_{P_{t}(a_{i})}(b)$=$\sum_{s}R(s,a_{1})\cdot b(s)$, for $s\in\\{s_{0},s_{1}\\}$, given that $b_{0}\lbrack 0.5\;0.5\rbrack$, and <font color="#9300FF">immediate reward</font>s are initialized as shown, then  
+>&#10112;$V_{P_{1}(a_{1})}(b)$  
+>=$R(s_{0},a_{1})\cdot b(s_{0})$+$R(s_{1},a_{1})\cdot b(s_{1})$  
+>=$1\cdot 0.5$+$0\cdot 0.5$  
+>=$0.5$  
+>&#10113;$V_{P_{1}(a_{2})}(b)$  
+>=$R(s_{0},a_{2})\cdot b(s_{0})$+$R(s_{1},a_{2})\cdot b(s_{1})$  
+>=$0\cdot 0.5$+$1.5\cdot 0.5$  
+>=$0.75$  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
