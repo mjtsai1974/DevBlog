@@ -145,6 +145,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >Next to show <font color="Red">PWLC</font> at $t$=1, since  
 >$V_{P_{t}(a_{i})}(b)$ is linear in $b$, therefore we have  
 >$\begin{bmatrix}R(s_{0},a_{1})&R(s_{1},a_{1})\\\\R(s_{0},a_{2})&R(s_{1},a_{2})\end{bmatrix}\begin{bmatrix}b(s_{0})\\\\b(s_{1})\end{bmatrix}=\begin{bmatrix}V_{P_1(a_1)}(b)\\\\V_{P_1(a_2)}(b)\end{bmatrix}$  
+>$\Rightarrow\begin{bmatrix}1&0\\\\0&1.5\end{bmatrix}\begin{bmatrix}b(s_{0})\\\\b(s_{1})\end{bmatrix}=\begin{bmatrix}0.5\\\\0.75\end{bmatrix}$, just holds  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
