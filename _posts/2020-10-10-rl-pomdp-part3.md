@@ -146,6 +146,17 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >$V_{P_{t}(a_{i})}(b)$ is linear in $b$, therefore we have  
 >$\begin{bmatrix}R(s_{0},a_{1})&R(s_{1},a_{1})\\\\R(s_{0},a_{2})&R(s_{1},a_{2})\end{bmatrix}\begin{bmatrix}b(s_{0})\\\\b(s_{1})\end{bmatrix}=\begin{bmatrix}V_{P_1(a_1)}(b)\\\\V_{P_1(a_2)}(b)\end{bmatrix}$  
 >$\Rightarrow\begin{bmatrix}1&0\\\\0&1.5\end{bmatrix}\begin{bmatrix}b(s_{0})\\\\b(s_{1})\end{bmatrix}=\begin{bmatrix}0.5\\\\0.75\end{bmatrix}$, just holds  
+>
+><font color="DeepSkyBlue">[3]</font>
+><font color="OrangeRed">$2$-steps POMDP value function</font>
+>With 2 steps to go, we can take an action, make observation, then take next one left action base on the observation.  
+>
+>The $2$-steps POMDP value function is obtained by adding the immediate reward of 1-st action taken, plus the value of taking next one left action, such expression is of the form:  
+>$V_{P_{2}(a_{i})}(b)$  
+>=$V_{2}(b)$...for simplicity  
+>=$R(a_{i},b)$+$\gamma\cdot\\{expected\;future\;value\\}$  
+>=$R(a_{i},b)$+$\gamma\cdot\sum_{o_{j}}P(o_{j}\vert b,a_{i})\cdot V_{1}(b^{\'})$  
+>, where we have belief update from $b$ to $b^{\'}$ due to action $a_{i}$, and we write $V_{P_{2}(a_{i})}(b)$ as $V_{2}(a_{i},b)$ or $V_{2}(b)$.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
