@@ -155,11 +155,11 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >$\Rightarrow 1\cdot b(s_{0})$+$0\cdot b(s_{1})$=$0\cdot b(s_{0})$+$1.5\cdot b(s_{1})$  
 >After the deductio by $b(s_{0})$=$1-b(s_{1})$, we have $b(s_{0})$=0.6 and $b(s_{1})$=$0.4$  
 >
->By maximizing over $1$-step policy tree $P_{1}$, we have optimal action probabilistic distribution in proportion to the region partitioned at this intersection point.  This optimal $1$-step policy is determined by projecting the optimal value function back down to the belief space.  
->
->Such projection yields a partition into regions, within each distinct region, there is a policy tree, say $P_{t}(a_{i})$, $t$=$1$ for horizon $1$, by taking action of $a_{1}$ leads us to the maximum of value function in this region.  
->
->That is to say in this $1$-step policy tree, we have $a_{1}$ to be the optimal action in $\lbrack 0\;0.4\rbrack$ interval of belief space, and within $\lbrack 0.4\;1\rbrack$ interval, we have $a_{2}$ the optimal action in above exhibition.  
+>* Find out the <font color="Blue">optimal action</font>  
+>&#10112;by maximizing over $1$-step policy tree $P_{1}$, we have <font color="#C20000">optimal action probabilistically distributed in proportion to the region partitioned at this intersection point</font>.  
+>&#10113;this optimal $1$-step policy is determined <font color="DeepSkyBlue">by projecting the optimal value function back down to the belief space</font>.  
+>&#10114;such projection yields a partition into regions, within each distinct region, there is a policy tree, say $P_{t}(a_{i})$, $t$=$1$ for horizon $1$, by taking action of $a_{1}$ leads us to the maximum of value function in this region.  
+>&#10115;in this $1$-step policy tree, we have $a_{1}$ to be the optimal action in $\lbrack 0\;0.4\rbrack$ interval of belief space, and within $\lbrack 0.4\;1\rbrack$ interval, we have $a_{2}$ the optimal action in above exhibition.  
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">$2$-steps POMDP value function</font>
