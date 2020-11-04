@@ -156,6 +156,8 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >
 >Such projection yields a partition into regions, within each distinct region, there is a policy tree, say $P_{t}(a_{i})$, $t$=$1$ for horizon $1$, by taking action of $a_{1}$ leads us to the maximum of value function in this region.  
 >
+>That is to say in this $1$-step policy tree, we have $a_{1}$ to be the optimal action in $\lbrack 0\;0.4\rbrack$ interval of belief space, and within $\lbrack 0.4\;1\rbrack$ interval, we have $a_{2}$ the optimal action in above exhibition.  
+>
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">$2$-steps POMDP value function</font>
 >With 2 steps to go, we can take an action, make observation, then take next one left action base on the observation.  
