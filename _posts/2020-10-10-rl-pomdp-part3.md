@@ -152,6 +152,10 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >$\Rightarrow 1\cdot b(s_{0})$+$0\cdot b(s_{1})$=$0\cdot b(s_{0})$+$1.5\cdot b(s_{1})$  
 >After the deductio by $b(s_{0})$=$1-b(s_{1})$, we have $b(s_{0})$=0.6 and $b(s_{1})$=$0.4$  
 >
+>By maximizing over $1$-step policy tree $P_{1}$, we have optimal action probabilistic distribution in proportion to the region partitioned at this intersection point.  This optimal $1$-step policy is determined by projecting the optimal value function back down to the belief space.  
+>
+>Such projection yields a partition into regions, within each distinct region, there is a policy tree, say $P_{t}(a_{i})$, $t$=$1$ for horizon $1$, by taking action of $a_{1}$ leads us to the maximum of value function in this region.  
+>
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">$2$-steps POMDP value function</font>
 >With 2 steps to go, we can take an action, make observation, then take next one left action base on the observation.  
