@@ -130,7 +130,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >&#10112;$R(a_{1},b)$=$\\{R(s_{0},a_{1}),R(s_{1},a_{1})\\}$  
 >&#10113;$R(a_{2},b)$=$\\{R(s_{0},a_{2}),R(s_{1},a_{2})\\}$  
 >
->The induction of $1$-step POMDP value function would be below exhibition.  
+>* The induction of $1$-step POMDP value function  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-1-step-vf.png "1-step vf")
 >$V_{P_{t}(a_{i})}(b)$=$\sum_{s}R(s,a_{i})\cdot b(s)$, for $s\in\\{s_{0},s_{1}\\}$, given that $b_{0}\lbrack 0.5\;0.5\rbrack$, and <font color="#9300FF">immediate reward</font>s are initialized as shown, then  
 >&#10112;$V_{P_{1}(a_{1})}(b)$  
@@ -142,13 +142,16 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >=$0\cdot 0.5$+$1.5\cdot 0.5$  
 >=$0.75$  
 >
->Next to show <font color="Red">PWLC</font> at $t$=1, since  
->$V_{P_{t}(a_{i})}(b)$ is linear in $b$, therefore we have  
+>* The <font color="DeepSkyBlue">linearity</font>  
+>Since $V_{P_{t}(a_{i})}(b)$ is linear in $b$, therefore we have  
 >$\begin{bmatrix}R(s_{0},a_{1})&R(s_{1},a_{1})\\\\R(s_{0},a_{2})&R(s_{1},a_{2})\end{bmatrix}\begin{bmatrix}b(s_{0})\\\\b(s_{1})\end{bmatrix}=\begin{bmatrix}V_{P_1(a_1)}(b)\\\\V_{P_1(a_2)}(b)\end{bmatrix}$  
 >$\Rightarrow\begin{bmatrix}1&0\\\\0&1.5\end{bmatrix}\begin{bmatrix}b(s_{0})\\\\b(s_{1})\end{bmatrix}=\begin{bmatrix}0.5\\\\0.75\end{bmatrix}$, just holds  
+>The additive of $2$ linear lines leads to <font color="Red">PWLC</font> at $t$=1.  
 >
->We'd like to find out the intersection point, this turns to solve $V_{P_{1}(a_{1})}(b)$=$V_{P_{1}(a_{2})}(b)$,  
->$\Rightarrow R(s_{0},a_{1})\cdot b(s_{0})$+$R(s_{1},a_{1})\cdot b(s_{1})$=$R(s_{0},a_{2})\cdot b(s_{0})$+$R(s_{1},a_{2})\cdot b(s_{1})$  
+>* Find out the <font color="OrangeRed">intersection point</font>   
+>This turns to solve $V_{P_{1}(a_{1})}(b)$=$V_{P_{1}(a_{2})}(b)$,  
+>$\Rightarrow R(s_{0},a_{1})\cdot b(s_{0})$+$R(s_{1},a_{1})\cdot b(s_{1})$  
+>=$R(s_{0},a_{2})\cdot b(s_{0})$+$R(s_{1},a_{2})\cdot b(s_{1})$  
 >$\Rightarrow 1\cdot b(s_{0})$+$0\cdot b(s_{1})$=$0\cdot b(s_{0})$+$1.5\cdot b(s_{1})$  
 >After the deductio by $b(s_{0})$=$1-b(s_{1})$, we have $b(s_{0})$=0.6 and $b(s_{1})$=$0.4$  
 >
