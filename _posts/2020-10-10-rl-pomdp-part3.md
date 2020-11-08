@@ -162,8 +162,8 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >&#10115;in this $1$-step policy tree, we have $a_{1}$ to be the optimal action in $\lbrack 0\;0.4\rbrack$ interval of belief space, and within $\lbrack 0.4\;1\rbrack$ interval, we have $a_{2}$ the optimal action in above exhibition.  
 >
 >* <font color="RoyalBlue">Why do we have $s_{0}$ axis consisting of $R(s_{1},a_{i})$?</font>  
->$\because b(s_{1})$=$1-b(s_{0})$  
->$\therefore R(s_{1},a_{i})$ for $i=\\{1,2\\}$ in this example whould we have $s_{0}$ as the departuring point, extend the width with the portion to $1-b(s_{0})$, where the $b_{s_{0}}$ ranging in the opposite direction, heading toward $s_{1}$ axis.  Similarity could be found in axis of $s_{1}$.  
+><font color="DeepSkyBlue">$\because b(s_{1})$=$1-b(s_{0})$</font>  
+>$\therefore R(s_{1},a_{i})$ for $i=\\{1,2\\}$ in this example whould we have $s_{0}$ as the departuring point, extend the width with the portion to $1-b(s_{0})$, where the $s_{0}$ ranging in the opposite direction, heading toward $s_{1}$ axis.  Similarity could be found in axis of $s_{1}$.  
 >
 ><font color="DeepSkyBlue">[3]</font>
 ><font color="OrangeRed">$2$-steps POMDP value function</font>
