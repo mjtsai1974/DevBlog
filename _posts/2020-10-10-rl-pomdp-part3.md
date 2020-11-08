@@ -186,6 +186,8 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >$b^{\'}(S^{\'})$  
 >=$P(S^{\'}|A,O,b)$, we believe we are in state $S^{\'}$, given observation $O$  
 >=$\frac {P(O|S^{\'},A,b)\cdot P(S^{\'}|A,b)}{P(O|A,b)}$  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-transform.png "vf transform")  
+>
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
