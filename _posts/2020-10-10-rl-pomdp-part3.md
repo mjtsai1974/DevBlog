@@ -188,19 +188,16 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >=$P(S^{\'}|A,O,b)$, we believe we are in state $S^{\'}$, given observation $O$  
 >=$\frac {P(O|S^{\'},A,b)\cdot P(S^{\'}|A,b)}{P(O|A,b)}$
 >
->Please remind that there are 2 actions in this example, we begin by extending from $a_{1}$ at $t$=$2$:  
+>* The induction of $2$-steps POMDP value function  
+>&#10112;there are 2 actions in this example, we begin by extending from $a_{1}$ at $t$=$2$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-transform.png "vf transform")  
->
->Combine these linear lines together we get:  
+>&#10113;combine these linear lines together we get:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-transform-together.png "vf together")
->
->By pruning and partioning we can get the optimal actions in each region:  
+>&#10114;by pruning and partioning we can get the optimal actions in each region:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-transform-partition.png "optimal actions")
->
->We next extend from $a_{2}$ at $t$=$2$, suppose we get optimal action of region partitioned in below:  
+>&#10115;we next extend from $a_{2}$ at $t$=$2$, suppose we get optimal action of region partitioned in below:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-transform-partition-a2.png "optimal actions")
->
->Put it all together, we could get the optimal actions as a whole image:  
+>&#10116;put it all together, we could get the optimal actions as a whole image:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-all.png "H2 optimal actions")
 >
 
