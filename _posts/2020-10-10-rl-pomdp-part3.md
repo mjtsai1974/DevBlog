@@ -201,6 +201,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-transform-partition-a2.png "optimal actions")
 >
 >Put it all together, we could get the optimal actions as a whole image:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-all.png "H2 optimal actions")
 >
 
 ### Addendum
