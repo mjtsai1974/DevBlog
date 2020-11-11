@@ -182,7 +182,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >&#10112;the horizon $2$ value function is a function of next belief $b^{\'}$, since by taking action $a$, with certain observation, would this initial/prior belief $b$ be updated to $b^{\'}$.  As a result, that we have the horizon $2$ value function:  
 >$V_{2}(b)$  
 >=$max_{a}\\{R(a,b)$+$\gamma\cdot\sum_{o_{j}}P(o_{j}\vert b,a)\cdot V_{1}(b^{\'})\\}$  
->, where <font color="DeepPink">$P(o_{j}\vert b,a)\cdot V_{1}(b^{'})$ is the horizon $1$ value function transformation</font> denoted as $S(a,o_{j})$, <font color="DeepPink">each $o_{i}$ has its own transformed alpha vectors</font>.  
+>, where <font color="DeepPink">$P(o_{j}\vert b,a)\cdot V_{1}(b^{'})$ is the horizon $1$ value function transformation</font> denoted as $S(a,o_{j})$, <font color="DeepPink">each $o_{j}$ has its own transformed alpha vectors</font>.  
 >&#10113;the transformed/next belief $b^{\'}$ is a function of the initial/prior belief $b$:  
 >$b^{\'}(S^{\'})$  
 >=$P(S^{\'}|A,O,b)$, we believe we are in state $S^{\'}$, given observation $O$  
