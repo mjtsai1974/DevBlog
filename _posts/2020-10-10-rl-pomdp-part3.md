@@ -95,7 +95,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >$\;\;\cdot(\sum_{o}P(o\vert s^{\'},a)\cdot V_{O(A(P_{t}))}(s^{\'})))$  
 >, where we have next $b^{\'}$ probabilistically distributed over $s^{\'}$  
 >, and $A(P_{t})$=$a$, the action taken in the root node  
->, with $\sum_{o}P(o\vert b,a)$=$\sum_{s^{\'}}P(s^{\'}\vert b,a)\cdot b(s)$  
+>, with $\sum_{o}P(o\vert b,a)\cdot V(b^{\'})$=$\sum_{s^{\'}}P(s^{\'}\vert b,a)\cdot b(s)$  
 >$\;\;\;\;\cdot(\sum_{o}P(o\vert s^{\'},a)\cdot V_{O(A(P_{t}))}(s^{\'}))$  
 >
 >* Value function over belief state  
