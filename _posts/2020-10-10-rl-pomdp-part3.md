@@ -175,7 +175,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >=$V_{2}(b)$...for simplicity  
 >=$R(a_{i},b)$+$\gamma\cdot\\{expected\;future\;value\\}$  
 >=$R(a_{i},b)$+$\gamma\cdot\sum_{o_{j}}P(o_{j}\vert b,a_{i})\cdot V_{1}(b^{\'})$  
->, where we have belief update from $b$ to $b^{\'}$ due to action $a_{i}$, and we write $V_{P_{2}(a_{i})}(b)$ as $V_{2}(a_{i},b)$ or $V_{2}(b)$.  
+>, where we have belief update from $b$ to $b^{\'}$ due to action $a_{i}$, observation $o_{j}$, and we write $V_{P_{2}(a_{i})}(b)$ as $V_{2}(a_{i},b)$ or $V_{2}(b)$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2.png "2-step policy tree")  
 >
 >* <font color="Red">Value function transformation</font>  
