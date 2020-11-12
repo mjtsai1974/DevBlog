@@ -158,7 +158,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >* Find out the <font color="Blue">optimal action</font>  
 >&#10112;by maximizing over $1$-step policy tree $P_{1}$, we have <font color="#C20000">optimal action probabilistically distributed in proportion to the region partitioned at this intersection point</font>.  
 >&#10113;this optimal $1$-step policy is determined <font color="DeepSkyBlue">by projecting the optimal value function back down to the belief space</font>.  
->&#10114;such projection yields a partition into regions, within each distinct region, there is a policy tree, say $P_{t}(a_{i})$, $t$=$1$ for horizon $1$, by taking action of $a_{1}$ leads us to the maximum of value function in this region.  
+>&#10114;such projection yields a partition into regions, within each distinct region, there is a policy tree, say $P_{t}(a_{i})$, $t$=$1$ for horizon $1$, by taking action of $a_{i}$ leads us to the maximum of value function in this region.  
 >&#10115;in this $1$-step policy tree, we have $a_{1}$ to be the optimal action in $\lbrack 0\;0.4\rbrack$ interval of belief space, and within $\lbrack 0.4\;1\rbrack$ interval, we have $a_{2}$ the optimal action in above exhibition.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-1-step-vf-partition.png "optimal actions")
 >
