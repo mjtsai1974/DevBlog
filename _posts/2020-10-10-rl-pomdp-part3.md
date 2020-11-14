@@ -190,7 +190,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >
 >* The induction of $2$-steps POMDP value function  
 >&#10112;there are 2 actions in this example, we begin by extending from $a_{1}$ at $t$=$2$:  
-![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-transform.png "vf transform")  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-transform.png "vf transform")
 >&#10113;combine these linear lines together we get:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-transform-together.png "vf together")
 >&#10114;by pruning and partioning we can get the optimal actions in each region:  
@@ -199,6 +199,24 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-transform-partition-a2.png "optimal actions")
 >&#10116;put it all together, we could get the optimal actions as a whole image:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-2-vf-all.png "H2 optimal actions")
+>
+><font color="DeepSkyBlue">[4]</font>
+><font color="OrangeRed">$3$-steps POMDP value function</font>  
+>Suppose we are inheriting from above optimal actions in <font color="Red">PWLC</font> format of horizon $2$, such paths are listed below:  
+>&#10112;take action $a_{1}$, make observation $o_{2}$, then make action $a_{2}$(could be mapped from above graph)  
+>&#10113;take action $a_{2}$, make observation $o_{1}$, then make action $a_{2}$  
+>&#10114;take action $a_{2}$, make observation $o_{3}$, then make action $a_{1}$  
+>, where &#10113; and &#10114; are not exhibitted, for I directly make assumption of start from $a_{1}$ for simplicity.  
+>
+>It would be a little complicated to ask for the value function of $3$-steps POMDP, we should just follow the path leading to the optimal action in prior $2$-steps policy tree.  
+>
+>The general format of value function in POMDP is  
+>$V_{t}(b)$  
+>=$max_{a}\\{ R(a,b)+\gamma\cdot\sum_{o_{j}}P(o_{j}\vert a,b)\cdot V_{t-1}(b^{\'})\\}$  
+>, where we make belief update from $b$ to $b^{\'}$, due to action $a$, with observation $o_{j}$, and we get the resulting $V_{t-1}(b^{\'})$ with regard to each of this path, and $t=3$ in this section now.  
+>
+>The value function transformation continues to apply on the last end node in above $2$-steps policy tree, for each distinct path, say from the very last $S(a_{1},o_{2})$, to turn into $S(a_{2},o_{1})$,$S(a_{2},o_{2})$,$S(a_{2},o_{3})$.  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-transform.png "vf transform")
 >
 
 ### Addendum
