@@ -218,6 +218,15 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >The value function transformation continues to apply on the last end node in above $2$-steps policy tree, for each distinct path, say from the very last $S(a_{1},o_{2})$, to turn into $S(a_{2},o_{1})$,$S(a_{2},o_{2})$,$S(a_{2},o_{3})$.  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-transform.png "vf transform")
 >
+>Combine these linear lines together, by pruning and partioning we can get the optimal actions in each region:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-transform-partition-a2-1.png "optimal actions")
+>
+>We then start from the path of $1$-st action $a_{2}$, make observation $o_{1}$, then $2$-nd action $a_{2}$, for simplicity, we get below optimal actions in each region:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-transform-partition-a2-2.png "optimal actions")
+>
+>We next start from the path of $1$-st action $a_{2}$, make observation $o_{3}$, then $2$-nd action $a_{1}$, for simplicity, we get below optimal actions in each region:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-transform-partition-a1.png "optimal actions")
+>
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
