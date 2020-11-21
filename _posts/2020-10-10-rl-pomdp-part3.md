@@ -216,7 +216,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >=$max_{a}\\{ R(a,b)+\gamma\cdot\sum_{o_{j}}P(o_{j}\vert a,b)\cdot V_{t-1}(b^{\'})\\}$  
 >, where we make belief update from $b$ to $b^{\'}$, due to action $a$, with observation $o_{j}$, and we get the resulting $V_{t-1}(b^{\'})$ with regard to each of this path, and $t=3$ in this section now.  
 >
->The value function transformation continues to apply on the last end node in above $2$-steps policy tree, for each distinct path, say from the very last $S(a_{1},o_{2})$, to turn into $S(a_{2},o_{1})$,$S(a_{2},o_{2})$,$S(a_{2},o_{3})$.  
+>The value function transformation continues to apply on the last end node in above $2$-steps policy tree, for each distinct path, say from the very last $S(a_{1},o_{2})$, to turn into $S(a_{2},o_{1})$,$S(a_{2},o_{2})$,$S(a_{2},o_{3})$.  We are following the path $1$-st action $a_{1}$, make observation $o_{2}$, then $2$-nd action $a_{2}$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-transform.png "vf transform")
 >
 >Combine these linear lines together, by pruning and partioning we can get the optimal actions in each region:  
@@ -227,6 +227,9 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >
 >We next start from the path of $1$-st action $a_{2}$, make observation $o_{3}$, then $2$-nd action $a_{1}$, for simplicity, we get below optimal actions in each region:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-transform-partition-a1.png "optimal actions")
+>
+>Put it together, we could get the optimal action partitions in below:  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-all.png "H3 optimal actions")
 >
 
 ### Addendum
