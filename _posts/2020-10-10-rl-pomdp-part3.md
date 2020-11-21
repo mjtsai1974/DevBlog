@@ -92,11 +92,12 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >$V_{P_{t}}(s)$  
 >=$R(s,A(P_{t}))$+$\gamma\cdot\\{Expected\;future\;value\\}$  
 >=$R(s,A(P_{t}))$+$\gamma\cdot(\sum_{s^{\'}}P(s^{\'}\vert b,a)\cdot b(s)$  
->$\;\;\cdot(\sum_{o}P(o\vert s^{\'},a)\cdot V_{O(A(P_{t}))}(s^{\'})))$  
+>$\;\;\cdot(\sum_{o}P(o\vert s^{\'},a)\cdot V_{O(A(P_{t-1}))}(s^{\'})))$  
 >, where we have next $b^{\'}$ probabilistically distributed over $s^{\'}$  
 >, and $A(P_{t})$=$a$, the action taken in the root node  
 >, with $\sum_{o}P(o\vert b,a)\cdot V(b^{\'})$=$\sum_{s^{\'}}P(s^{\'}\vert b,a)\cdot b(s)$  
->$\;\;\;\;\cdot(\sum_{o}P(o\vert s^{\'},a)\cdot V_{O(A(P_{t}))}(s^{\'}))$  
+>$\;\;\;\;\cdot(\sum_{o}P(o\vert s^{\'},a)\cdot V_{O(A(P_{t-1}))}(s^{\'}))$  
+>, and $V_{O(A(P_{t-1}))}(s^{\'})$ stands for the value function of $s^{\'}$ due to observation as a result of action taken in root node of next $t-1$ steps policy tree.  
 >
 >* Value function over belief state  
 >&#10112;we could think $V_{P_{t}}(b)$ as a vector associated with the policy tree of $t$-steps, where $dim(V_{P_{t}}(b))$=$n$, for $b$=$\\{s_{1},s_{2},...,s_{n}\\}$  
