@@ -209,26 +209,26 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >&#10114;take action $a_{2}$, make observation $o_{3}$, then make action $a_{1}$  
 >, where &#10113; and &#10114; are not exhibitted, for I directly make assumption of start from $a_{1}$ for simplicity.  
 >
->It would be a little complicated to ask for the value function of $3$-steps POMDP, we should just follow the path leading to the optimal action in prior $2$-steps policy tree.  
+>It would be a little complicated to ask for the value function of $3$-steps POMDP, we should just <font color="DeepSkyBlue">follow the path leading to the optimal action in prior $2$-steps policy tree</font>.  
 >
+>* The general format <font color="DeepSkyBlue">recap</font>  
 >The general format of value function in POMDP is  
 >$V_{t}(b)$  
 >=$max_{a}\\{ R(a,b)+\gamma\cdot\sum_{o_{j}}P(o_{j}\vert a,b)\cdot V_{t-1}(b^{\'})\\}$  
 >, where we make belief update from $b$ to $b^{\'}$, due to action $a$, with observation $o_{j}$, and we get the resulting $V_{t-1}(b^{\'})$ with regard to each of this path, and $t=3$ in this section now.  
 >
+>* The value function <font color="OrangeRed">persists</font> in <font color="Red">transformation</font>  
 >The value function transformation continues to apply on the last end node in above $2$-steps policy tree, for each distinct path, say from the very last $S(a_{1},o_{2})$, to turn into $S(a_{2},o_{1})$,$S(a_{2},o_{2})$,$S(a_{2},o_{3})$.  We are following the path $1$-st action $a_{1}$, make observation $o_{2}$, then $2$-nd action $a_{2}$:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-transform.png "vf transform")
 >
->Combine these linear lines together, by pruning and partioning we can get the optimal actions in each region:  
+>* The induction of $3$-steps POMDP value function  
+>&#10112;combine these linear lines together, by pruning and partioning we can get the optimal actions in each region:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-transform-partition-a2-1.png "optimal actions")
->
->We then start from the path of $1$-st action $a_{2}$, make observation $o_{1}$, then $2$-nd action $a_{2}$, for simplicity, we get below optimal actions in each region:  
+>&#10113;we then start from the path of $1$-st action $a_{2}$, make observation $o_{1}$, then $2$-nd action $a_{2}$, for simplicity, we get below optimal actions in each region:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-transform-partition-a2-2.png "optimal actions")
->
->We next start from the path of $1$-st action $a_{2}$, make observation $o_{3}$, then $2$-nd action $a_{1}$, for simplicity, we get below optimal actions in each region:  
+>&#10114;we next start from the path of $1$-st action $a_{2}$, make observation $o_{3}$, then $2$-nd action $a_{1}$, for simplicity, we get below optimal actions in each region:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-transform-partition-a1.png "optimal actions")
->
->Put it together, we could get the optimal action partitions in below:  
+>&#10115;put it together, we could get the optimal action partitions in below:  
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-3-vf-all.png "H3 optimal actions")
 >
 
