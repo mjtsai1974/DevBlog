@@ -188,6 +188,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >$b^{\'}(S^{\'})$  
 >=$P(S^{\'}|A,O,b)$, we believe we are in state $S^{\'}$, given observation $O$  
 >=$\frac {P(O|S^{\'},A,b)\cdot P(S^{\'}|A,b)}{P(O|A,b)}$
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-10-10-rl-pomdp-part3-p-tree-b-upd-a-o.png "b-upd")  
 >
 >* The induction of $2$-steps POMDP value function  
 >&#10112;there are 2 actions in this example, we begin by extending from $a_{1}$ at $t$=$2$:  
