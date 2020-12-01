@@ -228,6 +228,7 @@ That's why we need the Markov Decision process, it provides an algorithm approxi
 * [Model-Based RL Algorithm RMAX - Part 4]({{ site.github.repo }}{{ site.baseurl }}/2020/03/26/rl-rmax-part4/)
 * [POMDP - Part 1]({{ site.github.repo }}{{ site.baseurl }}/2020/07/21/rl-pomdp-part1/)
 * [POMDP - Part 2]({{ site.github.repo }}{{ site.baseurl }}/2020/08/13/rl-pomdp-part2/)
+* [POMDP - Part 3]({{ site.github.repo }}{{ site.baseurl }}/2020/10/10/rl-pomdp-part3/)
 * Q Learning Algorithm
 * Policy Iteration v.s. Value Iteration
 
