@@ -114,6 +114,7 @@ This post will begin with the difficulties in solving <font color="Red">POMDP</f
 >
 >That is to say $V_{t}^{\ast}(b)$ is <font color="Red">piecewise linear and convex</font>.  
 
+<h3 id="header">Illustration_Of_PWLC</h3>
 ### Illustration Of <font color="Red">PWLC</font>(Piecewise Linear Convex)
 ><font color="DeepSkyBlue">[1]</font>
 ><font color="OrangeRed">The preliminary</font>
