@@ -15,13 +15,13 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 >&#10114;make such value iteration until convergence  
 >
 >* The <font color="Red">PWLC</font>(piecewise linear convex)  
->The value function of <font color="Red">POMDP</font> can be represented as <font color="MediumSpringGreen">max of linear segments - <font color="Red">PWLC</font></font>.  
+>The value function of <font color="Red">POMDP</font> can be represented as <font color="SpringGreen">max of linear segments - <font color="Red">PWLC</font></font>.  
 >$\left(1\right)$convexity:  
 >>state is known at the edges of belief space  
 >$\left(2\right)$linear segments:  
 >>&#10112;linear function in the format of belief $\times$ reward  
 >>&#10113;segments in horizon 1 are linear  
->>&#10114;<font color="MediumSpringGreen">segments in horizon $n$ are linear combination of horizon $n-1$'s segments</font>  
+>>&#10114;<font color="SpringGreen">segments in horizon $n$ are linear combination of horizon $n-1$'s segments</font>  
 
 ### <font color="RoyalBlue">Why And How <font color="Red">PWLC</font> Works?</font>
 >In this section, I am going to lead you to the reason to why <font color="Red">PWLC</font> takes effect, and guide you through the way it is aggregated to a <font color="DeepSkyBlue">convergence</font>.  
@@ -81,6 +81,7 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 <!-- <font color="Green">new alpha</font> -->
 <!-- <font color="Aqua">new alpha</font> -->
 <!-- <font color="AquaMarine">new alpha</font> -->
+<!-- <font color="SpringGreen">new alpha</font> -->
 <!-- <font color="MediumSpringGreen">new alpha</font> -->
 
 <!-- <font color="#C20000">conclusion, finding</font> -->
