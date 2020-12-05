@@ -15,13 +15,13 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 >&#10114;make such value iteration until convergence  
 >
 >* The <font color="Red">PWLC</font>(piecewise linear convex)  
->The value function of <font color="Red">POMDP</font> can be represented as <font color="AquaMarine">max of linear segments - <font color="Red">PWLC</font></font>.  
+>The value function of <font color="Red">POMDP</font> can be represented as <font color="Aqua">max of linear segments - <font color="Red">PWLC</font></font>.  
 >$\left(1\right)$convexity:  
 >>state is known at the edges of belief space  
 >$\left(2\right)$linear segments:  
 >>&#10112;linear function in the format of belief $\times$ reward  
 >>&#10113;segments in horizon 1 are linear  
->>&#10114;<font color="AquaMarine">segments in horizon $n$ are linear combination of horizon $n-1$'s segments</font>  
+>>&#10114;<font color="Aqua">segments in horizon $n$ are linear combination of horizon $n-1$'s segments</font>  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
@@ -75,6 +75,7 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 <!-- <font color="DeepSkyBlue">suggested item, soft item</font> -->
 <!-- <font color="RoyalBlue">old alpha, quiz, example</font> -->
 <!-- <font color="Green">new alpha</font> -->
+<!-- <font color="Aqua">new alpha</font> -->
 <!-- <font color="AquaMarine">new alpha</font> -->
 
 <!-- <font color="#C20000">conclusion, finding</font> -->
