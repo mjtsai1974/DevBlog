@@ -39,6 +39,8 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 >$V_{t}(b)$=$max_{a\in A}V_{t}^{a}(b)$  
 >$\Rightarrow V_{t}^{a}(b)$=$\sum_{o}V_{t}^{a,o}(b)$  
 >$\Rightarrow V_{t}^{a,o}(b)$=$\sum_{s}R(s,a)\cdot\frac {b(s)}{\left|o\right|}$+$\gamma\cdot P(o\vert b,a)\cdot V_{t-1}(S.E(b,a,o))$  
+>, where $V_{t-1}(S.E(b,a,o))$=$max_{\alpha\in\tau_{t-1}}\sum_{s^{\'}}\alpha(s^{\'})\cdot\frac {P(o\vert s^{\'},a)\cdot\sum_{s}P(s^{\'}\vert s,a)\cdot b(s)}{P(o\vert b,a)}$  
+>
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
