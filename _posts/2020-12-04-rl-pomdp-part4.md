@@ -8,9 +8,20 @@ title: Partial Observable Markov Decision Process - Part 4
 This post will explain why <font color="Red">PWLC</font> works and how it is aggregated in value iteration of <font color="Red">POMDP</font>(Partial Observable Markov Decision Process).  
 </p>
 
-<!--
-### Recap Value Iteration In <font color="Red">POMDP</font>
--->
+### Recap <font color="Red">POMDP</font> Value Iteration
+>* Basic idea in <font color="Red">POMDP</font> value iteration  
+>&#10112;calculate value function vectors for each action with regard to observation thus made in horizon $1$.  
+>&#10113;continue looking forward horizon $2$,$3$,...  
+>&#10114;make such value iteration until convergence  
+>
+>* The <font color="Red">PWLC</font>(piecewise linear convex)  
+>The value function of <font color="Red">POMDP</font> can be represented as <font color="AquaMarine">max of linear segments - <font color="Red">PWLC</font></font>.  
+>$\left(1\right)$convexity:  
+>>state is known at the edges of belief space  
+>$\left(2\right)$linear segments:  
+>>&#10112;linear function in the format of belief $\times$ reward  
+>>&#10113;segments in horizon 1 are linear  
+>>&#10114;<font color="AquaMarine">segments in horizon $n$ are linear combination of horizon $n-1$'s segments</font>  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
@@ -44,8 +55,9 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 <!-- \overset\triangle= -->
 <!-- \left|X\right| -->
 <!-- \xrightarrow{r_t} -->
-<!-- \left\|?\right\| => ||?||-->
-<!-- \left|?\right| => |?|-->
+<!-- \left\|?\right\| => ||?|| -->
+<!-- \left|?\right| => |?| -->
+<!-- \left(?\right) => (?) -->
 <!-- \lbrack BQ\rbrack => [BQ] -->
 <!-- \subset -->
 <!-- \subseteq -->
@@ -63,6 +75,7 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 <!-- <font color="DeepSkyBlue">suggested item, soft item</font> -->
 <!-- <font color="RoyalBlue">old alpha, quiz, example</font> -->
 <!-- <font color="Green">new alpha</font> -->
+<!-- <font color="AquaMarine">new alpha</font> -->
 
 <!-- <font color="#C20000">conclusion, finding</font> -->
 <!-- <font color="DeepPink">positive conclusion, finding</font> -->
@@ -94,6 +107,7 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 ><font color="OrangeRed">Why at this moment, the Poisson and exponential probability come out with different result?</font>  
 -->
 
+<!-- http://www.html-color-names.com/ -->
 <!-- https://www.medcalc.org/manual/gamma_distribution_functions.php -->
 <!-- https://www.statlect.com/probability-distributions/student-t-distribution#hid5 -->
 <!-- http://www.wiris.com/editor/demo/en/ -->
