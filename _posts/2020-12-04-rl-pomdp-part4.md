@@ -32,9 +32,13 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 >=$max_{\alpha\in\tau_{t}}\sum_{s}\alpha(s)\cdot b(s)$  
 >
 ><font color="RoyalBlue">[Question]</font>  
->Assume we have $\tau_{t-1}$ such that $V_{t-1}(b)$=$max_{\alpha\in\tau_{t-1}}\alpha\cdot b$, you are ask to build $tau_{t}$ such that $V_{t}(b)$=$max_{\alpha\in\tau_{t}}\alpha\cdot b$  
+>Assume we have $\tau_{t-1}$ such that $V_{t-1}(b)$=$max_{\alpha\in\tau_{t-1}}\alpha\cdot b$, you are ask to build $\tau_{t}$ such that $V_{t}(b)$=$max_{\alpha\in\tau_{t}}\alpha\cdot b$  
 >
-
+><font color="DeepSkyBlue">[Answer]</font>  
+>proof::part-1  
+>$V_{t}(b)$=$max_{a\in A}V_{t}^{a}(b)$  
+>$\Rightarrow V_{t}^{a}(b)$=$\sum_{o}V_{t}^{a,o}(b)$  
+>$\Rightarrow V_{t}^{a,o}(b)$=$\sum_{s}R(s,a)\cdot\frac {b(s)}{\left|o\right|}$+$\gamma\cdot P(o\vert b,a)\cdot V_{t-1}(S.E(b,a,o))$  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
