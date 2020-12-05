@@ -17,15 +17,24 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 >* The <font color="Red">PWLC</font>(piecewise linear convex)  
 >The value function of <font color="Red">POMDP</font> can be represented as <font color="SpringGreen">max of linear segments - <font color="Red">PWLC</font></font>.  
 >$\left(1\right)$convexity:  
->>state is known at the edges of belief space  
+>state is known at the edges of belief space  
 >$\left(2\right)$linear segments:  
->>&#10112;linear function in the format of belief $\times$ reward  
->>&#10113;segments in horizon 1 are linear  
->>&#10114;<font color="SpringGreen">segments in horizon $n$ are linear combination of horizon $n-1$'s segments</font>  
+>&#10112;linear function in the format of belief $\times$ reward  
+>&#10113;segments in horizon 1 are linear  
+>&#10114;<font color="SpringGreen">segments in horizon $n$ are linear combination of horizon $n-1$'s segments</font>  
 
-### <font color="RoyalBlue">Why And How <font color="Red">PWLC</font> Works?</font>
+### Illustration: <font color="RoyalBlue">Why And How <font color="Red">PWLC</font> Works?</font>
 >In this section, I am going to lead you to the reason to why <font color="Red">PWLC</font> takes effect, and guide you through the way it is aggregated to a <font color="DeepSkyBlue">convergence</font>.  
 >
+>The value function of <font color="Red">POMDP</font> can be represented as <font color="SpringGreen">max of linear segments - <font color="Red">PWLC</font></font> could be expressed:  
+>$V_{t}(b)$  
+>=$max_{\alpha\in\tau_{t}}\alpha\cdot b$  
+>=$max_{\alpha\in\tau_{t}}\sum_{s}\alpha(s)\cdot b(s)$  
+>
+><font color="RoyalBlue">[Question]</font>  
+>Assume we have $\tau_{t-1}$ such that $V_{t-1}(b)$=$max_{\alpha\in\tau_{t-1}}\alpha\cdot b$, you are ask to build $tau_{t}$ such that $V_{t}(b)$=$max_{\alpha\in\tau_{t}}\alpha\cdot b$  
+>
+
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
