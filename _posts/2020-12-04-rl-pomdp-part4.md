@@ -44,6 +44,13 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 >=$max_{\alpha\in\tau_{t-1}}\sum_{s^{\'}}\alpha(s^{\'})\cdot\frac {P(o\vert s^{\'},a)\cdot\sum_{s}P(s^{\'}\vert s,a)\cdot b(s)}{P(o\vert b,a)}$  
 >
 >Although <font color="DeepSkyBlue">$V_{t-1}(S.E(b,a,o))$ is highly non-linear</font>, its awasome denominator part of <font color="DeepSkyBlue">$P(o\vert b,a)$ could be safely eliminated</font> and tossed out, thus we are left with <font color="DeepPink">a linear transformation from $V_{t}^{a,o}(b)$ to its next $V_{t-1}(S.E(b,a,o))$</font>, and $S.E(b,a,o)$=$b^{\'}$, which strongly supports value function transformation in Illustration Of <font color="Red">PWLC</font>(Piecewise Linear Convex) in [POMDP - Part 3]({{ site.github.repo }}{{ site.baseurl }}/2020/10/10/rl-pomdp-part3/#Illustration_Of_PWLC).  
+>
+>proof::part-2  
+>Succeeding to part-1,  
+>$\tau_{t}$=$U_{a}\tau_{t}^{a}$  
+>$\tau_{t}^{a}$=$\oplus\tau_{t}^{a,o}$  
+>$\Leftrightarrow V_{t}^{a}(b)$=$\sum_{o}V_{t}^{a,o}(b)$  
+>, where we have  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
@@ -87,6 +94,8 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 <!-- \left\langle1,2,3\right\rangle => <1,2,3> -->
 <!-- \because -->
 <!-- \therefore -->
+<!-- \oplus  -->
+<!-- \otimes  -->
 
 <!-- Notes -->
 <!-- <font color="OrangeRed">items, verb, to make it the focus, mathematic expression</font> -->
