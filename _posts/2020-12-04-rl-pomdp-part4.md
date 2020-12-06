@@ -51,6 +51,14 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 >$\tau_{t}^{a}$=$\oplus\tau_{t}^{a,o}$  
 >$\Leftrightarrow V_{t}^{a}(b)$=$\sum_{o}V_{t}^{a,o}(b)$  
 >, where we have  
+>&#10112;finite state space, action space, observation space  
+>&#10113;$\left|A\right|\times\left|O\right|$ could be quiet big, but, it is finite.  
+>&#10114;$\left|\tau_{t}\right|$ could grow up doubly, exponentially with $t$, but, it is finite.  
+>
+>We have $\left|\tau_{t}\right|$=$\left|\tau_{t-1}\right|^{\left|O\right|}\times\left|A\right|$  
+![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-12-04-rl-pomdp-part4-pwlc-agg.png "pwlc agg")
+>
+>$\tau_{t}$ is derived from the vectors of optimal actions, associated with the dedicated observation in $\tau_{t-1}$.  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
