@@ -35,17 +35,16 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 >Assume we have $\tau_{t-1}$ such that $V_{t-1}(b)$=$max_{\alpha\in\tau_{t-1}}\alpha\cdot b$, you are ask to build $\tau_{t}$ such that $V_{t}(b)$=$max_{\alpha\in\tau_{t}}\alpha\cdot b$  
 >
 ><font color="DeepSkyBlue">[Answer]</font>  
->proof::part-1  
->$V_{t}(b)$=$max_{a\in A}V_{t}^{a}(b)$  
+>* proof::part-1  
+>&#10112;$V_{t}(b)$=$max_{a\in A}V_{t}^{a}(b)$  
 >$\Rightarrow V_{t}^{a}(b)$=$\sum_{o}V_{t}^{a,o}(b)$  
 >$\Rightarrow V_{t}^{a,o}(b)$=$\sum_{s}R(s,a)\cdot\frac {b(s)}{\left|o\right|}$+$\gamma\cdot P(o\vert b,a)\cdot V_{t-1}(S.E(b,a,o))$  
 >, where we have  
 >$V_{t-1}(S.E(b,a,o))$  
 >=$max_{\alpha\in\tau_{t-1}}\sum_{s^{\'}}\alpha(s^{\'})\cdot\frac {P(o\vert s^{\'},a)\cdot\sum_{s}P(s^{\'}\vert s,a)\cdot b(s)}{P(o\vert b,a)}$  
+>&#10113;although <font color="DeepSkyBlue">$V_{t-1}(S.E(b,a,o))$ is highly non-linear</font>, its awasome denominator part of <font color="DeepSkyBlue">$P(o\vert b,a)$ could be safely eliminated</font> and tossed out, thus we are left with <font color="DeepPink">a linear transformation from $V_{t}^{a,o}(b)$ to its next $V_{t-1}(S.E(b,a,o))$</font>, and $S.E(b,a,o)$=$b^{\'}$, which strongly supports value function transformation in Illustration Of <font color="Red">PWLC</font>(Piecewise Linear Convex) in [POMDP - Part 3]({{ site.github.repo }}{{ site.baseurl }}/2020/10/10/rl-pomdp-part3/#Illustration_Of_PWLC).  
 >
->Although <font color="DeepSkyBlue">$V_{t-1}(S.E(b,a,o))$ is highly non-linear</font>, its awasome denominator part of <font color="DeepSkyBlue">$P(o\vert b,a)$ could be safely eliminated</font> and tossed out, thus we are left with <font color="DeepPink">a linear transformation from $V_{t}^{a,o}(b)$ to its next $V_{t-1}(S.E(b,a,o))$</font>, and $S.E(b,a,o)$=$b^{\'}$, which strongly supports value function transformation in Illustration Of <font color="Red">PWLC</font>(Piecewise Linear Convex) in [POMDP - Part 3]({{ site.github.repo }}{{ site.baseurl }}/2020/10/10/rl-pomdp-part3/#Illustration_Of_PWLC).  
->
->proof::part-2  
+>* proof::part-2  
 >Succeeding to part-1,  
 >$\tau_{t}$=$U_{a}\tau_{t}^{a}$  
 >$\tau_{t}^{a}$=$\oplus\tau_{t}^{a,o}$  
@@ -59,6 +58,13 @@ This post will explain why <font color="Red">PWLC</font> works and how it is agg
 ![]({{ site.github.repo }}{{ site.baseurl }}/images/pic/2020-12-04-rl-pomdp-part4-pwlc-agg.png "pwlc agg")
 >
 >$\tau_{t}$ is derived from the vectors of optimal actions, associated with the dedicated observation in $\tau_{t-1}$.  
+
+### The <font color="Red">POMDP</font> Value Iteration Drawbacks
+>&#10112;time complexity is <font color="OrangeRed">exponential</font> in actions and observations.  
+>&#10113;dimensionality of belief space grows with state numbers.  
+>&#10114;exponential growth with number of iterations.  
+>
+>Hugely intractable to solve optimality, <font color="RosyBrown">value iteration aims for small POMDP problems.</font>  
 
 ### Addendum
 >&#10112;[Partial Observable Markov Decision Process, Charles IsBell, Michael Littman, Reinforcement Learning By Georgia Tech(CS8803)](https://classroom.udacity.com/courses/ud600/lessons/4677668675/concepts/46822685970923)  
