@@ -82,11 +82,11 @@ With the basic intuition of gamma distribution would it be greatly helpful in th
 >$=\int_0^\infty (\frac {z^2}{2})^{-\frac{1}{2}}\cdot e^{-\frac {z^2}{2}}z\operatorname dz$  
 >$=\int_0^\infty \sqrt2\cdot z^{-1}\cdot e^{-\frac {z^2}{2}}z\operatorname dz$  
 >$=\sqrt2\int_0^\infty e^{-\frac {z^2}{2}}z\operatorname dz$  
->$=2\cdot\sqrt\pi\int_0^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz$  
+>$=2\cdot\sqrt\pi\int_0^\infty \frac {1}{\sqrt{2\cdot\pi}}\cdot e^{-\frac {z^2}{2}}z\operatorname dz$  
 >$=2\cdot\sqrt\pi\cdot\frac {1}{2}$  
 >$=\sqrt\pi$  
 >
->where <font color="DeepPink">$\int_{-\infty}^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz=1$</font> is the accumulative probability of <font color="DeepSkyBlue">normal distribution</font>, therefore, <font color="DeepPink">$\int_0^\infty \frac {1}{\sqrt2\cdot\pi}\cdot e^{-\frac {z^2}{2}}z\operatorname dz=\frac {1}{2}$</font>.  
+>where <font color="DeepPink">$\int_{-\infty}^\infty \frac {1}{\sqrt{2\cdot\pi}}\cdot e^{-\frac {z^2}{2}}z\operatorname dz=1$</font> is the accumulative probability of <font color="DeepSkyBlue">normal distribution</font>, therefore, <font color="DeepPink">$\int_0^\infty \frac {1}{\sqrt{2\cdot\pi}}\cdot e^{-\frac {z^2}{2}}z\operatorname dz=\frac {1}{2}$</font>.  
 
 ### The <font color="Red">PDF</font> of Gamma Distribution
 >Next we inspect the PDF(probability density function) of the gamma distribution.  The $f(x)$ of PDF is expressed as:  
