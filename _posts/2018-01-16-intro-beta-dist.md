@@ -21,7 +21,7 @@ helpful in the evaluation, the power of test for the regression model build on y
 >&#10112;to change from $\int_{0}^{\infty}$ to $\int_{0}^{1}$, we focus on $t$:  
 >$\int_{0}^{\infty}t^{x-1}\cdot(1+t)^{-x-y}\operatorname dt$  
 >$=\int_{0}^{\infty}t^{x-1}\cdot(\frac {1}{1+t})^{x+y}\operatorname dt$  
->$=\int_{0}^{\infty}(\frac {t}{1+t})^{x-1}\cdot(\frac {1}{1+t})^{y+1}$
+>$=\int_{0}^{\infty}(\frac {t}{1+t})^{x-1}\cdot(\frac {1}{1+t})^{y+1}\operatorname dt$
 >
 >&#10113;take $w$=$\frac {t}{1+t}$, then $1-w$=$\frac {1}{1+t}$  
 >$w$=$1-\frac {1}{1+t}$=$1-(1+t)^{-1}$  
@@ -31,7 +31,7 @@ helpful in the evaluation, the power of test for the regression model build on y
 >
 >&#10114;<font color="DeepPink">$\lim_{t\rightarrow\infty}\frac t{1+t}=1$</font>, therefore <font color="DeepSkyBlue">$\int_{0}^{\infty}\operatorname dt$ transforms to $\int_{0}^{1}\operatorname dw$ is reasonable</font>, it says that integration from $0$ to $\infty$ could be changed to integration from $0$ to $1$.  
 >
->$\int_{0}^{\infty}(\frac {t}{1+t})^{x-1}\cdot(\frac {1}{1+t})^{y+1}$  
+>$\int_{0}^{\infty}(\frac {t}{1+t})^{x-1}\cdot(\frac {1}{1+t})^{y+1}\operatorname dt$  
 >$=\int_{0}^{1}w^{x-1}\cdot(1-w)^{y+1}\cdot(1+t)^{2}\operatorname dw$  
 >
 >, where $1-w$=$(1+t)^{-1}$, and we have it that:  
@@ -69,12 +69,13 @@ helpful in the evaluation, the power of test for the regression model build on y
 >$=\int_{0}^{\infty}\int_{0}^{\infty}t^{x-1}\cdot (\frac {1}{1+t})^{x+y}\cdot w^{(x+y-1)}\cdot e^{-w}\operatorname dt\operatorname dw$  
 >$=\int_{0}^{\infty}w^{(x+y-1)}\cdot e^{-w}\operatorname dw\cdot\int_{0}^{\infty}t^{x-1}\cdot(\frac {1}{1+t})^{x+y}\operatorname dt$  
 >$=\Gamma(x+y)\cdot\int_{0}^{\infty}t^{x-1}\cdot (1+t)^{-x-y}\operatorname dt$  
->$\Gamma(x+y)\cdot\beta(x,y)$  
+>$=\Gamma(x+y)\cdot\beta(x,y)$  
 >
 >Finally, we just have it proved:  
->$\beta(x,y)$  
+>$\Gamma(x)\cdot\Gamma(y)$  
 >$=\Gamma(x+y)\cdot\int_{0}^{\infty}t^{x-1}\cdot (1+t)^{-x-y}\operatorname dt$  
->$=\frac {\Gamma(x)\cdot\Gamma(y)}{\Gamma(x+y)}$  
+>$=\Gamma(x+y)\cdot\beta(x,y)$  
+>$\Rightarrow\beta(x,y)=\frac {\Gamma(x)\cdot\Gamma(y)}{\Gamma(x+y)}$  
 
 ### <font color="DeepPink">Symmetry</font> Of The <font color="Red">Beta</font> Function
 >$\beta(x,y)$=$\beta(y,x)$...$\beta$ is symmetric.  
