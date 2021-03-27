@@ -1,3 +1,6 @@
+[mjtsai@20210327]
+1. Add immediate reward and accumulative total reward calculation with respect to simulation.
+
 [mjtsai@2021.01.23]
 1. Kicked-off from 2021.01.23
 2. An easy debug version of POMDP in rather simplified and rigidly-defined coding flow.

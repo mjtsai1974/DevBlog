@@ -1,7 +1,7 @@
 
 
 class Environment(object):
-    def __init__(self, name, T, O, R, horizon_length, discount_factor, agent, logger):
+    def __init__(self, name, T, O, R, horizon_length, agent, logger):
         self._name = name
         self._actions = None
         self._states = None
@@ -12,7 +12,6 @@ class Environment(object):
         self._belief = None
         self._belief_history = None
         self._horizon_length = horizon_length
-        self._discount_factor = discount_factor
         self._agent = agent
         self._logger = logger
 
@@ -82,8 +81,7 @@ class Environment(object):
             self._transition_model,
             self._observation_model,
             self._reward_model,
-            self._horizon_length,
-            self._discount_factor)
+            self._horizon_length)
     
         root_node.Belief = self._belief
         histree.AddNodeInHistory(root_node.Layer, root_node)

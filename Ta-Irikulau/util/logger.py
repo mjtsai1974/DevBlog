@@ -2,8 +2,9 @@ import os
 import time
 import logging
 
+#Python logging level: NOTES, DEBUG, INFO, WARN, ERROR,CRITICAL
 class Logger(object):
-    def __init__(self, name = 'Uknav', logPath = 'log', console_Level = logging.ERROR, file_Level = logging.INFO):
+    def __init__(self, name = 'Uknav', logPath = 'log', console_Level = logging.ERROR, file_Level = logging.DEBUG):
         if not os.path.exists(logPath):
             os.makedirs(logPath)
 

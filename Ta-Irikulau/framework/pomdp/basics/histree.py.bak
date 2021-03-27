@@ -13,15 +13,9 @@ class HisTreeNode(object):
         self._index = index  #-1 indicates uninitialized, where this index is counted from 0 to (max - 1) nodes in this layer
         self._belief = init_belief
         self._child_list_index = 0
-        self._child_list = None
-        self._immediate_reward_list = None  #The immediate reward list with respect to the belief state
-        self._prob_o_s_a_list = None  #The probs list of making observation o, in state s, by action a
-        self._immediate_reward = 0.0  #Stores the immediate reward = _immediate_reward_list * _belief
-        self._current_reward = 0.0  #Stores the current accumulative reward
+        self._child_list = []
+        self._immediate_reward = None
         self._name = '{}-{}-{}-{}'.format(self._a_o, self._layer, self._index, self._belief)
-
-        if (parent_node != None):
-            parent_node.AddChild(self)  #Add self to parent node's child list
 
     def __str__(self):
         return 'TreeNode({})'.format(self._name)
@@ -56,19 +50,7 @@ class HisTreeNode(object):
             raise StopIteration()
 
     def AddChild(self, node):
-        if self._child_list == None:
-            self._child_list = []
-
         self._child_list.append(node)
-
-    def GetChildIndex(self, node):
-        if self._child_list == None:
-            return -1
-
-        if len(self._child_list) == 0:
-            return -1
-
-        return self._child_list.index(node)
 
     """
     Properties
@@ -113,30 +95,6 @@ class HisTreeNode(object):
     @ImmediateReward.setter
     def ImmediateReward(self, value):
         self._immediate_reward = value
-
-    @property
-    def ImmediateRewardData(self):
-        return self._immediate_reward_list
-
-    @ImmediateRewardData.setter
-    def ImmediateRewardData(self, value):
-        self._immediate_reward_list = value
-
-    @property
-    def Prob_o_s_a_Data(self):
-        return self._prob_o_s_a_list
-
-    @Prob_o_s_a_Data.setter
-    def Prob_o_s_a_Data(self, value):
-        self._prob_o_s_a_list = value
-
-    @property
-    def CurrentReward(self):
-        return self._current_reward
-
-    @CurrentReward.setter
-    def CurrentReward(self, value):
-        self._current_reward = value
 
     @property
     def ChildList(self):

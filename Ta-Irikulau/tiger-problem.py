@@ -77,7 +77,7 @@ if __name__ == '__main__':
 
     agent = Agent()
 
-    env = Environment("Tiger-Problem", model_t, model_o, model_r, 5, agent, logger)
+    env = Environment("Tiger-Problem", model_t, model_o, model_r, 5, 0.9, agent, logger)
     env.Actions = [a1, a2, a3]
     env.States = [s1, s2]
     env.Observations = [o1, o2]
